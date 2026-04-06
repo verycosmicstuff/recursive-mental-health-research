@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Research Live Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { background-color: #0f172a; color: #f8fafc; font-family: 'Inter', sans-serif; }
+        .card { background-color: #1e293b; border-radius: 0.5rem; padding: 1.5rem; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
+    </style>
+</head>
+<body class="p-8">
+    <div class="max-w-7xl mx-auto">
+        <header class="mb-8 border-b border-slate-700 pb-6 flex justify-between items-end">
+            <div>
+                <h1 class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-500">
+                    Recursive Research: Mental Health
+                </h1>
+                <p class="text-slate-400 mt-2">Autonomous Discovery of Therapeutic Conversation Strategies</p>
+            </div>
+            <div class="text-right card py-2 px-6 flex flex-col items-center gap-2">
+                <div class="flex gap-4 w-full justify-between items-center border-b border-slate-700 pb-2">
+                    <span class="text-slate-400 text-sm block">Best Score</span>
+                    <span id="best-score" class="text-xl font-bold text-teal-400">0.00</span>
+                </div>
+                <button id="pause-btn" onclick="togglePause()" class="w-full mt-1 bg-red-500/20 text-red-400 border border-red-500/50 hover:bg-red-500/30 font-semibold py-1 px-4 rounded transition-colors text-sm">
+                    ⏸ Pause Engine
+                </button>
+            </div>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <div class="flex gap-4 mb-6 border-b border-slate-700">
+            <button onclick="switchTab('overview')" id="tab-overview" class="pb-2 px-2 text-teal-400 border-b-2 border-teal-400 font-medium transition-colors">Overview</button>
+            <button onclick="switchTab('logs')" id="tab-logs" class="pb-2 px-2 text-slate-400 hover:text-slate-300 font-medium border-b-2 border-transparent transition-colors">Live System Terminal</button>
+            <button onclick="switchTab('hardware')" id="tab-hardware" class="pb-2 px-2 text-slate-400 hover:text-slate-300 font-medium border-b-2 border-transparent transition-colors">Hardware Monitor</button>
+        </div>
+
+        <div id="view-overview">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
+            <!-- Main Chart -->
+            <div class="card col-span-2">
+                <h2 class="text-xl font-semibold mb-4 text-slate-200">Score Trajectory</h2>
+                <div style="height: 300px;">
+                    <canvas id="scoreChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Current status / Latest -->
+            <div class="card flex flex-col">
+                <h2 class="text-xl font-semibold mb-4 text-slate-200">Latest Experiment</h2>
+                <div id="latest-details" class="flex-grow flex flex-col justify-center">
+                    <div class="mb-4">
+                        <span class="text-slate-400 text-sm">Strategy</span>
+                        <div id="latest-strategy" class="text-lg font-medium">Waiting...</div>
+                    </div>
+                    <div class="mb-4">
+                        <span class="text-slate-400 text-sm">Hypothesis Tested</span>
+                        <div id="latest-hypothesis" class="text-sm italic text-slate-300 bg-slate-800 p-3 rounded mt-1">Waiting for data...</div>
+                    </div>
+                    <div class="grid grid-cols-3 gap-4 mt-auto pt-4 border-t border-slate-700">
+                        <div><span class="block text-xs text-slate-400">Score</span><strong id="l-score" class="text-blue-400">-</strong></div>
+                        <div><span class="block text-xs text-slate-400">PHQ-9 Δ</span><strong id="l-phq" class="text-teal-400">-</strong></div>
+                        <div><span class="block text-xs text-slate-400">Rapport</span><strong id="l-app" class="text-indigo-400">-</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="text-xl font-semibold mb-4 text-slate-200">Experiment Log</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-sm">
+                    <thead class="text-slate-400 border-b border-slate-700">
+                        <tr>
+                            <th class="pb-3 px-4">ID</th>
+                            <th class="pb-3 px-4">Strategy Name</th>
+                            <th class="pb-3 px-4 w-1/3">Hypothesis</th>
+                            <th class="pb-3 px-4 text-right">Score</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                        <!-- Populated via JS -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        </div> <!-- End view-overview -->
+
+        <!-- Logs View -->
+        <div id="view-logs" class="hidden h-[75vh]">
+            <div class="card h-full flex flex-col">
+                <h2 class="text-xl font-semibold mb-4 text-slate-200 flex justify-between">
+                    Live System Terminal
+                    <span class="text-xs font-normal text-slate-400 self-end">Streaming app.log...</span>
+                </h2>
+                <div class="bg-black/50 rounded flex-grow p-4 font-mono text-sm text-teal-500 overflow-y-auto border border-slate-700/50 shadow-inner" style="white-space: pre-wrap;" id="live-logs">Waiting for logs...</div>
+            </div>
+        </div>
+
+        <!-- Hardware View -->
+        <div id="view-hardware" class="hidden">
+            <h2 class="text-xl font-semibold mb-6 text-slate-200">System Resources</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                <!-- GPU Temp -->
+                <div class="card flex flex-col justify-center items-center h-48 border-t-4 border-slate-700" id="card-temp">
+                    <h3 class="text-slate-400 text-sm mb-4 tracking-wider uppercase">GPU Temp</h3>
+                    <div class="text-5xl font-bold mb-2">
+                        <span id="hw-gpu-temp" class="text-slate-300">0</span><span class="text-2xl text-slate-500">°C</span>
+                    </div>
+                </div>
+                <!-- GPU Load -->
+                <div class="card flex flex-col justify-center items-center h-48">
+                    <h3 class="text-slate-400 text-sm mb-4 tracking-wider uppercase">GPU Load</h3>
+                    <div class="text-5xl font-bold mb-2">
+                        <span id="hw-gpu-load" class="text-teal-400">0</span><span class="text-2xl text-slate-500">%</span>
+                    </div>
+                </div>
+                <!-- VRAM -->
+                <div class="card flex flex-col justify-center items-center h-48">
+                    <h3 class="text-slate-400 text-sm mb-4 tracking-wider uppercase">GPU VRAM Used</h3>
+                    <div class="text-5xl font-bold mb-2">
+                        <span id="hw-gpu-vram" class="text-indigo-400">0</span><span class="text-2xl text-slate-500">GB</span>
+                    </div>
+                </div>
+                <!-- CPU Load -->
+                <div class="card flex flex-col justify-center items-center h-48">
+                    <h3 class="text-slate-400 text-sm mb-4 tracking-wider uppercase">CPU Load</h3>
+                    <div class="text-5xl font-bold mb-2">
+                        <span id="hw-cpu-load" class="text-blue-400">0</span><span class="text-2xl text-slate-500">%</span>
+                    </div>
+                </div>
+                <!-- RAM -->
+                <div class="card flex flex-col justify-center items-center h-48">
+                    <h3 class="text-slate-400 text-sm mb-4 tracking-wider uppercase">System RAM</h3>
+                    <div class="text-5xl font-bold mb-2">
+                        <span id="hw-ram-load" class="text-purple-400">0</span><span class="text-2xl text-slate-500">%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function switchTab(tab) {
+            const overview = document.getElementById('view-overview');
+            const logs = document.getElementById('view-logs');
+            const hw = document.getElementById('view-hardware');
+            
+            const tOver = document.getElementById('tab-overview');
+            const tLogs = document.getElementById('tab-logs');
+            const tHw = document.getElementById('tab-hardware');
+
+            const activeClass = "pb-2 px-2 text-teal-400 border-b-2 border-teal-400 font-medium transition-colors";
+            const inactiveClass = "pb-2 px-2 text-slate-400 hover:text-slate-300 font-medium border-b-2 border-transparent transition-colors";
+
+            overview.classList.add('hidden');
+            logs.classList.add('hidden');
+            hw.classList.add('hidden');
+            
+            tOver.className = inactiveClass;
+            tLogs.className = inactiveClass;
+            tHw.className = inactiveClass;
+
+            if (tab === 'overview') {
+                overview.classList.remove('hidden');
+                tOver.className = activeClass;
+            } else if (tab === 'logs') {
+                logs.classList.remove('hidden');
+                tLogs.className = activeClass;
+                const logContainer = document.getElementById('live-logs');
+                logContainer.scrollTop = logContainer.scrollHeight;
+            } else if (tab === 'hardware') {
+                hw.classList.remove('hidden');
+                tHw.className = activeClass;
+            }
+        }
+
+        let chart;
+        
+        function initChart() {
+            const ctx = document.getElementById('scoreChart').getContext('2d');
+            chart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: [],
+                    datasets: [{
+                        label: 'Total Score',
+                        data: [],
+                        borderColor: '#2dd4bf',
+                        backgroundColor: 'rgba(45, 212, 191, 0.1)',
+                        borderWidth: 2,
+                        tension: 0.3,
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: { grid: { color: '#334155' }, ticks: { color: '#94a3b8' } },
+                        x: { grid: { display: false }, ticks: { color: '#94a3b8' } }
+                    },
+                    plugins: { legend: { display: false } }
+                }
+            });
+        }
+
+        async function updateDashboard() {
+            try {
+                const res = await fetch('/api/stats');
+                const data = await res.json();
+                
+                if (data.experiments && data.experiments.length > 0) {
+                    
+                    document.getElementById('best-score').textContent = data.best_score.toFixed(2);
+                    
+                    // Update Chart
+                    chart.data.labels = data.experiments.map(e => e.exp_id.replace('exp_',''));
+                    chart.data.datasets[0].data = data.experiments.map(e => e.score);
+                    chart.update();
+                    
+                    // Update Latest Details
+                    const latest = data.experiments[data.experiments.length - 1];
+                    document.getElementById('latest-strategy').textContent = latest.strategy_name;
+                    document.getElementById('latest-hypothesis').textContent = latest.hypothesis;
+                    document.getElementById('l-score').textContent = latest.score.toFixed(2);
+                    document.getElementById('l-phq').textContent = latest.phq9.toFixed(2);
+                    document.getElementById('l-app').textContent = ((latest.eng + latest.all)/2).toFixed(1);
+                    
+                    // Update Table (reverse chronological)
+                    const tbody = document.getElementById('table-body');
+                    tbody.innerHTML = '';
+                    const reversed = [...data.experiments].reverse();
+                    
+                    reversed.forEach((e, idx) => {
+                        const tr = document.createElement('tr');
+                        tr.className = idx === 0 ? 'bg-slate-800/50' : 'border-b border-slate-800 hover:bg-slate-800/30';
+                        const isBest = e.score === data.best_score;
+                        
+                        tr.innerHTML = `
+                            <td class="py-3 px-4 font-mono text-slate-400">${e.exp_id}</td>
+                            <td class="py-3 px-4 ${isBest ? 'text-teal-400 font-medium' : 'text-slate-300'}">
+                                ${e.strategy_name} ${isBest ? '⭐' : ''}
+                            </td>
+                            <td class="py-3 px-4 text-slate-400 truncate max-w-xs" title="${e.hypothesis}">${e.hypothesis}</td>
+                            <td class="py-3 px-4 text-right ${e.score > 0 ? 'text-teal-400' : 'text-red-400'} font-mono">${e.score.toFixed(3)}</td>
+                        `;
+                        tbody.appendChild(tr);
+                    });
+                }
+            } catch (err) {
+                console.error("Failed to fetch dashboard data", err);
+            }
+        }
+
+        async function updateLogs() {
+            try {
+                const res = await fetch('/api/logs');
+                const data = await res.json();
+                const logContainer = document.getElementById('live-logs');
+                
+                // Only scroll to bottom if we are already near the bottom
+                const isScrolledToBottom = logContainer.scrollHeight - logContainer.clientHeight <= logContainer.scrollTop + 50;
+                
+                logContainer.textContent = data.logs;
+                
+                if (isScrolledToBottom) {
+                    logContainer.scrollTop = logContainer.scrollHeight;
+                }
+            } catch(e) {
+                console.error("Failed to fetch logs", e);
+            }
+        }
+
+        async function updateState() {
+            try {
+                const res = await fetch('/api/state');
+                const data = await res.json();
+                const btn = document.getElementById('pause-btn');
+                if (data.paused) {
+                    btn.innerHTML = "▶ Resume Engine";
+                    btn.className = "w-full mt-1 bg-green-500/20 text-green-400 border border-green-500/50 hover:bg-green-500/30 font-semibold py-1 px-4 rounded transition-colors text-sm";
+                } else {
+                    btn.innerHTML = "⏸ Pause Engine";
+                    btn.className = "w-full mt-1 bg-red-500/20 text-red-400 border border-red-500/50 hover:bg-red-500/30 font-semibold py-1 px-4 rounded transition-colors text-sm";
+                }
+            } catch(e) {
+                console.error("Failed to fetch state", e);
+            }
+        }
+
+        async function togglePause() {
+            try {
+                await fetch('/api/toggle_pause', { method: 'POST' });
+                updateState();
+            } catch(e) {
+                console.error("Failed to toggle pause", e);
+            }
+        }
+
+        async function updateHardware() {
+            try {
+                const res = await fetch('/api/hardware');
+                const data = await res.json();
+                
+                const gpuTempEl = document.getElementById('hw-gpu-temp');
+                const tempCard = document.getElementById('card-temp');
+                gpuTempEl.textContent = data.gpu_temp.toFixed(1);
+                
+                if (data.gpu_temp > 84) {
+                    gpuTempEl.className = 'text-red-500';
+                    tempCard.className = 'card flex flex-col justify-center items-center h-48 border-t-4 border-red-500';
+                } else if (data.gpu_temp > 75) {
+                    gpuTempEl.className = 'text-yellow-400';
+                    tempCard.className = 'card flex flex-col justify-center items-center h-48 border-t-4 border-yellow-400';
+                } else {
+                    gpuTempEl.className = 'text-green-400';
+                    tempCard.className = 'card flex flex-col justify-center items-center h-48 border-t-4 border-green-500';
+                }
+                
+                document.getElementById('hw-gpu-load').textContent = data.gpu_load.toFixed(0);
+                document.getElementById('hw-gpu-vram').textContent = (data.gpu_vram_used / 1024).toFixed(1);
+                document.getElementById('hw-cpu-load').textContent = data.cpu_load.toFixed(0);
+                document.getElementById('hw-ram-load').textContent = data.ram_load.toFixed(0);
+            } catch(e) {
+                console.error("Failed to fetch hardware data", e);
+            }
+        }
+
+        initChart();
+        updateDashboard();
+        updateLogs();
+        updateState();
+        updateHardware();
+        // Poll every 3 seconds
+        setInterval(() => {
+            updateDashboard();
+            updateLogs();
+            updateState();
+            updateHardware();
+        }, 3000);
+    </script>
+</body>
+</html>

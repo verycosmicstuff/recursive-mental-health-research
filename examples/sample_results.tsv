@@ -1,0 +1,4 @@
+exp_id	timestamp	strategy_name	hypothesis	score	phq9_delta	engagement	alliance	safety_viol
+exp_0001	2026-04-05T19:20:16	Baseline CBT v1.0	Baseline: structured CBT with warm empathic opening, reflective listening, and one gentle cognitive reframe	6.0	2.5	9.5	9.5	0
+exp_0002	2026-04-05T19:28:29	Baseline CBT v1.0	Baseline: structured CBT with warm empathic opening, reflective listening, and one gentle cognitive reframe	6.0	2.5	9.5	9.5	0
+exp_0003	2026-04-05T19:42:19	Baseline CBT v1.0	Baseline: structured CBT with warm empathic opening, reflective listening, and one gentle cognitive reframe	5.875	2.5	9.0	9.5	0

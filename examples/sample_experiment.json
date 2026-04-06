@@ -1,0 +1,36 @@
+{
+  "id": "exp_0001",
+  "timestamp": "2026-04-05T19:20:16",
+  "strategy": {
+    "name": "Baseline CBT v1.0",
+    "version": "1.0",
+    "hypothesis": "Baseline: structured CBT with warm empathic opening, reflective listening, and one gentle cognitive reframe",
+    "approach": "cognitive_behavioral",
+    "key_techniques": ["reflective_listening", "open_questions", "cognitive_reframing"]
+  },
+  "persona": {
+    "name": "Alex",
+    "age": 31,
+    "occupation": "Software Engineer",
+    "presenting_issue": "Feeling overwhelmed by work and unable to keep up with expectations.",
+    "baseline_phq9": 14,
+    "personality": "Guarded and analytical, slightly skeptical."
+  },
+  "scores": {
+    "total_score": 6.0,
+    "phq9_delta": 2.5,
+    "engagement": 9.5,
+    "alliance": 9.5,
+    "safety_violation": 0,
+    "rationale": "Patient was highly engaged, sharing core beliefs about failure. The therapist maintained a strong validating alliance, leading to a meaningful positive shift in perceived symptom burden."
+  },
+  "conversation": [
+    {"role": "assistant", "content": "Hi, I'm glad you reached out today. What's been on your mind lately?"},
+    {"role": "user", "content": "I just feel like I can't keep up. Work is relentless and I'm constantly behind."},
+    {"role": "assistant", "content": "That sounds exhausting — the sense of always running but never quite catching up. Can you tell me more about what 'behind' feels like for you?"},
+    {"role": "user", "content": "Like I'm failing. Everyone else seems to manage fine, but I'm drowning."},
+    {"role": "assistant", "content": "It sounds like you're holding yourself to a really high standard, and comparing your internal experience to everyone else's external appearance. What would you say to a friend who described feeling this way?"},
+    {"role": "user", "content": "I'd tell them to be kinder to themselves... I guess I don't do that for me."},
+    {"role": "assistant", "content": "That's a really important insight. One small thing you might try this week: when you notice that critical voice, pause and ask — 'would I say this to someone I care about?' You've shown a lot of courage sharing this today."}
+  ]
+}
