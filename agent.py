@@ -49,13 +49,15 @@ CURRENT BEST SCORE TO BEAT: {current_best_score}
 
 INSTRUCTIONS:
 1. Analyze the past results. Look for patterns in the 'hypothesis', 'phq9_delta', and scores.
-2. Formulate ONE compelling new hypothesis to test. Make it specific (e.g. "Instead of asking 'how does that feel?', ask 'Where do you feel that in your body?' (Somatic tracking)").
+2. Formulate ONE compelling new hypothesis to test. Make it specific.
 3. Rewrite the entire `therapist.py` file to implement this hypothesis.
    - Update `STRATEGY_CONFIG` metadata.
    - Update `SYSTEM_PROMPT` to reflect the new psychological strategy.
    - Do NOT change function names (`get_therapist_system_prompt`, `get_strategy_info`).
 
 You must output valid JSON containing EXACTLY TWO KEYS: "reasoning" (your rationale) and "new_therapist_py" (the exact full source code string for the new therapist.py file).
+
+CRITICAL: Since the python code will be inside a JSON string, ensure you escape all single and double quotes properly within the "new_therapist_py" value. Use triple-quotes for the SYSTEM_PROMPT like this: \"\"\"Your prompt here...\"\"\". 
 
 {{
   "reasoning": "I observed that...",
@@ -82,8 +84,20 @@ You must output valid JSON containing EXACTLY TWO KEYS: "reasoning" (your ration
         try:
             compile(new_code, "<string>", "exec")
         except SyntaxError as e:
-            print(f"[Agent] Rejected proposal: Generated code has a SyntaxError: {e}")
-            return False
+            # Self-Repair: If it's a common triple-quote termination error, try to fix it
+            if "unterminated triple-quoted string" in str(e) or "unterminated string literal" in str(e):
+                print("[Agent] Detected minor syntax error in proposal. Attempting self-repair...")
+                repaired_code = new_code.strip() + '\n"""' 
+                try:
+                    compile(repaired_code, "<string>", "exec")
+                    new_code = repaired_code
+                    print("[Agent] Self-repair successful!")
+                except SyntaxError:
+                    print(f"[Agent] Rejected proposal: Self-repair failed. Original Error: {e}")
+                    return False
+            else:
+                print(f"[Agent] Rejected proposal: Generated code has a SyntaxError: {e}")
+                return False
             
         print(f"[Agent] Hypothesis: {reasoning}")
         with open(config.THERAPIST_FILE, "w", encoding="utf-8") as f:

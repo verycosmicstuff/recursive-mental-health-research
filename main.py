@@ -66,22 +66,24 @@ def main():
         with open(config.RESULTS_FILE, 'r', encoding="utf-8") as f:
             lines = [l.strip() for l in f.readlines() if l.strip()]
             if len(lines) > 1:
-                # Find the last line that actually starts with exp_
-                for last_line in reversed(lines):
-                    if last_line.startswith('exp_'):
-                        iteration = int(last_line.split('\t')[0].split('_')[1]) + 1
-                        # Get best score from all history
-                        scores = []
-                        for l in lines[1:]:
-                             try:
-                                 parts = l.split('\t')
-                                 if len(parts) > 4:
-                                     scores.append(float(parts[4]))
-                             except: continue
-                        if scores:
-                            current_best_score = max(scores)
-                        print(f"[Main] Resumed! Starting at iteration {iteration}. Best score so far: {current_best_score}")
-                        break
+                max_id = 0
+                scores = []
+                for l in lines[1:]:
+                    try:
+                        parts = l.split('\t')
+                        if len(parts) > 4:
+                            # Tracking max ID
+                            id_num = int(parts[0].split('_')[1])
+                            if id_num > max_id:
+                                max_id = id_num
+                            # Tracking best score
+                            scores.append(float(parts[4]))
+                    except: continue
+                
+                iteration = max_id + 1
+                if scores:
+                    current_best_score = max(scores)
+                print(f"[Main] Resumed! Starting at iteration {iteration}. Best score so far: {current_best_score}")
     
     # Optional Backup of the baseline strategy so we can revert if agent goes crazy
     shutil.copy2(config.THERAPIST_FILE, config.THERAPIST_FILE + ".backup")
