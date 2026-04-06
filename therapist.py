@@ -45,3 +45,6 @@ def get_therapist_system_prompt() -> str:
 def get_strategy_info() -> dict:
     """Returns metadata about the current strategy being tested.""" 
     return STRATEGY_CONFIG.copy()
+
+# --- RECORDED AT EXPERIMENT: exp_0008 ---
+# --- SCORE: 6.125 ---
