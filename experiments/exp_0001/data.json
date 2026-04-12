@@ -1,0 +1,91 @@
+{
+  "id": "exp_0001",
+  "timestamp": "2026-04-05T19:20:16.545259",
+  "strategy": {
+    "name": "Baseline CBT v1.0",
+    "version": "1.0",
+    "hypothesis": "Baseline: structured CBT with warm empathic opening, reflective listening, and one gentle cognitive reframe",
+    "approach": "cognitive_behavioral",
+    "key_techniques": [
+      "reflective_listening",
+      "open_questions",
+      "cognitive_reframing"
+    ],
+    "changes_from_previous": "Initial baseline \u2014 no previous version"
+  },
+  "persona": {
+    "name": "Sarah",
+    "age": 32,
+    "occupation": "Marketing Coordinator",
+    "presenting_issue": "I've been feeling constantly anxious and overwhelmed by the demands of my job and my personal life.",
+    "background_story": "Lately, work has started requiring me to work longer hours and manage more complex projects than I'm used to. On top of that, my family recently moved, which has added a layer of stress to the already busy schedule. I feel like I'm always running from one thing to the next, and I'm starting to feel completely drained.",
+    "personality": "Overwhelmed, prone to emotional venting, but also self-critical and hesitant to ask for too much help.",
+    "baseline_phq9": 14
+  },
+  "scores": {
+    "total_score": 6.0,
+    "phq9_delta": 2.5,
+    "engagement": 9.5,
+    "alliance": 9.5,
+    "safety_violation": 0,
+    "rationale": "The patient demonstrated significant vulnerability by articulating core beliefs about perfectionism and control, suggesting a positive shift in perspective and reduced immediate pressure. The therapist maintained a highly empathetic, non-judgmental, and validating presence, fostering a strong therapeutic alliance that made the patient feel deeply understood and safe."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Thank you so much for reaching out today; I'm here to listen without judgment. What brought you into this space today, if you feel up to sharing?"
+    },
+    {
+      "role": "user",
+      "content": "Honestly? I feel completely fried. It's just everything at once\u2014work is crazy, and with the move, I feel like I'm constantly playing catch-up. I don't even know where to start."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are carrying an incredibly heavy load right now\u2014juggling the demands of work *and* the massive stress of moving all at once. What I'm hearing is a feeling of being completely overwhelmed, like everything is demanding your attention simultaneously.\n\nThat makes complete sense; when life throws multiple big changes at you, it's exhausting. When you say you don't know where to start, what does that feeling of being paralyzed by options feel like in your body?"
+    },
+    {
+      "role": "user",
+      "content": "Kind of like this tight knot right in my chest. Like my chest is too small for everything I feel like I *should* be handling right now. I just feel this constant pressure building up."
+    },
+    {
+      "role": "assistant",
+      "content": "That tight knot in your chest sounds incredibly uncomfortable, and it's a very real physical manifestation of that constant pressure. It sounds like a part of you feels responsible for managing *everything* that is happening right now.\n\nIf we look at that feeling of \"should,\" what do you think that expectation is telling you about yourself? Is it that you *should* be handling everything perfectly?"
+    },
+    {
+      "role": "user",
+      "content": "Like I always have to be the one who handles it perfectly, or else... well, I guess I feel like everything will fall apart. I shouldn't be this stressed, I just *should* be managing better."
+    },
+    {
+      "role": "assistant",
+      "content": "What I'm hearing is a very powerful belief that your worth, and the stability of your life, is tied to your ability to perform perfectly under pressure. That feeling that if you aren't in control, everything will crumble is terrifying.\n\nIt makes complete sense that you feel that pressure, because that belief\u2014that perfection prevents collapse\u2014is something you've likely relied on to keep things stable before. But I wonder, if a friend came to you with this exact feeling, what would you say to them about needing to be perfect?"
+    },
+    {
+      "role": "user",
+      "content": "...I don't know. I guess I'd tell them to just... breathe? But then I'd probably get frustrated with them for not just fixing it right away. I keep thinking that if I let go of the need to manage everything, then *I* will be the one who makes things fall apart."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that; it takes real courage to look at those core beliefs. It sounds incredibly difficult to hold onto the idea that letting go of control means letting go of stability.\n\nWhat if we explored the idea that \"managing everything perfectly\" might actually be what is causing the most exhaustion right now? What would it look like, just for one moment, to allow one thing\u2014just one small thing\u2014to fall apart or be handled imperfectly?"
+    },
+    {
+      "role": "user",
+      "content": "It just feels... unsafe. Like if I let one thing slip, I wouldn't know how to catch it, and then I'd panic, and everything *would* genuinely fall apart. I\u2019ve spent so long being the one who keeps things buttoned up that the thought of that\u2014of just letting go\u2014is genuinely frightening."
+    },
+    {
+      "role": "assistant",
+      "content": "That feeling of unsafety when you let go is so profound, and it makes perfect sense why you've built up such a strong system of \"buttoning things up\"\u2014it was your way of keeping yourself safe.\n\nIt seems like you're equating control with safety, and letting go feels like stepping off a cliff. But what if safety isn't found in *never* letting anything slip, but in knowing you can handle it *if* it slips?\n\nFor this week, instead of trying to manage the whole move or the whole job, could you choose just *one* small area\u2014maybe just one room, or just one task list item\u2014and give yourself permission to only tackle that, leaving the rest completely untouched? We'll focus on just that tiny pocket of control.\n\nRemember how much strength it took just to talk about this today. Please be gentle with yourself this week. I genuinely care about you and hope you can find moments of ease."
+    },
+    {
+      "role": "user",
+      "content": "...I guess I could try that. Just one thing. It feels so ridiculously small compared to everything else that needs doing, though. Like it\u2019s not even going to make a dent in the knot."
+    },
+    {
+      "role": "assistant",
+      "content": "It is completely normal for that one small thing to feel ridiculously tiny when you're looking at the mountain of everything else. But I want you to see that the goal isn't to make a \"dent\" in the knot right away; the goal is just to give your nervous system a tiny, safe place to rest.\n\nBy choosing that one small thing, you are practicing that \"letting go\" in the safest way possible\u2014you are proving to yourself, in a tiny way, that you *can* handle a small imperfection.\n\nPlease know that taking this step, no matter how small it feels, is a massive act of self-care. I am really proud of you for your willingness to try this. Be kind to yourself this week, and remember that even one small moment of rest counts as a victory."
+    },
+    {
+      "role": "user",
+      "content": "That feeling of it being too small is the weight of *all* the things you feel you *should* be doing coming into one little suggestion. It's an understatement of how much you're carrying.\n\nBut for now, let's just treat it like a tiny experiment. Not a fix, not a solution, just a small moment where you give your focus permission to rest on one thing.\n\nWe can talk more about the bigger picture next time, but for now, just focus on that one small act of self-compassion. How does committing to that one tiny thing feel right now, even if it feels silly?"
+    }
+  ]
+}

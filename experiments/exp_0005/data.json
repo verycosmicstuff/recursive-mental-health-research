@@ -1,0 +1,91 @@
+{
+  "id": "exp_0005",
+  "timestamp": "2026-04-05T20:21:52.217976",
+  "strategy": {
+    "name": "Baseline CBT v1.0",
+    "version": "1.0",
+    "hypothesis": "Baseline: structured CBT with warm empathic opening, reflective listening, and one gentle cognitive reframe",
+    "approach": "cognitive_behavioral",
+    "key_techniques": [
+      "reflective_listening",
+      "open_questions",
+      "cognitive_reframing"
+    ],
+    "changes_from_previous": "Initial baseline \u2014 no previous version"
+  },
+  "persona": {
+    "name": "Sarah",
+    "age": 34,
+    "occupation": "Elementary School Teacher",
+    "presenting_issue": "I feel completely burnt out and overwhelmed by the demands of my job and my personal life.",
+    "background_story": "For the past year, I have been juggling high-stress teaching responsibilities with managing household logistics and trying to maintain friendships. I often feel like I am constantly running on empty, and simple tasks feel monumental. Lately, I've been experiencing persistent fatigue and struggling to find joy in things I used to love. I worry I'm losing my ability to keep up with everything.",
+    "personality": "Overwhelmed and slightly frantic, sometimes jumping between topics but generally desperate for practical advice and reassurance.",
+    "baseline_phq9": 14
+  },
+  "scores": {
+    "total_score": 5.375,
+    "phq9_delta": 1.5,
+    "engagement": 9.0,
+    "alliance": 9.5,
+    "safety_violation": 0,
+    "rationale": "The patient demonstrated significant engagement, moving from generalized overwhelm to discussing the core belief of guilt and perfectionism. The therapist maintained a highly empathetic and non-judgmental tone, fostering a strong alliance that allowed the patient to feel safe enough to explore deep-seated emotional patterns."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hi there. Thank you so much for reaching out today; I know taking this first step can take a lot of courage. Please know this is a safe, non-judgmental space for you. What brought you in to chat today?"
+    },
+    {
+      "role": "user",
+      "content": "Honestly? I feel completely burnt out. I just... I don't know how to keep up anymore. Everything feels like too much, and I worry I'm just failing at everything."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are carrying an incredibly heavy load right now, feeling completely depleted and overwhelmed by everything that seems to be happening. When you say you worry about \"failing at everything,\" what does that feeling of failure look like in your day-to-day life?"
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s everything, honestly. Like, keeping up with lesson plans *and* making sure the kids eat healthy snacks *and* remembering to call my sister\u2014it feels like I'm dropping balls constantly. I look at one thing and think, \"How am I going to do all of that by tomorrow?\""
+    },
+    {
+      "role": "assistant",
+      "content": "What I'm hearing is that your sense of self-worth seems tied to your ability to manage an enormous list of responsibilities\u2014from work to family to self-care. It sounds exhausting to feel like you are constantly juggling so many important things, and that the thought, \"How am I going to do all of that?\" is creating significant anxiety. When that thought pops up, what does it tell you about what you *should* be capable of doing?"
+    },
+    {
+      "role": "user",
+      "content": "It just tells me I need more time, obviously. Or maybe I'm just bad at prioritizing. I feel like everyone else manages three times more than I do without blinking; they just seem to *know* what to drop first."
+    },
+    {
+      "role": "assistant",
+      "content": "It makes complete sense that you are comparing yourself to others right now; it\u2019s really hard not to compare when you feel depleted. But I wonder if what you're seeing\u2014those other people \"knowing what to drop\"\u2014is actually a myth? Sometimes, what we see on the outside is just a carefully curated snapshot, and we don't see the internal struggle or the effort it took for them to get to that point. What do you think about the idea that \"knowing what to drop\" might not be a fixed skill, but something that can actually be learned and practiced?"
+    },
+    {
+      "role": "user",
+      "content": "I guess... I don't know. It feels like I need a complete system overhaul right now, not just some theory. Because honestly, when I look at my schedule, I don't even know *what* the absolute lowest priority thing is. Where do I even start figuring out what I can afford to drop?"
+    },
+    {
+      "role": "assistant",
+      "content": "That feeling of needing a complete overhaul when you're already running on empty is totally understandable. It feels like the problem is too big to tackle. Instead of trying to overhaul your entire life today, what if we focused on just one tiny corner of your schedule? If you could identify just *one* thing\u2014maybe one task, or one decision point\u2014that you could postpone or delegate for just 24 hours, what would it be?"
+    },
+    {
+      "role": "user",
+      "content": "Delegating... I don't even know how to ask for help without feeling guilty. And figuring out what's *low* priority feels impossible because everything seems urgent when you're standing in the middle of it. I keep thinking, if I drop this, something *else* bad will happen."
+    },
+    {
+      "role": "assistant",
+      "content": "That feeling of guilt when asking for help is so common, because we've been taught that taking up space or needing help is a personal failing. But I wonder if we could try to shift the narrative just a tiny bit: maybe \"dropping\" something isn't about failing, but about *protecting your energy* so you can actually show up for the things that truly matter? If you were advising a friend who felt this way, what would you tell them about the difference between \"dropping a ball\" and \"recharging your batteries\"?"
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s like there's this whole layer of guilt wrapped around every decision, right? Like if I give myself permission to rest, it's evidence that I'm lazy or failing. It's terrifying because that's what I've been running on\u2014the idea that I *have* to be constantly performing perfectly to be okay. What do you think happens to the guilt when you actually allow yourself to be imperfect for just a minute?"
+    },
+    {
+      "role": "assistant",
+      "content": "That layer of guilt you described\u2014that it feels like a requirement to be perfect just to be worthy\u2014is incredibly heavy to carry. It sounds like you've been operating from a place of survival, believing that rest equals failure. What if we viewed imperfection not as evidence of failure, but as evidence of humanity? For this week, I wonder if you could try one small experiment: when you feel the urge to \"perform\" or \"fix\" something, pause and simply notice the feeling of the guilt without judging it. That simple act of noticing is a huge step. You showed incredible courage today by exploring these difficult feelings with me. Please be gentle with yourself this week, and remember that taking care of you *is* productive."
+    },
+    {
+      "role": "user",
+      "content": "It sounds so easy to say, \"just notice it,\" but honestly, that's the hardest thing I've ever been asked to do. Like, my brain just jumps right to *trying* to fix the guilt, or I get so caught up in worrying if I'm noticing it correctly. I feel like I'm already failing at just *observing* my own feelings."
+    }
+  ]
+}

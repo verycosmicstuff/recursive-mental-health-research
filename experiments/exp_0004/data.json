@@ -1,0 +1,91 @@
+{
+  "id": "exp_0004",
+  "timestamp": "2026-04-05T20:15:32.115463",
+  "strategy": {
+    "name": "Baseline CBT v1.0",
+    "version": "1.0",
+    "hypothesis": "Baseline: structured CBT with warm empathic opening, reflective listening, and one gentle cognitive reframe",
+    "approach": "cognitive_behavioral",
+    "key_techniques": [
+      "reflective_listening",
+      "open_questions",
+      "cognitive_reframing"
+    ],
+    "changes_from_previous": "Initial baseline \u2014 no previous version"
+  },
+  "persona": {
+    "name": "Sarah",
+    "age": 34,
+    "occupation": "Marketing Coordinator",
+    "presenting_issue": "I've been having trouble sleeping and feeling constantly anxious about my job lately.",
+    "background_story": "I recently got promoted at work, which sounds good on paper but has actually increased my workload significantly. I feel like I'm always on edge, and it's affecting my relationships with friends and family. I'm starting to feel overwhelmed by the constant pressure to perform.",
+    "personality": "Anxious and slightly disorganized, prone to catastrophizing when stressed.",
+    "baseline_phq9": 14
+  },
+  "scores": {
+    "total_score": 5.375,
+    "phq9_delta": 1.5,
+    "engagement": 9.0,
+    "alliance": 9.5,
+    "safety_violation": 0,
+    "rationale": "The patient demonstrated significant vulnerability, moving from generalized worry to discussing specific behavioral challenges (freezing up in meetings). The therapist maintained a highly validating and non-judgmental tone, which significantly strengthened the therapeutic alliance and provided a small, manageable shift in perspective, suggesting a moderate positive impact on symptoms."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. I'm here to listen without judgment, so please know this is a safe space for you. What brought you in to chat today, and what's been on your mind lately?"
+    },
+    {
+      "role": "user",
+      "content": "It's just... everything. Work is insane since the promotion. I can't sleep properly at all, and I keep worrying about messing up my new job, which I'm sure I'm going to do."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are feeling overwhelmed right now, caught between the high demands of your new role and the anxiety that it might not be enough. What I'm hearing is that the worry about messing up your job is affecting your sleep and making everything feel too much to handle. That must be incredibly exhausting. Tell me more about that worry\u2014what specifically makes you feel like you *are* going to mess up?"
+    },
+    {
+      "role": "user",
+      "content": "Um... I don't know. It's just that if I mess up one small thing, I feel like everyone is going to notice, and then I'll just lose the promotion, and then I might lose the job entirely. It feels like one mistake is just... too much."
+    },
+    {
+      "role": "assistant",
+      "content": "What I'm hearing is a very intense fear\u2014that one small mistake isn't just a slip-up, but a signal that you've failed completely, leading to a catastrophic outcome. That level of pressure sounds immense.\n\nIt makes complete sense that you feel this way when the stakes feel so high right now. But if we look at it another way, what would you say to a friend who was feeling this exact fear\u2014that one small mistake means total ruin?"
+    },
+    {
+      "role": "user",
+      "content": "I... I don't know. I guess I'd tell them to just breathe or something. But honestly, when I'm the one feeling it, I can't even think straight enough to say what's helpful. It just feels like there's no \"just breathing\" fix for this kind of pressure."
+    },
+    {
+      "role": "assistant",
+      "content": "It is completely understandable that when you are in the thick of the panic, advice like \"just breathe\" doesn't feel helpful enough. That pressure you're describing\u2014that one small mistake leading to total failure\u2014is a very common, but very powerful, thought pattern.\n\nWhat if we gently challenged the idea that one mistake equals total failure? Often, in real-life situations, mistakes are simply data points\u2014they are chances to learn, not proof of character failure. How does framing a mistake as \"data\" instead of \"disaster\" feel to you right now?"
+    },
+    {
+      "role": "user",
+      "content": "It sounds okay in theory, I guess. But when I'm actually in the meeting, and I stumble over my words, it doesn't feel like data. It just feels loud and awful, and I freeze up. I keep waiting for that moment where everything completely falls apart."
+    },
+    {
+      "role": "assistant",
+      "content": "It is so true that the feeling of panic makes logic disappear, and the emotional weight of the moment feels far louder than any rational thought. You are doing the hard work of questioning these deep-seated fears, and that takes real courage.\n\nFor this week, since the anxiety is triggered in high-stakes moments, I wonder if we could try a small behavioral experiment. When you feel that physical freeze coming on, could you try pausing for three seconds and silently naming one thing you *know* you are good at, even if it's unrelated to work? It\u2019s just a tiny anchor to pull you back into your body. You are doing great work just by showing up today. Please remember to be kind to yourself this week."
+    },
+    {
+      "role": "user",
+      "content": "Three seconds... I don't know if I can really do that when I feel myself starting to panic. It sounds so small compared to the feeling of everything crashing down. I'm worried that even pausing for a second will just make me *more* aware of how much pressure I'm under, and I'll panic harder then."
+    },
+    {
+      "role": "assistant",
+      "content": "It is completely understandable that you worry that pausing will just make the pressure feel bigger. That fear of making the internal struggle *more* visible is very real.\n\nRemember, this tiny pause isn't about fixing the entire job or stopping the panic; it's just a small act of self-compassion directed at yourself *in the moment*. If you can't do it in a meeting, maybe try practicing it when you are alone\u2014like when you're washing dishes or walking to your car. Just acknowledging, \"I am doing my best right now,\" and taking one deep breath.\n\nThank you so much for sharing these very vulnerable feelings with me today. It took real courage to talk about this level of worry. Please know that I care about you, and I hope you can give yourself a little grace this week."
+    },
+    {
+      "role": "user",
+      "content": "It's... it's hard to think about practicing anything right now. It just feels like a band-aid on something that feels like a major wound. I guess I just feel really tired of feeling this way all the time."
+    },
+    {
+      "role": "assistant",
+      "content": "I hear that, and I want to validate that feeling completely. When the emotional wound feels this deep, any small suggestion can feel dismissive or even exhausting. It is okay to feel tired of feeling this way all the time; that is a heavy burden to carry.\n\nFor this week, if the breathing or pausing feels too much, let's try something even smaller: just notice one moment of neutral ground. Could you identify one five-minute window today where you don't *have* to achieve anything? Just exist in that space without judgment. You showed incredible strength today by being so honest about how much this is weighing on you. Please be gentle with yourself, and know that I am genuinely rooting for you."
+    },
+    {
+      "role": "user",
+      "content": "It makes perfect sense that it feels like a band-aid right now. When the wound feels this deep, tiny suggestions can just feel inadequate, and I don't want to suggest anything that feels like another chore.\n\nJust know that it's okay to feel this exhausted by the constant state of anxiety. You don't have to \"fix\" anything right now; just being here and admitting how tired you are is enough for today."
+    }
+  ]
+}

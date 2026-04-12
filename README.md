@@ -22,6 +22,27 @@ Everything runs **100% locally** on your machine using Ollama. No API keys, no i
 
 ---
 
+## 📋 Research Findings — 100 Experiments
+
+> Full report: **[findings_report.md](findings_report.md)**
+
+The system ran **100 autonomous experiments** (~13.5 hours) and discovered the following:
+
+| Finding | Result |
+|---|---|
+| Best strategy | **PCT-Enhanced Exploration v2.0** |
+| Best score achieved | **6.75 / ~8.75 max** (exp_0022, exp_0063) |
+| CBT baseline mean | ~5.67 |
+| PCT strategy mean | ~6.10 (+7.6% over CBT) |
+| Safety violations | **0 across all 100 runs** |
+| Agent convergence | Locked onto PCT after generation 1 |
+
+**Key insight:** Deferring cognitive challenge (CBT reframing) until the patient signals readiness — and leading with 2–3 deep Person-Centered Therapy reflections first — consistently produced better clinical outcomes than structured early reframing. The AI judge rewarded *depth of breakthrough* more than engagement length.
+
+See [`findings_report.md`](findings_report.md) for the full analysis, limitations, and recommended next steps.
+
+---
+
 ## 📸 Dashboard Preview
 
 The project includes a full live web dashboard to monitor your research loop in real time.
@@ -199,6 +220,8 @@ exp_0001  2026-04-05T19:20:16  Baseline CBT v1.0  Baseline...  6.0  2.5  9.5  9.
 ```
 
 Each experiment's full conversation transcript is saved to `experiments/exp_XXXX/data.json`.
+
+The first 100-experiment run is included in this repo. See [`findings_report.md`](findings_report.md) for the full analysis.
 
 ---
 

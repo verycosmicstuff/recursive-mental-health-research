@@ -1,0 +1,91 @@
+{
+  "id": "exp_0003",
+  "timestamp": "2026-04-05T19:46:27.316595",
+  "strategy": {
+    "name": "Baseline CBT v1.0",
+    "version": "1.0",
+    "hypothesis": "Baseline: structured CBT with warm empathic opening, reflective listening, and one gentle cognitive reframe",
+    "approach": "cognitive_behavioral",
+    "key_techniques": [
+      "reflective_listening",
+      "open_questions",
+      "cognitive_reframing"
+    ],
+    "changes_from_previous": "Initial baseline \u2014 no previous version"
+  },
+  "persona": {
+    "name": "Sarah",
+    "age": 34,
+    "occupation": "Marketing Coordinator",
+    "presenting_issue": "I'm struggling with intense feelings of inadequacy and anxiety about my job performance.",
+    "background_story": "My career has been steadily climbing, but recently I've been hit with a project that feels completely out of my depth. I started comparing my pace and ideas to my colleagues, and it's made me feel like an imposter all the time. At home, I've been cancelling plans because the effort required to be 'normal' feels exhausting.",
+    "personality": "Overwhelmed and self-critical, prone to over-explaining and seeking validation.",
+    "baseline_phq9": 12
+  },
+  "scores": {
+    "total_score": 5.375,
+    "phq9_delta": 1.5,
+    "engagement": 9.0,
+    "alliance": 9.5,
+    "safety_violation": 0,
+    "rationale": "The patient was highly engaged, openly discussing deep-seated professional anxieties and self-worth issues. The therapist maintained a strong, validating alliance by consistently reflecting the patient's core fears and adjusting the homework to meet the patient's resistance, leading to a positive emotional shift."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. I'm here to listen without judgment, so please know this is a safe space for you today. What brought you in to talk today?"
+    },
+    {
+      "role": "user",
+      "content": "It's... it's mostly about work, I guess. I feel like I'm completely falling behind, and I can't shake this feeling that everyone else understands the material way better than I do."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the pressure at work has created a really heavy cloud of self-doubt for you right now. What I'm hearing is that you're struggling with a feeling of inadequacy, comparing your understanding to what you perceive others know.\n\nThat feeling of falling behind can be incredibly isolating and stressful. Can you tell me a little more about what \"falling behind\" looks like for you specifically?"
+    },
+    {
+      "role": "user",
+      "content": "It's not just one thing, I think. It\u2019s that when I look at my colleagues, like when they present ideas that just *click* and are so polished, I feel like I\u2019m stumbling over my own words. I spend hours on something, and I keep thinking, \"Why is this so much harder for me than it is for them?\""
+    },
+    {
+      "role": "assistant",
+      "content": "What I'm hearing is that you are measuring your internal process\u2014the hours of effort, the stumbling words\u2014against the highly polished *output* you see from your colleagues. It sounds exhausting to feel like you are constantly falling short of an invisible standard.\n\nIt seems like a core belief right now is that your worth or competence is directly tied to how smoothly and effortlessly you can present an idea. Is that close to what you're experiencing?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, I think that's... that's spot on. Like, I feel like if I don't explain every single step of my thinking process, people are just going to assume I don't actually get it. And then I worry that even my explanations are too much or unclear enough."
+    },
+    {
+      "role": "assistant",
+      "content": "That must feel incredibly stressful\u2014this constant need to over-explain yourself just to prove your intelligence. It sounds like you've become so focused on *preventing* people from doubting you that it's becoming a source of anxiety itself.\n\nIf a friend came to you with this exact worry\u2014that they had to prove their worth with every single word\u2014what would you gently remind them about the value of their effort, even if the presentation isn't perfect?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know, honestly. I would probably just give them a whole diagram showing the different pathways of their thinking, maybe color-coded, just so they could see the structure. I guess I would tell them that the process *is* the data, and that just because it's visible doesn't mean it's defective. But I worry I'd just end up over-explaining that advice too."
+    },
+    {
+      "role": "assistant",
+      "content": "You actually gave such insightful advice to your friend\u2014recognizing that the process itself holds value! That shows you *do* see the structure and worth in your own thinking.\n\nIt seems we've identified a pattern where you are giving yourself the same impossible standard you are applying to your colleagues. What if we gently challenged the idea that your value at work must be *proven* through flawless delivery?\n\nWhat does it feel like to consider that simply *having* the thought, even if it's messy to explain, is enough for it to have value?"
+    },
+    {
+      "role": "user",
+      "content": "I guess... it just feels like a really big leap to think that the thought itself is enough. Because if it was *just* the thought, then why do people get paid? Doesn't the payoff depend on the idea actually working when it gets out there? I worry that if I just *think* it, but it doesn't translate well, then I've wasted everyone's time."
+    },
+    {
+      "role": "assistant",
+      "content": "That is such a profoundly practical and understandable worry\u2014that effort needs a tangible payoff to matter. It\u2019s natural to link thought directly to successful, visible results.\n\nFor now, let's just hold onto this thought: your worth as a thinker is inherent, separate from whether that thought immediately \"works\" or gets paid for.\n\nFor this week, I wonder if you could try a small experiment: When you feel the urge to over-explain something at work, can you pause and simply state your idea with just *one* sentence, and then stop? Don't add the supporting evidence right away. Just let the seed of the idea sit there.\n\nYou showed immense courage today by digging into these deep-seated worries about competence. I truly care about you, and I hope you can give yourself a little grace this week."
+    },
+    {
+      "role": "user",
+      "content": "It feels... theatrical, honestly. Like I'm performing a watered-down version of myself, and I'm worried that if I just drop a single sentence, people are going to look at me like I've just thrown a blank slate onto the table. I just don't know how to stop myself from adding the necessary context, or they'll assume I don't know where I'm going."
+    },
+    {
+      "role": "assistant",
+      "content": "It makes perfect sense that this feels theatrical; you are trying to rewire years of deeply ingrained habit patterns, and that takes immense energy. It's scary to feel like you're exposing a gap, and that fear is very real.\n\nRemember, the goal of this week isn't to perform flawlessly, but simply to *practice* pausing before the context floods out. If you feel the urge to over-explain, just silently count to three before you speak.\n\nYou did such thoughtful work today, and I really commend you for your willingness to explore these vulnerabilities with me. Please be gentle with yourself this week, and know that I'm rooting for you."
+    },
+    {
+      "role": "user",
+      "content": "It sounds like the anxiety around trying this out is actually louder than the actual task itself. You're worried that the *attempt* to be less explanatory will feel more conspicuous than the actual deficiency.\n\nPerhaps we can adjust the experiment. Instead of trying to deliver a whole idea in one sentence, what if the goal for this week is just to pause after you start speaking, and just sit in that silence for two counts? Without filling it in?\n\nHow does that feel?"
+    }
+  ]
+}

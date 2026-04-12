@@ -1,0 +1,91 @@
+{
+  "id": "exp_0002",
+  "timestamp": "2026-04-05T19:32:43.490789",
+  "strategy": {
+    "name": "Baseline CBT v1.0",
+    "version": "1.0",
+    "hypothesis": "Baseline: structured CBT with warm empathic opening, reflective listening, and one gentle cognitive reframe",
+    "approach": "cognitive_behavioral",
+    "key_techniques": [
+      "reflective_listening",
+      "open_questions",
+      "cognitive_reframing"
+    ],
+    "changes_from_previous": "Initial baseline \u2014 no previous version"
+  },
+  "persona": {
+    "name": "Sarah",
+    "age": 32,
+    "occupation": "Marketing Coordinator",
+    "presenting_issue": "I'm feeling completely overwhelmed by my job and struggling to keep up with the expectations.",
+    "background_story": "My career has been on a constant upward trajectory, which I used to love. Lately, though, the workload feels unsustainable, and I'm starting to feel constantly anxious about making mistakes. It feels like everyone expects perfection, and I'm running on fumes trying to meet those standards.",
+    "personality": "Anxious and highly self-critical, prone to oversharing details about her daily struggles, but also quickly gets defensive if the tone feels too casual.",
+    "baseline_phq9": 14
+  },
+  "scores": {
+    "total_score": 5.5,
+    "phq9_delta": 1.5,
+    "engagement": 9.5,
+    "alliance": 9.5,
+    "safety_violation": 0,
+    "rationale": "The patient was highly engaged, sharing deep, core beliefs about failure and worthiness, and the therapist maintained a strong, validating alliance by meeting the patient's resistance (e.g., rejecting 'gentle'). The session provided significant psychoeducation and reframing, suggesting a moderate, positive shift in perceived symptom burden."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Thank you for reaching out today; I know it takes a lot of strength to take this first step. Please know that this is a safe, non-judgmental space for you. What is on your mind today, or what brought you in to talk?"
+    },
+    {
+      "role": "user",
+      "content": "It's... it's just work, I guess. I feel like I'm constantly failing to keep up with what everyone expects from me. Like there's this invisible finish line I can never reach."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are carrying a really heavy weight right now\u2014a constant feeling of falling short of some invisible standard, especially when it comes to your work. What I'm hearing is that the pressure to perform feels endless and overwhelming.\n\nThat makes complete sense; work environments can often feel like they are always moving, leaving us feeling like we're running in place. When you think about this 'finish line,' what does reaching it actually *look* like to you?"
+    },
+    {
+      "role": "user",
+      "content": "It looks like... it looks like a day where nothing actually goes wrong, I guess. Like I handle every crisis before it even happens, and every presentation is flawless. It feels impossible to even picture, honestly. Maybe that's what makes it so stressful."
+    },
+    {
+      "role": "assistant",
+      "content": "What I'm hearing is that the standard you've set for yourself\u2014the \"perfect day\"\u2014is one where nothing goes wrong and every outcome is flawless. It sounds incredibly draining because that standard feels, by its very nature, impossible to meet.\n\nIt seems like the core belief fueling this stress is that if you are not perfect, or if things go wrong, something significant will happen. Does that feel accurate?"
+    },
+    {
+      "role": "user",
+      "content": "It's... yes. That's exactly it. If I make one mistake, even a small one, it feels like it confirms I'm not good enough. I keep thinking that if I just work harder, I can prevent that 'significant' thing from happening. It's exhausting trying to disprove that thought every single day."
+    },
+    {
+      "role": "assistant",
+      "content": "That is such a painful cycle to be stuck in\u2014the belief that worthiness is conditional upon flawless performance. It makes perfect sense why you feel exhausted trying to disprove that thought every single day.\n\nI wonder if we could look at that thought from a different angle: if you viewed a mistake not as proof that you are \"not good enough,\" but rather as necessary *information*\u2014like a data point telling you what process needs tweaking\u2014how would that shift the weight of it? What do you think about seeing mistakes as data rather than destiny?"
+    },
+    {
+      "role": "user",
+      "content": "It sounds simple to say, but actually *doing* it feels impossible right now. Like, I've built a lot of my professional identity around avoiding mistakes, so treating one like just 'data' feels... almost invalidating somehow. It's just so deeply ingrained that I don't know how to even begin to shift that belief."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for being so honest about how deeply ingrained this feels. It takes immense courage to even consider challenging a belief that has shaped your identity for so long.\n\nIf we can't overhaul the entire belief system today, maybe we can focus on one tiny moment. When you feel that urge to work harder to prevent a mistake, could you try pausing and simply naming the feeling instead of reacting to it? For example, saying, \"I am noticing a feeling of anxiety about making a mistake.\" How does just *naming* the feeling, without trying to fix it, feel?"
+    },
+    {
+      "role": "user",
+      "content": "It just feels... inadequate. Like it's a Band-Aid on a really big wound. Saying it out loud doesn't actually make the anxiety disappear, does it? I guess I'm just worried that if I focus too much on the *feeling*, I'll just be dodging the actual problem, which is that I feel like I'm failing."
+    },
+    {
+      "role": "assistant",
+      "content": "It makes perfect sense that naming it feels inadequate right now; it\u2019s like trying to put a Band-Aid on a deep wound. You are right\u2014naming the feeling doesn't magically erase the anxiety.\n\nBut remember, the goal isn't to make the anxiety disappear instantly; it's just to create a tiny bit of space between *you* and the *feeling*. That space is where your power lives.\n\nFor this week, I invite you to try one small thing: the next time you catch yourself thinking, \"I'm failing,\" pause and simply write down the thought, followed by the phrase, \"And I am feeling...\" You don't need to solve it, just observe it on paper. You showed incredible bravery today by unpacking such a fundamental fear. Please be gentle with yourself this week, and remember that I am genuinely rooting for your well-being."
+    },
+    {
+      "role": "user",
+      "content": "It's hard to accept that anything simple can fix something this complex, especially when the feeling of failure feels so total. I guess I'm just exhausted by the idea of \"gentle\" when the internal pressure feels so immense. It's more than just a thought; it feels like a core part of who I am right now."
+    },
+    {
+      "role": "assistant",
+      "content": "I hear the exhaustion in your voice, and I want you to know that it is completely valid to feel that the pressure is immense and that \"gentle\" feels like an understatement. It takes incredible energy to carry a belief that feels like it is woven into the very fabric of who you are.\n\nPlease know that even if the wound feels massive, acknowledging the weight of it\u2014as you did today\u2014is itself a monumental act of strength. For this week, if journaling feels too big, I simply ask that you find one moment to pause and acknowledge the effort you are putting in, no matter how small. You are doing the difficult work just by showing up. I care about you, and I hope you can give yourself a little grace in the meantime."
+    },
+    {
+      "role": "user",
+      "content": "I hear how difficult it is to accept that anything simple can address something that feels so fundamental to your identity. It sounds less like a thought and more like a baseline state of anxiety for you right now, and that is an enormous weight.\n\nYou are right; this is not a surface-level issue. If \"gentle\" feels dismissive of the sheer magnitude of what you are carrying, then we won't use that word. Let's just focus on acknowledging that this struggle is massive, and that simply continuing to talk about it, even when it's painful, is itself an act of incredible stamina."
+    }
+  ]
+}

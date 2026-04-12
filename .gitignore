@@ -5,12 +5,9 @@ __pycache__/
 venv/
 env/
 
-# Auto-Generated Research Data — do NOT commit these
-experiments/
+# Runtime / log files — do not commit
 app.log
 app.log.old
-results.tsv
-best_strategy.md
 PAUSED.txt
 *.backup
 
