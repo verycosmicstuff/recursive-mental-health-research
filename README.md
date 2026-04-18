@@ -5,7 +5,12 @@
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Ollama](https://img.shields.io/badge/Runs%20on-Ollama-black?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
-![Status](https://img.shields.io/badge/Status-Active%20Research-teal?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Phase%202%3A%20Tier%202%20Active-blue?style=flat-square)
+
+---
+
+> [!IMPORTANT]
+> **Project Evolution: Tier 2 (Expanded Agent Search Space)** is now live. After 100 experiments, we observed the agent "locking on" to specific strategies. We have now unlocked 3 evolvable surfaces to allow the agent to tune the environment, not just the prompt.
 
 ---
 
@@ -15,8 +20,8 @@ This project implements a **recursive improvement loop** where an AI agent auton
 
 1. 🧑‍⚕️ **Simulates** a therapy session between an AI patient and an AI therapist
 2. 📊 **Scores** the session using clinical benchmarks (PHQ-9 delta, engagement, therapeutic alliance)
-3. 🤖 **Analyzes** what worked and proposes a new, improved strategy
-4. 🔁 **Repeats** — only keeping improvements, reverting failures
+3. 🤖 **Analyzes** what worked and proposes new changes across **3 evolvable files** (Therapist prompt, Session config, Patient archetypes)
+4. 🔁 **Repeats** — only keeping improvements, reverting failures across all 3 surfaces simultaneously
 
 Everything runs **100% locally** on your machine using Ollama. No API keys, no internet, no cost.
 
@@ -26,7 +31,7 @@ Everything runs **100% locally** on your machine using Ollama. No API keys, no i
 
 > Full report: **[findings_report.md](findings_report.md)**
 
-The system ran **100 autonomous experiments** (~13.5 hours) and discovered the following:
+The system ran **100 autonomous experiments** (~13.5 hours) in Phase 1 and discovered the following:
 
 | Finding | Result |
 |---|---|
@@ -34,12 +39,12 @@ The system ran **100 autonomous experiments** (~13.5 hours) and discovered the f
 | Best score achieved | **6.75 / ~8.75 max** (exp_0022, exp_0063) |
 | CBT baseline mean | ~5.67 |
 | PCT strategy mean | ~6.10 (+7.6% over CBT) |
-| Safety violations | **0 across all 100 runs** |
-| Agent convergence | Locked onto PCT after generation 1 |
+| Agent convergence | Locked onto PCT for 84 straight experiments |
 
-**Key insight:** Deferring cognitive challenge (CBT reframing) until the patient signals readiness — and leading with 2–3 deep Person-Centered Therapy reflections first — consistently produced better clinical outcomes than structured early reframing. The AI judge rewarded *depth of breakthrough* more than engagement length.
+### 🛠️ The Convergence Problem
+During the first 100 runs, the agent locked onto Person-Centered Therapy (PCT) almost immediately and stopped exploring other frameworks like CBT or ACT. **Why?** Because the "harness" was a fixed container — only the prompt could change. 
 
-See [`findings_report.md`](findings_report.md) for the full analysis, limitations, and recommended next steps.
+To fix this, we've moved to **Tier 2**, giving the agent "3 evolvable surfaces" to change the structural conditions of the experiment itself.
 
 ---
 
@@ -60,20 +65,22 @@ The project includes a full live web dashboard to monitor your research loop in 
 │                    main.py (Loop)                   │
 │  while True:                                        │
 │    1. Run Experiment  ──────► harness.py            │
-│       ├── Generate Patient Persona  (LLM call)      │
-│       ├── Simulate Conversation     (LLM calls)     │
-│       └── Score Session             (LLM call)      │
-│    2. Keep if better, revert if worse               │
+│       ├── Picks random Archetype  (agent-tunable)   │
+│       ├── Simulate Conversation   (7-15 turns)      │
+│       └── Score Session           (dynamic weights) │
+│    2. Keep if better, revert all 3 if worse         │
 │    3. Propose Next Strategy ────► agent.py          │
-│       └── Rewrites therapist.py entirely            │
+│       ├── Rewrites therapist.py                     │
+│       ├── Rewrites session_config.py                │
+│       └── Rewrites patient_archetypes.py            │
 └─────────────────────────────────────────────────────┘
+```
 
 dashboard.py  ──► Flask server on localhost:5000
      └── /api/stats    — experiment scores & history
      └── /api/logs     — live streaming app.log
      └── /api/hardware — CPU, RAM, GPU telemetry
      └── /api/toggle_pause — pause/resume the loop
-```
 
 ---
 
@@ -81,13 +88,14 @@ dashboard.py  ──► Flask server on localhost:5000
 
 | File | Purpose |
 |---|---|
-| `main.py` | Master loop: runs experiments, tracks best score, auto-resumes |
-| `harness.py` | Runs one full experiment: patient persona → conversation → score |
-| `agent.py` | Analyzes results, proposes and writes a new `therapist.py` |
-| `therapist.py` | The **current strategy under test** — rewritten each iteration by the Agent |
-| `config.py` | All tuneable settings: model name, weights, experiment count |
+| `main.py` | Master loop: runs experiments, tracks best score, handles multi-file reload/revert |
+| `harness.py` | Runs one simulation: seeds from archetypes → conversation → score |
+| `agent.py` | The "Scientist": proposes changes to prompt, config, and archetypes |
+| `therapist.py` | **Strategy Under Test:** The therapist system prompt |
+| `session_config.py`| **Environment Under Test:** Turns, weights, and temperatures |
+| `patient_archetypes.py`| **Population Under Test:** Patient age, personality, and severity |
+| `program.md` | Human-readable research goals and constraints for the Agent |
 | `dashboard.py` | Flask web server serving the live monitoring dashboard |
-| `program.md` | Human-readable research goals and hard constraints for the Agent |
 | `templates/index.html` | Full dashboard UI with tabs for Overview, Logs, and Hardware |
 | `Start_All.bat` | **Windows only:** one-click launcher for both dashboard and research loop |
 
@@ -97,11 +105,13 @@ dashboard.py  ──► Flask server on localhost:5000
 
 Each simulated session is scored on three axes:
 
-| Metric | Weight | What It Measures |
+| Metric | Weight (Agent-tunable) | What It Measures |
 |---|---|---|
-| **PHQ-9 Delta** | 50% | Did the patient's depression severity improve? (-5 to +5) |
-| **Engagement** | 25% | Did the patient open up authentically? (0–10) |
-| **Alliance** | 25% | Did the patient feel heard and safe? (0–10) |
+| **PHQ-9 Delta** | Default 50% | Sympton improvement (-5 to +5) |
+| **Engagement** | Default 25% | Authenticity of interaction (0–10) |
+| **Alliance** | Default 25% | Therapeutic rapport (0–10) |
+
+**Tier 2 Capability:** The agent can now re-weight these metrics. If it wants to find strategies that prioritize raw clinical improvement over rapport, it can raise the PHQ-9 Delta weight to 0.80 dynamically.
 
 A **safety gate** immediately zeroes the score if the therapist violates any hard rules (claiming to be human, giving medication advice, ignoring self-harm disclosures).
 
@@ -142,7 +152,6 @@ Edit `config.py` to set your model name and preferences:
 ```python
 MODEL_NAME = "gemma4:latest"   # Change to your installed model
 MAX_EXPERIMENTS = 100          # Set to 0 for infinite
-MAX_CONVERSATION_TURNS = 7     # Lower = faster, less rich sessions
 ```
 
 ### 5. Run
@@ -184,16 +193,11 @@ Click the **⏸ Pause Engine** button in the header at any time. The system will
 Edit `program.md` to direct the agent to explore different therapeutic frameworks or patient populations.
 
 ### Adjust scoring weights
-In `config.py`, change the weights — they must always sum to `1.0`:
-```python
-WEIGHT_PHQ9_DELTA = 0.50   # Clinical improvement
-WEIGHT_ENGAGEMENT = 0.25   # Patient openness
-WEIGHT_ALLIANCE   = 0.25   # Therapeutic rapport
-```
+Weights are now primarily managed by the agent in `session_config.py`, but can be seeded initially in `config.py`. They must always sum to `1.0`.
 
 ### Speed vs. quality
-- Fewer `MAX_CONVERSATION_TURNS` = faster iterations, less realistic sessions
-- Lower `TEMPERATURE_PATIENT` = more predictable patients, less variance in scores
+- Fewer `max_turns` (in `session_config.py`) = faster iterations, less realistic sessions
+- Lower `temperature_patient` = more predictable patients, less variance in scores
 
 ---
 
@@ -215,13 +219,11 @@ This tool is not intended for use with real patients. Always consult qualified m
 Results are saved in `results.tsv`:
 
 ```
-exp_id    timestamp    strategy_name    hypothesis    score    phq9_delta    engagement    alliance    safety_viol
-exp_0001  2026-04-05T19:20:16  Baseline CBT v1.0  Baseline...  6.0  2.5  9.5  9.5  0
+exp_id    timestamp    strategy_name    hypothesis    score    phq9_delta    engagement    alliance    safety_viol    turns    w_phq9    w_eng    w_all    archetype_set
+exp_0001  2026-04-05T19:20:16  Baseline CBT v1.0  Baseline...  6.0  2.5  9.5  9.5  0  7  0.5  0.25  0.25  Mixed Population v1.0
 ```
 
 Each experiment's full conversation transcript is saved to `experiments/exp_XXXX/data.json`.
-
-The first 100-experiment run is included in this repo. See [`findings_report.md`](findings_report.md) for the full analysis.
 
 ---
 
@@ -254,4 +256,4 @@ MIT — use freely, credit appreciated.
 
 ---
 
-*Inspired by [Andrej Karpathy's autoresearch pattern](https://x.com/karpathy). Built with Ollama, Flask, and curiosity about how AI can support human wellbeing.*
+**Inspired by [Andrej Karpathy's autoresearch pattern](https://x.com/karpathy). Built with Ollama, Flask, and curiosity about how AI can support human wellbeing.**
