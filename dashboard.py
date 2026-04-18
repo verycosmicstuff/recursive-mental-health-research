@@ -5,6 +5,7 @@ import json
 import config
 import psutil
 import subprocess
+import re
 
 app = Flask(__name__)
 
@@ -118,6 +119,78 @@ def get_hardware():
         print(f"Error reading GPU stats: {e}")
         
     return jsonify(stats)
+
+@app.route('/api/history')
+def get_history():
+    try:
+        # Run git log on therapist.py
+        result = subprocess.run(
+            ['git', 'log', '-p', '--', 'therapist.py'],
+            capture_output=True, text=True, check=True
+        )
+        content = result.stdout
+        
+        # Parse history
+        commits = re.split(r'^commit ', content, flags=re.MULTILINE)
+        parsed_commits = []
+        
+        for c in commits:
+            if not c.strip():
+                continue
+                
+            lines = c.split('\n')
+            commit_hash = lines[0].strip()
+            
+            author = ""
+            date = ""
+            message_lines = []
+            diff_lines = []
+            is_diff = False
+            
+            for line in lines[1:]:
+                if line.startswith('Author: '):
+                    author = line.replace('Author: ', '').strip()
+                elif line.startswith('Date: '):
+                    date = line.replace('Date: ', '').strip()
+                elif line.startswith('diff --git'):
+                    is_diff = True
+                    diff_lines.append(line)
+                elif is_diff:
+                    diff_lines.append(line)
+                elif line.startswith('    '):
+                    message_lines.append(line.strip())
+            
+            hunks = []
+            current_hunk = None
+            
+            for line in diff_lines:
+                if line.startswith('@@'):
+                    if current_hunk:
+                        hunks.append(current_hunk)
+                    current_hunk = {"header": line, "lines": []}
+                elif current_hunk:
+                    if line.startswith('+') and not line.startswith('+++'):
+                        current_hunk["lines"].append({"type": "add", "content": line[1:]})
+                    elif line.startswith('-') and not line.startswith('---'):
+                        current_hunk["lines"].append({"type": "remove", "content": line[1:]})
+                    else:
+                        current_hunk["lines"].append({"type": "context", "content": line[1:] if len(line) > 0 else ""})
+            
+            if current_hunk:
+                hunks.append(current_hunk)
+
+            parsed_commits.append({
+                "hash": commit_hash[:8],
+                "author": author,
+                "date": date,
+                "message": " ".join(message_lines),
+                "hunks": hunks
+            })
+            
+        return jsonify(parsed_commits)
+    except Exception as e:
+        print(f"Error reading Agent History: {e}")
+        return jsonify([])
 
 if __name__ == '__main__':
     # Run locally (secure mode)

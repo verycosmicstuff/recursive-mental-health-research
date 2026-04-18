@@ -9,6 +9,11 @@
     <style>
         body { background-color: #0f172a; color: #f8fafc; font-family: 'Inter', sans-serif; }
         .card { background-color: #1e293b; border-radius: 0.5rem; padding: 1.5rem; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
+        .diff-line { display: block; padding: 0 8px; font-family: monospace; font-size: 0.875rem; line-height: 1.5; white-space: pre-wrap; }
+        .diff-add { background: rgba(6, 78, 59, 0.4); color: #6ee7b7; border-left: 3px solid #10b981; }
+        .diff-remove { background: rgba(153, 27, 27, 0.4); color: #fca5a5; border-left: 3px solid #ef4444; }
+        .diff-context { color: #94a3b8; }
+        .hunk-header { color: #6366f1; font-weight: 600; font-size: 0.75rem; background: rgba(30, 41, 59, 0.8); padding: 4px 12px; }
     </style>
     <link rel="icon" type="image/png" href="/static/favicon.png">
 </head>
@@ -45,6 +50,7 @@
             <button onclick="switchTab('logs')" id="tab-logs" class="pb-2 px-2 text-slate-400 hover:text-slate-300 font-medium border-b-2 border-transparent transition-colors">Live System Terminal</button>
             <button onclick="switchTab('hardware')" id="tab-hardware" class="pb-2 px-2 text-slate-400 hover:text-slate-300 font-medium border-b-2 border-transparent transition-colors">Hardware Monitor</button>
             <button onclick="switchTab('transcripts')" id="tab-transcripts" class="pb-2 px-2 text-slate-400 hover:text-slate-300 font-medium border-b-2 border-transparent transition-colors flex items-center gap-2">📝 Transcripts</button>
+            <button onclick="switchTab('history')" id="tab-history" class="pb-2 px-2 text-slate-400 hover:text-slate-300 font-medium border-b-2 border-transparent transition-colors flex items-center gap-2">🧬 Strategy Evolution</button>
         </div>
 
         <div id="view-overview">
@@ -184,21 +190,51 @@
                 </div>
             </div>
         </div>
+
+        <!-- History View -->
+        <div id="view-history" class="hidden">
+            <div class="card">
+                <h2 class="text-lg font-semibold mb-6 flex justify-between items-end">
+                    <span class="text-slate-200">🧬 Strategy Evolution Timeline</span>
+                    <span class="text-slate-400 text-sm font-normal">Tracking changes to <code class="text-indigo-400 bg-slate-800 px-1 py-0.5 rounded">therapist.py</code></span>
+                </h2>
+                <div class="relative space-y-8 pl-4 sm:pl-8 py-4">
+                    <!-- Timeline vertical line -->
+                    <div class="absolute left-6 sm:left-10 top-2 bottom-0 w-0.5 bg-gradient-to-b from-teal-500 to-indigo-500 opacity-20"></div>
+                    <div id="history-timeline" class="space-y-8">
+                        <p class="text-slate-500 pl-8">Loading history...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script>
         function switchTab(tab) {
-            const views = ['overview', 'logs', 'hardware', 'transcripts'];
+            const views = ['overview', 'logs', 'hardware', 'transcripts', 'history'];
             const activeClass = "pb-2 px-2 text-teal-400 border-b-2 border-teal-400 font-medium transition-colors";
             const inactiveClass = "pb-2 px-2 text-slate-400 hover:text-slate-300 font-medium border-b-2 border-transparent transition-colors";
 
             views.forEach(v => {
-                document.getElementById('view-' + v).classList.add('hidden');
-                document.getElementById('tab-' + v).className = inactiveClass;
+                const viewEl = document.getElementById('view-' + v);
+                const tabEl = document.getElementById('tab-' + v);
+                if(viewEl) viewEl.classList.add('hidden');
+                if(tabEl) {
+                    if (tabEl.className.includes("flex")) {
+                       tabEl.className = inactiveClass + " flex items-center gap-2";
+                    } else {
+                       tabEl.className = inactiveClass;
+                    }
+                }
             });
 
             document.getElementById('view-' + tab).classList.remove('hidden');
-            document.getElementById('tab-' + tab).className = activeClass;
+            const newTabEl = document.getElementById('tab-' + tab);
+            if (newTabEl.className.includes("flex")) {
+                 newTabEl.className = activeClass + " flex items-center gap-2";
+            } else {
+                 newTabEl.className = activeClass;
+            }
 
             if (tab === 'logs') {
                 const logContainer = document.getElementById('live-logs');
@@ -206,6 +242,9 @@
             }
             if (tab === 'transcripts') {
                 loadExperimentList();
+            }
+            if (tab === 'history') {
+                loadHistory();
             }
         }
 
@@ -298,6 +337,111 @@
             }
         }
 
+        async function loadHistory() {
+            try {
+                const res = await fetch('/api/history');
+                const commits = await res.json();
+                renderHistory(commits);
+            } catch (err) {
+                console.error('Failed to load history', err);
+                document.getElementById('history-timeline').innerHTML = '<p class="text-red-400 pl-8">Failed to fetch history.</p>';
+            }
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function renderHistory(commits) {
+            const container = document.getElementById('history-timeline');
+            container.innerHTML = '';
+            
+            const exps = window.globalExperiments || [];
+            if (exps.length === 0) {
+                container.innerHTML = '<p class="text-slate-500 pl-8">No experiments found to build timeline.</p>';
+                return;
+            }
+
+            // Render from newest to oldest
+            const reversedExps = [...exps].reverse();
+
+            reversedExps.forEach(e => {
+                const item = document.createElement('div');
+                item.className = 'relative pl-8 sm:pl-12 group';
+                
+                // Timeline Dot
+                const dot = document.createElement('div');
+                dot.className = 'absolute left-0 top-1.5 w-8 h-8 flex items-center justify-center z-10 -translate-x-1.5 sm:translate-x-1';
+                dot.innerHTML = `<div class="w-3 h-3 rounded-full bg-slate-900 border-2 border-indigo-400 group-hover:scale-125 transition-transform"></div>`;
+                item.appendChild(dot);
+
+                // Find matching commit for diffs
+                let matchedCommit = false;
+                if (commits && commits.length > 0) {
+                    matchedCommit = commits.find(c => {
+                        let found = false;
+                        c.hunks.forEach(h => {
+                            h.lines.forEach(l => {
+                                if (l.type === 'add' && l.content.includes(e.strategy_name)) found = true;
+                            });
+                        });
+                        return found;
+                    });
+                }
+
+                let diffHtml = '';
+                if (matchedCommit) {
+                    diffHtml = `
+                        <details class="mt-4 group/details">
+                            <summary class="cursor-pointer text-sm font-medium text-teal-400 hover:text-teal-300 flex items-center gap-2 select-none mb-2 outline-none">
+                                <span class="transition-transform group-open/details:rotate-90">▶</span>
+                                View System Prompt Changes
+                            </summary>
+                            <div class="space-y-4 pl-4 pt-2 border-l-2 border-slate-700/50">
+                                ${matchedCommit.hunks.map(h => `
+                                    <div class="rounded-lg overflow-hidden border border-slate-700/50 bg-slate-900 shadow-inner">
+                                        <div class="hunk-header font-mono">${escapeHtml(h.header)}</div>
+                                        <div class="py-2 overflow-x-auto">
+                                            ${h.lines.map(l => `
+                                                <span class="diff-line diff-${l.type}">${escapeHtml(l.content)}</span>
+                                            `).join('')}
+                                        </div>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </details>
+                    `;
+                }
+
+                const content = `
+                    <div class="bg-slate-800/50 rounded-lg p-5 border border-slate-700 hover:border-slate-500 transition-colors shadow-sm">
+                        <div class="flex flex-col sm:flex-row sm:items-center gap-3 mb-4 border-b border-slate-700/50 pb-3">
+                            <span class="px-2 py-0.5 bg-indigo-500/10 text-indigo-400 text-xs font-bold rounded border border-indigo-500/20 font-mono w-fit">
+                                ${e.exp_id.toUpperCase()}
+                            </span>
+                            <h3 class="text-base font-bold text-slate-200">${escapeHtml(e.strategy_name)}</h3>
+                            <span class="sm:ml-auto px-2 py-0.5 rounded text-xs font-mono font-bold w-fit ${e.score > 0 ? 'bg-teal-500/10 text-teal-400 border border-teal-500/20' : 'bg-red-500/10 text-red-400'}">
+                                ⭐ SCORE: ${e.score.toFixed(3)}
+                            </span>
+                        </div>
+                        
+                        <div class="mb-1">
+                            <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Agent's Reasoning</span>
+                        </div>
+                        <blockquote class="pl-4 py-1 border-l-2 border-indigo-500/50 text-sm text-slate-300 italic mb-2">
+                            "${escapeHtml(e.hypothesis)}"
+                        </blockquote>
+
+                        ${diffHtml}
+                    </div>
+                `;
+                item.innerHTML += content;
+                container.appendChild(item);
+            });
+        }
+
         let chart;
         
         function initChart() {
@@ -334,6 +478,7 @@
                 const data = await res.json();
                 
                 if (data.experiments && data.experiments.length > 0) {
+                    window.globalExperiments = data.experiments;
                     
                     document.getElementById('best-score').textContent = data.best_score.toFixed(2);
                     

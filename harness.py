@@ -82,22 +82,36 @@ Return ONLY valid JSON with the following structure:
         use_evaluator=True
     )
     
+    fallback = {
+        "name": "Alex", "age": 30, "occupation": "Software Engineer", 
+        "presenting_issue": "Feeling overwhelmed and disconnected.",
+        "background_story": "Alex has been working late for months. They feel numb, struggle to sleep, and cancel plans with friends. They know they should change but feel stuck.",
+        "personality": "Guarded, analytical, slightly skeptical of therapy.",
+        "baseline_phq9": 12
+    }
+
     try:
         persona = json.loads(response)
-        # Ensure PHQ-9 is in bounds
-        persona["baseline_phq9"] = max(5, min(19, int(persona.get("baseline_phq9", 10))))
-        persona["archetype_label"] = archetype_label
+        
+        # Ensure all required keys exist by filling in gaps from the fallback
+        for key, value in fallback.items():
+            if key not in persona or persona[key] is None or str(persona[key]).strip() == "":
+                print(f"[Harness] Warning: Missing or empty key '{key}' in generated persona. Using default.")
+                persona[key] = value
 
+        # Ensure PHQ-9 is in bounds and is an integer
+        try:
+            persona["baseline_phq9"] = max(5, min(19, int(persona["baseline_phq9"])))
+        except (ValueError, TypeError):
+            persona["baseline_phq9"] = fallback["baseline_phq9"]
+
+        persona["archetype_label"] = archetype_label
         return persona
+
     except json.JSONDecodeError:
         print("[Harness] Warning: Could not parse patient persona JSON. Using fallback.")
-        return {
-            "name": "Alex", "age": 30, "occupation": "Software Engineer", 
-            "presenting_issue": "Feeling overwhelmed and disconnected.",
-            "background_story": "Alex has been working late for months. They feel numb, struggle to sleep, and cancel plans with friends. They know they should change but feel stuck.",
-            "personality": "Guarded, analytical, slightly skeptical of therapy.",
-            "baseline_phq9": 12
-        }
+        fallback["archetype_label"] = archetype_label
+        return fallback
 
 def get_patient_response(persona: dict, conversation_history: list) -> str:
     """Simulates the patient's next turn in the conversation."""
