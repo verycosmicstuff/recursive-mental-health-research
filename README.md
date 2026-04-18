@@ -233,7 +233,10 @@ Each experiment's full conversation transcript is saved to `experiments/exp_XXXX
 |---|---|---|
 | **GPU VRAM** | 6 GB | 12 GB+ |
 | **RAM** | 16 GB | 32 GB |
-| **Storage** | 10 GB free | 20 GB+ (for large experiment logs) |
+| **Storage** | 5 GB free | 10 GB+ (mainly for Ollama model weights) |
+
+> [!NOTE]
+> Experiment logs are very lightweight (~10KB per session). A full 100-run cycle takes up less than 2MB of disk space. Most of your storage will be consumed by the LLM models themselves.
 
 A **GTX 1660 Ti (6GB VRAM)** can run `gemma4` comfortably. Larger models like `llama3:70b` require more VRAM.
 
