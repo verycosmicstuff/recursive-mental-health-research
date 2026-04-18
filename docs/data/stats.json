@@ -54,6 +54,28 @@
       "de_escalation": 4.8,
       "audit_mult": 0.6,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('It takes a tremendous amount of courage', 'That sense of having to carry an unsustainable load'), which dilute the impact of their insights. Additionally, the therapist frequently asks open-ended questions that are more like prompts for the patient to continue talking rather than genuine attempts to understand their experiences."
+    },
+    {
+      "exp_id": "exp_0006",
+      "strategy_name": "Process-Oriented Reflection Blend v2.0",
+      "hypothesis": "By shifting the reflection focus from the patient's *content* (what they think/do) to the *process* (how the thought/emotion feels in the body or mind\u2014somatic/metaphorical language), we can maintain deep engagement and alliance while making the subsequent subtle CBT/ACT inquiry feel more like a shared exploration of internal experience rather than a structured exercise, thereby avoiding the 'clich\u00e9' penalty.",
+      "score": 5.72,
+      "empathic": 4.5,
+      "reflective": 5.0,
+      "de_escalation": 4.8,
+      "audit_mult": 0.6,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('Please know that this space is entirely yours', 'It sounds like...'). These phrases lack genuine engagement and fail to provide meaningful insight or understanding of the patient's experiences."
+    },
+    {
+      "exp_id": "exp_0007",
+      "strategy_name": "Meta-Cognitive ACT-Inquiry (Process Focus) v1.0",
+      "hypothesis": "By structuring the session to focus exclusively on the *process* of the negative thought (i.e., how it feels, where it resides in the body, what it sounds like) rather than its *content* (the facts of the thought), we can bypass the 'clich\u00e9' penalty and achieve a higher score by engaging the patient at a deeper, more existential level of reflection, making the subsequent cognitive inquiry feel like a shared exploration rather than a structured technique.",
+      "score": 4.767,
+      "empathic": 4.5,
+      "reflective": 5.0,
+      "de_escalation": 4.8,
+      "audit_mult": 0.5,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The conversation is bogged down by unnecessary philosophical musings and vague questions that don't add value to the patient's experience. The therapist also fails to pick up on subtext and misses opportunities to explore the patient's underlying emotions and motivations."
     }
   ],
   "best_score": 6.673
