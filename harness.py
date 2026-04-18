@@ -320,6 +320,13 @@ def run_experiment(exp_id: str):
     max_turns = max(5, min(15, int(session_cfg.get("max_turns", 7))))
 
     for turn in range(max_turns):
+        paused_logged = False
+        while os.path.exists(os.path.join(config.BASE_DIR, "PAUSED.txt")):
+            if not paused_logged:
+                print(f"[Harness] Engine Paused actively at Turn {turn+1}. Waiting for manual resume via dashboard...")
+                paused_logged = True
+            time.sleep(2)
+            
         print(f"[{exp_id}] Turn {turn+1}/{max_turns}")
         
         # Therapist speaks first or replies

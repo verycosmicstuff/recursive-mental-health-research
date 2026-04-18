@@ -50,15 +50,17 @@ CURRENT BEST SCORE TO BEAT: {current_best_score}
 INSTRUCTIONS:
 1. Analyze the past results. Look for patterns in the 'hypothesis' and scores.
 2. Formulate ONE compelling new hypothesis to test. Make it specific.
-3. You may ONLY modify therapist.py. You are strictly forbidden from modifying the simulation environment or the evaluation metrics.
+3. You may ONLY modify the therapist's strategy and system prompt. Focus entirely on clinical frameworks (PCT, CBT, ACT, etc).
 
-You must output valid JSON containing the new code for therapist.py. 
+You must output valid JSON. 
 
-CRITICAL: Since the python code will be inside a JSON string, ensure you escape all single and double quotes properly within the code string values. Use triple-quotes for the SYSTEM_PROMPT like this: \"\"\"Your prompt here...\"\"\". DO NOT forget to close your triple-quotes.
+CRITICAL: Do NOT write python code or wrap your response in markdown blocks. Output raw strings. If your system prompt contains quotes, the JSON format must escape them natively (e.g. \\").
 
 {{
   "reasoning": "I observed that...",
-  "new_therapist_py": "..."
+  "strategy_name": "Short, catchy name for this technique (e.g. Baseline CBT v2)",
+  "hypothesis": "One sentence explaining why this will score better.",
+  "new_system_prompt": "You are a compassionate..."
 }}
 """
 
@@ -71,61 +73,52 @@ CRITICAL: Since the python code will be inside a JSON string, ensure you escape 
     try:
         data = json.loads(response)
     except json.JSONDecodeError as e:
-        # Common local LLM error: truncating the closing brace after generation limits
         try:
             print("[Agent] Initial JSON parse failed, attempting auto-repair (appending '}')")
             data = json.loads(response.strip() + "}")
         except json.JSONDecodeError:
             print(f"[Agent] Critical Error: Failed to parse Agent JSON proposal (Error: {e}).")
-            print(f"--- RAW RESPONSE SNIPPET ---\n...{response[-1000:]}\n--- END OF SNIPPET ---")
             return False
             
     reasoning = data.get("reasoning", "")
-    new_therapist = data.get("new_therapist_py")
+    strategy_name = data.get("strategy_name", "")
+    hypothesis = data.get("hypothesis", "")
+    new_system_prompt = data.get("new_system_prompt", "")
     
-    if not new_therapist:
-        print("[Agent] Rejected proposal: No code changes proposed.")
+    if not new_system_prompt:
+        print("[Agent] Rejected proposal: No system prompt provided.")
         return False
-            
-    def validate_code(code_str: str, required_struct: str):
-        if not code_str or required_struct not in code_str:
-            return False, f"Missing {required_struct}"
-        try:
-            compile(code_str, "<string>", "exec")
-            return True, ""
-        except SyntaxError as e:
-            # Attempt triple-quote self-repair
-            if "unterminated triple-quoted string" in str(e) or "unterminated string literal" in str(e):
-                # Try adding one, then two, then three quotes until it compiles or we give up
-                for suffix in ['"', '""', '"""', '\n"""']:
-                    repaired_code = code_str.rstrip() + suffix
-                    try:
-                        compile(repaired_code, "<string>", "exec")
-                        print(f"[Agent] Self-repair successful with suffix: {suffix}")
-                        return True, repaired_code
-                    except SyntaxError:
-                        continue
-                return False, f"Self-repair failed. Error: {e}"
-            return False, f"SyntaxError: {e}"
-
-    # Validate therapist
-    if new_therapist:
-        valid, msg = validate_code(new_therapist, "STRATEGY_CONFIG")
-        if not valid:
-            print(f"[Agent] Rejected therapist proposal: {msg}")
-            return False
-        if isinstance(msg, str) and msg.startswith("# "):
-            new_therapist = msg 
-        if valid and msg and "def get_" in msg: 
-             new_therapist = msg 
-        if valid and msg: 
-             new_therapist = msg
-             
+        
     print(f"[Agent] Hypothesis: {reasoning}")
     
-    if new_therapist:
-        with open(config.THERAPIST_FILE, "w", encoding="utf-8") as f:
-            f.write(new_therapist)
-        print("[Agent] New strategy committed to therapist.py")
+    # Template the new therapist.py file to prevent the LLM from causing Python SyntaxErrors
+    # Also strip any stray triple quotes from the prompt that could break the python template.
+    clean_prompt = new_system_prompt.replace('\"\"\"', "'''")
+    
+    templated_code = f'''# therapist.py (AUTO-GENERATED)
+
+STRATEGY_CONFIG = {{
+    "name": "{strategy_name}",
+    "hypothesis": "{hypothesis}"
+}}
+
+SYSTEM_PROMPT = """{clean_prompt}"""
+
+def get_therapist_system_prompt() -> str:
+    return SYSTEM_PROMPT
+
+def get_strategy_info() -> dict:
+    return STRATEGY_CONFIG.copy()
+'''
+    
+    try:
+        compile(templated_code, "<string>", "exec")
+    except SyntaxError as e:
+        print(f"[Agent] Template Compile Error: {e}. The prompt likely contained illegal characters.")
+        return False
+        
+    with open(config.THERAPIST_FILE, "w", encoding="utf-8") as f:
+        f.write(templated_code)
+    print("[Agent] New strategy committed to therapist.py")
 
     return True
