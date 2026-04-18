@@ -7,6 +7,8 @@
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 ![Status](https://img.shields.io/badge/Status-Phase%202%3A%20Tier%202%20Active-blue?style=flat-square)
 
+**[📊 Live Public Dashboard](https://verycosmicstuff.github.io/recursive-mental-health-research/)** — Browse experiment results, score charts, and full AI therapy transcripts.
+
 ---
 
 > [!IMPORTANT]
