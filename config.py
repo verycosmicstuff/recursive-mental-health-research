@@ -12,9 +12,10 @@ MODEL_NAME      = "gemma4:latest"   # The model you have installed
 
 # ─── Evaluator Settings (Asymmetric API Split) ──────────────────────────────
 # We use a frontier model for the complex tasks: judging conversations and generating patient turns.
-EVALUATOR_BASE_URL = "https://api.openai.com/v1"
-EVALUATOR_API_KEY = os.environ.get("OPENAI_API_KEY", "sk-XXXX")
-EVALUATOR_MODEL_NAME = "gpt-4o"
+# (Currently overridden to point to local Ollama. Point to OpenAI/Anthropic for higher rigor).
+EVALUATOR_BASE_URL = "http://localhost:11434/v1"
+EVALUATOR_API_KEY = "ollama"
+EVALUATOR_MODEL_NAME = "llama3:latest"
 # ─── Experiment Settings ──────────────────────────────────────────────────────
 MAX_EXPERIMENTS       = 100         # Total iterations before auto-stopping (set to 0 for infinite)
 EXPERIMENT_PAUSE_SECS = 2           # Brief pause between experiments
