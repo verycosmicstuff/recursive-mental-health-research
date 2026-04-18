@@ -175,6 +175,14 @@ python main.py
 
 Then open **http://127.0.0.1:5000** in your browser.
 
+### 🌐 Automated GitHub Sync
+The system is designed for autonomous, long-running research. It now includes a built-in sync engine (`sync.py`) that automatically updates your public GitHub Pages dashboard:
+
+- **Instant Updates on Discovery:** Every time a new "Best Strategy" is found, the system immediately exports data and pushes it to GitHub.
+- **Heartbeat Sync:** Every 5 experiments (even during plateaus), the system pushes a "heartbeat" update to ensure your public transcripts and history are always fresh. 
+
+No manual steps are needed — just let `main.py` run overnight and watch the progress at your GitHub Pages URL.
+
 ---
 
 ## 🎛️ Dashboard Tabs
