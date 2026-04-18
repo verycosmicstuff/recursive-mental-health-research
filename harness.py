@@ -332,10 +332,12 @@ def run_experiment(exp_id: str):
         # Therapist speaks first or replies
         therapist_msg = get_therapist_response(conversation)
         conversation.append({"role": "assistant", "content": therapist_msg})
+        print(f"\n[Therapist ({config.MODEL_NAME})]: {therapist_msg}\n")
         
         # Patient replies
         patient_msg = get_patient_response(persona, conversation)
         conversation.append({"role": "user", "content": patient_msg})
+        print(f"[Patient ({config.EVALUATOR_MODEL_NAME})]: {patient_msg}\n")
         
     scores = score_conversation(persona, conversation)
     save_experiment(exp_id, persona, conversation, scores, strategy_info)

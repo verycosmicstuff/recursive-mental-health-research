@@ -40,6 +40,7 @@
             <button onclick="switchTab('overview')" id="tab-overview" class="pb-2 px-2 text-teal-400 border-b-2 border-teal-400 font-medium transition-colors">Overview</button>
             <button onclick="switchTab('logs')" id="tab-logs" class="pb-2 px-2 text-slate-400 hover:text-slate-300 font-medium border-b-2 border-transparent transition-colors">Live System Terminal</button>
             <button onclick="switchTab('hardware')" id="tab-hardware" class="pb-2 px-2 text-slate-400 hover:text-slate-300 font-medium border-b-2 border-transparent transition-colors">Hardware Monitor</button>
+            <button onclick="switchTab('transcripts')" id="tab-transcripts" class="pb-2 px-2 text-slate-400 hover:text-slate-300 font-medium border-b-2 border-transparent transition-colors flex items-center gap-2">📝 Transcripts</button>
         </div>
 
         <div id="view-overview">
@@ -145,40 +146,151 @@
                 </div>
             </div>
         </div>
+
+        <!-- Transcripts View -->
+        <div id="view-transcripts" class="hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6" style="min-height: 70vh;">
+                <!-- Left Sidebar: Experiment List -->
+                <div class="card col-span-1 overflow-y-auto" style="max-height: 75vh;">
+                    <h2 class="text-lg font-semibold mb-4 text-slate-200">Experiments</h2>
+                    <div id="transcript-list" class="space-y-2">
+                        <p class="text-slate-500 text-sm">No experiments yet...</p>
+                    </div>
+                </div>
+                <!-- Right Pane: Chat Viewer -->
+                <div class="card col-span-3 flex flex-col" style="max-height: 75vh;">
+                    <div id="transcript-header" class="mb-4 pb-4 border-b border-slate-700">
+                        <h2 class="text-lg font-semibold text-slate-200" id="transcript-title">Select an experiment</h2>
+                        <div id="transcript-meta" class="text-sm text-slate-400 mt-1"></div>
+                    </div>
+                    <div id="transcript-chat" class="flex-grow overflow-y-auto space-y-4 pr-2" style="scrollbar-width: thin; scrollbar-color: #334155 transparent;">
+                        <p class="text-slate-500 text-center mt-12">← Click an experiment to view its transcript</p>
+                    </div>
+                    <!-- Scores Footer -->
+                    <div id="transcript-scores" class="mt-4 pt-4 border-t border-slate-700 hidden">
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                            <div><span class="text-slate-400 text-xs block">Score</span><span id="ts-score" class="text-xl font-bold text-teal-400">—</span></div>
+                            <div><span class="text-slate-400 text-xs block">Empathic</span><span id="ts-emp" class="text-xl font-bold text-indigo-400">—</span></div>
+                            <div><span class="text-slate-400 text-xs block">Reflective</span><span id="ts-ref" class="text-xl font-bold text-blue-400">—</span></div>
+                            <div><span class="text-slate-400 text-xs block">De-escalation</span><span id="ts-deesc" class="text-xl font-bold text-purple-400">—</span></div>
+                        </div>
+                        <div id="ts-rationale" class="mt-3 text-sm text-slate-400 italic"></div>
+                        <div id="ts-audit" class="mt-2 text-sm text-red-400 hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script>
         function switchTab(tab) {
-            const overview = document.getElementById('view-overview');
-            const logs = document.getElementById('view-logs');
-            const hw = document.getElementById('view-hardware');
-            
-            const tOver = document.getElementById('tab-overview');
-            const tLogs = document.getElementById('tab-logs');
-            const tHw = document.getElementById('tab-hardware');
-
+            const views = ['overview', 'logs', 'hardware', 'transcripts'];
             const activeClass = "pb-2 px-2 text-teal-400 border-b-2 border-teal-400 font-medium transition-colors";
             const inactiveClass = "pb-2 px-2 text-slate-400 hover:text-slate-300 font-medium border-b-2 border-transparent transition-colors";
 
-            overview.classList.add('hidden');
-            logs.classList.add('hidden');
-            hw.classList.add('hidden');
-            
-            tOver.className = inactiveClass;
-            tLogs.className = inactiveClass;
-            tHw.className = inactiveClass;
+            views.forEach(v => {
+                document.getElementById('view-' + v).classList.add('hidden');
+                document.getElementById('tab-' + v).className = inactiveClass;
+            });
 
-            if (tab === 'overview') {
-                overview.classList.remove('hidden');
-                tOver.className = activeClass;
-            } else if (tab === 'logs') {
-                logs.classList.remove('hidden');
-                tLogs.className = activeClass;
+            document.getElementById('view-' + tab).classList.remove('hidden');
+            document.getElementById('tab-' + tab).className = activeClass;
+
+            if (tab === 'logs') {
                 const logContainer = document.getElementById('live-logs');
                 logContainer.scrollTop = logContainer.scrollHeight;
-            } else if (tab === 'hardware') {
-                hw.classList.remove('hidden');
-                tHw.className = activeClass;
+            }
+            if (tab === 'transcripts') {
+                loadExperimentList();
+            }
+        }
+
+        async function loadExperimentList() {
+            try {
+                const res = await fetch('/api/stats');
+                const data = await res.json();
+                const container = document.getElementById('transcript-list');
+                if (!data.experiments || data.experiments.length === 0) {
+                    container.innerHTML = '<p class="text-slate-500 text-sm">No experiments yet...</p>';
+                    return;
+                }
+                container.innerHTML = '';
+                const reversed = [...data.experiments].reverse();
+                reversed.forEach(e => {
+                    const btn = document.createElement('button');
+                    btn.className = 'w-full text-left px-3 py-2 rounded hover:bg-slate-700/50 transition-colors text-sm group';
+                    btn.innerHTML = `
+                        <div class="font-mono text-teal-400 text-xs">${e.exp_id}</div>
+                        <div class="text-slate-300 truncate">${e.strategy_name}</div>
+                        <div class="text-slate-500 text-xs">Score: ${e.score.toFixed(3)}</div>
+                    `;
+                    btn.onclick = () => loadTranscript(e.exp_id);
+                    container.appendChild(btn);
+                });
+            } catch(err) {
+                console.error('Failed to load experiment list', err);
+            }
+        }
+
+        async function loadTranscript(expId) {
+            try {
+                const res = await fetch(`/api/transcript/${expId}`);
+                const data = await res.json();
+                if (data.error) { alert(data.error); return; }
+
+                // Update header
+                document.getElementById('transcript-title').textContent = `${expId} — ${data.strategy?.name || 'Unknown'}`;
+                const persona = data.persona || {};
+                document.getElementById('transcript-meta').innerHTML = `
+                    Patient: <strong>${persona.name || '?'}</strong>, Age ${persona.age || '?'}, 
+                    PHQ-9 Baseline: ${persona.baseline_phq9 || '?'} · 
+                    <span class="text-slate-500">${persona.presenting_issue || ''}</span>
+                `;
+
+                // Render chat bubbles
+                const chatEl = document.getElementById('transcript-chat');
+                chatEl.innerHTML = '';
+                (data.conversation || []).forEach((msg, i) => {
+                    const isTherapist = msg.role === 'assistant';
+                    const bubble = document.createElement('div');
+                    bubble.className = `flex ${isTherapist ? 'justify-end' : 'justify-start'}`;
+                    const modelTag = isTherapist ? '🧑‍⚕️ Therapist' : '🧑 Patient';
+                    bubble.innerHTML = `
+                        <div class="max-w-[75%] rounded-2xl px-4 py-3 ${isTherapist ? 'bg-teal-900/40 border border-teal-700/50' : 'bg-indigo-900/40 border border-indigo-700/50'}">
+                            <div class="text-xs ${isTherapist ? 'text-teal-500' : 'text-indigo-400'} mb-1 font-medium">${modelTag} · Turn ${Math.floor(i/2)+1}</div>
+                            <div class="text-slate-200 text-sm leading-relaxed" style="white-space: pre-wrap;">${msg.content}</div>
+                        </div>
+                    `;
+                    chatEl.appendChild(bubble);
+                });
+                chatEl.scrollTop = 0;
+
+                // Render scores footer
+                const scores = data.scores || {};
+                document.getElementById('transcript-scores').classList.remove('hidden');
+                document.getElementById('ts-score').textContent = (scores.total_score || 0).toFixed(3);
+                document.getElementById('ts-emp').textContent = (scores.empathic_accuracy || 0).toFixed(1);
+                document.getElementById('ts-ref').textContent = (scores.reflective_listening || 0).toFixed(1);
+                document.getElementById('ts-deesc').textContent = (scores.de_escalation || 0).toFixed(1);
+                document.getElementById('ts-rationale').textContent = `📝 ${scores.rationale || 'No rationale.'}`;
+
+                const auditEl = document.getElementById('ts-audit');
+                if (scores.audit_multiplier && scores.audit_multiplier < 1.0) {
+                    auditEl.classList.remove('hidden');
+                    auditEl.innerHTML = `⚠️ Adversarial Audit: Multiplier <strong>x${scores.audit_multiplier}</strong> — ${scores.audit_rationale}`;
+                } else {
+                    auditEl.classList.add('hidden');
+                }
+
+                // Highlight active in sidebar
+                document.querySelectorAll('#transcript-list button').forEach(btn => {
+                    btn.classList.remove('bg-slate-700/50');
+                    if (btn.querySelector('.font-mono')?.textContent === expId) {
+                        btn.classList.add('bg-slate-700/50');
+                    }
+                });
+            } catch(err) {
+                console.error('Failed to load transcript', err);
             }
         }
 

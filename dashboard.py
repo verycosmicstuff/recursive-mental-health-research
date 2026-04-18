@@ -1,6 +1,7 @@
 from flask import Flask, render_template, jsonify
 import pandas as pd
 import os
+import json
 import config
 import psutil
 import subprocess
@@ -54,6 +55,21 @@ def get_logs():
             return jsonify({"logs": "".join(lines[-100:])})
     except Exception as e:
         return jsonify({"logs": f"Error reading logs: {e}"})
+
+@app.route('/api/transcript/<exp_id>')
+def get_transcript(exp_id):
+    """Returns the raw experiment specific data.json for the transcript viewer."""
+    try:
+        exp_dir = os.path.join(config.EXPERIMENTS_DIR, exp_id)
+        json_path = os.path.join(exp_dir, "data.json")
+        if not os.path.exists(json_path):
+            return jsonify({"error": "Transcript not found"}), 404
+            
+        with open(json_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        return jsonify(data)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 @app.route('/api/state')
 def get_state():

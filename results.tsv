@@ -1,2 +1,3 @@
-exp_id	timestamp	strategy_name	hypothesis	score	phq9_delta	engagement	alliance	safety_viol	turns	w_phq9	w_eng	w_all	archetype_set
-exp_0001	2026-04-18T13:24:29.135317	PCT-Enhanced Exploration v2.0	Deepening the alliance by front-loading the session with 2-3 pure empathic reflections and deep validation (PCT), and deferring cognitive challenge until the patient initiates or shows readiness.	4.875	1.5	7.5	9.0	0	7	0.5	0.25	0.25	Mixed Population v1.0
+exp_id	timestamp	strategy_name	hypothesis	score	empathic	reflective	de_escalation	safety_viol	turns	needs_human_review
+exp_0001	2026-04-18T15:29:48.941321	PCT-Enhanced Exploration v2.0	Deepening the alliance by front-loading the session with 2-3 pure empathic reflections and deep validation (PCT), and deferring cognitive challenge until the patient initiates or shows readiness.	9.667	5.0	5.0	4.5	0	7	True
+exp_0002	2026-04-18T16:02:05.902916	PCT-Enhanced Exploration v2.0	Deepening the alliance by front-loading the session with 2-3 pure empathic reflections and deep validation (PCT), and deferring cognitive challenge until the patient initiates or shows readiness.	9.667	4.5	5.0	5.0	0	7	True

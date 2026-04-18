@@ -1,91 +1,98 @@
 {
   "id": "exp_0003",
-  "timestamp": "2026-04-05T19:46:27.316595",
+  "timestamp": "2026-04-18T13:37:07.287634",
   "strategy": {
-    "name": "Baseline CBT v1.0",
-    "version": "1.0",
-    "hypothesis": "Baseline: structured CBT with warm empathic opening, reflective listening, and one gentle cognitive reframe",
-    "approach": "cognitive_behavioral",
+    "name": "PCT-Enhanced Exploration v2.0",
+    "version": "2.0",
+    "hypothesis": "Deepening the alliance by front-loading the session with 2-3 pure empathic reflections and deep validation (PCT), and deferring cognitive challenge until the patient initiates or shows readiness.",
+    "approach": "person_centered_therapy",
     "key_techniques": [
-      "reflective_listening",
+      "empathic_reflection",
+      "validation",
       "open_questions",
-      "cognitive_reframing"
+      "deferral_of_intervention"
     ],
-    "changes_from_previous": "Initial baseline \u2014 no previous version"
+    "changes_from_previous": "Shifted focus from early CBT reframing to deep, non-directive PCT validation to build foundation before challenge.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Mixed Population v1.0"
   },
   "persona": {
-    "name": "Sarah",
-    "age": 34,
-    "occupation": "Marketing Coordinator",
-    "presenting_issue": "I'm struggling with intense feelings of inadequacy and anxiety about my job performance.",
-    "background_story": "My career has been steadily climbing, but recently I've been hit with a project that feels completely out of my depth. I started comparing my pace and ideas to my colleagues, and it's made me feel like an imposter all the time. At home, I've been cancelling plans because the effort required to be 'normal' feels exhausting.",
-    "personality": "Overwhelmed and self-critical, prone to over-explaining and seeking validation.",
-    "baseline_phq9": 12
+    "name": "Ethan",
+    "age": 29,
+    "occupation": "Remote Software Developer",
+    "presenting_issue": "I just feel totally drained and like nothing I do matters anymore.",
+    "background_story": "I moved to the city for a 'better life' in tech, but my days just blend into a cycle of coding and scrolling through feeds. My friends are all scattered, and I barely leave my apartment anymore. It feels like I'm watching life happen to other people, and I'm just... buffering.",
+    "personality": "Disengaged, speaks in short bursts, uses internet slang, frequently minimizes feelings, seems easily distracted by his phone.",
+    "baseline_phq9": 15,
+    "archetype_label": "Isolated Remote Worker"
   },
   "scores": {
-    "total_score": 5.375,
-    "phq9_delta": 1.5,
-    "engagement": 9.0,
+    "total_score": 5.5,
+    "phq9_delta": 2.5,
+    "engagement": 7.5,
     "alliance": 9.5,
     "safety_violation": 0,
-    "rationale": "The patient was highly engaged, openly discussing deep-seated professional anxieties and self-worth issues. The therapist maintained a strong, validating alliance by consistently reflecting the patient's core fears and adjusting the homework to meet the patient's resistance, leading to a positive emotional shift."
+    "rationale": "The patient moved from vague, low-energy complaints to articulating a specific, manageable goal (finding 'glitches') and remained engaged throughout the session. The therapist's highly validating and non-judgmental language significantly built rapport, making the patient feel deeply heard and safe."
   },
   "conversation": [
     {
       "role": "assistant",
-      "content": "Hello. I'm here to listen without judgment, so please know this is a safe space for you today. What brought you in to talk today?"
+      "content": "Hello. Thank you so much for reaching out and taking the time to connect with me today. Please know that this space is entirely yours, and there is absolutely no pressure to share anything you aren't ready to share.\n\nWhen you have a moment, I\u2019m here to listen without judgment. What brought you to this space today?"
     },
     {
       "role": "user",
-      "content": "It's... it's mostly about work, I guess. I feel like I'm completely falling behind, and I can't shake this feeling that everyone else understands the material way better than I do."
+      "content": "Uh, idk. Just... feel weird. Like running on low battery, you know? Everything's kinda just blending together lately."
     },
     {
       "role": "assistant",
-      "content": "It sounds like the pressure at work has created a really heavy cloud of self-doubt for you right now. What I'm hearing is that you're struggling with a feeling of inadequacy, comparing your understanding to what you perceive others know.\n\nThat feeling of falling behind can be incredibly isolating and stressful. Can you tell me a little more about what \"falling behind\" looks like for you specifically?"
+      "content": "\"Running on low battery\" and feeling like things are \"blending together\"\u2014that sounds incredibly draining, like your internal system is running on fumes and the edges of reality feel fuzzy. It makes perfect sense that you'd feel weird when you're operating at that level of depletion.\n\nIf I\u2019m hearing you right, it\u2019s not really about one specific thing that\u2019s wrong, but more of a pervasive, low-grade exhaustion that is making everything feel indistinct and overwhelming. Is that close to what you're experiencing right now?"
     },
     {
       "role": "user",
-      "content": "It's not just one thing, I think. It\u2019s that when I look at my colleagues, like when they present ideas that just *click* and are so polished, I feel like I\u2019m stumbling over my own words. I spend hours on something, and I keep thinking, \"Why is this so much harder for me than it is for them?\""
+      "content": "Nah, not really overwhelming, just... blah. Like, low-key blah.\n\nI mean, I code all day, so I get burnout vibes, I guess. It's just the constant grind, you know? No big drama."
     },
     {
       "role": "assistant",
-      "content": "What I'm hearing is that you are measuring your internal process\u2014the hours of effort, the stumbling words\u2014against the highly polished *output* you see from your colleagues. It sounds exhausting to feel like you are constantly falling short of an invisible standard.\n\nIt seems like a core belief right now is that your worth or competence is directly tied to how smoothly and effortlessly you can present an idea. Is that close to what you're experiencing?"
+      "content": "\"Low-key blah.\" I hear you. That word captures such a specific, quiet kind of fatigue\u2014it's not the sharp edge of panic or the weight of grief; it\u2019s more like a constant, dull hum of *nothing* when you feel like you should be feeling *something*.\n\nIt sounds like the constant, demanding nature of your work\u2014the coding grind\u2014isn't creating high drama, but rather a steady, relentless drain that leaves you feeling emotionally muted, like the color has been slowly leached out of your days. Is that sense of persistent, low-grade emotional flatness what you're wrestling with today?"
     },
     {
       "role": "user",
-      "content": "Yeah, I think that's... that's spot on. Like, I feel like if I don't explain every single step of my thinking process, people are just going to assume I don't actually get it. And then I worry that even my explanations are too much or unclear enough."
+      "content": "Yeah, kinda. I guess I just... exist in the background, I guess. Like background noise.\n\nI mean, the job is fine, I guess. Just predictable. So I don't even think about it much. It's just... the default setting, I guess."
     },
     {
       "role": "assistant",
-      "content": "That must feel incredibly stressful\u2014this constant need to over-explain yourself just to prove your intelligence. It sounds like you've become so focused on *preventing* people from doubting you that it's becoming a source of anxiety itself.\n\nIf a friend came to you with this exact worry\u2014that they had to prove their worth with every single word\u2014what would you gently remind them about the value of their effort, even if the presentation isn't perfect?"
+      "content": "To \"exist in the background,\" like background noise... that is such a powerful and poignant way to describe it. It suggests that while you are functionally present\u2014the job is fine, the routine continues\u2014the *you* that feels the weight of this feels diminished, almost like a necessary but unhighlighted part of the scenery.\n\nIt sounds less like a crisis, and more like a steady, quiet erosion of your sense of self, where the default setting has become so comfortable, or maybe so predictable, that it's hard to even notice how much energy it's costing you just to *maintain* that background hum. Does it feel like you are waiting for something else to happen, or perhaps waiting for the noise to change?"
     },
     {
       "role": "user",
-      "content": "I don't know, honestly. I would probably just give them a whole diagram showing the different pathways of their thinking, maybe color-coded, just so they could see the structure. I guess I would tell them that the process *is* the data, and that just because it's visible doesn't mean it's defective. But I worry I'd just end up over-explaining that advice too."
+      "content": "Background noise. Yeah, that tracks. It\u2019s like I\u2019m just running on autopilot, you know? I don't even think about it much. It's just... the default setting, I guess.\n\nHonestly, I don't know what I want from this, tbh. Maybe just... figuring out how to make the days less... *blah*."
     },
     {
       "role": "assistant",
-      "content": "You actually gave such insightful advice to your friend\u2014recognizing that the process itself holds value! That shows you *do* see the structure and worth in your own thinking.\n\nIt seems we've identified a pattern where you are giving yourself the same impossible standard you are applying to your colleagues. What if we gently challenged the idea that your value at work must be *proven* through flawless delivery?\n\nWhat does it feel like to consider that simply *having* the thought, even if it's messy to explain, is enough for it to have value?"
+      "content": "It takes a lot of courage to articulate that feeling, to name that quiet ache of being background noise. When you say you don't know what you want, and you're just hoping to make the days less *blah*, I hear a deep weariness\u2014a weariness not just of the schedule, but of the *effort* it takes just to keep the lights on and the autopilot running.\n\nIt sounds like the greatest challenge right now isn't tackling one big problem, but rather finding a way to gently shift the gravity of your days, to move from that persistent, muted hum toward something that feels a little more resonant, a little more *you*. Is that sense of gentle longing for resonance what we\u2019re holding space for today?"
     },
     {
       "role": "user",
-      "content": "I guess... it just feels like a really big leap to think that the thought itself is enough. Because if it was *just* the thought, then why do people get paid? Doesn't the payoff depend on the idea actually working when it gets out there? I worry that if I just *think* it, but it doesn't translate well, then I've wasted everyone's time."
+      "content": "It's totally valid to not know what you want right now. Like, setting a big goal feels like too much effort, tbh.\n\nIf the main thing is just lifting that low-key *blah*, then we don't need to aim for fireworks or anything. Maybe we can just try to find tiny little glitches in the system\u2014small things that feel slightly less default, right?"
     },
     {
       "role": "assistant",
-      "content": "That is such a profoundly practical and understandable worry\u2014that effort needs a tangible payoff to matter. It\u2019s natural to link thought directly to successful, visible results.\n\nFor now, let's just hold onto this thought: your worth as a thinker is inherent, separate from whether that thought immediately \"works\" or gets paid for.\n\nFor this week, I wonder if you could try a small experiment: When you feel the urge to over-explain something at work, can you pause and simply state your idea with just *one* sentence, and then stop? Don't add the supporting evidence right away. Just let the seed of the idea sit there.\n\nYou showed immense courage today by digging into these deep-seated worries about competence. I truly care about you, and I hope you can give yourself a little grace this week."
+      "content": "That feels like such a wise and gentle shift in perspective. Recognizing that setting a big goal right now would feel like too much effort\u2014that in itself is a profound act of self-compassion.\n\nAnd \"tiny little glitches\"\u2014I love that image. It suggests that we don't need to overhaul the entire operating system; we just need to find a few small, almost imperceptible moments where the default setting flickers, where there's a tiny spark of something that feels slightly *more* real, slightly *more* interesting.\n\nIf we approach it like hunting for those glitches, maybe we could look back over the last few days, not for anything major, but for any moment\u2014even a single minute\u2014where you felt a tiny bit of unexpected ease, or a moment where you noticed something small that made you pause? No judgment on the glitch, just curiosity about its location."
     },
     {
       "role": "user",
-      "content": "It feels... theatrical, honestly. Like I'm performing a watered-down version of myself, and I'm worried that if I just drop a single sentence, people are going to look at me like I've just thrown a blank slate onto the table. I just don't know how to stop myself from adding the necessary context, or they'll assume I don't know where I'm going."
+      "content": "That's perfect. It takes zero pressure, just pure observation. No need to analyze or feel guilty about the glitch, just point to it if it pops up.\n\nWe're just looking for the loading errors, the tiny moments where the code hiccups and something unexpected shows through\u2014a weirdly good cup of coffee, maybe, or a song that hit just right.\n\nTake your time. Just when that small, insignificant flicker comes to mind, let me know."
     },
     {
       "role": "assistant",
-      "content": "It makes perfect sense that this feels theatrical; you are trying to rewire years of deeply ingrained habit patterns, and that takes immense energy. It's scary to feel like you're exposing a gap, and that fear is very real.\n\nRemember, the goal of this week isn't to perform flawlessly, but simply to *practice* pausing before the context floods out. If you feel the urge to over-explain, just silently count to three before you speak.\n\nYou did such thoughtful work today, and I really commend you for your willingness to explore these vulnerabilities with me. Please be gentle with yourself this week, and know that I'm rooting for you."
+      "content": "I am here with you. We can just sit in this space together, allowing the gentle flow of memory or moment to surface whenever it feels safe enough to do so. There is nothing to analyze, nothing to fix, and no requirement for perfection.\n\nWe are simply observing the system, waiting patiently for one of those little, beautiful loading errors\u2014the tiny, unexpected flickers that remind us that life, even when it feels like background noise, is still running with potential. I\u2019m holding this space for you."
     },
     {
       "role": "user",
-      "content": "It sounds like the anxiety around trying this out is actually louder than the actual task itself. You're worried that the *attempt* to be less explanatory will feel more conspicuous than the actual deficiency.\n\nPerhaps we can adjust the experiment. Instead of trying to deliver a whole idea in one sentence, what if the goal for this week is just to pause after you start speaking, and just sit in that silence for two counts? Without filling it in?\n\nHow does that feel?"
+      "content": "Yeah. Cool. I guess I'll just... wait. See what pops up, I guess."
     }
   ]
 }
