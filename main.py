@@ -43,6 +43,7 @@ import shutil
 import therapist # imported to be able to reload
 import session_config
 import patient_archetypes
+import sync
 
 def update_best_strategy(score: float, exp_id: str):
     """Saves the current top performing strategy."""
@@ -55,6 +56,9 @@ def update_best_strategy(score: float, exp_id: str):
     with open(config.BEST_STRATEGY_FILE, "a", encoding="utf-8") as f:
         f.write(f"\n\n# --- RECORDED AT EXPERIMENT: {exp_id} ---\n")
         f.write(f"# --- SCORE: {score} ---\n")
+    
+    # Sync "New Best" immediately
+    sync.sync(f"New Best Strategy: {exp_id} (Score: {score:.3f})")
 
 def main():
     print("=====================================================")
@@ -146,7 +150,10 @@ def main():
             success = agent.propose_next_experiment(current_best_score)
             if not success:
                print("[Main] Agent failed to propose. We will try again next loop.")
-               
+            
+            # 5. Heartbeat Sync to GitHub
+            sync.sync(f"Experiment Complete: {exp_id} (Score: {total_score:.3f})")
+            
         except Exception as e:
             print(f"\n[Main] CRITICAL ERROR IN LOOP: {e}")
             print("Trying to recover next iteration...")
