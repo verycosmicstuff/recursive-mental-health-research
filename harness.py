@@ -120,7 +120,15 @@ RULES FOR YOUR BEHAVIOR:
 Here is the conversation so far:"""
 
     messages = [{"role": "system", "content": sys_prompt}]
-    messages.extend(conversation_history)
+    
+    # CRITICAL: Swap roles for the patient model.
+    # In the main conversation, therapist = "assistant" and patient = "user".
+    # But from the PATIENT model's perspective, the therapist's words are the "user" input
+    # and its own past words are the "assistant" output. Without this swap,
+    # the patient model sees itself as having already spoken and returns empty.
+    for msg in conversation_history:
+        swapped_role = "user" if msg["role"] == "assistant" else "assistant"
+        messages.append({"role": swapped_role, "content": msg["content"]})
     
     session_cfg = session_config.get_session_config()
     patient_temp = max(0.1, min(1.0, float(session_cfg.get("temperature_patient", 0.8))))
