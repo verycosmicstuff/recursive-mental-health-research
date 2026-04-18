@@ -11,5 +11,10 @@ app.log.old
 PAUSED.txt
 *.backup
 
+# Experiment data — generated at runtime, stays local
+experiments/
+results.tsv
+results_macro.tsv
+
 # Examples folder is intentionally tracked
 !examples/
