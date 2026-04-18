@@ -142,6 +142,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The therapist's approach is overly reliant on generic platitudes and lacks genuine engagement with the patient's emotions. The conversation feels like a scripted exercise in data collection rather than a therapeutic interaction."
+    },
+    {
+      "exp_id": "exp_0014",
+      "strategy_name": "Objective Reality Check: BA-ACT Bridge v1.0",
+      "hypothesis": "By anchoring the initial reflection and validation entirely on specific, observable, and concrete behavioral data (e.g., sleep patterns, movement, specific times of day, activities completed), we can maintain high perceived clinical utility and alliance (by showing deep, targeted attention) while structurally preventing the use of abstract emotional platitudes, thereby maximizing the score by appealing to objective reality.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly formulaic and lack genuine engagement. The use of phrases like 'Thank you for giving me that timeline' and 'I hear a very specific sequence of physical actions' come across as robotic and insincere. Additionally, the Therapist fails to pick up on subtext and instead focuses on surface-level analysis, missing opportunities to explore deeper emotional or psychological insights."
     }
   ],
   "best_score": 6.907
