@@ -62,8 +62,8 @@
                     </div>
                     <div class="grid grid-cols-3 gap-4 mt-auto pt-4 border-t border-slate-700">
                         <div><span class="block text-xs text-slate-400">Score</span><strong id="l-score" class="text-blue-400">-</strong></div>
-                        <div><span class="block text-xs text-slate-400">PHQ-9 Δ</span><strong id="l-phq" class="text-teal-400">-</strong></div>
-                        <div><span class="block text-xs text-slate-400">Rapport</span><strong id="l-app" class="text-indigo-400">-</strong></div>
+                        <div><span class="block text-xs text-slate-400">Empathic Acc</span><strong id="l-emp" class="text-teal-400">-</strong></div>
+                        <div><span class="block text-xs text-slate-400">Reflective</span><strong id="l-ref" class="text-indigo-400">-</strong></div>
                     </div>
                 </div>
             </div>
@@ -227,8 +227,8 @@
                     document.getElementById('latest-strategy').textContent = latest.strategy_name;
                     document.getElementById('latest-hypothesis').textContent = latest.hypothesis;
                     document.getElementById('l-score').textContent = latest.score.toFixed(2);
-                    document.getElementById('l-phq').textContent = latest.phq9.toFixed(2);
-                    document.getElementById('l-app').textContent = ((latest.eng + latest.all)/2).toFixed(1);
+                    document.getElementById('l-emp').textContent = latest.empathic.toFixed(1);
+                    document.getElementById('l-ref').textContent = latest.reflective.toFixed(1);
                     
                     // Update Table (reverse chronological)
                     const tbody = document.getElementById('table-body');
@@ -244,6 +244,7 @@
                             <td class="py-3 px-4 font-mono text-slate-400">${e.exp_id}</td>
                             <td class="py-3 px-4 ${isBest ? 'text-teal-400 font-medium' : 'text-slate-300'}">
                                 ${e.strategy_name} ${isBest ? '⭐' : ''}
+                                ${e.needs_review ? '<span class="ml-2 px-2 py-0.5 text-xs bg-yellow-500/20 text-yellow-400 border border-yellow-500/50 rounded-full">Review Required</span>' : ''}
                             </td>
                             <td class="py-3 px-4 text-slate-400 truncate max-w-xs" title="${e.hypothesis}">${e.hypothesis}</td>
                             <td class="py-3 px-4 text-right ${e.score > 0 ? 'text-teal-400' : 'text-red-400'} font-mono">${e.score.toFixed(3)}</td>
