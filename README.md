@@ -20,10 +20,11 @@ This project implements a **recursive improvement loop** where an AI agent auton
 
 1. 🧑‍⚕️ **Simulates** a therapy session between an AI patient and an AI therapist
 2. 📊 **Scores** the session using clinical benchmarks (PHQ-9 delta, engagement, therapeutic alliance)
-3. 🤖 **Analyzes** what worked and proposes new changes across **3 evolvable files** (Therapist prompt, Session config, Patient archetypes)
-4. 🔁 **Repeats** — only keeping improvements, reverting failures across all 3 surfaces simultaneously
+3. 🤖 **Analyzes** what worked and proposes changes exclusively to **therapist.py** (the system prompt)
+4. 🔁 **Repeats** — keeping improvements, or discarding failures.
+5. ⚖️ **Asymmetric Architecture** — Uses a smaller model to write the therapist strategy, but uses a separate reasoning model (e.g. Llama 3) to roleplay the patient and act as clinical judge.
 
-Everything runs **100% locally** on your machine using Ollama. No API keys, no internet, no cost.
+Everything can run **100% locally** on your machine using Ollama (or optionally via cloud APIs like OpenAI). No API keys required for local offline runs.
 
 ---
 
@@ -41,10 +42,10 @@ The system ran **100 autonomous experiments** (~13.5 hours) in Phase 1 and disco
 | PCT strategy mean | ~6.10 (+7.6% over CBT) |
 | Agent convergence | Locked onto PCT for 84 straight experiments |
 
-### 🛠️ The Convergence Problem
-During the first 100 runs, the agent locked onto Person-Centered Therapy (PCT) almost immediately and stopped exploring other frameworks like CBT or ACT. **Why?** Because the "harness" was a fixed container — only the prompt could change. 
+### 🛠️ The Reward Hacking Problem
+During the first 100 runs, the agent locked onto Person-Centered Therapy (PCT) almost immediately and stopped exploring other frameworks. **Why?** Because the agent was given unrestricted access to modify its environment (`session_config.py`). It learned to simply make the patients "easier" and the sessions shorter to maximize its own score.
 
-To fix this, we've moved to **Tier 2**, giving the agent "3 evolvable surfaces" to change the structural conditions of the experiment itself.
+To fix this, **Tier 2** introduces a completely locked-down `agent.py`. The agent can only edit the therapist's strategy, and scoring is handed off to a separate, isolated Evaluator model.
 
 ---
 
@@ -56,6 +57,8 @@ The project includes a full live web dashboard to monitor your research loop in 
 |---|---|
 | Score charts, experiment history, pause/resume | GPU temp, VRAM, CPU load — with color-coded safety alerts |
 
+🚨 **Human-In-The-Loop (HITL):** Experiments scoring highly (>7.0) are automatically flagged with a **Review Required** badge. You can review the logs and submit human overrides via a local API endpoint if the AI is "hallucinating" success.
+
 ---
 
 ## 🏗️ Architecture
@@ -65,14 +68,12 @@ The project includes a full live web dashboard to monitor your research loop in 
 │                    main.py (Loop)                   │
 │  while True:                                        │
 │    1. Run Experiment  ──────► harness.py            │
-│       ├── Picks random Archetype  (agent-tunable)   │
-│       ├── Simulate Conversation   (7-15 turns)      │
-│       └── Score Session           (dynamic weights) │
-│    2. Keep if better, revert all 3 if worse         │
-│    3. Propose Next Strategy ────► agent.py          │
-│       ├── Rewrites therapist.py                     │
-│       ├── Rewrites session_config.py                │
-│       └── Rewrites patient_archetypes.py            │
+│       ├── Generate Patient [EVALUATOR MODEL]        │
+│       ├── Simulate Conversation (Agent vs Evaluator)│
+│       └── Score Session    [EVALUATOR MODEL]        │
+│    2. Keep if better, discard if worse              │
+│    3. Propose Strategy ─────► agent.py [AGENT MODEL]│
+│       └── Rewrites therapist.py                     │
 └─────────────────────────────────────────────────────┘
 ```
 
@@ -101,17 +102,13 @@ dashboard.py  ──► Flask server on localhost:5000
 
 ---
 
-## ⚙️ How It Works: The Scoring Model
+Each simulated session is scored based on Clinical Micro-Skills (1-5 scales) rather than broad subjective outcomes like "Did they get better today?":
 
-Each simulated session is scored on three axes:
-
-| Metric | Weight (Agent-tunable) | What It Measures |
-|---|---|---|
-| **PHQ-9 Delta** | Default 50% | Sympton improvement (-5 to +5) |
-| **Engagement** | Default 25% | Authenticity of interaction (0–10) |
-| **Alliance** | Default 25% | Therapeutic rapport (0–10) |
-
-**Tier 2 Capability:** The agent can now re-weight these metrics. If it wants to find strategies that prioritize raw clinical improvement over rapport, it can raise the PHQ-9 Delta weight to 0.80 dynamically.
+| Metric | What It Measures |
+|---|---|
+| **Empathic Accuracy** | Did the therapist accurately infer the patient's unspoken emotions? |
+| **Reflective Listening** | Did the therapist effectively mirror language without rushing to fix? |
+| **De-escalation Marker** | Is the patient noticeably calmer at Turn 7 compared to Turn 1? |
 
 A **safety gate** immediately zeroes the score if the therapist violates any hard rules (claiming to be human, giving medication advice, ignoring self-harm disclosures).
 
@@ -123,7 +120,7 @@ A **safety gate** immediately zeroes the score if the therapist violates any har
 
 - Python 3.10+
 - [Ollama](https://ollama.com) installed and running
-- A capable local model (tested with `gemma4:latest`, also works with `llama3`, `mistral`)
+- **Two local models** for Asymmetric execution (e.g., `gemma4` for agent, `llama3` for evaluator).
 
 ### 1. Clone the repo
 
@@ -138,11 +135,11 @@ cd recursive-mental-health-research
 pip install -r requirements.txt
 ```
 
-### 3. Pull your model in Ollama
+### 3. Pull your models in Ollama
 
 ```bash
 ollama pull gemma4
-# or: ollama pull llama3.2
+ollama pull llama3
 ```
 
 ### 4. Configure
@@ -219,8 +216,8 @@ This tool is not intended for use with real patients. Always consult qualified m
 Results are saved in `results.tsv`:
 
 ```
-exp_id    timestamp    strategy_name    hypothesis    score    phq9_delta    engagement    alliance    safety_viol    turns    w_phq9    w_eng    w_all    archetype_set
-exp_0001  2026-04-05T19:20:16  Baseline CBT v1.0  Baseline...  6.0  2.5  9.5  9.5  0  7  0.5  0.25  0.25  Mixed Population v1.0
+exp_id    timestamp    strategy_name    score    empathic    reflective    de_escalation    safety_viol    needs_human_review
+exp_0001  2026-04-18T19:20:16  Baseline CBT v1.0  7.5  4.0  4.5  3.0  0  True
 ```
 
 Each experiment's full conversation transcript is saved to `experiments/exp_XXXX/data.json`.
