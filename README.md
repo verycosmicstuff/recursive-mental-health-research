@@ -55,9 +55,9 @@ To fix this, **Tier 2** introduces a completely locked-down `agent.py`. The agen
 
 The project includes a full live web dashboard to monitor your research loop in real time.
 
-| Overview Tab | Hardware Monitor Tab | Transcripts Tab |
-|---|---|---|
-| Score charts, experiment history, pause/resume | GPU temp, VRAM, CPU load — with color-coded safety alerts | Full chat-style conversation viewer with scoring breakdown |
+| Overview Tab | Hardware Monitor Tab | Transcripts Tab | Strategy Evolution Tab |
+|---|---|---|---|
+| Score charts, experiment history, pause/resume | GPU temp, VRAM, CPU load — with color-coded safety alerts | Full chat-style conversation viewer with scoring breakdown | Interactive timeline tracking the agent's exact logic and code changes over time |
 
 🛡️ **Adversarial Auditor:** Experiments scoring highly (>7.0) automatically trigger a skeptical second-pass evaluation. The Auditor applies a penalty multiplier (0.1–1.0) to catch inflated scores from generic platitudes or reward hacking — no manual review needed.
 
@@ -102,7 +102,9 @@ dashboard.py  ──► Flask server on localhost:5000
 | `patient_archetypes.py`| Fixed patient population: age, personality, and severity profiles |
 | `program.md` | Human-readable research goals and constraints for the Agent |
 | `dashboard.py` | Flask web server serving the live monitoring dashboard |
-| `templates/index.html` | Full dashboard UI with tabs for Overview, Logs, Hardware, and Transcripts |
+| `export_dashboard.py` | CLI tool that scrubs identifying data and compiles transcripts for public export |
+| `sync.py` | Automated GitHub sync engine that pushes dashboard data live |
+| `templates/index.html` | Full dashboard UI with tabs for Overview, Logs, Hardware, Transcripts, and Strategy Evolution |
 | `Start_All.bat` | **Windows only:** one-click launcher for both dashboard and research loop |
 
 ---
@@ -193,6 +195,7 @@ No manual steps are needed — just let `main.py` run overnight and watch the pr
 | **Live System Terminal** | Streams `app.log` in real time — shows full dialogue text tagged with which model generated it |
 | **Hardware Monitor** | GPU temperature (with color alerts), VRAM, GPU load, CPU %, RAM % |
 | **📝 Transcripts** | Click any past experiment to view the full conversation in a chat-bubble UI with scoring breakdown |
+| **🧬 Strategy Evolution** | A dynamic timeline visualizing each experiment's Strategy Name, the Agent's Hypothesis, and an expandable dropdown showing the exact code changes made to `therapist.py` |
 
 The dashboard header also displays live **model badges** showing which model is acting as Agent vs Evaluator.
 
