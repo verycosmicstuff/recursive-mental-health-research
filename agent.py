@@ -73,7 +73,7 @@ INSTRUCTIONS:
 
 You must output valid JSON containing the new code for any files you want to change. OMIT the key if you want to keep the current version for that file.
 
-CRITICAL: Since the python code will be inside a JSON string, ensure you escape all single and double quotes properly within the code string values. Use triple-quotes for the SYSTEM_PROMPT like this: \\\"\\\"\\\"Your prompt here...\\\"\\\"\\\". 
+CRITICAL: Since the python code will be inside a JSON string, ensure you escape all single and double quotes properly within the code string values. Use triple-quotes for the SYSTEM_PROMPT like this: \"\"\"Your prompt here...\"\"\". DO NOT forget to close your triple-quotes. 
 
 {{
   "reasoning": "I observed that...",
@@ -108,14 +108,18 @@ CRITICAL: Since the python code will be inside a JSON string, ensure you escape 
                 return True, ""
             except SyntaxError as e:
                 # Attempt triple-quote self-repair
+                # Attempt triple-quote self-repair
                 if "unterminated triple-quoted string" in str(e) or "unterminated string literal" in str(e):
-                    repaired_code = code_str.strip() + '\n"""' 
-                    try:
-                        compile(repaired_code, "<string>", "exec")
-                        print("[Agent] Self-repair successful!")
-                        return True, repaired_code
-                    except SyntaxError:
-                        return False, f"Self-repair failed. Error: {e}"
+                    # Try adding one, then two, then three quotes until it compiles or we give up
+                    for suffix in ['"', '""', '"""', '\n"""']:
+                        repaired_code = code_str.rstrip() + suffix
+                        try:
+                            compile(repaired_code, "<string>", "exec")
+                            print(f"[Agent] Self-repair successful with suffix: {suffix}")
+                            return True, repaired_code
+                        except SyntaxError:
+                            continue
+                    return False, f"Self-repair failed. Error: {e}"
                 return False, f"SyntaxError: {e}"
 
         # Validate therapist

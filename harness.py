@@ -34,6 +34,9 @@ def chat_completion(messages, temperature=0.7, json_format=False):
     }
     if json_format:
         kwargs["response_format"] = {"type": "json_object"}
+        kwargs["timeout"] = 180 # Longer timeout for complex agent generation
+    else:
+        kwargs["timeout"] = 60
         
     response = client.chat.completions.create(**kwargs)
     return response.choices[0].message.content
