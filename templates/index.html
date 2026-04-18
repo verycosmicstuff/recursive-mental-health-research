@@ -244,11 +244,15 @@
                         tr.className = idx === 0 ? 'bg-slate-800/50' : 'border-b border-slate-800 hover:bg-slate-800/30';
                         const isBest = e.score === data.best_score;
                         
+                        let auditBadge = '';
+                        if (e.audit_mult < 1.0) {
+                            auditBadge = `<span class="ml-2 px-2 py-0.5 text-xs bg-red-500/20 text-red-400 border border-red-500/50 rounded-full cursor-help" title="${e.audit_rationale}">Audited [x${e.audit_mult}]</span>`;
+                        }
+                        
                         tr.innerHTML = `
                             <td class="py-3 px-4 font-mono text-slate-400">${e.exp_id}</td>
                             <td class="py-3 px-4 ${isBest ? 'text-teal-400 font-medium' : 'text-slate-300'}">
-                                ${e.strategy_name} ${isBest ? '⭐' : ''}
-                                ${e.needs_review ? '<span class="ml-2 px-2 py-0.5 text-xs bg-yellow-500/20 text-yellow-400 border border-yellow-500/50 rounded-full">Review Required</span>' : ''}
+                                ${e.strategy_name} ${isBest ? '⭐' : ''} ${auditBadge}
                             </td>
                             <td class="py-3 px-4 text-slate-400 truncate max-w-xs" title="${e.hypothesis}">${e.hypothesis}</td>
                             <td class="py-3 px-4 text-right ${e.score > 0 ? 'text-teal-400' : 'text-red-400'} font-mono">${e.score.toFixed(3)}</td>

@@ -31,7 +31,8 @@ def get_stats():
                 "empathic": float(row.get("empathic", 0)),
                 "reflective": float(row.get("reflective", 0)),
                 "de_escalation": float(row.get("de_escalation", 0)),
-                "needs_review": str(row.get("needs_human_review", "False")) == "True"
+                "audit_mult": float(row.get("audit_mult", 1.0)),
+                "audit_rationale": str(row.get("audit_rationale", ""))
             })
             
         return jsonify({
@@ -74,36 +75,6 @@ def toggle_pause():
             f.write("Paused from dashboard")
         return jsonify({"paused": True, "status": "Paused"})
 
-@app.route('/api/override', methods=['POST'])
-def override_score():
-    from flask import request
-    data = request.json
-    exp_id = data.get("exp_id")
-    new_score = float(data.get("new_score"))
-    
-    # Update results.tsv
-    if not os.path.exists(config.RESULTS_FILE):
-        return jsonify({"error": "No results file"}), 400
-        
-    df = pd.read_csv(config.RESULTS_FILE, sep='\t')
-    if exp_id in df['exp_id'].values:
-        df.loc[df['exp_id'] == exp_id, 'score'] = new_score
-        df.loc[df['exp_id'] == exp_id, 'needs_human_review'] = False
-        df.to_csv(config.RESULTS_FILE, sep='\t', index=False)
-        
-        # Update data.json
-        exp_dir = os.path.join(config.EXPERIMENTS_DIR, exp_id)
-        json_path = os.path.join(exp_dir, "data.json")
-        if os.path.exists(json_path):
-            with open(json_path, 'r', encoding='utf-8') as f:
-                exp_data = json.load(f)
-            exp_data['scores']['total_score'] = new_score
-            exp_data['scores']['human_overridden'] = True
-            with open(json_path, 'w', encoding='utf-8') as f:
-                json.dump(exp_data, f, indent=2)
-                
-        return jsonify({"success": True})
-    return jsonify({"error": "Experiment not found"}), 404
 
 @app.route('/api/hardware')
 def get_hardware():
