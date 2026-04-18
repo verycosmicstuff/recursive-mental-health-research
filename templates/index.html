@@ -10,18 +10,22 @@
         body { background-color: #0f172a; color: #f8fafc; font-family: 'Inter', sans-serif; }
         .card { background-color: #1e293b; border-radius: 0.5rem; padding: 1.5rem; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
     </style>
+    <link rel="icon" type="image/png" href="/static/favicon.png">
 </head>
 <body class="p-8">
     <div class="max-w-7xl mx-auto">
         <header class="mb-8 border-b border-slate-700 pb-6 flex justify-between items-end">
-            <div>
-                <h1 class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-500">
-                    Recursive Research: Mental Health
-                </h1>
-                <div class="text-slate-400 mt-2 flex items-center gap-3">
-                    <span>Autonomous Discovery of Therapeutic Conversation Strategies</span>
-                    <span class="px-2 py-0.5 text-xs bg-slate-800 border border-slate-700 rounded text-slate-300">Agent: <span id="hdr-agent-model" class="text-teal-400 font-mono">...</span></span>
-                    <span class="px-2 py-0.5 text-xs bg-slate-800 border border-slate-700 rounded text-slate-300">Eval: <span id="hdr-evaluator-model" class="text-indigo-400 font-mono">...</span></span>
+            <div class="flex items-center gap-4">
+                <img src="/static/favicon.png" alt="Brain Icon" class="w-12 h-12 rounded-lg shadow-lg shadow-teal-500/20">
+                <div>
+                    <h1 class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-500">
+                        Recursive Research: Mental Health
+                    </h1>
+                    <div class="text-slate-400 mt-1 flex items-center gap-3">
+                        <span>Autonomous Discovery of Therapeutic Conversation Strategies</span>
+                        <span class="px-2 py-0.5 text-xs bg-slate-800 border border-slate-700 rounded text-slate-300">Agent: <span id="hdr-agent-model" class="text-teal-400 font-mono">...</span></span>
+                        <span class="px-2 py-0.5 text-xs bg-slate-800 border border-slate-700 rounded text-slate-300">Eval: <span id="hdr-evaluator-model" class="text-indigo-400 font-mono">...</span></span>
+                    </div>
                 </div>
             </div>
             <div class="text-right card py-2 px-6 flex flex-col items-center gap-2">
