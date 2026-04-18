@@ -87,6 +87,50 @@
       "de_escalation": 4.8,
       "audit_mult": 0.7,
       "audit_rationale": "Penalty applied because: The therapist's tendency to mirror the patient's words without adding insight or genuine engagement is a significant issue. The repetitive use of phrases like 'That must be hard' and 'Thank you for sharing that' feels like filler rather than a genuine attempt to understand the patient's experience. Additionally, the therapist's focus on the physical sensations in the patient's body, while well-intentioned, can come across as overly simplistic or even robotic. The lack of subtext and failure to pick up on what the patient is not saying also detracts from the overall quality of the session."
+    },
+    {
+      "exp_id": "exp_0009",
+      "strategy_name": "Functional Analysis Loop (FAC) v1.0",
+      "hypothesis": "By shifting the focus from reflecting the *content* or *sensation* of the distress to analyzing the *function* or *utility* of the negative pattern (i.e., what the pattern helps the patient avoid or predict), we can achieve a higher score by making the intervention feel less like a structured technique and more like a genuine, shared discovery of the distress's underlying mechanisms, thereby minimizing the 'clich\u00e9' penalty.",
+      "score": 6.907,
+      "empathic": 5.0,
+      "reflective": 5.0,
+      "de_escalation": 4.8,
+      "audit_mult": 0.7,
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('Thank you for having the courage to venture that guess', 'That is profoundly honest'), which dilute the therapeutic value of the session. Additionally, the Therapist's mirroring technique is too repetitive and lacks insight, often simply parroting back the patient's words without adding meaningful depth or understanding."
+    },
+    {
+      "exp_id": "exp_0010",
+      "strategy_name": "Precision-Guided BA-PCT Integration v3.0",
+      "hypothesis": "By strictly limiting reflective language to highly specific, *observable, non-abstract* details of the patient's reported physical state or actions (BA/Somatic), and immediately pivoting any validation phase into a concrete, low-stakes, self-compassion 'experiment' (BA), we can maintain high alliance and clinical depth while eliminating the generic, clich\u00e9-ridden language that has consistently plagued previous attempts.",
+      "score": 3.813,
+      "empathic": 4.5,
+      "reflective": 5.0,
+      "de_escalation": 4.8,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly formulaic and lack genuine engagement. The use of phrases like 'Thank you for sharing that' and 'I hear the friction in your voice when...' feel like robotic filler rather than authentic attempts to understand the patient's experience. Additionally, the therapist's focus on identifying and labeling the patient's physical tension (the 'knot at the base of the skull') comes across as overly analytical and misses the opportunity for deeper emotional exploration."
+    },
+    {
+      "exp_id": "exp_0011",
+      "strategy_name": "Functional Process Inquiry (FPI) v1.1",
+      "hypothesis": "By replacing generalized 'feeling' reflections with highly specific, functional, and 'utility-seeking' reflections (i.e., analyzing what the distress *prevents* the patient from doing or *alerts* them to), we can maintain high depth and alliance while structuring the inquiry in a way that forces the language to be genuinely investigative, thereby minimizing the clich\u00e9 penalty and maximizing the perceived insight.",
+      "score": 6.907,
+      "empathic": 5.0,
+      "reflective": 5.0,
+      "de_escalation": 4.8,
+      "audit_mult": 0.7,
+      "audit_rationale": "Penalty applied because: The Therapist's language is overly complex and formulaic, with too many abstract concepts and jargon-heavy phrases. While the Therapist does attempt to engage the User in a meaningful way, the tone often feels more like a lecture than a genuine conversation. Additionally, the Therapist frequently uses vague platitudes ('What good does all that thinking do?') instead of actively listening and responding to the User's concerns."
+    },
+    {
+      "exp_id": "exp_0012",
+      "strategy_name": "Somatic Evidence & Pattern-Breaking Bridge v1.0",
+      "hypothesis": "By exclusively using highly specific, embodied, and present-tense reflection (ACT/PCT) to build rapport, and then introducing the challenge not as a 'thought pattern' but as a simple, evidence-gathering process ('What did you do differently last time?'), we can maximize the measurable clinical delta by making the intervention feel like a common-sense shared discovery rather than a structured therapeutic technique, thereby avoiding the perceived 'lecturing' or 'abstract' penalty.",
+      "score": 3.947,
+      "empathic": 5.0,
+      "reflective": 5.0,
+      "de_escalation": 4.8,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('It takes immense courage', 'That must be hard', etc.) instead of genuine engagement and insight. Additionally, the Therapist frequently mirrors the patient's words without adding any meaningful new perspectives or connections."
     }
   ],
   "best_score": 6.907
