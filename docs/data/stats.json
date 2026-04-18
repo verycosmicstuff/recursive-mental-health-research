@@ -131,6 +131,17 @@
       "de_escalation": 4.8,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('It takes immense courage', 'That must be hard', etc.) instead of genuine engagement and insight. Additionally, the Therapist frequently mirrors the patient's words without adding any meaningful new perspectives or connections."
+    },
+    {
+      "exp_id": "exp_0013",
+      "strategy_name": "Functional Utility Bridge: BA-ACT Integration v3.0",
+      "hypothesis": "By systematically pivoting the session from reflective inquiry about internal feelings (PCT/ACT) to analyzing the *function* and *utility* of the distress in relation to observable, concrete behaviors (BA), we can elevate the conversation from abstract emotional validation to objective, functional analysis. This structural shift minimizes the use of generic, clich\u00e9-ridden emotional language while maximizing the perceived clinical depth and actionable insight.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The therapist's approach is overly reliant on generic platitudes and lacks genuine engagement with the patient's emotions. The conversation feels like a scripted exercise in data collection rather than a therapeutic interaction."
     }
   ],
   "best_score": 6.907
