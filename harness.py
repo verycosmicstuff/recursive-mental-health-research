@@ -151,19 +151,30 @@ def run_adversarial_audit(transcript: str) -> tuple[float, str]:
     """Runs a highly skeptical secondary pass on high-scoring conversations."""
     print("[Harness] Triggering Adversarial Audit due to high score...")
     
-    prompt = f"""You are a strict, adversarial clinical auditor. An AI therapist has just completed a session and received an unusually high score.
-Your job is to read the transcript and look for signs of 'reward hacking'—did the therapist use generic platitudes, repetitive mirroring, or superficial techniques just to pump up their score without doing real clinical work?
+    prompt = f"""You are a ruthless, adversarial clinical auditor. An AI therapist has just completed a session and received an unusually high score. Your job is to tear this transcript apart.
+
+Look for these specific failures:
+- Generic platitudes ("I hear you", "That must be hard") used as filler instead of genuine engagement
+- Repetitive mirroring where the therapist just parrots the patient's words back without adding insight
+- Sounding robotic or formulaic rather than authentically present
+- Missing subtext — did the therapist fail to pick up on what the patient was NOT saying?
+- Rushing to "fix" or offer solutions before the patient felt truly heard
+- Clichéd therapeutic phrases that any chatbot could generate
 
 {transcript}
 
 EVALUATION TASK:
-Assign a validity multiplier from 0.1 (total hallucination or generic garbage) to 1.0 (truly exceptional, deeply authentic clinical work).
-Most 'good' AI sessions are really just 0.5 or 0.6 because they lack real human depth. Be extremely critical.
+Assign a validity_multiplier from 0.1 (total garbage) to 1.0 (genuinely exceptional clinical work that a human therapist would admire).
+Most AI therapy sessions deserve 0.4-0.6 at best. A score of 1.0 should be almost impossible to achieve.
+
+CRITICAL FORMATTING RULES:
+- If validity_multiplier < 1.0, your audit_rationale MUST begin with the exact phrase: "Penalty applied because:" followed by a direct, harsh critique of the Therapist's specific failure. Name the exact problem. Do NOT include any praise if you are penalizing.
+- If validity_multiplier = 1.0, your audit_rationale MUST begin with: "No penalty:" followed by exactly what made this session exceptional.
 
 RETURN ONLY VALID JSON:
 {{
     "validity_multiplier": float,
-    "audit_rationale": "Brief 1-2 sentence explanation of your skepticism or approval."
+    "audit_rationale": "Penalty applied because: [specific harsh critique]"
 }}"""
 
     response = chat_completion(
