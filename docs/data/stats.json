@@ -32,6 +32,28 @@
       "de_escalation": 4.8,
       "audit_mult": 0.7,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add genuine insight or depth to the conversation. The use of phrases like 'It sounds like...' and 'You are describing a state where...' becomes formulaic and robotic, rather than authentically present. Additionally, the therapist rushes to offer solutions and interpretations without fully exploring the patient's emotions and experiences."
+    },
+    {
+      "exp_id": "exp_0004",
+      "strategy_name": "Socratic Reflection & Validation Blend v1.1",
+      "hypothesis": "By prioritizing deep, specific, and non-abstract Socratic reflection (reflecting the *content* and *logic* of the patient's narrative) as the primary tool in the first half of the session, we can maintain high alliance scores (addressing the 'clich\u00e9' penalty) and naturally transition to a gentle, evidence-based Socratic challenge (CBT) when the patient is most open, maximizing measurable clinical change without sounding scripted.",
+      "score": 6.673,
+      "empathic": 4.5,
+      "reflective": 5.0,
+      "de_escalation": 4.8,
+      "audit_mult": 0.7,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9d therapeutic phrases, such as 'It sounds like...' and 'Please know that...'. These filler statements do not add genuine insight or engagement to the conversation. Additionally, the therapist's mirroring of the patient's words is too repetitive and lacks depth, failing to pick up on subtle subtext and nuances in the patient's language."
+    },
+    {
+      "exp_id": "exp_0005",
+      "strategy_name": "ACT-Informed PCT: Values-Guided Defusion",
+      "hypothesis": "By reframing the therapeutic relationship around the patient's core values (PCT) and using ACT's defusion techniques\u2014which focus on *observing* the thought rather than *challenging* it\u2014we can maintain high levels of deep reflection and alliance while circumventing the 'clich\u00e9' penalty by speaking about the *process* of the thought rather than its *content*. This should boost scores by making the interaction feel more genuinely reflective and less like a structured exercise.",
+      "score": 5.72,
+      "empathic": 4.5,
+      "reflective": 5.0,
+      "de_escalation": 4.8,
+      "audit_mult": 0.6,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('It takes a tremendous amount of courage', 'That sense of having to carry an unsustainable load'), which dilute the impact of their insights. Additionally, the therapist frequently asks open-ended questions that are more like prompts for the patient to continue talking rather than genuine attempts to understand their experiences."
     }
   ],
   "best_score": 6.673
