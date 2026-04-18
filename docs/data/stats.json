@@ -1,0 +1,38 @@
+{
+  "experiments": [
+    {
+      "exp_id": "exp_0001",
+      "strategy_name": "PCT-to-CBT Bridge v3.0",
+      "hypothesis": "By maintaining the high-alliance, deep validation structure of PCT for the first half of the session, and then introducing a carefully scaffolded, gentle CBT challenge (e.g., identifying one automatic negative thought) only when the patient shows emotional stability or curiosity, we can maximize both alliance and clinical change (PHQ-9 delta).",
+      "score": 3.813,
+      "empathic": 4.5,
+      "reflective": 5.0,
+      "de_escalation": 4.8,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9d phrases, such as 'I hear you', 'That must be hard', and 'It sounds like...'. These filler statements lack genuine engagement and fail to provide meaningful insights or new perspectives. Additionally, the Therapist frequently mirrors the patient's words without adding any significant value or depth. The overall tone is robotic and formulaic, rather than authentically present."
+    },
+    {
+      "exp_id": "exp_0002",
+      "strategy_name": "Integrated Defusion-PCT v4.0",
+      "hypothesis": "By introducing ACT's concept of 'defusion' (treating thoughts as passing mental events rather than absolute truths) immediately following deep PCT validation, but framing it through the lens of shared curiosity and non-judgmental observation, we can achieve higher engagement and alliance scores while making the subsequent CBT challenge feel natural and less directive.",
+      "score": 4.767,
+      "empathic": 4.5,
+      "reflective": 5.0,
+      "de_escalation": 4.8,
+      "audit_mult": 0.5,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9s, such as 'It takes immense energy and a significant act of courage just to show up when you feel like you're being pulled under by the sheer weight of anxiety and external demands' or 'You are in a place of deep distress, where the familiar anchors of coping have failed, and you are questioning your own value simply because you are hurting so much.' These phrases lack genuine engagement and instead sound like a formulaic script. The therapist also fails to pick up on subtext and misses opportunities to explore the patient's underlying emotions."
+    },
+    {
+      "exp_id": "exp_0003",
+      "strategy_name": "Socratic Reflection & Validation Blend v1.1",
+      "hypothesis": "By prioritizing deep, specific, and non-abstract Socratic reflection (reflecting the *content* and *logic* of the patient's narrative) as the primary tool in the first half of the session, we can maintain high alliance scores (addressing the 'clich\u00e9' penalty) and naturally transition to a gentle, evidence-based Socratic challenge (CBT) when the patient is most open, maximizing measurable clinical change without sounding scripted.",
+      "score": 6.673,
+      "empathic": 4.5,
+      "reflective": 5.0,
+      "de_escalation": 4.8,
+      "audit_mult": 0.7,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add genuine insight or depth to the conversation. The use of phrases like 'It sounds like...' and 'You are describing a state where...' becomes formulaic and robotic, rather than authentically present. Additionally, the therapist rushes to offer solutions and interpretations without fully exploring the patient's emotions and experiences."
+    }
+  ],
+  "best_score": 6.673
+}

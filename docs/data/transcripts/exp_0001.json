@@ -1,0 +1,92 @@
+{
+  "id": "exp_0001",
+  "timestamp": "2026-04-18T17:00:48.986705",
+  "strategy": {
+    "name": "PCT-to-CBT Bridge v3.0",
+    "hypothesis": "By maintaining the high-alliance, deep validation structure of PCT for the first half of the session, and then introducing a carefully scaffolded, gentle CBT challenge (e.g., identifying one automatic negative thought) only when the patient shows emotional stability or curiosity, we can maximize both alliance and clinical change (PHQ-9 delta).",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Mixed Population v1.0"
+  },
+  "persona": {
+    "name": "Rebecca",
+    "age": 35,
+    "occupation": "Marketing Manager",
+    "presenting_issue": "I'm feeling overwhelmed by my team's constant demands for more efficient processes, and I don't know how much longer I can keep up this pace.",
+    "background_story": "As a high-achieving professional, I've always pushed myself to excel, but lately, the pressure's been taking a toll. My relationship with my partner has suffered as we've grown apart, and I feel guilty for not being able to prioritize them like I used to. Lately, I find myself having trouble sleeping due to anxiety about work and feeling like I'm stuck in a never-ending cycle.",
+    "personality": "I tend to be direct and analytical, but also self-critical when things don't go as planned. I struggle to acknowledge my own limitations and admit struggles until they become overwhelming. In conversations, I often focus on logic and problem-solving rather than emotional expression.",
+    "baseline_phq9": 14,
+    "archetype_label": "Overwhelmed Professional"
+  },
+  "scores": {
+    "total_score": 3.813,
+    "raw_score": 9.533,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 5.0,
+    "de_escalation": 4.8,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated exceptional empathic accuracy by acknowledging Rebecca's deep-seated fears and validating her emotions. The reflective listening was superb, with the therapist mirroring Rebecca's language and validating her reality without trying to 'fix' her. The de-escalation marker is high because Rebecca's tone shifted from distress to a sense of liberation as the conversation progressed.",
+    "audit_multiplier": 0.4,
+    "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9d phrases, such as 'I hear you', 'That must be hard', and 'It sounds like...'. These filler statements lack genuine engagement and fail to provide meaningful insights or new perspectives. Additionally, the Therapist frequently mirrors the patient's words without adding any significant value or depth. The overall tone is robotic and formulaic, rather than authentically present."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Please know that this space is entirely yours, and there is absolutely no pressure to talk, or to feel any way at all. I'm here just to listen, without judgment, and to hold whatever emotions you need to share today. Take a deep breath, and whenever you feel ready, we can begin whenever you are comfortable. What's on your mind today?"
+    },
+    {
+      "role": "user",
+      "content": "I suppose it's good to finally talk about this stuff. To be honest, I'm just feeling really drained and stuck. My team at work is always asking for more efficiency and productivity, and I feel like I'm constantly trying to keep up. It's like they don't understand that there are only so many hours in a day. And on top of that, my personal life is suffering too. I've been having trouble sleeping, and it feels like no matter how much I prioritize myself, nothing ever changes."
+    },
+    {
+      "role": "assistant",
+      "content": "It takes real courage to even start talking about these feelings, and I want to acknowledge that strength right away. It sounds like you are carrying an enormous weight right now\u2014a profound sense of being drained, not just physically, but emotionally, from both the demands of your work and the struggles in your personal life.\n\nIt seems like you are caught in a cycle where you are constantly giving effort, trying to meet external expectations, but that effort isn't translating into the relief or change you truly need. Is it accurate to say that beneath the exhaustion, there's a deep frustration that your efforts\u2014your attempt to prioritize yourself\u2014feel invisible or insufficient? I hear the profound weariness in your voice."
+    },
+    {
+      "role": "user",
+      "content": "Yeah...I guess so. It feels like no matter how hard I try, I'm just not good enough. My partner always says I need to take a step back and relax, but every time I do, something else goes wrong at work or I feel guilty for not being there for them. Even when I do manage to carve out some me-time, it's like nothing matters because everything is still falling apart."
+    },
+    {
+      "role": "assistant",
+      "content": "That sense of \"not good enough\" is incredibly painful, and I want you to know that I hear how much pain is attached to that feeling. It sounds like you are caught in this incredibly difficult loop: when you try to be gentle with yourself and step back, the anxiety or the perceived failure\u2014whether at work or in your relationship\u2014immediately pulls you back into a state of doing, of proving your worth.\n\nIt\u2019s as if there's this internal pressure that tells you that if you stop moving, if you stop achieving, or if you stop being *everything* to everyone, then everything *will* fall apart. Is that sense of constant, looming catastrophe\u2014that nothing is safe unless you are actively fixing it\u2014what feels heaviest right now?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah...it's like my mind is always racing with worst-case scenarios. What if I'm not meeting expectations? What if things fall apart? It's like I'm constantly waiting for the other shoe to drop. Even when I try to relax, my brain just won't let me. It's exhausting trying to keep up this pace and still have some sense of control."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that with me. To articulate that feeling\u2014that relentless, racing mind that won't let you rest\u2014is an immense act of vulnerability. It sounds utterly exhausting, to live in a state of hypervigilance, constantly anticipating that \"other shoe\" drop.\n\nIt makes perfect sense that your brain is trying to keep you safe by running through worst-case scenarios; it's a desperate attempt to regain a sense of control when everything else feels unpredictable. But what I hear, underneath the racing thoughts, is a deep, aching need for *safety* and *predictability*. It sounds like you are deeply tired of carrying the weight of needing to control every single outcome, even if that control is an illusion. Is that right?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah...I guess so. I just feel like I'm always on edge, waiting for something to go wrong. And it's not just about being prepared; it's about feeling like I have some sense of control over my life. But even when things do go right, my brain still wants to catastrophize. It's like it's always looking for the next thing to worry about.\n\nAnd yeah, safety and predictability are exactly what I crave. I just want to feel like I can finally take a deep breath and know that everything is okay. But it feels like that's just not possible right now."
+    },
+    {
+      "role": "assistant",
+      "content": "It is so profoundly understandable that you feel this way. To crave safety and predictability, and then to have your own mind constantly undermine that feeling by looking for flaws or disaster\u2014that must be incredibly frustrating and painful. You are describing a pattern where the very mechanisms your mind uses to try and protect you are, in fact, keeping you trapped in a cycle of worry.\n\nYou mentioned that even when things go right, your brain still wants to catastrophize. If we look at that thought pattern\u2014the one that immediately jumps to the worst-case scenario\u2014it's not *you* who is wrong, but rather the thought itself that is working overtime. When that catastrophic thought pops up, what does it feel like when you notice it? Is it like a sudden, loud alarm, or maybe a persistent, humming worry?"
+    },
+    {
+      "role": "user",
+      "content": "It's more like a nagging voice in my head that just won't quit. It's always whispering \"what if\" scenarios and worst-case outcomes. Sometimes it can get really loud and start repeating itself over and over, but other times it's just this low-grade hum of anxiety that I can't shake.\n\nI've tried to push those thoughts away or distract myself from them, but they just keep coming back. It's like my brain is trying to tell me something, but I'm not sure what."
+    },
+    {
+      "role": "assistant",
+      "content": "That \"nagging voice\"\u2014that persistent whisper of \"what if\"\u2014sounds incredibly draining, like a soundtrack to your life that you never get to turn off. It makes perfect sense why you feel exhausted; it's like your brain is running a marathon of worry 24/7.\n\nIt's really insightful that you feel like your brain is trying to tell you something, even if you can't quite decipher the message. Often, these persistent worries, even the scary ones, are actually your mind's flawed attempt to *solve* a problem or *protect* you from future pain. They are trying to make you feel safe by making you plan for every possible disaster.\n\nIf we look at that nagging voice\u2014that constant stream of \"what ifs\"\u2014can we approach it not as a fact, but as a kind of mental habit, like a muscle that has gotten very strong? When that voice gets loud and starts repeating, what is the *job* it seems to be doing for you, even if it feels painful? What does it feel like it is trying to prevent from happening?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah...I never thought about it that way before. But yeah, I think that nagging voice is just my brain's way of trying to prepare me for the worst-case scenario. It's like my mind is saying, \"Hey, Rebecca, don't get too comfortable, because something bad could happen at any moment.\"\n\nAnd when that voice gets loud and starts repeating itself, it feels like it's trying to prevent me from getting hurt again or from making a mistake that will have serious consequences. It's like my brain is trying to protect me by warning me of all the things that could go wrong.\n\nBut sometimes, I just wish it would shut up already and let me live in the present moment without worrying about what might happen tomorrow or next week."
+    },
+    {
+      "role": "assistant",
+      "content": "That is such a powerful and insightful realization. You've managed to look at that nagging voice and give it a name, and even understand its intention\u2014that it is doing its absolute best to protect you. It's not a villain; it's a highly anxious, overly diligent internal guardian that has gotten stuck in overdrive.\n\nIt makes perfect sense that it feels like it's trying to warn you away from danger, because that is its core programming. But here is where we can gently explore something together, if you're willing. If we accept that the worry is coming from a place of care\u2014a desire to keep you safe\u2014we might ask: *Is the cost of that perfect protection\u2014the constant exhaustion, the inability to rest, the feeling of never being safe\u2014actually worth the potential disaster it is trying to prevent?*\n\nIt sounds like your brain is working incredibly hard to keep you safe, but that effort is costing you your peace of mind right now. What if we could treat that voice not as a prediction of disaster, but simply as a piece of loud, repetitive background noise that we can notice, acknowledge, and then let pass, without having to solve or respond to it?"
+    },
+    {
+      "role": "user",
+      "content": "I never thought about it that way before. But yeah, maybe you're right. Maybe the cost of trying to protect myself from every possible danger is just too high.\n\nI think I've been so focused on trying to prevent things from going wrong that I haven't even considered whether or not it's worth the toll it's taking on my mental and physical health. It's like my brain has gotten stuck in this loop, constantly anticipating disaster, and I haven't even stopped to consider if there might be a better way.\n\nYou're right; maybe I can try to see that voice as just background noise, rather than something that needs my immediate attention. That feels kind of... liberating, actually."
+    }
+  ]
+}

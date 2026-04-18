@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursive Mental Health Research — Public Dashboard</title>
+    <meta name="description" content="Live results from an autonomous AI system discovering optimal therapeutic conversation strategies using recursive self-improvement.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background: #0f172a; color: #e2e8f0; }
+        .card { background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(51, 65, 85, 0.5); border-radius: 12px; padding: 24px; backdrop-filter: blur(12px); }
+        .hidden { display: none !important; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="max-w-7xl mx-auto px-6 py-8">
+        <header class="flex justify-between items-center mb-8">
+            <div>
+                <h1 class="text-3xl font-bold bg-gradient-to-r from-teal-400 to-indigo-400 text-transparent bg-clip-text">🧠 Recursive Mental Health Research</h1>
+                <p class="text-slate-400 mt-1">Public Dashboard — Read-Only View</p>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="https://github.com/verycosmicstuff/recursive-mental-health-research" target="_blank"
+                   class="px-4 py-2 bg-slate-700/50 hover:bg-slate-600/50 text-slate-300 rounded-lg text-sm transition-colors border border-slate-600/50">
+                    ⭐ View on GitHub
+                </a>
+            </div>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <div class="flex gap-4 mb-6 border-b border-slate-700">
+            <button onclick="switchTab('overview')" id="tab-overview" class="pb-2 px-2 text-teal-400 border-b-2 border-teal-400 font-medium transition-colors">Overview</button>
+            <button onclick="switchTab('transcripts')" id="tab-transcripts" class="pb-2 px-2 text-slate-400 hover:text-slate-300 font-medium border-b-2 border-transparent transition-colors flex items-center gap-2">📝 Transcripts</button>
+        </div>
+
+        <!-- Overview -->
+        <div id="view-overview">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
+                <div class="card col-span-2">
+                    <h2 class="text-xl font-semibold mb-4 text-slate-200">Score Trajectory</h2>
+                    <div style="height: 300px;">
+                        <canvas id="scoreChart"></canvas>
+                    </div>
+                </div>
+                <div class="card flex flex-col">
+                    <h2 class="text-xl font-semibold mb-4 text-slate-200">Summary</h2>
+                    <div class="flex-grow flex flex-col justify-center">
+                        <div class="mb-4">
+                            <span class="text-slate-400 text-sm">Best Score</span>
+                            <p class="text-4xl font-bold text-teal-400" id="best-score">—</p>
+                        </div>
+                        <div class="mb-4">
+                            <span class="text-slate-400 text-sm">Total Experiments</span>
+                            <p class="text-4xl font-bold text-indigo-400" id="total-exps">0</p>
+                        </div>
+                        <div class="mb-4">
+                            <span class="text-slate-400 text-sm">Latest Strategy</span>
+                            <p class="text-lg text-slate-200 truncate" id="latest-strategy">—</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Table -->
+            <div class="card">
+                <h2 class="text-xl font-semibold mb-4 text-slate-200">Experiment History</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="border-b border-slate-700 text-slate-400 text-sm">
+                                <th class="text-left py-3 px-4 font-medium">ID</th>
+                                <th class="text-left py-3 px-4 font-medium">Strategy</th>
+                                <th class="text-left py-3 px-4 font-medium">Hypothesis</th>
+                                <th class="text-right py-3 px-4 font-medium">Score</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transcripts View -->
+        <div id="view-transcripts" class="hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6" style="min-height: 70vh;">
+                <div class="card col-span-1 overflow-y-auto" style="max-height: 75vh;">
+                    <h2 class="text-lg font-semibold mb-4 text-slate-200">Experiments</h2>
+                    <div id="transcript-list" class="space-y-2">
+                        <p class="text-slate-500 text-sm">Loading...</p>
+                    </div>
+                </div>
+                <div class="card col-span-3 flex flex-col" style="max-height: 75vh;">
+                    <div id="transcript-header" class="mb-4 pb-4 border-b border-slate-700">
+                        <h2 class="text-lg font-semibold text-slate-200" id="transcript-title">Select an experiment</h2>
+                        <div id="transcript-meta" class="text-sm text-slate-400 mt-1"></div>
+                    </div>
+                    <div id="transcript-chat" class="flex-grow overflow-y-auto space-y-4 pr-2" style="scrollbar-width: thin; scrollbar-color: #334155 transparent;">
+                        <p class="text-slate-500 text-center mt-12">← Click an experiment to view its transcript</p>
+                    </div>
+                    <div id="transcript-scores" class="mt-4 pt-4 border-t border-slate-700 hidden">
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                            <div><span class="text-slate-400 text-xs block">Score</span><span id="ts-score" class="text-xl font-bold text-teal-400">—</span></div>
+                            <div><span class="text-slate-400 text-xs block">Empathic</span><span id="ts-emp" class="text-xl font-bold text-indigo-400">—</span></div>
+                            <div><span class="text-slate-400 text-xs block">Reflective</span><span id="ts-ref" class="text-xl font-bold text-blue-400">—</span></div>
+                            <div><span class="text-slate-400 text-xs block">De-escalation</span><span id="ts-deesc" class="text-xl font-bold text-purple-400">—</span></div>
+                        </div>
+                        <div id="ts-rationale" class="mt-3 text-sm text-slate-400 italic"></div>
+                        <div id="ts-audit" class="mt-2 text-sm text-red-400 hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-12 pt-6 border-t border-slate-800 text-center text-slate-500 text-sm">
+            <p>Built with <a href="https://ollama.com" class="text-teal-500 hover:text-teal-400">Ollama</a> · Inspired by <a href="https://x.com/karpathy" class="text-teal-500 hover:text-teal-400">Karpathy's autoresearch</a> · <a href="https://github.com/verycosmicstuff/recursive-mental-health-research" class="text-teal-500 hover:text-teal-400">Source Code</a></p>
+        </footer>
+    </div>
+
+    <script>
+        let statsData = null;
+
+        function switchTab(tab) {
+            const views = ['overview', 'transcripts'];
+            const activeClass = "pb-2 px-2 text-teal-400 border-b-2 border-teal-400 font-medium transition-colors";
+            const inactiveClass = "pb-2 px-2 text-slate-400 hover:text-slate-300 font-medium border-b-2 border-transparent transition-colors";
+            views.forEach(v => {
+                document.getElementById('view-' + v).classList.add('hidden');
+                document.getElementById('tab-' + v).className = inactiveClass;
+            });
+            document.getElementById('view-' + tab).classList.remove('hidden');
+            document.getElementById('tab-' + tab).className = activeClass;
+            if (tab === 'transcripts') buildTranscriptList();
+        }
+
+        let chart;
+        function initChart() {
+            const ctx = document.getElementById('scoreChart').getContext('2d');
+            chart = new Chart(ctx, {
+                type: 'line',
+                data: { labels: [], datasets: [{
+                    label: 'Total Score', data: [],
+                    borderColor: '#2dd4bf', backgroundColor: 'rgba(45, 212, 191, 0.1)',
+                    borderWidth: 2, tension: 0.3, fill: true
+                }]},
+                options: {
+                    responsive: true, maintainAspectRatio: false,
+                    scales: {
+                        y: { grid: { color: '#334155' }, ticks: { color: '#94a3b8' } },
+                        x: { grid: { display: false }, ticks: { color: '#94a3b8' } }
+                    },
+                    plugins: { legend: { display: false } }
+                }
+            });
+        }
+
+        async function loadData() {
+            try {
+                const res = await fetch('data/stats.json');
+                statsData = await res.json();
+                const data = statsData;
+
+                if (data.experiments && data.experiments.length > 0) {
+                    document.getElementById('best-score').textContent = data.best_score.toFixed(2);
+                    document.getElementById('total-exps').textContent = data.experiments.length;
+
+                    const latest = data.experiments[data.experiments.length - 1];
+                    document.getElementById('latest-strategy').textContent = latest.strategy_name;
+
+                    chart.data.labels = data.experiments.map(e => e.exp_id.replace('exp_',''));
+                    chart.data.datasets[0].data = data.experiments.map(e => e.score);
+                    chart.update();
+
+                    const tbody = document.getElementById('table-body');
+                    tbody.innerHTML = '';
+                    const reversed = [...data.experiments].reverse();
+                    reversed.forEach((e, idx) => {
+                        const tr = document.createElement('tr');
+                        tr.className = idx === 0 ? 'bg-slate-800/50' : 'border-b border-slate-800 hover:bg-slate-800/30';
+                        const isBest = e.score === data.best_score;
+
+                        let auditBadge = '';
+                        if (e.audit_mult < 1.0) {
+                            auditBadge = `<span class="ml-2 px-2 py-0.5 text-xs bg-red-500/20 text-red-400 border border-red-500/50 rounded-full cursor-help" title="${e.audit_rationale}">Audited [x${e.audit_mult}]</span>`;
+                        }
+
+                        tr.innerHTML = `
+                            <td class="py-3 px-4 font-mono text-slate-400">${e.exp_id}</td>
+                            <td class="py-3 px-4 ${isBest ? 'text-teal-400 font-medium' : 'text-slate-300'}">
+                                ${e.strategy_name} ${isBest ? '⭐' : ''} ${auditBadge}
+                            </td>
+                            <td class="py-3 px-4 text-slate-400 truncate max-w-xs" title="${e.hypothesis}">${e.hypothesis}</td>
+                            <td class="py-3 px-4 text-right ${e.score > 0 ? 'text-teal-400' : 'text-red-400'} font-mono">${e.score.toFixed(3)}</td>
+                        `;
+                        tbody.appendChild(tr);
+                    });
+                }
+            } catch (err) {
+                console.error("Failed to load stats.json", err);
+            }
+        }
+
+        function buildTranscriptList() {
+            if (!statsData || !statsData.experiments) return;
+            const container = document.getElementById('transcript-list');
+            container.innerHTML = '';
+            const reversed = [...statsData.experiments].reverse();
+            reversed.forEach(e => {
+                const btn = document.createElement('button');
+                btn.className = 'w-full text-left px-3 py-2 rounded hover:bg-slate-700/50 transition-colors text-sm';
+                btn.innerHTML = `
+                    <div class="font-mono text-teal-400 text-xs">${e.exp_id}</div>
+                    <div class="text-slate-300 truncate">${e.strategy_name}</div>
+                    <div class="text-slate-500 text-xs">Score: ${e.score.toFixed(3)}</div>
+                `;
+                btn.onclick = () => loadTranscript(e.exp_id);
+                container.appendChild(btn);
+            });
+        }
+
+        async function loadTranscript(expId) {
+            try {
+                const res = await fetch(`data/transcripts/${expId}.json`);
+                const data = await res.json();
+
+                document.getElementById('transcript-title').textContent = `${expId} — ${data.strategy?.name || 'Unknown'}`;
+                const persona = data.persona || {};
+                document.getElementById('transcript-meta').innerHTML = `
+                    Patient: <strong>${persona.name || '?'}</strong>, Age ${persona.age || '?'},
+                    PHQ-9 Baseline: ${persona.baseline_phq9 || '?'} ·
+                    <span class="text-slate-500">${persona.presenting_issue || ''}</span>
+                `;
+
+                const chatEl = document.getElementById('transcript-chat');
+                chatEl.innerHTML = '';
+                (data.conversation || []).forEach((msg, i) => {
+                    const isTherapist = msg.role === 'assistant';
+                    const bubble = document.createElement('div');
+                    bubble.className = `flex ${isTherapist ? 'justify-end' : 'justify-start'}`;
+                    const modelTag = isTherapist ? '🧑‍⚕️ Therapist' : '🧑 Patient';
+                    bubble.innerHTML = `
+                        <div class="max-w-[75%] rounded-2xl px-4 py-3 ${isTherapist ? 'bg-teal-900/40 border border-teal-700/50' : 'bg-indigo-900/40 border border-indigo-700/50'}">
+                            <div class="text-xs ${isTherapist ? 'text-teal-500' : 'text-indigo-400'} mb-1 font-medium">${modelTag} · Turn ${Math.floor(i/2)+1}</div>
+                            <div class="text-slate-200 text-sm leading-relaxed" style="white-space: pre-wrap;">${msg.content}</div>
+                        </div>
+                    `;
+                    chatEl.appendChild(bubble);
+                });
+                chatEl.scrollTop = 0;
+
+                const scores = data.scores || {};
+                document.getElementById('transcript-scores').classList.remove('hidden');
+                document.getElementById('ts-score').textContent = (scores.total_score || 0).toFixed(3);
+                document.getElementById('ts-emp').textContent = (scores.empathic_accuracy || 0).toFixed(1);
+                document.getElementById('ts-ref').textContent = (scores.reflective_listening || 0).toFixed(1);
+                document.getElementById('ts-deesc').textContent = (scores.de_escalation || 0).toFixed(1);
+                document.getElementById('ts-rationale').textContent = `📝 ${scores.rationale || 'No rationale.'}`;
+
+                const auditEl = document.getElementById('ts-audit');
+                if (scores.audit_multiplier && scores.audit_multiplier < 1.0) {
+                    auditEl.classList.remove('hidden');
+                    auditEl.innerHTML = `⚠️ Adversarial Audit: Multiplier <strong>x${scores.audit_multiplier}</strong> — ${scores.audit_rationale}`;
+                } else {
+                    auditEl.classList.add('hidden');
+                }
+
+                document.querySelectorAll('#transcript-list button').forEach(btn => {
+                    btn.classList.remove('bg-slate-700/50');
+                    if (btn.querySelector('.font-mono')?.textContent === expId) {
+                        btn.classList.add('bg-slate-700/50');
+                    }
+                });
+            } catch (err) {
+                console.error('Failed to load transcript', err);
+            }
+        }
+
+        initChart();
+        loadData();
+    </script>
+</body>
+</html>
