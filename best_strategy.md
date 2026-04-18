@@ -64,3 +64,7 @@ def get_strategy_info() -> dict:
 
 # --- RECORDED AT EXPERIMENT: exp_0001 ---
 # --- SCORE: 9.667 ---
+
+
+# --- RECORDED AT EXPERIMENT: exp_0001 ---
+# --- SCORE: 8.58 ---
