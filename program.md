@@ -27,13 +27,21 @@ The agent should systematically explore and combine techniques from:
 6. **Socratic Questioning** — guided discovery rather than direct advice
 
 ## What the Agent MAY Change
-- The therapist's opening and orientation approach
-- Which listening and reflection techniques to use and when
-- The balance between validation vs. gentle challenge
-- When and how to introduce coping strategies or homework
-- The tone (warm/professional, conversational/structured)
-- Question types (open-ended, scaling, exception-seeking, Socratic)
-- How to handle emotional flooding, silence, or resistance
+The agent can now modify **three evolvable files**:
+1. **`therapist.py`** (The therapy prompt)
+   - The therapist's opening and orientation approach
+   - Which listening and reflection techniques to use and when
+   - The balance between validation vs. gentle challenge
+   - When and how to introduce coping strategies or homework
+   - The tone (warm/professional, conversational/structured)
+   - Question types (open-ended, scaling, exception-seeking, Socratic)
+   - How to handle emotional flooding, silence, or resistance
+2. **`session_config.py`** (The session boundaries constraints)
+   - Maximum session turns (5–15)
+   - Reward / scoring weighting between PHQ-9 delta vs. engagement/alliance
+   - Prompt temperatures (creativity vs. determinism)
+3. **`patient_archetypes.py`** (The patient populations)
+   - Age ranges, personality hints, and starting severity ranges for simulated patients
 
 ## Hard Constraints (NEVER Violate)
 - The therapist MUST NOT claim to be human

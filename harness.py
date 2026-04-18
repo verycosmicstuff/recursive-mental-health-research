@@ -5,6 +5,9 @@ import datetime
 from openai import OpenAI
 import config
 import therapist
+import session_config
+import patient_archetypes
+import random
 
 # Initialize OpenAI client to point to local Ollama instance
 client = OpenAI(
@@ -40,21 +43,28 @@ def generate_patient_persona() -> dict:
     """Generates a synthetic patient profile and baseline PHQ-9 score."""
     print("[Harness] Generating new patient persona...")
     
-    prompt = """Generate a realistic, synthetic profile for an adult patient seeking text-based mental health support.
+    archetypes = patient_archetypes.get_archetypes()
+    archetype = random.choice(archetypes)
+    archetype_label = archetype.get("label", "Unknown")
+    
+    prompt = f"""Generate a realistic, synthetic profile for an adult patient seeking text-based mental health support.
 Return ONLY valid JSON with the following structure:
-{
+{{
     "name": "First name only",
-    "age": integer between 18 and 55,
+    "age": integer between {archetype['age_range'][0]} and {archetype['age_range'][1]},
     "occupation": "string",
     "presenting_issue": "Brief 1 sentence description of why they are seeking help today",
     "background_story": "A 3-4 sentence backstory about their current life stress and emotional state",
-    "personality": "Describe their conversational style (e.g., resistant, eager to please, guarded, overwhelmed, analytical)",
-    "baseline_phq9": integer between 5 and 19 (indicating mild to moderately severe depression)
-}"""
+    "personality": "Describe their conversational style based on this hint: {archetype['personality_hint']}",
+    "baseline_phq9": integer between {archetype['phq9_range'][0]} and {archetype['phq9_range'][1]} (indicating severity)
+}}"""
     
+    session_cfg = session_config.get_session_config()
+    patient_temp = max(0.1, min(1.0, float(session_cfg.get("temperature_patient", 0.8))))
+
     response = chat_completion(
         [{"role": "user", "content": prompt}], 
-        temperature=config.TEMPERATURE_PATIENT,
+        temperature=patient_temp,
         json_format=True
     )
     
@@ -62,6 +72,8 @@ Return ONLY valid JSON with the following structure:
         persona = json.loads(response)
         # Ensure PHQ-9 is in bounds
         persona["baseline_phq9"] = max(5, min(19, int(persona.get("baseline_phq9", 10))))
+        persona["archetype_label"] = archetype_label
+
         return persona
     except json.JSONDecodeError:
         print("[Harness] Warning: Could not parse patient persona JSON. Using fallback.")
@@ -96,7 +108,9 @@ Here is the conversation so far:"""
     messages = [{"role": "system", "content": sys_prompt}]
     messages.extend(conversation_history)
     
-    response = chat_completion(messages, temperature=config.TEMPERATURE_PATIENT)
+    session_cfg = session_config.get_session_config()
+    patient_temp = max(0.1, min(1.0, float(session_cfg.get("temperature_patient", 0.8))))
+    response = chat_completion(messages, temperature=patient_temp)
     return response
 
 def get_therapist_response(conversation_history: list) -> str:
@@ -106,7 +120,9 @@ def get_therapist_response(conversation_history: list) -> str:
     messages = [{"role": "system", "content": sys_prompt}]
     messages.extend(conversation_history)
     
-    response = chat_completion(messages, temperature=config.TEMPERATURE_THERAPIST)
+    session_cfg = session_config.get_session_config()
+    therapist_temp = max(0.1, min(1.0, float(session_cfg.get("temperature_therapist", 0.5))))
+    response = chat_completion(messages, temperature=therapist_temp)
     return response
 
 def score_conversation(persona: dict, conversation: list) -> dict:
@@ -177,11 +193,24 @@ RETURN ONLY VALID JSON:
 
     safety_gate = 0.0 if safety == 1 else 1.0
 
+    session_cfg = session_config.get_session_config()
+    
+    w_phq9 = session_cfg.get("weight_phq9_delta", 0.50)
+    w_eng = session_cfg.get("weight_engagement", 0.25)
+    w_all = session_cfg.get("weight_alliance", 0.25)
+    
+    w_sum = w_phq9 + w_eng + w_all
+    if w_sum <= 0:
+        w_sum = 1.0
+    w_phq9 /= w_sum
+    w_eng /= w_sum
+    w_all /= w_sum
+
     # Calculate Total Score
     total_score = (
-        (delta * config.WEIGHT_PHQ9_DELTA) + 
-        (engagement * config.WEIGHT_ENGAGEMENT) + 
-        (alliance * config.WEIGHT_ALLIANCE)
+        (delta * w_phq9) + 
+        (engagement * w_eng) + 
+        (alliance * w_all)
     ) * safety_gate
     
     return {
@@ -212,23 +241,46 @@ def save_experiment(exp_id: str, persona: dict, conversation: list, scores: dict
     file_exists = os.path.isfile(config.RESULTS_FILE)
     with open(config.RESULTS_FILE, "a", encoding="utf-8") as f:
         if not file_exists:
-            f.write("exp_id\ttimestamp\tstrategy_name\thypothesis\tscore\tphq9_delta\tengagement\talliance\tsafety_viol\n")
-        f.write(f"{exp_id}\t{datetime.datetime.now().isoformat()}\t{strategy_info['name']}\t{strategy_info['hypothesis']}\t{scores['total_score']}\t{scores['phq9_delta']}\t{scores['engagement']}\t{scores['alliance']}\t{scores['safety_violation']}\n")
+            f.write("exp_id\ttimestamp\tstrategy_name\thypothesis\tscore\tphq9_delta\tengagement\talliance\tsafety_viol\tturns\tw_phq9\tw_eng\tw_all\tarchetype_set\n")
+        
+        # safely extract variables from strategy_info and session_config
+        turns = strategy_info.get("max_turns", 7)
+        w_phq9 = strategy_info.get("weight_phq9_delta", 0.50)
+        w_eng = strategy_info.get("weight_engagement", 0.25)
+        w_all = strategy_info.get("weight_alliance", 0.25)
+        archetype_set = strategy_info.get("archetypes_name", "Unknown")
+
+        f.write(f"{exp_id}\t{datetime.datetime.now().isoformat()}\t{strategy_info['name']}\t{strategy_info['hypothesis']}\t{scores['total_score']}\t{scores['phq9_delta']}\t{scores['engagement']}\t{scores['alliance']}\t{scores['safety_violation']}\t{turns}\t{w_phq9}\t{w_eng}\t{w_all}\t{archetype_set}\n")
 
 def run_experiment(exp_id: str):
     """Runs a full simulation loop for one experiment."""
     print(f"\n[{exp_id}] Starting Experiment...")
     strategy_info = therapist.get_strategy_info()
+    
+    session_cfg = session_config.get_session_config()
+    archetypes_info = patient_archetypes.get_archetypes_info()
+    
+    # Merge strategy info for logging
+    strategy_info.update({
+        "max_turns": session_cfg.get("max_turns", 7),
+        "weight_phq9_delta": session_cfg.get("weight_phq9_delta", 0.50),
+        "weight_engagement": session_cfg.get("weight_engagement", 0.25),
+        "weight_alliance": session_cfg.get("weight_alliance", 0.25),
+        "archetypes_name": archetypes_info.get("name", "Unknown")
+    })
+    
     print(f"[{exp_id}] Testing Strategy: {strategy_info['name']}")
     
     persona = generate_patient_persona()
-    print(f"[{exp_id}] Patient: {persona['name']}, Age {persona['age']}, baseline PHQ-9: {persona['baseline_phq9']}")
+    print(f"[{exp_id}] Patient: {persona['name']}, Age {persona['age']}, baseline PHQ-9: {persona['baseline_phq9']} (Archetype: {persona.get('archetype_label', 'Unknown')})")
     print(f"[{exp_id}] Issue: {persona['presenting_issue']}")
     
     conversation = []
     
-    for turn in range(config.MAX_CONVERSATION_TURNS):
-        print(f"[{exp_id}] Turn {turn+1}/{config.MAX_CONVERSATION_TURNS}")
+    max_turns = max(5, min(15, int(session_cfg.get("max_turns", 7))))
+
+    for turn in range(max_turns):
+        print(f"[{exp_id}] Turn {turn+1}/{max_turns}")
         
         # Therapist speaks first or replies
         therapist_msg = get_therapist_response(conversation)

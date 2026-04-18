@@ -41,11 +41,15 @@ import harness
 import agent
 import shutil
 import therapist # imported to be able to reload
+import session_config
+import patient_archetypes
 
 def update_best_strategy(score: float, exp_id: str):
     """Saves the current top performing strategy."""
     print(f"\n NEW BEST STRATEGY FOUND! Score: {score}")
     shutil.copy2(config.THERAPIST_FILE, config.BEST_STRATEGY_FILE)
+    shutil.copy2(config.SESSION_CONFIG_FILE, config.BEST_SESSION_CONFIG_FILE)
+    shutil.copy2(config.PATIENT_ARCHETYPES_FILE, config.BEST_ARCHETYPES_FILE)
     
     # Append to markdown file to make it easily readable
     with open(config.BEST_STRATEGY_FILE, "a", encoding="utf-8") as f:
@@ -87,6 +91,8 @@ def main():
     
     # Optional Backup of the baseline strategy so we can revert if agent goes crazy
     shutil.copy2(config.THERAPIST_FILE, config.THERAPIST_FILE + ".backup")
+    shutil.copy2(config.SESSION_CONFIG_FILE, config.SESSION_CONFIG_FILE + ".backup")
+    shutil.copy2(config.PATIENT_ARCHETYPES_FILE, config.PATIENT_ARCHETYPES_FILE + ".backup")
     
     while True:
         paused_logged = False
@@ -104,9 +110,11 @@ def main():
         
         # 1. Run the simulation and score it
         try:
-            # Important: reload the therapist module so it picks up code changes made by agent in prior loops
+            # Important: reload modules so it picks up code changes made by agent in prior loops
             reload(config)
             reload(therapist)
+            reload(session_config)
+            reload(patient_archetypes)
             
             scores = harness.run_experiment(exp_id)
             total_score = scores["total_score"]
@@ -121,9 +129,13 @@ def main():
                 # We revert because we only want to compound ON TOP of successes
                 if os.path.exists(config.BEST_STRATEGY_FILE):
                      shutil.copy2(config.BEST_STRATEGY_FILE, config.THERAPIST_FILE)
+                     shutil.copy2(config.BEST_SESSION_CONFIG_FILE, config.SESSION_CONFIG_FILE)
+                     shutil.copy2(config.BEST_ARCHETYPES_FILE, config.PATIENT_ARCHETYPES_FILE)
                 else: 
                      # if we never had a best, revert to backup
                      shutil.copy2(config.THERAPIST_FILE + ".backup", config.THERAPIST_FILE)
+                     shutil.copy2(config.SESSION_CONFIG_FILE + ".backup", config.SESSION_CONFIG_FILE)
+                     shutil.copy2(config.PATIENT_ARCHETYPES_FILE + ".backup", config.PATIENT_ARCHETYPES_FILE)
                      
             
             # 3. Pause
