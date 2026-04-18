@@ -382,9 +382,24 @@
                 if (commits && commits.length > 0) {
                     matchedCommit = commits.find(c => {
                         let found = false;
+                        // Use a 30-char excerpt of the hypothesis to safely identify the correct commit where it was born
+                        const hypExcerpt = e.hypothesis ? e.hypothesis.substring(0, 30).trim() : 'IMPOSSIBLE_STRING';
+                        
+                        // Check if the commit message explicitly contains the exp_id (since Exp 13+)
+                        if (c.message && c.message.includes(e.exp_id)) {
+                            return true;
+                        }
+                        
                         c.hunks.forEach(h => {
                             h.lines.forEach(l => {
-                                if (l.type === 'add' && l.content.includes(e.strategy_name)) found = true;
+                                // If the hypothesis was added in this diff
+                                if (l.type === 'add' && l.content.includes(hypExcerpt)) {
+                                    found = true;
+                                }
+                                // If the name itself was changed/added in this diff
+                                if (l.type === 'add' && l.content.includes(e.strategy_name)) {
+                                    found = true;
+                                }
                             });
                         });
                         return found;
@@ -412,6 +427,12 @@
                                 `).join('')}
                             </div>
                         </details>
+                    `;
+                } else {
+                    diffHtml = `
+                        <div class="mt-4 text-xs text-slate-500 italic opacity-60">
+                            (System prompt changes were not committed to Git for this past experiment)
+                        </div>
                     `;
                 }
 

@@ -15,7 +15,8 @@ def sync(message="Automated research update"):
         
         # 2. Stage changes
         # We only add the docs/ folder which contains the exported dashboard data
-        subprocess.run(["git", "add", "docs/"], check=True)
+        # AND we add therapist.py so the agent history timeline can track the prompt evolution.
+        subprocess.run(["git", "add", "docs/", "therapist.py"], check=True)
         
         # 3. Check for changes
         status = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True)
