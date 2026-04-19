@@ -692,6 +692,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.7,
       "audit_rationale": "Penalty applied because: The therapist's repetitive questioning and focus on minute details (e.g., the texture of the envelope) comes across as overly analytical and lacking in genuine emotional engagement. The conversation feels more like a scientific experiment than a therapeutic session. Additionally, the therapist fails to pick up on the patient's underlying emotions and struggles, instead focusing on superficial aspects of their experience."
+    },
+    {
+      "exp_id": "exp_0068",
+      "strategy_name": "Micro-Utility Mapping (MUM) v2.0",
+      "hypothesis": "By adopting an ultra-minimalist, highly conversational 'Utility Mapper' persona, and restricting *all* reflections and inquiries exclusively to the patient's observable, concrete, and immediate behavioral 'utility' (what they *do* or what *needs to happen* for them to function), we will eliminate the 'formulaic' and 'platitude' penalties while retaining the necessary clinical focus on actionable change (BA/CBT), thereby achieving a score above 6.907.",
+      "score": 6.3,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.7,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add genuine insight or depth to the conversation. The constant use of phrases like 'That must be hard' and 'It sounds like...' creates a sense of formulaic roboticness rather than authentic engagement."
     }
   ],
   "best_score": 6.907
