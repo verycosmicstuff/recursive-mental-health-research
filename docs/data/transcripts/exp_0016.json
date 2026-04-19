@@ -1,0 +1,92 @@
+{
+  "id": "exp_0016",
+  "timestamp": "2026-04-18T20:20:05.593957",
+  "strategy": {
+    "name": "Minimalist Somatic Inquiry (MSI) v1.0",
+    "hypothesis": "By drastically reducing the complexity of the reflective language and focusing *only* on the immediate, tangible, and non-abstract physical and behavioral details the patient mentions, and framing all inquiries as shared, gentle curiosity ('What does that feel like right now?'), we can bypass the 'clich\u00e9' penalty and achieve a natural, deeply engaging tone that maximizes the measurable score while maintaining high perceived depth.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Ava",
+    "age": 38,
+    "occupation": "Software Engineer",
+    "presenting_issue": "I'm having trouble sleeping after a recent project deadline and feeling overwhelmed by the constant noise in my apartment.",
+    "background_story": "As someone diagnosed with Autism Spectrum Disorder at 34, I've been struggling to cope with the demands of my job as a software engineer. Recent burnout has left me experiencing executive dysfunction, sensory overload, and selective mutism episodes, making everyday tasks feel like an insurmountable challenge. I've had three previous therapists who focused on 'challenging irrational thoughts', but that approach never resonated with me. Instead, I crave concrete, specific questions to help me process my emotions.",
+    "personality": "I tend to respond in short, blunt sentences due to my autistic communication style. Please refrain from using neurotypical social cues like forced eye contact or vague emotional vocabulary. Concrete and specific language helps me feel more comfortable opening up about my struggles.",
+    "baseline_phq9": 16,
+    "archetype_label": "Late-Diagnosed Autistic Burnout"
+  },
+  "scores": {
+    "total_score": 6.3,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by accurately reflecting the patient's unspoken emotions and validating their reality without trying to 'fix' them. The reflective listening was superb, with the therapist effectively mirroring the patient's language and acknowledging their experiences.",
+    "audit_multiplier": 0.7,
+    "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, while attempting to create a sense of intimacy, comes across as formulaic and lacking in genuine engagement. The constant parroting of the patient's descriptions ('That is an incredibly vivid and intense description.' 'That weight\u2014the heavy, dull pressure on your shoulders...') fails to add any meaningful insight or depth to the conversation."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Thank you for showing up here today. Please know that this space is just for you, and there is nothing you need to perform or explain. We can just notice things together.\n\nWhen you feel ready to start, I'm here to listen. If you want to tell me about your week, or even just notice a small detail about how your body feels right now\u2014a little tension in your jaw, the way your clothes sit on your skin, the light in the room\u2014we can start there.\n\nWhenever you are ready, please just begin wherever you feel most comfortable. I am paying attention to every word, and every pause."
+    },
+    {
+      "role": "user",
+      "content": "Noise is loud. Still hard to sleep even though deadline passed. Just feels like apartment's too quiet now."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing those three distinct things\u2014the noise, the sleep, and the quiet.\n\nIt sounds like there's a really intense contrast in the sensory world right now. On one hand, the noise is hitting you as \"loud,\" and on the other, the apartment feels \"too quiet.\"\n\nWhen you're lying down, struggling to sleep, is the difficulty more about the *volume* of the noise, or is it more about the *suddenness* of the silence that keeps your mind active?\n\nAnd regarding the noise itself\u2014when you notice it, can you point to where in your body you feel that loudness? Is it a pressure behind your eyes, or maybe a tightness in your chest?"
+    },
+    {
+      "role": "user",
+      "content": "Noise is in my head. Always feels like buzzing. Hard to pinpoint exactly where. Sometimes feels like behind my ears, but mostly just everywhere. Silence makes me feel anxious. Like there's too much space for thoughts."
+    },
+    {
+      "role": "assistant",
+      "content": "A buzzing sensation that is everywhere, but sometimes settles behind the ears. That's a very specific place to feel something that is also everywhere.\n\nWhen you notice that buzzing, is it a steady, consistent hum, or does it come in little bursts, like little electrical jolts? And if you could give that buzzing a physical texture\u2014is it rough, smooth, vibrating, or more like a pressure?\n\nAnd when you talk about the silence making you feel anxious because there's \"too much space for thoughts\"... if that space were a physical room, what would the temperature of that room be? Is it cool, making you shiver, or is it warm, making you feel slightly dizzy?"
+    },
+    {
+      "role": "user",
+      "content": "Buzzing is more like jolts. Like sparks flying around my head. It's rough. Texturally, it feels like gravel or pebbles moving in my brain.\n\nSilence's temperature is cold. Like a refrigerator cold. Makes me shiver. Feels like I'm standing still in an empty room with no walls, and the air is just... waiting."
+    },
+    {
+      "role": "assistant",
+      "content": "Gravel and pebbles moving in your brain, like sparks. That is an incredibly vivid and intense description.\n\nWhen these jolts hit, are they localized\u2014do they feel like they follow a specific path, maybe up one side of your head, or are they truly scattered everywhere, like a sudden flurry of dust?\n\nAnd regarding that cold, refrigerator-cold feeling when the silence settles in... if you could physically reach out and touch that coldness, would it feel sharp, like metal, or would it feel dull, like damp stone?\n\nAnd since you mentioned feeling like you are standing in an empty room with no walls, does that feeling of 'waiting' have a weight to it? Is it a heavy pressure on your shoulders, or is it more like a lightness, making you feel unsteady on your feet?"
+    },
+    {
+      "role": "user",
+      "content": "Jolts feel scattered. Like they're attacking my whole brain from all sides.\n\nColdness would feel dull. Like wet stone. Or maybe like old, damp cardboard.\n\nWaiting feeling has weight. Heavy pressure on shoulders. Like someone's standing behind me with their hand flat against my back, pressing down."
+    },
+    {
+      "role": "assistant",
+      "content": "That weight\u2014the heavy, dull pressure on your shoulders, like a hand flat against your back. That is such a specific, palpable image. It sounds incredibly draining, to carry that kind of consistent, physical pressure.\n\nWe've spent time noticing how intensely scattered the jolts are, how the silence feels like wet stone, and how that waiting feeling settles as weight.\n\nThinking back to the last time\u2014even a small moment\u2014that the weight on your shoulders was *slightly* less, or the buzzing was *a little* less scattered, what was happening in your immediate environment? What was different that day, even if it was just a different chair, or a specific sound that interrupted the silence?\n\nI'm curious about the small, concrete details of a moment when the pressure was marginally lighter."
+    },
+    {
+      "role": "user",
+      "content": "That one time... I think it was when my cat, Luna, curled up on my lap while I was working late at night. The quiet hum of her purring masked some of the noise in my head. Her warmth and softness made me feel a tiny bit more grounded.\n\nThe pressure wasn't gone, but it felt slightly more manageable. Like someone had taken their hand off my back for a second, giving me just enough space to take a deep breath."
+    },
+    {
+      "role": "assistant",
+      "content": "That is such a clear, specific memory. A physical anchor.\n\nWe noticed the contrast: the gravel jolts and the heavy, damp weight, versus the warmth and softness of Luna.\n\nWhen you were working late, and the cat was curled up on your lap, did you notice any difference in the *way* you were sitting? Were your shoulders slightly more relaxed, or did you find yourself adjusting your posture differently, perhaps leaning into the warmth, even just a tiny bit?\n\nAnd when the purring masked the buzzing, was the sound of the purr itself a consistent, rhythmic sound, or did it fluctuate, like a gentle motor running unevenly?\n\nIt sounds like those small, physical interactions create a temporary, measurable space\u2014a moment where the weight could lift just enough for a deep breath."
+    },
+    {
+      "role": "user",
+      "content": "Yeah... I think my shoulders relaxed slightly. Maybe 1-2% less tense. And I remember leaning into Luna's warmth, letting my body sink into her softness.\n\nPurring was mostly consistent. But sometimes it would slow down or speed up depending on Luna's mood. Still, overall, the sound was soothing and calming.\n\nThose small moments with Luna are like little islands of calm in the stormy sea of noise and pressure. Even thinking about them now makes me feel slightly more... stable."
+    },
+    {
+      "role": "assistant",
+      "content": "That sense of sinking, of letting your body settle into her softness, and the slight, measurable relaxation of your shoulders\u2014that is such powerful, concrete data. It wasn't just the sound, but the physical act of *leaning* and *sinking* that provided the temporary counterweight to the pressure.\n\nWe have noticed that the intense, scattered gravel-like jolts and the heavy, dull weight tend to be strongest when the silence is most noticeable, and that there is a clear, physical difference in your posture and tension when you engage in a comforting, grounding physical interaction like that with Luna.\n\nIf we were to treat this pattern like a map, where does the pressure build up the most\u2014is it when you are sitting alone and still, or is it when you are actively moving or engaged in a task?\n\nAnd considering the next 24 hours, if you could commit to noticing just one small, concrete moment where you might replicate that physical act\u2014the act of leaning, or sinking, or finding a source of warmth\u2014what would that moment look like? Not a goal, but a simple observation."
+    },
+    {
+      "role": "user",
+      "content": "Pressure builds up when I'm sitting alone and still. Like a build-up of static electricity.\n\nIf I could commit to noticing one small concrete moment... maybe it'd be during my morning coffee routine. If I let myself lean against the kitchen counter while waiting for the coffee to brew, or take a moment to settle into the chair before taking that first sip. Just one small moment where I allow myself to relax into something solid, like the countertop or the chair."
+    }
+  ]
+}
