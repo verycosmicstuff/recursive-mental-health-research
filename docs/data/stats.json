@@ -384,6 +384,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The conversation is bogged down by unnecessary questions that don't add significant value to the patient's understanding of their own experiences."
+    },
+    {
+      "exp_id": "exp_0036",
+      "strategy_name": "Utility-Driven Hyper-Conversational Curiosity (UD-HCC) v1.0",
+      "hypothesis": "By radically stripping away all structural scaffolding, theoretical terminology, and complex emotional reflection, and focusing solely on an ultra-minimalist, conversational questioning style that maps observable actions and concrete functional constraints, we can eliminate the 'formulaic,' 'platitude,' and 'detached' penalties, thereby achieving a sustained perceived authenticity and maximizing the score significantly above 6.907.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The Therapist's language is overly formal and lacks genuine engagement. Repetitive mirroring where the Therapist just parrots the patient's words back without adding insight. The session relies too heavily on generic platitudes ('I hear you', 'That must be hard') used as filler instead of genuine engagement. The Therapist fails to pick up on what the patient is NOT saying, and the conversation feels more like a scientific experiment than a therapeutic exploration."
     }
   ],
   "best_score": 6.907
