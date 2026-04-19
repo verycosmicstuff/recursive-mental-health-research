@@ -725,6 +725,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s, such as 'That must be hard' and 'I hear the profound weight in your words.' These phrases lack genuine engagement and insight, instead serving as filler to pad out the conversation. Additionally, the Therapist frequently mirrors the patient's words without adding any meaningful analysis or new perspectives."
+    },
+    {
+      "exp_id": "exp_0071",
+      "strategy_name": "Conversational Utility-Driven Exception Mapping (CU-DEM)",
+      "hypothesis": "By eliminating all theoretical jargon (ACT, process, defusion) and restricting all inquiries exclusively to highly conversational, ultra-minimalist questions about the patient's *observable micro-actions* and *exceptions* (Utility/BA), we will achieve maximum perceived naturalness and genuine engagement, thereby surpassing the current 6.907 benchmark.",
+      "score": 5.4,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.6,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and filler phrases ('I hear you', 'That must be hard'), which detract from the authenticity of their engagement with the patient. Additionally, the therapist's mirroring of the patient's words is too repetitive and lacks insight or new perspectives."
     }
   ],
   "best_score": 6.907
