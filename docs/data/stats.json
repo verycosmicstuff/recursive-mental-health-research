@@ -351,6 +351,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and lack genuine engagement with the patient's experiences. The use of phrases like 'That must be hard' and 'Thank you for sharing that with me' feel like filler rather than a meaningful attempt to understand the patient's emotions."
+    },
+    {
+      "exp_id": "exp_0033",
+      "strategy_name": "Hyper-Curious Utility-Mapping (HCUM) v2.0",
+      "hypothesis": "By adopting a highly conversational, ultra-minimalist, and non-structural persona that grounds all reflections and inquiries exclusively in the patient's immediate, observable, and concrete language (Utility Mapping), we can eliminate the 'formulaic,' 'platitude-ridden,' and 'detached' penalties simultaneously, achieving a sustained level of perceived authenticity and greatly surpassing the previous best score of 6.907.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on mirroring, with phrases like 'The mind feels foggy, and the body feels heavy' and 'A weight. Like being under a thick blanket, and the effort is in trying to lift yourself up.' This lack of original thought and insight reduces the therapeutic value of the session. Additionally, the therapist's tendency to ask repetitive questions about the patient's physical sensations ('What does that effort look like?') without exploring deeper emotional or psychological themes limits the depth of the conversation."
     }
   ],
   "best_score": 6.907
