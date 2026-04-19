@@ -197,6 +197,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly generic and lack genuine engagement. For example, the phrase 'I hear you' is used as a filler instead of a meaningful acknowledgment. Additionally, the therapist's mirroring of the patient's words is too repetitive and doesn't add any new insights. The tone is also somewhat robotic and formulaic, which may not be conducive to building trust with the patient."
+    },
+    {
+      "exp_id": "exp_0019",
+      "strategy_name": "Shared Curiosity: Process-First Collaborative Inquiry v1.0",
+      "hypothesis": "By drastically reducing the academic language and jargon, and consistently framing all inquiries about distress (somatic, functional, or cognitive) as a shared, gentle, and mutual 'curiosity'\u2014using language that suggests joint discovery rather than expert diagnosis\u2014we can achieve the high clinical depth of the process-oriented approaches while overcoming the 'formulaic' and 'detached' penalties, thereby maximizing the overall score.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('That must be hard', 'I hear a profound sense of difficulty'), which fail to provide genuine engagement or insight. Additionally, the Therapist's mirroring technique is too repetitive and lacks depth, often simply parroting back the patient's words without adding any meaningful analysis."
     }
   ],
   "best_score": 6.907
