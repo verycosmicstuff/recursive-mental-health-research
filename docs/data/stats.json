@@ -175,6 +175,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.7,
       "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, while attempting to create a sense of intimacy, comes across as formulaic and lacking in genuine engagement. The constant parroting of the patient's descriptions ('That is an incredibly vivid and intense description.' 'That weight\u2014the heavy, dull pressure on your shoulders...') fails to add any meaningful insight or depth to the conversation."
+    },
+    {
+      "exp_id": "exp_0017",
+      "strategy_name": "Utility-First Grounded Listening (UFG-Grounded) v2.0",
+      "hypothesis": "By exclusively anchoring the reflective and inquiry language in the patient's reported *actions*, *observable routines*, and the *consequences* of their distress (Utility), and by adopting a highly minimalist, non-judgmental, and non-academic tone throughout the session, we can maximize the score by achieving deep clinical engagement and perceived insight without triggering the 'generic platitudes' or 'formulaic' penalties.",
+      "score": 4.5,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.5,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly formulaic and lack genuine engagement. The use of phrases like 'When you find yourself performing tasks repeatedly...' and 'You describe a sequence...' creates a sense of detachment rather than connection with the patient. Additionally, the therapist's focus on identifying patterns and labeling them ('the physical pressure builds up in order to avoid the feeling of being overwhelmed') comes across as overly analytical and fails to acknowledge the emotional complexity of the patient's experience."
     }
   ],
   "best_score": 6.907

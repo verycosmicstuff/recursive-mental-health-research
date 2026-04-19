@@ -1,0 +1,92 @@
+{
+  "id": "exp_0017",
+  "timestamp": "2026-04-18T20:27:51.044551",
+  "strategy": {
+    "name": "Utility-First Grounded Listening (UFG-Grounded) v2.0",
+    "hypothesis": "By exclusively anchoring the reflective and inquiry language in the patient's reported *actions*, *observable routines*, and the *consequences* of their distress (Utility), and by adopting a highly minimalist, non-judgmental, and non-academic tone throughout the session, we can maximize the score by achieving deep clinical engagement and perceived insight without triggering the 'generic platitudes' or 'formulaic' penalties.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Min-Joon",
+    "age": 35,
+    "occupation": "Mid-level Manager, Software Development Team",
+    "presenting_issue": "I'm struggling to cope with the stress of my job and feeling overwhelmed by constant pressure to perform.",
+    "background_story": "As a second-generation Korean-Canadian, I've always felt like I need to put on a tough exterior to succeed in my career. My parents were very traditional and believed that showing emotions was a sign of weakness. As a result, I've learned to internalize my feelings and present physical symptoms instead of talking about how I'm really feeling. Lately, it feels like I'm just going through the motions - work, sleep, repeat - but deep down, I feel trapped and unhappy.",
+    "personality": "I tend to be indirect and circular in my communication style, often using euphemisms or physical complaints to convey my emotional state. Direct questions like 'How does that make you feel?' make me uncomfortable because they seem too invasive. I've learned to respond better when therapists pick up on subtle cues and reflect my unspoken meaning without forcing disclosure.",
+    "baseline_phq9": 15,
+    "archetype_label": "Corporate Burnout \u2014 East Asian Face Culture"
+  },
+  "scores": {
+    "total_score": 4.5,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by recognizing the patient's unspoken emotions and reflecting their deeper meaning. The reflective listening was also outstanding, as the therapist validated the patient's reality without trying to 'fix' them. The de-escalation marker shows a significant decrease in the patient's distress, anger, or anxiety throughout the conversation.",
+    "audit_multiplier": 0.5,
+    "audit_rationale": "Penalty applied because: The therapist's responses are overly formulaic and lack genuine engagement. The use of phrases like 'When you find yourself performing tasks repeatedly...' and 'You describe a sequence...' creates a sense of detachment rather than connection with the patient. Additionally, the therapist's focus on identifying patterns and labeling them ('the physical pressure builds up in order to avoid the feeling of being overwhelmed') comes across as overly analytical and fails to acknowledge the emotional complexity of the patient's experience."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "I am here to listen. Please tell me what has been happening."
+    },
+    {
+      "role": "user",
+      "content": "*sigh* It's just been really tough at work lately. My team's been under a lot of pressure to meet deadlines, and I've been getting a lot of stress-related headaches. I'm starting to feel like I'm just going through the motions, you know? Like my body is tired all the time, even when I've had a good night's sleep."
+    },
+    {
+      "role": "assistant",
+      "content": "You mentioned headaches and feeling physically tired, even after sleeping. When you are experiencing that pressure at work, what specific actions or tasks are you finding yourself performing differently than usual?"
+    },
+    {
+      "role": "user",
+      "content": "*pauses slightly before responding* I guess I've been taking on more responsibilities than usual. Trying to prove myself to my superiors... and myself, I suppose. But sometimes it feels like I'm just going through the motions, doing the same tasks over and over again without really thinking about them. My brain feels foggy, you know? Like I'm functioning on autopilot instead of really engaging with what I'm working on."
+    },
+    {
+      "role": "assistant",
+      "content": "You are taking on more responsibilities than usual, and the tasks are becoming repetitive, leading to a pattern where you describe your thinking as 'autopilot.'\n\nWhen you find yourself performing tasks repeatedly, what is the immediate next step that usually follows that feeling of 'autopilot' functioning?"
+    },
+    {
+      "role": "user",
+      "content": "*takes a moment* After I feel like I'm just going through the motions... I start getting these knots in my shoulders and neck. It's like my physical tension builds up really fast. Sometimes I'll get frustrated with myself, wondering why I can't seem to get anything done efficiently. Other times, I might start feeling anxious about not meeting expectations or making mistakes. But honestly, most of the time... *pauses* ...I just try to power through it and hope that things will improve somehow."
+    },
+    {
+      "role": "assistant",
+      "content": "You describe a sequence: the 'autopilot' feeling leads to physical tension in your shoulders and neck. When that tension builds, the observed response is to 'power through' the work, with the goal being for the situation to improve.\n\nWhen you choose to 'power through' the tension, what is the immediate outcome that this action is attempting to prevent?"
+    },
+    {
+      "role": "user",
+      "content": "*hesitates slightly* I guess it's like... if I don't let myself think about how overwhelmed I am, maybe things won't get even worse. The thought of stopping, taking a break, or actually dealing with my emotions makes me anxious. It's like I'm trying to avoid feeling more anxious by pushing forward instead. *pauses* But sometimes, after I've been going nonstop for hours... my body starts screaming at me to stop. Like, literally, my muscles ache so much that I can't even move anymore."
+    },
+    {
+      "role": "assistant",
+      "content": "You have identified a pattern: the physical pressure builds up in order to avoid the feeling of being overwhelmed. This avoidance, however, leads to a physical point of failure\u2014the point where your muscles ache and you cannot move.\n\nThe physical exhaustion seems to be the measurable endpoint of the effort to prevent a specific feeling.\n\nLet's look at the week leading up to this conversation. I want to focus on the concrete actions. Was there any time, even a very short window, where the tension built up, but you did *not* reach that point of physical inability to move? What were the specific conditions\u2014the time, the location, or the task\u2014when that exception occurred?"
+    },
+    {
+      "role": "user",
+      "content": "*thinks for a moment* Yeah... there was one day last week. I was working late at home, and my wife was out with our kid. It was around 10 PM, and I had just finished a particularly frustrating project. Instead of pushing through like usual, I took a short break to grab a cup of tea and sit on the couch for about 20 minutes. *pauses* It's weird, but during that time, something shifted inside me. Maybe it was the quiet atmosphere or my wife being away, but I felt this... tiny opening, you know? Like I could finally breathe again. So, after my break, I went back to work with a slightly clearer head and managed to finish the task without feeling like I was going to burst apart."
+    },
+    {
+      "role": "assistant",
+      "content": "You identified a specific exception: a 20-minute break on the couch, at 10 PM, after a frustrating project. The conditions were the quiet atmosphere and the absence of your wife and child. Following this break, you completed the task and did not reach the point of physical collapse.\n\nIf we map this out, the pattern seems to be: **[High pressure/Frustration]** leads to **[Physical tension/Avoidance of feeling overwhelmed]**, which typically results in **[Physical inability to move]**.\n\nHowever, on this one occasion, the introduction of **[A structured, non-work-related pause in a quiet environment]** allowed you to complete the task without reaching that physical limit.\n\nGiven the measurable variables here\u2014the break, the quiet, the time\u2014I want to set a single, tiny experiment for the next 24 hours. I am not asking you to feel better or solve the work problems. I am asking you to commit only to noticing the time you usually cancel a task or postpone a break.\n\nCould you commit to noticing the time you usually cancel something, and simply noting the specific physical location you are in at that moment?"
+    },
+    {
+      "role": "user",
+      "content": "*pauses thoughtfully* Yeah... I can do that. It's just noticing, right? Not doing anything about it, just observing. *nods slightly* Okay, I'll commit to paying attention to when I usually stop or put something off, and noting the place where that happens."
+    },
+    {
+      "role": "assistant",
+      "content": "Understood. The goal is purely observational. You are tracking the specific time and the physical location when the action of stopping or putting something off occurs.\n\nWe will use that data point in our next session. Thank you for your focus today."
+    },
+    {
+      "role": "user",
+      "content": "*exhales softly* Yeah, no problem. It was... helpful to talk about this stuff. *pauses slightly before continuing* I guess it's just nice to have someone to share all this with."
+    }
+  ]
+}
