@@ -274,6 +274,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.6,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and filler phrases ('That takes a surprising amount of energy', 'The pressure is that any moment of downtime feels like a failure'), which dilute the therapeutic value of the session. Additionally, the therapist's mirroring of the patient's words lacks insight or depth, often simply repeating back what was said without adding meaningful understanding."
+    },
+    {
+      "exp_id": "exp_0026",
+      "strategy_name": "Ultra-Minimalist Behavioral Query (UMBQ) v1.0",
+      "hypothesis": "By stripping away all theoretical language, structural framing, and complex emotional reflection, and grounding 100% of the conversation in ultra-minimalist, concrete, present-tense questions about observable actions and functional constraints, we can achieve the deep clinical focus of utility-based inquiry while eliminating the 'formulaic,' 'jargon-heavy,' and 'detached' penalties, thereby maximizing the perceived authenticity and leading to a score significantly higher than 6.907.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add any genuine insight or depth to the conversation. The constant echoing of the patient's words ('Okay', 'Yeah', etc.) creates a sense of roboticness rather than authentic engagement."
     }
   ],
   "best_score": 6.907
