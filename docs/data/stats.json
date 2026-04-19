@@ -571,6 +571,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.7,
       "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, while attempting to engage with their emotions, comes across as robotic and formulaic rather than authentically present. This lack of genuine engagement leads to a sense of detachment and fails to create a safe space for the patient to fully express themselves."
+    },
+    {
+      "exp_id": "exp_0057",
+      "strategy_name": "Embodied ACT-PCT Integration v2.0",
+      "hypothesis": "By prioritizing the exploration of the emotional and physical *process* of negative thoughts (ACT/Somatic focus) over their literal *content* (CBT focus) in the reflection phase, we can maintain high alliance scores (addressing the 'clich\u00e9' penalty by being more visceral and specific) and naturally pivot to a gentle, experiential inquiry that maximizes measurable psychological flexibility without sounding like a structured technique.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly verbose and lack genuine engagement. The use of generic platitudes ('That must be hard', 'I hear you') is excessive and feels like filler rather than a sincere attempt to understand the patient's experience. Additionally, the Therapist's mirroring of the patient's words without adding insight or new perspectives is a missed opportunity for deeper understanding."
     }
   ],
   "best_score": 6.907
