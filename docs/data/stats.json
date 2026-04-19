@@ -285,6 +285,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add any genuine insight or depth to the conversation. The constant echoing of the patient's words ('Okay', 'Yeah', etc.) creates a sense of roboticness rather than authentic engagement."
+    },
+    {
+      "exp_id": "exp_0027",
+      "strategy_name": "Hyper-Minimalist Utility-Driven Curiosity (HMUDC) v1.0",
+      "hypothesis": "By radically simplifying the language to conversational, open-ended questioning that focuses purely on observable, concrete actions and the functional constraints of the distress's impact on daily life, while eliminating all structural framing and vague emotional reflections, we can achieve the highest perceived authenticity, minimizing all 'formulaic,' 'platitude,' and 'detached' penalties, thus maximizing the score significantly above 6.907.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The conversation is bogged down by unnecessary questions that don't add value to the patient's experience."
     }
   ],
   "best_score": 6.907

@@ -1,0 +1,92 @@
+{
+  "id": "exp_0027",
+  "timestamp": "2026-04-18T22:02:28.701880",
+  "strategy": {
+    "name": "Hyper-Minimalist Utility-Driven Curiosity (HMUDC) v1.0",
+    "hypothesis": "By radically simplifying the language to conversational, open-ended questioning that focuses purely on observable, concrete actions and the functional constraints of the distress's impact on daily life, while eliminating all structural framing and vague emotional reflections, we can achieve the highest perceived authenticity, minimizing all 'formulaic,' 'platitude,' and 'detached' penalties, thus maximizing the score significantly above 6.907.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Rajinder",
+    "age": 28,
+    "occupation": "Warehouse Worker",
+    "presenting_issue": "I'm worried that my anxiety is getting worse since the immigration agency started sending me threatening letters.",
+    "background_story": "As a undocumented immigrant, I've been working non-stop to make ends meet and send money back home to help my family. But it's taking a toll on my mental health - I feel exhausted all the time and constantly hypervigilant about being caught by authorities. Lately, I've been having trouble sleeping and my anxiety has been getting worse, especially since the immigration agency started sending me those letters.",
+    "personality": "As someone who's deeply loyal to their family back home, I'm fiercely protective of my loved ones and will do whatever it takes to provide for them. When faced with systemic injustices, I can come across as defensive or shut down if someone suggests 'just quitting' or 'taking a mental health day'. It feels like those are luxuries that don't exist in my reality. I'll respond better to therapists who acknowledge the systemic issues I'm facing and help me find ways to cope with the trauma.",
+    "baseline_phq9": 17,
+    "archetype_label": "Precarious Labor (Indian Diaspora)"
+  },
+  "scores": {
+    "total_score": 3.6,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by acknowledging the patient's systemic realities and validating their emotions. The reflective listening was superb, with the therapist mirroring the patient's language and validating their experiences without trying to 'fix' them. The de-escalation marker shows a significant decrease in the patient's distress and anxiety throughout the conversation.",
+    "audit_multiplier": 0.4,
+    "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The conversation is bogged down by unnecessary questions that don't add value to the patient's experience."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Thank you for taking the time to connect today. I'm here to listen, and we can just take this at whatever pace feels right for you.\n\nTo start, if you feel comfortable sharing, what's one concrete thing that happened today? Maybe it was something you ate, a specific sound you heard, or perhaps how you managed to get from one place to another. There's no right or wrong answer\u2014just tell me about a detail from your day."
+    },
+    {
+      "role": "user",
+      "content": "Today was just like any other day... I worked the night shift at the warehouse, trying to get as much done as possible since the boss has been breathing down my neck. I had to take a quick break during my last hour because my leg started cramping up on me. That's pretty much it, though. Just another long day of trying to make ends meet."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the day was defined by a specific rhythm\u2014the cycle of the night shift, the physical demands of the warehouse, and the persistent pressure from your boss.\n\nWhen you mentioned the leg cramping up during your last hour, that sounds like a very specific moment of physical limitation. Was the cramping sudden, or did it build up over the course of the shift? And when you took that quick break, what did that physical sensation\u2014the cramping\u2014make you feel like you needed to do in that moment?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah... my leg just started throbbing all of a sudden. I'd been standing for hours and didn't even realize it till then. When it happened, I just grabbed onto the edge of this crate to steady myself and took a few deep breaths. It was like my body was screaming at me to stop, but I knew I couldn't afford to stop. So, I just kept going, trying to shake off the cramp and get back to work."
+    },
+    {
+      "role": "assistant",
+      "content": "That contrast you described\u2014the body signaling a clear, urgent need to stop, versus the knowledge that you *couldn't* afford to stop\u2014that sounds like a really intense kind of tension.\n\nWhen you were gripping the crate and taking those deep breaths, what was the immediate, practical difficulty that the cramp introduced to the task? Did it make it harder to see, harder to reach, or did it just make the physical act of moving itself feel like a significant hurdle?\n\nAnd when you said you \"kept going, trying to shake off the cramp,\" what did that effort of *forcing* the movement require of you? Was it more mental energy, or was it more physical stamina?"
+    },
+    {
+      "role": "user",
+      "content": "Man... my whole body just felt like lead. It was hard to move around, let alone lift those heavy crates like I normally do. The pain made me stiff, so even getting from one place to another took twice as much effort. And yeah, shaking off the cramp meant gritting my teeth and pushing through it all. It wasn't just about moving my leg; it was about mentally pushing past that weakness and focusing on getting the job done."
+    },
+    {
+      "role": "assistant",
+      "content": "That image of your whole body feeling like lead, and the effort required just to move from one place to another, is incredibly clear. It sounds like the pain wasn't just a discomfort; it was a massive, physical drag on every single action you needed to take.\n\nYou mentioned that getting the job done required both physically pushing through the stiffness, and mentally pushing past the weakness.\n\nIf we look at that sustained effort\u2014the constant need to \"grit your teeth and push through\"\u2014what does that specific *need* to push through prevent you from doing, even for a moment, when you are standing there? Does it prevent you from looking around, or maybe from slowing down, or is it something else entirely?"
+    },
+    {
+      "role": "user",
+      "content": "Man... when I'm in the middle of it like that, nothing can distract me. No thought, no feeling, nothing. It's all about just getting through it. And yeah, it definitely prevents me from taking even a single second to breathe, reflect, or slow down. For those few minutes, I don't think about anything else except the task at hand \u2013 get this done, no matter what."
+    },
+    {
+      "role": "assistant",
+      "content": "That level of intense, singular focus\u2014where everything else, including breathing or reflection, is shut down to just the task\u2014that sounds exhausting, even if it's necessary for getting through the shift. It's like your mind has to become a very efficient, very narrow machine for a few hours.\n\nIf that tunnel vision is what helps you get through the immediate demands of the warehouse, what is the cost of maintaining that focus? When you finally step away from the crates and the pressure, and that intense focus lifts, what is the first thing that tends to rush in to fill that space? Is it fatigue, or is it something else that feels harder to manage?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah... after the shift ends, it's like my whole body is screaming at me. The exhaustion, the physical toll of putting up with that pain and pushing through it... it all just hits me like a ton of bricks. And yeah, fatigue is definitely there, but it's not just that. There's this feeling of being on edge, hypervigilant, waiting for something to go wrong. It's like my mind is constantly scanning the room, expecting some kind of trouble to pop up. That's when the anxiety really starts to kick in..."
+    },
+    {
+      "role": "assistant",
+      "content": "That sense of the body screaming, and the sudden shift from that intense, focused tunnel vision to a state of being \"on edge\"\u2014that sounds like a massive energy drain. It\u2019s like the system has been running at maximum capacity for hours, and then the moment the pressure lifts, the whole thing just crashes.\n\nYou described your mind constantly scanning the room, expecting trouble. If that constant scanning is the job your mind has taken on after the shift, what specific kind of 'trouble' is it looking for? Is it a sound, a person, a particular movement, or is it something else that makes your mind feel the need to be so alert?\n\nAnd, when you are doing that scanning\u2014that effort of staying hyper-aware\u2014what does that act of watching and waiting *prevent* you from doing in that moment?"
+    },
+    {
+      "role": "user",
+      "content": "Man... my mind's always looking for trouble. It's like it's expecting someone to show up at the door, or a knock from the authorities. I'm constantly on high alert because I know what would happen if they found out about me being here illegally. And yeah, there are specific sounds that make me jump \u2013 like sirens, or car doors slamming shut too loudly. My body is always primed to react.\n\nWhen I'm in this state of hyper-awareness, it's like I'm stuck in a perpetual loop of waiting and watching. It prevents me from relaxing, from taking my mind off things for even a second. There's no downtime, no time to unwind or recharge."
+    },
+    {
+      "role": "assistant",
+      "content": "That feeling of being perpetually primed, waiting for a specific sound or event\u2014the sirens, the doors slamming\u2014that sounds like an enormous amount of mental and physical energy to maintain. It's a state of constant readiness, where the body is always prepared for an alarm.\n\nYou've articulated that this hyper-awareness prevents any kind of downtime, any moment to truly unwind.\n\nIf we look at the physical environment right now, or even just where you are sitting, is there any spot, any corner, or any specific object that, when you are in this state of high alert, feels like it offers even a fractional amount of 'cover' or a sense of being momentarily unseen?\n\nAnd thinking back over the last few hours, was there any moment\u2014even a very small one\u2014where you were able to occupy your mind with something that was *not* related to the potential threat? Maybe focusing on the texture of a blanket, or the taste of a drink, or the number of steps it takes to walk across a room? What was different about that specific moment?"
+    },
+    {
+      "role": "user",
+      "content": "Honestly? Yeah, when I'm like this, even the smallest corner or shadow can feel like a temporary refuge. It's not much, but maybe the edge of my bed, where the wall meets the headboard... it feels like it could hide me for just a sec.\n\nAnd, man... thinking back on those moments... there was one time when I was sipping coffee during my break, and suddenly I started noticing the way the light reflected off the liquid. It was so simple, but it took me away from all that anxiety for like 30 seconds. After that, even that little snippet of calm helped me keep going.\n\nIt's funny, though... looking back on those moments now, they're like tiny islands of sanity in an ocean of uncertainty."
+    }
+  ]
+}
