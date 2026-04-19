@@ -340,6 +340,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('Seriously', 'I hear you', 'That must be hard'), which fail to provide genuine engagement or insight. Additionally, the therapist's mirroring of the patient's words is too repetitive and lacks depth, failing to add any meaningful understanding or perspective."
+    },
+    {
+      "exp_id": "exp_0032",
+      "strategy_name": "Conversational Utility-Grounded PCT (CU-GPT) v1.1",
+      "hypothesis": "By completely dropping all structural scaffolding, theoretical labels, and complex process descriptions, and instead grounding all reflections and inquiries in the patient's immediate, observable, and concrete language, while maintaining a tone of shared, gentle curiosity, we can maximize perceived authenticity and minimize the 'formulaic' and 'detached' penalties, thus maximizing the score significantly above 6.907 by sounding genuinely present and non-academic.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and lack genuine engagement with the patient's experiences. The use of phrases like 'That must be hard' and 'Thank you for sharing that with me' feel like filler rather than a meaningful attempt to understand the patient's emotions."
     }
   ],
   "best_score": 6.907
