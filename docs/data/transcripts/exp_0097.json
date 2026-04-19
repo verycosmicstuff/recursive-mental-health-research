@@ -1,0 +1,92 @@
+{
+  "id": "exp_0097",
+  "timestamp": "2026-04-19T08:39:02.143807",
+  "strategy": {
+    "name": "Curious Companion Micro-Exception Inquiry (CCMEI) v1.1",
+    "hypothesis": "By discarding all explicit theoretical language (ACT, PCT, CBT, 'process') and restricting the therapist's entire output to single, highly conversational, open-ended questions that collaboratively investigate the *conditions* and *context* of the patient's most recent, concrete, observable micro-actions or physical sensations, we will eliminate the 'formulaic' and 'platitude' penalties by achieving a perceived level of genuine, natural curiosity that maximizes conversational depth and clinical utility, thereby surpassing the 6.907 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Samantha",
+    "age": 35,
+    "occupation": "Marketing Manager",
+    "presenting_issue": "I'm feeling overwhelmed and anxious about a project deadline that's looming too close.",
+    "background_story": "As a high-achieving professional, I've always managed to stay ahead of the curve, but lately, the pressure has been taking a toll on my mental health. My partner and I have been dealing with some relationship issues, and I'm struggling to find time for self-care amidst the chaos. Lately, I've been waking up in the middle of the night, replaying conversations and worrying about things outside my control.",
+    "personality": "I can come across as confident and together on the surface, but beneath that exterior, I'm actually really hard on myself when things don't go according to plan. It takes me a while to open up and admit when I'm struggling. When we're talking, expect me to be straightforward and solution-focused, but also prepared for some self-reflection.",
+    "baseline_phq9": 14,
+    "archetype_label": "Overwhelmed Professional"
+  },
+  "scores": {
+    "total_score": 6.3,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by inferring the patient's unspoken emotions and validating their reality without trying to 'fix' them. The reflective listening was also superb, with the therapist effectively mirroring the patient's language and validating their experience.",
+    "audit_multiplier": 0.7,
+    "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, while attempting to engage with the patient's experience, comes across as formulaic and lacking in genuine insight or understanding. The constant echoing of the patient's language creates a sense of roboticness, rather than authentic presence."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Thank you for showing up today. I know that just making the effort to be here, to talk, takes a significant amount of energy, and I want to acknowledge that effort first.\n\nWe don't need to talk about the big picture or the heavy feelings right now. If you're willing, I wonder if we could anchor ourselves to something really small\u2014something that happened in the middle of your day.\n\nWhen you were doing whatever you were doing yesterday, was there any small, specific moment\u2014a sound, a color, the feeling of a chair, or even a brief pause\u2014that stands out to you? What was the smallest, most concrete thing that was happening right before or after that moment?"
+    },
+    {
+      "role": "user",
+      "content": "To be honest, I'm still trying to process everything. But if I think about yesterday... I guess it would be the sound of my partner's car pulling into the driveway just as I was getting ready for work. It was like a little beep-beep, and then they were gone. I know that sounds silly, but for some reason, it stuck with me. Maybe because it was one of those moments where everything felt like it was spinning out of control, and this tiny sound brought me back to reality? Not that it made things better or anything... just a weird little detail that's stuck in my head."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that. It really is not silly at all; it's a genuine detail, and it takes a lot of focus to pull that specific moment out of the stream of everything else.\n\nLet's just sit with that sound for a minute. The beep-beep, the car pulling in.\n\nWhen that sound happened, and you were getting ready for work\u2014can you picture the physical space you were in? Were you standing in one spot, or were you moving from one place to another? And what was the light doing? Was it bright, or was it softer?\n\nI'm not curious about what the sound *meant*, but just what the setting was like when it arrived."
+    },
+    {
+      "role": "user",
+      "content": "Yeah... I think I was standing in our bathroom, getting ready for work while my partner was still at their client meeting. The light was pretty harsh \u2013 we have this big skylight above the sink that makes everything feel really bright and clinical. And yeah, I was standing still, just staring at myself in the mirror, trying to wake up a bit more before leaving for the day..."
+    },
+    {
+      "role": "assistant",
+      "content": "That paints a very clear picture\u2014the bright, almost clinical light from the skylight, and you standing still in the mirror. It sounds like a moment of quiet preparation, almost suspended in that bright light.\n\nSo, you were standing there, still, in that bright bathroom. The beep-beep happens.\n\nWhen the sound came, did your body do anything immediately? Even something tiny\u2014did you blink harder, did you shift your weight slightly, or maybe your shoulders dropped a little? I'm not asking about your thoughts, but just what your physical body was doing in the second that sound arrived."
+    },
+    {
+      "role": "user",
+      "content": "Honestly... my heart started racing a bit more quickly, and I think I might have taken a tiny half-step forward towards the sink. It was almost like my body was responding to that sound before my brain had a chance to process it. Like, before I even consciously thought about anything, my body was already reacting on some level."
+    },
+    {
+      "role": "assistant",
+      "content": "That is such a precise observation\u2014the feeling that the body reacts before the mind catches up. It's really helpful that you noticed that physical immediacy.\n\nLet's focus just on that half-step forward. It was a small, almost automatic movement.\n\nWhen you took that half-step, could you describe the feeling of your feet on the floor? Was the floor hard, soft, cool, or warm under your bare feet, or were you wearing something? And was the step more of a quick *push*, or was it more of a slight *shift* of weight? I'm really curious about the mechanics of it."
+    },
+    {
+      "role": "user",
+      "content": "Yeah... my feet were bare, and the floor was cold and smooth \u2013 our bathroom floors are always tiled. When I took that half-step forward, it was almost like a subtle *push* off the ground, not a big or dramatic movement at all. It was just this tiny release of tension, like my body was trying to stretch out a little bit. The feeling under my feet was... calm, I guess \u2013 there wasn't any particular sensation that stood out, it was just this sense of stability and being grounded in some way."
+    },
+    {
+      "role": "assistant",
+      "content": "That is such a rich description. Bare feet on cold, smooth tile, and a subtle *push*\u2014a tiny release of tension. And even in that small movement, you noticed a sense of stability, a feeling of being grounded.\n\nLet's stay right in that moment, right after that half-step forward.\n\nOnce your feet were positioned after that subtle push, were there any changes in the immediate environment that you noticed? Did the light from the skylight seem to hit the tile differently? Was there a particular reflection, or maybe a specific sound\u2014like the faint echo of water, or the hum of the ventilation\u2014that registered right after your body settled back into place?\n\nI'm curious about the sensory details that followed that small, physical adjustment."
+    },
+    {
+      "role": "user",
+      "content": "Yeah... I think my gaze might have shifted slightly as well \u2013 it was like my eyes adjusted to the brightness in the mirror, and for a brief moment, everything felt really... sharp. The light from the skylight seemed to hit the tile at just the right angle, making it look almost polished. And there wasn't any specific sound or reflection that stood out, but I do remember feeling like my focus was kind of... honed in on myself for a second. Like, everything else faded away, and it was just me standing there, staring back at myself."
+    },
+    {
+      "role": "assistant",
+      "content": "That is such a vivid description of the sensory experience. The adjustment of the eyes, the feeling of sharpness, and the way the light caught the tile at just the right angle, making it look polished.\n\nIt sounds like the physical act of adjusting your gaze\u2014the effort of your eyes adjusting to the brightness\u2014was what allowed you to notice that specific visual detail in the mirror and on the tile.\n\nIf you could choose just one single, tiny thing that was visible in that mirror, or on that polished tile, what was it? Was it a tiny streak of water, a specific reflection of the light source, or perhaps just the way the shadow fell on the edge of the sink?\n\nLet's zoom in on one single, observable detail that held your focus in that moment."
+    },
+    {
+      "role": "user",
+      "content": "Yeah... if I had to choose, I'd say it was the fine line where my skin met the mirror. It was like a tiny seam running along the top of my forehead, and for some reason, it really caught my attention in that moment. It was just this tiny, almost imperceptible boundary between me and the glass, and it felt... significant, somehow?"
+    },
+    {
+      "role": "assistant",
+      "content": "That is an incredibly specific and detailed observation. The fine line where your skin meets the mirror\u2014a tiny, almost imperceptible boundary. It takes a very specific kind of focus to notice something so subtle and so close to the surface.\n\nIt seems like that act of noticing that tiny seam\u2014that boundary\u2014was the thing that held your attention in that moment of sharp focus.\n\nIf you think about the physical act of looking at that line, were you looking directly at it, or were you looking at your face generally, and the line just happened to catch your eye?\n\nAnd when you noticed it, did you have to move your head, or did your eyes just do the work? I'm curious about the physical mechanism of that discovery."
+    },
+    {
+      "role": "user",
+      "content": "I think... I was actually gazing at my face more broadly, and then my eyes kind of settled on that seam. It wasn't like I consciously focused on it or anything \u2013 it was almost like my gaze got stuck there because of its subtlety.\n\nAs for the physical mechanism, I don't think I moved my head at all. My eyes just sort of... hovered over my face until they landed on that tiny seam. It's funny, because I'm usually someone who likes to get really close and examine things \u2013 but in this moment, my gaze was almost like a slow-motion scan across my skin, searching for some kind of texture or pattern. And then, suddenly, there it was \u2013 this tiny line that just seemed... significant."
+    }
+  ]
+}

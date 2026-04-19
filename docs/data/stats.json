@@ -1011,6 +1011,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.7,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and formulaic language, such as 'That is such a profound and painful realization' or 'That feeling\u2014that specific, small wave of relief...' These phrases lack genuine engagement and instead sound like a script. Additionally, the therapist frequently mirrors the patient's words without adding any meaningful insight or depth."
+    },
+    {
+      "exp_id": "exp_0097",
+      "strategy_name": "Curious Companion Micro-Exception Inquiry (CCMEI) v1.1",
+      "hypothesis": "By discarding all explicit theoretical language (ACT, PCT, CBT, 'process') and restricting the therapist's entire output to single, highly conversational, open-ended questions that collaboratively investigate the *conditions* and *context* of the patient's most recent, concrete, observable micro-actions or physical sensations, we will eliminate the 'formulaic' and 'platitude' penalties by achieving a perceived level of genuine, natural curiosity that maximizes conversational depth and clinical utility, thereby surpassing the 6.907 benchmark.",
+      "score": 6.3,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.7,
+      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, while attempting to engage with the patient's experience, comes across as formulaic and lacking in genuine insight or understanding. The constant echoing of the patient's language creates a sense of roboticness, rather than authentic presence."
     }
   ],
   "best_score": 6.907
