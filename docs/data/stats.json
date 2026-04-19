@@ -989,6 +989,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('I hear you', 'That must be hard'), which lack genuine engagement and insight. Additionally, the Therapist frequently mirrors the patient's words without adding meaningful depth or analysis, making it seem like a robotic or formulaic approach rather than an authentically present one."
+    },
+    {
+      "exp_id": "exp_0095",
+      "strategy_name": "Micro-Utility-Meaning Bridge (MUMB) v3.0",
+      "hypothesis": "By constraining the therapist to use a single, highly specific, non-theoretical reflection that first acknowledges a concrete, observable micro-utility/action, and then immediately pivots with a single, genuinely open-ended question that explores the *meaning* or *consequence* of that action, we will achieve the necessary combination of conversational flow (utility grounding) and emotional depth (meaning inquiry) required to surpass the 6.907 benchmark while eliminating formulaic penalties.",
+      "score": 6.3,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.7,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('It sounds incredibly exhausting', 'The weight that builds up isn't just emotional; it feels like it is literally threatening your sense of self'), which dilute the impact of the patient's genuine emotions. Additionally, the therapist's tendency to mirror the patient's words without adding significant insight or new perspectives (e.g., 'When you talk about the effort of finding someone who will just *hear* you...') results in a lack of depth and nuance in the conversation."
     }
   ],
   "best_score": 6.907
