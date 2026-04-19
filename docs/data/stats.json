@@ -1044,6 +1044,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.5,
       "audit_rationale": "Penalty applied because: The Therapist's repetitive mirroring of the patient's words, such as 'The wooden frame of the clock', 'Those deep, dark lines and the little knots', and 'That deep, dark line' without adding any genuine insight or depth to the conversation. This lack of engagement and failure to explore the patient's thoughts and emotions further reduces the validity of this session."
+    },
+    {
+      "exp_id": "exp_0100",
+      "strategy_name": "Utility-Driven Contextual Inquiry (UDCI) v1.0",
+      "hypothesis": "By achieving radical conversational naturalism by eliminating all theoretical language and generic emotional statements, while rigorously constraining inquiries to a single, concrete, observable micro-utility (the 'what') and then immediately pivoting with a single, open-ended question about the *context* or *conditions* of that micro-event (the 'what was different?'), we will maximize perceived natural authenticity and genuine curiosity, thus finally surpassing the 6.907 benchmark.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add any genuine insight or depth to the conversation. Specifically, phrases like 'That\u2019s a very clear signal' and 'The moment you describe\u2014the instant you told her, \u201cI had to meet a deadline\u201d\u2014that was a very definitive boundary being put up' are simply parroting the patient's words without providing any meaningful analysis or understanding."
     }
   ],
   "best_score": 6.907
