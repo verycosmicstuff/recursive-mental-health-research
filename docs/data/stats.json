@@ -626,6 +626,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'yeah', '*sigh*', and '*shrugs*', creates a sense of monotony and lack of genuine engagement. The therapist fails to add any meaningful insights or new perspectives, instead simply echoing the patient's statements without providing any depth or nuance."
+    },
+    {
+      "exp_id": "exp_0062",
+      "strategy_name": "Micro-Querying Utility-Grounded (MQUG) v1.0",
+      "hypothesis": "By radically simplifying the language to an ultra-minimalist, highly conversational, and non-judgmental tone, and replacing all explicit reflections with micro-queries that focus exclusively on the patient's immediate, concrete, and observable physical sensations, actions, and required effort (Utility/BA), we will eliminate the 'platitude' and 'formulaic' penalties, thereby achieving a sustained and measurable score above 6.907.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add genuine insight or depth to the conversation. The constant use of phrases like 'Thank you for noticing that tension' and 'I hear the description of the weight' becomes robotic and formulaic, rather than authentically present. Additionally, the therapist's focus on physical sensations and adjustments feels more like a gimmick than a meaningful therapeutic tool."
     }
   ],
   "best_score": 6.907

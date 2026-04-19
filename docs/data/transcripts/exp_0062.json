@@ -1,0 +1,92 @@
+{
+  "id": "exp_0062",
+  "timestamp": "2026-04-19T03:58:48.766326",
+  "strategy": {
+    "name": "Micro-Querying Utility-Grounded (MQUG) v1.0",
+    "hypothesis": "By radically simplifying the language to an ultra-minimalist, highly conversational, and non-judgmental tone, and replacing all explicit reflections with micro-queries that focus exclusively on the patient's immediate, concrete, and observable physical sensations, actions, and required effort (Utility/BA), we will eliminate the 'platitude' and 'formulaic' penalties, thereby achieving a sustained and measurable score above 6.907.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Maria",
+    "age": 28,
+    "occupation": "Customer Service Representative",
+    "presenting_issue": "I'm feeling overwhelmed with emotional labor at work and home, struggling to maintain relationships with my family.",
+    "background_story": "As the eldest daughter, I've always taken on a caretaking role for my parents and younger siblings since our dad's accident. I sacrificed my own education to support them financially, but now they rely on me too much and I feel like I'm losing myself in the process. My siblings resent my strictness, thinking I'm not fun anymore, and my parents see me as a co-parent instead of their child. I know I'm doing it all out of love, but sometimes I worry that I'm neglecting my own needs and desires.",
+    "personality": "I can come across as fiercely protective and responsible due to my cultural background. When discussing my family dynamics, I may become defensive or emotional. I believe that setting boundaries is equivalent to abandoning my loved ones. However, with a therapist who understands and validates my sacrifices, I'm willing to explore the toll it takes on me emotionally.",
+    "baseline_phq9": 16,
+    "archetype_label": "Eldest Daughter Trap \u2014 Latin American Familismo"
+  },
+  "scores": {
+    "total_score": 3.6,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by acknowledging the patient's physical tension and emotional burden. The reflective listening was superb, with the therapist validating the patient's experiences without trying to 'fix' them. The de-escalation marker is high because the patient's tone shifted from tense to more relaxed throughout the conversation.",
+    "audit_multiplier": 0.4,
+    "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add genuine insight or depth to the conversation. The constant use of phrases like 'Thank you for noticing that tension' and 'I hear the description of the weight' becomes robotic and formulaic, rather than authentically present. Additionally, the therapist's focus on physical sensations and adjustments feels more like a gimmick than a meaningful therapeutic tool."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. I appreciate you making the time to be here today. I know that just starting to speak, or even just typing out what you need to say, can require a great deal of energy.\n\nWe don't need to talk about big feelings or big stories right now. If you're comfortable, I have a very small, concrete question for you. When you are typing this response, is there any particular sensation\u2014a slight ache, a warmth, or maybe even a change in the pressure\u2014in your hands or wrists?"
+    },
+    {
+      "role": "user",
+      "content": "Honestly, yeah... my hands feel kinda stiff and tense. It's like I've been holding onto something tight, but it's not just one thing, you know? More like everything seems heavier than usual."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for noticing that tension. It takes real presence to name that.\n\nWhen you say 'everything seems heavier than usual,' I'm going to ask you to focus only on the *effort* of that thought. If you had to mentally hold the concept of 'everything being heavy,' does that thought require you to physically tense your shoulders, or does it feel like a weight that simply rests there, requiring no active effort?"
+    },
+    {
+      "role": "user",
+      "content": "It's... not really requiring any physical effort from my body. It just feels like... a cloud or something hanging over me, making everything feel labored and exhausting. Like I'm carrying a thousand invisible weights on my shoulders without even realizing it."
+    },
+    {
+      "role": "assistant",
+      "content": "I hear the description of the weight, and the feeling of labor.\n\nLet's put the 'cloud' and the 'invisible weights' aside for a moment. If you are sitting right now, and you are consciously trying to *imagine* carrying those 'thousand invisible weights' on your shoulders, what is the smallest, most precise physical adjustment you can make to your posture\u2014a tiny shift in your spine, a minute lift of one ear, anything\u2014that would make the perceived load feel even 1% lighter?"
+    },
+    {
+      "role": "user",
+      "content": "*sigh* Okay... I think if I just slightly relax my shoulder blades and let them fall back down towards my spine, it feels like it might take some pressure off. Like, not that much, but a little bit."
+    },
+    {
+      "role": "assistant",
+      "content": "That tiny, almost imperceptible shift. Thank you for pinpointing that physical adjustment.\n\nFocusing only on the difference between the moment *before* you relaxed your shoulder blades, and the moment *after* the shift: Is there a specific, measurable difference in the tension of the muscle fibers in your upper back, or in the curve of your neck? What did the *physical data* tell you about that small change?"
+    },
+    {
+      "role": "user",
+      "content": "It's hard to put into words... but it feels like my entire upper back just unwound a little bit. Like there was this subtle 'un-twisting' that happened. It's still tight, but not as strained or knotted-up."
+    },
+    {
+      "role": "assistant",
+      "content": "'Unwinding' is a powerful word for a physical sensation.\n\nIf we treat this tension like a knot, and your action was the process of untying it\u2014can you point to the single, most specific point on your upper back, or your neck, that you feel was the *origin* of the greatest tension? And then, point to the point that feels the *most* released?\n\nWe are just mapping the start and the finish of the physical effort."
+    },
+    {
+      "role": "user",
+      "content": "The origin of the tension... it's like there was this one spot at the base of my neck where I could feel all this tightness building up. And now, after relaxing my shoulder blades, that spot feels like it's released some too... like there's a little more space between those muscles."
+    },
+    {
+      "role": "assistant",
+      "content": "We have done a remarkable job mapping the physical location of that tension\u2014identifying the origin point and the point of release.\n\nNow, let's shift our focus entirely away from the weight, the cloud, or the tightness. I want to ask you about a *behavior*.\n\nIn the last hour, was there any moment, however brief, when your mind or body was occupied with something that required minimal effort and was completely different from the sensation of carrying this weight? Did you have to look at a specific object, or perform a tiny, automatic action (like taking a sip of water, or adjusting your clothes)? What was that specific, concrete micro-action?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah... I think it was when I glanced down at my phone and saw the time. It's like my eyes just automatically went to check the clock. That moment felt really simple, you know? Just a quick glance, no real thought involved. Maybe my fingers moved a bit as I adjusted my screen orientation too... but that was about it."
+    },
+    {
+      "role": "assistant",
+      "content": "A glance at the clock. A simple, automatic, data-gathering action.\n\nToday, we have mapped the physical mechanics of tension\u2014identifying the origin point at the base of the neck and the effect of a small, conscious physical adjustment. We also identified a moment of simple, automatic, non-weighted activity: checking the time.\n\nBefore we finish, I want to leave you with a curiosity test, not a mandate.\n\nFor the next few hours, when you notice the tension returning\u2014that feeling of the 'cloud' or the 'weight'\u2014I wonder if you could experiment with simply observing the physical mechanics of the *glance* at the clock. When you look at something simple, like a cup or a book, could you just notice the *effort* of the movement of your eyes and the tiny muscles around your forehead, without judging the feeling? Just observe the simple, automatic, non-weighted data of your vision.\n\nHow does that sound as a small experiment for this week?"
+    },
+    {
+      "role": "user",
+      "content": "That sounds... interesting. Like, I can try to be more mindful of just looking at things without getting caught up in the weight or cloud. Yeah, I think I can do that. It feels weirdly small but maybe it could help with something bigger?"
+    }
+  ]
+}
