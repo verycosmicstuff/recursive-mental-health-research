@@ -439,6 +439,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('Thank you for sharing that', 'That must be hard', etc.) instead of genuine engagement and insight. Additionally, the Therapist fails to pick up on subtext and misses opportunities to explore the patient's underlying emotions and motivations."
+    },
+    {
+      "exp_id": "exp_0045",
+      "strategy_name": "Deep-Dive Conversational Utility-PCT (DCUPT) v1.0",
+      "hypothesis": "By eliminating all structural scaffolding, theoretical labels, and explicit reflection techniques, and adopting a purely conversational, ultra-minimalist tone that grounds 100% of all reflections and inquiries solely in the patient's immediate, observable, and concrete functional language, we will maximize perceived authenticity and genuine engagement, achieving a score significantly higher than 6.907 by maximizing the perceived confluence of depth and conversational naturalness.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and lack genuine engagement. The constant use of phrases like 'That makes sense' and 'I hear you' feels like filler rather than a meaningful attempt to understand the patient's experiences. Additionally, the Therapist's mirroring is too repetitive and fails to add any significant insight or depth to the conversation."
     }
   ],
   "best_score": 6.907
