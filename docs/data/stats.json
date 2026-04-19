@@ -516,6 +516,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and lack genuine engagement with the patient's experiences. The constant use of phrases like 'That image is incredibly vivid' and 'What does it feel like...' feels like a formulaic approach rather than an authentic attempt to understand the patient's emotions."
+    },
+    {
+      "exp_id": "exp_0052",
+      "strategy_name": "Tension-Mapping: Utility-Driven Insight (TM-UDI) v1.0",
+      "hypothesis": "By shifting the therapeutic focus from merely reflecting the patient's stated feelings/behaviors (which leads to platitudes) to actively identifying and reflecting the *tension* or *internal contradiction* within their narrative (e.g., 'You say you want to change, but you describe a gravitational pull back to the familiar'), we can provide novel, insightful language that is both clinically deep and conversationally unique, thereby eliminating the 'generic platitude' penalty and surpassing the 6.907 score.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly formulaic and lack genuine engagement. The use of generic platitudes ('I hear you', 'That must be hard') as filler instead of genuine engagement is a significant failure. Additionally, the Therapist repeatedly mirrors the patient's words without adding any meaningful insight or depth, which further diminishes the therapeutic value of this session."
     }
   ],
   "best_score": 6.907
