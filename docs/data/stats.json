@@ -230,6 +230,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.7,
       "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('That must be hard', 'I hear you'), which dilute the impact of their observations and insights. Additionally, the Therapist's mirroring technique is too repetitive and lacks depth, failing to add meaningful new perspectives or connections."
+    },
+    {
+      "exp_id": "exp_0022",
+      "strategy_name": "Utility-Grounded Collaborative Investigation (UGCI) v1.0",
+      "hypothesis": "By synthesizing the functional analysis of behavior (BA/CBT) with the hyper-specific, non-judgmental process observation of ACT, and framing the entire interaction as a joint, objective investigation of observable patterns, we can maintain clinical depth and perceived insight while eliminating all generic emotional platitudes and formulaic language, thus maximizing the score significantly above 6.907.",
+      "score": 6.3,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.7,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly analytical and lack genuine engagement with the patient's emotions. The use of phrases like 'You described a specific social interaction...' and 'If we focus on the fidgeting...' creates a sense of detachment, rather than actively exploring the patient's experiences. Additionally, the therapist's questions often feel like they're trying to fit the patient's words into predetermined categories, rather than allowing the patient to unfold their thoughts naturally."
     }
   ],
   "best_score": 6.907
