@@ -593,6 +593,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.3,
       "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9d therapeutic phrases, such as 'The feeling of the conversation being a "
+    },
+    {
+      "exp_id": "exp_0059",
+      "strategy_name": "Grounding-Based Socratic Utility Challenge (GSUC) v1.0",
+      "hypothesis": "By replacing general empathetic reflection with highly targeted, micro-level Socratic questions that force the patient to examine the factual basis, assumptions, or functional necessity of their negative statements, while anchoring every question directly to the patient's concrete, observable language, we will provide novel, actionable insight that bypasses the 'platitude' and 'formulaic' penalties and surpass the 6.907 score.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly formulaic and lack genuine engagement. The use of phrases like 'That is an incredibly vivid and distressing picture' and 'It sounds like you are under a great deal of pressure right now' come across as robotic and insincere, rather than authentically present. Additionally, the therapist fails to pick up on subtext and misses opportunities to explore the patient's underlying emotions and motivations."
     }
   ],
   "best_score": 6.907
