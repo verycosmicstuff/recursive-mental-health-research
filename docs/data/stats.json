@@ -835,6 +835,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.5,
       "audit_rationale": "Penalty applied because: The therapist's reliance on generic platitudes and repetitive mirroring (e.g., 'I hear you talking about the weight\u2014the feeling of being weighed down') fails to demonstrate genuine engagement or insight. The conversation is overly focused on physical movements and trivial actions, neglecting the patient's emotional experience. Additionally, the therapist's attempts to 'fix' the issue by suggesting tiny muscle movements feel formulaic and lacking in empathy."
+    },
+    {
+      "exp_id": "exp_0081",
+      "strategy_name": "Micro-Exception Socratic Mapping (MESM) v1.0",
+      "hypothesis": "By combining an ultra-minimalist, highly conversational tone with a structured technique that replaces generalized reflection with single, targeted Socratic questions focused exclusively on the patient's concrete behavioral exceptions or required micro-actions (Utility/BA), we will provide a novel, non-platitudinous insight that elevates the perceived depth and strategic value above the 6.907 benchmark.",
+      "score": 4.5,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.5,
+      "audit_rationale": "Penalty applied because: The therapist's reliance on generic platitudes and repetitive mirroring (e.g., 'The smooth surface of the phone', 'That sounds like a very specific kind of moment') creates a sense of detachment and lack of genuine engagement. The therapist fails to add any meaningful insight or depth, instead simply parroting back the patient's words without providing any new perspective."
     }
   ],
   "best_score": 6.907
