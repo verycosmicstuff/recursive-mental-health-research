@@ -967,6 +967,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add any genuine insight or depth to the conversation. The constant use of phrases like 'That must have been incredibly frustrating' and 'What did that tiny moment suggest about...' creates a sense of formulaic roboticness rather than authentic engagement."
+    },
+    {
+      "exp_id": "exp_0093",
+      "strategy_name": "Collaborative Micro-Observation Inquiry (CMOI) v1.0",
+      "hypothesis": "By removing all theoretical framework language (ACT, PCT, CBT, 'process,' 'defusion') and restricting the therapist's output to single, highly conversational, non-judgmental questions that collaboratively investigate the *context* and *conditions* of the patient's most concrete, observable micro-actions or physical sensations, we will eliminate the 'formulaic' and 'platitude' penalties, maximizing perceived naturalness and genuine curiosity, thereby surpassing the 6.907 benchmark.",
+      "score": 4.5,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.5,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add any genuine insight or depth to the conversation. The use of phrases like 'It seems like...' and 'When you think about that feeling...' is a clear attempt to sound more empathetic than actually understanding the patient's experience."
     }
   ],
   "best_score": 6.907
