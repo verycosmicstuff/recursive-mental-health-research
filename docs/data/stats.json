@@ -549,6 +549,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The conversation is bogged down by unnecessary questions that don't add significant value to the patient's experience."
+    },
+    {
+      "exp_id": "exp_0055",
+      "strategy_name": "Ambient Contradiction Mapping (ACM) v1.0",
+      "hypothesis": "By eliminating all structural scaffolding, theoretical labels, and explicit reflection techniques, and adopting a purely conversational, ultra-minimalist tone that grounds all inquiries exclusively in the patient's observable, concrete language to locate and gently reflect subtle internal contradictions (tension mapping), we will bypass the 'generic platitude,' 'formulaic,' and 'detached' penalties simultaneously, achieving a perceived authenticity and depth that surpasses the 6.907 score.",
+      "score": 6.3,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.7,
+      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, while attempting to add insight, comes across as formulaic and lacking in genuine engagement. The constant use of metaphors ('weight spreading,' 'dull hum') and analogies ('heartbeat' rhythm) creates a sense of detachment rather than connection with the patient's emotions."
     }
   ],
   "best_score": 6.907
