@@ -472,6 +472,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly formulaic and lack genuine engagement. They repeatedly use phrases like 'That takes a surprising amount of energy' and 'It requires a tremendous amount of mental energy' without adding any new insights or perspectives. The mirroring is also too obvious, with the therapist simply parroting the patient's words back without providing any meaningful analysis or interpretation."
+    },
+    {
+      "exp_id": "exp_0048",
+      "strategy_name": "Minimalist Behavioral Exception Mapping (MBEM) v1.0",
+      "hypothesis": "By radically simplifying the language to an ultra-minimalist, warm, conversational tone, and focusing the inquiry exclusively on locating and magnifying tiny, concrete, and observable 'exceptions' to the current negative pattern\u2014especially small behavioral actions that require minimal effort\u2014we can maximize perceived authenticity and conversational flow, thus eliminating the 'formulaic,' 'platitude,' and 'detached' penalties simultaneously and surpassing the 6.907 score.",
+      "score": 5.4,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.6,
+      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'That is such a beautiful, deeply intense moment' and 'You're describing a highly sophisticated, instinctual, and functional response from your nervous system', lacks genuine engagement and insight. The therapist fails to add any new or meaningful perspectives, instead simply echoing the patient's statements back without providing any additional understanding or connection."
     }
   ],
   "best_score": 6.907
