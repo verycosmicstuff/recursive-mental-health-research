@@ -736,6 +736,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.6,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and filler phrases ('I hear you', 'That must be hard'), which detract from the authenticity of their engagement with the patient. Additionally, the therapist's mirroring of the patient's words is too repetitive and lacks insight or new perspectives."
+    },
+    {
+      "exp_id": "exp_0072",
+      "strategy_name": "Minimalist Utility Exception Mapping (MUEM) v2.0",
+      "hypothesis": "By radically stripping the language down to an ultra-minimalist, conversational tone, and restricting all inquiries solely to the patient's *most immediate, concrete, and observable actions or tiny exceptions* (Utility/BA), we will eliminate the 'formulaic,' 'platitude,' and 'detached' penalties by maximizing perceived conversational authenticity while embedding measurable clinical utility (identifying exceptions/exceptions to distress).",
+      "score": 6.3,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.7,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and mirroring, failing to add any genuine insight or depth to the conversation. For example, statements like 'It sounds like...' and 'That mug... it seems to be a very reliable anchor point' are simply parroting back what the patient said without providing any new understanding or perspective."
     }
   ],
   "best_score": 6.907

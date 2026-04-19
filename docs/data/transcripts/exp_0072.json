@@ -1,0 +1,92 @@
+{
+  "id": "exp_0072",
+  "timestamp": "2026-04-19T05:19:34.050311",
+  "strategy": {
+    "name": "Minimalist Utility Exception Mapping (MUEM) v2.0",
+    "hypothesis": "By radically stripping the language down to an ultra-minimalist, conversational tone, and restricting all inquiries solely to the patient's *most immediate, concrete, and observable actions or tiny exceptions* (Utility/BA), we will eliminate the 'formulaic,' 'platitude,' and 'detached' penalties by maximizing perceived conversational authenticity while embedding measurable clinical utility (identifying exceptions/exceptions to distress).",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Kavita",
+    "age": 32,
+    "occupation": "Freelance Graphic Designer & Delivery App Rider",
+    "presenting_issue": "I'm feeling overwhelmed and stuck, unsure how to balance my passion project with family expectations and my own emotional exhaustion.",
+    "background_story": "As a passionate community builder, I've been working tirelessly for the past year to establish a free library in Ludhiana. It's a labor of love, but the pressure from relatives to abandon it and take up a 'stable' job is taking a toll on my mental health. I feel like I'm constantly juggling multiple identities \u2013 community leader, family member, and creative individual. The constant scrutiny and judgment make me question whether I'm doing enough for everyone's expectations.",
+    "personality": "I'm a creative problem-solver, always looking for innovative solutions to complex issues. When stressed, I tend to internalize my emotions, which can lead to feelings of self-doubt and burnout. I value authenticity and honesty in relationships and expect the same from others. I'm not interested in superficial 'self-care' advice; instead, I need someone who understands the cultural context and can help me reconcile my values with my family's expectations.",
+    "baseline_phq9": 14,
+    "archetype_label": "Cross-Border Guilt (Indian Diaspora)"
+  },
+  "scores": {
+    "total_score": 6.3,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by recognizing the patient's emotional struggles and validating their experiences. The reflective listening was superb, with the therapist mirroring the patient's language and acknowledging their reality without trying to 'fix' them. The de-escalation marker shows a significant decrease in the patient's distress and anxiety throughout the conversation.",
+    "audit_multiplier": 0.7,
+    "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and mirroring, failing to add any genuine insight or depth to the conversation. For example, statements like 'It sounds like...' and 'That mug... it seems to be a very reliable anchor point' are simply parroting back what the patient said without providing any new understanding or perspective."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Thank you for being here today.\n\nI'm here to listen, and we can take this slowly, at whatever pace feels right for you.\n\nWhen you're ready, please just tell me what's on your mind, or what you've been noticing. We can just start by noticing the details."
+    },
+    {
+      "role": "user",
+      "content": "Thanks for having me... I guess. It's good to finally talk about all this stuff that's been weighing on my mind. To be honest, it feels like everyone around me is expecting something different from me, and it's exhausting trying to keep up. My family wants me to just get a \"stable\" job and forget about the library project, but it's what I'm truly passionate about. And then there are the community people who think I'm amazing for taking on this endeavor..."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like there are two very different kinds of expectations\u2014the idea of a \"stable job\" and the work on the \"library project\"\u2014that are sitting right next to each other."
+    },
+    {
+      "role": "user",
+      "content": "Exactly! It feels like I'm stuck between two worlds. My family is worried about my financial stability, while my heart is telling me to keep working on this library project that's so important to so many people in our community. And honestly, it's hard for me to reconcile those two realities because they seem mutually exclusive."
+    },
+    {
+      "role": "assistant",
+      "content": "You mentioned the \"library project,\" and you also mentioned your \"family's worry\" about finances.\n\nWhen you think about those two things\u2014the project and the financial worry\u2014is there any specific place, or even just a small object, that represents the *physical* space where these two ideas meet or pass each other?"
+    },
+    {
+      "role": "user",
+      "content": "Now that's an interesting question... I think of my tiny apartment, which is filled with books and art supplies from the library project. It's cluttered, but it feels like home to me. But then there are also all these delivery bags and boxes from my job on the food app, reminding me of the financial worry. If I had to pick one object that represents the space where those two ideas meet, I'd say it's probably a small wooden desk in the corner of my apartment. It's where I do my design work for the library project, but also where I plan out my delivery routes and keep track of my finances."
+    },
+    {
+      "role": "assistant",
+      "content": "That small wooden desk sounds like it holds a lot of different kinds of work\u2014the \"design work\" for the project, and the \"delivery routes\" and finances.\n\nWhen you are sitting at that desk, doing one thing or the other, can you notice any small, concrete things on the surface? Is there a pen, a stack of papers, a charging cable, or something else that shows *which* activity you were most recently engaged in?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah... when I'm done with my delivery routes and finances, I usually leave the app open on my phone and just set it to the side. So, there are always these charging cables and earbuds hanging out nearby. But if I've been working on design projects, you might see sketches or mockups scattered across the desk, along with colored pencils and markers. Sometimes, there's a half-finished cup of chai or coffee next to me too... it's like my brain can't focus without a little caffeine boost!"
+    },
+    {
+      "role": "assistant",
+      "content": "The desk has a collection of items\u2014the \"charging cables,\" the \"sketches and mockups,\" the \"colored pencils,\" and the \"half-finished cup of chai or coffee.\"\n\nIt sounds like the desk is a spot where you are actively *doing* things, which requires a routine. When you are at that desk, and you need that \"caffeine boost,\" what is the very first, small, physical step you take to get that cup of chai or coffee?"
+    },
+    {
+      "role": "user",
+      "content": "When I need my caffeine fix, the first thing I do is grab my favorite mug from the cabinet next to the desk. It's a worn-out, ceramic mug with a quote on it that says \"Create\" \u2013 it reminds me why I started this library project in the first place. Grabbing that mug feels like a little ritual that gets me ready to focus... and then I'll just head to the kitchen to brew some chai!"
+    },
+    {
+      "role": "assistant",
+      "content": "That mug\u2014the \"worn-out, ceramic mug\" with the quote \"Create\"\u2014it seems to be a very reliable anchor point. It's a physical object that initiates a sequence of actions: the retrieval, the journey to the kitchen, and the brewing.\n\nIt sounds like this small, repeatable ritual\u2014the *act* of making the chai\u2014is a functional moment of self-regulation for you."
+    },
+    {
+      "role": "user",
+      "content": "Yeah... yeah, it is! It's not just about getting my caffeine fix; it's a little moment of self-care that I can control when everything else feels overwhelming. Even when family pressure or community expectations are weighing me down, that mug and the ritual of making chai gives me a sense of calm and focus."
+    },
+    {
+      "role": "assistant",
+      "content": "That mug, and the sequence of actions it initiates\u2014the retrieval, the journey, the brewing\u2014that is a highly reliable, controlled sequence.\n\nEven when the feeling of \"overwhelming\" pressure is present, you still manage to perform that entire physical routine.\n\nCan you name one specific day or time in the last week, no matter how small or how rushed, where you still managed to complete that full ritual\u2014getting the mug, going to the kitchen, and brewing the chai?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah... okay... it was Tuesday morning around 8 am. I was really struggling to get started on my design work for the library project because of all the family pressure to focus on \"stable jobs\" instead. But even in that overwhelmed state, I still found myself reaching for that mug and making a cup of chai before diving into work. It was a tiny moment of self-care, but it gave me just enough calm to tackle my tasks with clarity..."
+    }
+  ]
+}
