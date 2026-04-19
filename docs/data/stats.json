@@ -1022,6 +1022,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.7,
       "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, while attempting to engage with the patient's experience, comes across as formulaic and lacking in genuine insight or understanding. The constant echoing of the patient's language creates a sense of roboticness, rather than authentic presence."
+    },
+    {
+      "exp_id": "exp_0098",
+      "strategy_name": "Hyper-Minimalist Utility-Meaning Bridge (HUMB) v1.0",
+      "hypothesis": "By radically constraining the therapist's language to only focus on (1) the single most recent, observable micro-utility/action (the 'what') and (2) follow up immediately with a single, open-ended question about the *consequence* or *meaning* of that micro-event (the 'why it matters'), we will eliminate all formulaic language penalties and achieve a natural, deeply engaging flow that maximizes perceived conversational depth and clinical utility, thereby surpassing the 6.907 benchmark.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add any genuine insight or depth to the conversation. The constant use of phrases like 'You noticed...' and 'What did that suggest?' creates a sense of formulaic repetition rather than authentic engagement with the patient's experiences."
     }
   ],
   "best_score": 6.907
