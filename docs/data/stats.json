@@ -648,6 +648,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.6,
       "audit_rationale": "Penalty applied because: The Therapist's repetitive mirroring of the patient's words and phrases, such as 'A punch in the gut', 'a weight is pressing down on me', and 'the knot comes back' creates a sense of robotic or formulaic responses rather than authentic engagement. Additionally, the Therapist's focus on physical sensations and bodily experiences, while acknowledging the emotional impact, may not fully capture the patient's underlying emotional distress and subtext."
+    },
+    {
+      "exp_id": "exp_0064",
+      "strategy_name": "Micro-Curiosity Utility Mapping (MCUM) v1.0",
+      "hypothesis": "By drastically reducing the structural complexity of the language (eliminating terms like 'process,' 'embodied,' 'defusion') and replacing all reflective statements with single, highly targeted, 'what-is-observable' micro-queries grounded exclusively in the patient's immediate, concrete, and present-tense language, we will achieve maximum perceived authenticity, thereby finally surpassing the 6.907 benchmark.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9d phrases, such as 'That makes sense' and 'You're looking for a way to separate two huge, heavy feelings.' These filler statements lack genuine engagement and fail to add meaningful insight. Additionally, the therapist's mirroring of the patient's words is too repetitive and doesn't provide any new or innovative perspectives."
     }
   ],
   "best_score": 6.907
