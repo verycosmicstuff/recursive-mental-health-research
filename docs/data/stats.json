@@ -934,6 +934,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.7,
       "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'That sounds like a very specific, beautiful moment' and 'It sounds like...', creates a sense of roboticness rather than genuine engagement. Additionally, the therapist's tendency to focus on the physical sensations and descriptions of the setting sun, while not entirely unhelpful, overshadows the patient's emotional experience and struggles."
+    },
+    {
+      "exp_id": "exp_0090",
+      "strategy_name": "Co-Curious Exception Prompting (CCEP) v1.0",
+      "hypothesis": "By radically constraining the therapist's output to focus exclusively on asking single, open-ended, 'What was the smallest thing?' questions about the patient's most immediate, concrete, or behavioral exceptions (Utility/BA), we will maximize perceived conversational naturalness and conversational flow, thus eliminating the 'formulaic' and 'platitude' penalties while still guiding the conversation toward actionable insights.",
+      "score": 2.7,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.3,
+      "audit_rationale": "Penalty applied because: The therapist's relentless focus on minute physical details and repetitive questioning about the patient's breathing, posture, and gaze creates a sense of artificial intimacy rather than genuine engagement. This approach lacks depth and fails to address the underlying emotional struggles of the patient."
     }
   ],
   "best_score": 6.907

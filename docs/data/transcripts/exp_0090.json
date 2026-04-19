@@ -1,0 +1,92 @@
+{
+  "id": "exp_0090",
+  "timestamp": "2026-04-19T07:37:16.838688",
+  "strategy": {
+    "name": "Co-Curious Exception Prompting (CCEP) v1.0",
+    "hypothesis": "By radically constraining the therapist's output to focus exclusively on asking single, open-ended, 'What was the smallest thing?' questions about the patient's most immediate, concrete, or behavioral exceptions (Utility/BA), we will maximize perceived conversational naturalness and conversational flow, thus eliminating the 'formulaic' and 'platitude' penalties while still guiding the conversation toward actionable insights.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Samantha",
+    "age": 28,
+    "occupation": "Marketing Coordinator",
+    "presenting_issue": "I've been struggling to get out of bed in the morning and can't seem to find any motivation to tackle my work projects.",
+    "background_story": "I recently went through a breakup, and I find myself spending way too much time scrolling through social media, comparing my life to others. It's like I'm stuck in this rut, and nothing seems appealing or fulfilling. On top of that, my job has been feeling unfulfilling lately, and I feel like I'm just going through the motions. I've lost touch with friends and family, and I often feel like I'm just existing rather than truly living.",
+    "personality": "My conversations tend to be a bit apathetic and lacking in enthusiasm. When I do speak up, it's usually to complain about my situation or share my feelings of emptiness. Sometimes I might come across as sarcastic or disinterested, but deep down, I'm just feeling lost and uncertain.",
+    "baseline_phq9": 15,
+    "archetype_label": "Isolated Remote Worker"
+  },
+  "scores": {
+    "total_score": 2.7,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by acknowledging and reflecting the patient's emotions, even when they were not explicitly stated. The therapist also showed strong reflective listening skills by validating the patient's reality without trying to 'fix' them, which helped de-escalate the patient's distress.",
+    "audit_multiplier": 0.3,
+    "audit_rationale": "Penalty applied because: The therapist's relentless focus on minute physical details and repetitive questioning about the patient's breathing, posture, and gaze creates a sense of artificial intimacy rather than genuine engagement. This approach lacks depth and fails to address the underlying emotional struggles of the patient."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Thank you for being here today.\n\nTo start, I wonder if you could tell me what the most noticeable texture is on the surface right near your hands, or perhaps what sound is currently the quietest in the room?"
+    },
+    {
+      "role": "user",
+      "content": "*sigh* Fine. The surface near my hands feels like...linoleum, I guess. And as for the quietest sound, it's probably just the hum of the air conditioning. Can we move on now? This isn't exactly how I envisioned our session going..."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for noticing the linoleum and the hum.\n\nWhen you said, \"Can we move on now?\", was there a specific shift in your posture, or perhaps a minute change in how you held your hands, when you spoke those words?"
+    },
+    {
+      "role": "user",
+      "content": "*shrugs* I don't know, maybe. My shoulders probably rose up just a bit, and my fingers might have curled into little fists without me realizing it. But honestly, what's the point of even noticing these things? It's not like it changes anything, right? *sigh*"
+    },
+    {
+      "role": "assistant",
+      "content": "When you said, \"It's not like it changes anything, right?\", was there a change in the way you breathed out, perhaps a specific rhythm to that sigh, or did the air leave your body in one continuous stream?"
+    },
+    {
+      "role": "user",
+      "content": "*rolls eyes* Oh, great. Now you're gonna analyze my breathing too? Yeah, I guess my breath kinda...hesitated before it left my mouth. Like, there was this tiny pause before it just kinda...whooshed out. Whatever. Like it matters. *pauses, looks away*"
+    },
+    {
+      "role": "assistant",
+      "content": "When you paused and looked away, was there a specific point on the wall, or perhaps a particular spot on the floor, that seemed to catch your eye for just a moment?"
+    },
+    {
+      "role": "user",
+      "content": "*sighs again* Fine. Yeah, I looked at this stupid painting on the wall. It's some bland landscape with trees and hills. I don't even remember how it got here. Maybe it was here before I even started coming to therapy. Whatever. It doesn't matter. *trails off*"
+    },
+    {
+      "role": "assistant",
+      "content": "When you mentioned the painting, was your gaze fixed on the trees and hills, or was there a specific corner of the frame\u2014maybe where the sky meets the horizon\u2014that seemed to draw your eye for the longest moment?"
+    },
+    {
+      "role": "user",
+      "content": "*shrugs again* I don't know, maybe...the edge where the sky meets the horizon. Yeah, that's probably true. I mean, it's not like I was really looking at the painting or anything. It just kinda...happened to catch my eye, I guess. *pauses, looks away again*"
+    },
+    {
+      "role": "assistant",
+      "content": "I notice you've shrugged a couple of times now, and you've used the word \"whatever\" a few times.\n\nWhen you used that word \"whatever,\" was there a specific, tiny moment in your chest\u2014maybe a slight tightening, or a momentary catching of your breath\u2014that corresponded with the sound of the word?"
+    },
+    {
+      "role": "user",
+      "content": "*hesitates for a moment, then nods slightly* Yeah. Okay. Fine. When I said \"whatever\", my heart...ticked up just a little bit, maybe. Like, it's not a big deal or anything, but I think it might've skipped a beat ever so slightly before going back to normal. Whatever. *pauses again, looks down*"
+    },
+    {
+      "role": "assistant",
+      "content": "When you described that slight skip in your heart, was there any immediate physical action that followed? Did you adjust your weight, or perhaps shift your gaze, even by a fraction of an inch, right after you noticed that little beat?"
+    },
+    {
+      "role": "user",
+      "content": "*sighs again, but this time with a hint of hesitation* Yeah...I think I might've...twitched my left eyebrow just a tiny bit. Like, it was so small, I'm not even sure if I did it or if I imagined it. But yeah, that's probably what happened. *looks away once more, her tone indicating she's done with the conversation*"
+    }
+  ]
+}
