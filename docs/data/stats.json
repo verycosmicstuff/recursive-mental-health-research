@@ -241,6 +241,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.7,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly analytical and lack genuine engagement with the patient's emotions. The use of phrases like 'You described a specific social interaction...' and 'If we focus on the fidgeting...' creates a sense of detachment, rather than actively exploring the patient's experiences. Additionally, the therapist's questions often feel like they're trying to fit the patient's words into predetermined categories, rather than allowing the patient to unfold their thoughts naturally."
+    },
+    {
+      "exp_id": "exp_0023",
+      "strategy_name": "Minimalist Utility-Driven Collaborative Inquiry (MUDCI) v2.0",
+      "hypothesis": "By strictly limiting language to observable, concrete behavioral details (Utility) and adopting a highly conversational, non-jargon-heavy, co-curious tone, we can maintain the high clinical depth of functional inquiry while eliminating the 'formulaic' and 'detached' penalties, thereby achieving a score significantly higher than 6.907 by maximizing the perceived authenticity of the interaction.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('That takes incredible vulnerability', 'Wow, thank you for bringing that memory forward'), which dilute the therapeutic value of the session. Additionally, the Therapist frequently uses phrases like 'I hear you' and 'Please give yourself credit' without adding any meaningful insight or new perspectives."
     }
   ],
   "best_score": 6.907
