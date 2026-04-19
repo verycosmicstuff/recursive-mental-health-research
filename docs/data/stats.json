@@ -461,6 +461,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add any genuine insight or depth to the conversation. The constant use of phrases like 'That must be hard' and 'What does that feel like?' becomes a crutch, rather than a tool for meaningful engagement."
+    },
+    {
+      "exp_id": "exp_0047",
+      "strategy_name": "Utility-Grounded Co-Curious Inquiry (UGCCI) v1.0",
+      "hypothesis": "By radically minimizing all emotional reflection and structural language, and adopting an approach that grounds 100% of all inquiries in observable, present-tense, functional, and behavioral details (Utility/BA), we will eliminate the 'formulaic,' 'platitude,' and 'detached' penalties simultaneously, maximizing perceived authenticity and genuine engagement, thereby surpassing the current best score of 6.907.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly formulaic and lack genuine engagement. They repeatedly use phrases like 'That takes a surprising amount of energy' and 'It requires a tremendous amount of mental energy' without adding any new insights or perspectives. The mirroring is also too obvious, with the therapist simply parroting the patient's words back without providing any meaningful analysis or interpretation."
     }
   ],
   "best_score": 6.907
