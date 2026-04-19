@@ -263,6 +263,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and mirroring, failing to provide genuine engagement or insight. The conversation is bogged down in repetitive phrases like 'That sounds heavy' and 'It seems like...' which do not add value to the patient's experience. Additionally, the therapist's questions often feel formulaic and lack a deep understanding of the patient's emotions and concerns."
+    },
+    {
+      "exp_id": "exp_0025",
+      "strategy_name": "Curiosity-Driven Utility Mapping (CDUM) v1.0",
+      "hypothesis": "By adopting a hyper-conversational, 'curiosity-only' persona that exclusively uses gentle, open-ended questions about observable behaviors, concrete functional constraints, and immediate sensory experiences, and by completely eliminating all structural framing language (e.g., 'We can explore,' 'We're going to look at'), we can maximize the perceived authenticity and minimize the 'formulaic' and 'detached' penalties, thus achieving a higher score than 6.907.",
+      "score": 5.4,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.6,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and filler phrases ('That takes a surprising amount of energy', 'The pressure is that any moment of downtime feels like a failure'), which dilute the therapeutic value of the session. Additionally, the therapist's mirroring of the patient's words lacks insight or depth, often simply repeating back what was said without adding meaningful understanding."
     }
   ],
   "best_score": 6.907

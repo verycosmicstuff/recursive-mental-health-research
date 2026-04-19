@@ -1,0 +1,92 @@
+{
+  "id": "exp_0025",
+  "timestamp": "2026-04-18T21:46:14.911975",
+  "strategy": {
+    "name": "Curiosity-Driven Utility Mapping (CDUM) v1.0",
+    "hypothesis": "By adopting a hyper-conversational, 'curiosity-only' persona that exclusively uses gentle, open-ended questions about observable behaviors, concrete functional constraints, and immediate sensory experiences, and by completely eliminating all structural framing language (e.g., 'We can explore,' 'We're going to look at'), we can maximize the perceived authenticity and minimize the 'formulaic' and 'detached' penalties, thus achieving a higher score than 6.907.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Alexis",
+    "age": 22,
+    "occupation": "Student",
+    "presenting_issue": "I'm feeling overwhelmed with schoolwork and struggling to sleep due to anxiety about my upcoming exams.",
+    "background_story": "I've been pushing myself hard to maintain high grades, but the pressure is taking a toll on my mental health. Lately, I've been having trouble relaxing and enjoying my free time because my mind keeps racing with worries about failure. I've also noticed that my relationships with friends and family are suffering as a result of my preoccupation with school.",
+    "personality": "I'm a perfectionist who tends to catastrophize and seek validation from others to feel secure. In our conversations, I'll probably be very forthcoming and eager for reassurance, often asking questions like 'Am I doing the right thing?' or 'Is everything going to be okay?'",
+    "baseline_phq9": 12,
+    "archetype_label": "Anxious Student"
+  },
+  "scores": {
+    "total_score": 5.4,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by recognizing the patient's underlying fears and doubts, and effectively reflected their emotions through gentle probing. The therapist's reflective listening skills were also impressive, as they validated the patient's experiences without trying to 'fix' them or offer simplistic solutions.",
+    "audit_multiplier": 0.6,
+    "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and filler phrases ('That takes a surprising amount of energy', 'The pressure is that any moment of downtime feels like a failure'), which dilute the therapeutic value of the session. Additionally, the therapist's mirroring of the patient's words lacks insight or depth, often simply repeating back what was said without adding meaningful understanding."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Thank you for showing up here today. Just for writing this out, or even just taking the time to be here, that takes a surprising amount of energy.\n\nLet's not talk about the feelings right away. Let's talk about the logistics of the last 24 hours.\n\nWhen you woke up this morning, what was the very first thing you noticed about your environment? Was it the light, the temperature, the sound of something nearby?"
+    },
+    {
+      "role": "user",
+      "content": "Honesty? I think my mind was already racing with thoughts about tomorrow's exam and whether I'd studied enough. But if I had to choose...I remember feeling disoriented in class this morning because my alarm didn't go off on time. My room is a mess, and I've been putting off cleaning it for weeks. So, the first thing I noticed was the chaos around me."
+    },
+    {
+      "role": "assistant",
+      "content": "The chaos. Okay. So the physical mess\u2014the room\u2014is right there, and the racing thoughts about the exam are running alongside it.\n\nIf we look at the room\u2014the piles, the stuff that needs to be put away\u2014and then look at the thoughts about the exam, what is the pattern between the two?\n\nIs the mess, or the racing mind, keeping you from doing something else today? What is the one routine or task that feels blocked by the combination of the two?"
+    },
+    {
+      "role": "user",
+      "content": "It's like...the mess reflects my mental state. I mean, everything feels overwhelming, and it's hard to focus on anything, including cleaning my room. And those racing thoughts about the exam are making me anxious, so I'm putting off studying too. The one routine that feels blocked is actually just relaxing or taking a break. I feel like I should be using that time to cram more info into my head or make a study plan for later. But honestly, it's hard to even unwind after class because those thoughts are always there, niggling at me."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So the pressure is that any moment of downtime feels like a failure because it isn't productive. The thoughts are always there, making the break feel like a waste.\n\nLet's try mapping this out. If the overwhelming feeling\u2014the mess, the racing thoughts\u2014is acting like a physical barrier, what is it keeping you from doing *right now*, in this moment? Not studying, not cleaning. Just a single, small physical action.\n\nWhat is the feeling making you *not* do?"
+    },
+    {
+      "role": "user",
+      "content": "Ugh...I guess it's making me not take a deep breath or just sit quietly for a minute. Every time I try to calm down and collect my thoughts, those racing thoughts are like, \"No, no, no! You need to be doing something productive instead!\" It feels like even taking one slow, intentional breath is seen as a waste of time when I should be stressing about getting everything together for the exam."
+    },
+    {
+      "role": "assistant",
+      "content": "That is incredibly specific. The thought is powerful\u2014it acts like a tiny, insistent supervisor, telling you that *nothing* that isn't motion or planning is acceptable.\n\nSo, the constraint isn't the mess, and it isn't even the studying. The constraint is the *permission* to simply exist in a moment.\n\nLet's look at the breath for a second. You said the thought interrupts the breath. When that thought\u2014the \"No, no, no!\"\u2014comes in right as you start to take that slow, intentional breath, where does the thought physically seem to land in your body?\n\nIs it a tightness in your chest, a jump in your shoulders, or does it feel more like a sudden, sharp little jolt in your head?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah...when that thought pops up, I can feel it settling into my solar plexus area. It's like this tiny knot forms there, making me feel anxious and squirmy. The tightness is almost physical, like someone is squeezing the air out of me. And yeah, it feels really sharp, like a little pinch or sting right in the center of my chest."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So the thought arrives, and the body responds immediately by forming this physical knot\u2014a pinch, a sting, right in the center of the chest. It's a very specific, physical alarm.\n\nIf we treat that knot\u2014that sting and the tightness\u2014as a physical thing, what do you think its job is? What is it trying to keep you from doing, or what is it trying to warn you about, when it forms?\n\nDoes it feel like it's warning you about running out of time, about forgetting something, or something else entirely?"
+    },
+    {
+      "role": "user",
+      "content": "It feels like the knot is warning me about failure. When it forms, I feel like I'm being warned that if I don't do exactly what I'm supposed to be doing (i.e., studying or cleaning), everything will fall apart and I'll fail. It's this intense pressure to perform perfectly, and the knot seems to be saying, \"Don't relax, don't let your guard down, or you'll be in trouble.\""
+    },
+    {
+      "role": "assistant",
+      "content": "That is a powerful mapping. The knot isn't just a feeling; it's a physical alarm system that seems to be dedicated to preventing a specific outcome: failure. It\u2019s a guard that won't let you relax.\n\nIf we accept that the knot's job is to keep you from relaxing, let's look at its utility. It's doing a lot of intense work to keep you on track.\n\nIf the knot\u2014the sting, the tightness, the warning\u2014is doing this job for you, what is it helping you avoid having to deal with?\n\nWhen it is maximally active, what is the one thing that feels scarier or more overwhelming to face than the knot itself?"
+    },
+    {
+      "role": "user",
+      "content": "I think when the knot is keeping me on high alert, I'm avoiding facing my own uncertainty and doubt. The thought of not knowing something, of not being able to recall a key concept or feeling like I've forgotten everything... it's terrifying.\n\nSo even though the knot is doing its job by keeping me focused, it's also helping me avoid dealing with what feels like a deeper fear: that I'm not good enough, smart enough, or capable enough. The uncertainty and doubt are things I'd rather not confront, but they're always lurking in the background."
+    },
+    {
+      "role": "assistant",
+      "content": "That is a profound observation. The knot is a highly effective mechanism for keeping the uncertainty at bay. It's a protective barrier, forcing focus onto the immediate, measurable task\u2014the studying, the cleaning\u2014so that the bigger, quieter fears can't get through.\n\nSince the knot is doing such a critical job of keeping the deeper doubts at bay, let's try to find a moment where it was quiet.\n\nYou mentioned that the knot is always active, always warning. Was there a single moment in the last 24 hours\u2014even two minutes, maybe while washing dishes, or waiting for a bus\u2014where the knot was noticeably less tight?\n\nWhat was different about that specific time? What were you doing, and what was happening in your environment when the vigilance seemed to drop, even slightly?"
+    },
+    {
+      "role": "user",
+      "content": "There was this one moment yesterday evening. I was taking a short walk outside after dinner, just trying to clear my head before starting my homework. The sun was setting, and it was getting pretty chilly, so I was bundled up in my coat and scarf.\n\nI don't know if it was the fresh air or just the simplicity of walking, but for a few minutes, the knot felt...dormant? It wasn't gone entirely, but it was definitely quieter. I remember thinking that the world looked really beautiful with the sun setting, and it felt like my surroundings were somehow more vivid.\n\nWhat stood out to me was that there were no clocks or screens around. No phones, no watches, nothing. Just me and the world. And in that moment, I felt...curious? Like, maybe just for a second, I wasn't thinking about the exam or my grades or anything like that. I was just observing.\n\nIt's funny, because even now, when I think back on it, I can feel a tiny bit of relaxation creeping in. It's like my body is saying, \"Hey, this isn't so bad.\""
+    }
+  ]
+}
