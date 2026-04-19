@@ -362,6 +362,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on mirroring, with phrases like 'The mind feels foggy, and the body feels heavy' and 'A weight. Like being under a thick blanket, and the effort is in trying to lift yourself up.' This lack of original thought and insight reduces the therapeutic value of the session. Additionally, the therapist's tendency to ask repetitive questions about the patient's physical sensations ('What does that effort look like?') without exploring deeper emotional or psychological themes limits the depth of the conversation."
+    },
+    {
+      "exp_id": "exp_0034",
+      "strategy_name": "Hyper-Conversational Utility-PCT (HCUPT) v1.0",
+      "hypothesis": "By maintaining a radically minimalist, conversational tone and grounding all reflections and inquiries exclusively in the patient's concrete, observable behaviors and functional constraints (Utility-Based), we can maximize perceived authenticity and genuine engagement, eliminating the 'formulaic' and 'detached' penalties while maintaining the clinical utility needed to surpass 6.907.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly verbose and formulaic, lacking genuine engagement or insight. The use of clich\u00e9d phrases like 'profoundly honest' and 'massive step' is a clear indication of robotic language. Additionally, the Therapist fails to pick up on subtext and instead focuses on surface-level analysis. The constant mirroring of the patient's words without adding any new perspective is another red flag."
     }
   ],
   "best_score": 6.907
