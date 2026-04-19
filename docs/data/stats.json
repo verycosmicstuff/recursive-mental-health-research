@@ -527,6 +527,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The Therapist's responses are overly formulaic and lack genuine engagement. The use of generic platitudes ('I hear you', 'That must be hard') as filler instead of genuine engagement is a significant failure. Additionally, the Therapist repeatedly mirrors the patient's words without adding any meaningful insight or depth, which further diminishes the therapeutic value of this session."
+    },
+    {
+      "exp_id": "exp_0053",
+      "strategy_name": "Ambient Utility-Grounded Insight (AUGI) v1.0",
+      "hypothesis": "By adopting a radically non-structural, 'Ambient' persona that communicates through profound, shared, and highly specific curiosity, and grounding all reflections *exclusively* in the patient's observed, concrete, and immediate language (Utility), we can eliminate the 'formulaic' and 'platitude' penalties, achieving a depth of engagement that surpasses the 6.907 score.",
+      "score": 4.5,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.5,
+      "audit_rationale": "Penalty applied because: The therapist's language is overly poetic and lacks genuine engagement. The use of phrases like 'thick, gray fog' and 'molasses feeling' creates a sense of detachment rather than connection with the patient. Additionally, the therapist's focus on physical sensations and bodily mechanisms overshadows the emotional content of the patient's experience, leading to a lack of depth in their understanding."
     }
   ],
   "best_score": 6.907
