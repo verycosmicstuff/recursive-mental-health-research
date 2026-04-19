@@ -703,6 +703,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.7,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add genuine insight or depth to the conversation. The constant use of phrases like 'That must be hard' and 'It sounds like...' creates a sense of formulaic roboticness rather than authentic engagement."
+    },
+    {
+      "exp_id": "exp_0069",
+      "strategy_name": "Micro-Behavioral Utility Mapping (MUM) v3.0",
+      "hypothesis": "By eliminating all theoretical jargon, high-level concepts (e.g., 'process,' 'defusion,' 'tension'), and all abstract emotional reflections, and restricting all inquiries to single, highly conversational, 'what-is-observable' questions about the patient's immediate, concrete physical sensations, or required effort (Utility/BA), we will eliminate the 'formulaic' and 'platitude' penalties, achieving a perceived authenticity and clinical depth necessary to surpass the 6.907 score.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'That desk', 'A pile of papers', and 'A single sheet' creates a sense of roboticness rather than genuine engagement. This lack of original thought and insight makes it seem like the therapist is simply parroting back what the patient has said without adding any meaningful understanding or perspective."
     }
   ],
   "best_score": 6.907
