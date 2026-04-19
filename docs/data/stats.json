@@ -714,6 +714,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'That desk', 'A pile of papers', and 'A single sheet' creates a sense of roboticness rather than genuine engagement. This lack of original thought and insight makes it seem like the therapist is simply parroting back what the patient has said without adding any meaningful understanding or perspective."
+    },
+    {
+      "exp_id": "exp_0070",
+      "strategy_name": "Utility-Grounded Exception Mapping (UGEM) v1.0",
+      "hypothesis": "By eliminating all theoretical jargon (ACT, process, defiance) and focusing all reflections and inquiries exclusively on the patient's *observable, concrete behaviors* or *exceptions* to the distress (Utility/BA), and anchoring the questioning using a conversational, non-judgmental tone, we will achieve maximum perceived authenticity and genuine engagement, bypassing the 'formulaic' penalty while maintaining measurable clinical depth.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s, such as 'That must be hard' and 'I hear the profound weight in your words.' These phrases lack genuine engagement and insight, instead serving as filler to pad out the conversation. Additionally, the Therapist frequently mirrors the patient's words without adding any meaningful analysis or new perspectives."
     }
   ],
   "best_score": 6.907
