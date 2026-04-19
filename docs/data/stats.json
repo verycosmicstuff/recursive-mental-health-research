@@ -945,6 +945,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.3,
       "audit_rationale": "Penalty applied because: The therapist's relentless focus on minute physical details and repetitive questioning about the patient's breathing, posture, and gaze creates a sense of artificial intimacy rather than genuine engagement. This approach lacks depth and fails to address the underlying emotional struggles of the patient."
+    },
+    {
+      "exp_id": "exp_0091",
+      "strategy_name": "Collaborative Exception Discovery (CED) v1.0",
+      "hypothesis": "By adopting an ultra-minimalist, highly conversational, and non-theoretical persona, and structurally constraining all reflections/inquiries to single, open-ended questions that collaboratively investigate the *conditions* and *contexts* of the patient's observable behavioral exceptions (what was different when it wasn't so bad?), we will eliminate the 'formulaic' and 'platitude' penalties by generating novel, genuinely curious, and non-repetitive insight, thereby surpassing the 6.907 benchmark.",
+      "score": 4.5,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.5,
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and lack genuine engagement. For example, the statement 'That must be hard' is used as a filler instead of actively exploring the patient's emotions. Additionally, the Therapist frequently mirrors the patient's words without adding any new insights or perspectives."
     }
   ],
   "best_score": 6.907
