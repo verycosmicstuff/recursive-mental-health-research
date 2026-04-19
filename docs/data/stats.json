@@ -747,6 +747,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.7,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and mirroring, failing to add any genuine insight or depth to the conversation. For example, statements like 'It sounds like...' and 'That mug... it seems to be a very reliable anchor point' are simply parroting back what the patient said without providing any new understanding or perspective."
+    },
+    {
+      "exp_id": "exp_0073",
+      "strategy_name": "Minimal Micro-Utility Mapping (MMUM) v1.1",
+      "hypothesis": "By retaining the clinical focus on identifying actionable exceptions and micro-behaviors (Utility/BA) while drastically restricting all language to an ultra-minimalist, non-theoretical, and purely 'what-is-observable' conversational tone, we can maximize perceived conversational authenticity and genuine presence, thereby surpassing the 6.907 benchmark.",
+      "score": 4.5,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.5,
+      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'It sounds like...', 'You are noticing...', and 'That was a very specific, observable moment', creates a sense of robotic formulaic language rather than authentic engagement. Additionally, the therapist's focus on minute physical details, such as the temperature of the phone and the texture of the wrist adjustment, detracts from the patient's emotional experience and neglects to explore deeper subtext."
     }
   ],
   "best_score": 6.907
