@@ -868,6 +868,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The constant use of phrases like 'I hear you' and 'That is a very heavy thing to hold' feels like filler rather than a meaningful attempt to understand the patient's experiences. Additionally, the therapist's focus on physical sensations (e.g., eyebrow relaxation) overshadows the emotional and psychological aspects of the patient's struggles, leading to a superficial understanding of their concerns."
+    },
+    {
+      "exp_id": "exp_0084",
+      "strategy_name": "Micro-Utility-Emotional Bridge (MUEB) v1.0",
+      "hypothesis": "By maintaining an ultra-minimalist, conversational tone that focuses initial reflections on a single, concrete, observable micro-utility (the 'what'), and then immediately bridging that observation to a single, genuine, non-theoretical emotional resonance (the 'why'), we will maximize perceived conversational authenticity while achieving measurable emotional depth, thereby surpassing the 6.907 benchmark.",
+      "score": 4.5,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.5,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and mirroring, failing to add any genuine insight or depth to the conversation. The use of phrases like 'That must be hard' and 'It sounds like...' is a clear indication of a lack of engagement and understanding. Additionally, the therapist's questions are too focused on labeling and categorizing the patient's emotions rather than exploring their underlying meaning."
     }
   ],
   "best_score": 6.907
