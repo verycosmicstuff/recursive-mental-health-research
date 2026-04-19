@@ -791,6 +791,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.7,
       "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'what was the very next, smallest thing you did?' and 'when you noticed your mind wandering, what was the physical thing you had to do to bring your focus back to the email or the report?', lacks genuine engagement and insight. The therapist is simply parroting the patient's words without adding any meaningful depth or understanding."
+    },
+    {
+      "exp_id": "exp_0077",
+      "strategy_name": "Co-Curious Exception Bridge (CCEB) v1.0",
+      "hypothesis": "By adopting an ultra-minimalist, highly conversational persona that eliminates all overt theoretical frameworks and structural language, and instead focusing on gently guiding the patient from an observable micro-detail (Utility/BA) to a single, previously unmentioned moment of self-efficacy or exception in that immediate context, we can maximize perceived conversational authenticity and genuine rapport, thereby finally surpassing the 6.907 benchmark.",
+      "score": 5.4,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.6,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('That makes perfect sense', 'It sounds like...'). These phrases lack genuine engagement and fail to add any meaningful insight or depth to the conversation."
     }
   ],
   "best_score": 6.907
