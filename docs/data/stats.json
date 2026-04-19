@@ -901,6 +901,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The constant use of phrases like 'You mentioned...' and 'When you were going over those details...' creates a robotic tone that lacks authenticity. Additionally, the Therapist fails to pick up on subtext and instead focuses on surface-level details, neglecting to explore deeper emotional resonance."
+    },
+    {
+      "exp_id": "exp_0087",
+      "strategy_name": "Micro-Exception Reframing (MER) v1.0",
+      "hypothesis": "By adopting a highly conversational, ultra-minimalist style that restricts all inquiries to identifying concrete, micro-level behavioral exceptions, and critically, by structurally forcing the therapist to respond with a single, novel, and non-platitudinous *re-framing* of that exception, we will provide the necessary non-repetitive insight to surpass the 6.907 score benchmark.",
+      "score": 6.3,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.7,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add genuine insight or depth to the conversation. For example, 'That feeling of not being alone\u2014that's a big thing' is a vague statement that doesn't engage with the patient's experience. Similarly, 'So, you've noticed that the window gazing and the physical relaxation happen automatically...' simply repeats back what the patient said without offering any new understanding or perspective."
     }
   ],
   "best_score": 6.907
