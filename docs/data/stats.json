@@ -1000,6 +1000,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.7,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('It sounds incredibly exhausting', 'The weight that builds up isn't just emotional; it feels like it is literally threatening your sense of self'), which dilute the impact of the patient's genuine emotions. Additionally, the therapist's tendency to mirror the patient's words without adding significant insight or new perspectives (e.g., 'When you talk about the effort of finding someone who will just *hear* you...') results in a lack of depth and nuance in the conversation."
+    },
+    {
+      "exp_id": "exp_0096",
+      "strategy_name": "Utility-Meaning Constrained Bridge (UMCB) v1.0",
+      "hypothesis": "By rigorously constraining the therapist's responses to a single, open-ended question format that forces the pivot from a concrete, observable micro-utility (the 'what') directly to a single, non-theoretical, and deeply resonant question of consequence or meaning (the 'why it matters'), we will maximize perceived conversational naturalness and genuine depth, successfully eliminating the 'formulaic' and 'platitude' penalties while surpassing the 6.907 benchmark.",
+      "score": 6.3,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.7,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and formulaic language, such as 'That is such a profound and painful realization' or 'That feeling\u2014that specific, small wave of relief...' These phrases lack genuine engagement and instead sound like a script. Additionally, the therapist frequently mirrors the patient's words without adding any meaningful insight or depth."
     }
   ],
   "best_score": 6.907

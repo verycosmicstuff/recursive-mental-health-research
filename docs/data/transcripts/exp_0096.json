@@ -1,0 +1,92 @@
+{
+  "id": "exp_0096",
+  "timestamp": "2026-04-19T08:30:11.291187",
+  "strategy": {
+    "name": "Utility-Meaning Constrained Bridge (UMCB) v1.0",
+    "hypothesis": "By rigorously constraining the therapist's responses to a single, open-ended question format that forces the pivot from a concrete, observable micro-utility (the 'what') directly to a single, non-theoretical, and deeply resonant question of consequence or meaning (the 'why it matters'), we will maximize perceived conversational naturalness and genuine depth, successfully eliminating the 'formulaic' and 'platitude' penalties while surpassing the 6.907 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Evelyn",
+    "age": 22,
+    "occupation": "Undergraduate Student",
+    "presenting_issue": "I'm feeling overwhelmed with schoolwork and struggling to sleep due to constant worries about my future.",
+    "background_story": "As a senior in college, I've been putting immense pressure on myself to get into a good graduate program. Lately, I've been experiencing constant anxiety and self-doubt, making it hard for me to concentrate or find joy in activities I used to love. My parents are always asking when I'll find a job, which adds to my stress levels.",
+    "personality": "I'm a perfectionist who tends to ruminate on worst-case scenarios. I crave constant reassurance and can get frustrated if things don't go exactly as planned. When we chat, I appreciate it when you acknowledge my concerns and offer words of encouragement.",
+    "baseline_phq9": 11,
+    "archetype_label": "Anxious Student"
+  },
+  "scores": {
+    "total_score": 6.3,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by acknowledging Evelyn's fears and vulnerabilities, and reflecting her concerns without judgment. The reflective listening was also exceptional, as the therapist validated Evelyn's reality and mirrored her language effectively.",
+    "audit_multiplier": 0.7,
+    "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and formulaic language, such as 'That is such a profound and painful realization' or 'That feeling\u2014that specific, small wave of relief...' These phrases lack genuine engagement and instead sound like a script. Additionally, the therapist frequently mirrors the patient's words without adding any meaningful insight or depth."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "(Awaiting patient input. My response will be guided by the Utility-to-Meaning Bridge (UMCB) structure, focusing on hyper-specific observation and open-ended significance.)"
+    },
+    {
+      "role": "user",
+      "content": "I'm not sure where to start... everything just feels like a mess right now. I've been so consumed with schoolwork and my future plans that I feel like I'm drowning. It's hard for me to even think about anything else because anxiety is always lurking in the back of my mind."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly heavy, like you are carrying a huge amount of future weight all at once.\n\nYou mentioned being consumed by schoolwork and future plans, that specific focus on what's next. What does that intense concentration\u2014that need to keep your mind on those tasks\u2014suggest about what you are trying to keep safe right now?"
+    },
+    {
+      "role": "user",
+      "content": "I think I'm trying to keep my sense of security and identity intact. The thought of not being able to get into a good graduate program or finding a job is terrifying to me because it feels like that's all I've been working towards. If I can't achieve those things, who am I supposed to be? It's like if that falls apart, then my whole sense of self does too."
+    },
+    {
+      "role": "assistant",
+      "content": "That is such a profound and painful realization\u2014that your sense of self feels tied up in external outcomes. It sounds like the stakes feel impossibly high.\n\nEven just right now, speaking those words, articulating that fear about your identity\u2014that takes a tremendous amount of energy. Thinking about the specific act of putting those complex feelings into words, what did that small act of speaking suggest about the parts of yourself that are still trying to be heard?"
+    },
+    {
+      "role": "user",
+      "content": "I think it's like...even in talking about how scared I am, there was a tiny sense of relief. Like, okay, I'm acknowledging this instead of trying to push it away or pretend everything is fine. Maybe that means some part of me wants to be heard, to have someone else understand what I'm going through and not judge me for being so anxious all the time. But then again, there's also a fear that if I open up too much, others will see how broken I am..."
+    },
+    {
+      "role": "assistant",
+      "content": "That feeling\u2014that specific, small wave of relief that comes just from naming the fear, from letting it out\u2014that's something really powerful.\n\nTaking that moment where you chose to acknowledge the fear instead of pushing it away, what did that choice suggest about what you might need to give yourself, even if it feels scary to let others see that side of you?"
+    },
+    {
+      "role": "user",
+      "content": "I think acknowledging my fears and vulnerabilities shows me that I might need permission to be imperfect. Like, maybe I don't have to have everything together all the time or pretend like I'm handling everything just fine. It's okay to not know what I'm doing, to make mistakes, and to ask for help. But that's hard for me because my parents always emphasize being independent and self-sufficient..."
+    },
+    {
+      "role": "assistant",
+      "content": "Hearing that tension between needing permission to be imperfect and the push toward independence\u2014that sounds like a very difficult place to live right now.\n\nWhen you spoke the phrase \"permission to be imperfect,\" that idea itself\u2014that need for an allowance to *not* be perfect\u2014what does that specific concept suggest about what your own heart is telling you it needs to feel safe?"
+    },
+    {
+      "role": "user",
+      "content": "I think my heart is telling me that I need to feel seen and accepted for who I am, flaws and all. It's like I'm constantly trying to prove myself to others, but deep down, I just want to be understood and loved despite my imperfections. Maybe if someone can see past the anxious student persona and connect with the scared, uncertain person beneath, that would help me feel safer and more at peace..."
+    },
+    {
+      "role": "assistant",
+      "content": "That shift\u2014from focusing on the \"anxious student persona\" to speaking about the \"scared, uncertain person beneath\"\u2014that takes a tremendous amount of courage.\n\nThinking about that specific act of making that distinction, of naming the person underneath the performance, what does that small, vital moment suggest about where you might find the most safety for yourself right now?"
+    },
+    {
+      "role": "user",
+      "content": "I think it suggests that I need to find ways to connect with others on a deeper level. Like, instead of just talking about my grades or job prospects, I need to open up and be vulnerable with people who care about me. It's scary, but maybe if I can build those relationships, I'll start to feel more grounded and less alone in this overwhelming world..."
+    },
+    {
+      "role": "assistant",
+      "content": "That movement\u2014from discussing the concrete things like grades and job prospects, to articulating the need to talk about the deeper, internal feelings\u2014that specific shift in focus is significant.\n\nWhat does that small, deliberate redirection of your focus suggest about what you are ready to prioritize for yourself right now?"
+    },
+    {
+      "role": "user",
+      "content": "I think it suggests that I'm ready to prioritize my own emotional well-being and connections with others. Like, I've been so focused on external accomplishments and proving myself to others that I've neglected my own feelings and needs. It's time for me to start prioritizing self-care, vulnerability, and genuine relationships..."
+    }
+  ]
+}
