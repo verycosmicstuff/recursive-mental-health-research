@@ -890,6 +890,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.6,
       "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'That desire for things to be 'just so' is a very real form of effort', 'That image of things 'spilling out''\u2014that sudden sense of things becoming a mess\u2014is very vivid', and 'The physical breath becomes a literal boundary\u2014a way to keep the internal landscape from being seen', comes across as formulaic and lacking genuine engagement. The therapist's responses often feel like a regurgitation of the patient's words, rather than offering insightful or creative observations."
+    },
+    {
+      "exp_id": "exp_0086",
+      "strategy_name": "Micro-Exception Collaborative Reframing (MECR) v1.0",
+      "hypothesis": "By adopting an ultra-minimalist, highly conversational, and non-theoretical persona that restricts all reflections and inquiries solely to identifying a single, concrete, observable micro-exception or micro-utility, and framing the response as a spontaneous, shared observation (a 'What else?'), we will maximize perceived naturalness and genuine curiosity, thereby overcoming the platitude penalty and achieving a score above 6.907.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The constant use of phrases like 'You mentioned...' and 'When you were going over those details...' creates a robotic tone that lacks authenticity. Additionally, the Therapist fails to pick up on subtext and instead focuses on surface-level details, neglecting to explore deeper emotional resonance."
     }
   ],
   "best_score": 6.907
