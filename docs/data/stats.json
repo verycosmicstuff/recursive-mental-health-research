@@ -846,6 +846,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.5,
       "audit_rationale": "Penalty applied because: The therapist's reliance on generic platitudes and repetitive mirroring (e.g., 'The smooth surface of the phone', 'That sounds like a very specific kind of moment') creates a sense of detachment and lack of genuine engagement. The therapist fails to add any meaningful insight or depth, instead simply parroting back the patient's words without providing any new perspective."
+    },
+    {
+      "exp_id": "exp_0082",
+      "strategy_name": "Conversational Utility-Exception Mapping (CUEM) v1.1",
+      "hypothesis": "By radically simplifying the language to an ultra-minimalist, conversational, and highly non-theoretical tone, and restricting all reflections and inquiries solely to the patient's most immediate, concrete, and observable micro-exceptions or functional actions, we will eliminate the 'formulaic' and 'platitude' penalties, achieving a perceived level of natural authenticity and clinical utility necessary to surpass the 6.907 benchmark.",
+      "score": 4.5,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.5,
+      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'Just a swipe', 'Just a blank spot', and 'Just a hair' to the left, comes across as robotic and formulaic rather than authentically present. This lack of genuine engagement and insight into the patient's experiences undermines the therapeutic relationship and diminishes the effectiveness of the session."
     }
   ],
   "best_score": 6.907

@@ -1,0 +1,92 @@
+{
+  "id": "exp_0082",
+  "timestamp": "2026-04-19T06:36:33.238927",
+  "strategy": {
+    "name": "Conversational Utility-Exception Mapping (CUEM) v1.1",
+    "hypothesis": "By radically simplifying the language to an ultra-minimalist, conversational, and highly non-theoretical tone, and restricting all reflections and inquiries solely to the patient's most immediate, concrete, and observable micro-exceptions or functional actions, we will eliminate the 'formulaic' and 'platitude' penalties, achieving a perceived level of natural authenticity and clinical utility necessary to surpass the 6.907 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Yara",
+    "age": 29,
+    "occupation": "Marketing Specialist",
+    "presenting_issue": "I'm feeling overwhelmed by my recent change in job role and struggling to reconcile my new work-life balance with my family's expectations.",
+    "background_story": "As a second-generation Iranian-Canadian, I've always been deeply rooted in my faith. However, after my recent career transition, I've started questioning the rigid religious frameworks that once brought me comfort. My parents, who are devout Shia Muslims, view therapy as a sign of weakness and believe that if I just prayed more, I wouldn't feel this way. The guilt is suffocating - I feel like I'm betraying my family and community by seeking help. In my social circle, therapy is stigmatized, making me hesitant to open up to others about my struggles.",
+    "personality": "I tend to be guarded and introspective at first, but once trust is established, I open up quickly. I appreciate straightforward honesty and authenticity in our conversations. A therapist who acknowledges the complexity of faith as both a source of strength and weakness will make me feel more comfortable. However, if you dismiss my faith as 'unhealthy' or overly deferential to it without addressing its potential harm, I'll become reserved.",
+    "baseline_phq9": 14,
+    "archetype_label": "Faith vs. Modernity \u2014 Middle Eastern Diaspora"
+  },
+  "scores": {
+    "total_score": 4.5,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by acknowledging the patient's unspoken emotions and reflecting their deeper meaning. The reflective listening was superb, validating the patient's reality without trying to 'fix' them. The de-escalation marker shows a significant decrease in the patient's distress, anger, or anxiety throughout the conversation.",
+    "audit_multiplier": 0.5,
+    "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'Just a swipe', 'Just a blank spot', and 'Just a hair' to the left, comes across as robotic and formulaic rather than authentically present. This lack of genuine engagement and insight into the patient's experiences undermines the therapeutic relationship and diminishes the effectiveness of the session."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hey. Thanks for joining me today. Just take your time getting settled.\n\nWhat are you looking at right now, on the screen, or in the room?"
+    },
+    {
+      "role": "user",
+      "content": "Thanks...I guess. *pauses* Right now, I'm staring at my phone, wondering why I agreed to do this again. It feels like so much effort to open up about all this. Can we just get it over with? *sigh*"
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like there's a lot of weight right now, even just sitting here.\n\nI noticed you paused for a moment, and you sighed. Was there anything specific about the phone, or the screen, that caught your eye right before you started thinking about all this effort?"
+    },
+    {
+      "role": "user",
+      "content": "*sigh* Ah, no...nothing on the phone, really. Just my usual social media feeds. But I guess it's weird to admit, but seeing all those happy family posts and perfectly curated lives feels like a constant reminder that mine is falling apart. Like, what's wrong with me? *pauses, feeling slightly more vulnerable*"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you were looking at those feeds\u2014the happy family posts, the curated lives\u2014and that triggered this feeling of comparison, of things falling apart.\n\nWhen you were scrolling through those pictures, what was the very next, smallest thing you did with your fingers on the phone screen? Did you pause on one picture? Did you scroll down quickly?"
+    },
+    {
+      "role": "user",
+      "content": "*hesitates for a moment* Honestly? I think I just swiped away from it. Didn't even bother to open any of those posts. Just wanted to get rid of it and pretend like everything's fine... *looks down, embarrassed* Guess that didn't really help, huh?"
+    },
+    {
+      "role": "assistant",
+      "content": "Just a swipe. To move away from it.\n\nAnd when you swiped, what happened next? Did you immediately pick up your phone again, or did you put it down, or did you look up at anything else in the room? What was the very next physical moment after the swipe?"
+    },
+    {
+      "role": "user",
+      "content": "*pauses for a moment, recalling the action* Ah, yeah...I think I just set my phone aside and stared at the wall for a bit. Didn't even realize what I was looking at until now. Just a blank spot on the wall. *trails off, lost in thought*"
+    },
+    {
+      "role": "assistant",
+      "content": "So you set the phone down, and then you started looking at the wall. Just a blank spot.\n\nWhen you were looking at that blank spot, what did that moment feel like physically? Was it a stretch of time, or was there a specific detail on the wall\u2014a crack, a shadow, a color\u2014that kept your focus, even if it was unintentional?"
+    },
+    {
+      "role": "user",
+      "content": "*pauses again, reflecting on the moment* It felt...quiet. Like my mind had stopped racing for a second. I remember noticing a small, faint line on the wall that looked like a tiny crack. Not even sure how I noticed it in the first place, but it just sort of drew my attention. Maybe because it was so subtle, it didn't really make sense to me? *shrugs*"
+    },
+    {
+      "role": "assistant",
+      "content": "That faint line, the little crack on the wall. It drew your attention.\n\nWhen you noticed that crack\u2014that subtle, seemingly meaningless line\u2014did you do anything with your eyes? Did you trace it with your gaze? Did you shift your head slightly to get a different angle on it? What was the smallest, physical way your attention settled on that specific spot?"
+    },
+    {
+      "role": "user",
+      "content": "*hesitates before responding, as if recalling a small but significant detail* Yeah...I think I tilted my head just a hair to the left. Just enough to see the crack from a slightly different angle. It felt like my eyes were trying to make sense of it, even though it didn't really mean anything. *pauses again, lost in thought*"
+    },
+    {
+      "role": "assistant",
+      "content": "You tilted your head, just a hair, to get a different view of that faint, meaningless crack. And you felt like your eyes were trying to make sense of it.\n\nWhen you were looking at that crack, and your mind felt like it was slowing down, what was the physical necessity of that little head tilt? Was it just curiosity, or was it something else that helped you anchor yourself back into the room?"
+    },
+    {
+      "role": "user",
+      "content": "*pauses again, thinking back on the moment* I think...I think it was just enough to make me feel grounded. Like my body was trying to find some stability in a chaotic inner world. The head tilt felt like a tiny act of self-care, even though it sounds silly now. It's not like I was thinking consciously about being grounded or anything...it just happened. *looks down, still hesitant*"
+    }
+  ]
+}
