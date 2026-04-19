@@ -395,6 +395,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The Therapist's language is overly formal and lacks genuine engagement. Repetitive mirroring where the Therapist just parrots the patient's words back without adding insight. The session relies too heavily on generic platitudes ('I hear you', 'That must be hard') used as filler instead of genuine engagement. The Therapist fails to pick up on what the patient is NOT saying, and the conversation feels more like a scientific experiment than a therapeutic exploration."
+    },
+    {
+      "exp_id": "exp_0037",
+      "strategy_name": "Co-Discovery Pattern Mapping (CDPM) v1.0",
+      "hypothesis": "By adopting a radically conversational, non-structural, and ultra-minimalist tone while consistently grounding all reflections and inquiries in the patient's *observed behavioral patterns* and the *functional constraints* of their distress (Utility), we can eliminate the 'formulaic' and 'detached' penalties, maximizing perceived authenticity and achieving a score significantly higher than 6.907.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and filler phrases, such as 'That sounds incredibly overwhelming' and 'Thank you for sharing that.' These statements lack genuine engagement and fail to add any meaningful insight or understanding to the patient's experiences. Additionally, the therapist's mirroring of the patient's words is too repetitive and lacks depth, failing to pick up on subtle subtext and nuances in the patient's language."
     }
   ],
   "best_score": 6.907
