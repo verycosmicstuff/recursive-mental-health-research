@@ -406,6 +406,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and filler phrases, such as 'That sounds incredibly overwhelming' and 'Thank you for sharing that.' These statements lack genuine engagement and fail to add any meaningful insight or understanding to the patient's experiences. Additionally, the therapist's mirroring of the patient's words is too repetitive and lacks depth, failing to pick up on subtle subtext and nuances in the patient's language."
+    },
+    {
+      "exp_id": "exp_0038",
+      "strategy_name": "Ambient Utility Mapping (AUM) v1.0",
+      "hypothesis": "By eliminating all structural scaffolding, all explicit theoretical frameworks (PCT, ACT, CBA), and all complex reflection language, and instead adopting a purely conversational, ultra-minimalist tone that grounds all reflections and inquiries exclusively in the patient's observable, concrete functional language, we will maximize perceived authenticity and genuine engagement, thereby finally surpassing the previous best score of 6.907.",
+      "score": 6.3,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.7,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and mirroring, failing to add any genuine insight or depth to the conversation. The use of phrases like 'That must be hard' and 'The pattern seems to be...' feels formulaic and lacks authentic engagement with the patient's experiences."
     }
   ],
   "best_score": 6.907
