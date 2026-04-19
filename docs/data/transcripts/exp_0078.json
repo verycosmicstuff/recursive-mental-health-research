@@ -1,0 +1,92 @@
+{
+  "id": "exp_0078",
+  "timestamp": "2026-04-19T06:05:37.679365",
+  "strategy": {
+    "name": "Utilitarian Focus Shift (UFS) v1.0",
+    "hypothesis": "By combining an ultra-minimalist, conversational, and non-theoretical tone with a structured technique that gently pivots the conversation from the patient's abstract emotional distress (the 'why') to a single, concrete, recent, observable behavioral exception or action (the 'what'), we will eliminate the 'formulaic' and 'platitude' penalties while providing enough novel, actionable insight (Utility/BA) to surpass the 6.907 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Harrison",
+    "age": 28,
+    "occupation": "Software Developer",
+    "presenting_issue": "I'm feeling really overwhelmed by my to-do list at work and struggling to make progress on any of it.",
+    "background_story": "I've been stuck in a rut lately, spending most nights scrolling through social media or playing video games to avoid dealing with the stress of my job. My relationships have started to suffer as I don't have much energy left for friends or family outside of work. To be honest, I'm not really sure what I want out of life anymore.",
+    "personality": "I tend to come across as apathetic and uninterested in conversations, but deep down I'm just feeling really lost and unsure of how to move forward.",
+    "baseline_phq9": 15,
+    "archetype_label": "Isolated Remote Worker"
+  },
+  "scores": {
+    "total_score": 2.7,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by acknowledging Harrison's feelings of being stuck and suffocated, and validating his experiences without trying to 'fix' him. The therapist also showed reflective listening skills by mirroring Harrison's language and validating his reality, which helped de-escalate the patient's distress.",
+    "audit_multiplier": 0.3,
+    "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The conversation is bogged down by unnecessary details about the patient's sandwich-making experience, with the therapist simply parroting back the patient's words without adding any meaningful perspective."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hi there. Thanks for reaching out today.\n\nWhen you say things feel heavy right now, where do you feel that weight in your body?"
+    },
+    {
+      "role": "user",
+      "content": "*shrugs* I don't know... everywhere, maybe? It's just this constant feeling of being stuck and not knowing how to move forward. Like, my job is suffocating me and I'm just trying to make it through each day without losing my mind. *pauses* Does that make sense?"
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like a deep kind of fatigue.\n\nThinking about the last 24 hours, what was one small thing you physically had to do? Something you moved through, or a small decision you had to make?"
+    },
+    {
+      "role": "user",
+      "content": "*sighs* I guess I made myself a sandwich for lunch yesterday. That's pretty much it. And even that felt like too much effort. But, yeah, I remember thinking \"man, I'm really tired\" while I was making it... *trails off*"
+    },
+    {
+      "role": "assistant",
+      "content": "Making the sandwich. Okay.\n\nWhen you were making it, what was the very first thing you reached for? Was it the bread, the knife, or something else?"
+    },
+    {
+      "role": "user",
+      "content": "*hesitates* Yeah, the bread. I think. It's all kinda blurry... Look, can this conversation just be over already? This is all kind of embarrassing... *stops* Sorry."
+    },
+    {
+      "role": "assistant",
+      "content": "It's okay. There's nothing to be embarrassed about here.\n\nYou reached for the bread. That required your hand to move.\n\nWhat did that bread feel like when you touched it? Was it soft, rough, cool, or something else?"
+    },
+    {
+      "role": "user",
+      "content": "*sighs* Fine... Yeah, it was soft. Like, really soft. And warm too, I think. It just felt... normal, I guess. Like, it's supposed to be soft and warm bread. But even that feels like too much effort to remember right now... *pauses*"
+    },
+    {
+      "role": "assistant",
+      "content": "Just soft. Just normal.\n\nLet's stay with that for a minute.\n\nWhen you held that soft bread, did you notice anything about the color of it? Was it a pale yellow, or maybe a little darker? What did your eyes see?"
+    },
+    {
+      "role": "user",
+      "content": "*shrugs* Yeah, it was white, I think. Or at least, pretty close to white. Maybe slightly yellowish... Not that it matters, but yeah, it was just bread. *pauses again* Look, can we move on from this already? It's all just really stupid stuff..."
+    },
+    {
+      "role": "assistant",
+      "content": "White. Or slightly yellowish.\n\nYou saw that color.\n\nWhen you were looking at it, did you have to move your head, or just your eyes, to take in the color?"
+    },
+    {
+      "role": "user",
+      "content": "*hesitates again* I... think I had to move my head a little bit. Like, I wasn't staring straight down at it or anything. Just... yeah, moving my head slowly to look at it, I guess. *sighs heavily* Can we just stop now? This is all really stupid..."
+    },
+    {
+      "role": "assistant",
+      "content": "You moved your head slowly to look at it.\n\nThat was a choice. A physical choice.\n\nWe found that even when the feeling was heavy, you managed to pick up the bread, notice its soft color, and slowly look at it. That required a moment of focus.\n\nFor this week, can you commit to one micro-action? When you wake up, before you look at your phone, can you commit to noticing the temperature of the air against your skin for just ten seconds? Just an experiment."
+    },
+    {
+      "role": "user",
+      "content": "*pauses, slightly annoyed* Fine... Yeah, I guess that's not so bad. I'll do it. But don't expect me to start feeling all happy and stuff or anything... *sighs* Just ten seconds, right? You're not asking me to do some huge favor or anything..."
+    }
+  ]
+}

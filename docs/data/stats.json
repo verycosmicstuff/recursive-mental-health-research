@@ -802,6 +802,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.6,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('That makes perfect sense', 'It sounds like...'). These phrases lack genuine engagement and fail to add any meaningful insight or depth to the conversation."
+    },
+    {
+      "exp_id": "exp_0078",
+      "strategy_name": "Utilitarian Focus Shift (UFS) v1.0",
+      "hypothesis": "By combining an ultra-minimalist, conversational, and non-theoretical tone with a structured technique that gently pivots the conversation from the patient's abstract emotional distress (the 'why') to a single, concrete, recent, observable behavioral exception or action (the 'what'), we will eliminate the 'formulaic' and 'platitude' penalties while providing enough novel, actionable insight (Utility/BA) to surpass the 6.907 benchmark.",
+      "score": 2.7,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.3,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The conversation is bogged down by unnecessary details about the patient's sandwich-making experience, with the therapist simply parroting back the patient's words without adding any meaningful perspective."
     }
   ],
   "best_score": 6.907
