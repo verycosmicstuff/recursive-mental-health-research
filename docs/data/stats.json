@@ -307,6 +307,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.5,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('That must be hard', 'It sounds like...'). These filler phrases do not demonstrate genuine engagement or insight, but rather sound robotic and formulaic. Additionally, the therapist fails to pick up on subtext and misses opportunities to explore the patient's underlying emotions and motivations."
+    },
+    {
+      "exp_id": "exp_0029",
+      "strategy_name": "Hyper-Conversational Utility Mapping (HCUM) v1.0",
+      "hypothesis": "By eliminating all structural scaffolding, jargon, and explicit theoretical language, and adopting a purely conversational, ultra-minimalist tone that focuses solely on observed behaviors and functional constraints, we can achieve the highest perceived authenticity and genuine engagement, thus transcending the structural limitations that capped the previous highest score.",
+      "score": 5.4,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.6,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and mirroring, failing to provide genuine engagement or insight. The conversation is bogged down by repetitive questions that don't add much value, and the therapist doesn't effectively explore subtext or pick up on subtle cues from the patient."
     }
   ],
   "best_score": 6.907
