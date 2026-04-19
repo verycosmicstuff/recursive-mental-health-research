@@ -538,6 +538,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.5,
       "audit_rationale": "Penalty applied because: The therapist's language is overly poetic and lacks genuine engagement. The use of phrases like 'thick, gray fog' and 'molasses feeling' creates a sense of detachment rather than connection with the patient. Additionally, the therapist's focus on physical sensations and bodily mechanisms overshadows the emotional content of the patient's experience, leading to a lack of depth in their understanding."
+    },
+    {
+      "exp_id": "exp_0054",
+      "strategy_name": "Ambient Functional Curiosity (AFC) v1.0",
+      "hypothesis": "By eliminating all structural scaffolding, theoretical jargon, and explicit emotional reflection/validation, and adopting a purely conversational, ultra-minimalist persona that grounds all reflections and inquiries exclusively in the patient's observable, concrete, and behavioral language (Function/Utility), we will maximize perceived authenticity and genuine engagement, thereby consistently surpassing the current best score of 6.907.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The conversation is bogged down by unnecessary questions that don't add significant value to the patient's experience."
     }
   ],
   "best_score": 6.907
