@@ -758,6 +758,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.5,
       "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'It sounds like...', 'You are noticing...', and 'That was a very specific, observable moment', creates a sense of robotic formulaic language rather than authentic engagement. Additionally, the therapist's focus on minute physical details, such as the temperature of the phone and the texture of the wrist adjustment, detracts from the patient's emotional experience and neglects to explore deeper subtext."
+    },
+    {
+      "exp_id": "exp_0074",
+      "strategy_name": "Micro-Behavioral Exception Mapping (MBEM) v1.0",
+      "hypothesis": "By adopting an extreme ultra-minimalist, highly conversational persona that restricts all reflections and inquiries solely to identifying single, concrete, micro-level exceptions or observable actions (Utility/BA), and structuring the reflection to provide a novel, single-sentence *reframe* of that exception, we will achieve maximum perceived naturalness and clinical utility, surpassing the 6.907 benchmark.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and formulaic language, lacking genuine engagement and insight. The constant use of phrases like 'That's a very precise observation' and 'That is incredibly insightful' feels robotic and insincere, failing to provide meaningful connections with the patient's experiences."
     }
   ],
   "best_score": 6.907
