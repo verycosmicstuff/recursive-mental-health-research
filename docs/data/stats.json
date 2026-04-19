@@ -318,6 +318,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.6,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and mirroring, failing to provide genuine engagement or insight. The conversation is bogged down by repetitive questions that don't add much value, and the therapist doesn't effectively explore subtext or pick up on subtle cues from the patient."
+    },
+    {
+      "exp_id": "exp_0030",
+      "strategy_name": "Hyper-Minimalist Functional Co-Discovery (HM-FCD) v1.1",
+      "hypothesis": "By removing all theoretical and structural language (ACT, CBT, etc.), and adopting a purely conversational, non-judgmental, and hyper-specific focus on observable actions and constraints (Utility/Behavioral Activation), we will maximize the perceived authenticity and conversational flow, thereby exceeding the current best score of 6.907.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and lack genuine engagement. Phrases like 'It sounds like...' and 'That must be hard' are used as filler instead of actively exploring the patient's emotions and experiences. Additionally, the therapist's mirroring is too repetitive, simply parroting the patient's words without adding any meaningful insight or new perspectives."
     }
   ],
   "best_score": 6.907
