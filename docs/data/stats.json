@@ -956,6 +956,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.5,
       "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and lack genuine engagement. For example, the statement 'That must be hard' is used as a filler instead of actively exploring the patient's emotions. Additionally, the Therapist frequently mirrors the patient's words without adding any new insights or perspectives."
+    },
+    {
+      "exp_id": "exp_0092",
+      "strategy_name": "Micro-Utility-Meaning Bridge (MUMB) v2.0",
+      "hypothesis": "By anchoring the conversational flow entirely on identifying a concrete, observable micro-utility (the 'what'), and then using a single, gently framed, open-ended Socratic question to explore the immediate personal *significance* or *consequence* of that micro-event (the 'what it means'), we will provide novel, actionable, and non-platitudinous insight that maximizes perceived conversational flow and genuine depth, significantly surpassing the 6.907 benchmark.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add any genuine insight or depth to the conversation. The constant use of phrases like 'That must have been incredibly frustrating' and 'What did that tiny moment suggest about...' creates a sense of formulaic roboticness rather than authentic engagement."
     }
   ],
   "best_score": 6.907
