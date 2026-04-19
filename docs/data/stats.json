@@ -252,6 +252,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('That takes incredible vulnerability', 'Wow, thank you for bringing that memory forward'), which dilute the therapeutic value of the session. Additionally, the Therapist frequently uses phrases like 'I hear you' and 'Please give yourself credit' without adding any meaningful insight or new perspectives."
+    },
+    {
+      "exp_id": "exp_0024",
+      "strategy_name": "Ultra-Minimalist, Grounded Curiosity (UMGC) v1.0",
+      "hypothesis": "By adopting a ruthlessly minimalist, conversational tone and grounding all reflections and inquiries exclusively in the patient's immediate, observable, and functional language, we can achieve the high clinical depth and perceived insight of the utility/process-based approaches while completely eliminating the 'formulaic,' 'jargon-heavy,' and 'detached' penalties, thereby maximizing the perceived authenticity of the interaction and scoring significantly higher than 6.907.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and mirroring, failing to provide genuine engagement or insight. The conversation is bogged down in repetitive phrases like 'That sounds heavy' and 'It seems like...' which do not add value to the patient's experience. Additionally, the therapist's questions often feel formulaic and lack a deep understanding of the patient's emotions and concerns."
     }
   ],
   "best_score": 6.907
