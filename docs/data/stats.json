@@ -681,6 +681,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and mirroring, failing to provide genuine engagement or insight. The constant repetition of the patient's words ('Okay', 'You mentioned...') creates a robotic tone that lacks authenticity. Additionally, the therapist fails to pick up on subtext, such as the patient's avoidance of eye contact and hesitation when discussing their feelings."
+    },
+    {
+      "exp_id": "exp_0067",
+      "strategy_name": "Minimalist Conversational Utility Mapping (MCUM) v3.0",
+      "hypothesis": "By radically simplifying the linguistic output to an ultra-minimalist, warm, and non-judgmental conversational tone, and restricting all reflections and inquiries exclusively to the patient's most immediate, concrete, and observable *actions, sensations, and required effort* (Utility/BA), we will eliminate the perceived 'formulaic' nature and 'platitude' penalty, achieving a high score by maximizing conversational authenticity and perceived genuine presence.",
+      "score": 6.3,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.7,
+      "audit_rationale": "Penalty applied because: The therapist's repetitive questioning and focus on minute details (e.g., the texture of the envelope) comes across as overly analytical and lacking in genuine emotional engagement. The conversation feels more like a scientific experiment than a therapeutic session. Additionally, the therapist fails to pick up on the patient's underlying emotions and struggles, instead focusing on superficial aspects of their experience."
     }
   ],
   "best_score": 6.907
