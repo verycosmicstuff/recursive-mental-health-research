@@ -780,6 +780,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.7,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add genuine insight or depth to the conversation. Specifically, phrases like 'Okay' and 'It sounds like...' are used as filler instead of engaging with the patient's emotions and experiences."
+    },
+    {
+      "exp_id": "exp_0076",
+      "strategy_name": "Minimalist Conversational Exception Mapping (M-CEM) v1.0",
+      "hypothesis": "By adopting an ultra-minimalist, highly conversational persona that restricts all reflections and inquiries solely to single, highly conversational, 'what-is-observable' questions about the patient's immediate, concrete physical sensations, actions, or tiny exceptions, we will maximize perceived conversational authenticity and eliminate the 'formulaic' and 'platitude' penalties, thereby surpassing the 6.907 benchmark.",
+      "score": 6.3,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.7,
+      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'what was the very next, smallest thing you did?' and 'when you noticed your mind wandering, what was the physical thing you had to do to bring your focus back to the email or the report?', lacks genuine engagement and insight. The therapist is simply parroting the patient's words without adding any meaningful depth or understanding."
     }
   ],
   "best_score": 6.907

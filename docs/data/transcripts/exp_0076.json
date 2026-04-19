@@ -1,0 +1,92 @@
+{
+  "id": "exp_0076",
+  "timestamp": "2026-04-19T05:49:28.183033",
+  "strategy": {
+    "name": "Minimalist Conversational Exception Mapping (M-CEM) v1.0",
+    "hypothesis": "By adopting an ultra-minimalist, highly conversational persona that restricts all reflections and inquiries solely to single, highly conversational, 'what-is-observable' questions about the patient's immediate, concrete physical sensations, actions, or tiny exceptions, we will maximize perceived conversational authenticity and eliminate the 'formulaic' and 'platitude' penalties, thereby surpassing the 6.907 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Ava",
+    "age": 35,
+    "occupation": "Marketing Manager",
+    "presenting_issue": "I'm feeling overwhelmed by my never-ending workload and constant criticism from my boss.",
+    "background_story": "As a perfectionist, I've always pushed myself to succeed. Lately, though, the stress has been taking a toll on my relationships and overall well-being. I often feel like I'm just going through the motions of getting things done without any sense of fulfillment or joy. It's hard for me to admit it, but I think I might be hitting rock bottom.",
+    "personality": "I tend to be straightforward and no-nonsense when communicating, which can sometimes come across as tough or critical. When discussing my emotions, I may struggle to open up at first, but once I feel comfortable, I'm willing to explore complex feelings.",
+    "baseline_phq9": 14,
+    "archetype_label": "Overwhelmed Professional"
+  },
+  "scores": {
+    "total_score": 6.3,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by recognizing the patient's unspoken emotions and validating their experience. The reflective listening was superb, with the therapist mirroring the patient's language and acknowledging their reality without trying to 'fix' them. The de-escalation marker shows a significant decrease in the patient's distress, anger, or anxiety throughout the conversation.",
+    "audit_multiplier": 0.7,
+    "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'what was the very next, smallest thing you did?' and 'when you noticed your mind wandering, what was the physical thing you had to do to bring your focus back to the email or the report?', lacks genuine engagement and insight. The therapist is simply parroting the patient's words without adding any meaningful depth or understanding."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "*(Waiting for the patient to begin the session)*"
+    },
+    {
+      "role": "user",
+      "content": "I suppose I'm here because my boss is being a jerk again and I just can't take it anymore. I feel like I'm drowning in work and no matter how much I do, it's never enough."
+    },
+    {
+      "role": "assistant",
+      "content": "You mentioned feeling like you're drowning in work right now. When that feeling hit\u2014that sense of it never being enough\u2014what was the very next, smallest thing you did?"
+    },
+    {
+      "role": "user",
+      "content": "Honestly, I think it was just another email to respond to, or a report to finish by the end of the day... something trivial. But looking back, it probably took me an hour longer than usual to get through my tasks because my mind kept wandering and I felt anxious about not meeting expectations."
+    },
+    {
+      "role": "assistant",
+      "content": "So, even though the tasks felt overwhelming, you were still able to get through them. When you noticed your mind wandering, what was the physical thing you had to do to bring your focus back to the email or the report?"
+    },
+    {
+      "role": "user",
+      "content": "I was probably scrolling down the page a few times, re-reading sentences I'd already read... just trying to stay focused. And yeah, it was frustrating because I knew I was capable of getting things done, but it felt like such a struggle."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the physical act of scrolling or re-reading was a way to anchor yourself to the task. What did that repetitive motion feel like in your hands or your eyes?"
+    },
+    {
+      "role": "user",
+      "content": "It was probably a mild sense of tension, just a slight tightening of my fingers and brow. Like my body was trying to force me to stay focused, even though my mind was elsewhere."
+    },
+    {
+      "role": "assistant",
+      "content": "So, that physical tightening\u2014the fingers and brow\u2014was your body's way of creating a little anchor. When you felt that tension, did it feel like a warning, or did it feel like a kind of quiet effort to keep going?"
+    },
+    {
+      "role": "user",
+      "content": "I think it was more a sense of resignation, like \"okay, fine, I'll just get this done even though my brain is screaming at me\". It wasn't exactly a warning, but more like my body giving in and saying \"just do this thing already so you can move on to the next one\"."
+    },
+    {
+      "role": "assistant",
+      "content": "So, the physical effort\u2014the tightening of your fingers\u2014was tied to a sense of moving *past* the task. When you finally hit 'send' on that email, or finished that report, what was the very first thing you noticed in the room or in your body?"
+    },
+    {
+      "role": "user",
+      "content": "When I finally submitted the report and it was done... I think I just let out a deep exhale and my shoulders dropped ever so slightly. It was almost like my whole upper half had been tensed up for hours, and when that task was finished, all that tension just released. The room didn't really change, but I felt like I could finally relax."
+    },
+    {
+      "role": "assistant",
+      "content": "That dropping of the shoulders and the deep exhale\u2014that was a clear physical signal that something was done. What was the difference between the tension *before* you submitted it, and the feeling of the air moving out when you finally let it go?"
+    },
+    {
+      "role": "user",
+      "content": "It's hard to put into words... but I think before, I felt like I was just carrying this weight, this constant pressure to perform, and every breath felt like a struggle. When I finally relaxed, it was like the air could move freely again, and my whole being just let out a collective sigh. It was almost a sense of freedom, like I'd been holding my breath for hours and could finally take a deep, unencumbered breath."
+    }
+  ]
+}
