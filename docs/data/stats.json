@@ -637,6 +637,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add genuine insight or depth to the conversation. The constant use of phrases like 'Thank you for noticing that tension' and 'I hear the description of the weight' becomes robotic and formulaic, rather than authentically present. Additionally, the therapist's focus on physical sensations and adjustments feels more like a gimmick than a meaningful therapeutic tool."
+    },
+    {
+      "exp_id": "exp_0063",
+      "strategy_name": "Resonant Utility Listening (RUL) v1.0",
+      "hypothesis": "By radically condensing the approach to focus exclusively on the patient's immediate, concrete, and observable functional behaviors (Utility), and constraining all responses to be ultra-minimalist, highly conversational, and devoid of any structural or theoretical language, we will eliminate the 'formulaic,' 'platitude,' and 'detached' penalties, allowing the profound depth of the underlying clinical framework to shine through the guise of genuine, natural conversation, thereby surpassing the 6.907 score.",
+      "score": 5.4,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.6,
+      "audit_rationale": "Penalty applied because: The Therapist's repetitive mirroring of the patient's words and phrases, such as 'A punch in the gut', 'a weight is pressing down on me', and 'the knot comes back' creates a sense of robotic or formulaic responses rather than authentic engagement. Additionally, the Therapist's focus on physical sensations and bodily experiences, while acknowledging the emotional impact, may not fully capture the patient's underlying emotional distress and subtext."
     }
   ],
   "best_score": 6.907
