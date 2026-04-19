@@ -428,6 +428,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The conversation is bogged down in vague descriptions of physical sensations and numbness, with little attempt to explore the underlying emotional or psychological dynamics driving the patient's experiences."
+    },
+    {
+      "exp_id": "exp_0040",
+      "strategy_name": "Hyper-Intuitive, Utility-Grounded Empathic Reflection (HU-GER)",
+      "hypothesis": "By synthesizing the ultra-minimalist, observable focus of Utility Mapping with the deepest, most spontaneous, and least-structured techniques of Person-Centered Therapy\u2014specifically by grounding all reflections *only* in the patient's immediate, concrete language without using any structural scaffolding or theoretical labels\u2014we will eliminate the 'formulaic,' 'detached,' and 'platitude' penalties simultaneously, achieving a perceived authenticity high enough to surpass the current best score of 6.907.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('Thank you for sharing that', 'That must be hard', etc.) instead of genuine engagement and insight. Additionally, the Therapist fails to pick up on subtext and misses opportunities to explore the patient's underlying emotions and motivations."
     }
   ],
   "best_score": 6.907
