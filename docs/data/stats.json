@@ -417,6 +417,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.7,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and mirroring, failing to add any genuine insight or depth to the conversation. The use of phrases like 'That must be hard' and 'The pattern seems to be...' feels formulaic and lacks authentic engagement with the patient's experiences."
+    },
+    {
+      "exp_id": "exp_0039",
+      "strategy_name": "Ultra-Minimalist Sensory-Utility Mapping (UMSUM) v1.0",
+      "hypothesis": "By radically eliminating all structural language, theoretical jargon, and explicit reflection techniques, and grounding 100% of all inquiries exclusively in ultra-minimalist, conversational questions about the patient's observable, concrete actions, physical sensations, and functional constraints, we will maximize perceived authenticity and genuine engagement, thereby successfully achieving a score significantly higher than 6.907.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The conversation is bogged down in vague descriptions of physical sensations and numbness, with little attempt to explore the underlying emotional or psychological dynamics driving the patient's experiences."
     }
   ],
   "best_score": 6.907
