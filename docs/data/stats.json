@@ -505,6 +505,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The Therapist's responses are overly formulaic and lack genuine engagement. Repetitive mirroring is used to the point of being a crutch, rather than adding insight or depth to the conversation. The Therapist also fails to pick up on subtext and instead focuses on offering solutions before the patient has fully expressed themselves. Additionally, clich\u00e9d therapeutic phrases are used throughout the session, which detract from its overall effectiveness."
+    },
+    {
+      "exp_id": "exp_0051",
+      "strategy_name": "Co-Curious Observer: Utility-Grounded Process Mapping (CU-GPM) v2.0",
+      "hypothesis": "By adopting a simplified, deeply conversational, and non-structural 'Co-Curious Observer' persona, and confining all reflections and inquiries solely to the patient's observable, concrete language (Utility), while focusing the inquiry on the *process* (the 'how' and 'where' of the feeling) rather than the *content* (the thought itself), we will eliminate the penalties for 'formulaic language' and 'generic platitudes,' achieving the highest perceived authenticity and clinical depth required to surpass the 6.907 score.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and lack genuine engagement with the patient's experiences. The constant use of phrases like 'That image is incredibly vivid' and 'What does it feel like...' feels like a formulaic approach rather than an authentic attempt to understand the patient's emotions."
     }
   ],
   "best_score": 6.907
