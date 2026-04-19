@@ -1,0 +1,92 @@
+{
+  "id": "exp_0061",
+  "timestamp": "2026-04-19T03:51:13.985217",
+  "strategy": {
+    "name": "Micro-Observation and Immediate Function Mapping (MOIFM) v1.1",
+    "hypothesis": "By radically simplifying all language to an ultra-minimalist, highly warm, and non-judgmental conversational tone, and restricting all inquiries exclusively to the patient's most immediate, concrete, and observable *actions, sensations, and required effort* (Utility/BA), we can eliminate the penalties for 'formulaic language' and 'platitudes' while simultaneously grounding the conversation in actionable, measurable, and non-abstract reality, thereby finally surpassing the 6.907 score.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Eve",
+    "age": 28,
+    "occupation": "Marketing Coordinator",
+    "presenting_issue": "I'm feeling overwhelmed with work stress and struggling to find enjoyment in activities I used to love.",
+    "background_story": "As a marketing coordinator, I've been pushed to take on more responsibilities lately. My social life has suffered as a result, and I find myself spending most of my free time scrolling through social media, comparing my life to others' curated highlight reels. Lately, even simple tasks feel like climbing a mountain. My partner is patient but doesn't really understand what I'm going through, so I often go home alone or try to distract myself with TV.",
+    "personality": "I tend to be introspective and apathetic in conversations, sometimes struggling to express my emotions. When you do get me talking, I can become overly critical of myself and others. My tone might come across as sarcastic or dismissive, but please know it's just a defense mechanism from years of feeling underappreciated.",
+    "baseline_phq9": 15,
+    "archetype_label": "Isolated Remote Worker"
+  },
+  "scores": {
+    "total_score": 3.6,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by recognizing the patient's emotional struggles and validating their experiences. The reflective listening was superb, with the therapist mirroring the patient's language and acknowledging their reality without trying to 'fix' them. The de-escalation marker shows a significant decrease in the patient's distress and anxiety throughout the conversation.",
+    "audit_multiplier": 0.4,
+    "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'yeah', '*sigh*', and '*shrugs*', creates a sense of monotony and lack of genuine engagement. The therapist fails to add any meaningful insights or new perspectives, instead simply echoing the patient's statements without providing any depth or nuance."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Welcome. Just for a moment, let's focus on the immediate space around you. What's the most noticeable physical texture\u2014on the table, on your clothes, anywhere\u2014that you can feel right now?"
+    },
+    {
+      "role": "user",
+      "content": "*sigh* fine. The scratchy fabric of my living room couch is probably the most noticeable thing. I've been sitting here for hours just staring at walls and feeling like I'm going nowhere."
+    },
+    {
+      "role": "assistant",
+      "content": "The scratchy couch. Okay. When you settled into that spot, was there any part of the physical process\u2014getting settled, adjusting, or just remaining still\u2014that required a specific kind of effort?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah... it took me a few tries to get comfortable on this stupid couch. I had to adjust the pillows and cushions like three times before I finally gave up and just slumped into position. Even that wasn't perfect, but whatever. It's not like it matters anyway."
+    },
+    {
+      "role": "assistant",
+      "content": "Three adjustments. When you were moving the pillows and cushions, what did the physical act of *lifting* or *placing* those items require? Was it the sheer force, or something else about the movement?"
+    },
+    {
+      "role": "user",
+      "content": "*sigh* Look, it was just me grumbling to myself as I moved the stupid pillows around. But if you really want to know... I guess it required more like a slow, tired resignation rather than any real effort. Like my body was just going through the motions because it's what you do when you've given up trying to change anything."
+    },
+    {
+      "role": "assistant",
+      "content": "When you describe 'going through the motions' while moving the pillows, was there any particular point in that sequence where your body felt like it was resisting the movement, even slightly? Where did the friction happen?"
+    },
+    {
+      "role": "user",
+      "content": "*shrugs* Yeah... maybe when I had to lift the armrest. It's always been a little stiff anyway, and after a long day of sitting at my desk, my shoulders just felt like they were screaming at me. So yeah, that took a bit more effort than usual, but who cares?"
+    },
+    {
+      "role": "assistant",
+      "content": "The armrest. When you had to lift it, was the resistance more in the stiffness of the armrest itself, or was the primary point of resistance in the movement originating from your shoulder?"
+    },
+    {
+      "role": "user",
+      "content": "*rolls eyes* Fine... I guess it was more my own shoulders and arms that were resisting the movement than the armrest being stiff. My muscles just felt like they'd had enough, you know? Like, \"Ugh, really? We have to do this again?\" And honestly, at that point, who can blame them?"
+    },
+    {
+      "role": "assistant",
+      "content": "When your shoulders were resisting the movement, was there any moment, even for just a second, where you managed to lift the armrest just enough that the movement felt... neutral? Not difficult, not easy, just functional? What did that moment look like?"
+    },
+    {
+      "role": "user",
+      "content": "*sighs* Yeah... I guess it happened when I finally got the armrest at like, a 45-degree angle or something. It was this weird limbo zone where my shoulders didn't have to work too hard, but it wasn't easy either. Just... existing, I guess. Like my body was saying, \"Okay, fine. We'll do this thing.\" And that's when I just kind of settled in and let the couch be, whatever."
+    },
+    {
+      "role": "assistant",
+      "content": "The 45-degree angle. That specific, measurable adjustment.\n\nBased on that moment\u2014the point where the movement felt functional but not difficult\u2014would it be possible to test just one thing tomorrow? When you have to adjust something physical\u2014a cushion, a book, a cup, anything\u2014could you consciously aim for that 'limbo zone' angle? Just finding the point where the effort drops slightly, even if it's only for a second.\n\nWe can call that a data point for tomorrow."
+    },
+    {
+      "role": "user",
+      "content": "*hesitates* Fine... I guess it couldn't hurt to try. Yeah, okay, tomorrow I'll see if I can find that 45-degree angle again when I adjust something physical. *shrugs* Like, maybe when I get my morning coffee or whatever. It's not like it's going to change the world or anything, but sure."
+    }
+  ]
+}

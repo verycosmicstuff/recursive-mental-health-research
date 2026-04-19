@@ -615,6 +615,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases ('I hear that', 'You know?') is a clear indication of lack of genuine engagement and insight. The conversation feels like a scripted Q&A session rather than a meaningful therapeutic interaction."
+    },
+    {
+      "exp_id": "exp_0061",
+      "strategy_name": "Micro-Observation and Immediate Function Mapping (MOIFM) v1.1",
+      "hypothesis": "By radically simplifying all language to an ultra-minimalist, highly warm, and non-judgmental conversational tone, and restricting all inquiries exclusively to the patient's most immediate, concrete, and observable *actions, sensations, and required effort* (Utility/BA), we can eliminate the penalties for 'formulaic language' and 'platitudes' while simultaneously grounding the conversation in actionable, measurable, and non-abstract reality, thereby finally surpassing the 6.907 score.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'yeah', '*sigh*', and '*shrugs*', creates a sense of monotony and lack of genuine engagement. The therapist fails to add any meaningful insights or new perspectives, instead simply echoing the patient's statements without providing any depth or nuance."
     }
   ],
   "best_score": 6.907
