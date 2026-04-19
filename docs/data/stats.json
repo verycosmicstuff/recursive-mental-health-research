@@ -813,6 +813,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.3,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The conversation is bogged down by unnecessary details about the patient's sandwich-making experience, with the therapist simply parroting back the patient's words without adding any meaningful perspective."
+    },
+    {
+      "exp_id": "exp_0079",
+      "strategy_name": "Utility-Grounded Socratic Reframing (UGSR) v1.0",
+      "hypothesis": "By replacing generalized empathetic reflection and simple utility mapping with highly constrained, single-question Socratic challenges that force the patient to identify a functional exception, a counter-narrative, or the concrete necessity of a negative belief, we will provide novel, non-platitudinous insight that elevates the perceived depth and strategic value of the conversation beyond the 6.907 benchmark.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly formulaic and lack genuine engagement. The use of phrases like 'That must be hard' and 'It sounds like...' feel like empty platitudes rather than a genuine attempt to understand the patient's experience. Additionally, the therapist's focus on finding 'cracks in the belief' and 'core competencies' feels like an overly simplistic and reductionist approach to understanding the patient's emotional state."
     }
   ],
   "best_score": 6.907
