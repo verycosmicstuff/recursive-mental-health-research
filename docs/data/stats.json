@@ -978,6 +978,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.5,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add any genuine insight or depth to the conversation. The use of phrases like 'It seems like...' and 'When you think about that feeling...' is a clear attempt to sound more empathetic than actually understanding the patient's experience."
+    },
+    {
+      "exp_id": "exp_0094",
+      "strategy_name": "Bridged Socratic-ACT Reframing (BSAR) v1.0",
+      "hypothesis": "By maintaining the deep, visceral, and non-directive embodied reflection foundation (PCT/ACT) while systematically replacing the open-ended 'What was different?' exception-seeking with targeted, single-question Socratic challenges that force the patient to examine the *logic* or *utility* of their negative thoughts, we will elevate the perceived depth and actionable insight, thereby surpassing the 6.907 benchmark.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('I hear you', 'That must be hard'), which lack genuine engagement and insight. Additionally, the Therapist frequently mirrors the patient's words without adding meaningful depth or analysis, making it seem like a robotic or formulaic approach rather than an authentically present one."
     }
   ],
   "best_score": 6.907
