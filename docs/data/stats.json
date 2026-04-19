@@ -450,6 +450,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and lack genuine engagement. The constant use of phrases like 'That makes sense' and 'I hear you' feels like filler rather than a meaningful attempt to understand the patient's experiences. Additionally, the Therapist's mirroring is too repetitive and fails to add any significant insight or depth to the conversation."
+    },
+    {
+      "exp_id": "exp_0046",
+      "strategy_name": "Resonant Empathic Field (REF) v1.1",
+      "hypothesis": "By radically simplifying the structural language and prioritizing the empathetic resonance (PCT) derived *only* from the patient's most concrete, sensory, and momentary descriptions (Utility), and eliminating all meta-cognitive framing ('We can explore,' 'Let's look at'), we will eliminate the 'formulaic' and 'detached' penalties, achieving a sustained level of perceived authenticity and surpassing the 6.907 mark.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add any genuine insight or depth to the conversation. The constant use of phrases like 'That must be hard' and 'What does that feel like?' becomes a crutch, rather than a tool for meaningful engagement."
     }
   ],
   "best_score": 6.907
