@@ -824,6 +824,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly formulaic and lack genuine engagement. The use of phrases like 'That must be hard' and 'It sounds like...' feel like empty platitudes rather than a genuine attempt to understand the patient's experience. Additionally, the therapist's focus on finding 'cracks in the belief' and 'core competencies' feels like an overly simplistic and reductionist approach to understanding the patient's emotional state."
+    },
+    {
+      "exp_id": "exp_0080",
+      "strategy_name": "Ultra-Minimalist Behavioral Activation Mapping (UM-BAM) v1.0",
+      "hypothesis": "By discarding all theoretical language (ACT, process, embodied, defusion) and restricting all reflection/inquiry solely to micro-queries about the patient's most immediate, concrete, and observable actions, sensations, or single, required low-effort 'next steps' (Utility/BA), we will eliminate formulaic language penalties and achieve a score significantly above 6.907 by maximizing perceived conversational naturalness and actionable clinical utility.",
+      "score": 4.5,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.5,
+      "audit_rationale": "Penalty applied because: The therapist's reliance on generic platitudes and repetitive mirroring (e.g., 'I hear you talking about the weight\u2014the feeling of being weighed down') fails to demonstrate genuine engagement or insight. The conversation is overly focused on physical movements and trivial actions, neglecting the patient's emotional experience. Additionally, the therapist's attempts to 'fix' the issue by suggesting tiny muscle movements feel formulaic and lacking in empathy."
     }
   ],
   "best_score": 6.907
