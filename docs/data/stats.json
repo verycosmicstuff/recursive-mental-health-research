@@ -153,6 +153,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The Therapist's responses are overly formulaic and lack genuine engagement. The use of phrases like 'Thank you for giving me that timeline' and 'I hear a very specific sequence of physical actions' come across as robotic and insincere. Additionally, the Therapist fails to pick up on subtext and instead focuses on surface-level analysis, missing opportunities to explore deeper emotional or psychological insights."
+    },
+    {
+      "exp_id": "exp_0015",
+      "strategy_name": "Utility-First, Grounded Observation (UFG-Grounded)",
+      "hypothesis": "By restricting the therapist's language exclusively to immediate, observable, and functional elements of the patient's narrative\u2014focusing on what the distress *prevents* them from doing (Utility) and the concrete *steps* they took (Observation)\u2014we can maintain the high clinical depth and perceived insight of the previous runs while eliminating the 'clich\u00e9' and 'formulaic' penalties by sounding purely observational and non-academic.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly formulaic and lack genuine engagement. The use of phrases like 'That must be hard' and 'We are simply going to notice what is happening' come across as insincere and robotic. Additionally, the therapist fails to pick up on subtext and instead focuses on surface-level details. The conversation feels more like a data collection exercise than a genuine therapeutic interaction."
     }
   ],
   "best_score": 6.907
