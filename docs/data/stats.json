@@ -857,6 +857,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.5,
       "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'Just a swipe', 'Just a blank spot', and 'Just a hair' to the left, comes across as robotic and formulaic rather than authentically present. This lack of genuine engagement and insight into the patient's experiences undermines the therapeutic relationship and diminishes the effectiveness of the session."
+    },
+    {
+      "exp_id": "exp_0083",
+      "strategy_name": "Micro-Exception Behavioral Nudge (MEBN) v1.0",
+      "hypothesis": "By combining the ultra-minimalist, conversational tone (from the best-performing models) with a highly focused, single-question inquiry that exclusively targets the patient's most recent, concrete, and small observable behavioral 'exceptions' (Utility/BA), we will eliminate the 'formulaic' and 'platitude' penalties by providing genuinely novel, actionable, and non-reflective insight that mimics natural human curiosity, thus surpassing the 6.907 benchmark.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The constant use of phrases like 'I hear you' and 'That is a very heavy thing to hold' feels like filler rather than a meaningful attempt to understand the patient's experiences. Additionally, the therapist's focus on physical sensations (e.g., eyebrow relaxation) overshadows the emotional and psychological aspects of the patient's struggles, leading to a superficial understanding of their concerns."
     }
   ],
   "best_score": 6.907
