@@ -923,6 +923,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.5,
       "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on mirroring the patient's words, with phrases like 'The chair', 'The crate', and 'The breathing' that add little to no insight or understanding. This lack of genuine engagement and probing questions leads to a superficial exploration of the patient's concerns."
+    },
+    {
+      "exp_id": "exp_0089",
+      "strategy_name": "Conversational Utility-Guided Micro-Reframing (CUG-MR) v1.0",
+      "hypothesis": "By adopting an ultra-minimalist, conversational style, and restricting all reflections to identifying a single, concrete, observable micro-utility or exception, the therapist will then follow up with a single, non-reflective 'What else?' question that gently invites the patient to expand on the observation, thus maximizing perceived naturalness and avoiding the 'formulaic' penalty while maintaining measurable clinical utility.",
+      "score": 6.3,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.7,
+      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'That sounds like a very specific, beautiful moment' and 'It sounds like...', creates a sense of roboticness rather than genuine engagement. Additionally, the therapist's tendency to focus on the physical sensations and descriptions of the setting sun, while not entirely unhelpful, overshadows the patient's emotional experience and struggles."
     }
   ],
   "best_score": 6.907

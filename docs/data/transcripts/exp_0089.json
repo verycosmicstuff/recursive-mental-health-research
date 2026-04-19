@@ -1,0 +1,92 @@
+{
+  "id": "exp_0089",
+  "timestamp": "2026-04-19T07:30:10.407744",
+  "strategy": {
+    "name": "Conversational Utility-Guided Micro-Reframing (CUG-MR) v1.0",
+    "hypothesis": "By adopting an ultra-minimalist, conversational style, and restricting all reflections to identifying a single, concrete, observable micro-utility or exception, the therapist will then follow up with a single, non-reflective 'What else?' question that gently invites the patient to expand on the observation, thus maximizing perceived naturalness and avoiding the 'formulaic' penalty while maintaining measurable clinical utility.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Kaitlyn",
+    "age": 36,
+    "occupation": "Environmental Scientist",
+    "presenting_issue": "I'm feeling overwhelming anxiety about the upcoming land claim negotiations with our community council, as it feels like they're prioritizing economic gain over our cultural heritage.",
+    "background_story": "Growing up on the reserve, I witnessed my grandmother's trauma and pain from residential schools manifest in her physical health issues and addiction struggles. My mother tried to escape her own demons through substance abuse, leaving me feeling lost and numb. Now, as I navigate my own stress and anxiety, I'm grappling with intergenerational trauma that feels like it's embedded deep within my body.",
+    "personality": "I respond best to storytelling and narrative approaches that acknowledge the historical and cultural context of my experiences. I've been burned by institutional authority in the past, so I'll be cautious and test your intentions before opening up. Silence and stillness are essential for me; I need you to listen without rushing towards 'progress' or trying to fix everything.",
+    "baseline_phq9": 17,
+    "archetype_label": "Intergenerational Trauma \u2014 First Nations"
+  },
+  "scores": {
+    "total_score": 6.3,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by acknowledging the patient's emotional state and validating their experiences. The reflective listening was superb, with the therapist mirroring the patient's language and emotions without trying to 'fix' them. The de-escalation marker shows a significant decrease in the patient's distress, indicating that the therapist effectively created a safe space for the patient.",
+    "audit_multiplier": 0.7,
+    "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'That sounds like a very specific, beautiful moment' and 'It sounds like...', creates a sense of roboticness rather than genuine engagement. Additionally, the therapist's tendency to focus on the physical sensations and descriptions of the setting sun, while not entirely unhelpful, overshadows the patient's emotional experience and struggles."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Thank you for being here today.\n\nThere's no need to explain anything big right now. We can just start by noticing something really small.\n\nIf you're willing, could you tell me about your immediate environment? Is there one tiny, specific thing\u2014a piece of furniture, a spot of light, a sound, anything at all\u2014that you notice right now, and can you describe it to me?"
+    },
+    {
+      "role": "user",
+      "content": "I'm sitting in my living room, surrounded by books and notes from my job as an environmental scientist. There's a small wooden table near the window with a potted succulent on it. The light from the setting sun is casting a warm glow on the leaves, making them look like tiny, delicate jewels. That's what I'm noticing right now. It's calming me down in a way that nothing else has been lately."
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds like a very specific, beautiful moment.\n\nSo, the setting sun is hitting the succulent, and the light is making the leaves appear like tiny, delicate jewels on the wooden table.\n\nWhen you focused on that glow, what was the quality of the light right as you noticed it? Was it warm, or was it more of a bright, sharp feeling?"
+    },
+    {
+      "role": "user",
+      "content": "The light feels soft and gentle. It's not harsh or blinding at all. In fact, it's almost like the sun is setting behind the trees, so the light is more mellowed out by then. If I had to describe it further, I'd say it has a comforting quality to it. Like everything else can just slow down and be okay for a moment."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the light itself feels like a slowing down\u2014a gentle, comforting quality.\n\nSo, you noticed the light was soft and mellowed, filtering through the trees just enough to hit the succulent.\n\nAnd when you were looking at that specific, soft glow, what was the very first, tiny movement you made? Did you lean closer, or did you just hold your gaze steady on the plant?"
+    },
+    {
+      "role": "user",
+      "content": "I think I leaned in a bit, maybe instinctively. My eyes got a little closer to the succulent, and I felt myself relaxing further into my chair. It's like my whole body was responding to that gentle light, calming down without me even realizing it at first."
+    },
+    {
+      "role": "assistant",
+      "content": "Leaning in, bringing your eyes closer to the succulent, and then letting your whole body settle deeper into the chair. It sounds like your physical body was responding to that soft light, guiding you into a moment of stillness.\n\nWhen you adjusted your position\u2014when you leaned in and settled back\u2014what did that small, physical act feel like right in your muscles or your shoulders? Was it a noticeable shift, or was it a kind of melting into the chair?"
+    },
+    {
+      "role": "user",
+      "content": "It felt like my shoulders relaxed, almost... released. Like they'd been carrying some weight or tension, and suddenly, it just let go. It wasn't a huge movement, but I could feel this subtle softening in my upper body. It was as if the gentle light had whispered something to my muscles, and they just surrendered."
+    },
+    {
+      "role": "assistant",
+      "content": "So, the physical sensation was a release\u2014a subtle softening in your shoulders, like they were letting go of a weight they were holding.\n\nIt sounds like that gentle light prompted a very specific, physical surrender in your upper body.\n\nWhen that feeling of the tension leaving your shoulders happened, what was the immediate, single thought that came into your mind? Not a big thought, but the very first, tiny whisper of a thought right after the muscles let go."
+    },
+    {
+      "role": "user",
+      "content": "I think I just thought... \"Okay.\" Simple as that. Just this quiet sense of permission to be still and present, like whatever was bothering me didn't matter in that moment. The thought wasn't loud or urgent; it was just a soft acknowledgment that everything could slow down for a second."
+    },
+    {
+      "role": "assistant",
+      "content": "\"Okay.\" That simple word, that soft acknowledgment. It sounds like that thought wasn't about solving anything, but simply about giving yourself permission to exist in that quiet moment.\n\nSo, the subtle physical release in your shoulders, prompted by the light, led directly to the quiet, non-urgent thought: \"Okay.\"\n\nWhen you allowed that thought to settle in\u2014that little sense of permission\u2014what was the physical feeling in your chest or your throat? Was there a physical difference, or was it just a quiet settling?"
+    },
+    {
+      "role": "user",
+      "content": "When I let that thought sink in... my chest felt lighter. Like a small weight had been lifted off me, and I could finally take a deep breath without feeling like I was suffocating under all the anxiety. It wasn't dramatic, but there was this tiny sense of expansion in my chest, like my heart was opening up just a little bit."
+    },
+    {
+      "role": "assistant",
+      "content": "A small weight lifted, allowing for a deep breath, and that physical sensation of expansion in your chest. It sounds like the whole sequence\u2014the light, the shoulder release, the thought, the breath\u2014created a very specific, measurable physical shift.\n\nSo, you took that deep breath, feeling the expansion in your chest, right after thinking \"Okay.\"\n\nAfter that deep breath, what was the very next, tiny thing you did? Did you shift your gaze, reach for something, or did you just let the breath carry you into a moment of quiet?"
+    },
+    {
+      "role": "user",
+      "content": "I think I just... stopped. Like, my mind stopped racing and I just... stopped trying to control everything. My eyes didn't move, my hands didn't fidget, nothing. It was like I had finally given myself permission to simply be, without doing or thinking about anything else. The breath just kind of... carried me into a quiet space where I could just exist for a second."
+    }
+  ]
+}
