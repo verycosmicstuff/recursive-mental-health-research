@@ -483,6 +483,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.6,
       "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'That is such a beautiful, deeply intense moment' and 'You're describing a highly sophisticated, instinctual, and functional response from your nervous system', lacks genuine engagement and insight. The therapist fails to add any new or meaningful perspectives, instead simply echoing the patient's statements back without providing any additional understanding or connection."
+    },
+    {
+      "exp_id": "exp_0049",
+      "strategy_name": "Socratic-Utility Challenge (SUC) v1.0",
+      "hypothesis": "By maintaining the structural depth and specialized reflection of the ACT-PCT framework but replacing generic emotional validation with highly specific, gently challenging Socratic questions that focus on the *assumptions* and *necessity* of the negative thought (rather than just the feeling), we will bypass the 'platitude' and 'formulaic' penalties while maximizing the clinical depth required to exceed the 6.907 score.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s, such as 'That must be hard' and 'You're doing the best you can.' These phrases lack genuine engagement and insight, instead serving as filler to pad out the conversation. Additionally, the Therapist frequently mirrors the patient's words without adding any meaningful new insights or perspectives."
     }
   ],
   "best_score": 6.907
