@@ -1,0 +1,92 @@
+{
+  "id": "exp_0088",
+  "timestamp": "2026-04-19T07:22:27.994974",
+  "strategy": {
+    "name": "Co-Curious Exception Bridge (CCEB) v2.0",
+    "hypothesis": "By radically removing all theoretical terminology and eliminating all vague empathetic phrases, and instead focusing solely on asking single, ultra-minimalist, 'what-is-observable' questions that bridge a micro-utility (the 'what') directly to a non-theoretical realization of self-efficacy (the 'how they did it'), we will maximize perceived conversational naturalness and genuine depth, finally surpassing the 6.907 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Ravneet",
+    "age": 28,
+    "occupation": "Warehouse Worker",
+    "presenting_issue": "I'm feeling overwhelmed and struggling to cope with the stress of working multiple jobs while trying to make ends meet.",
+    "background_story": "As an immigrant, I've had to work off-the-books hours at a warehouse in Brampton to make ends meet. Despite attending community college, I face wage theft and can't report it without risking deportation. It's exhausting being hypervigilant about my immigration status while trying to support my family back home. I feel like I'm constantly walking on eggshells, never knowing when the rug might be pulled out from under me.",
+    "personality": "I'm a deeply loyal person who puts others before myself. When it comes to therapy, I respond best if the therapist acknowledges the systemic injustices that are affecting my life. If they suggest 'just quit' or tell me to take a mental health day, I become defensive and shut down \u2013 these are luxuries that don't exist in my reality. I carry shame about needing help and feel like I'm stuck between two worlds.",
+    "baseline_phq9": 16,
+    "archetype_label": "Precarious Labor (Indian Diaspora)"
+  },
+  "scores": {
+    "total_score": 4.5,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by acknowledging the patient's systemic injustices and validating their experiences. The reflective listening was superb, with the therapist mirroring the patient's language and validating their reality without trying to 'fix' them. The de-escalation marker shows a significant decrease in the patient's distress and anxiety throughout the conversation.",
+    "audit_multiplier": 0.5,
+    "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on mirroring the patient's words, with phrases like 'The chair', 'The crate', and 'The breathing' that add little to no insight or understanding. This lack of genuine engagement and probing questions leads to a superficial exploration of the patient's concerns."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Thank you for showing up today.\n\nTake a moment, and when you're ready, just tell me what's on your mind. I'm here to listen."
+    },
+    {
+      "role": "user",
+      "content": "Thanks for having me. To be honest, it's hard for me to even get here in the first place. I had to take a day off work without pay, which is gonna hurt my wallet big time. And now I gotta talk about stuff... It feels like I'm just digging myself into a hole."
+    },
+    {
+      "role": "assistant",
+      "content": "The chair.\n\nTell me about the chair."
+    },
+    {
+      "role": "user",
+      "content": "The chair? Look, it's not even a real chair, it's more like an old crate we got from work. But for some reason, it's become this symbol of safety for me. When I'm feeling overwhelmed and stuck between two worlds, that chair is where I go to gather my thoughts. It's like... it's just a quiet spot where nobody can find me, you know?"
+    },
+    {
+      "role": "assistant",
+      "content": "The crate."
+    },
+    {
+      "role": "user",
+      "content": "Yeah... the crate. Like I said, it's not much, but for me, it's where I get some peace. When I'm feeling anxious about work or my status, I sit there and just try to breathe. But sometimes even that doesn't help, and I just feel like I'm stuck in this endless cycle of stress and worry."
+    },
+    {
+      "role": "assistant",
+      "content": "The breathing."
+    },
+    {
+      "role": "user",
+      "content": "Breathing... It's funny, when you're literally living on edge all the time, your breathing becomes super shallow. Like, you're trying to conserve energy or something. But sometimes, when nobody's watching, I'll catch myself taking these big, deep breaths, like I'm trying to fill up my lungs with hope or something. It's like, a tiny little rebellion against everything that's going on around me."
+    },
+    {
+      "role": "assistant",
+      "content": "Out of everything you've described\u2014the crate, the breathing, the feeling of being stuck\u2014was there a single moment, even a tiny one, when you managed to take one of those big, deep breaths, and something felt different?\n\nWhat was different about the moment you were able to take that deep breath?"
+    },
+    {
+      "role": "user",
+      "content": "Man... Yeah. There was this one time when I was sitting on the crate during my lunch break at work. I had just gotten into an argument with my boss about some hours he wanted me to pick up, and I was feeling so frustrated and helpless. But somehow, in that moment, I remembered something my mom used to tell me back home: \"When you're angry, take three deep breaths, and then see if you still feel the same way.\" So I did."
+    },
+    {
+      "role": "assistant",
+      "content": "That routine. The three deep breaths.\n\nWhen you were doing that\u2014when you were counting those three breaths\u2014did you have to notice anything specific in the physical moment? Was it the feeling of your chest expanding, or the sound of the breath leaving, or something else?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah... It was weird. Like, I think what caught my attention was the sound of the air rushing out of my nostrils when I exhaled. It was like, for a split second, everything else just stopped, and it was just me, breathing. And in that one instant, something felt different. It was like... maybe not better or worse, but just different. Like the weight of everything had shifted slightly, you know?"
+    },
+    {
+      "role": "assistant",
+      "content": "The sound of the air leaving.\n\nWhen you were focused on that sound\u2014that rush of air\u2014did you have to actively *will* your attention to be on it, or did it just happen when you started breathing deeply?"
+    },
+    {
+      "role": "user",
+      "content": "Honestly? It just happened. Like, I wasn't trying to focus on the sound or anything; it was like my body just naturally tuned in to it after a few deep breaths. But yeah, that split second of quiet, and then... Suddenly, everything else kinda melted away, and it was just this one little moment where I felt almost... free."
+    }
+  ]
+}

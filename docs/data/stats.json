@@ -912,6 +912,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.7,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add genuine insight or depth to the conversation. For example, 'That feeling of not being alone\u2014that's a big thing' is a vague statement that doesn't engage with the patient's experience. Similarly, 'So, you've noticed that the window gazing and the physical relaxation happen automatically...' simply repeats back what the patient said without offering any new understanding or perspective."
+    },
+    {
+      "exp_id": "exp_0088",
+      "strategy_name": "Co-Curious Exception Bridge (CCEB) v2.0",
+      "hypothesis": "By radically removing all theoretical terminology and eliminating all vague empathetic phrases, and instead focusing solely on asking single, ultra-minimalist, 'what-is-observable' questions that bridge a micro-utility (the 'what') directly to a non-theoretical realization of self-efficacy (the 'how they did it'), we will maximize perceived conversational naturalness and genuine depth, finally surpassing the 6.907 benchmark.",
+      "score": 4.5,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.5,
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on mirroring the patient's words, with phrases like 'The chair', 'The crate', and 'The breathing' that add little to no insight or understanding. This lack of genuine engagement and probing questions leads to a superficial exploration of the patient's concerns."
     }
   ],
   "best_score": 6.907
