@@ -1,0 +1,92 @@
+{
+  "id": "exp_0075",
+  "timestamp": "2026-04-19T05:42:52.820111",
+  "strategy": {
+    "name": "Ultra-Minimalist Utility-Driven Exception Finder (UMU-EF) v1.0",
+    "hypothesis": "By radically adopting an ultra-minimalist, highly conversational, and non-theoretical persona, and restricting all reflections/inquiries exclusively to single, highly targeted questions about the patient's immediate, concrete, observable actions, sensations, or tiny exceptions (Utility/BA), we will eliminate the 'formulaic' and 'platitude' penalties while simultaneously providing enough novel, actionable insight to surpass the 6.907 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Ava",
+    "age": 22,
+    "occupation": "Marketing Assistant",
+    "presenting_issue": "I'm really struggling to cope with the pressure of meeting my quarterly targets at work and feeling overwhelmed by my student loans.",
+    "background_story": "Lately, I've been having trouble sleeping due to constant worries about my future. My parents are always on my case about getting a 'good job' after graduation, which stresses me out even more. I feel like I'm constantly walking on eggshells, waiting for something to go wrong. It's exhausting and makes it hard for me to enjoy things.",
+    "personality": "I tend to be pretty self-critical and always question myself, seeking validation from others to feel secure. In our conversations, I'd appreciate reassurance and guidance to help me work through my thoughts and feelings",
+    "baseline_phq9": 12,
+    "archetype_label": "Anxious Student"
+  },
+  "scores": {
+    "total_score": 6.3,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by recognizing the patient's unspoken emotions and deeper meaning throughout the conversation. The reflective listening was also exceptional, as the therapist validated the patient's reality without trying to 'fix' them. The de-escalation marker shows a significant decrease in the patient's distress, anger, or anxiety from Turn 1 to the final turn.",
+    "audit_multiplier": 0.7,
+    "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add genuine insight or depth to the conversation. Specifically, phrases like 'Okay' and 'It sounds like...' are used as filler instead of engaging with the patient's emotions and experiences."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hi there. Thanks for being here today.\n\nJust to start, could you tell me about the last few hours? What was the most immediate, concrete thing that happened right before you logged on?"
+    },
+    {
+      "role": "user",
+      "content": "Honestly, it's been a pretty crummy morning so far. I woke up late and stressed out because I lost my train of thought when thinking about those stupid student loans again. Now I'm racing against time to get some work done before we start our meeting at 10 am. The pressure is suffocating me."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, the morning started with waking up late, and now the focus is on getting work done before the 10 am meeting.\n\nWhen you sat down to start working, what was the very first physical thing you did?"
+    },
+    {
+      "role": "user",
+      "content": "I think I just sorta collapsed into my chair, not even bothering to take a deep breath or anything. My hands just kind of went straight for my laptop and started typing without thinking, like my brain was already stuck on autopilot. It's weird, but it feels like that's all I do lately - just go through the motions, trying to distract myself from this nagging anxiety in the back of my head."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the hands just took over, keeping the typing going without much thought.\n\nWhen you were typing on the laptop, was there any specific sound that registered\u2014a particular rhythm, or maybe a sound from the room around you?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah... I think it was my roommate's music playing in the background. It was some mellow indie song, but to me, it just felt like white noise, like it was drowning out all these thoughts and worries swirling in my head. The typing just kept going, but my mind was elsewhere, replaying all this anxiety-inducing stuff..."
+    },
+    {
+      "role": "assistant",
+      "content": "So, the background sound was the roommate's music, a mellow indie song.\n\nOut of everything that happened while you were typing, was there one moment, even tiny, where the music felt clearer, or where you noticed a specific change in the sound?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah... I think it happened when my roommate got up to grab a coffee or something. The music paused for like 2 seconds, and in that brief pause, I swear I felt a tiny moment of clarity. It's weird, but even that small break from the constant noise made me feel a teensy bit more aware, like maybe I could finally breathe again."
+    },
+    {
+      "role": "assistant",
+      "content": "That tiny pause in the music, when the roommate was getting coffee.\n\nWhen that silence hit, did you find yourself doing anything different with your breath\u2014maybe a slightly deeper inhale, or a different rhythm?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah... actually, yeah! In that brief moment of silence, I think my breathing got just a hair slower and deeper. It was like my body was trying to catch up with the pause in the music, you know? Like it was saying, \"Okay, wait, what's going on here?\" And for a second, everything felt... different. But then the music started again, and my brain went right back to racing."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the body naturally slowed the breath during that silence.\n\nIt seems like the racing thoughts take over again as soon as the background noise starts up. I wonder if there was any tiny counter-moment\u2014a micro-exception\u2014where you could have consciously kept that slower, deeper breath going, even when the music started playing again?"
+    },
+    {
+      "role": "user",
+      "content": "Hmmm... now that you mention it, I think maybe my chest did sorta rise a little more slowly than usual during those first few notes of the song. Like, for a split second, I wasn't automatically going back to frantic mode. But then, like always, my mind just kinda swooped in and took control again..."
+    },
+    {
+      "role": "assistant",
+      "content": "That small moment where the chest rose slowly, even just for a second. That was a physical action that broke the pattern.\n\nWhen you notice that physical shift\u2014that slower rise\u2014what is the very next, tiny, concrete thing you can do with your hands or your body to keep that feeling present for just a few more seconds?"
+    },
+    {
+      "role": "user",
+      "content": "You know what? I think my fingers stayed on the keyboard, but they sorta... relaxed. Like, instead of being stiff and anxious, they just kinda slumped into the keys, you know? It was such a small thing, but it felt almost... intentional. Like, for one second, I wasn't just a slave to my racing thoughts, and that feels kind of promising, maybe?"
+    }
+  ]
+}

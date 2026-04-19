@@ -769,6 +769,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and formulaic language, lacking genuine engagement and insight. The constant use of phrases like 'That's a very precise observation' and 'That is incredibly insightful' feels robotic and insincere, failing to provide meaningful connections with the patient's experiences."
+    },
+    {
+      "exp_id": "exp_0075",
+      "strategy_name": "Ultra-Minimalist Utility-Driven Exception Finder (UMU-EF) v1.0",
+      "hypothesis": "By radically adopting an ultra-minimalist, highly conversational, and non-theoretical persona, and restricting all reflections/inquiries exclusively to single, highly targeted questions about the patient's immediate, concrete, observable actions, sensations, or tiny exceptions (Utility/BA), we will eliminate the 'formulaic' and 'platitude' penalties while simultaneously providing enough novel, actionable insight to surpass the 6.907 benchmark.",
+      "score": 6.3,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.7,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add genuine insight or depth to the conversation. Specifically, phrases like 'Okay' and 'It sounds like...' are used as filler instead of engaging with the patient's emotions and experiences."
     }
   ],
   "best_score": 6.907
