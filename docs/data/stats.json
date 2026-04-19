@@ -208,6 +208,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('That must be hard', 'I hear a profound sense of difficulty'), which fail to provide genuine engagement or insight. Additionally, the Therapist's mirroring technique is too repetitive and lacks depth, often simply parroting back the patient's words without adding any meaningful analysis."
+    },
+    {
+      "exp_id": "exp_0020",
+      "strategy_name": "Minimalist Utility-Driven Dialogue (MUDD) v1.0",
+      "hypothesis": "By replacing all complex, explanatory, and jargon-heavy language with a highly minimalist, grounded, and purely observational tone\u2014focusing only on concrete behaviors, functions, and immediate physical sensations\u2014we will maintain the clinical depth of utility-based inquiry while eliminating the 'formulaic' and 'generic platitude' penalties, thereby achieving a score significantly higher than 6.907.",
+      "score": 6.3,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.7,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add genuine insight or depth to the conversation. Specifically, phrases like 'That must be hard' and 'It sounds like...' are used as filler instead of engaging with the patient's emotions and experiences. Additionally, the therapist's questions often feel formulaic and robotic, lacking a sense of authentic presence."
     }
   ],
   "best_score": 6.907
