@@ -659,6 +659,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9d phrases, such as 'That makes sense' and 'You're looking for a way to separate two huge, heavy feelings.' These filler statements lack genuine engagement and fail to add meaningful insight. Additionally, the therapist's mirroring of the patient's words is too repetitive and doesn't provide any new or innovative perspectives."
+    },
+    {
+      "exp_id": "exp_0065",
+      "strategy_name": "Co-Curious Companion: Micro-Utility Bridge (CCM-UB) v1.0",
+      "hypothesis": "By replacing all high-level structural language (e.g., 'process,' 'defusion,' 'tension') with ultra-minimalist, conversational language, and focusing all curiosity exclusively on the immediate, observable, and concrete behavioral 'bridge' (the small gap between the feeling and a simple daily action), we will achieve a perceived naturalness and depth that eliminates the 'formulaic' and 'platitude' penalties, surpassing the 6.907 score.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The conversation is bogged down by unnecessary filler phrases ('That must be hard', 'I hear you'), which do not contribute meaningfully to the therapeutic process."
     }
   ],
   "best_score": 6.907
