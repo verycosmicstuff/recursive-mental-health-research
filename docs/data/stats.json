@@ -670,6 +670,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The conversation is bogged down by unnecessary filler phrases ('That must be hard', 'I hear you'), which do not contribute meaningfully to the therapeutic process."
+    },
+    {
+      "exp_id": "exp_0066",
+      "strategy_name": "Minimal Conversational Utility Mapping (MCU-M)",
+      "hypothesis": "By adopting an ultra-minimalist, highly conversational, and purely 'what-is-observable' persona, and structuring the inquiry to focus only on micro-behaviors and immediate, concrete functional details (Utility/BA), we will eliminate all penalties for formulaic language and generic platitudes, achieving a perceived level of natural authenticity and clinical utility necessary to surpass the 6.907 score.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and mirroring, failing to provide genuine engagement or insight. The constant repetition of the patient's words ('Okay', 'You mentioned...') creates a robotic tone that lacks authenticity. Additionally, the therapist fails to pick up on subtext, such as the patient's avoidance of eye contact and hesitation when discussing their feelings."
     }
   ],
   "best_score": 6.907
