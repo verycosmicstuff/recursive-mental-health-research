@@ -329,6 +329,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and lack genuine engagement. Phrases like 'It sounds like...' and 'That must be hard' are used as filler instead of actively exploring the patient's emotions and experiences. Additionally, the therapist's mirroring is too repetitive, simply parroting the patient's words without adding any meaningful insight or new perspectives."
+    },
+    {
+      "exp_id": "exp_0031",
+      "strategy_name": "Conversational Resonance: Utility-Grounded PCT v3.0",
+      "hypothesis": "By retaining the core utility-based focus on observable functioning (BA/ACT) but radically simplifying all language to adopt a warm, conversational, 'co-curious' tone (PCT), we can maximize the perceived authenticity and natural engagement, thus overcoming the persistent 'formulaic' and 'detached' penalties and achieving a score significantly higher than 6.907.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('Seriously', 'I hear you', 'That must be hard'), which fail to provide genuine engagement or insight. Additionally, the therapist's mirroring of the patient's words is too repetitive and lacks depth, failing to add any meaningful understanding or perspective."
     }
   ],
   "best_score": 6.907

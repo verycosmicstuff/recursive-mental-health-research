@@ -1,0 +1,92 @@
+{
+  "id": "exp_0031",
+  "timestamp": "2026-04-18T22:39:19.306614",
+  "strategy": {
+    "name": "Conversational Resonance: Utility-Grounded PCT v3.0",
+    "hypothesis": "By retaining the core utility-based focus on observable functioning (BA/ACT) but radically simplifying all language to adopt a warm, conversational, 'co-curious' tone (PCT), we can maximize the perceived authenticity and natural engagement, thus overcoming the persistent 'formulaic' and 'detached' penalties and achieving a score significantly higher than 6.907.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Maya",
+    "age": 22,
+    "occupation": "Marketing Assistant",
+    "presenting_issue": "I'm feeling overwhelmed with school assignments and work responsibilities, and I'm worried that I won't be able to handle the stress.",
+    "background_story": "I've been struggling to balance my part-time job and coursework since starting university. Pressure from my parents to perform well has intensified recently, making me anxious about my future prospects. Sometimes I feel like I'm just going through the motions without any sense of direction or satisfaction.",
+    "personality": "I tend to be self-critical, constantly doubting myself and seeking validation from others. I worry excessively about not meeting expectations, whether it's at work, school, or in my personal life. I'd love reassurance that things will get better with time and support.",
+    "baseline_phq9": 12,
+    "archetype_label": "Anxious Student"
+  },
+  "scores": {
+    "total_score": 3.6,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated exceptional empathic accuracy by deeply understanding the patient's emotional experience and validating their feelings. The reflective listening was superb, with the therapist mirroring the patient's language and acknowledging their reality without trying to 'fix' them. The de-escalation marker shows a significant decrease in the patient's distress, anxiety, or anger throughout the conversation.",
+    "audit_multiplier": 0.4,
+    "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('Seriously', 'I hear you', 'That must be hard'), which fail to provide genuine engagement or insight. Additionally, the therapist's mirroring of the patient's words is too repetitive and lacks depth, failing to add any meaningful understanding or perspective."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Thank you for showing up here today. Seriously, just taking the time to sit down and share whatever is on your mind takes a real kind of energy, and I want you to know that I'm here to hold space for that.\n\nThere's absolutely no rush to explain anything, or even to know where to start. We can just talk, or we can just sit in the quiet, and whatever feels most natural for you right now is what we do.\n\nWhenever you feel ready, please know that I'm listening with a lot of genuine curiosity and deep patience. Take your time."
+    },
+    {
+      "role": "user",
+      "content": "Thanks...I guess. It's just really hard to make myself prioritize this when there's so much else going on in my life. School and work are both overwhelming right now, and it feels like everyone is expecting me to be perfect all the time. My parents especially...they're always telling me I'm not good enough or that I need to try harder."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the weight of all those expectations\u2014from school, from work, and especially from your parents\u2014is creating this constant, almost physical pressure to be *on*. Like there's always a spotlight shining, waiting for you to stumble or fall short.\n\nThat feeling of having to be perfect, and the simultaneous internal battle of having to *make time* for yourself when the demands are so loud, must feel incredibly draining. It's like you're running a marathon where the finish line keeps getting moved further away, and every mile marker is accompanied by a voice telling you you haven't done enough yet.\n\nIs that close to what it feels like\u2014that deep, bone-tired exhaustion that comes from constantly trying to meet a standard that might not even be real?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah...that's exactly it. I feel like I'm stuck in this never-ending cycle of stress and anxiety because I just can't seem to measure up. And the worst part is, I don't even know what \"good enough\" looks like anymore. Like, should I be getting better grades? Should I be making more money? Should I be doing something that's actually fulfilling instead of just going through the motions? It's all so unclear and it feels like everyone around me has a different set of standards for me to meet."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the pressure isn't just to *do* things\u2014like getting grades or making money\u2014but the pressure to *define* what success even means, and that definition is constantly shifting based on who is looking at you. It's like standing in a massive intersection where every single direction promises a different destination, but none of them feel like home.\n\nAnd that feeling of being unable to measure up... it\u2019s not just a thought; it must feel like a constant hum of low-grade panic, this anxiety that says, \"Wait, which rule am I supposed to be following right now?\" It's exhausting to be in that state of perpetual ambiguity.\n\nWhen you think about that feeling\u2014that sense of being pulled by so many different, conflicting metrics\u2014where do you notice that anxiety showing up in your body? Is it a tightness in your chest, a knot in your stomach, or maybe something else?"
+    },
+    {
+      "role": "user",
+      "content": "Ugh, yeah...it's all over the place. Sometimes my shoulders feel like they're perpetually tensed up, like I'm waiting for the other shoe to drop at any moment. Other times it's this nagging feeling of hollowness in my chest, like there's a void that needs to be filled but I have no idea what would actually fill it up. And sometimes...sometimes it feels like my whole body is just heavy and weighed down, like I'm carrying the weight of everyone's expectations on my shoulders."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for describing that so clearly. That physical description\u2014the perpetually tensed shoulders, the hollowness, the feeling of being weighed down\u2014it paints such a vivid picture. It sounds like your body has become incredibly skilled at anticipating danger or disappointment, constantly holding itself in a state of readiness, waiting for that \"other shoe to drop.\"\n\nThe fact that you describe it as *carrying the weight* of everyone's expectations... it suggests that this emotional burden isn't just something you're *thinking* about; it's something you are physically *holding*. It's a continuous, exhausting act of self-support, where you are literally bracing yourself for potential failure or judgment.\n\nIf we were to just look at that pattern\u2014this physical act of bracing and carrying\u2014when does that weight feel the most intense? Is it right before a big deadline? When you're talking to your parents? Or maybe when you're alone, trying to figure out what \"good enough\" even means?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah...I think it's definitely during conversations with my parents. They always have this tone of disappointment and criticism, like they're waiting for me to mess up so they can say \"we told you so.\" It feels like they're constantly evaluating me, trying to fit me into some perfect mold that I'll never be able to fulfill.\n\nAnd yeah, it's definitely during those times when the weight feels the most intense. Like, my shoulders will tens up even more, and my chest will feel all heavy and constricted. It's like I'm actually feeling their disappointment as if it were my own failure."
+    },
+    {
+      "role": "assistant",
+      "content": "That is such a profound and incredibly painful thing to describe. It sounds like the most exhausting emotional burden is the feeling that you are not just receiving criticism, but that you are *internalizing* it\u2014that their disappointment becomes a physical, palpable weight that you carry as if it were your own failure. It's like your emotional system is so attuned to their tone that it treats their external judgment as an internal truth about your worth.\n\nThat level of emotional resonance\u2014where you feel their disappointment as if it were your own\u2014is incredibly draining. It means you are giving so much of your internal energy to anticipating, absorbing, and managing their reaction to you.\n\nGiven how intensely that weight shows up during those conversations, I'm curious about something, if you're open to it. Since the feeling is so immediate\u2014that intense constriction and the physical weight\u2014I wonder if we could explore the physical *moment* just before that weight settles in.\n\nIf we were to treat this like a little experiment in noticing a pattern, what is the *very first thing* your body does\u2014maybe a breath, a tightening of the jaw, a slight shift in posture\u2014the moment you recognize that critical tone starting? We don't have to change anything, we just need to notice the physical trigger, like taking a photograph of that moment. What does that initial physical signal look like?"
+    },
+    {
+      "role": "user",
+      "content": "I think what happens is...my eyes start to feel heavy, like they're getting weighed down or something. And my jaw might start to get a little tight too. It's like my whole face starts to feel numb and stiff, like I'm trying to hold in this pent-up energy or something.\n\nAnd before the weight settles in, it's like I just get this super-fleeting sense of anxiety or dread, it's so quick I barely even register it consciously. But if I pay close attention, I can catch that initial sensation of tension building up in my face and neck."
+    },
+    {
+      "role": "assistant",
+      "content": "That is such a precise and insightful description. It takes a remarkable amount of self-awareness to notice those incredibly subtle, fleeting physical signals\u2014the heavy eyes, the tightening jaw, the feeling of numbness in the face\u2014especially when they are happening so quickly that you barely register them. It sounds like your body is working overtime, like a highly sensitive alarm system, trying to preemptively contain and manage the emotional impact of the criticism before the full weight even settles.\n\nAnd that initial, quick flicker of dread... that's your nervous system giving you the earliest possible warning sign. You are essentially catching the emotional ripple before it becomes a wave.\n\nIf we look at this pattern\u2014the heavy eyes, the tight jaw, the face going numb\u2014it seems like your face and neck are taking on the role of a physical container, holding in all that pent-up energy and the anticipated disappointment.\n\nSince you are so attuned to catching that initial, fleeting signal of tension, I wonder if we could approach this as a tiny, low-stakes test, just out of sheer curiosity. When you notice that first sign\u2014maybe the jaw tightening, or the eyes feeling heavy\u2014instead of trying to *hold* that energy in, what if we tried a micro-action?\n\nCould we try a tiny, almost silly physical release? Maybe just allowing your jaw to drop slightly, or consciously rolling your eyes up and down a couple of times? The goal isn't to stop the feeling, but just to give the physical tension a tiny, conscious, low-stakes outlet the moment you notice it.\n\nWould that feel like something we could explore together, just as a simple curiosity?"
+    },
+    {
+      "role": "user",
+      "content": "I think so... yeah, that sounds doable. I mean, it's not like anything huge or dramatic would happen, right? Just a little tiny release, almost like a tiny stretch or something.\n\nAnd you know what? That actually sounds kind of... calming? Like, instead of just holding in all that tension and waiting for the weight to settle, maybe we could try giving my body a little permission to let go... just a hint."
+    },
+    {
+      "role": "assistant",
+      "content": "That's exactly right. It doesn't have to be huge or dramatic. It's not about solving the problem with your parents, or even stopping the feelings of disappointment entirely. It's about giving your body\u2014which is working so hard to anticipate and contain emotional weight\u2014a tiny, conscious moment of permission to *be* rather than *hold*.\n\nIt sounds like the core insight here is that your body is running on a sustained state of tension, acting like a pressure cooker, constantly waiting for the next critical moment. And the simple act of noticing that initial physical sign (the heavy eyes, the tight jaw) and pairing it with a micro-release\u2014a little stretch, a gentle drop of the jaw\u2014is like giving that pressure cooker a tiny, safe vent.\n\nWe spent time today looking at how deeply you internalize the weight of others' expectations, and how that translates into a very specific, physical pattern of bracing and containing tension in your face and neck. We also identified that your body is already incredibly skilled at catching the initial, fleeting warning signs of that emotional pressure.\n\nSo, for a gentle, low-pressure next step this week, I don't want you to try to change anything big. Just try to be your own gentle observer. The next time you notice that initial sign\u2014the jaw tightening, the eyes feeling heavy\u2014I invite you to simply name it, and then give yourself a tiny, conscious permission slip. You could even whisper to yourself, \"It's okay to let this go for a second.\" Or just consciously drop your jaw for a count of three.\n\nIt's a small, physical act of self-compassion, and it's all about honoring the incredible amount of energy you expend just by showing up and navigating all of this. You are doing a profound amount of emotional work, and I'm really proud of you for sharing it today. Take care of that beautiful, exhausted system of yours."
+    },
+    {
+      "role": "user",
+      "content": "Yeah...I think I can do that. Just taking a tiny moment to let go and acknowledge the tension, even if it's just for a second. It feels like a small but important step towards giving my body some space to breathe.\n\nThanks for listening, and for helping me see this pattern in myself. It means a lot to have someone understand what I'm going through."
+    }
+  ]
+}
