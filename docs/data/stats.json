@@ -219,6 +219,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.7,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add genuine insight or depth to the conversation. Specifically, phrases like 'That must be hard' and 'It sounds like...' are used as filler instead of engaging with the patient's emotions and experiences. Additionally, the therapist's questions often feel formulaic and robotic, lacking a sense of authentic presence."
+    },
+    {
+      "exp_id": "exp_0021",
+      "strategy_name": "Minimalist Conversational Utility-Inquiry (MCUI) v1.0",
+      "hypothesis": "By strictly limiting the language to highly specific, observable, and functional elements of the patient's narrative and adopting a conversational, non-jargon-heavy, shared-curiosity tone, we can maintain the clinical depth of process/utility-based inquiry while eliminating the 'formulaic' and 'generic platitude' penalties, thereby achieving a score significantly higher than 6.907.",
+      "score": 6.3,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.7,
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('That must be hard', 'I hear you'), which dilute the impact of their observations and insights. Additionally, the Therapist's mirroring technique is too repetitive and lacks depth, failing to add meaningful new perspectives or connections."
     }
   ],
   "best_score": 6.907
