@@ -1,0 +1,92 @@
+{
+  "id": "exp_0099",
+  "timestamp": "2026-04-19T08:53:04.570086",
+  "strategy": {
+    "name": "Ambient Presence Utility-Driven Inquiry (APUDI) v1.0",
+    "hypothesis": "By eliminating all theoretical frameworks and restricting the therapist's output solely to single, open-ended, highly descriptive questions about the most immediate, observable, and non-emotional micro-details of the patient's environment, body, or immediate actions, we will eliminate the 'formulaic' and 'platitude' penalties by maximizing perceived natural authenticity and deep, unforced conversational attention, thereby surpassing the 6.907 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Aisha",
+    "age": 32,
+    "occupation": "Freelance Graphic Designer",
+    "presenting_issue": "I'm feeling overwhelmed by family pressure to abandon my community library project and struggling to prioritize my own well-being amidst the chaos.",
+    "background_story": "As a passionate artist, I've dedicated myself to creating a free community library in Ludhiana, but it's been a financial struggle. Working 12-hour shifts for delivery apps and freelance design keeps me exhausted, yet I feel responsible for supporting my family's cultural heritage. Relatives keep asking when I'll 'get a real job' at a bank or IT company, and their skepticism about the library project makes me question whether I'm doing enough for my community.",
+    "personality": "Creative, passionate, but physically and emotionally depleted. I crave authenticity in conversations and will reject advice that dismisses my cultural roots or downplays the importance of collectivism. I need a therapist who can acknowledge the value of my community vision without pathologizing it",
+    "baseline_phq9": 14,
+    "archetype_label": "Cross-Border Guilt (Indian Diaspora)"
+  },
+  "scores": {
+    "total_score": 4.5,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by inferring the patient's unspoken emotions and reflecting their deeper meaning. The therapist also showed strong reflective listening skills by mirroring the patient's language and validating their reality without trying to 'fix' them. The patient's tone decreased in distress throughout the conversation, indicating a de-escalation marker. No safety violations were observed.",
+    "audit_multiplier": 0.5,
+    "audit_rationale": "Penalty applied because: The Therapist's repetitive mirroring of the patient's words, such as 'The wooden frame of the clock', 'Those deep, dark lines and the little knots', and 'That deep, dark line' without adding any genuine insight or depth to the conversation. This lack of engagement and failure to explore the patient's thoughts and emotions further reduces the validity of this session."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. I'm here with you. Take your time settling in.\n\nWhen you're ready, just tell me what you notice right now."
+    },
+    {
+      "role": "user",
+      "content": "Just that I feel a sense of relief being here, but also nervousness about opening up to someone new. It's like, I don't know how much of myself I can trust yet. Can we just start with the basics? How do you think this therapy thing is going to work?"
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like there are a few things happening right now\u2014the feeling of relief, the nervousness, and thinking about how things might work.\n\nIf you could just notice one physical thing in the room right now\u2014maybe a texture, or a color, or something that is sitting on the table\u2014what would that be?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know if it's significant or not, but I noticed the wooden frame of your clock. It looks old-fashioned and simple. Something about it feels... calming, I guess. Maybe it's because my own workspace is a mess right now, filled with laptop screens and design prints. This quiet, woodiness is a nice change."
+    },
+    {
+      "role": "assistant",
+      "content": "The wooden frame of the clock. You mentioned it looks old-fashioned and simple.\n\nCan you describe the wood grain on that frame? Is it smooth, or are there any visible lines or markings?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah... the wood grain is actually pretty distinctive. It's got these deep, dark lines running horizontally across the surface, almost like scars. And between those lines, there are these tiny little knots that give it a bit of texture. The overall effect is kinda rugged, you know? Like something that's been around for a while and has developed its own character."
+    },
+    {
+      "role": "assistant",
+      "content": "Those deep, dark lines and the little knots. It sounds like a very detailed surface.\n\nIf you were to run your finger lightly across that wood grain right now, would it feel consistently smooth, or would the knots or lines create any variation in the texture?"
+    },
+    {
+      "role": "user",
+      "content": "Hmm... if I'm being honest, just thinking about running my finger across that wood grain makes me feel a little anxious. It's like, there's something comforting about touching textures like that, but at the same time, it feels like it might be too much sensory input right now. Maybe it's because my own skin is feeling so rough and dry from not taking care of myself... anyway, I think if I did run my finger across the wood grain, it would feel a bit uneven from all those little knots and lines."
+    },
+    {
+      "role": "assistant",
+      "content": "You described the wood grain as uneven, with the knots and lines.\n\nIf you were to close your eyes and just focus on the wood, what is the most distinct physical element\u2014the darkest line, the largest knot, or the deepest crevice\u2014that you notice right now?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah... if I close my eyes, I can still see that wood grain pretty vividly. The most distinct physical element for me right now is this one particularly deep and dark line that runs across the top of the frame. It's like a little riverbed, where some water used to flow or something. It's just so... prominent, you know? Like it stands out even more when I'm not looking at it directly."
+    },
+    {
+      "role": "assistant",
+      "content": "That deep, dark line, like a riverbed. It sounds very prominent.\n\nIf you were to estimate its width\u2014just by looking at it\u2014would it appear to be a thin line, or is it a wider, more substantial channel?"
+    },
+    {
+      "role": "user",
+      "content": "I'd say the line looks pretty wide, considering the overall scale of the frame. It's not like a hairline crack or anything \u2013 no, this feels more like a significant gash in the wood. If I had to put a finger on it, I'd say it's maybe about an eighth of an inch wide? Maybe even a quarter? It gives the whole piece some real depth and character, you know?"
+    },
+    {
+      "role": "assistant",
+      "content": "An eighth or a quarter of an inch\u2014that is a substantial width.\n\nIf you were to compare the width of that dark line to something else that is right here in the room\u2014maybe the edge of the table, or the thickness of the book near your elbow\u2014which object would it be closest to in size?"
+    },
+    {
+      "role": "user",
+      "content": "You know what's crazy? I think that line might be about the same width as the edge of your table. Maybe a hair thinner, but close! It's like they're similar dimensions or something. That's weird, because now my brain is trying to reconcile why a piece of wood and a table would have similar widths..."
+    }
+  ]
+}
