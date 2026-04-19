@@ -278,3 +278,5 @@ MIT — use freely, credit appreciated.
 ---
 
 **Inspired by [Andrej Karpathy's autoresearch pattern](https://x.com/karpathy). Built with Ollama, Flask, and curiosity about how AI can support human wellbeing.**
+
+*Created by **[Sunny Arora](http://www.sunnyarora.xyz)***
