@@ -186,6 +186,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.5,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly formulaic and lack genuine engagement. The use of phrases like 'When you find yourself performing tasks repeatedly...' and 'You describe a sequence...' creates a sense of detachment rather than connection with the patient. Additionally, the therapist's focus on identifying patterns and labeling them ('the physical pressure builds up in order to avoid the feeling of being overwhelmed') comes across as overly analytical and fails to acknowledge the emotional complexity of the patient's experience."
+    },
+    {
+      "exp_id": "exp_0018",
+      "strategy_name": "Minimalist Utility-Focused Reflection (MUFR) v1.0",
+      "hypothesis": "By combining the high-scoring focus on the *function* and *observable consequence* of distress (UFG) with a drastically simplified, highly conversational, and non-jargon-heavy tone (Minimalism), we can maximize both the perceived clinical depth and the 'naturalness' score, thereby surpassing the previous score of 6.907.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly generic and lack genuine engagement. For example, the phrase 'I hear you' is used as a filler instead of a meaningful acknowledgment. Additionally, the therapist's mirroring of the patient's words is too repetitive and doesn't add any new insights. The tone is also somewhat robotic and formulaic, which may not be conducive to building trust with the patient."
     }
   ],
   "best_score": 6.907
