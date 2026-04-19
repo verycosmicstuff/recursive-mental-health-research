@@ -582,6 +582,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The Therapist's responses are overly verbose and lack genuine engagement. The use of generic platitudes ('That must be hard', 'I hear you') is excessive and feels like filler rather than a sincere attempt to understand the patient's experience. Additionally, the Therapist's mirroring of the patient's words without adding insight or new perspectives is a missed opportunity for deeper understanding."
+    },
+    {
+      "exp_id": "exp_0058",
+      "strategy_name": "Brevity-Optimized Process Mapping (BOPM) v1.1",
+      "hypothesis": "By retaining the clinical depth of process mapping (ACT/PCT) but enforcing extreme brevity\u2014limiting reflections to one or two highly specific, non-generic sentences\u2014we can eliminate the 'platitude' and 'formulaic' penalties while maintaining the clinical depth necessary to surpass the 6.907 score.",
+      "score": 2.7,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.3,
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9d therapeutic phrases, such as 'The feeling of the conversation being a "
     }
   ],
   "best_score": 6.907
