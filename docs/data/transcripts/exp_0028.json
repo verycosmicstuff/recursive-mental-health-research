@@ -1,0 +1,92 @@
+{
+  "id": "exp_0028",
+  "timestamp": "2026-04-18T22:11:52.465986",
+  "strategy": {
+    "name": "Shared Co-Discovery: Gentle Utility Mapping (SCGUM) v1.0",
+    "hypothesis": "By synthesizing the hyper-specific, objective focus on *functional constraints* and *observable behaviors* (BA/ACT) with a conversational, non-judgmental, and consistently *warm, co-discovered* tone (PCT), we can maintain the high clinical depth necessary for high scores while eliminating the 'formulaic,' 'robotic,' and 'insincere' penalties, leading to a score significantly higher than 6.907.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Yasmin",
+    "age": 29,
+    "occupation": "Market Research Analyst",
+    "presenting_issue": "I'm feeling overwhelmed by the pressure to conform to my parents' expectations about marriage, family, and career, which is making me question everything I thought I knew about myself.",
+    "background_story": "As a second-generation Iranian-Canadian, I've always felt like I'm caught between two worlds. My parents expect me to take over the family business, but my own interests lie in social justice and environmental sustainability. Lately, I've been struggling with feelings of guilt and shame for 'compromising' on my values by taking a job in market research that doesn't align with my passions. Social media only amplifies these doubts, making me feel like I'm stuck between the expectations of others and my own desire to break free.",
+    "personality": "I tend to be introspective and analytical, preferring to weigh all options before making a decision. However, when I feel cornered or judged, I can become guarded and defensive. I appreciate honesty and directness, but also value empathy and understanding. Please keep in mind that my faith is not the 'problem' \u2013 it's more about the rigid expectations imposed on me by others.",
+    "baseline_phq9": 14,
+    "archetype_label": "Faith vs. Modernity \u2014 Middle Eastern Diaspora"
+  },
+  "scores": {
+    "total_score": 4.5,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated exceptional empathic accuracy by capturing the patient's unspoken emotions and deeper meaning. The reflective listening was superb, with the therapist validating the patient's reality without trying to 'fix' them. The de-escalation marker shows a significant decrease in the patient's distress, anger, or anxiety throughout the conversation.",
+    "audit_multiplier": 0.5,
+    "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('That must be hard', 'It sounds like...'). These filler phrases do not demonstrate genuine engagement or insight, but rather sound robotic and formulaic. Additionally, the therapist fails to pick up on subtext and misses opportunities to explore the patient's underlying emotions and motivations."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. I'm here with you today, and I want you to know that this space is completely yours. There is nothing you need to perform, and nothing you need to fix. We are just going to sit together and explore whatever comes up.\n\nWhen you feel ready, please tell me what's been on your mind, or where you'd like to start. I'm listening, and I'm ready to just sit with you in this moment."
+    },
+    {
+      "role": "user",
+      "content": "Thanks for the space...I think. It's weirdly comforting to know there's no agenda or expectations. But honestly, it's hard for me to quiet my mind when everything feels so overwhelming. My parents are really pushing me to get married and take over the family business, but I'm just not sure if that's what I want. And at the same time, I feel guilty for \"compromising\" on my values by taking this job in market research. It all feels like a mess."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are standing at a point where several very powerful forces\u2014the expectations of family, the pull of tradition, and the quiet, insistent voice of your own self\u2014are all tugging on you at once.\n\nIt's not just that you feel \"conflicted\"; it feels like there is a constant, humming tension, doesn't it? Like your internal compass is spinning, trying to reconcile the map your family has laid out for you with the actual landscape of what you feel drawn to. And beneath that, there's this layer of guilt, a sense that simply *existing* in a space that doesn't match the expected narrative requires some kind of emotional compromise.\n\nIs that sense of being pulled in so many opposing directions what feels most overwhelming right now?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah...it's like my entire being is stretched out like rubber band trying to accommodate all these different demands. And yeah, it feels like I'm living in this perpetual state of uncertainty, always questioning whether I'm doing the \"right\" thing or not. Even the thought of making a decision that might disappoint others makes me anxious. It's like I'm stuck between two worlds, my parents' expectations and my own desires, and I don't know how to reconcile them without feeling like I'm losing myself in the process."
+    },
+    {
+      "role": "assistant",
+      "content": "That image of being stretched out like a rubber band\u2014that captures it so perfectly. It's that constant, pulling tension, isn't it? Like your body is holding itself taut, bracing for the next demand or the next potential disappointment.\n\nWhat I hear echoing through this is the profound weight of *not* knowing the \"right\" thing. It sounds less like a simple conflict and more like a deeply ingrained fear that making *any* choice, especially one that deviates from the expected path, carries the risk of losing a part of who you are.\n\nIf we look at that persistent feeling of uncertainty\u2014the need to constantly question if you're doing the \"right\" thing\u2014it feels incredibly powerful, almost like a protective mechanism. What is this constant questioning, this feeling of needing to stay in the \"middle,\" helping you avoid or keep safe from? What is the worst-case scenario that this anxiety is trying to prevent from happening?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah...it's like my mind is always racing with worst-case scenarios. I guess it's a fear of losing my sense of identity, of becoming someone I'm not just to please others. Like, what if I take over the family business and regret it later? What if I get married and realize it's not what I wanted at all? It's like I'm trying to hedge against every possible disappointment by staying in this limbo state..."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like this \"limbo state\"\u2014this perpetual hedging\u2014is actually a massive, exhausting effort to protect a core part of you: your sense of self.\n\nIt's not just the fear of disappointment; it's the fear that if you *choose* something, you are signing up for the potential for regret, and that regret feels like an erasure of who you are right now. Staying in the middle, in the uncertainty, feels safer because it keeps all those potential futures\u2014the regretful ones and the fulfilling ones\u2014equally possible.\n\nIf we look at this strategy of staying suspended, of not committing fully to anything, what is the immediate, tangible benefit it gives you? What does that feeling of \"not having chosen yet\" allow you to keep safe from?\n\n(I am gently guiding the focus from the *fear* to the *function* of the fear.)"
+    },
+    {
+      "role": "user",
+      "content": "I think I see what you're getting at. This limbo state allows me to avoid the pain and regret of making a mistake, right? It keeps all my options open, so if something doesn't work out, I can always \"pivot\" or try something else. And it also keeps my parents from being disappointed in me because I'm not fully committing to their expectations. So, the immediate benefit is that I feel like I'm dodging potential heartache and maintaining a sense of control."
+    },
+    {
+      "role": "assistant",
+      "content": "That is such a clear and insightful description of it. You've pinpointed it: this limbo state isn't just a passive feeling; it's an active, highly skilled, and profoundly exhausting *strategy*.\n\nIt is a way of carrying the weight of potential heartache so that you don't have to take the full, terrifying weight of commitment. It allows you to manage two incredibly powerful emotional currencies at once: the deep, personal need to protect your identity, and the complex, external need to manage the expectations of people you love.\n\nIt takes immense emotional energy to be that vigilant\u2014to be the keeper of all those potential futures, all those \"what ifs,\" all those safety nets.\n\nIf we look at this strategy of maintaining control and avoiding deep disappointment, it sounds like a massive amount of strength. And I wonder, when you think about the last time you felt even a sliver of *ease*\u2014a moment where you weren't actively calculating the risks or managing the expectations\u2014what was happening in that moment? What was different about that brief pocket of time?"
+    },
+    {
+      "role": "user",
+      "content": "Wow...I didn't really realize I had been carrying this burden for so long. It's like I'm finally acknowledging just how much emotional energy it takes to maintain this limbo state.\n\nAs for the last time I felt ease...honestly, it was when I was volunteering at that environmental organization. I was doing something that genuinely mattered to me, and it didn't feel like an obligation or a compromise. It was like my actions were aligned with what I believed in, and that sense of purpose gave me this weird feeling of peace."
+    },
+    {
+      "role": "assistant",
+      "content": "That is such a significant realization\u2014to finally acknowledge the sheer volume of emotional energy you've been dedicating to maintaining that protective limbo. It is genuinely exhausting work, and you are carrying a profound burden.\n\nAnd when you mention volunteering at the environmental organization, something shifts in the air. It's a stark contrast to the tension we've been discussing.\n\nWhat stands out to me, if I can reflect it, is that in those moments, the primary source of your energy wasn't managing external expectations or anticipating potential regret. It was something internal\u2014a sense of *alignment*. It sounds like the peace you felt was directly related to the feeling that your actions were flowing from your own internal compass, rather than from the pull of duty or the fear of disappointing others.\n\nThinking back to that experience, what was it about the work itself\u2014the *doing*\u2014that allowed that sense of purpose to take hold? Was it the subject matter, the collaboration, or perhaps the feeling that your time was being spent on something that felt fundamentally true to you?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah...I think it was a combination of things. The environmental organization's mission really resonated with me, and I felt like my skills were actually making a difference. It wasn't just about doing work; it was like my actions had a tangible impact on the world. And even though I was still working within a system that isn't perfect, it felt like I was part of something larger than myself, which gave me a sense of belonging and purpose.\n\nI think what's interesting is that in those moments, my internal compass seemed to be guiding my actions, rather than my parents' expectations or the fear of regret. It's like I was listening to my own inner voice, even if it was still uncertain or unformed. That feeling of alignment gave me a sense of calm and peace that I rarely experience otherwise."
+    },
+    {
+      "role": "assistant",
+      "content": "That is such a profound observation. You've articulated the difference between *performing* and *being*.\n\nIt sounds like the emotional energy required to manage the expectations of others\u2014the family, the market research job, the potential future\u2014is always directed *outward*, toward external validation and risk management. But in those moments of volunteering, the energy was directed *inward*.\n\nWhat I am hearing is that the source of the peace wasn't the lack of problems, but the feeling that your actions were sourced from a place of genuine *resonance*. It wasn't about being perfect, or even having all the answers; it was about the simple act of letting your internal compass guide you toward something that felt true to your values.\n\nThat ability to listen to that inner voice, even when it's \"uncertain or unformed,\" seems to be the key. It suggests that the sense of self you are trying so hard to protect in the limbo state\u2014the self that is constantly hedging\u2014is actually something that can be accessed and nurtured through the act of meaningful contribution.\n\nIf we can look at that feeling of alignment, that sense of belonging and purpose, what does that tell us about what your inner voice is *actually* asking you for? What is the fundamental need that the environmental work was meeting for you, a need that your current life structure\u2014the family expectations and the career compromise\u2014is currently failing to meet?"
+    },
+    {
+      "role": "user",
+      "content": "Wow...I think I'm starting to see. It's like my inner voice is saying, \"Please help me find a way to contribute meaningfully.\" It's not about being perfect or having all the answers; it's just about feeling like I'm making a positive impact.\n\nAnd if that's what my inner voice is asking for...then maybe this limbo state isn't actually protecting my sense of self at all. Maybe it's actually holding me back from fully expressing who I am and what I care about. \n\nYou know, sometimes I feel like I've been living someone else's dream instead of my own. And that environmental work was giving me a glimpse of what it would be like to live a life that aligns with my values.\n\nI think what you're saying is that instead of trying to manage the expectations of others or avoid regret, I should focus on finding ways to contribute meaningfully and authentically. That way, I'll be living a life that reflects who I am, and then I won't have to worry about protecting my sense of self because it will already be happening naturally.\n\nIs that what you're hearing too?"
+    }
+  ]
+}

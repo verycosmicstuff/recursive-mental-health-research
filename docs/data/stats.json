@@ -296,6 +296,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The conversation is bogged down by unnecessary questions that don't add value to the patient's experience."
+    },
+    {
+      "exp_id": "exp_0028",
+      "strategy_name": "Shared Co-Discovery: Gentle Utility Mapping (SCGUM) v1.0",
+      "hypothesis": "By synthesizing the hyper-specific, objective focus on *functional constraints* and *observable behaviors* (BA/ACT) with a conversational, non-judgmental, and consistently *warm, co-discovered* tone (PCT), we can maintain the high clinical depth necessary for high scores while eliminating the 'formulaic,' 'robotic,' and 'insincere' penalties, leading to a score significantly higher than 6.907.",
+      "score": 4.5,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.5,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('That must be hard', 'It sounds like...'). These filler phrases do not demonstrate genuine engagement or insight, but rather sound robotic and formulaic. Additionally, the therapist fails to pick up on subtext and misses opportunities to explore the patient's underlying emotions and motivations."
     }
   ],
   "best_score": 6.907
