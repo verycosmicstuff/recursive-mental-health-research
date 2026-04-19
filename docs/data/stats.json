@@ -373,6 +373,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The Therapist's responses are overly verbose and formulaic, lacking genuine engagement or insight. The use of clich\u00e9d phrases like 'profoundly honest' and 'massive step' is a clear indication of robotic language. Additionally, the Therapist fails to pick up on subtext and instead focuses on surface-level analysis. The constant mirroring of the patient's words without adding any new perspective is another red flag."
+    },
+    {
+      "exp_id": "exp_0035",
+      "strategy_name": "Ultra-Conversational Utility-Mapping (UCUM) v1.0",
+      "hypothesis": "By adopting a ruthlessly conversational, ultra-minimalist persona that grounds all reflections and inquiries exclusively in the patient's immediate, observable, and concrete functional language and sensory details, and by eliminating all structural scaffolding and emotional clich\u00e9s, we will maximize the perceived authenticity and genuine engagement, thereby consistently surpassing the current best score of 6.907.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The conversation is bogged down by unnecessary questions that don't add significant value to the patient's understanding of their own experiences."
     }
   ],
   "best_score": 6.907
