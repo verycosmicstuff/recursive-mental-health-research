@@ -494,6 +494,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.4,
       "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s, such as 'That must be hard' and 'You're doing the best you can.' These phrases lack genuine engagement and insight, instead serving as filler to pad out the conversation. Additionally, the Therapist frequently mirrors the patient's words without adding any meaningful new insights or perspectives."
+    },
+    {
+      "exp_id": "exp_0050",
+      "strategy_name": "Co-Curious Insight Mapping (CCIM) v1.1",
+      "hypothesis": "By maintaining the ultra-minimalist, conversational tone and grounding all reflections in the patient's concrete language, but shifting the intervention from passive 'reflection' to active, gentle 'curiosity-driven questioning' that gently maps the *assumptions* or *rules* the patient is operating under, we will provide novel insight that avoids the 'platitude' penalty while maintaining the depth required to surpass the 6.907 score.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly formulaic and lack genuine engagement. Repetitive mirroring is used to the point of being a crutch, rather than adding insight or depth to the conversation. The Therapist also fails to pick up on subtext and instead focuses on offering solutions before the patient has fully expressed themselves. Additionally, clich\u00e9d therapeutic phrases are used throughout the session, which detract from its overall effectiveness."
     }
   ],
   "best_score": 6.907
