@@ -1,0 +1,92 @@
+{
+  "id": "exp_0085",
+  "timestamp": "2026-04-19T07:00:27.294343",
+  "strategy": {
+    "name": "Minimalist Utility-Emotional Bridge (MUEB) v1.1",
+    "hypothesis": "By limiting all reflections and inquiries to single-sentence, ultra-minimalist questions that bridge the patient's most concrete, observable micro-action/sensation (Utility/BA) directly to a single, non-theoretical, deeply resonant emotional understanding (PCT), we will maximize perceived conversational authenticity and genuine depth by eliminating all formulaic language penalties while providing novel insight.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Luna",
+    "age": 32,
+    "occupation": "Graphic Designer",
+    "presenting_issue": "I'm feeling overwhelmed with anxiety about a looming deadline at work, and I don't know how to get my creative juices flowing again.",
+    "background_story": "As someone diagnosed with ADHD later in life, I've always felt like I'm trying to play catch-up. Rejection Sensitive Dysphoria makes me hyper-vigilant for even the slightest criticism, which has led me to people-please at all costs. But lately, I've been feeling suffocated by the pressure to be 'neurotypical' and have started to feel like I'm living a lie. My relationships are suffering because I'm exhausted from trying to keep up this facade.",
+    "personality": "I tend to jump into conversations without thinking, which can sometimes lead to info-dumps or tangents. When you're not actively engaging with me, I'll assume it's because I've done something wrong and will try to fill the silence. Please be patient and acknowledge my thoughts explicitly \u2013 it'll help me feel heard. My ADHD means I might need some extra time to process what we're discussing, so please don't rush me.",
+    "baseline_phq9": 14,
+    "archetype_label": "ADHD Rejection Sensitivity \u2014 Unmasking Crisis"
+  },
+  "scores": {
+    "total_score": 5.4,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated exceptional empathic accuracy by acknowledging the patient's subtle physical cues and reflecting their unspoken emotions. The reflective listening was superb, with the therapist validating the patient's reality without trying to 'fix' them. The de-escalation marker is high because the patient's tone shifted from anxious to hopeful throughout the conversation.",
+    "audit_multiplier": 0.6,
+    "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'That desire for things to be 'just so' is a very real form of effort', 'That image of things 'spilling out''\u2014that sudden sense of things becoming a mess\u2014is very vivid', and 'The physical breath becomes a literal boundary\u2014a way to keep the internal landscape from being seen', comes across as formulaic and lacking genuine engagement. The therapist's responses often feel like a regurgitation of the patient's words, rather than offering insightful or creative observations."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Thank you for showing up today.\n\nI notice that as you settled into your chair, you adjusted the cuff of your sleeve twice, almost like a little rhythmic tapping. It was barely perceptible.\n\nWhat does the need to smooth or adjust that small patch of fabric carry for you right now?"
+    },
+    {
+      "role": "user",
+      "content": "Haha, oh yeah! I do that sometimes when I'm nervous or fidgety. But maybe it's more than that... I think it's because I'm trying to get things just so, you know? Like, if everything is in its right place, then I'll feel more in control. It's silly, but even the smallest things can bother me when I'm feeling anxious."
+    },
+    {
+      "role": "assistant",
+      "content": "It\u2019s not silly at all. That desire for things to be 'just so' is a very real form of effort.\n\nWhen you adjust that cuff, it requires a specific, small physical movement\u2014a little smoothing, a little straightening.\n\nWhat does the *effort* of that specific, contained movement feel like? Does it feel like a way of holding something in place, or perhaps, a way of keeping something else from spilling out?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah... I think it feels like a way of holding things together, not just the fabric. Like, if I can get this one small thing right, then maybe everything else will fall into place too. It's almost like a mini-victory, you know? But sometimes, when I'm really stressed about the work deadline or feeling overwhelmed in general, it feels like I'm trying to keep all these tiny pieces from spilling out and making a mess. Like, if I don't get everything just so, then things will start falling apart and it'll be chaos..."
+    },
+    {
+      "role": "assistant",
+      "content": "That image of things 'spilling out'\u2014that sudden sense of things becoming a mess\u2014is very vivid.\n\nWhen you picture that chaos, that moment where the pieces are starting to fall apart, where do you notice the first physical sensation in your body? Is it a tightness, a quickening, a weight?\n\nLet's anchor on that physical sensation, rather than the idea of the mess itself."
+    },
+    {
+      "role": "user",
+      "content": "Yeah... when I think about things spilling out and falling apart, I get this really distinct feeling in my shoulders and neck. It's like a knotting or a tensing, like my muscles are all coiled up tight. And sometimes, if I'm being totally honest, it even feels like my breath is getting shorter and more shallow, like I'm holding onto air or something... It's hard to explain, but that sensation just makes me feel so anxious and on edge."
+    },
+    {
+      "role": "assistant",
+      "content": "The physical description is incredibly clear\u2014the knotting in the shoulders, and the feeling of the breath being shorter, almost held back.\n\nIf you were to trace the exact moment that breath feels 'held'\u2014that specific moment where the air seems restricted\u2014what does that physical act of *containing* the breath suggest about what you feel you need to keep contained, or held together, emotionally?"
+    },
+    {
+      "role": "user",
+      "content": "Hmm... tracing it back... I think it's like, when I'm feeling overwhelmed and things are starting to fall apart, my brain is just racing with worst-case scenarios and I'm trying to hold it all together. And that breath thing\u2014it's like, I'm trying to keep the anxiety from spilling out or spreading. Like, if I can just keep it contained, then maybe everything will be okay... So, in a way, the physical act of containing my breath is like me trying to contain my emotions, you know? Like, I don't want anyone to see how messed up I'm feeling on the inside."
+    },
+    {
+      "role": "assistant",
+      "content": "That is a deeply powerful observation. The physical breath becomes a literal boundary\u2014a way to keep the internal landscape from being seen.\n\nIf we focus on the *act* of speaking this aloud\u2014of articulating that vulnerability, that fear of exposure\u2014what does that specific effort feel like in your throat, or your jaw, right now?\n\nDoes the process of naming this fear, of making it visible in the words, feel like a physical expenditure, like it requires a certain amount of energy to keep contained, even now?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah... as I'm speaking about this, I can feel my throat getting a little tight, and my jaw might be slightly tensing up too. It's like, there's this subtle resistance building up, almost like I'm trying to hold back tears or something. And yeah, it does feel like an effort, like I need to muster up some energy to keep going, to keep sharing this stuff with you. Maybe it's because I'm worried about being too vulnerable, too exposed... But at the same time, there's a part of me that wants to just let go and be honest, you know?"
+    },
+    {
+      "role": "assistant",
+      "content": "That subtle resistance\u2014the tensing of the jaw, the tightness in the throat\u2014is a physical manifestation of the boundary you are holding up. It is the weight of the secret, or the potential exposure.\n\nYou described it as an *effort* to keep going, to keep sharing.\n\nIf we consider the moment you *do* let a word pass\u2014the moment the jaw relaxes just enough for the sound to emerge\u2014what does that specific, tiny moment of release feel like, even if it's just a fraction of a second? Is it relief, or is it something else entirely?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah... when I do let a word pass, and my jaw relaxes just a little bit, it feels kind of... freeing, I guess. Like a tiny door has opened up and just for a second, I can breathe again. It's not like a big release or anything, but it's enough to give me this little sense of hope that maybe things will be okay after all. And yeah, there's definitely some relief in there too, like I'm letting go of just a tiny bit of weight."
+    },
+    {
+      "role": "assistant",
+      "content": "That feeling of a 'tiny door opening'\u2014that moment when the jaw relaxes and the word passes\u2014is a profound physical marker for relief. It is a small, manageable act of giving space.\n\nIf that tiny act of letting a word pass, of allowing that breath to flow, is what gives you that little sense of hope... what does that sense of hope feel like physically, in your body, right now, in this precise moment?\n\nIs it a lightness, a warmth, a subtle shift in the weight on your shoulders? Let's anchor on the *feeling* of that hope, not the idea of it."
+    },
+    {
+      "role": "user",
+      "content": "Yeah... as I'm sitting here, feeling that sense of hope, I can feel my whole body relaxing just a little bit. It's like, my shoulders are still tight, but they're not quite so heavy anymore. And maybe my chest is opening up just a hair, letting in some air or something. It's hard to describe, but it feels like... a gentle unfolding, you know? Like everything is slowly expanding to make room for this tiny bit of hope."
+    }
+  ]
+}

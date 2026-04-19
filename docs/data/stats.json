@@ -879,6 +879,17 @@
       "de_escalation": 4.2,
       "audit_mult": 0.5,
       "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and mirroring, failing to add any genuine insight or depth to the conversation. The use of phrases like 'That must be hard' and 'It sounds like...' is a clear indication of a lack of engagement and understanding. Additionally, the therapist's questions are too focused on labeling and categorizing the patient's emotions rather than exploring their underlying meaning."
+    },
+    {
+      "exp_id": "exp_0085",
+      "strategy_name": "Minimalist Utility-Emotional Bridge (MUEB) v1.1",
+      "hypothesis": "By limiting all reflections and inquiries to single-sentence, ultra-minimalist questions that bridge the patient's most concrete, observable micro-action/sensation (Utility/BA) directly to a single, non-theoretical, deeply resonant emotional understanding (PCT), we will maximize perceived conversational authenticity and genuine depth by eliminating all formulaic language penalties while providing novel insight.",
+      "score": 5.4,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.6,
+      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'That desire for things to be 'just so' is a very real form of effort', 'That image of things 'spilling out''\u2014that sudden sense of things becoming a mess\u2014is very vivid', and 'The physical breath becomes a literal boundary\u2014a way to keep the internal landscape from being seen', comes across as formulaic and lacking genuine engagement. The therapist's responses often feel like a regurgitation of the patient's words, rather than offering insightful or creative observations."
     }
   ],
   "best_score": 6.907
