@@ -1475,6 +1475,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 2 (qwen3:4b)"
+    },
+    {
+      "exp_id": "exp_0022",
+      "strategy_name": "Somatic-MI-ACT Triad Bridge (SMITB) v1.0",
+      "hypothesis": "By replacing the abstract 'Value Alignment Bridge' with a specific Motivational Interviewing technique that explores the discrepancy between the current somatic state and a desired micro-behavior, we will maintain the high structural score while significantly boosting the measurable intrinsic motivation (MI/ACT integration), thus surpassing the 89.5 benchmark.",
+      "score": 55.25,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 2 (qwen3:4b)"
     }
   ],
   "best_score": 89.5
