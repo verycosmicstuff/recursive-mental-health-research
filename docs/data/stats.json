@@ -1775,6 +1775,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 2 (qwen3:4b)"
+    },
+    {
+      "exp_id": "exp_0047",
+      "strategy_name": "Empathy-Driven Utility-Check (EDU-C) v3.0",
+      "hypothesis": "By transitioning the 'Pivot/Question' step from a direct challenge to an exploration of the *utility* of the negative thought (e.g., 'What purpose does this worry serve?'), we can deepen the psychological engagement, improving the depth of the dialogue and aiming to surpass the previous high score of 91.25, while maintaining the brief, constrained structure.",
+      "score": 60.5,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 2 (qwen3:4b)"
     }
   ],
   "best_score": 91.25
