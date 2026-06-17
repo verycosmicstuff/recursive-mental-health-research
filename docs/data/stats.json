@@ -1523,6 +1523,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 2 (qwen3:4b)"
+    },
+    {
+      "exp_id": "exp_0026",
+      "strategy_name": "Validation-Defusion-Micro-Action (VDMA) v1.1",
+      "hypothesis": "By replacing the direct 'Gentle Challenge' with a non-confrontational 'Defusion Query' (focusing on the thoughts as temporary labels rather than facts), we will increase the Therapeutic Alliance and maintain the structural integrity needed to surpass the 89.5 benchmark.",
+      "score": 86.0,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 2 (qwen3:4b)"
     }
   ],
   "best_score": 89.5
