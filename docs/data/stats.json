@@ -2015,6 +2015,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 2 (qwen3:4b)"
+    },
+    {
+      "exp_id": "exp_0067",
+      "strategy_name": "Deep Reflective HEUVC (DR-HEUVC) v2.0",
+      "hypothesis": "By enforcing a strict 3-sentence, 60-80 word limit, and refining the structure to prioritize (1) Deep Empathic Reflection (PCT), (2) Defusion (ACT) to label the thought as a pattern, and (3) Targeted Utility Question, we will eliminate structural penalties while maximizing the perceived clinical depth and hitting the required sweet spot between conciseness and depth.",
+      "score": 61.25,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 2 (qwen3:4b)"
     }
   ],
   "best_score": 91.25
