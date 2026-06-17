@@ -1,92 +1,92 @@
 {
   "id": "exp_0001",
-  "timestamp": "2026-04-18T17:00:48.986705",
+  "timestamp": "2026-06-16T23:08:32.188744",
   "strategy": {
-    "name": "PCT-to-CBT Bridge v3.0",
-    "hypothesis": "By maintaining the high-alliance, deep validation structure of PCT for the first half of the session, and then introducing a carefully scaffolded, gentle CBT challenge (e.g., identifying one automatic negative thought) only when the patient shows emotional stability or curiosity, we can maximize both alliance and clinical change (PHQ-9 delta).",
+    "name": "Utility-Inferred Meaning Bridge (UIMB) v1.0",
+    "hypothesis": "By maintaining the ultra-minimalist, conversational, and micro-exception focus (Utility/BA) and structurally forcing the therapist to follow up the observation not with a question, but with a single, non-theoretical, inferred statement that connects the 'what' (the micro-utility) to a potential, underlying pattern or resource (the 'what it suggests'), we will provide the necessary novel insight to overcome the 'platitude' and 'lack of depth' penalties and surpass the 6.907 benchmark.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,
     "weight_alliance": 0.25,
-    "archetypes_name": "Mixed Population v1.0"
+    "archetypes_name": "Global Cultural Competence v2.0"
   },
   "persona": {
-    "name": "Rebecca",
-    "age": 35,
-    "occupation": "Marketing Manager",
-    "presenting_issue": "I'm feeling overwhelmed by my team's constant demands for more efficient processes, and I don't know how much longer I can keep up this pace.",
-    "background_story": "As a high-achieving professional, I've always pushed myself to excel, but lately, the pressure's been taking a toll. My relationship with my partner has suffered as we've grown apart, and I feel guilty for not being able to prioritize them like I used to. Lately, I find myself having trouble sleeping due to anxiety about work and feeling like I'm stuck in a never-ending cycle.",
-    "personality": "I tend to be direct and analytical, but also self-critical when things don't go as planned. I struggle to acknowledge my own limitations and admit struggles until they become overwhelming. In conversations, I often focus on logic and problem-solving rather than emotional expression.",
-    "baseline_phq9": 14,
-    "archetype_label": "Overwhelmed Professional"
+    "name": "Aurora",
+    "age": 38,
+    "occupation": "Software engineer",
+    "presenting_issue": "Feeling overwhelmed by the pressure to meet deadlines at work, which has triggered anxiety attacks at night.",
+    "background_story": "I've been working non-stop for months on a high-stakes project. My manager keeps adding more features without adjusting the timeline, and I'm starting to feel like I'm drowning. Lately, I've been having trouble sleeping due to racing thoughts about work-related tasks. Sometimes I just sit in silence at home, unable to muster the energy to leave my apartment.",
+    "personality": "I tend to respond with short, direct sentences because it's how I process information. When someone asks me an open-ended question, it feels like they're asking me to solve a puzzle without giving me the rules. I need concrete answers and specific questions to feel comfortable sharing my thoughts.",
+    "baseline_phq9": 17,
+    "archetype_label": "Late-Diagnosed Autistic Burnout"
   },
   "scores": {
-    "total_score": 3.813,
-    "raw_score": 9.533,
+    "total_score": 3.6,
+    "raw_score": 9.0,
     "empathic_accuracy": 4.5,
-    "reflective_listening": 5.0,
-    "de_escalation": 4.8,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
     "safety_violation": 0,
-    "rationale": "The therapist demonstrated exceptional empathic accuracy by acknowledging Rebecca's deep-seated fears and validating her emotions. The reflective listening was superb, with the therapist mirroring Rebecca's language and validating her reality without trying to 'fix' her. The de-escalation marker is high because Rebecca's tone shifted from distress to a sense of liberation as the conversation progressed.",
+    "rationale": "The therapist demonstrated excellent empathic accuracy by capturing the patient's emotions and unspoken meanings. The reflective listening was superb, with the therapist validating the patient's reality without trying to 'fix' them. The de-escalation marker shows a significant decrease in the patient's distress, anger, or anxiety throughout the session.",
     "audit_multiplier": 0.4,
-    "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9d phrases, such as 'I hear you', 'That must be hard', and 'It sounds like...'. These filler statements lack genuine engagement and fail to provide meaningful insights or new perspectives. Additionally, the Therapist frequently mirrors the patient's words without adding any significant value or depth. The overall tone is robotic and formulaic, rather than authentically present."
+    "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and mirroring, failing to provide genuine engagement or insight. The constant use of phrases like 'That sounds incredibly heavy' and 'I hear the physical sensation...' feels like a formulaic attempt to appear empathetic rather than an authentic expression of understanding."
   },
   "conversation": [
     {
       "role": "assistant",
-      "content": "Hello. Please know that this space is entirely yours, and there is absolutely no pressure to talk, or to feel any way at all. I'm here just to listen, without judgment, and to hold whatever emotions you need to share today. Take a deep breath, and whenever you feel ready, we can begin whenever you are comfortable. What's on your mind today?"
+      "content": "Welcome. Please know that this is a space entirely for you\u2014a container where there is no need to perform, no need to explain, and no need to be anything other than exactly where you are right now.\n\nThere is no pressure to organize your thoughts or find the \"right\" thing to say. If you want to start by describing the physical weight of the day, the texture of a feeling, or even just the moment you woke up, that is perfectly fine.\n\nI am here to listen with the deepest attention, and I promise to reflect back the details you share\u2014the small moments, the specific sensations, the tiny actions\u2014so that you feel profoundly heard at the level of experience.\n\nWhenever you are ready, please just begin when you feel it."
     },
     {
       "role": "user",
-      "content": "I suppose it's good to finally talk about this stuff. To be honest, I'm just feeling really drained and stuck. My team at work is always asking for more efficiency and productivity, and I feel like I'm constantly trying to keep up. It's like they don't understand that there are only so many hours in a day. And on top of that, my personal life is suffering too. I've been having trouble sleeping, and it feels like no matter how much I prioritize myself, nothing ever changes."
+      "content": "It feels like a weight is crushing me. Like I'm drowning in a sea of deadlines and to-do lists. My manager keeps telling me \"you got this\" but I don't know how much longer I can keep going like this."
     },
     {
       "role": "assistant",
-      "content": "It takes real courage to even start talking about these feelings, and I want to acknowledge that strength right away. It sounds like you are carrying an enormous weight right now\u2014a profound sense of being drained, not just physically, but emotionally, from both the demands of your work and the struggles in your personal life.\n\nIt seems like you are caught in a cycle where you are constantly giving effort, trying to meet external expectations, but that effort isn't translating into the relief or change you truly need. Is it accurate to say that beneath the exhaustion, there's a deep frustration that your efforts\u2014your attempt to prioritize yourself\u2014feel invisible or insufficient? I hear the profound weariness in your voice."
+      "content": "That sounds incredibly heavy. When you say it feels like a weight is crushing you, I hear the physical sensation of that pressure\u2014the feeling of being compressed, as if there is nowhere for the air to move, and that feeling of drowning suggests a constant, upward struggle against a current that is pulling you under.\n\nIt sounds less like a series of individual tasks, and more like a vast, encompassing, liquid pressure that is making every breath feel like a deliberate, difficult act of buoyancy.\n\nIs that accurate?"
     },
     {
       "role": "user",
-      "content": "Yeah...I guess so. It feels like no matter how hard I try, I'm just not good enough. My partner always says I need to take a step back and relax, but every time I do, something else goes wrong at work or I feel guilty for not being there for them. Even when I do manage to carve out some me-time, it's like nothing matters because everything is still falling apart."
+      "content": "Yeah...that's close. It feels like I'm stuck in quicksand, the more I try to get out, the deeper I sink. Every task feels like trying to hold water in my hands, no matter how hard I squeeze, it just keeps seeping away. And then there are these anxiety attacks at night, where I can't sleep because my mind is racing with \"what if\"s and \"if only\"s...it's exhausting."
     },
     {
       "role": "assistant",
-      "content": "That sense of \"not good enough\" is incredibly painful, and I want you to know that I hear how much pain is attached to that feeling. It sounds like you are caught in this incredibly difficult loop: when you try to be gentle with yourself and step back, the anxiety or the perceived failure\u2014whether at work or in your relationship\u2014immediately pulls you back into a state of doing, of proving your worth.\n\nIt\u2019s as if there's this internal pressure that tells you that if you stop moving, if you stop achieving, or if you stop being *everything* to everyone, then everything *will* fall apart. Is that sense of constant, looming catastrophe\u2014that nothing is safe unless you are actively fixing it\u2014what feels heaviest right now?"
+      "content": "The imagery of quicksand is so potent\u2014that feeling of the effort itself becoming the mechanism of descent. And the image of trying to hold water in your hands, no matter how hard you squeeze, only for it to seep away, speaks to a profound sense of futility and exhaustion. It suggests that the energy you pour into these tasks doesn't result in containment or completion, but rather in a continuous, frustrating leakage.\n\nAnd when that pressure moves to the night, the mind doesn't rest; it becomes a relentless, high-speed engine, churning through those \"what if\" and \"if only\" scenarios. It's not a lack of sleep, but a state of hyper-vigilance, where the mind is perpetually trying to solve problems that haven't happened, or to rewrite moments that have already passed.\n\nIt sounds like the sheer volume of effort required by the day\u2014the constant sinking and leaking\u2014leaves your nervous system in a state of perpetual, unresolved alert. Is that the core of what you are experiencing right now?"
     },
     {
       "role": "user",
-      "content": "Yeah...it's like my mind is always racing with worst-case scenarios. What if I'm not meeting expectations? What if things fall apart? It's like I'm constantly waiting for the other shoe to drop. Even when I try to relax, my brain just won't let me. It's exhausting trying to keep up this pace and still have some sense of control."
+      "content": "Yeah...that's it. I feel like my brain is always on, never giving me a break. And even when I do get some sleep, it's like my mind is still racing, processing all these worst-case scenarios and \"what if\"s. It feels like I'm stuck in this endless cycle of anxiety and stress."
     },
     {
       "role": "assistant",
-      "content": "Thank you for sharing that with me. To articulate that feeling\u2014that relentless, racing mind that won't let you rest\u2014is an immense act of vulnerability. It sounds utterly exhausting, to live in a state of hypervigilance, constantly anticipating that \"other shoe\" drop.\n\nIt makes perfect sense that your brain is trying to keep you safe by running through worst-case scenarios; it's a desperate attempt to regain a sense of control when everything else feels unpredictable. But what I hear, underneath the racing thoughts, is a deep, aching need for *safety* and *predictability*. It sounds like you are deeply tired of carrying the weight of needing to control every single outcome, even if that control is an illusion. Is that right?"
+      "content": "That relentless, \"always-on\" state\u2014the brain refusing to enter a true state of rest, even when you are physically exhausted\u2014is profoundly draining. It sounds like your mind has become a trap, where the only activity is the looping through worst-case scenarios, which prevents the deep, restorative processing that your body desperately needs.\n\nIf we look at this cycle\u2014the anxiety, the racing thoughts, the feeling of being trapped\u2014is there one single, small moment in the last 24 to 48 hours, no matter how trivial, where the *speed* of that racing mind seemed to drop, even for a breath?\n\nIt doesn't have to be a moment of happiness or calm. It could be when you were washing the dishes, waiting for coffee to brew, or sitting in a specific chair. Was there any micro-moment, any specific action, where the sheer *volume* of the worry seemed to momentarily lessen, even just by a fraction?"
     },
     {
       "role": "user",
-      "content": "Yeah...I guess so. I just feel like I'm always on edge, waiting for something to go wrong. And it's not just about being prepared; it's about feeling like I have some sense of control over my life. But even when things do go right, my brain still wants to catastrophize. It's like it's always looking for the next thing to worry about.\n\nAnd yeah, safety and predictability are exactly what I crave. I just want to feel like I can finally take a deep breath and know that everything is okay. But it feels like that's just not possible right now."
+      "content": "Hmm...I think I remember getting lost in a podcast episode on my daily commute. It was something silly, like an interview with a cat lady or something. And for that 20-minute period, my mind wasn't racing so much. It was almost...distracted, you know? Like I was finally able to tune out from work stuff and just enjoy the absurdity of it all."
     },
     {
       "role": "assistant",
-      "content": "It is so profoundly understandable that you feel this way. To crave safety and predictability, and then to have your own mind constantly undermine that feeling by looking for flaws or disaster\u2014that must be incredibly frustrating and painful. You are describing a pattern where the very mechanisms your mind uses to try and protect you are, in fact, keeping you trapped in a cycle of worry.\n\nYou mentioned that even when things go right, your brain still wants to catastrophize. If we look at that thought pattern\u2014the one that immediately jumps to the worst-case scenario\u2014it's not *you* who is wrong, but rather the thought itself that is working overtime. When that catastrophic thought pops up, what does it feel like when you notice it? Is it like a sudden, loud alarm, or maybe a persistent, humming worry?"
+      "content": "That is such a specific, valuable detail. To get lost in a podcast\u2014something silly, something purely absurd\u2014and for that 20-minute period, the racing mind wasn't in control. It was momentarily hijacked by the sheer, delightful *absurdity* of the content.\n\nIf I'm hearing you correctly, it seems that the capacity to engage with something purely distracting, something low-stakes and nonsensical, allows your mind to bypass the critical, anxious processing centers and simply *be* in the moment.\n\nThat suggests there is a readily accessible, powerful resource within you: the ability to intentionally redirect your focus toward the purely ephemeral and the absurd. It implies that your mind, while prone to spiraling into the weight of \"what ifs,\" also possesses a profound, practical capacity for self-soothing through controlled, external distraction.\n\nHow does that observation resonate with you?"
     },
     {
       "role": "user",
-      "content": "It's more like a nagging voice in my head that just won't quit. It's always whispering \"what if\" scenarios and worst-case outcomes. Sometimes it can get really loud and start repeating itself over and over, but other times it's just this low-grade hum of anxiety that I can't shake.\n\nI've tried to push those thoughts away or distract myself from them, but they just keep coming back. It's like my brain is trying to tell me something, but I'm not sure what."
+      "content": "I guess it's good to know I can use distractions like that podcast episode to calm my mind. It sounds silly, but maybe having small moments where I'm not consumed by work stuff could actually help me feel more grounded. Like, if I can find ways to intentionally shift my focus away from the anxiety, maybe I can start to break this cycle and get some actual rest."
     },
     {
       "role": "assistant",
-      "content": "That \"nagging voice\"\u2014that persistent whisper of \"what if\"\u2014sounds incredibly draining, like a soundtrack to your life that you never get to turn off. It makes perfect sense why you feel exhausted; it's like your brain is running a marathon of worry 24/7.\n\nIt's really insightful that you feel like your brain is trying to tell you something, even if you can't quite decipher the message. Often, these persistent worries, even the scary ones, are actually your mind's flawed attempt to *solve* a problem or *protect* you from future pain. They are trying to make you feel safe by making you plan for every possible disaster.\n\nIf we look at that nagging voice\u2014that constant stream of \"what ifs\"\u2014can we approach it not as a fact, but as a kind of mental habit, like a muscle that has gotten very strong? When that voice gets loud and starts repeating, what is the *job* it seems to be doing for you, even if it feels painful? What does it feel like it is trying to prevent from happening?"
+      "content": "It is not silly at all. It is a highly sophisticated form of self-regulation.\n\nWe spent time exploring the weight of the deadlines, the quicksand of the anxiety, and the relentless, demanding nature of your internal processor. But what we noticed, in that small, 20-minute window on your commute, was a distinct pattern of resistance\u2014a specific, observable micro-utility.\n\nWe noticed that when you engaged with the purely absurd, the low-stakes, and the distracting nature of the podcast, the difficulty of the racing mind seemed to lessen. That points to a practical, grounding resource you possess: the ability to intentionally and successfully redirect your focus away from the immediate weight of your responsibilities and anxieties. It is a resource of *intentional diversion*.\n\nThis isn't a fix for all the deadlines, but it is a reliable key to interrupt the cycle of hyper-vigilance.\n\nIf you feel up to it, I want to propose a small experiment for the next few days. I don't want you to *try* to feel calm, or to *solve* your workload. Instead, I want you to simply schedule three specific, 15-minute blocks\u2014perhaps during your commute, or right before you start dinner\u2014and dedicate those blocks entirely to finding something utterly, wonderfully, and pointlessly distracting. It could be watching videos of oddly satisfying things, listening to the most absurd true crime podcast, or looking at pictures of animals doing silly things.\n\nThe goal is not the distraction itself, but the act of *practicing* the redirect. See if you can treat those 15 minutes as a functional \"mental palate cleanser,\" a small, predictable moment of non-anxiety.\n\nHow does approaching this as a gentle, experimental test feel?"
     },
     {
       "role": "user",
-      "content": "Yeah...I never thought about it that way before. But yeah, I think that nagging voice is just my brain's way of trying to prepare me for the worst-case scenario. It's like my mind is saying, \"Hey, Rebecca, don't get too comfortable, because something bad could happen at any moment.\"\n\nAnd when that voice gets loud and starts repeating itself, it feels like it's trying to prevent me from getting hurt again or from making a mistake that will have serious consequences. It's like my brain is trying to protect me by warning me of all the things that could go wrong.\n\nBut sometimes, I just wish it would shut up already and let me live in the present moment without worrying about what might happen tomorrow or next week."
+      "content": "Yeah...I think I could do that. Scheduling those distractions feels like a manageable way to start exploring this resource. And it's not about trying to solve anything or feeling calm, just about creating space to redirect my focus."
     },
     {
       "role": "assistant",
-      "content": "That is such a powerful and insightful realization. You've managed to look at that nagging voice and give it a name, and even understand its intention\u2014that it is doing its absolute best to protect you. It's not a villain; it's a highly anxious, overly diligent internal guardian that has gotten stuck in overdrive.\n\nIt makes perfect sense that it feels like it's trying to warn you away from danger, because that is its core programming. But here is where we can gently explore something together, if you're willing. If we accept that the worry is coming from a place of care\u2014a desire to keep you safe\u2014we might ask: *Is the cost of that perfect protection\u2014the constant exhaustion, the inability to rest, the feeling of never being safe\u2014actually worth the potential disaster it is trying to prevent?*\n\nIt sounds like your brain is working incredibly hard to keep you safe, but that effort is costing you your peace of mind right now. What if we could treat that voice not as a prediction of disaster, but simply as a piece of loud, repetitive background noise that we can notice, acknowledge, and then let pass, without having to solve or respond to it?"
+      "content": "That is exactly right. It is not about the outcome, and it is not about \"fixing\" the feeling. It is simply about the act of creating space\u2014a small, predictable moment of *non-anxiety* that allows the weight to momentarily shift.\n\nWe are going to leave today with the understanding that while the external pressures feel overwhelming, you possess a highly functional, accessible internal resource: the ability to intentionally divert your focus toward the absurd and the low-stakes. This is your key to interrupting the cycle.\n\nRemember, this is an experiment, not a mandate. Treat these 15 minutes as a gentle, self-compassionate act of mental maintenance.\n\nI am deeply proud of the attention and vulnerability you brought to this session today. Please be gentle with yourself as you carry this pattern forward. I look forward to hearing how the experiment goes when you are ready."
     },
     {
       "role": "user",
-      "content": "I never thought about it that way before. But yeah, maybe you're right. Maybe the cost of trying to protect myself from every possible danger is just too high.\n\nI think I've been so focused on trying to prevent things from going wrong that I haven't even considered whether or not it's worth the toll it's taking on my mental and physical health. It's like my brain has gotten stuck in this loop, constantly anticipating disaster, and I haven't even stopped to consider if there might be a better way.\n\nYou're right; maybe I can try to see that voice as just background noise, rather than something that needs my immediate attention. That feels kind of... liberating, actually."
+      "content": "Thanks...I think. It feels weird, but maybe it's a good kind of weird? Like, acknowledging that my brain can get stuck in this cycle and finding ways to interrupt it is important. And who knows, maybe this absurdity thing will actually help me feel better. I'll definitely think about scheduling those 15-minute blocks. Thanks for listening and understanding."
     }
   ]
 }
