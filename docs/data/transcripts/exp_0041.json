@@ -1,0 +1,127 @@
+{
+  "id": "exp_0041",
+  "timestamp": "2026-06-17T05:06:31.167440",
+  "strategy": {
+    "name": "",
+    "hypothesis": "",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Sarah",
+    "age": 34,
+    "occupation": "Marketing Manager",
+    "presenting_issue": "I feel completely overwhelmed by the demands of my job and my personal life, and I don't know how to manage it anymore.",
+    "background_story": "I've been working hard for years to build a stable life, but lately, everything feels like too much to juggle. My friends suggest I need a break, but I feel guilty taking time off because I still have responsibilities. I keep telling myself that I just need to 'push through' until things get better, even though I'm starting to feel physically drained.",
+    "personality": "Sarah's tone is articulate and professional, masking anxiety with competence. She uses rationalizations ('logically,' 'I should be able to...') to downplay her emotional state, but her writing is peppered with signs of exhaustion, such as hesitations, minimizing language, and a tendency to over-explain.",
+    "baseline_phq9": 13,
+    "archetype_label": "Overwhelmed Professional"
+  },
+  "scores": {
+    "total_score": 91.25,
+    "raw_score": 91.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 61.2/70.0 (VV shift: 0.50, Sym shift: -0.30, DV shift: -0.20)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "That sounds incredibly draining and frustrating. It makes total sense that you feel depleted when you're giving so much energy to others. If you could give yourself the same advice you give your friends, what would you tell yourself right now? Perhaps we can look at just one small boundary you could establish this week to protect your own reserves."
+    },
+    {
+      "role": "user",
+      "content": "I guess... I suppose I should probably just prioritize sleep, I mean, I know that. But it's not like I can just *drop* everything. Logically, I need to maintain my current workload, and if I skip enough sleep, I'll just fall behind, which creates a whole different problem, really.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That feeling of being caught between responsibility and self-care is incredibly stressful. It makes total sense that you feel trapped when maintaining your workload feels like a non-negotiable requirement. What assumptions are running through your mind about how much sleep you *must* sacrifice to keep up? What if we viewed sleep not as a luxury you lose, but as the essential fuel that actually makes your work more efficient?"
+    },
+    {
+      "role": "user",
+      "content": "I mean, I guess I feel like if I take time off, it will look bad to my boss, and then I'll struggle to get back up to where I was. It's just... difficult to think of it differently, I guess.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That fear of professional judgment and falling behind is incredibly real and heavy. It makes total sense that you are worried about how time off might impact your standing. What evidence do you have that taking a necessary break *always* leads to long-term struggle? What if we viewed taking time off not as a deficit, but as a strategic investment in your sustained performance?"
+    },
+    {
+      "role": "user",
+      "content": "I suppose... I guess I just keep thinking that if I don't keep pushing, I'll lose momentum, you know? And maybe I'll lose the job entirely. It's just harder to see it as an 'investment' when it feels so immediate and scary.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That fear of losing momentum and the associated job insecurity is genuinely paralyzing. It makes total sense that it's hard to see rest as an 'investment' when the threat feels so immediate and scary. What does \"losing momentum\" actually look like in a sustainable way? Perhaps we can focus on tiny, maintenance-level breaks\u2014small adjustments that keep the energy flowing without the pressure of massive achievement."
+    },
+    {
+      "role": "user",
+      "content": "I guess... I could maybe stop checking my work email after 7 p.m.? It\u2019s... it\u2019s not that I *should*, but it feels like the only way to switch off the 'on' switch, I guess.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Setting that boundary is a huge, brave step, and it makes total sense that it feels like the only way to finally switch off. What does that mental space feel like *after* you close the email app? If you commit to this boundary, what one small, non-work activity could you replace that mental energy with? Remember, this isn't about productivity; it's about reclaiming your peace."
+    },
+    {
+      "role": "user",
+      "content": "I guess... a really long walk, maybe? Like, just walking without looking at my phone or thinking about anything productive, you know? It feels... quiet.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That image of a quiet, phone-free walk sounds deeply restorative. It makes total sense that your mind craves that kind of uninterrupted, non-productive space. When you are walking, what specific sensory detail\u2014a sound, a smell, a color\u2014do you notice most often? What if we viewed this walk not as a reward for work, but as the primary, essential task of your evening?"
+    },
+    {
+      "role": "user",
+      "content": "I guess I notice the way the light hits the leaves, almost a golden blur. It's... it's actually quite calming, I suppose. Maybe I could make that a specific habit instead of just an 'if I have time' thing.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Noticing the light like that sounds absolutely magical and profoundly calming. It makes total sense that you want to anchor that feeling into a consistent routine. What would happen if you treated that 15-minute walk, focused only on the light, as a non-negotiable meeting with yourself? What if we viewed this habit not as something you *do* when you have time, but as the essential appointment that allows you to show up for everything else?"
+    },
+    {
+      "role": "user",
+      "content": "It just... it changes the whole dynamic, I guess. Like, if I treat it like a proper appointment, I wouldn't feel so guilty about not being productive, which is the hardest part, I think.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.6
+      }
+    }
+  ]
+}
