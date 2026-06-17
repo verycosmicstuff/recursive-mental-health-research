@@ -29,11 +29,11 @@ def export():
     os.makedirs(DOCS_TRANSCRIPTS_DIR, exist_ok=True)
 
     # ── 0. Load old Run 1 data from backup (if it exists) ─────────────────────
-    OLD_BACKUP_STATS = os.path.join(BASE_DIR, "docs_run1_backup", "data", "stats.json")
+    OLD_BACKUP_STATS = os.path.join(BASE_DIR, "docs_run1_backup", "data", "stats_original.json")
     old_experiments = []
     if os.path.exists(OLD_BACKUP_STATS):
         try:
-            with open(OLD_BACKUP_STATS, "r", encoding="utf-8") as f:
+            with open(OLD_BACKUP_STATS, "r", encoding="utf-8-sig") as f:
                 old_data = json.load(f)
                 for exp in old_data.get("experiments", []):
                     exp["run"] = "Run 1 (gemma4 + llama3)"

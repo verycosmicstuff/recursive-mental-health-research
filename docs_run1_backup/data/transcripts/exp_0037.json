@@ -1,0 +1,92 @@
+{
+  "id": "exp_0037",
+  "timestamp": "2026-04-18T23:37:15.521858",
+  "strategy": {
+    "name": "Co-Discovery Pattern Mapping (CDPM) v1.0",
+    "hypothesis": "By adopting a radically conversational, non-structural, and ultra-minimalist tone while consistently grounding all reflections and inquiries in the patient's *observed behavioral patterns* and the *functional constraints* of their distress (Utility), we can eliminate the 'formulaic' and 'detached' penalties, maximizing perceived authenticity and achieving a score significantly higher than 6.907.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Asher",
+    "age": 32,
+    "occupation": "Graphic Designer",
+    "presenting_issue": "Feeling overwhelmed with anxiety whenever I have to meet a design deadline.",
+    "background_story": "As someone diagnosed with ADHD at 30, my entire adult life has been a struggle to keep up appearances. Everyone always thought I was 'lazy' or 'careless,' but in reality, I've just been trying to fit in. Now that I'm actively working on being more genuine, I'm terrified of losing the relationships I've built by hiding behind neurotypicality.",
+    "personality": "Open and desperate for understanding. May come across as overly eager due to Rejection Sensitive Dysphoria (RSD). Needs a therapist who can validate their emotions in a warm, explicit manner.",
+    "baseline_phq9": 14,
+    "archetype_label": "ADHD Rejection Sensitivity \u2014 Unmasking Crisis"
+  },
+  "scores": {
+    "total_score": 3.6,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by acknowledging the patient's emotional experience and validating their feelings. The reflective listening was superb, with the therapist mirroring the patient's language and emotions without trying to 'fix' them. The de-escalation marker shows a significant decrease in the patient's distress and anxiety throughout the session.",
+    "audit_multiplier": 0.4,
+    "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and filler phrases, such as 'That sounds incredibly overwhelming' and 'Thank you for sharing that.' These statements lack genuine engagement and fail to add any meaningful insight or understanding to the patient's experiences. Additionally, the therapist's mirroring of the patient's words is too repetitive and lacks depth, failing to pick up on subtle subtext and nuances in the patient's language."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Thank you for making the time to be here today.\n\nI hear you describing how the inertia has been so persistent lately\u2014the feeling of being stuck before you even start. When you mentioned having to cancel those plans with your friend last week, what was the specific feeling, right before you typed out the cancellation message?"
+    },
+    {
+      "role": "user",
+      "content": "Oh wow, thanks for asking me that... I think it was like, a crushing weight on my chest? It felt like I was going to hyperventilate or something. And then there were all these thoughts racing in my head, like \"What's wrong with you? Why can't you just get things done?\" and \"You're never gonna be able to keep up this facade anymore...\""
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds incredibly overwhelming\u2014that combination of a physical weight on the chest and those racing thoughts, like being caught in a loop of criticism.\n\nWhen those thoughts started\u2014the ones questioning what's wrong with you, or the fear of the facade cracking\u2014where did you notice those thoughts showing up in your body? Was the physical weight connected to a specific thought, or did they feel like two separate things happening at the same time?"
+    },
+    {
+      "role": "user",
+      "content": "It was... it was like my heart skipped a beat and then started racing, all at once. I felt this lump in my throat, like I was going to cry but couldn't. And my mind just kept spinning with worst-case scenarios... It all felt so jumbled up together, but mainly I think the fear of being found out as \"not being good enough\" took over."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that. It sounds like there's a very specific chain reaction happening: a thought\u2014the fear of being found out\u2014and then the body responds with that racing heart, the lump, and the spinning thoughts.\n\nIf we look at this sequence\u2014the thought leading to the physical feeling\u2014when does this pattern tend to show up the most? Is it when you have to make a decision? Is it when you're alone? Or is it when you are anticipating something that might require you to show up for someone else?\n\nJust noticing the *when* and the *where* of the pattern."
+    },
+    {
+      "role": "user",
+      "content": "It's mostly when I'm facing deadlines or trying to meet expectations, like with my design work or when I need to respond to a project brief. It's as if my brain goes into panic mode thinking \"What if I can't deliver? What if I fail?\" and then my body just takes off running with the anxiety..."
+    },
+    {
+      "role": "assistant",
+      "content": "That makes a lot of sense. So, the pattern seems to be triggered by external demands\u2014deadlines, project briefs, meeting expectations. And the internal script that runs is, \"What if I can't deliver? What if I fail?\" and that immediately sends the body into that high-alert, running-with-anxiety mode.\n\nIt sounds exhausting, having your body constantly running in anticipation of a potential failure.\n\nWhen you think about this pattern\u2014the deadline approaching, the panic starting\u2014has there been any moment in the last week, no matter how small, when you were facing a deadline, but the pattern *didn't* hold completely? Maybe a moment where you kept your hand on the mouse for just a second longer, or where the racing thoughts slowed down just enough to let you write one sentence?\n\nWe are just looking for the exception, the tiny moment where the pattern got a little bit interrupted."
+    },
+    {
+      "role": "user",
+      "content": "Yeah... actually, yeah! On Tuesday morning, I was working on this design project and I had to meet a super tight deadline. And at first, all those thoughts were racing in my head - \"What if it's not good enough? What if I mess up?\" But then I noticed that for like, 30 seconds or so, I just... stopped thinking about it so much. It was weird! I was actually focused on the design, and the words started flowing out of me, and for a second, I felt kinda calm. It was tiny, but it was there!"
+    },
+    {
+      "role": "assistant",
+      "content": "That is a really important observation. Thank you for sharing that moment.\n\nSo, when you were working on that design project on Tuesday, the pattern started\u2014the racing thoughts, the \"What if it's not good enough?\"\u2014but then you noticed that you simply *stopped* thinking about the fear itself. For those 30 seconds, you shifted your focus back to the actual task, and the words started flowing, and you felt a moment of calm.\n\nWhat we noticed today is that the pattern of anxiety is strongly linked to the *anticipation* of failure when facing external demands. But we also noticed a moment where, simply by shifting your focus back to the immediate, physical task\u2014the design itself\u2014that pattern was interrupted.\n\nIf you're open to it, for the next few days, could we try a small experiment? The next time you feel that tightness in your chest or hear that \"What if I fail?\" thought pop up while working, I don't want you to fight the thought or try to fix the deadline. I just want you to notice the moment, and then physically pause. Just stop typing, stop moving, and take three full breaths, noticing where the weight is in your chest.\n\nIt's not about changing the feeling, but just about *testing* the pause. Can you try to give yourself permission to pause for three breaths, just to observe the physical sensation, and see what happens after that tiny break?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah... I can definitely try that. I'm actually really curious about it now. It feels weirdly empowering to not try to change everything right away, but instead, just... pause. Like, give myself permission to be present with the discomfort for a hot second before trying to fix or flee from it.\n\nSo, yeah... I'll give it a shot!"
+    },
+    {
+      "role": "assistant",
+      "content": "That curiosity you're feeling\u2014that sense of empowerment in the pause\u2014is really powerful. It sounds like you're starting to notice that the act of *observing* the discomfort, rather than immediately reacting to it, is itself a shift in power.\n\nWe noticed today that your anxiety pattern is very strong when external expectations are present. But more importantly, we discovered that when you were focused entirely on the immediate task\u2014the design\u2014that pattern was interrupted.\n\nFor this week, let's keep it exactly as we planned. Just the pause. When the tightness comes, or the thought hits, just stop. Don't try to fix it, don't try to argue with it. Just pause, and take three breaths, noticing where the weight is in your chest.\n\nIt\u2019s a small test, a tiny moment of giving yourself permission to just *be* with the sensation for a second.\n\nI really appreciate your honesty and your willingness to notice those moments with me today. We'll pick up right here next time. Take good care of yourself until then."
+    },
+    {
+      "role": "user",
+      "content": "Thank you so much... I feel like we're taking some tiny but crucial steps forward. The pause thing feels weirdly liberating, honestly. Like, it's okay to just be present with the discomfort for a second before trying to do something about it.\n\nI'm looking forward to seeing how this week goes. Thanks again for listening and understanding me today."
+    },
+    {
+      "role": "assistant",
+      "content": "You are very welcome.\n\nAnd I want to acknowledge something you said right at the end: \"It feels weirdly liberating.\"\n\nThat feeling\u2014that it's okay to just *be* present with the discomfort for a second\u2014that is the core shift we observed today. It's not about solving the problem, it's about noticing the gap between the feeling and the reaction.\n\nI genuinely appreciate your openness today. Remember, we aren't aiming for perfection this week. We are just aiming for those three breaths.\n\nTake good care of yourself. I look forward to hearing how the pauses feel."
+    },
+    {
+      "role": "user",
+      "content": "Yeah... that feeling of liberation is definitely something I want to hold onto. It's like, maybe for the first time in a while, I'm not trying to fix everything right away, but instead, just acknowledging that it's okay to be uncomfortable.\n\nI'll keep that in mind this week and try to focus on those three breaths. Thanks again for your understanding and support!"
+    }
+  ]
+}

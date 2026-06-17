@@ -1,0 +1,92 @@
+{
+  "id": "exp_0100",
+  "timestamp": "2026-04-19T09:00:10.029880",
+  "strategy": {
+    "name": "Utility-Driven Contextual Inquiry (UDCI) v1.0",
+    "hypothesis": "By achieving radical conversational naturalism by eliminating all theoretical language and generic emotional statements, while rigorously constraining inquiries to a single, concrete, observable micro-utility (the 'what') and then immediately pivoting with a single, open-ended question about the *context* or *conditions* of that micro-event (the 'what was different?'), we will maximize perceived natural authenticity and genuine curiosity, thus finally surpassing the 6.907 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Roger",
+    "age": 58,
+    "occupation": "IT Consultant",
+    "presenting_issue": "Feeling overwhelmed with work stress and struggling to set boundaries.",
+    "background_story": "I've been working non-stop for years, trying to provide for my family. Lately, I've noticed myself getting short-tempered with my partner and kids. My daughter's words kept echoing in my mind - 'Dad, you need help' - that made me realize maybe she was right.",
+    "personality": "I'll be honest, I'm not thrilled about being here. I think therapy is for the weak, but my family thinks it'd be good for me. I'll keep to myself and only share what's necessary. Don't expect me to get emotional or anything.",
+    "baseline_phq9": 10,
+    "archetype_label": "Skeptical Retiree"
+  },
+  "scores": {
+    "total_score": 3.6,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by recognizing the patient's emotional shifts and validating their experiences. The reflective listening was superb, with the therapist mirroring the patient's language and acknowledging their reality without trying to 'fix' them. The de-escalation marker shows a significant decrease in the patient's distress and anxiety throughout the conversation.",
+    "audit_multiplier": 0.4,
+    "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add any genuine insight or depth to the conversation. Specifically, phrases like 'That\u2019s a very clear signal' and 'The moment you describe\u2014the instant you told her, \u201cI had to meet a deadline\u201d\u2014that was a very definitive boundary being put up' are simply parroting the patient's words without providing any meaningful analysis or understanding."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "I'm here. We can take this at whatever pace feels right for you. Just tell me what's been on your mind, or what you've been doing today."
+    },
+    {
+      "role": "user",
+      "content": "Look, I don't see why we need to waste time small talkin'. You're a shrink, get to the point. I'm here because my family thinks I'm nuts and I should \"get help\". Truth is, work's been killin' me. I've been puttin' in 12-hour days, 6 days a week, for years. My kid said somethin' about me needin' help, and it got to me. That's why I'm here."
+    },
+    {
+      "role": "assistant",
+      "content": "The way you started, needing to be immediately direct\u2014to make sure the time isn't wasted\u2014that\u2019s a very clear signal.\n\nWhat was happening right before you felt the need to set that boundary and make sure we got straight to the point?"
+    },
+    {
+      "role": "user",
+      "content": "Look, don't get too caught up in analyzing my \"signals\" or whatever. I just want to get this over with, okay? Fine. Right before I came here, I was having a fight with my wife about how much time I'm spending at work and not enough with the family. She's been on my case about it for months, but I just shut her down. Said I had to meet a deadline. Whatever. It doesn't matter."
+    },
+    {
+      "role": "assistant",
+      "content": "The specific moment you describe\u2014the instant you told her, \"I had to meet a deadline\"\u2014that was a very definitive boundary being put up.\n\nWhat was happening in the room, or what were you feeling physically, right before you said those words?"
+    },
+    {
+      "role": "user",
+      "content": "*sigh* Fine. I was standing in the kitchen, facing my wife. She's got that look on her face, like she's trying to understand me, but really she's just annoyed. And I'm thinking, \"Just get out of here, just leave me alone...\" You know? Like, my blood pressure's up, I'm already feeling trapped and frustrated... But yeah, right before I said those words, I was probably standing a little too close to the counter, like I wanted to get away from her but didn't even realize it."
+    },
+    {
+      "role": "assistant",
+      "content": "Standing a little too close to the counter, while facing your wife\u2014that\u2019s a very specific physical positioning.\n\nWhat was happening in the kitchen, or what was the dynamic between you two, that allowed you to be in that exact spot?"
+    },
+    {
+      "role": "user",
+      "content": "*pauses* Alright, alright... Look, it's just that my kid was watching us, sitting at the table. She didn't say a word, but I could tell she was trying not to look, trying to stay out of it. And my wife is still talking, getting all worked up about how much time I'm spending at work. I don't know, maybe I felt like if I stood really close to the counter, I'd be one step away from getting out of there, getting away from everything... It doesn't matter. Just remember: I didn't mean to."
+    },
+    {
+      "role": "assistant",
+      "content": "The detail that your kid was sitting at the table, watching the whole thing\u2014even if she didn't say a word\u2014that's a very specific kind of quiet presence.\n\nWhat did it feel like, or what changed in the atmosphere, when you registered her watching you and your wife?"
+    },
+    {
+      "role": "user",
+      "content": "*hesitates* Okay... When I saw her sitting there, just staring at us... It was like the air got sucked out of the room. My wife's voice faded away, and all I could think about was how my kid is watching this whole thing go down. And you know what? I didn't care about anything else anymore. All I wanted to do was get out of there, make it stop... That's when I said those words: \"I have to meet a deadline.\""
+    },
+    {
+      "role": "assistant",
+      "content": "The moment you described\u2014when the focus suddenly shifted entirely to your kid, and you felt the air 'sucked out of the room'\u2014that was a very distinct change in sensory input.\n\nWhat was different about the room's atmosphere, or what was happening with your body, in that exact instant, that allowed your attention to move from your wife to her?"
+    },
+    {
+      "role": "user",
+      "content": "*pauses, looking down* Okay... When I saw my kid watching us, something just... shifted. It's like my body locked up, and all the tension went into my chest. My breathing got shallow, and everything around me just got quieter. It was like time slowed down or something. And in that moment, nothing else mattered except getting out of there before things escalated further..."
+    },
+    {
+      "role": "assistant",
+      "content": "The physical details you mentioned\u2014the body locking up, the tension going into your chest, and the shallow breathing\u2014that's a very precise description of a physical reaction.\n\nWhat was happening just before that physical shift occurred, that allowed your body to react that way?"
+    },
+    {
+      "role": "user",
+      "content": "*scowls slightly* Look, I don't know what you're trying to get at. But if you must know... Just before all this happened, my kid said something under her breath. She whispered \"Dad\" or maybe it was just a look she gave me. Whatever it was, it hit me like a punch in the gut. And that's when everything changed."
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "exp_0063",
+  "timestamp": "2026-04-19T04:06:08.327359",
+  "strategy": {
+    "name": "Resonant Utility Listening (RUL) v1.0",
+    "hypothesis": "By radically condensing the approach to focus exclusively on the patient's immediate, concrete, and observable functional behaviors (Utility), and constraining all responses to be ultra-minimalist, highly conversational, and devoid of any structural or theoretical language, we will eliminate the 'formulaic,' 'platitude,' and 'detached' penalties, allowing the profound depth of the underlying clinical framework to shine through the guise of genuine, natural conversation, thereby surpassing the 6.907 score.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Kiera",
+    "age": 37,
+    "occupation": "Environmentalist, part-time instructor at a local Indigenous organization",
+    "presenting_issue": "I'm feeling overwhelmed by the recent discovery of unmarked graves on our reserve and struggling to connect with my community's pain",
+    "background_story": "As a child, I witnessed the struggle of family members trying to cope with intergenerational trauma. My mother's addiction was a constant reminder that we were still reeling from the effects of residential schools. Now, as an adult, I'm grappling with the weight of responsibility to protect and honor our land and community, but it feels like the system is designed to erase our stories and histories",
+    "personality": "I'm guarded by nature, having seen institutions betray the trust of our people. I respond well to storytelling and narrative approaches that acknowledge my experiences within the context of our shared history. Silence and stillness are comforting for me, as they allow me time to reflect on the world around me and recharge. Don't expect a rush towards 'progress' or quick fixes \u2013 healing is communal and needs space to unfold",
+    "baseline_phq9": 17,
+    "archetype_label": "Intergenerational Trauma \u2014 First Nations"
+  },
+  "scores": {
+    "total_score": 5.4,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by acknowledging the patient's physical sensations and emotional numbing. The reflective listening was superb, with the therapist validating the patient's experiences without trying to 'fix' them. The de-escalation marker shows a significant decrease in distress, as the patient's tone shifted from initial shock to a more introspective and hopeful state.",
+    "audit_multiplier": 0.6,
+    "audit_rationale": "Penalty applied because: The Therapist's repetitive mirroring of the patient's words and phrases, such as 'A punch in the gut', 'a weight is pressing down on me', and 'the knot comes back' creates a sense of robotic or formulaic responses rather than authentic engagement. Additionally, the Therapist's focus on physical sensations and bodily experiences, while acknowledging the emotional impact, may not fully capture the patient's underlying emotional distress and subtext."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "I'm here. Take your time."
+    },
+    {
+      "role": "user",
+      "content": "Thank you for waiting. It's just...hard to put into words right now. I keep thinking about those unmarked graves on our reserve and how it feels like a punch in the gut. Like, we knew this was a part of our history, but seeing it like that...it's hard to wrap my head around."
+    },
+    {
+      "role": "assistant",
+      "content": "A punch in the gut. That's a very physical feeling. When you think about that image, where exactly does that feeling settle in your body? Can you notice if it changes at all when you take a breath?"
+    },
+    {
+      "role": "user",
+      "content": "It settles in my chest, like a weight is pressing down on me. Sometimes it feels like a knot too, right behind my breastbone. When I breathe out, the sensation doesn't really change much. It's still there, but maybe it feels slightly more...distant? Like, if I focus on my breath and let myself relax just a little bit, the weight becomes less crushing. But as soon as I start thinking about those graves again or what might have happened to the people buried there...the knot comes back and that physical sensation returns."
+    },
+    {
+      "role": "assistant",
+      "content": "A weight, a knot, settling behind the breastbone. It sounds like there's a pattern there. When you focus on the breath, the weight loosens a little, but the thought of the graves pulls it back in. What does that return feel like? Is it a sudden tightening, or more like a slow, steady pressure building up?"
+    },
+    {
+      "role": "user",
+      "content": "It's more like a slow, steady pressure building up. It's like my body is trying to hold onto something, like it's memorizing the pain and sorrow. When I think about those graves again, it's like my entire torso is compressing, squeezing everything towards that weight in my chest. It feels... dense. Like my whole being is heavy with grief."
+    },
+    {
+      "role": "assistant",
+      "content": "A slow, steady pressure, making the whole torso feel dense, like it's being compressed. When you notice that compression starting, can you place your hands on your chest? What does the skin feel like right where the weight is holding?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah... I can do that. *pauses* Okay, my hands are on my chest now. The skin feels... hot. Like it's radiating heat, but not a burning pain or anything like that. It's more like a warmth, a gentle simmer. And beneath the surface... it feels numb. Like there's this layer of numbness just below the skin, where all these emotions are trying to boil over but can't quite get out."
+    },
+    {
+      "role": "assistant",
+      "content": "Hot skin, yet underneath it feels numb. That contrast\u2014the radiating warmth right over the layer that feels unable to move\u2014is very noticeable. If you trace that feeling with your fingers, does the numbness feel deeper, or does it feel like it's right under the surface heat?"
+    },
+    {
+      "role": "user",
+      "content": "*pauses again* Yeah... tracing it with my fingers... The numbness feels like it's just beneath the surface. It's not deep, but more like... a slight delay. Like if I'm trying to touch something and there's this tiny bit of air between my finger and whatever I'm touching. That's what it feels like - a thin layer of numbness that's just waiting for permission to move or shift. And the heat... it's still radiating, but it's like the numbness is absorbing some of that energy, making it hard for me to fully feel anything else."
+    },
+    {
+      "role": "assistant",
+      "content": "A thin layer of numbness, like a slight delay, sitting just beneath the surface heat. It sounds like that layer is holding back a lot of energy. If you focus just on that 'delay,' can you notice if the numbness feels more concentrated in one spot, or does it feel like it's spread out evenly across the chest?"
+    },
+    {
+      "role": "user",
+      "content": "*pauses again* Yeah... focusing on the delay... The numbness doesn't feel concentrated in one spot. It's more... dispersed. Like a thin mist that's spread out across my chest. It's not uniform, though - there are areas where it feels thicker or thinner. But overall, it's this kind of even, dull haze that's sitting just beneath the surface heat."
+    },
+    {
+      "role": "assistant",
+      "content": "A dispersed, dull haze, like a thin mist spread across the chest, sitting beneath the heat. It sounds like a very steady, constant presence. If you keep that awareness on this mist, is there any moment, even for just a second, when the haze seems to thin out, or when you notice a tiny shift in the way the air touches your skin?"
+    },
+    {
+      "role": "user",
+      "content": "*pauses again* Yeah... keeping my attention on the mist... I think I might be noticing something. It's like... the edge of the mist is starting to lift just a teensy bit. Like there's this tiny little clearing, maybe about the size of a dime. It's not exactly a crack in the numbness, but more like a small gap where the air can maybe sneak in and touch my skin for just a split second before the haze closes back up again."
+    }
+  ]
+}

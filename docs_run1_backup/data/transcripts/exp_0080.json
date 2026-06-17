@@ -1,0 +1,92 @@
+{
+  "id": "exp_0080",
+  "timestamp": "2026-04-19T06:21:28.870643",
+  "strategy": {
+    "name": "Ultra-Minimalist Behavioral Activation Mapping (UM-BAM) v1.0",
+    "hypothesis": "By discarding all theoretical language (ACT, process, embodied, defusion) and restricting all reflection/inquiry solely to micro-queries about the patient's most immediate, concrete, and observable actions, sensations, or single, required low-effort 'next steps' (Utility/BA), we will eliminate formulaic language penalties and achieve a score significantly above 6.907 by maximizing perceived conversational naturalness and actionable clinical utility.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Ava",
+    "age": 35,
+    "occupation": "Marketing Manager",
+    "presenting_issue": "I'm feeling overwhelmed with work stress and struggling to prioritize my own needs.",
+    "background_story": "As a high-achieving marketing manager, I've always been driven by a desire for perfection. Lately, I've taken on more responsibilities at work to compensate for my team's lack of productivity, but it's come at the cost of my personal life and relationships. My partner has noticed the change in me, but I'm too tired to admit how exhausted I am.",
+    "personality": "I tend to be direct and efficient, but also self-critical when things don't go as planned. I've always been someone who 'gets it done' without complaining, so it's hard for me to acknowledge my own emotional struggles. When we talk, I'll likely jump right into the problem, trying to solve it quickly.",
+    "baseline_phq9": 14,
+    "archetype_label": "Overwhelmed Professional"
+  },
+  "scores": {
+    "total_score": 4.5,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by acknowledging the patient's emotional struggles and validating their experiences. The reflective listening was also exceptional, as the therapist mirrored the patient's language and validated their reality without trying to 'fix' them.",
+    "audit_multiplier": 0.5,
+    "audit_rationale": "Penalty applied because: The therapist's reliance on generic platitudes and repetitive mirroring (e.g., 'I hear you talking about the weight\u2014the feeling of being weighed down') fails to demonstrate genuine engagement or insight. The conversation is overly focused on physical movements and trivial actions, neglecting the patient's emotional experience. Additionally, the therapist's attempts to 'fix' the issue by suggesting tiny muscle movements feel formulaic and lacking in empathy."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hi there. Thanks for reaching out today. I'm here with you.\n\nBefore we talk about anything big, let's just anchor ourselves for a moment. Can you tell me what you see right now, in the room you are in? Don't think about it\u2014just name three physical things that are right in front of you."
+    },
+    {
+      "role": "user",
+      "content": "I'm sitting in my home office... okay, I see my laptop screen, my desk calendar, and a glass of water with ice cubes in it. That's all, really."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay, the laptop, the calendar, and the water. Good.\n\nJust focusing on the last couple of hours\u2014since you settled in here\u2014what is the very last physical thing you did? Did you move, did you touch something, did you drink anything? No big picture answers needed, just the smallest, most recent action."
+    },
+    {
+      "role": "user",
+      "content": "I grabbed a handful of ice cubes from my water glass and dropped them back into the glass about an hour ago. That's all I can think of."
+    },
+    {
+      "role": "assistant",
+      "content": "Dropping the ice cubes back into the glass. Got it. A small, physical movement.\n\nWhen you think about the things that are weighing on you right now\u2014the things that feel heavy\u2014I want to bypass the words for a moment. Can you tell me about the last time you felt that heavy energy? What was the very next, physical thing you did? Did you stand up? Did you pick up a book? Did you just sit still?"
+    },
+    {
+      "role": "user",
+      "content": "The last time I felt like this... I think it was when I got home from work yesterday and collapsed onto the couch. The \"very next\" thing I did was run my hands through my hair, re-twisting the bun I had put in that morning. It's a habit of mine when I'm feeling frazzled."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. Running your hands through your hair, re-twisting the bun. A physical pattern.\n\nIf we look at that moment\u2014the moment you collapsed onto the couch\u2014what was the smallest, most immediate thing that *kept* you from doing something else right after? Did the couch cushion hold you? Did the weight of your body keep you in one spot?\n\nWhat was the physical boundary that was in place?"
+    },
+    {
+      "role": "user",
+      "content": "I think what kept me from getting up or moving around immediately was just my own exhaustion. My body felt heavy, like it was weighed down by all the stress and anxiety I'd been carrying around. The couch cushions did hold me, but more like they were a physical manifestation of my own mental fatigue."
+    },
+    {
+      "role": "assistant",
+      "content": "I hear you talking about the weight\u2014the feeling of being weighed down.\n\nLet's put the weight aside for a minute. We know the couch held you. But even when you are very tired, there are still tiny muscle movements possible.\n\nWhen you were lying there, if you had to do one tiny thing\u2014something that required minimal energy, like lifting one finger, or turning your head just an inch\u2014what is one thing that *could* have been done, even if you didn't do it?\n\nThink of it as a tiny, almost negligible physical choice."
+    },
+    {
+      "role": "user",
+      "content": "I think... I could've moved my pinky toe. It's the smallest muscle movement possible, and even when I'm exhausted, my toes still wiggle on their own sometimes."
+    },
+    {
+      "role": "assistant",
+      "content": "The pinky toe. That is an incredibly small, precise, and low-energy physical action.\n\nIt tells me that even when the rest of your body feels heavy, certain small, isolated muscle groups can still respond.\n\nIf we take that tiny, contained movement\u2014the pinky toe wiggling\u2014and we apply it to the present moment, right now, in this office:\n\nIs there one other small, isolated muscle group\u2014maybe in your hands, your jaw, or your neck\u2014that could perform one single, tiny, controlled movement? Something that requires less energy than taking a deep breath."
+    },
+    {
+      "role": "user",
+      "content": "Yeah... I think my thumb could twitch just slightly. It's the smallest finger on my hand, and even when I'm stressed or tired, it still moves on its own sometimes. If I concentrate really hard, I might be able to make it flex just a little bit."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. The thumb twitch. That is a very specific, controlled, and low-energy action.\n\nYou've done something really useful here. You've found two examples\u2014the toe, the thumb\u2014of actions that are physically possible, even when the overall system feels weighted down by stress.\n\nLet's make a tiny experiment out of this, right now. It doesn't have to solve anything big. It just has to be a physical test.\n\nIf you are willing, could you try to flex that thumb, just slightly, and then release it? Just one slow, gentle movement. No pressure, just the observation of the movement itself."
+    },
+    {
+      "role": "user",
+      "content": "Okay... I'll try. *pauses* Okay, I just moved my thumb... ever so slightly. It was a tiny twitch, really. And now I've released it. That was it."
+    }
+  ]
+}

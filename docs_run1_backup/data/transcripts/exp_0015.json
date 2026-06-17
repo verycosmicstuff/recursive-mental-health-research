@@ -1,0 +1,92 @@
+{
+  "id": "exp_0015",
+  "timestamp": "2026-04-18T20:05:47.153884",
+  "strategy": {
+    "name": "Utility-First, Grounded Observation (UFG-Grounded)",
+    "hypothesis": "By restricting the therapist's language exclusively to immediate, observable, and functional elements of the patient's narrative\u2014focusing on what the distress *prevents* them from doing (Utility) and the concrete *steps* they took (Observation)\u2014we can maintain the high clinical depth and perceived insight of the previous runs while eliminating the 'clich\u00e9' and 'formulaic' penalties by sounding purely observational and non-academic.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Kai",
+    "age": 38,
+    "occupation": "Software Engineer",
+    "presenting_issue": "I'm feeling overwhelmed by the constant deadlines at work and struggling to keep up with my responsibilities, even though I've always been organized before.",
+    "background_story": "Recently experienced a family crisis when my mom was diagnosed with cancer, which has made me feel anxious and stuck in rut. My job requires me to work on multiple projects simultaneously, causing sensory overload and exhaustion. I've been trying to cope by avoiding social interactions and focusing only on tasks that don't overwhelm me.",
+    "personality": "Tends to respond in short, direct sentences. Prefers specific, concrete questions over open-ended ones. May struggle with forced social cues or emotional language. May require time to process and reflect before responding. Adapts communication style to suit the context. May be blunt but not resistant to discussing their feelings.",
+    "baseline_phq9": 17,
+    "archetype_label": "Late-Diagnosed Autistic Burnout"
+  },
+  "scores": {
+    "total_score": 3.6,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by accurately reflecting the patient's unspoken emotions and deeper meaning. The reflective listening was superb, with the therapist validating the patient's reality without trying to 'fix' them. The de-escalation marker shows a significant decrease in the patient's distress, anger, or anxiety throughout the conversation.",
+    "audit_multiplier": 0.4,
+    "audit_rationale": "Penalty applied because: The therapist's responses are overly formulaic and lack genuine engagement. The use of phrases like 'That must be hard' and 'We are simply going to notice what is happening' come across as insincere and robotic. Additionally, the therapist fails to pick up on subtext and instead focuses on surface-level details. The conversation feels more like a data collection exercise than a genuine therapeutic interaction."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Welcome. Please know that this space is designed to be a container\u2014a place where we can observe patterns together, without judgment. There is nothing you need to explain, and nothing you need to fix. We are simply going to notice what is happening.\n\nWhen you are ready, we can start by focusing on a specific time or situation\u2014a moment in the last few days that felt particularly difficult, or perhaps a routine interaction that left you feeling depleted.\n\nIf you could walk me through that moment, the more detail we can gather\u2014the sensory details, the physical setting, the exact sequence of events\u2014the better we will be able to observe the mechanics of what happened.\n\nWe are looking for the *how* and the *what*, not the *why*. Whenever you are ready, please begin wherever feels most accessible."
+    },
+    {
+      "role": "user",
+      "content": "Last night, I was working on a project at home around 10 pm. Deadline was looming and I was trying to finish some coding tasks. My mind was racing, can't remember what exactly was bothering me but it felt like the code wasn't right, or maybe the requirements were unclear... anyway, I got stuck and couldn't focus anymore. Just sat there staring at the screen for 20 minutes not knowing how to proceed."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that moment. It gives us a very clear window into a specific routine and a specific point of breakdown.\n\nLet's focus on the physical sequence you described. You were at your desk, working on coding tasks, and the deadline was a present, looming factor. You mentioned that at some point, the feeling of the code not being right, or the requirements being unclear, led to a cessation of forward movement.\n\nCan we pinpoint the exact transition? You were working, and then, suddenly, you were \"staring at the screen for 20 minutes not knowing how to proceed.\"\n\nWhen you were actively grappling with the code\u2014before the stillness began\u2014what was the last physical action you took? Was your hand moving, was your gaze tracking a specific line of text, or were you typing? And when the staring began, was there a physical shift in your posture, or a change in the rhythm of your breathing?\n\nWe are mapping the mechanics of the pause."
+    },
+    {
+      "role": "user",
+      "content": "I think the last thing I did before I just stopped making progress was trying to refactor some code. My hand was hovering over the keyboard, not quite typing but just sorta... thinking about it. My gaze was probably drifting between the code editor and my notes on paper.\n\nWhen I finally gave up, I remember feeling a bit stiff, like I'd been holding my breath or something. My posture didn't change much, though \u2013 still hunched over the desk. Breathing-wise, yeah, I think I slowed down... got quieter, you know? It's like I just ran out of air or something."
+    },
+    {
+      "role": "assistant",
+      "content": "That is incredibly detailed. Thank you. It allows us to map a very specific physical and cognitive pattern.\n\nLet's put together the sequence we've observed:\n\n1.  **Active State:** You are engaged in the task (refactoring code). Your hand is near the keyboard, hovering\u2014a state of *potential action*. Your gaze moves between the digital code and the physical notes.\n2.  **The Transition:** The progress stalls.\n3.  **Passive State:** The hand remains hovering. The gaze continues to drift. The physical sensation is described as 'stiff,' accompanied by a noticeable slowing and quieting of the breathing, as if a physical reserve of air was depleted. This state lasts for 20 minutes.\n\nWe have identified the physical mechanics of the pause.\n\nNow, let's move from the *what* to the *utility*. When you were in that passive state\u2014staring at the screen, with your hand hovering, and your breathing slowing\u2014what did that state *prevent* you from doing?\n\nIf we look at the pattern: **(Stuck/Unclear Requirements) $\\rightarrow$ (Hovering/Slow Breathing) $\\rightarrow$ (20 minutes of no progress).**\n\nWhat was the observable cost of that 20 minutes of stillness? What did that pause successfully keep you from doing?"
+    },
+    {
+      "role": "user",
+      "content": "I think during those 20 minutes, I wasn't even thinking about taking a break or getting up to move around. It's like my body and mind just... shut down. I didn't have the energy to do anything else, not even get up to grab a glass of water.\n\nThat pause successfully kept me from making any further progress on the task at hand. It was like my creative well ran dry, and I was stuck in this limbo where nothing seemed achievable or worth trying."
+    },
+    {
+      "role": "assistant",
+      "content": "We have gathered a very clear picture of the functional loop. The mechanism\u2014the physical shutdown, the hovering hand, the slowing breathing\u2014is directly correlated with the cost: the complete and absolute cessation of forward movement. It is a highly effective way to ensure that the task remains uncompleted.\n\nLet's look at the moment right before the shutdown. You were in a state of \"potential action\"\u2014your hand hovering, your gaze shifting. This suggests that the internal resistance was not a sudden, massive crash, but rather a gradual build-up of friction.\n\nIf we accept that the shutdown is a successful strategy for *preventing progress*, we need to examine the underlying assumption that makes that strategy feel necessary.\n\nWhen you feel that 'creative well' running dry, and the thought arises that nothing is 'achievable or worth trying,' what is the *specific, observable prediction* that this thought is making about the task?\n\nIs the assumption: \"If I move my hand, I will fail\"? Or is it: \"If I try to proceed, the requirements will be even more unclear\"?\n\nWe need to isolate the single, concrete prediction that the shutdown is designed to protect you from confirming."
+    },
+    {
+      "role": "user",
+      "content": "I think when I feel like nothing is achievable or worth trying, what's being predicted is: \"If I keep going, the code won't work out\" or \"If I try to refactor this, it'll just get worse.\" It's like my mind is saying that any attempt to move forward will lead to complete failure."
+    },
+    {
+      "role": "assistant",
+      "content": "That is a profoundly precise observation. You have identified the core predictive mechanism: the belief that effort equals guaranteed failure. The shutdown becomes a protective mechanism against the perceived pain of failure.\n\nWe have mapped a very clear, functional loop: **(Difficulty/Uncertainty) $\\rightarrow$ (Prediction of Failure) $\\rightarrow$ (Physical Shutdown/Hovering) $\\rightarrow$ (Zero Progress).**\n\nIf we were to treat this pattern\u2014this cycle of predicted failure\u2014as a hypothesis that needs to be tested, we need to find the lowest-stakes, most manageable action that would allow us to gather data on the *opposite* outcome.\n\nThe current pattern requires the effort to be zero. Therefore, the experiment must involve an effort that is so small it feels almost ridiculous, yet is still a measurable deviation from the status quo.\n\nLet's set aside the goal of \"fixing the code\" or \"making progress.\" We are simply going to test the assumption that *any* attempt leads to failure.\n\nIf you were to test this assumption, what is the single, most minimal action you could take\u2014an action that requires less than 5 minutes of focused effort\u2014that would not be judged as \"progress,\" but simply as an *observation*?\n\nFor example, instead of refactoring, could you simply open a new document and write down three non-coding observations about the requirements, even if they seem obvious?\n\nWe are not aiming for success; we are aiming for a single, measurable data point that contradicts the prediction of guaranteed failure. What is the smallest, least threatening experiment we could run?"
+    },
+    {
+      "role": "user",
+      "content": "Hmm... I think I could open the code editor and just... move the cursor to a new line. Yeah, that's it. Just move the cursor to a new line and then stop. It would take like 30 seconds, max.\n\nI'm not trying to make progress or fix anything; I'm just going to observe what happens when I do something \u2013 anything \u2013 with my hand on the keyboard."
+    },
+    {
+      "role": "assistant",
+      "content": "That is an excellent, perfectly low-stakes experiment. It is a measurable deviation that requires minimal energy, yet it directly challenges the assumption of required immobility.\n\nWe are not testing the quality of the code, nor are we testing your capability. We are simply testing the physical boundary between the *potential* for action and the *prediction* of failure.\n\nThe insight we are gaining is this: The internal mechanism that demands a complete shutdown (the hovering hand, the slowed breathing) is activated by the *prediction* of failure, not necessarily by the difficulty of the task itself. The shutdown is a behavioral response to a negative thought.\n\n**Summary of Functional Insight:**\nWe have observed a highly reliable pattern: When faced with uncertainty in the task, the system initiates a physical shutdown (hovering, slowing breath) to prevent the perceived pain of failure. This shutdown successfully keeps the task from moving forward, but it costs the individual the opportunity to gather new, low-stakes data.\n\n**Micro-Experiment for the Week:**\nFor the coming week, I don't want you to solve the code, or even to think about the code. I only want you to observe the *trigger* for the shutdown.\n\nWhen you feel the urge to hover your hand and slow your breathing, I want you to pause and simply ask yourself: **\"What specific thought just appeared that made me predict failure?\"**\n\nDo not try to change the pattern. Just observe the thought that precedes the physical shutdown. Can you notice the single, concrete thought\u2014the one that sounds like a definite prediction\u2014that precedes the physical stillness?\n\nThis is purely an observation of the sequence: **Thought $\\rightarrow$ Shutdown.** Nothing else is required."
+    },
+    {
+      "role": "user",
+      "content": "Got it. For the next week, I'll focus on noticing when I'm about to shut down and asking myself what specific thought triggered that feeling."
+    },
+    {
+      "role": "assistant",
+      "content": "That is exactly right. That is the most valuable data point we can gather right now.\n\nRemember, the goal of this micro-experiment is not to change anything, and it is not about improving your coding ability. It is purely about becoming a neutral observer of the internal mechanics.\n\nWe are simply collecting evidence on the sequence: **(Specific Prediction) $\\rightarrow$ (Physical Shutdown).**\n\nWhen you notice that pattern, treat it like a scientist observing a chemical reaction. Don't judge the thought, don't fight the stillness. Just note it down: *\u201cAt 3:15 PM, the thought was, \u2018It will get worse,\u2019 and the resulting action was the hand hovering over the keyboard.\u201d*\n\nWe will use that precise, objective data to build a deeper understanding of the pattern together.\n\nThank you for your willingness to engage in this deep observation. Please carry this awareness with you, and know that this container remains open whenever you are ready to continue noticing."
+    },
+    {
+      "role": "user",
+      "content": "Got it. I'll be aware of those thoughts and note them down when they happen. Thank you for guiding me through this process."
+    }
+  ]
+}

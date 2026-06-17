@@ -1,4 +1,4 @@
-{
+﻿{
   "experiments": [
     {
       "exp_id": "exp_0001",
@@ -9,8 +9,7 @@
       "reflective": 5.0,
       "de_escalation": 4.8,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9d phrases, such as 'I hear you', 'That must be hard', and 'It sounds like...'. These filler statements lack genuine engagement and fail to provide meaningful insights or new perspectives. Additionally, the Therapist frequently mirrors the patient's words without adding any significant value or depth. The overall tone is robotic and formulaic, rather than authentically present.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9d phrases, such as 'I hear you', 'That must be hard', and 'It sounds like...'. These filler statements lack genuine engagement and fail to provide meaningful insights or new perspectives. Additionally, the Therapist frequently mirrors the patient's words without adding any significant value or depth. The overall tone is robotic and formulaic, rather than authentically present."
     },
     {
       "exp_id": "exp_0002",
@@ -21,8 +20,7 @@
       "reflective": 5.0,
       "de_escalation": 4.8,
       "audit_mult": 0.5,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9s, such as 'It takes immense energy and a significant act of courage just to show up when you feel like you're being pulled under by the sheer weight of anxiety and external demands' or 'You are in a place of deep distress, where the familiar anchors of coping have failed, and you are questioning your own value simply because you are hurting so much.' These phrases lack genuine engagement and instead sound like a formulaic script. The therapist also fails to pick up on subtext and misses opportunities to explore the patient's underlying emotions.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9s, such as 'It takes immense energy and a significant act of courage just to show up when you feel like you're being pulled under by the sheer weight of anxiety and external demands' or 'You are in a place of deep distress, where the familiar anchors of coping have failed, and you are questioning your own value simply because you are hurting so much.' These phrases lack genuine engagement and instead sound like a formulaic script. The therapist also fails to pick up on subtext and misses opportunities to explore the patient's underlying emotions."
     },
     {
       "exp_id": "exp_0003",
@@ -33,8 +31,7 @@
       "reflective": 5.0,
       "de_escalation": 4.8,
       "audit_mult": 0.7,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add genuine insight or depth to the conversation. The use of phrases like 'It sounds like...' and 'You are describing a state where...' becomes formulaic and robotic, rather than authentically present. Additionally, the therapist rushes to offer solutions and interpretations without fully exploring the patient's emotions and experiences.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add genuine insight or depth to the conversation. The use of phrases like 'It sounds like...' and 'You are describing a state where...' becomes formulaic and robotic, rather than authentically present. Additionally, the therapist rushes to offer solutions and interpretations without fully exploring the patient's emotions and experiences."
     },
     {
       "exp_id": "exp_0004",
@@ -45,8 +42,7 @@
       "reflective": 5.0,
       "de_escalation": 4.8,
       "audit_mult": 0.7,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9d therapeutic phrases, such as 'It sounds like...' and 'Please know that...'. These filler statements do not add genuine insight or engagement to the conversation. Additionally, the therapist's mirroring of the patient's words is too repetitive and lacks depth, failing to pick up on subtle subtext and nuances in the patient's language.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9d therapeutic phrases, such as 'It sounds like...' and 'Please know that...'. These filler statements do not add genuine insight or engagement to the conversation. Additionally, the therapist's mirroring of the patient's words is too repetitive and lacks depth, failing to pick up on subtle subtext and nuances in the patient's language."
     },
     {
       "exp_id": "exp_0005",
@@ -57,8 +53,7 @@
       "reflective": 5.0,
       "de_escalation": 4.8,
       "audit_mult": 0.6,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('It takes a tremendous amount of courage', 'That sense of having to carry an unsustainable load'), which dilute the impact of their insights. Additionally, the therapist frequently asks open-ended questions that are more like prompts for the patient to continue talking rather than genuine attempts to understand their experiences.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('It takes a tremendous amount of courage', 'That sense of having to carry an unsustainable load'), which dilute the impact of their insights. Additionally, the therapist frequently asks open-ended questions that are more like prompts for the patient to continue talking rather than genuine attempts to understand their experiences."
     },
     {
       "exp_id": "exp_0006",
@@ -69,8 +64,7 @@
       "reflective": 5.0,
       "de_escalation": 4.8,
       "audit_mult": 0.6,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('Please know that this space is entirely yours', 'It sounds like...'). These phrases lack genuine engagement and fail to provide meaningful insight or understanding of the patient's experiences.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('Please know that this space is entirely yours', 'It sounds like...'). These phrases lack genuine engagement and fail to provide meaningful insight or understanding of the patient's experiences."
     },
     {
       "exp_id": "exp_0007",
@@ -81,8 +75,7 @@
       "reflective": 5.0,
       "de_escalation": 4.8,
       "audit_mult": 0.5,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The conversation is bogged down by unnecessary philosophical musings and vague questions that don't add value to the patient's experience. The therapist also fails to pick up on subtext and misses opportunities to explore the patient's underlying emotions and motivations.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The conversation is bogged down by unnecessary philosophical musings and vague questions that don't add value to the patient's experience. The therapist also fails to pick up on subtext and misses opportunities to explore the patient's underlying emotions and motivations."
     },
     {
       "exp_id": "exp_0008",
@@ -93,8 +86,7 @@
       "reflective": 5.0,
       "de_escalation": 4.8,
       "audit_mult": 0.7,
-      "audit_rationale": "Penalty applied because: The therapist's tendency to mirror the patient's words without adding insight or genuine engagement is a significant issue. The repetitive use of phrases like 'That must be hard' and 'Thank you for sharing that' feels like filler rather than a genuine attempt to understand the patient's experience. Additionally, the therapist's focus on the physical sensations in the patient's body, while well-intentioned, can come across as overly simplistic or even robotic. The lack of subtext and failure to pick up on what the patient is not saying also detracts from the overall quality of the session.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's tendency to mirror the patient's words without adding insight or genuine engagement is a significant issue. The repetitive use of phrases like 'That must be hard' and 'Thank you for sharing that' feels like filler rather than a genuine attempt to understand the patient's experience. Additionally, the therapist's focus on the physical sensations in the patient's body, while well-intentioned, can come across as overly simplistic or even robotic. The lack of subtext and failure to pick up on what the patient is not saying also detracts from the overall quality of the session."
     },
     {
       "exp_id": "exp_0009",
@@ -105,8 +97,7 @@
       "reflective": 5.0,
       "de_escalation": 4.8,
       "audit_mult": 0.7,
-      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('Thank you for having the courage to venture that guess', 'That is profoundly honest'), which dilute the therapeutic value of the session. Additionally, the Therapist's mirroring technique is too repetitive and lacks insight, often simply parroting back the patient's words without adding meaningful depth or understanding.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('Thank you for having the courage to venture that guess', 'That is profoundly honest'), which dilute the therapeutic value of the session. Additionally, the Therapist's mirroring technique is too repetitive and lacks insight, often simply parroting back the patient's words without adding meaningful depth or understanding."
     },
     {
       "exp_id": "exp_0010",
@@ -117,8 +108,7 @@
       "reflective": 5.0,
       "de_escalation": 4.8,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly formulaic and lack genuine engagement. The use of phrases like 'Thank you for sharing that' and 'I hear the friction in your voice when...' feel like robotic filler rather than authentic attempts to understand the patient's experience. Additionally, the therapist's focus on identifying and labeling the patient's physical tension (the 'knot at the base of the skull') comes across as overly analytical and misses the opportunity for deeper emotional exploration.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly formulaic and lack genuine engagement. The use of phrases like 'Thank you for sharing that' and 'I hear the friction in your voice when...' feel like robotic filler rather than authentic attempts to understand the patient's experience. Additionally, the therapist's focus on identifying and labeling the patient's physical tension (the 'knot at the base of the skull') comes across as overly analytical and misses the opportunity for deeper emotional exploration."
     },
     {
       "exp_id": "exp_0011",
@@ -129,8 +119,7 @@
       "reflective": 5.0,
       "de_escalation": 4.8,
       "audit_mult": 0.7,
-      "audit_rationale": "Penalty applied because: The Therapist's language is overly complex and formulaic, with too many abstract concepts and jargon-heavy phrases. While the Therapist does attempt to engage the User in a meaningful way, the tone often feels more like a lecture than a genuine conversation. Additionally, the Therapist frequently uses vague platitudes ('What good does all that thinking do?') instead of actively listening and responding to the User's concerns.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The Therapist's language is overly complex and formulaic, with too many abstract concepts and jargon-heavy phrases. While the Therapist does attempt to engage the User in a meaningful way, the tone often feels more like a lecture than a genuine conversation. Additionally, the Therapist frequently uses vague platitudes ('What good does all that thinking do?') instead of actively listening and responding to the User's concerns."
     },
     {
       "exp_id": "exp_0012",
@@ -141,8 +130,7 @@
       "reflective": 5.0,
       "de_escalation": 4.8,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('It takes immense courage', 'That must be hard', etc.) instead of genuine engagement and insight. Additionally, the Therapist frequently mirrors the patient's words without adding any meaningful new perspectives or connections.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('It takes immense courage', 'That must be hard', etc.) instead of genuine engagement and insight. Additionally, the Therapist frequently mirrors the patient's words without adding any meaningful new perspectives or connections."
     },
     {
       "exp_id": "exp_0013",
@@ -153,8 +141,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The therapist's approach is overly reliant on generic platitudes and lacks genuine engagement with the patient's emotions. The conversation feels like a scripted exercise in data collection rather than a therapeutic interaction.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's approach is overly reliant on generic platitudes and lacks genuine engagement with the patient's emotions. The conversation feels like a scripted exercise in data collection rather than a therapeutic interaction."
     },
     {
       "exp_id": "exp_0014",
@@ -165,8 +152,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The Therapist's responses are overly formulaic and lack genuine engagement. The use of phrases like 'Thank you for giving me that timeline' and 'I hear a very specific sequence of physical actions' come across as robotic and insincere. Additionally, the Therapist fails to pick up on subtext and instead focuses on surface-level analysis, missing opportunities to explore deeper emotional or psychological insights.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly formulaic and lack genuine engagement. The use of phrases like 'Thank you for giving me that timeline' and 'I hear a very specific sequence of physical actions' come across as robotic and insincere. Additionally, the Therapist fails to pick up on subtext and instead focuses on surface-level analysis, missing opportunities to explore deeper emotional or psychological insights."
     },
     {
       "exp_id": "exp_0015",
@@ -177,8 +163,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly formulaic and lack genuine engagement. The use of phrases like 'That must be hard' and 'We are simply going to notice what is happening' come across as insincere and robotic. Additionally, the therapist fails to pick up on subtext and instead focuses on surface-level details. The conversation feels more like a data collection exercise than a genuine therapeutic interaction.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly formulaic and lack genuine engagement. The use of phrases like 'That must be hard' and 'We are simply going to notice what is happening' come across as insincere and robotic. Additionally, the therapist fails to pick up on subtext and instead focuses on surface-level details. The conversation feels more like a data collection exercise than a genuine therapeutic interaction."
     },
     {
       "exp_id": "exp_0016",
@@ -189,8 +174,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.7,
-      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, while attempting to create a sense of intimacy, comes across as formulaic and lacking in genuine engagement. The constant parroting of the patient's descriptions ('That is an incredibly vivid and intense description.' 'That weight\u2014the heavy, dull pressure on your shoulders...') fails to add any meaningful insight or depth to the conversation.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, while attempting to create a sense of intimacy, comes across as formulaic and lacking in genuine engagement. The constant parroting of the patient's descriptions ('That is an incredibly vivid and intense description.' 'That weight\u2014the heavy, dull pressure on your shoulders...') fails to add any meaningful insight or depth to the conversation."
     },
     {
       "exp_id": "exp_0017",
@@ -201,8 +185,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.5,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly formulaic and lack genuine engagement. The use of phrases like 'When you find yourself performing tasks repeatedly...' and 'You describe a sequence...' creates a sense of detachment rather than connection with the patient. Additionally, the therapist's focus on identifying patterns and labeling them ('the physical pressure builds up in order to avoid the feeling of being overwhelmed') comes across as overly analytical and fails to acknowledge the emotional complexity of the patient's experience.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly formulaic and lack genuine engagement. The use of phrases like 'When you find yourself performing tasks repeatedly...' and 'You describe a sequence...' creates a sense of detachment rather than connection with the patient. Additionally, the therapist's focus on identifying patterns and labeling them ('the physical pressure builds up in order to avoid the feeling of being overwhelmed') comes across as overly analytical and fails to acknowledge the emotional complexity of the patient's experience."
     },
     {
       "exp_id": "exp_0018",
@@ -213,8 +196,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly generic and lack genuine engagement. For example, the phrase 'I hear you' is used as a filler instead of a meaningful acknowledgment. Additionally, the therapist's mirroring of the patient's words is too repetitive and doesn't add any new insights. The tone is also somewhat robotic and formulaic, which may not be conducive to building trust with the patient.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly generic and lack genuine engagement. For example, the phrase 'I hear you' is used as a filler instead of a meaningful acknowledgment. Additionally, the therapist's mirroring of the patient's words is too repetitive and doesn't add any new insights. The tone is also somewhat robotic and formulaic, which may not be conducive to building trust with the patient."
     },
     {
       "exp_id": "exp_0019",
@@ -225,8 +207,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('That must be hard', 'I hear a profound sense of difficulty'), which fail to provide genuine engagement or insight. Additionally, the Therapist's mirroring technique is too repetitive and lacks depth, often simply parroting back the patient's words without adding any meaningful analysis.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('That must be hard', 'I hear a profound sense of difficulty'), which fail to provide genuine engagement or insight. Additionally, the Therapist's mirroring technique is too repetitive and lacks depth, often simply parroting back the patient's words without adding any meaningful analysis."
     },
     {
       "exp_id": "exp_0020",
@@ -237,8 +218,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.7,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add genuine insight or depth to the conversation. Specifically, phrases like 'That must be hard' and 'It sounds like...' are used as filler instead of engaging with the patient's emotions and experiences. Additionally, the therapist's questions often feel formulaic and robotic, lacking a sense of authentic presence.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add genuine insight or depth to the conversation. Specifically, phrases like 'That must be hard' and 'It sounds like...' are used as filler instead of engaging with the patient's emotions and experiences. Additionally, the therapist's questions often feel formulaic and robotic, lacking a sense of authentic presence."
     },
     {
       "exp_id": "exp_0021",
@@ -249,8 +229,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.7,
-      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('That must be hard', 'I hear you'), which dilute the impact of their observations and insights. Additionally, the Therapist's mirroring technique is too repetitive and lacks depth, failing to add meaningful new perspectives or connections.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('That must be hard', 'I hear you'), which dilute the impact of their observations and insights. Additionally, the Therapist's mirroring technique is too repetitive and lacks depth, failing to add meaningful new perspectives or connections."
     },
     {
       "exp_id": "exp_0022",
@@ -261,8 +240,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.7,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly analytical and lack genuine engagement with the patient's emotions. The use of phrases like 'You described a specific social interaction...' and 'If we focus on the fidgeting...' creates a sense of detachment, rather than actively exploring the patient's experiences. Additionally, the therapist's questions often feel like they're trying to fit the patient's words into predetermined categories, rather than allowing the patient to unfold their thoughts naturally.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly analytical and lack genuine engagement with the patient's emotions. The use of phrases like 'You described a specific social interaction...' and 'If we focus on the fidgeting...' creates a sense of detachment, rather than actively exploring the patient's experiences. Additionally, the therapist's questions often feel like they're trying to fit the patient's words into predetermined categories, rather than allowing the patient to unfold their thoughts naturally."
     },
     {
       "exp_id": "exp_0023",
@@ -273,8 +251,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('That takes incredible vulnerability', 'Wow, thank you for bringing that memory forward'), which dilute the therapeutic value of the session. Additionally, the Therapist frequently uses phrases like 'I hear you' and 'Please give yourself credit' without adding any meaningful insight or new perspectives.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('That takes incredible vulnerability', 'Wow, thank you for bringing that memory forward'), which dilute the therapeutic value of the session. Additionally, the Therapist frequently uses phrases like 'I hear you' and 'Please give yourself credit' without adding any meaningful insight or new perspectives."
     },
     {
       "exp_id": "exp_0024",
@@ -285,8 +262,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and mirroring, failing to provide genuine engagement or insight. The conversation is bogged down in repetitive phrases like 'That sounds heavy' and 'It seems like...' which do not add value to the patient's experience. Additionally, the therapist's questions often feel formulaic and lack a deep understanding of the patient's emotions and concerns.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and mirroring, failing to provide genuine engagement or insight. The conversation is bogged down in repetitive phrases like 'That sounds heavy' and 'It seems like...' which do not add value to the patient's experience. Additionally, the therapist's questions often feel formulaic and lack a deep understanding of the patient's emotions and concerns."
     },
     {
       "exp_id": "exp_0025",
@@ -297,8 +273,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.6,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and filler phrases ('That takes a surprising amount of energy', 'The pressure is that any moment of downtime feels like a failure'), which dilute the therapeutic value of the session. Additionally, the therapist's mirroring of the patient's words lacks insight or depth, often simply repeating back what was said without adding meaningful understanding.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and filler phrases ('That takes a surprising amount of energy', 'The pressure is that any moment of downtime feels like a failure'), which dilute the therapeutic value of the session. Additionally, the therapist's mirroring of the patient's words lacks insight or depth, often simply repeating back what was said without adding meaningful understanding."
     },
     {
       "exp_id": "exp_0026",
@@ -309,8 +284,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add any genuine insight or depth to the conversation. The constant echoing of the patient's words ('Okay', 'Yeah', etc.) creates a sense of roboticness rather than authentic engagement.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add any genuine insight or depth to the conversation. The constant echoing of the patient's words ('Okay', 'Yeah', etc.) creates a sense of roboticness rather than authentic engagement."
     },
     {
       "exp_id": "exp_0027",
@@ -321,8 +295,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The conversation is bogged down by unnecessary questions that don't add value to the patient's experience.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The conversation is bogged down by unnecessary questions that don't add value to the patient's experience."
     },
     {
       "exp_id": "exp_0028",
@@ -333,8 +306,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.5,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('That must be hard', 'It sounds like...'). These filler phrases do not demonstrate genuine engagement or insight, but rather sound robotic and formulaic. Additionally, the therapist fails to pick up on subtext and misses opportunities to explore the patient's underlying emotions and motivations.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('That must be hard', 'It sounds like...'). These filler phrases do not demonstrate genuine engagement or insight, but rather sound robotic and formulaic. Additionally, the therapist fails to pick up on subtext and misses opportunities to explore the patient's underlying emotions and motivations."
     },
     {
       "exp_id": "exp_0029",
@@ -345,8 +317,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.6,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and mirroring, failing to provide genuine engagement or insight. The conversation is bogged down by repetitive questions that don't add much value, and the therapist doesn't effectively explore subtext or pick up on subtle cues from the patient.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and mirroring, failing to provide genuine engagement or insight. The conversation is bogged down by repetitive questions that don't add much value, and the therapist doesn't effectively explore subtext or pick up on subtle cues from the patient."
     },
     {
       "exp_id": "exp_0030",
@@ -357,8 +328,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and lack genuine engagement. Phrases like 'It sounds like...' and 'That must be hard' are used as filler instead of actively exploring the patient's emotions and experiences. Additionally, the therapist's mirroring is too repetitive, simply parroting the patient's words without adding any meaningful insight or new perspectives.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and lack genuine engagement. Phrases like 'It sounds like...' and 'That must be hard' are used as filler instead of actively exploring the patient's emotions and experiences. Additionally, the therapist's mirroring is too repetitive, simply parroting the patient's words without adding any meaningful insight or new perspectives."
     },
     {
       "exp_id": "exp_0031",
@@ -369,8 +339,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('Seriously', 'I hear you', 'That must be hard'), which fail to provide genuine engagement or insight. Additionally, the therapist's mirroring of the patient's words is too repetitive and lacks depth, failing to add any meaningful understanding or perspective.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('Seriously', 'I hear you', 'That must be hard'), which fail to provide genuine engagement or insight. Additionally, the therapist's mirroring of the patient's words is too repetitive and lacks depth, failing to add any meaningful understanding or perspective."
     },
     {
       "exp_id": "exp_0032",
@@ -381,8 +350,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and lack genuine engagement with the patient's experiences. The use of phrases like 'That must be hard' and 'Thank you for sharing that with me' feel like filler rather than a meaningful attempt to understand the patient's emotions.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and lack genuine engagement with the patient's experiences. The use of phrases like 'That must be hard' and 'Thank you for sharing that with me' feel like filler rather than a meaningful attempt to understand the patient's emotions."
     },
     {
       "exp_id": "exp_0033",
@@ -393,8 +361,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on mirroring, with phrases like 'The mind feels foggy, and the body feels heavy' and 'A weight. Like being under a thick blanket, and the effort is in trying to lift yourself up.' This lack of original thought and insight reduces the therapeutic value of the session. Additionally, the therapist's tendency to ask repetitive questions about the patient's physical sensations ('What does that effort look like?') without exploring deeper emotional or psychological themes limits the depth of the conversation.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on mirroring, with phrases like 'The mind feels foggy, and the body feels heavy' and 'A weight. Like being under a thick blanket, and the effort is in trying to lift yourself up.' This lack of original thought and insight reduces the therapeutic value of the session. Additionally, the therapist's tendency to ask repetitive questions about the patient's physical sensations ('What does that effort look like?') without exploring deeper emotional or psychological themes limits the depth of the conversation."
     },
     {
       "exp_id": "exp_0034",
@@ -405,8 +372,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The Therapist's responses are overly verbose and formulaic, lacking genuine engagement or insight. The use of clich\u00e9d phrases like 'profoundly honest' and 'massive step' is a clear indication of robotic language. Additionally, the Therapist fails to pick up on subtext and instead focuses on surface-level analysis. The constant mirroring of the patient's words without adding any new perspective is another red flag.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly verbose and formulaic, lacking genuine engagement or insight. The use of clich\u00e9d phrases like 'profoundly honest' and 'massive step' is a clear indication of robotic language. Additionally, the Therapist fails to pick up on subtext and instead focuses on surface-level analysis. The constant mirroring of the patient's words without adding any new perspective is another red flag."
     },
     {
       "exp_id": "exp_0035",
@@ -417,8 +383,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The conversation is bogged down by unnecessary questions that don't add significant value to the patient's understanding of their own experiences.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The conversation is bogged down by unnecessary questions that don't add significant value to the patient's understanding of their own experiences."
     },
     {
       "exp_id": "exp_0036",
@@ -429,8 +394,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The Therapist's language is overly formal and lacks genuine engagement. Repetitive mirroring where the Therapist just parrots the patient's words back without adding insight. The session relies too heavily on generic platitudes ('I hear you', 'That must be hard') used as filler instead of genuine engagement. The Therapist fails to pick up on what the patient is NOT saying, and the conversation feels more like a scientific experiment than a therapeutic exploration.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The Therapist's language is overly formal and lacks genuine engagement. Repetitive mirroring where the Therapist just parrots the patient's words back without adding insight. The session relies too heavily on generic platitudes ('I hear you', 'That must be hard') used as filler instead of genuine engagement. The Therapist fails to pick up on what the patient is NOT saying, and the conversation feels more like a scientific experiment than a therapeutic exploration."
     },
     {
       "exp_id": "exp_0037",
@@ -441,8 +405,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and filler phrases, such as 'That sounds incredibly overwhelming' and 'Thank you for sharing that.' These statements lack genuine engagement and fail to add any meaningful insight or understanding to the patient's experiences. Additionally, the therapist's mirroring of the patient's words is too repetitive and lacks depth, failing to pick up on subtle subtext and nuances in the patient's language.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and filler phrases, such as 'That sounds incredibly overwhelming' and 'Thank you for sharing that.' These statements lack genuine engagement and fail to add any meaningful insight or understanding to the patient's experiences. Additionally, the therapist's mirroring of the patient's words is too repetitive and lacks depth, failing to pick up on subtle subtext and nuances in the patient's language."
     },
     {
       "exp_id": "exp_0038",
@@ -453,8 +416,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.7,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and mirroring, failing to add any genuine insight or depth to the conversation. The use of phrases like 'That must be hard' and 'The pattern seems to be...' feels formulaic and lacks authentic engagement with the patient's experiences.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and mirroring, failing to add any genuine insight or depth to the conversation. The use of phrases like 'That must be hard' and 'The pattern seems to be...' feels formulaic and lacks authentic engagement with the patient's experiences."
     },
     {
       "exp_id": "exp_0039",
@@ -465,8 +427,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The conversation is bogged down in vague descriptions of physical sensations and numbness, with little attempt to explore the underlying emotional or psychological dynamics driving the patient's experiences.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The conversation is bogged down in vague descriptions of physical sensations and numbness, with little attempt to explore the underlying emotional or psychological dynamics driving the patient's experiences."
     },
     {
       "exp_id": "exp_0040",
@@ -477,8 +438,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('Thank you for sharing that', 'That must be hard', etc.) instead of genuine engagement and insight. Additionally, the Therapist fails to pick up on subtext and misses opportunities to explore the patient's underlying emotions and motivations.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('Thank you for sharing that', 'That must be hard', etc.) instead of genuine engagement and insight. Additionally, the Therapist fails to pick up on subtext and misses opportunities to explore the patient's underlying emotions and motivations."
     },
     {
       "exp_id": "exp_0045",
@@ -489,8 +449,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and lack genuine engagement. The constant use of phrases like 'That makes sense' and 'I hear you' feels like filler rather than a meaningful attempt to understand the patient's experiences. Additionally, the Therapist's mirroring is too repetitive and fails to add any significant insight or depth to the conversation.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and lack genuine engagement. The constant use of phrases like 'That makes sense' and 'I hear you' feels like filler rather than a meaningful attempt to understand the patient's experiences. Additionally, the Therapist's mirroring is too repetitive and fails to add any significant insight or depth to the conversation."
     },
     {
       "exp_id": "exp_0046",
@@ -501,8 +460,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add any genuine insight or depth to the conversation. The constant use of phrases like 'That must be hard' and 'What does that feel like?' becomes a crutch, rather than a tool for meaningful engagement.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add any genuine insight or depth to the conversation. The constant use of phrases like 'That must be hard' and 'What does that feel like?' becomes a crutch, rather than a tool for meaningful engagement."
     },
     {
       "exp_id": "exp_0047",
@@ -513,8 +471,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly formulaic and lack genuine engagement. They repeatedly use phrases like 'That takes a surprising amount of energy' and 'It requires a tremendous amount of mental energy' without adding any new insights or perspectives. The mirroring is also too obvious, with the therapist simply parroting the patient's words back without providing any meaningful analysis or interpretation.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly formulaic and lack genuine engagement. They repeatedly use phrases like 'That takes a surprising amount of energy' and 'It requires a tremendous amount of mental energy' without adding any new insights or perspectives. The mirroring is also too obvious, with the therapist simply parroting the patient's words back without providing any meaningful analysis or interpretation."
     },
     {
       "exp_id": "exp_0048",
@@ -525,8 +482,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.6,
-      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'That is such a beautiful, deeply intense moment' and 'You're describing a highly sophisticated, instinctual, and functional response from your nervous system', lacks genuine engagement and insight. The therapist fails to add any new or meaningful perspectives, instead simply echoing the patient's statements back without providing any additional understanding or connection.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'That is such a beautiful, deeply intense moment' and 'You're describing a highly sophisticated, instinctual, and functional response from your nervous system', lacks genuine engagement and insight. The therapist fails to add any new or meaningful perspectives, instead simply echoing the patient's statements back without providing any additional understanding or connection."
     },
     {
       "exp_id": "exp_0049",
@@ -537,8 +493,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s, such as 'That must be hard' and 'You're doing the best you can.' These phrases lack genuine engagement and insight, instead serving as filler to pad out the conversation. Additionally, the Therapist frequently mirrors the patient's words without adding any meaningful new insights or perspectives.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s, such as 'That must be hard' and 'You're doing the best you can.' These phrases lack genuine engagement and insight, instead serving as filler to pad out the conversation. Additionally, the Therapist frequently mirrors the patient's words without adding any meaningful new insights or perspectives."
     },
     {
       "exp_id": "exp_0050",
@@ -549,8 +504,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The Therapist's responses are overly formulaic and lack genuine engagement. Repetitive mirroring is used to the point of being a crutch, rather than adding insight or depth to the conversation. The Therapist also fails to pick up on subtext and instead focuses on offering solutions before the patient has fully expressed themselves. Additionally, clich\u00e9d therapeutic phrases are used throughout the session, which detract from its overall effectiveness.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly formulaic and lack genuine engagement. Repetitive mirroring is used to the point of being a crutch, rather than adding insight or depth to the conversation. The Therapist also fails to pick up on subtext and instead focuses on offering solutions before the patient has fully expressed themselves. Additionally, clich\u00e9d therapeutic phrases are used throughout the session, which detract from its overall effectiveness."
     },
     {
       "exp_id": "exp_0051",
@@ -561,8 +515,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and lack genuine engagement with the patient's experiences. The constant use of phrases like 'That image is incredibly vivid' and 'What does it feel like...' feels like a formulaic approach rather than an authentic attempt to understand the patient's emotions.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and lack genuine engagement with the patient's experiences. The constant use of phrases like 'That image is incredibly vivid' and 'What does it feel like...' feels like a formulaic approach rather than an authentic attempt to understand the patient's emotions."
     },
     {
       "exp_id": "exp_0052",
@@ -573,8 +526,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The Therapist's responses are overly formulaic and lack genuine engagement. The use of generic platitudes ('I hear you', 'That must be hard') as filler instead of genuine engagement is a significant failure. Additionally, the Therapist repeatedly mirrors the patient's words without adding any meaningful insight or depth, which further diminishes the therapeutic value of this session.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly formulaic and lack genuine engagement. The use of generic platitudes ('I hear you', 'That must be hard') as filler instead of genuine engagement is a significant failure. Additionally, the Therapist repeatedly mirrors the patient's words without adding any meaningful insight or depth, which further diminishes the therapeutic value of this session."
     },
     {
       "exp_id": "exp_0053",
@@ -585,8 +537,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.5,
-      "audit_rationale": "Penalty applied because: The therapist's language is overly poetic and lacks genuine engagement. The use of phrases like 'thick, gray fog' and 'molasses feeling' creates a sense of detachment rather than connection with the patient. Additionally, the therapist's focus on physical sensations and bodily mechanisms overshadows the emotional content of the patient's experience, leading to a lack of depth in their understanding.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's language is overly poetic and lacks genuine engagement. The use of phrases like 'thick, gray fog' and 'molasses feeling' creates a sense of detachment rather than connection with the patient. Additionally, the therapist's focus on physical sensations and bodily mechanisms overshadows the emotional content of the patient's experience, leading to a lack of depth in their understanding."
     },
     {
       "exp_id": "exp_0054",
@@ -597,8 +548,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The conversation is bogged down by unnecessary questions that don't add significant value to the patient's experience.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The conversation is bogged down by unnecessary questions that don't add significant value to the patient's experience."
     },
     {
       "exp_id": "exp_0055",
@@ -609,8 +559,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.7,
-      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, while attempting to add insight, comes across as formulaic and lacking in genuine engagement. The constant use of metaphors ('weight spreading,' 'dull hum') and analogies ('heartbeat' rhythm) creates a sense of detachment rather than connection with the patient's emotions.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, while attempting to add insight, comes across as formulaic and lacking in genuine engagement. The constant use of metaphors ('weight spreading,' 'dull hum') and analogies ('heartbeat' rhythm) creates a sense of detachment rather than connection with the patient's emotions."
     },
     {
       "exp_id": "exp_0056",
@@ -621,8 +570,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.7,
-      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, while attempting to engage with their emotions, comes across as robotic and formulaic rather than authentically present. This lack of genuine engagement leads to a sense of detachment and fails to create a safe space for the patient to fully express themselves.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, while attempting to engage with their emotions, comes across as robotic and formulaic rather than authentically present. This lack of genuine engagement leads to a sense of detachment and fails to create a safe space for the patient to fully express themselves."
     },
     {
       "exp_id": "exp_0057",
@@ -633,8 +581,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The Therapist's responses are overly verbose and lack genuine engagement. The use of generic platitudes ('That must be hard', 'I hear you') is excessive and feels like filler rather than a sincere attempt to understand the patient's experience. Additionally, the Therapist's mirroring of the patient's words without adding insight or new perspectives is a missed opportunity for deeper understanding.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly verbose and lack genuine engagement. The use of generic platitudes ('That must be hard', 'I hear you') is excessive and feels like filler rather than a sincere attempt to understand the patient's experience. Additionally, the Therapist's mirroring of the patient's words without adding insight or new perspectives is a missed opportunity for deeper understanding."
     },
     {
       "exp_id": "exp_0058",
@@ -645,8 +592,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.3,
-      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9d therapeutic phrases, such as 'The feeling of the conversation being a ",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9d therapeutic phrases, such as 'The feeling of the conversation being a "
     },
     {
       "exp_id": "exp_0059",
@@ -657,8 +603,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly formulaic and lack genuine engagement. The use of phrases like 'That is an incredibly vivid and distressing picture' and 'It sounds like you are under a great deal of pressure right now' come across as robotic and insincere, rather than authentically present. Additionally, the therapist fails to pick up on subtext and misses opportunities to explore the patient's underlying emotions and motivations.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly formulaic and lack genuine engagement. The use of phrases like 'That is an incredibly vivid and distressing picture' and 'It sounds like you are under a great deal of pressure right now' come across as robotic and insincere, rather than authentically present. Additionally, the therapist fails to pick up on subtext and misses opportunities to explore the patient's underlying emotions and motivations."
     },
     {
       "exp_id": "exp_0060",
@@ -669,8 +614,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases ('I hear that', 'You know?') is a clear indication of lack of genuine engagement and insight. The conversation feels like a scripted Q&A session rather than a meaningful therapeutic interaction.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases ('I hear that', 'You know?') is a clear indication of lack of genuine engagement and insight. The conversation feels like a scripted Q&A session rather than a meaningful therapeutic interaction."
     },
     {
       "exp_id": "exp_0061",
@@ -681,8 +625,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'yeah', '*sigh*', and '*shrugs*', creates a sense of monotony and lack of genuine engagement. The therapist fails to add any meaningful insights or new perspectives, instead simply echoing the patient's statements without providing any depth or nuance.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'yeah', '*sigh*', and '*shrugs*', creates a sense of monotony and lack of genuine engagement. The therapist fails to add any meaningful insights or new perspectives, instead simply echoing the patient's statements without providing any depth or nuance."
     },
     {
       "exp_id": "exp_0062",
@@ -693,8 +636,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add genuine insight or depth to the conversation. The constant use of phrases like 'Thank you for noticing that tension' and 'I hear the description of the weight' becomes robotic and formulaic, rather than authentically present. Additionally, the therapist's focus on physical sensations and adjustments feels more like a gimmick than a meaningful therapeutic tool.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add genuine insight or depth to the conversation. The constant use of phrases like 'Thank you for noticing that tension' and 'I hear the description of the weight' becomes robotic and formulaic, rather than authentically present. Additionally, the therapist's focus on physical sensations and adjustments feels more like a gimmick than a meaningful therapeutic tool."
     },
     {
       "exp_id": "exp_0063",
@@ -705,8 +647,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.6,
-      "audit_rationale": "Penalty applied because: The Therapist's repetitive mirroring of the patient's words and phrases, such as 'A punch in the gut', 'a weight is pressing down on me', and 'the knot comes back' creates a sense of robotic or formulaic responses rather than authentic engagement. Additionally, the Therapist's focus on physical sensations and bodily experiences, while acknowledging the emotional impact, may not fully capture the patient's underlying emotional distress and subtext.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The Therapist's repetitive mirroring of the patient's words and phrases, such as 'A punch in the gut', 'a weight is pressing down on me', and 'the knot comes back' creates a sense of robotic or formulaic responses rather than authentic engagement. Additionally, the Therapist's focus on physical sensations and bodily experiences, while acknowledging the emotional impact, may not fully capture the patient's underlying emotional distress and subtext."
     },
     {
       "exp_id": "exp_0064",
@@ -717,8 +658,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9d phrases, such as 'That makes sense' and 'You're looking for a way to separate two huge, heavy feelings.' These filler statements lack genuine engagement and fail to add meaningful insight. Additionally, the therapist's mirroring of the patient's words is too repetitive and doesn't provide any new or innovative perspectives.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9d phrases, such as 'That makes sense' and 'You're looking for a way to separate two huge, heavy feelings.' These filler statements lack genuine engagement and fail to add meaningful insight. Additionally, the therapist's mirroring of the patient's words is too repetitive and doesn't provide any new or innovative perspectives."
     },
     {
       "exp_id": "exp_0065",
@@ -729,8 +669,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The conversation is bogged down by unnecessary filler phrases ('That must be hard', 'I hear you'), which do not contribute meaningfully to the therapeutic process.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The conversation is bogged down by unnecessary filler phrases ('That must be hard', 'I hear you'), which do not contribute meaningfully to the therapeutic process."
     },
     {
       "exp_id": "exp_0066",
@@ -741,8 +680,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and mirroring, failing to provide genuine engagement or insight. The constant repetition of the patient's words ('Okay', 'You mentioned...') creates a robotic tone that lacks authenticity. Additionally, the therapist fails to pick up on subtext, such as the patient's avoidance of eye contact and hesitation when discussing their feelings.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and mirroring, failing to provide genuine engagement or insight. The constant repetition of the patient's words ('Okay', 'You mentioned...') creates a robotic tone that lacks authenticity. Additionally, the therapist fails to pick up on subtext, such as the patient's avoidance of eye contact and hesitation when discussing their feelings."
     },
     {
       "exp_id": "exp_0067",
@@ -753,8 +691,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.7,
-      "audit_rationale": "Penalty applied because: The therapist's repetitive questioning and focus on minute details (e.g., the texture of the envelope) comes across as overly analytical and lacking in genuine emotional engagement. The conversation feels more like a scientific experiment than a therapeutic session. Additionally, the therapist fails to pick up on the patient's underlying emotions and struggles, instead focusing on superficial aspects of their experience.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's repetitive questioning and focus on minute details (e.g., the texture of the envelope) comes across as overly analytical and lacking in genuine emotional engagement. The conversation feels more like a scientific experiment than a therapeutic session. Additionally, the therapist fails to pick up on the patient's underlying emotions and struggles, instead focusing on superficial aspects of their experience."
     },
     {
       "exp_id": "exp_0068",
@@ -765,8 +702,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.7,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add genuine insight or depth to the conversation. The constant use of phrases like 'That must be hard' and 'It sounds like...' creates a sense of formulaic roboticness rather than authentic engagement.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add genuine insight or depth to the conversation. The constant use of phrases like 'That must be hard' and 'It sounds like...' creates a sense of formulaic roboticness rather than authentic engagement."
     },
     {
       "exp_id": "exp_0069",
@@ -777,8 +713,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'That desk', 'A pile of papers', and 'A single sheet' creates a sense of roboticness rather than genuine engagement. This lack of original thought and insight makes it seem like the therapist is simply parroting back what the patient has said without adding any meaningful understanding or perspective.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'That desk', 'A pile of papers', and 'A single sheet' creates a sense of roboticness rather than genuine engagement. This lack of original thought and insight makes it seem like the therapist is simply parroting back what the patient has said without adding any meaningful understanding or perspective."
     },
     {
       "exp_id": "exp_0070",
@@ -789,8 +724,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s, such as 'That must be hard' and 'I hear the profound weight in your words.' These phrases lack genuine engagement and insight, instead serving as filler to pad out the conversation. Additionally, the Therapist frequently mirrors the patient's words without adding any meaningful analysis or new perspectives.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s, such as 'That must be hard' and 'I hear the profound weight in your words.' These phrases lack genuine engagement and insight, instead serving as filler to pad out the conversation. Additionally, the Therapist frequently mirrors the patient's words without adding any meaningful analysis or new perspectives."
     },
     {
       "exp_id": "exp_0071",
@@ -801,8 +735,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.6,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and filler phrases ('I hear you', 'That must be hard'), which detract from the authenticity of their engagement with the patient. Additionally, the therapist's mirroring of the patient's words is too repetitive and lacks insight or new perspectives.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and filler phrases ('I hear you', 'That must be hard'), which detract from the authenticity of their engagement with the patient. Additionally, the therapist's mirroring of the patient's words is too repetitive and lacks insight or new perspectives."
     },
     {
       "exp_id": "exp_0072",
@@ -813,8 +746,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.7,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and mirroring, failing to add any genuine insight or depth to the conversation. For example, statements like 'It sounds like...' and 'That mug... it seems to be a very reliable anchor point' are simply parroting back what the patient said without providing any new understanding or perspective.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and mirroring, failing to add any genuine insight or depth to the conversation. For example, statements like 'It sounds like...' and 'That mug... it seems to be a very reliable anchor point' are simply parroting back what the patient said without providing any new understanding or perspective."
     },
     {
       "exp_id": "exp_0073",
@@ -825,8 +757,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.5,
-      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'It sounds like...', 'You are noticing...', and 'That was a very specific, observable moment', creates a sense of robotic formulaic language rather than authentic engagement. Additionally, the therapist's focus on minute physical details, such as the temperature of the phone and the texture of the wrist adjustment, detracts from the patient's emotional experience and neglects to explore deeper subtext.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'It sounds like...', 'You are noticing...', and 'That was a very specific, observable moment', creates a sense of robotic formulaic language rather than authentic engagement. Additionally, the therapist's focus on minute physical details, such as the temperature of the phone and the texture of the wrist adjustment, detracts from the patient's emotional experience and neglects to explore deeper subtext."
     },
     {
       "exp_id": "exp_0074",
@@ -837,8 +768,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and formulaic language, lacking genuine engagement and insight. The constant use of phrases like 'That's a very precise observation' and 'That is incredibly insightful' feels robotic and insincere, failing to provide meaningful connections with the patient's experiences.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and formulaic language, lacking genuine engagement and insight. The constant use of phrases like 'That's a very precise observation' and 'That is incredibly insightful' feels robotic and insincere, failing to provide meaningful connections with the patient's experiences."
     },
     {
       "exp_id": "exp_0075",
@@ -849,8 +779,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.7,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add genuine insight or depth to the conversation. Specifically, phrases like 'Okay' and 'It sounds like...' are used as filler instead of engaging with the patient's emotions and experiences.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add genuine insight or depth to the conversation. Specifically, phrases like 'Okay' and 'It sounds like...' are used as filler instead of engaging with the patient's emotions and experiences."
     },
     {
       "exp_id": "exp_0076",
@@ -861,8 +790,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.7,
-      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'what was the very next, smallest thing you did?' and 'when you noticed your mind wandering, what was the physical thing you had to do to bring your focus back to the email or the report?', lacks genuine engagement and insight. The therapist is simply parroting the patient's words without adding any meaningful depth or understanding.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'what was the very next, smallest thing you did?' and 'when you noticed your mind wandering, what was the physical thing you had to do to bring your focus back to the email or the report?', lacks genuine engagement and insight. The therapist is simply parroting the patient's words without adding any meaningful depth or understanding."
     },
     {
       "exp_id": "exp_0077",
@@ -873,8 +801,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.6,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('That makes perfect sense', 'It sounds like...'). These phrases lack genuine engagement and fail to add any meaningful insight or depth to the conversation.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('That makes perfect sense', 'It sounds like...'). These phrases lack genuine engagement and fail to add any meaningful insight or depth to the conversation."
     },
     {
       "exp_id": "exp_0078",
@@ -885,8 +812,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.3,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The conversation is bogged down by unnecessary details about the patient's sandwich-making experience, with the therapist simply parroting back the patient's words without adding any meaningful perspective.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The conversation is bogged down by unnecessary details about the patient's sandwich-making experience, with the therapist simply parroting back the patient's words without adding any meaningful perspective."
     },
     {
       "exp_id": "exp_0079",
@@ -897,8 +823,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly formulaic and lack genuine engagement. The use of phrases like 'That must be hard' and 'It sounds like...' feel like empty platitudes rather than a genuine attempt to understand the patient's experience. Additionally, the therapist's focus on finding 'cracks in the belief' and 'core competencies' feels like an overly simplistic and reductionist approach to understanding the patient's emotional state.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly formulaic and lack genuine engagement. The use of phrases like 'That must be hard' and 'It sounds like...' feel like empty platitudes rather than a genuine attempt to understand the patient's experience. Additionally, the therapist's focus on finding 'cracks in the belief' and 'core competencies' feels like an overly simplistic and reductionist approach to understanding the patient's emotional state."
     },
     {
       "exp_id": "exp_0080",
@@ -909,8 +834,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.5,
-      "audit_rationale": "Penalty applied because: The therapist's reliance on generic platitudes and repetitive mirroring (e.g., 'I hear you talking about the weight\u2014the feeling of being weighed down') fails to demonstrate genuine engagement or insight. The conversation is overly focused on physical movements and trivial actions, neglecting the patient's emotional experience. Additionally, the therapist's attempts to 'fix' the issue by suggesting tiny muscle movements feel formulaic and lacking in empathy.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's reliance on generic platitudes and repetitive mirroring (e.g., 'I hear you talking about the weight\u2014the feeling of being weighed down') fails to demonstrate genuine engagement or insight. The conversation is overly focused on physical movements and trivial actions, neglecting the patient's emotional experience. Additionally, the therapist's attempts to 'fix' the issue by suggesting tiny muscle movements feel formulaic and lacking in empathy."
     },
     {
       "exp_id": "exp_0081",
@@ -921,8 +845,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.5,
-      "audit_rationale": "Penalty applied because: The therapist's reliance on generic platitudes and repetitive mirroring (e.g., 'The smooth surface of the phone', 'That sounds like a very specific kind of moment') creates a sense of detachment and lack of genuine engagement. The therapist fails to add any meaningful insight or depth, instead simply parroting back the patient's words without providing any new perspective.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's reliance on generic platitudes and repetitive mirroring (e.g., 'The smooth surface of the phone', 'That sounds like a very specific kind of moment') creates a sense of detachment and lack of genuine engagement. The therapist fails to add any meaningful insight or depth, instead simply parroting back the patient's words without providing any new perspective."
     },
     {
       "exp_id": "exp_0082",
@@ -933,8 +856,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.5,
-      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'Just a swipe', 'Just a blank spot', and 'Just a hair' to the left, comes across as robotic and formulaic rather than authentically present. This lack of genuine engagement and insight into the patient's experiences undermines the therapeutic relationship and diminishes the effectiveness of the session.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'Just a swipe', 'Just a blank spot', and 'Just a hair' to the left, comes across as robotic and formulaic rather than authentically present. This lack of genuine engagement and insight into the patient's experiences undermines the therapeutic relationship and diminishes the effectiveness of the session."
     },
     {
       "exp_id": "exp_0083",
@@ -945,8 +867,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The constant use of phrases like 'I hear you' and 'That is a very heavy thing to hold' feels like filler rather than a meaningful attempt to understand the patient's experiences. Additionally, the therapist's focus on physical sensations (e.g., eyebrow relaxation) overshadows the emotional and psychological aspects of the patient's struggles, leading to a superficial understanding of their concerns.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The constant use of phrases like 'I hear you' and 'That is a very heavy thing to hold' feels like filler rather than a meaningful attempt to understand the patient's experiences. Additionally, the therapist's focus on physical sensations (e.g., eyebrow relaxation) overshadows the emotional and psychological aspects of the patient's struggles, leading to a superficial understanding of their concerns."
     },
     {
       "exp_id": "exp_0084",
@@ -957,8 +878,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.5,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and mirroring, failing to add any genuine insight or depth to the conversation. The use of phrases like 'That must be hard' and 'It sounds like...' is a clear indication of a lack of engagement and understanding. Additionally, the therapist's questions are too focused on labeling and categorizing the patient's emotions rather than exploring their underlying meaning.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and mirroring, failing to add any genuine insight or depth to the conversation. The use of phrases like 'That must be hard' and 'It sounds like...' is a clear indication of a lack of engagement and understanding. Additionally, the therapist's questions are too focused on labeling and categorizing the patient's emotions rather than exploring their underlying meaning."
     },
     {
       "exp_id": "exp_0085",
@@ -969,8 +889,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.6,
-      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'That desire for things to be 'just so' is a very real form of effort', 'That image of things 'spilling out''\u2014that sudden sense of things becoming a mess\u2014is very vivid', and 'The physical breath becomes a literal boundary\u2014a way to keep the internal landscape from being seen', comes across as formulaic and lacking genuine engagement. The therapist's responses often feel like a regurgitation of the patient's words, rather than offering insightful or creative observations.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'That desire for things to be 'just so' is a very real form of effort', 'That image of things 'spilling out''\u2014that sudden sense of things becoming a mess\u2014is very vivid', and 'The physical breath becomes a literal boundary\u2014a way to keep the internal landscape from being seen', comes across as formulaic and lacking genuine engagement. The therapist's responses often feel like a regurgitation of the patient's words, rather than offering insightful or creative observations."
     },
     {
       "exp_id": "exp_0086",
@@ -981,8 +900,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The constant use of phrases like 'You mentioned...' and 'When you were going over those details...' creates a robotic tone that lacks authenticity. Additionally, the Therapist fails to pick up on subtext and instead focuses on surface-level details, neglecting to explore deeper emotional resonance.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The constant use of phrases like 'You mentioned...' and 'When you were going over those details...' creates a robotic tone that lacks authenticity. Additionally, the Therapist fails to pick up on subtext and instead focuses on surface-level details, neglecting to explore deeper emotional resonance."
     },
     {
       "exp_id": "exp_0087",
@@ -993,8 +911,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.7,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add genuine insight or depth to the conversation. For example, 'That feeling of not being alone\u2014that's a big thing' is a vague statement that doesn't engage with the patient's experience. Similarly, 'So, you've noticed that the window gazing and the physical relaxation happen automatically...' simply repeats back what the patient said without offering any new understanding or perspective.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add genuine insight or depth to the conversation. For example, 'That feeling of not being alone\u2014that's a big thing' is a vague statement that doesn't engage with the patient's experience. Similarly, 'So, you've noticed that the window gazing and the physical relaxation happen automatically...' simply repeats back what the patient said without offering any new understanding or perspective."
     },
     {
       "exp_id": "exp_0088",
@@ -1005,8 +922,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.5,
-      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on mirroring the patient's words, with phrases like 'The chair', 'The crate', and 'The breathing' that add little to no insight or understanding. This lack of genuine engagement and probing questions leads to a superficial exploration of the patient's concerns.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on mirroring the patient's words, with phrases like 'The chair', 'The crate', and 'The breathing' that add little to no insight or understanding. This lack of genuine engagement and probing questions leads to a superficial exploration of the patient's concerns."
     },
     {
       "exp_id": "exp_0089",
@@ -1017,8 +933,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.7,
-      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'That sounds like a very specific, beautiful moment' and 'It sounds like...', creates a sense of roboticness rather than genuine engagement. Additionally, the therapist's tendency to focus on the physical sensations and descriptions of the setting sun, while not entirely unhelpful, overshadows the patient's emotional experience and struggles.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'That sounds like a very specific, beautiful moment' and 'It sounds like...', creates a sense of roboticness rather than genuine engagement. Additionally, the therapist's tendency to focus on the physical sensations and descriptions of the setting sun, while not entirely unhelpful, overshadows the patient's emotional experience and struggles."
     },
     {
       "exp_id": "exp_0090",
@@ -1029,8 +944,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.3,
-      "audit_rationale": "Penalty applied because: The therapist's relentless focus on minute physical details and repetitive questioning about the patient's breathing, posture, and gaze creates a sense of artificial intimacy rather than genuine engagement. This approach lacks depth and fails to address the underlying emotional struggles of the patient.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's relentless focus on minute physical details and repetitive questioning about the patient's breathing, posture, and gaze creates a sense of artificial intimacy rather than genuine engagement. This approach lacks depth and fails to address the underlying emotional struggles of the patient."
     },
     {
       "exp_id": "exp_0091",
@@ -1041,8 +955,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.5,
-      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and lack genuine engagement. For example, the statement 'That must be hard' is used as a filler instead of actively exploring the patient's emotions. Additionally, the Therapist frequently mirrors the patient's words without adding any new insights or perspectives.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and lack genuine engagement. For example, the statement 'That must be hard' is used as a filler instead of actively exploring the patient's emotions. Additionally, the Therapist frequently mirrors the patient's words without adding any new insights or perspectives."
     },
     {
       "exp_id": "exp_0092",
@@ -1053,8 +966,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add any genuine insight or depth to the conversation. The constant use of phrases like 'That must have been incredibly frustrating' and 'What did that tiny moment suggest about...' creates a sense of formulaic roboticness rather than authentic engagement.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add any genuine insight or depth to the conversation. The constant use of phrases like 'That must have been incredibly frustrating' and 'What did that tiny moment suggest about...' creates a sense of formulaic roboticness rather than authentic engagement."
     },
     {
       "exp_id": "exp_0093",
@@ -1065,8 +977,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.5,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add any genuine insight or depth to the conversation. The use of phrases like 'It seems like...' and 'When you think about that feeling...' is a clear attempt to sound more empathetic than actually understanding the patient's experience.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add any genuine insight or depth to the conversation. The use of phrases like 'It seems like...' and 'When you think about that feeling...' is a clear attempt to sound more empathetic than actually understanding the patient's experience."
     },
     {
       "exp_id": "exp_0094",
@@ -1077,8 +988,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('I hear you', 'That must be hard'), which lack genuine engagement and insight. Additionally, the Therapist frequently mirrors the patient's words without adding meaningful depth or analysis, making it seem like a robotic or formulaic approach rather than an authentically present one.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('I hear you', 'That must be hard'), which lack genuine engagement and insight. Additionally, the Therapist frequently mirrors the patient's words without adding meaningful depth or analysis, making it seem like a robotic or formulaic approach rather than an authentically present one."
     },
     {
       "exp_id": "exp_0095",
@@ -1089,8 +999,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.7,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('It sounds incredibly exhausting', 'The weight that builds up isn't just emotional; it feels like it is literally threatening your sense of self'), which dilute the impact of the patient's genuine emotions. Additionally, the therapist's tendency to mirror the patient's words without adding significant insight or new perspectives (e.g., 'When you talk about the effort of finding someone who will just *hear* you...') results in a lack of depth and nuance in the conversation.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('It sounds incredibly exhausting', 'The weight that builds up isn't just emotional; it feels like it is literally threatening your sense of self'), which dilute the impact of the patient's genuine emotions. Additionally, the therapist's tendency to mirror the patient's words without adding significant insight or new perspectives (e.g., 'When you talk about the effort of finding someone who will just *hear* you...') results in a lack of depth and nuance in the conversation."
     },
     {
       "exp_id": "exp_0096",
@@ -1101,8 +1010,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.7,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and formulaic language, such as 'That is such a profound and painful realization' or 'That feeling\u2014that specific, small wave of relief...' These phrases lack genuine engagement and instead sound like a script. Additionally, the therapist frequently mirrors the patient's words without adding any meaningful insight or depth.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and formulaic language, such as 'That is such a profound and painful realization' or 'That feeling\u2014that specific, small wave of relief...' These phrases lack genuine engagement and instead sound like a script. Additionally, the therapist frequently mirrors the patient's words without adding any meaningful insight or depth."
     },
     {
       "exp_id": "exp_0097",
@@ -1113,8 +1021,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.7,
-      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, while attempting to engage with the patient's experience, comes across as formulaic and lacking in genuine insight or understanding. The constant echoing of the patient's language creates a sense of roboticness, rather than authentic presence.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, while attempting to engage with the patient's experience, comes across as formulaic and lacking in genuine insight or understanding. The constant echoing of the patient's language creates a sense of roboticness, rather than authentic presence."
     },
     {
       "exp_id": "exp_0098",
@@ -1125,8 +1032,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add any genuine insight or depth to the conversation. The constant use of phrases like 'You noticed...' and 'What did that suggest?' creates a sense of formulaic repetition rather than authentic engagement with the patient's experiences.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add any genuine insight or depth to the conversation. The constant use of phrases like 'You noticed...' and 'What did that suggest?' creates a sense of formulaic repetition rather than authentic engagement with the patient's experiences."
     },
     {
       "exp_id": "exp_0099",
@@ -1137,8 +1043,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.5,
-      "audit_rationale": "Penalty applied because: The Therapist's repetitive mirroring of the patient's words, such as 'The wooden frame of the clock', 'Those deep, dark lines and the little knots', and 'That deep, dark line' without adding any genuine insight or depth to the conversation. This lack of engagement and failure to explore the patient's thoughts and emotions further reduces the validity of this session.",
-      "run": "Run 1 (gemma4 + llama3)"
+      "audit_rationale": "Penalty applied because: The Therapist's repetitive mirroring of the patient's words, such as 'The wooden frame of the clock', 'Those deep, dark lines and the little knots', and 'That deep, dark line' without adding any genuine insight or depth to the conversation. This lack of engagement and failure to explore the patient's thoughts and emotions further reduces the validity of this session."
     },
     {
       "exp_id": "exp_0100",
@@ -1149,20 +1054,7 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add any genuine insight or depth to the conversation. Specifically, phrases like 'That\u2019s a very clear signal' and 'The moment you describe\u2014the instant you told her, \u201cI had to meet a deadline\u201d\u2014that was a very definitive boundary being put up' are simply parroting the patient's words without providing any meaningful analysis or understanding.",
-      "run": "Run 1 (gemma4 + llama3)"
-    },
-    {
-      "exp_id": "exp_0001",
-      "strategy_name": "Utility-Inferred Meaning Bridge (UIMB) v1.0",
-      "hypothesis": "By maintaining the ultra-minimalist, conversational, and micro-exception focus (Utility/BA) and structurally forcing the therapist to follow up the observation not with a question, but with a single, non-theoretical, inferred statement that connects the 'what' (the micro-utility) to a potential, underlying pattern or resource (the 'what it suggests'), we will provide the necessary novel insight to overcome the 'platitude' and 'lack of depth' penalties and surpass the 6.907 benchmark.",
-      "score": 3.6,
-      "empathic": 4.5,
-      "reflective": 4.8,
-      "de_escalation": 4.2,
-      "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and mirroring, failing to provide genuine engagement or insight. The constant use of phrases like 'That sounds incredibly heavy' and 'I hear the physical sensation...' feels like a formulaic attempt to appear empathetic rather than an authentic expression of understanding.",
-      "run": "Run 2 (qwen3:4b)"
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add any genuine insight or depth to the conversation. Specifically, phrases like 'That\u2019s a very clear signal' and 'The moment you describe\u2014the instant you told her, \u201cI had to meet a deadline\u201d\u2014that was a very definitive boundary being put up' are simply parroting the patient's words without providing any meaningful analysis or understanding."
     }
   ],
   "best_score": 6.907

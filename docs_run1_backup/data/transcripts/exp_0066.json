@@ -1,0 +1,92 @@
+{
+  "id": "exp_0066",
+  "timestamp": "2026-04-19T04:30:02.162209",
+  "strategy": {
+    "name": "Minimal Conversational Utility Mapping (MCU-M)",
+    "hypothesis": "By adopting an ultra-minimalist, highly conversational, and purely 'what-is-observable' persona, and structuring the inquiry to focus only on micro-behaviors and immediate, concrete functional details (Utility/BA), we will eliminate all penalties for formulaic language and generic platitudes, achieving a perceived level of natural authenticity and clinical utility necessary to surpass the 6.907 score.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Jae",
+    "age": 35,
+    "occupation": "Product Manager at a tech startup",
+    "presenting_issue": "I'm feeling overwhelmed with work stress and struggling to sleep again.",
+    "background_story": "As a second-generation Korean-Canadian, I was raised in a household where emotional expression was seen as a weakness. I've always felt the need to maintain a strong exterior, even when hiding behind physical symptoms like chronic headaches and stomach pain. My parents always say that therapy is for 'crazy people' and that we should just work harder to solve our problems.",
+    "personality": "I tend to be indirect in my communication, using phrases like 'I'm feeling tired' when I really mean something deeper. I respond well to therapists who can read between the lines and reflect unspoken meaning without forcing disclosure. Direct questions or probing for emotions makes me feel uncomfortable, as if someone is trying to pierce through my armor.",
+    "baseline_phq9": 15,
+    "archetype_label": "Corporate Burnout \u2014 East Asian Face Culture"
+  },
+  "scores": {
+    "total_score": 3.6,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by reflecting the patient's unspoken emotions and deeper meaning throughout the conversation. The therapist also showed strong reflective listening skills by validating the patient's reality without trying to 'fix' them, creating a safe space for the patient to open up.",
+    "audit_multiplier": 0.4,
+    "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and mirroring, failing to provide genuine engagement or insight. The constant repetition of the patient's words ('Okay', 'You mentioned...') creates a robotic tone that lacks authenticity. Additionally, the therapist fails to pick up on subtext, such as the patient's avoidance of eye contact and hesitation when discussing their feelings."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Thank you for making the time to connect today. Please, just take a moment and settle in wherever you are right now. There\u2019s no need to rush anything.\n\nWhenever you feel ready, I\u2019m here to listen."
+    },
+    {
+      "role": "user",
+      "content": "It's fine. Thanks for...understanding. Yeah, I'm just sitting here at my desk, staring at the same spreadsheets on my screen that I've been looking at all day. Just trying to make sense of everything, you know? Work has been crazy lately and my mind is always racing."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you're settled at your desk right now, and the spreadsheets are right there on the screen, which you've been looking at all day."
+    },
+    {
+      "role": "user",
+      "content": "(sigh) Yeah...I just wish I could focus on them without feeling like I'm drowning in a sea of numbers. It's like my brain is stuck in overdrive."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the numbers on the screen are making it really hard to settle your focus right now."
+    },
+    {
+      "role": "user",
+      "content": "(muttering under breath) Yeah...just got an email from our CEO, saying we're behind schedule again...can't seem to catch up no matter how many hours I put in. Just feels like a never-ending cycle of stress and anxiety... (pauses, looking away from the screen)"
+    },
+    {
+      "role": "assistant",
+      "content": "You mentioned getting an email from your CEO about the schedule, and now your gaze is drifting away from the screen."
+    },
+    {
+      "role": "user",
+      "content": "(hesitates, then shrugs) Yeah, it's just a lot to handle sometimes. I mean, I'm supposed to be a product manager, not some kind of superhero who can save the day single-handedly... (trails off, looking at something distant)"
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the weight of the expectations for your role\u2014the product manager role\u2014is a lot to carry. And right now, you're looking at something distant."
+    },
+    {
+      "role": "user",
+      "content": "(looks down, avoiding eye contact) Yeah...it's just hard sometimes. I feel like I'm in way over my head and nobody understands what it's really like to be me. (pauses, collecting thoughts)"
+    },
+    {
+      "role": "assistant",
+      "content": "When you say it's hard, and that you feel like you're in it over your head, I notice your eyes dropping down and you're avoiding eye contact. Is there a specific physical sensation, maybe in your shoulders or your hands, that seems to match that feeling of being overwhelmed?"
+    },
+    {
+      "role": "user",
+      "content": "(fidgets slightly) Ah, no...I don't know what you mean. Just tired, probably. (looks away, rubbing the back of his neck) Maybe I just need a better cup of coffee... (trails off, not meeting eye contact)"
+    },
+    {
+      "role": "assistant",
+      "content": "You mentioned feeling tired, and I noticed the specific action of you rubbing the back of your neck. Was that a movement that felt good, or was it more of a way to occupy the space?"
+    },
+    {
+      "role": "user",
+      "content": "(hesitates, then shrugs) I don't know...I guess it just felt like something to do with my hands. Like, sometimes I'll find myself fidgeting with my pen or tapping my fingers on the desk, and I think that's what was going on here too. (pauses, looking at his hands)"
+    }
+  ]
+}

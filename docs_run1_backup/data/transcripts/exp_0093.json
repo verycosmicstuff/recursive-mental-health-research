@@ -1,0 +1,92 @@
+{
+  "id": "exp_0093",
+  "timestamp": "2026-04-19T08:02:23.047684",
+  "strategy": {
+    "name": "Collaborative Micro-Observation Inquiry (CMOI) v1.0",
+    "hypothesis": "By removing all theoretical framework language (ACT, PCT, CBT, 'process,' 'defusion') and restricting the therapist's output to single, highly conversational, non-judgmental questions that collaboratively investigate the *context* and *conditions* of the patient's most concrete, observable micro-actions or physical sensations, we will eliminate the 'formulaic' and 'platitude' penalties, maximizing perceived naturalness and genuine curiosity, thereby surpassing the 6.907 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Evelyn",
+    "age": 28,
+    "occupation": "Retail Manager",
+    "presenting_issue": "I'm feeling overwhelmed and trapped by my responsibilities as a caregiver to my family, and I don't know how much longer I can keep going.",
+    "background_story": "As the eldest daughter in a big, close-knit Mexican-American family, I've always put others first. When my dad got injured, I dropped out of community college to help support him and my younger siblings. They resent me for being strict, but I just want them to be safe and happy. My parents treat me like an adult, which is nice, but sometimes it feels like they're putting too much on my plate. Lately, I've been feeling really anxious and guilty all the time, wondering if I should be doing more.",
+    "personality": "I'm a hard worker and a people-pleaser. When you ask me something, I'll give you a detailed answer and make sure you're taken care of. Sometimes I might come across as a bit too rigid or controlling, but it's just because I want to make sure everyone is okay. I can get defensive if you question my motives or suggest that I'm doing things for the wrong reasons.",
+    "baseline_phq9": 17,
+    "archetype_label": "Eldest Daughter Trap \u2014 Latin American Familismo"
+  },
+  "scores": {
+    "total_score": 4.5,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by acknowledging Evelyn's emotional labor and validating her feelings of being overwhelmed. The reflective listening was superb, with the therapist mirroring Evelyn's language and validating her reality without trying to 'fix' her. The de-escalation marker is high because Evelyn's tone shifted from anxious to more calm and reflective throughout the conversation.",
+    "audit_multiplier": 0.5,
+    "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add any genuine insight or depth to the conversation. The use of phrases like 'It seems like...' and 'When you think about that feeling...' is a clear attempt to sound more empathetic than actually understanding the patient's experience."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Thanks for taking the time to chat today. I'm here just to listen and observe whatever comes up. No pressure at all.\n\nWhenever you're ready, we can start wherever you feel most comfortable."
+    },
+    {
+      "role": "user",
+      "content": "Hi. Thanks for understanding. To be honest, it's a bit hard for me to relax when talking about this stuff. It feels like I'm opening myself up too much. But I guess that's what therapy is for, right? *pauses* So... where do you want me to start?"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like just talking about this stuff, even just getting started, takes a real amount of effort.\n\nThere's no right place to start. We can just follow whatever feels easiest right now."
+    },
+    {
+      "role": "user",
+      "content": "*sigh* Yeah, I guess that sounds good. It's just... sometimes it feels like my family is all expecting me to be this rock, you know? And I don't want to let them down or anything. But at the same time, I'm starting to feel really burnt out and overwhelmed... *trails off*"
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like there's a lot of different things pulling at you right now\u2014the expectations from one side, and this feeling of being really drained on the other.\n\nWhen you think about that feeling of being overwhelmed, what was the last thing you were doing physically right before that feeling came up?"
+    },
+    {
+      "role": "user",
+      "content": "Honestly? I was just trying to get my siblings to do their homework after school. My mom had asked me to keep an eye on them and make sure they got it done, so I was trying to be super strict and organized... but they just wouldn't listen and kept arguing with me. By the time they finally did their work, I was already feeling like I was at my breaking point."
+    },
+    {
+      "role": "assistant",
+      "content": "So, you were in the space with them, helping them with their homework. When the arguing started and you felt that tension building, what was the immediate environment like? Was the light different, or were there any specific sounds around you?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah... it was just a typical afternoon at our house. The sunlight was streaming in through the living room window, making everything feel bright and loud. And my siblings' arguing was like a constant din in the background, kind of hard to tune out. I remember feeling like I was getting more and more anxious as they kept bickering... it was like my whole body started to tighten up."
+    },
+    {
+      "role": "assistant",
+      "content": "The sunlight streaming in, the constant noise... so you were in that bright, noisy space, trying to manage the homework.\n\nWhen your body started to tighten up, were you sitting down, or were you standing up at that moment? And what were your hands doing?"
+    },
+    {
+      "role": "user",
+      "content": "I was standing up, actually. I remember pacing back and forth between the living room and the kitchen, trying to get my siblings to focus. My hands were probably clenched into fists, like they sometimes do when I'm feeling frustrated or anxious... *pauses* Yeah, that's probably what happened."
+    },
+    {
+      "role": "assistant",
+      "content": "Pacing back and forth between the living room and the kitchen, with your hands clenched... it sounds like a lot of movement in a bright, noisy space.\n\nWhen you moved from the living room to the kitchen, what was the floor like? Was it hard wood, carpet, or something else?"
+    },
+    {
+      "role": "user",
+      "content": "Uh-huh... it was tile. Our kitchen has that kind of tile flooring, and when I paced back and forth between the two rooms, my feet were making this echoing sound on the tile. It was all just part of the chaos and noise in my head at the time... *sigh*"
+    },
+    {
+      "role": "assistant",
+      "content": "The echoing sound on the tile, moving between the two rooms... that seems like a very specific, physical detail of the afternoon.\n\nWhen you were pacing, was there anything else in the kitchen or living room\u2014a specific object, maybe a picture or a book\u2014that caught your eye, even for just a second?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah... there was this one framed photo on the kitchen counter that always catches my eye. It's a picture of my whole family when we were all younger\u2014my parents and siblings, smiling and happy. I think it was taken during some kind of family vacation or something. Anyway, as I was pacing, my gaze kept drifting to that photo... like, for just a second at a time."
+    }
+  ]
+}
