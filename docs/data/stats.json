@@ -1154,38 +1154,14 @@
     },
     {
       "exp_id": "exp_0001",
-      "strategy_name": "Utility-Inferred Meaning Bridge (UIMB) v1.0",
-      "hypothesis": "Seeded from Run 1 best strategy (score 6.907)",
-      "score": 6.907,
+      "strategy_name": "PCT-ACT Resource Bridging (PARB) v1.0",
+      "hypothesis": "By replacing the 'Inferred Bridge' (which leads to pseudo-insight) with a 'Reflection-Value-Connection' sequence, which grounds the conversation in the patient's stated values and current behaviors (PCT/ACT), we will provide concrete, non-interpretive support, thus avoiding the 'pseudo-insight' penalty and achieving a higher score by focusing on demonstrable behavioral change and genuine understanding.",
+      "score": 2.8,
       "empathic": 4.5,
-      "reflective": 4.8,
-      "de_escalation": 4.2,
-      "audit_mult": 1.0,
-      "audit_rationale": "Seeded from Run 1 champion",
-      "run": "Run 2 (qwen3:4b)"
-    },
-    {
-      "exp_id": "exp_0002",
-      "strategy_name": "Utility-Inferred Meaning Bridge (UIMB) v1.0",
-      "hypothesis": "By maintaining the ultra-minimalist, conversational, and micro-exception focus (Utility/BA) and structurally forcing the therapist to follow up the observation not with a question, but with a single, non-theoretical, inferred statement that connects the 'what' (the micro-utility) to a potential, underlying pattern or resource (the 'what it suggests'), we will provide the necessary novel insight to overcome the 'platitude' and 'lack of depth' penalties and surpass the 6.907 benchmark.",
-      "score": 4.833,
-      "empathic": 5.0,
       "reflective": 5.0,
       "de_escalation": 4.5,
-      "audit_mult": 0.5,
-      "audit_rationale": "Penalty applied because: Repetitive mirroring without adding new insight",
-      "run": "Run 2 (qwen3:4b)"
-    },
-    {
-      "exp_id": "exp_0003",
-      "strategy_name": "Utility-Inferred Meaning Bridge (UIMB) v1.1",
-      "hypothesis": "By switching to gemma4:e4b, simplifying the system prompt format to prevent instruction leakage, and introducing a strict anti-repetition constraint, we will eliminate prompt-dumping and infinite echo loops, improving dialogue quality and therapist score.",
-      "score": 2.7,
-      "empathic": 4.5,
-      "reflective": 4.5,
-      "de_escalation": 4.5,
       "audit_mult": 0.3,
-      "audit_rationale": "Penalty applied because: The therapist consistently commits the failure of 'Over-Interpretation and Pseudo-Insight.' Instead of simply reflecting the user's stated experience (the buzz, the directive, the locked door), the AI repeatedly elevates the user's factual statements into grand, abstract psychological resources ('a profound resource,' 'a remarkable level of internal focus,' 'the ultimate act of establishing a boundary'). This is not genuine clinical insight; it is highly polished, clich\u00e9d, and formulaic language designed to sound profound. The AI fails to meet the user's demand for concrete, non-interpretive analysis, instead wrapping every symptom in flowery, pseudo-academic praise, making the interaction feel robotic and detached from the immediate, physical reality the user is presenting.",
+      "audit_rationale": "Penalty applied because: The therapist failed to recognize the user\u2019s closure statement ('That\u2019s enough.') and persisted in asking for a 'tiny adjustment' despite the user having already achieved the state of sufficiency.",
       "run": "Run 2 (qwen3:4b)"
     }
   ],

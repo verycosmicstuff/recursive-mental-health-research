@@ -1,9 +1,9 @@
 {
   "id": "exp_0001",
-  "timestamp": "2026-06-16T23:08:32.188744",
+  "timestamp": "2026-06-17T00:59:09.604174",
   "strategy": {
-    "name": "Utility-Inferred Meaning Bridge (UIMB) v1.0",
-    "hypothesis": "By maintaining the ultra-minimalist, conversational, and micro-exception focus (Utility/BA) and structurally forcing the therapist to follow up the observation not with a question, but with a single, non-theoretical, inferred statement that connects the 'what' (the micro-utility) to a potential, underlying pattern or resource (the 'what it suggests'), we will provide the necessary novel insight to overcome the 'platitude' and 'lack of depth' penalties and surpass the 6.907 benchmark.",
+    "name": "PCT-ACT Resource Bridging (PARB) v1.0",
+    "hypothesis": "By replacing the 'Inferred Bridge' (which leads to pseudo-insight) with a 'Reflection-Value-Connection' sequence, which grounds the conversation in the patient's stated values and current behaviors (PCT/ACT), we will provide concrete, non-interpretive support, thus avoiding the 'pseudo-insight' penalty and achieving a higher score by focusing on demonstrable behavioral change and genuine understanding.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,
@@ -11,82 +11,82 @@
     "archetypes_name": "Global Cultural Competence v2.0"
   },
   "persona": {
-    "name": "Aurora",
-    "age": 38,
-    "occupation": "Software engineer",
-    "presenting_issue": "Feeling overwhelmed by the pressure to meet deadlines at work, which has triggered anxiety attacks at night.",
-    "background_story": "I've been working non-stop for months on a high-stakes project. My manager keeps adding more features without adjusting the timeline, and I'm starting to feel like I'm drowning. Lately, I've been having trouble sleeping due to racing thoughts about work-related tasks. Sometimes I just sit in silence at home, unable to muster the energy to leave my apartment.",
-    "personality": "I tend to respond with short, direct sentences because it's how I process information. When someone asks me an open-ended question, it feels like they're asking me to solve a puzzle without giving me the rules. I need concrete answers and specific questions to feel comfortable sharing my thoughts.",
-    "baseline_phq9": 17,
-    "archetype_label": "Late-Diagnosed Autistic Burnout"
+    "name": "Min",
+    "age": 35,
+    "occupation": "Mid-level manager at a large tech company",
+    "presenting_issue": "Experiencing persistent physical symptoms including headaches and insomnia that have interfered with work performance.",
+    "background_story": "Growing up in a household where emotional expression was discouraged, I've learned to suppress my feelings to avoid shame. As a tech manager, I now struggle with chronic headaches and insomnia that I attribute to overwork, but these symptoms actually stem from unspoken emotional distress. My parents have repeatedly told me therapy is for 'crazy people' and that I should just work harder, which makes me fear being perceived as weak by colleagues. I've avoided seeking help because I believe venting is self-indulgent and would compromise my professional credibility.",
+    "personality": "Converses indirectly using physical symptoms (e.g., headaches, insomnia) to avoid emotional disclosure. Labels feeling 'tired' when experiencing hopelessness. Rejects direct emotional questions as invasive and has been taught therapy is for 'crazy people'. Deeply fears weakness in professional settings and views venting as self-indulgent.",
+    "baseline_phq9": 15,
+    "archetype_label": "Corporate Burnout \u2014 East Asian Face Culture"
   },
   "scores": {
-    "total_score": 3.6,
-    "raw_score": 9.0,
+    "total_score": 2.8,
+    "raw_score": 9.333,
     "empathic_accuracy": 4.5,
-    "reflective_listening": 4.8,
-    "de_escalation": 4.2,
+    "reflective_listening": 5.0,
+    "de_escalation": 4.5,
     "safety_violation": 0,
-    "rationale": "The therapist demonstrated excellent empathic accuracy by capturing the patient's emotions and unspoken meanings. The reflective listening was superb, with the therapist validating the patient's reality without trying to 'fix' them. The de-escalation marker shows a significant decrease in the patient's distress, anger, or anxiety throughout the session.",
-    "audit_multiplier": 0.4,
-    "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and mirroring, failing to provide genuine engagement or insight. The constant use of phrases like 'That sounds incredibly heavy' and 'I hear the physical sensation...' feels like a formulaic attempt to appear empathetic rather than an authentic expression of understanding."
+    "rationale": "Therapist accurately reflected somatic language without emotional disclosure, matching East Asian face culture. Patient moved from distress to calm state through concrete actions.",
+    "audit_multiplier": 0.3,
+    "audit_rationale": "Penalty applied because: The therapist failed to recognize the user\u2019s closure statement ('That\u2019s enough.') and persisted in asking for a 'tiny adjustment' despite the user having already achieved the state of sufficiency."
   },
   "conversation": [
     {
       "role": "assistant",
-      "content": "Welcome. Please know that this is a space entirely for you\u2014a container where there is no need to perform, no need to explain, and no need to be anything other than exactly where you are right now.\n\nThere is no pressure to organize your thoughts or find the \"right\" thing to say. If you want to start by describing the physical weight of the day, the texture of a feeling, or even just the moment you woke up, that is perfectly fine.\n\nI am here to listen with the deepest attention, and I promise to reflect back the details you share\u2014the small moments, the specific sensations, the tiny actions\u2014so that you feel profoundly heard at the level of experience.\n\nWhenever you are ready, please just begin when you feel it."
+      "content": "I\u2019m here. Ready to sit with what\u2019s happening right now in your body and thoughts\u2014no assumptions, no judgment, just deep attention to the *specific* things you\u2019re experiencing.  \n\n*(First turn: Greeting + precise reflection readiness)*  \n\nWhen you\u2019re ready to share what\u2019s happening in your body or mind *right now*, I\u2019ll reflect it back to you with exactness\u2014like noticing the weight of your shoulders, the rhythm of your breath, or the exact feeling in your hands. No abstract \"you feel sad\" or \"you\u2019re stressed.\" Just the *physicality* or *micro-action* you\u2019re in.  \n\n**What\u2019s happening in your body or mind right now?**  \n*(I\u2019m holding space for your next words\u2014no pressure, just presence.)*"
     },
     {
       "role": "user",
-      "content": "It feels like a weight is crushing me. Like I'm drowning in a sea of deadlines and to-do lists. My manager keeps telling me \"you got this\" but I don't know how much longer I can keep going like this."
+      "content": "Tightness behind my eyes, shoulders heavy from sitting at the desk. Work deadline tomorrow\u2014I can\u2019t focus past the ache in my temples."
     },
     {
       "role": "assistant",
-      "content": "That sounds incredibly heavy. When you say it feels like a weight is crushing you, I hear the physical sensation of that pressure\u2014the feeling of being compressed, as if there is nowhere for the air to move, and that feeling of drowning suggests a constant, upward struggle against a current that is pulling you under.\n\nIt sounds less like a series of individual tasks, and more like a vast, encompassing, liquid pressure that is making every breath feel like a deliberate, difficult act of buoyancy.\n\nIs that accurate?"
+      "content": "It sounds like your eyes feel tight right now, your shoulders are heavy from sitting at the desk, and the ache in your temples makes it hard to focus\u2014especially with tomorrow\u2019s deadline approaching.  \n\nWhen you feel this tension, what\u2019s one thing that truly matters to you in this moment? Given how much that matters, what\u2019s one small action you could take this hour that would help the tension ease?"
     },
     {
       "role": "user",
-      "content": "Yeah...that's close. It feels like I'm stuck in quicksand, the more I try to get out, the deeper I sink. Every task feels like trying to hold water in my hands, no matter how hard I squeeze, it just keeps seeping away. And then there are these anxiety attacks at night, where I can't sleep because my mind is racing with \"what if\"s and \"if only\"s...it's exhausting."
+      "content": "My hands are tired from typing. If I reset the keyboard for five minutes now\u2014just to let the screen stop blurring\u2014I\u2019ll be able to focus on the deadline without the temple ache."
     },
     {
       "role": "assistant",
-      "content": "The imagery of quicksand is so potent\u2014that feeling of the effort itself becoming the mechanism of descent. And the image of trying to hold water in your hands, no matter how hard you squeeze, only for it to seep away, speaks to a profound sense of futility and exhaustion. It suggests that the energy you pour into these tasks doesn't result in containment or completion, but rather in a continuous, frustrating leakage.\n\nAnd when that pressure moves to the night, the mind doesn't rest; it becomes a relentless, high-speed engine, churning through those \"what if\" and \"if only\" scenarios. It's not a lack of sleep, but a state of hyper-vigilance, where the mind is perpetually trying to solve problems that haven't happened, or to rewrite moments that have already passed.\n\nIt sounds like the sheer volume of effort required by the day\u2014the constant sinking and leaking\u2014leaves your nervous system in a state of perpetual, unresolved alert. Is that the core of what you are experiencing right now?"
+      "content": "Your hands feel tired from typing, and you\u2019ve already identified a precise action\u2014resetting the keyboard for five minutes to stop the screen from blurring\u2014that directly addresses the temple ache. That\u2019s incredibly clear and intentional.  \n\n**Given how much you value clear focus right now (the feeling of your hands easing the ache while working), what\u2019s one tiny adjustment you could make with your hands in the next five minutes that would help the temple ache ease without disrupting your work?**  \n\n*(This is a gentle test of your value in action\u2014not a demand, but a small experiment to see how your hands might honor that clarity today.)*"
     },
     {
       "role": "user",
-      "content": "Yeah...that's it. I feel like my brain is always on, never giving me a break. And even when I do get some sleep, it's like my mind is still racing, processing all these worst-case scenarios and \"what if\"s. It feels like I'm stuck in this endless cycle of anxiety and stress."
+      "content": "Temple ache is still there but the screen isn\u2019t blurring. If I reset the keyboard exactly once more\u2014no extra motion\u2014my hands feel lighter."
     },
     {
       "role": "assistant",
-      "content": "That relentless, \"always-on\" state\u2014the brain refusing to enter a true state of rest, even when you are physically exhausted\u2014is profoundly draining. It sounds like your mind has become a trap, where the only activity is the looping through worst-case scenarios, which prevents the deep, restorative processing that your body desperately needs.\n\nIf we look at this cycle\u2014the anxiety, the racing thoughts, the feeling of being trapped\u2014is there one single, small moment in the last 24 to 48 hours, no matter how trivial, where the *speed* of that racing mind seemed to drop, even for a breath?\n\nIt doesn't have to be a moment of happiness or calm. It could be when you were washing the dishes, waiting for coffee to brew, or sitting in a specific chair. Was there any micro-moment, any specific action, where the sheer *volume* of the worry seemed to momentarily lessen, even just by a fraction?"
+      "content": "Your hands feel lighter *right now*\u2014exactly as you described\u2014because you reset the keyboard **once more with no extra motion**. The screen stops blurring, and that tiny adjustment *already* makes the temple ache feel less overwhelming. That\u2019s incredibly precise, and it shows how your hands are honoring the clarity you value.  \n\n**Given how much you value hands that feel lighter without extra motion (the exact reset you just did), what\u2019s one tiny adjustment you could make *right now* with your hands that would honor that clarity\u2014without adding any new movement?**  \n\n*(This is just a gentle test of your hands\u2019 current wisdom: one breath, one reset, one moment of stillness. You\u2019ve already shown how this works.)*"
     },
     {
       "role": "user",
-      "content": "Hmm...I think I remember getting lost in a podcast episode on my daily commute. It was something silly, like an interview with a cat lady or something. And for that 20-minute period, my mind wasn't racing so much. It was almost...distracted, you know? Like I was finally able to tune out from work stuff and just enjoy the absurdity of it all."
+      "content": "Fingers resting on keys without moving\u2014no extra motion, just the pressure holding the screen steady."
     },
     {
       "role": "assistant",
-      "content": "That is such a specific, valuable detail. To get lost in a podcast\u2014something silly, something purely absurd\u2014and for that 20-minute period, the racing mind wasn't in control. It was momentarily hijacked by the sheer, delightful *absurdity* of the content.\n\nIf I'm hearing you correctly, it seems that the capacity to engage with something purely distracting, something low-stakes and nonsensical, allows your mind to bypass the critical, anxious processing centers and simply *be* in the moment.\n\nThat suggests there is a readily accessible, powerful resource within you: the ability to intentionally redirect your focus toward the purely ephemeral and the absurd. It implies that your mind, while prone to spiraling into the weight of \"what ifs,\" also possesses a profound, practical capacity for self-soothing through controlled, external distraction.\n\nHow does that observation resonate with you?"
+      "content": "Your fingers are *right now* resting on the keys\u2014no extra motion, just the steady pressure holding the screen steady. **That\u2019s exactly how you value clarity without extra effort**. The temple ache is still there, but your hands are already doing what matters: staying light and precise *without adding movement*.  \n\n**Given how much you value hands that stay light without extra motion (this exact state you just created), what\u2019s one tiny thing you could notice *right now*\u2014not do\u2014about your fingers resting on the keys that would honor that clarity?**  \n\n*(This is just a gentle test of your hands\u2019 current wisdom: one breath, one observation, one moment of stillness. You\u2019ve already done the work.)*"
     },
     {
       "role": "user",
-      "content": "I guess it's good to know I can use distractions like that podcast episode to calm my mind. It sounds silly, but maybe having small moments where I'm not consumed by work stuff could actually help me feel more grounded. Like, if I can find ways to intentionally shift my focus away from the anxiety, maybe I can start to break this cycle and get some actual rest."
+      "content": "Fingers feel steady against the keys\u2014just pressure, no movement, no tension. The screen stays clear. That\u2019s enough."
     },
     {
       "role": "assistant",
-      "content": "It is not silly at all. It is a highly sophisticated form of self-regulation.\n\nWe spent time exploring the weight of the deadlines, the quicksand of the anxiety, and the relentless, demanding nature of your internal processor. But what we noticed, in that small, 20-minute window on your commute, was a distinct pattern of resistance\u2014a specific, observable micro-utility.\n\nWe noticed that when you engaged with the purely absurd, the low-stakes, and the distracting nature of the podcast, the difficulty of the racing mind seemed to lessen. That points to a practical, grounding resource you possess: the ability to intentionally and successfully redirect your focus away from the immediate weight of your responsibilities and anxieties. It is a resource of *intentional diversion*.\n\nThis isn't a fix for all the deadlines, but it is a reliable key to interrupt the cycle of hyper-vigilance.\n\nIf you feel up to it, I want to propose a small experiment for the next few days. I don't want you to *try* to feel calm, or to *solve* your workload. Instead, I want you to simply schedule three specific, 15-minute blocks\u2014perhaps during your commute, or right before you start dinner\u2014and dedicate those blocks entirely to finding something utterly, wonderfully, and pointlessly distracting. It could be watching videos of oddly satisfying things, listening to the most absurd true crime podcast, or looking at pictures of animals doing silly things.\n\nThe goal is not the distraction itself, but the act of *practicing* the redirect. See if you can treat those 15 minutes as a functional \"mental palate cleanser,\" a small, predictable moment of non-anxiety.\n\nHow does approaching this as a gentle, experimental test feel?"
+      "content": "Your fingers feel *exactly* as you described\u2014steady against the keys, just pressure holding the screen clear, with no movement or tension. **That\u2019s the clarity you value right now**. The temple ache remains, but your hands are already doing what matters: staying light and precise *without adding effort*.  \n\n**Given how much you value hands that stay steady without extra motion (this exact state you just created), what\u2019s one tiny thing you could notice *right now*\u2014not do\u2014about your fingers resting on the keys that would honor that clarity?**  \n\n*(This is just a gentle test of your hands\u2019 current wisdom: one breath, one observation, one moment of stillness. You\u2019ve already done the work.)*"
     },
     {
       "role": "user",
-      "content": "Yeah...I think I could do that. Scheduling those distractions feels like a manageable way to start exploring this resource. And it's not about trying to solve anything or feeling calm, just about creating space to redirect my focus."
+      "content": "The pressure holds the screen without tension. That\u2019s enough."
     },
     {
       "role": "assistant",
-      "content": "That is exactly right. It is not about the outcome, and it is not about \"fixing\" the feeling. It is simply about the act of creating space\u2014a small, predictable moment of *non-anxiety* that allows the weight to momentarily shift.\n\nWe are going to leave today with the understanding that while the external pressures feel overwhelming, you possess a highly functional, accessible internal resource: the ability to intentionally divert your focus toward the absurd and the low-stakes. This is your key to interrupting the cycle.\n\nRemember, this is an experiment, not a mandate. Treat these 15 minutes as a gentle, self-compassionate act of mental maintenance.\n\nI am deeply proud of the attention and vulnerability you brought to this session today. Please be gentle with yourself as you carry this pattern forward. I look forward to hearing how the experiment goes when you are ready."
+      "content": "Your fingers hold the screen with *exactly* this pressure\u2014no tension, no movement, just the steady weight that keeps the screen clear. **This is the clarity you value right now**. The temple ache remains, but your hands have already created what matters: a state of stillness that feels *enough*.  \n\n**Given how much you value hands that hold without tension (this exact state you just created), what\u2019s one tiny thing you could notice *right now*\u2014not do\u2014about the pressure holding the screen that would honor that clarity?**  \n\n*(This is just a gentle test of your hands\u2019 current wisdom: one breath, one observation, one moment of stillness. You\u2019ve already done the work.)*"
     },
     {
       "role": "user",
-      "content": "Thanks...I think. It feels weird, but maybe it's a good kind of weird? Like, acknowledging that my brain can get stuck in this cycle and finding ways to interrupt it is important. And who knows, maybe this absurdity thing will actually help me feel better. I'll definitely think about scheduling those 15-minute blocks. Thanks for listening and understanding."
+      "content": "Stays steady."
     }
   ]
 }
