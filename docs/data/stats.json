@@ -1715,6 +1715,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 2 (qwen3:4b)"
+    },
+    {
+      "exp_id": "exp_0042",
+      "strategy_name": "PCT-ACT Empathy-Invitation Loop (PAEIL) v2.0",
+      "hypothesis": "By replacing the directive 'Reframe' step with a gentle 'Intrinsic Invitation' focused on self-compassion and future possibility, we will reduce the friction causing the 'Defusion' penalty while maintaining the structural integrity that achieved the high score.",
+      "score": 44.75,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 2 (qwen3:4b)"
     }
   ],
   "best_score": 91.25

@@ -1,0 +1,127 @@
+{
+  "id": "exp_0042",
+  "timestamp": "2026-06-17T05:13:12.610897",
+  "strategy": {
+    "name": "PCT-ACT Empathy-Invitation Loop (PAEIL) v2.0",
+    "hypothesis": "By replacing the directive 'Reframe' step with a gentle 'Intrinsic Invitation' focused on self-compassion and future possibility, we will reduce the friction causing the 'Defusion' penalty while maintaining the structural integrity that achieved the high score.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Chloe",
+    "age": 22,
+    "occupation": "Student",
+    "presenting_issue": "I keep feeling overwhelmed by my upcoming exams and worried that I'm not good enough for this program.",
+    "background_story": "I've been working incredibly hard on my degree, but every time I check my grades, I find reasons to be anxious about how much I'm failing. My parents are really supportive, but their expectations feel like they are constantly adding pressure to everything I do. I find myself staying up late studying, but then I just lie awake thinking about every possible thing that could go wrong.",
+    "personality": "Highly structured and anxious. She speaks in detailed, qualified statements, often using phrases like 'I should have' or 'I don't know if I'm doing this right.' She frequently asks for validation and repeats questions to ensure she understood the advice correctly.",
+    "baseline_phq9": 11,
+    "archetype_label": "Anxious Student"
+  },
+  "scores": {
+    "total_score": 44.75,
+    "raw_score": 44.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 29.8/70.0 (VV shift: -0.10, Sym shift: 0.00, DV shift: 0.10) | Brevity Penalty (-15): Therapist turn too long (5 sentences, 158 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "I am here for you. Please feel safe sharing whatever is on your heart. I will listen with nothing but compassion."
+    },
+    {
+      "role": "user",
+      "content": "Oh, um... thank you. It's just that everything feels so huge right now. I'm worried about my exams, and I keep thinking I'm going to fail, even if I study all night. I don't know if I'm doing this right.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are carrying an immense weight right now\u2014a weight of expectation, effort, and the sheer magnitude of what feels at stake. It is completely understandable that when you pour so much of yourself into studying, the fear of it not being enough can feel overwhelming, making the anxiety feel huge and all-consuming. Please know that the intensity of your worry is a reflection of how much you care, and that caring is a profound sign of your dedication.\n\nIf we pause and look at this feeling of panic, what might this deep worry be needing from you right now\u2014is it needing rest, reassurance, a sense of control, or perhaps just permission to feel scared?\n\nPerhaps today, you could give yourself the gentle possibility of setting aside the books for just ten minutes and simply noticing where the tension lives in your body, recognizing that your worth is not measured by the outcome of these exams."
+    },
+    {
+      "role": "user",
+      "content": "But\u2026 if I just ignore it, won't I fall further behind? And if I fall behind, won't I definitely fail? I don't know if taking a break is actually productive, because then I'll just waste the time, right?",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are caught in a very powerful and exhausting loop of 'if/then' thinking\u2014a cycle where the fear of falling behind immediately triggers the guilt that taking a break is a failure in itself. It is so deeply understandable that when your effort is so high, the idea of 'wasting' time feels like a threat to your entire self-worth. Your mind is working incredibly hard to protect you from the pain of failure, and that mechanism is exhausting.\n\nIf we look at this internal dialogue\u2014the voice that says rest equals waste\u2014what might that voice be trying to protect you from, and what deep need is it trying to fulfill by keeping you constantly moving and worried?\n\nPerhaps today, you could gently explore the possibility of giving yourself permission to be a student who is also a human being, recognizing that the quality of your attention, and the depth of your learning, might actually be enhanced by moments of genuine, non-judgmental stillness."
+    },
+    {
+      "role": "user",
+      "content": "I guess... I just feel like I *should* know how to do this, like everyone else does. Maybe if I just structured my study time better, I wouldn't feel so anxious. But what if I structure it, and I still fail anyway?",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are carrying the heavy burden of comparison\u2014the feeling that there is a 'right way' to study, a blueprint that everyone else seems to possess, and that if you just follow it perfectly, the anxiety will disappear. It is incredibly draining to feel like your worth or your capacity to succeed is tied to your ability to perfectly structure your time. And the deepest fear, the one that whispers loudest, is that even the most perfect plan won't be enough.\n\nIf we look at this feeling of 'should'\u2014the pressure to measure up to an invisible standard\u2014what might that feeling of inadequacy be trying to teach you about the nature of effort, and what does it need from you right now to feel less like a performance and more like a process?\n\nPerhaps today, you could gently give yourself the possibility of acknowledging that the struggle itself, the act of showing up and caring this deeply, is a profound achievement, regardless of the final grade."
+    },
+    {
+      "role": "user",
+      "content": "I don't know. I just... feel like I'm failing at everything, even this. What if I go back to my parents and I'm not as good as they hope? I feel like I'm disappointing them constantly.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are carrying the weight of not just your own academic concerns, but the immense, deeply felt pressure of living up to the hopes and expectations of people you love, especially your parents. To feel like you are failing at everything, including the process of caring for yourself, is an incredibly painful and isolating place to be. Please know that this feeling of disappointing others is not a reflection of your inherent value; it is a sign of how much you love and care about the people around you, and how deeply you want to belong.\n\nIf we pause and look at this profound fear of disappointing your parents, what might that fear be needing from you\u2014is it needing to be heard, needing to be understood, or perhaps needing a gentle reminder that your worth is already fully realized, regardless of any outcome?\n\nPerhaps today, you could gently give yourself the possibility of treating yourself with the same boundless compassion and understanding that you are so readily offering to your parents, recognizing that you are doing the very best that you can with the emotional capacity you have right now."
+    },
+    {
+      "role": "user",
+      "content": "But... if I accept that, does that mean I don't have to try anymore? Because if I stop trying, I'll just drift, and then I won't be successful at all.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are grappling with one of the most difficult paradoxes of human effort: the fear that self-compassion will be misinterpreted as surrender. You are worried that if you allow yourself to accept your inherent worth, you will lose the necessary drive, you will drift, and therefore, you will not be able to be successful. This is a deeply rational fear, because for so long, you have been taught that effort *is* proof, and that proof is the only thing that keeps us afloat.\n\nIf we look at this relationship between effort and self-acceptance\u2014the idea that one might negate the other\u2014what might this moment be teaching you about the difference between *perfectionistic effort* (the kind driven by fear) and *sustainable effort* (the kind driven by self-care)?\n\nPerhaps today, you could gently explore the possibility of redefining what 'trying' means: could 'trying' be the act of showing up for yourself first, recognizing that a rested heart and a gentler mind are actually the most powerful tools you possess for moving forward?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know what 'sustainable effort' even means. It just sounds like giving up, honestly. I feel like I need to be constantly pushing, or nothing will happen.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It makes perfect sense that \"sustainable effort\" feels foreign, even threatening, when your entire system has been running on the powerful, urgent belief that if you slow down, everything will fall apart. The feeling that you must be constantly pushing is not a failure of character; it is a deeply ingrained survival mechanism\u2014a belief that speed and intensity are the only guarantees against chaos. You are operating from a place of profound responsibility, and that sense of urgency is what has kept you going until now.\n\nIf we look at this powerful, urgent need to constantly push\u2014what is it that the *slowing down* or *resting* feels like it would be exposing or revealing about yourself that you are currently protecting yourself from?\n\nPerhaps today, you could gently give yourself the possibility of viewing 'effort' not as a linear race toward a finish line, but as a slow, circular dance\u2014a chance to simply notice the rhythm of your breath for a few minutes, recognizing that the most essential work is sometimes the work of simply arriving back into your own body."
+    },
+    {
+      "role": "user",
+      "content": "I don't know. I just... I guess I just feel too tired to even try to think about that right now. It's just too much.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    }
+  ]
+}
