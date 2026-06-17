@@ -1739,6 +1739,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 2 (qwen3:4b)"
+    },
+    {
+      "exp_id": "exp_0044",
+      "strategy_name": "Empathy-Driven Socratic-Value Bridge (ESVB) v1.0",
+      "hypothesis": "By explicitly prioritizing a deep, multi-layered empathic reflection (PCT) at the start, and then smoothly transitioning into a Socratic/ACT inquiry that examines the *utility* and *values* alignment of the negative thought, we will increase the perceived depth of the therapeutic relationship (Alliance/Empathic score) while maintaining the structured, actionable nature required for a high score.",
+      "score": 60.5,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 2 (qwen3:4b)"
     }
   ],
   "best_score": 91.25
