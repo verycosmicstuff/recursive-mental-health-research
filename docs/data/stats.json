@@ -1583,6 +1583,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 2 (qwen3:4b)"
+    },
+    {
+      "exp_id": "exp_0031",
+      "strategy_name": "Defusion-Validated Intrinsic Connection (DVIC) v2.0",
+      "hypothesis": "By eliminating the direct Socratic challenge and replacing it with a purely ACT-based validation of thoughts as temporary labels (Defusion), and concluding with a soft invitation focused on intrinsic values, we will maximize the Therapeutic Alliance and Defusion components, thereby overcoming structural penalties and surpassing the 89.5 benchmark.",
+      "score": 44.75,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 2 (qwen3:4b)"
     }
   ],
   "best_score": 89.5
