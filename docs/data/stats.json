@@ -1295,6 +1295,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 2 (qwen3:4b)"
+    },
+    {
+      "exp_id": "exp_0007",
+      "strategy_name": "Validation-Value-Commitment Bridge (VVC) v1.0",
+      "hypothesis": "By rigorously enforcing a 3-sentence, 60-word limit, and replacing the abstract 'Resource Identification' with a 'Value-Based Commitment' sequence (Validation -> Value -> Action), we will maintain the high State Score achieved by the previous methods while eliminating the penalty incurred from structural overreach.",
+      "score": 84.25,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 2 (qwen3:4b)"
     }
   ],
   "best_score": 89.5
