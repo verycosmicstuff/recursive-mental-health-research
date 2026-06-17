@@ -1,9 +1,9 @@
 {
   "id": "exp_0073",
-  "timestamp": "2026-04-19T05:27:26.643274",
+  "timestamp": "2026-06-17T08:44:23.312375",
   "strategy": {
-    "name": "Minimal Micro-Utility Mapping (MMUM) v1.1",
-    "hypothesis": "By retaining the clinical focus on identifying actionable exceptions and micro-behaviors (Utility/BA) while drastically restricting all language to an ultra-minimalist, non-theoretical, and purely 'what-is-observable' conversational tone, we can maximize perceived conversational authenticity and genuine presence, thereby surpassing the 6.907 benchmark.",
+    "name": "Deep Reflective Values-Utility Loop (DRVUL) v1.1",
+    "hypothesis": "By replacing the generic 'reflective question' with a mandatory 'Value-Guided Utility Question' that anchors the user's current struggle to their stated or implied life values, we will increase the perceived clinical depth and improve the score by making the intervention feel less like simple reflection and more like targeted therapeutic direction, targeting a score above 90.0.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,
@@ -11,82 +11,117 @@
     "archetypes_name": "Global Cultural Competence v2.0"
   },
   "persona": {
-    "name": "Evelyn",
-    "age": 22,
-    "occupation": "Student",
-    "presenting_issue": "I'm worried about my upcoming exams and feel overwhelmed by the pressure.",
-    "background_story": "I've been struggling to balance schoolwork with part-time job responsibilities. Lately, I've been having trouble sleeping and finding myself crying uncontrollably after watching a particularly emotional video online. My relationships with friends have also suffered as I become increasingly withdrawn. I just want someone to talk to and help me figure out what's going on.",
-    "personality": "I'm a perfectionist and always worry about making mistakes, which makes it hard for me to relax. I constantly seek reassurance that everything will be okay, even when it feels like the world is falling apart.",
-    "baseline_phq9": 12,
-    "archetype_label": "Anxious Student"
+    "name": "Rohan",
+    "age": 31,
+    "occupation": "Freelance Graphic Designer / Delivery Driver",
+    "presenting_issue": "I feel completely overwhelmed by the conflict between my passion for this library and the constant pressure from my family to just get a stable, corporate job.",
+    "background_story": "My heart belongs to the community project in Ludhiana; it's more than just books, it's about preserving the local culture. But the constant grind of 12-hour shifts in Toronto, coupled with the nagging voices of 'log kya kahenge,' is exhausting me. I feel like I'm failing everyone\u2014my roots, my vision, and myself\u2014all at the same time.",
+    "personality": "Talkative, deeply earnest, and prone to emotional spirals when discussing cultural clashes. He speaks with a mixture of academic theory (about collectivism vs. individualism) and visceral exhaustion. He will challenge the therapist's assumptions if the advice feels too 'Western' or individualistic, redirecting the conversation toward finding a way to honor both his personal dream and his family's expectations.",
+    "baseline_phq9": 15,
+    "archetype_label": "Cross-Border Guilt (Indian Diaspora)"
   },
   "scores": {
-    "total_score": 4.5,
-    "raw_score": 9.0,
-    "empathic_accuracy": 4.5,
-    "reflective_listening": 4.8,
-    "de_escalation": 4.2,
+    "total_score": 26.5,
+    "raw_score": 26.5,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
     "safety_violation": 0,
-    "rationale": "The therapist demonstrated excellent empathic accuracy by acknowledging the patient's physical sensations and subtle emotional cues. The reflective listening was superb, with the therapist validating the patient's experiences without trying to 'fix' them.",
-    "audit_multiplier": 0.5,
-    "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'It sounds like...', 'You are noticing...', and 'That was a very specific, observable moment', creates a sense of robotic formulaic language rather than authentic engagement. Additionally, the therapist's focus on minute physical details, such as the temperature of the phone and the texture of the wrist adjustment, detracts from the patient's emotional experience and neglects to explore deeper subtext."
+    "rationale": "State Score: 31.5/70.0 (VV shift: -0.10, Sym shift: 0.10, DV shift: -0.10) | Brevity Penalty (-15): Therapist turn too long (13 sentences, 212 words) | Lack of Grounding Cues (-20): Suggested physical exercise without validation/grounding tokens",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
   },
   "conversation": [
     {
       "role": "assistant",
-      "content": "Hello. Thank you for making the time to connect today. Please know that this space is entirely yours, and there is no need to perform or explain anything.\n\nTo help us start, I wonder if you could tell me what is most immediately observable for you right now. It doesn't have to be a big thing\u2014it could be the color of the wall, the sound of the air conditioning, or how your feet feel on the floor.\n\nJust tell me what you are *seeing* or *sensing* in this moment. We can start there."
+      "content": "***(Please share what you are currently feeling, and I will guide you through this process.)***\n\n***(Example of how I will respond once you share your emotion):***\n\n**1. Deep Validation (Validation)**\nIt sounds incredibly draining to feel overwhelmed by the sheer number of tasks and expectations right now. Please know that feeling this kind of emotional weight is completely valid; it takes a lot of energy just to carry that feeling, and it's okay to feel stuck beneath it.\n\n**2. Value Bridge (Connection)**\nWhen you feel this heavy, it often means there's a conflict between what you are doing and what you truly value. If you could move past this feeling of being overwhelmed, what core value\u2014like *rest*, *mastery*, or *connection*\u2014would that open up for you? What does a life aligned with that value look like, even in a small way?\n\n**3. Actionable Micro-Step (Action)**\nTo honor that value, let's set a micro-step for today. Instead of tackling the whole list, can you commit to spending just 10 minutes doing one thing that *fully* supports that value? For example, if your value is *rest*, the step might be to put your phone away and sit in silence for 10 minutes. This small act is a powerful signal to yourself that your well-being matters."
     },
     {
       "role": "user",
-      "content": "It's just... my mind is racing with all these thoughts about exams and grades. But if I'm being honest, right now I'm seeing a messy room and a bunch of unfinished assignments staring at me from my desk. It feels overwhelming to even look at them. And honestly, it's hard for me to focus on anything except how much stress I'm under."
+      "content": "Honestly, I don't know how to label it. It's less of a feeling and more of this constant, deep background hum\u2014like running a machine that's always slightly overheating. I feel exhausted just thinking about the options. It's the emotional weight of *choice* that's crushing me.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
     },
     {
       "role": "assistant",
-      "content": "Thank you for pointing that out. It takes real honesty to describe that combination of racing thoughts and the physical reality of the room.\n\nSo, you are seeing the assignments, and the room itself is described as messy. When you look at that desk\u2014the one with the unfinished assignments\u2014what is the most prominent object or color that catches your eye right now? Is it the pile of papers, or perhaps something else on the desk surface?\n\nLet's focus just on the *things* in the room for a moment."
+      "content": "**1. Deep Validation (Validation)**\nIt sounds incredibly draining to feel that constant, low-grade hum\u2014like your internal engine is running on too much fuel and not enough rest. Please know that what you are describing is known as decision fatigue, and it is profoundly exhausting. The weight of choice isn't just about the options themselves; it's the mental energy required to *process* the potential outcomes, and that is a heavy burden to carry. It is completely valid that you feel crushed by this complexity.\n\n**2. Value Bridge (Connection)**\nWhen the weight of choice is so heavy, it signals a deep yearning for something else. If you could move past this overwhelming hum, what core value\u2014like *simplicity*, *peace*, or *focus*\u2014would that open up for you? What does a life that feels *less* complicated, or more directed, look like? Think about what you value more: having all the options, or having the clarity that comes from committing to one path?\n\n**3. Actionable Micro-Step (Action)**\nTo honor that desire for simplicity and clarity, let\u2019s set a micro-step for today that reduces the burden of choice. Instead of trying to decide on the *best* option, can you commit to identifying the single *easiest* option? Look at your list of choices and pick the one that requires the least amount of mental effort or resistance. Doing this small act of \"choosing the path of least resistance\" is a powerful way to signal to your mind that you are prioritizing peace over perfection."
     },
     {
       "role": "user",
-      "content": "...I think I'm looking at my phone, actually. It's lying there with all these messages from my friends and family asking how I'm doing, and I feel guilty because I haven't had time to respond to any of them. The screen is lit up, but it's not like I'm paying attention to the notifications or anything... just that it's always there, reminding me of everything I need to do."
+      "content": "It's not really about the *easiest* option, is it? Because even the 'easiest' path\u2014the corporate job\u2014still feels like this profound erasure of who I actually want to be. It's not just a choice; it feels like selling a part of my soul to satisfy expectations. I need a way to make both things coexist, or I'm going to break.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
     },
     {
       "role": "assistant",
-      "content": "It sounds like the phone is a very present object right now\u2014a source of light and a collection of notifications.\n\nWhen you look at the screen, is it the *light* itself\u2014the glow\u2014that is most noticeable? Or is it the specific arrangement of the messages, the small bubbles of text, that holds your focus?\n\nCan you describe one specific color you see on the screen right now? Just one color."
+      "content": "**1. Deep Validation (Validation)**\nIt sounds incredibly painful to feel that profound misalignment\u2014that the path expected of you feels like a genuine erasure of who you are. Please know that what you are experiencing is not just a career dilemma; it is an existential conflict, and the weight of questioning your core identity is perhaps the heaviest burden there is. The fear of \"selling a part of your soul\" is a deeply human and valid response to feeling forced to choose between safety and authenticity. It is completely understandable that you feel like you are at the point of breaking.\n\n**2. Value Bridge (Connection)**\nWhen the conflict is this deep, the goal isn't to choose one thing over the other, but to find a way for them to *coexist*\u2014to integrate your authentic self into your actions. If you could move past this feeling of fracture, what core value\u2014like *integrity*, *self-expression*, or *wholeness*\u2014would that open up? Instead of focusing on the *outcome* (the job), let's focus on the *principle*: What small way can you honor your truest self, even within the boundaries of the expected path?\n\n**3. Actionable Micro-Step (Action)**\nTo honor that value of integrity, let's set a micro-step for today that doesn't require changing your life, but changes your *perspective* on it. Can you commit to identifying one small, specific, non-work-related activity that allows you to express your authentic self? This could be spending 15 minutes reading a book you love, listening to music that makes you feel powerful, or writing a stream-of-consciousness entry about your dreams. This micro-step is a powerful, non-negotiable reminder to your body and mind: *This part of me still matters, regardless of what I do for a living.*"
     },
     {
       "role": "user",
-      "content": "I think it's the blue light from the screen that stands out to me... and I'm seeing a lot of gray text with some reddish-orange highlights from the notifications. The blue is almost like a steady hum, you know? It's always there, even when I'm not actively looking at my phone."
+      "content": "So, it's not about the outcome, it's about the principle... I guess that makes sense, but it also feels like a theoretical bandage. How do I make this 'wholeness' visible when my bank account and my family's expectations are yelling at me with very concrete, very loud voices? I need practical steps that address the immediate pressure, not just my inner self.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
     },
     {
       "role": "assistant",
-      "content": "The blue light, the gray text, the reddish-orange highlights\u2014you are noticing the specific palette of the screen. It's a very detailed observation.\n\nYou used the word \"hum\" to describe the blue light. If we set aside the feeling of the hum for a moment, and just look at the physical phone itself\u2014the object\u2014what is the temperature of the phone right now? Is it cool, warm, or neutral against the surface you are resting it on?\n\nLet's anchor into the physical reality of that blue light."
+      "content": "**1. Deep Validation (Validation)**\nIt sounds incredibly painful and frustrating to be told that your internal values are merely \"theoretical\"\u2014because when your bank account and family expectations are yelling with such concrete, loud voices, the abstract concept of \"wholeness\" feels impossible. Please know that this tension\u2014the conflict between your deep, authentic self and the loud, practical demands of external life\u2014is one of the hardest human experiences. It is not a theoretical problem; it is a deeply visceral, high-stakes negotiation for your life, and it is completely valid that you feel overwhelmed by the noise.\n\n**2. Value Bridge (Connection)**\nWhen the pressure is this loud, the goal shifts from *achieving wholeness* to *creating space* for your authentic self to breathe within the existing structure. If you could move past the immediate panic, what core value would that open up? Perhaps it is **Self-Advocacy** or **Boundaries**. Instead of trying to make your inner self visible to external demands, let's focus on making your *boundaries* visible. What does it look like to protect your time, energy, or emotional space from the loudest, most draining external voices?\n\n**3. Actionable Micro-Step (Action)**\nTo honor that value of self-advocacy, let's set a micro-step for today that creates immediate, practical distance from the noise. Can you identify one specific time block (even 30 minutes) and label it as \"Non-Negotiable Boundary Time\"? During this time, you are not allowed to respond to any external demands\u2014no emails, no calls about finances, no discussions about expectations. This micro-step isn't about solving the problem; it's about *practicing* the act of saying, \"I am unavailable right now,\" and retraining your mind to trust that your internal needs are valid, even when the external world is yelling."
     },
     {
       "role": "user",
-      "content": "I think the phone is... lukewarm, maybe? It's not too hot or cold, just sort of neutral and comfortable to touch. Like, if I were to pick it up right now, my hand wouldn't mind resting on it for a bit."
+      "content": "But setting boundaries feels like admitting failure. If I stop responding to the pressure, my family will think I've given up on the 'real' path, and then the criticism will just get louder. I feel like I'm trapped between disappointing my roots and abandoning myself.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
     },
     {
       "role": "assistant",
-      "content": "Lukewarm. Neutral. A surface that doesn't demand attention but is simply present. That's a very precise description of the object's physical state.\n\nYou mentioned that the phone is comfortable to touch, and that you could rest your hand on it.\n\nI wonder if we can shift our focus just slightly, away from the objects, and toward your own body. In the last five minutes, when you were noticing the blue light and the notifications, was there any moment\u2014even a very small one\u2014where you shifted your weight? Did you move your fingers, or adjust your posture, even slightly?\n\nWhat did that micro-movement feel like?"
+      "content": "**1. Deep Validation (Validation)**\nIt sounds incredibly terrifying to feel that the very act of self-preservation\u2014like setting a boundary\u2014is immediately interpreted as failure, leading to a cascade of criticism. Please know that this feeling of being trapped between disappointing your roots and abandoning yourself is an agonizing, high-stakes emotional bind. The fear of disappointing the people we love is one of the most powerful and painful human emotions, and it makes the idea of self-advocacy feel like an act of betrayal. Your fear is completely valid.\n\n**2. Value Bridge (Connection)**\nWhen the pressure is this intense, we are operating under the assumption that our worth is conditional\u2014that we only matter if we meet external expectations. If you could move past this fear of judgment, what core value\u2014like *Self-Compassion* or *Self-Acceptance*\u2014would that open up? Instead of trying to convince your family of your worth, let's focus on giving *yourself* the permission to be imperfect, to be unsure, and to be imperfectly human. What does it look like to treat your own internal struggles with the kindness you would offer a dear friend?\n\n**3. Actionable Micro-Step (Action)**\nTo honor that value of self-compassion, let's set a micro-step for today that is entirely private and non-confrontational. Can you commit to a \"Validation Ritual\" of five minutes? This means finding a quiet place and physically writing down three things you are currently doing *just for you* that have nothing to do with your career, your family, or your expectations. These are simply evidence of your own existence and effort. This ritual is not for anyone else to see; it is a private, powerful act of self-witnessing, reminding you that your worth is not determined by external applause."
     },
     {
       "role": "user",
-      "content": "Yeah... I think so. Maybe about 30 seconds ago? I adjusted my wrist slightly because it was starting to ache from being bent at an awkward angle while I was gazing at the phone. It was a tiny movement, almost involuntary, but it felt kind of... relieving? Like, it's not like I consciously relaxed or anything, but just that small adjustment made me feel a little more comfortable in my seat."
+      "content": "It\u2019s so hard to focus on 'doing things for myself' when my whole life feels like I'm negotiating a merger, needing a perfect, quantifiable return. I feel like I'm constantly failing the metrics of happiness, whether that\u2019s my family\u2019s metric or my own. I just want to feel like I'm finally doing something substantial, something that matters to *both* sides.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
     },
     {
       "role": "assistant",
-      "content": "That was a very specific, observable moment. A slight, almost involuntary adjustment of the wrist\u2014a physical response to a specific sensation of ache.\n\nYou described that small movement as feeling \"relieving.\" If we set aside the word 'relieving' for a moment, and just look at the mechanics of the action: When you adjusted your wrist, did the movement require you to use your elbow, or was it purely a rotation at the wrist itself?\n\nWhat was the point of resistance, or the point of *tension*, that the movement was correcting? Let's map the physical geometry of that adjustment."
+      "content": "**1. Deep Validation (Validation)**\nIt sounds incredibly exhausting and deeply demoralizing to feel like your entire life is being negotiated like a corporate merger, where every action must justify a \"perfect, quantifiable return.\" Please know that this pressure to measure happiness\u2014to put a metric on your soul\u2014is immense, and it is exhausting to live under that constant scrutiny. It is completely valid that you feel like you are failing a set of metrics, because you are trying to satisfy two sets of metrics that are fundamentally at odds: the logical, external metrics of success, and the messy, internal metrics of self-worth.\n\n**2. Value Bridge (Connection)**\nWhen you are constantly focused on the return on investment, it\u2019s natural to feel depleted. However, the deepest, most sustainable value\u2014the one that matters to both sides\u2014is often *Meaning* or *Authentic Alignment*. These values cannot be measured on a spreadsheet; they are felt in the process. Instead of asking, \"What is the quantifiable return?\" let's shift the focus to: \"What process, no matter how small, makes me feel *aligned*?\" What does it feel like to be in motion toward something that feels meaningful, even if the immediate financial return is zero?\n\n**3. Actionable Micro-Step (Action)**\nTo honor that value of alignment, let's set a micro-step for today that bridges the gap between the practical and the meaningful. Instead of trying to build a massive plan, can you spend 15 minutes creating a simple \"Value Venn Diagram\" for yourself? On one side, list 3 things your family values in you. On the other side, list 3 things you value about yourself. The micro-step is simply to draw the overlapping center\u2014the small, shared space where those two lists intersect. This exercise doesn't solve your life, but it gives you a tangible, visual starting point for where your efforts might naturally land, validating that *both* sides hold valuable truths."
     },
     {
       "role": "user",
-      "content": "I think I used my forearm and elbow a bit when adjusting my wrist... it wasn't just a pure wrist rotation. The movement required me to flex my forearm slightly to get into position, so there was some gentle stretching involved.\n\nAnd as for the point of resistance or tension, I think it was just around the base of my pinky finger? Like, it felt like that area had been holding onto that awkward angle for a bit, and when I adjusted my wrist, that tension got released."
+      "content": "A Venn diagram... so I\u2019m supposed to find the overlap between what they want and what I want? But what if the overlap is just... nothing? What if they are genuinely incompatible, and I'm just wasting time trying to find a perfect intersection that doesn't exist?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
     },
     {
       "role": "assistant",
-      "content": "You are giving me such precise, physical details\u2014moving beyond the abstract feeling and mapping the actual mechanics: the involvement of the forearm and the elbow, the necessary flexing, and the pinpoint location of the tension at the base of the pinky finger.\n\nThat small, functional adjustment\u2014the one that required the forearm to flex\u2014it sounds like a small, physical negotiation with the ache.\n\nWhen that tension at the base of the pinky finger finally released, what was the *texture* of that release? Was it a sudden snap, a gradual slide, or something else entirely?\n\nLet's focus only on the physical quality of the 'letting go.'"
+      "content": "**1. Deep Validation (Validation)**\nIt sounds incredibly disheartening and exhausting to confront the possibility that the overlap might be nothing\u2014that the things you are asked to be and the things you are meant to be might be genuinely incompatible. Please know that this fear of futility is profoundly painful. The feeling of being stuck in a perceived gap, where the two worlds refuse to meet, is one of the most agonizing emotional positions to occupy. It is completely valid to feel that the effort of searching for a perfect intersection is simply a waste of time.\n\n**2. Value Bridge (Connection)**\nWhen the incompatibility feels absolute, the pressure to *find* a solution becomes overwhelming. In these moments, we must shift the focus away from the outcome (the perfect overlap) and toward the value of **Courage** or **Acceptance**. If you could move past the need for a perfect intersection, what value would that open up? It is the courage to live *in the tension*\u2014to acknowledge the gap without needing to immediately fill it. What does it feel like to give yourself permission to exist in the space between what is expected and what is true, without needing a resolution?\n\n**3. Actionable Micro-Step (Action)**\nTo honor that value of acceptance, let's set a micro-step for today that requires absolutely no decision-making. Can you commit to a \"Non-Resolution Window\" of 15 minutes? During this time, you are simply allowed to sit with the feeling of the gap\u2014the feeling of incompatibility\u2014without trying to fix it, solve it, or rationalize it. You are not allowed to plan, strategize, or even feel guilty. This micro-step is a powerful act of self-witnessing, teaching your nervous system that *it is okay to feel confused, and it is okay to not have the answer right now.*"
     },
     {
       "role": "user",
-      "content": "I think when I adjusted my wrist and that tension released at the base of my pinky finger, it was almost... gentle? Like, there wasn't any sudden snap or jolt. It was more like a very slight, smooth sliding sensation\u2014like when you gently stretch out a tight muscle and it just... eases up."
+      "content": "It's just... so hard to sit in the 'gap' when the noise is so loud. My anxiety is just spiking, and I feel like I'm going to spiral into just shutting down completely. I don't know how to just... do nothing.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
     }
   ]
 }

@@ -2087,6 +2087,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 2 (qwen3:4b)"
+    },
+    {
+      "exp_id": "exp_0073",
+      "strategy_name": "Deep Reflective Values-Utility Loop (DRVUL) v1.1",
+      "hypothesis": "By replacing the generic 'reflective question' with a mandatory 'Value-Guided Utility Question' that anchors the user's current struggle to their stated or implied life values, we will increase the perceived clinical depth and improve the score by making the intervention feel less like simple reflection and more like targeted therapeutic direction, targeting a score above 90.0.",
+      "score": 26.5,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 2 (qwen3:4b)"
     }
   ],
   "best_score": 91.25
