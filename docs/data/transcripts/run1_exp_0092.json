@@ -1,0 +1,92 @@
+{
+  "id": "exp_0092",
+  "timestamp": "2026-04-19T07:55:13.930974",
+  "strategy": {
+    "name": "Micro-Utility-Meaning Bridge (MUMB) v2.0",
+    "hypothesis": "By anchoring the conversational flow entirely on identifying a concrete, observable micro-utility (the 'what'), and then using a single, gently framed, open-ended Socratic question to explore the immediate personal *significance* or *consequence* of that micro-event (the 'what it means'), we will provide novel, actionable, and non-platitudinous insight that maximizes perceived conversational flow and genuine depth, significantly surpassing the 6.907 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Ava",
+    "age": 35,
+    "occupation": "Marketing Manager",
+    "presenting_issue": "I'm having trouble sleeping and feeling overwhelmed after a recent project at work went awry.",
+    "background_story": "I've been putting in long hours to meet tight deadlines, but the pressure has taken a toll on my mental well-being. Lately, I've been struggling with anxiety about making mistakes and not being able to keep up the pace. My relationships are starting to suffer too \u2013 my partner feels like they're competing for attention with my work.",
+    "personality": "Direct yet guarded, preferring to focus on task-oriented conversations rather than exploring emotions. Self-critical when things don't go as planned.",
+    "baseline_phq9": 14,
+    "archetype_label": "Overwhelmed Professional"
+  },
+  "scores": {
+    "total_score": 3.6,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by gently exploring the patient's emotions and needs without forcing direct emotional disclosure. The reflective listening was superb, validating the patient's reality and mirroring their language effectively. The de-escalation marker shows a significant decrease in the patient's distress and anxiety throughout the conversation.",
+    "audit_multiplier": 0.4,
+    "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add any genuine insight or depth to the conversation. The constant use of phrases like 'That must have been incredibly frustrating' and 'What did that tiny moment suggest about...' creates a sense of formulaic roboticness rather than authentic engagement."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Welcome. I'm here with you, and there is no need to rush or explain anything perfectly. We can just sit with what is present right now.\n\nIf you feel comfortable, I wonder if we could talk about a moment from the last few days\u2014maybe something that felt emotionally significant, but also something small, almost mundane. A tiny moment where something happened, or something you noticed.\n\nWe don't have to talk about the big feelings yet. Just tell me about the moment itself. What was the setting? What were you doing?"
+    },
+    {
+      "role": "user",
+      "content": "*sigh* Fine. I guess it's just that... on Tuesday, after a long day at work, I decided to grab dinner with my partner instead of eating alone like I usually do. We went out to this new restaurant that just opened up down the street from our place. I was looking forward to it, but when we got there, they were having some kind of major technical issue with their payment system. It took forever to get served, and by the time we finally got our food, we only had like 20 minutes before close. It was just this whole frustrating experience, you know?"
+    },
+    {
+      "role": "assistant",
+      "content": "You mentioned the technical issue with the payment system. That must have been incredibly frustrating\u2014a moment where the mechanics of the evening just stopped working.\n\nWhen that delay was happening, what did that tiny moment suggest about the flow of the evening for you?"
+    },
+    {
+      "role": "user",
+      "content": "*shrugs* It just felt like everything was going wrong, I guess. Like, we were already running a bit behind schedule because I was late getting out of work, and then this technical issue happens... it just felt like one thing after another wasn't going right. And my partner seemed really annoyed too, which made me feel even more frustrated. It wasn't that big a deal in the grand scheme, but at the time, it just felt like everything was coming together to make for a terrible night."
+    },
+    {
+      "role": "assistant",
+      "content": "You mentioned that by the time the food arrived, you only had about twenty minutes before the restaurant was closing. That little detail\u2014that ticking clock\u2014must have been visible in the air.\n\nWhen you looked at that time running out, what did that tiny moment suggest about the *pace* of the evening for you?"
+    },
+    {
+      "role": "user",
+      "content": "*sighs* Yeah... it felt like we were already racing against the clock, and then to find out we only had a few minutes left was just... ugh. It was like, I knew my partner was getting tired, and I was feeling exhausted too... it just felt like there wasn't enough time to even relax and enjoy our dinner together. Like, we were already in this rush-mode, and then the clock was literally ticking down."
+    },
+    {
+      "role": "assistant",
+      "content": "You kept returning to that detail\u2014the clock ticking down, the feeling of the race against the minutes. It sounds like that physical constraint was very noticeable.\n\nWhen that time limit was the defining factor, what did that tiny moment suggest about the *space* you needed to feel connected to your partner?"
+    },
+    {
+      "role": "user",
+      "content": "*pauses slightly, looking away* I don't know... it just felt like we were both stuck in this rush, trying to get our dinner and then leave, instead of actually being present with each other. Like, there wasn't enough time or space to really connect, if you know what I mean. It was all just about getting through the evening as quickly as possible, rather than taking a moment to... I don't know, talk or laugh together or something. *trails off*"
+    },
+    {
+      "role": "assistant",
+      "content": "You described it as feeling like the whole evening was about \"getting through\" it, rather than being present.\n\nWhen you finally gathered your things and started moving toward the exit, in that physical act of leaving, what did that tiny moment suggest about what felt most important in that moment?"
+    },
+    {
+      "role": "user",
+      "content": "*shrugs* Yeah... I guess what felt most important was just getting out of there. Like, finding some kind of escape from all this chaos and stress. We didn't even bother to linger or chat on the way out \u2013 we just grabbed our things and left. It was like, once that dinner was over, I just wanted it to be done with. *pauses*"
+    },
+    {
+      "role": "assistant",
+      "content": "You mentioned that once the dinner was over, the immediate, pressing priority was just \"getting out of there,\" an escape.\n\nWhen you physically gathered your things and started moving out the door, what did that tiny, swift action suggest about the emotional weight you were carrying in that moment?"
+    },
+    {
+      "role": "user",
+      "content": "*looks down* Honestly... I don't know if I want to admit this, but it felt like a desperate attempt to get away from everything. Like, I just wanted to flee from all those feelings of frustration and stress and anxiety that had been building up inside me all day. It wasn't even about the dinner or my partner \u2013 it was just about finding some kind of peace, you know? *trails off*"
+    },
+    {
+      "role": "assistant",
+      "content": "You spoke about that feeling\u2014the desire for \"some kind of peace.\" It sounds like the physical act of leaving the restaurant was deeply tied to needing that sense of release.\n\nIf we take that feeling of wanting peace and anchor it right back to the moment you were walking out the door, what did that tiny, internal need suggest about what you were actually looking for in that space?"
+    },
+    {
+      "role": "user",
+      "content": "*hesitates slightly* I guess... I was looking for a way to calm down, to slow down. Like, I felt like I was just spinning around in circles, trying to keep up with all these demands and expectations at work... and then this dinner disaster happens, and it's just too much. So, when I walked out that door, what I really needed was some kind of stillness, you know? A chance to stop moving for a minute and just catch my breath."
+    }
+  ]
+}

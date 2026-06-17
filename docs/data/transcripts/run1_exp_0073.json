@@ -1,0 +1,92 @@
+{
+  "id": "exp_0073",
+  "timestamp": "2026-04-19T05:27:26.643274",
+  "strategy": {
+    "name": "Minimal Micro-Utility Mapping (MMUM) v1.1",
+    "hypothesis": "By retaining the clinical focus on identifying actionable exceptions and micro-behaviors (Utility/BA) while drastically restricting all language to an ultra-minimalist, non-theoretical, and purely 'what-is-observable' conversational tone, we can maximize perceived conversational authenticity and genuine presence, thereby surpassing the 6.907 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Evelyn",
+    "age": 22,
+    "occupation": "Student",
+    "presenting_issue": "I'm worried about my upcoming exams and feel overwhelmed by the pressure.",
+    "background_story": "I've been struggling to balance schoolwork with part-time job responsibilities. Lately, I've been having trouble sleeping and finding myself crying uncontrollably after watching a particularly emotional video online. My relationships with friends have also suffered as I become increasingly withdrawn. I just want someone to talk to and help me figure out what's going on.",
+    "personality": "I'm a perfectionist and always worry about making mistakes, which makes it hard for me to relax. I constantly seek reassurance that everything will be okay, even when it feels like the world is falling apart.",
+    "baseline_phq9": 12,
+    "archetype_label": "Anxious Student"
+  },
+  "scores": {
+    "total_score": 4.5,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by acknowledging the patient's physical sensations and subtle emotional cues. The reflective listening was superb, with the therapist validating the patient's experiences without trying to 'fix' them.",
+    "audit_multiplier": 0.5,
+    "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'It sounds like...', 'You are noticing...', and 'That was a very specific, observable moment', creates a sense of robotic formulaic language rather than authentic engagement. Additionally, the therapist's focus on minute physical details, such as the temperature of the phone and the texture of the wrist adjustment, detracts from the patient's emotional experience and neglects to explore deeper subtext."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Thank you for making the time to connect today. Please know that this space is entirely yours, and there is no need to perform or explain anything.\n\nTo help us start, I wonder if you could tell me what is most immediately observable for you right now. It doesn't have to be a big thing\u2014it could be the color of the wall, the sound of the air conditioning, or how your feet feel on the floor.\n\nJust tell me what you are *seeing* or *sensing* in this moment. We can start there."
+    },
+    {
+      "role": "user",
+      "content": "It's just... my mind is racing with all these thoughts about exams and grades. But if I'm being honest, right now I'm seeing a messy room and a bunch of unfinished assignments staring at me from my desk. It feels overwhelming to even look at them. And honestly, it's hard for me to focus on anything except how much stress I'm under."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for pointing that out. It takes real honesty to describe that combination of racing thoughts and the physical reality of the room.\n\nSo, you are seeing the assignments, and the room itself is described as messy. When you look at that desk\u2014the one with the unfinished assignments\u2014what is the most prominent object or color that catches your eye right now? Is it the pile of papers, or perhaps something else on the desk surface?\n\nLet's focus just on the *things* in the room for a moment."
+    },
+    {
+      "role": "user",
+      "content": "...I think I'm looking at my phone, actually. It's lying there with all these messages from my friends and family asking how I'm doing, and I feel guilty because I haven't had time to respond to any of them. The screen is lit up, but it's not like I'm paying attention to the notifications or anything... just that it's always there, reminding me of everything I need to do."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the phone is a very present object right now\u2014a source of light and a collection of notifications.\n\nWhen you look at the screen, is it the *light* itself\u2014the glow\u2014that is most noticeable? Or is it the specific arrangement of the messages, the small bubbles of text, that holds your focus?\n\nCan you describe one specific color you see on the screen right now? Just one color."
+    },
+    {
+      "role": "user",
+      "content": "I think it's the blue light from the screen that stands out to me... and I'm seeing a lot of gray text with some reddish-orange highlights from the notifications. The blue is almost like a steady hum, you know? It's always there, even when I'm not actively looking at my phone."
+    },
+    {
+      "role": "assistant",
+      "content": "The blue light, the gray text, the reddish-orange highlights\u2014you are noticing the specific palette of the screen. It's a very detailed observation.\n\nYou used the word \"hum\" to describe the blue light. If we set aside the feeling of the hum for a moment, and just look at the physical phone itself\u2014the object\u2014what is the temperature of the phone right now? Is it cool, warm, or neutral against the surface you are resting it on?\n\nLet's anchor into the physical reality of that blue light."
+    },
+    {
+      "role": "user",
+      "content": "I think the phone is... lukewarm, maybe? It's not too hot or cold, just sort of neutral and comfortable to touch. Like, if I were to pick it up right now, my hand wouldn't mind resting on it for a bit."
+    },
+    {
+      "role": "assistant",
+      "content": "Lukewarm. Neutral. A surface that doesn't demand attention but is simply present. That's a very precise description of the object's physical state.\n\nYou mentioned that the phone is comfortable to touch, and that you could rest your hand on it.\n\nI wonder if we can shift our focus just slightly, away from the objects, and toward your own body. In the last five minutes, when you were noticing the blue light and the notifications, was there any moment\u2014even a very small one\u2014where you shifted your weight? Did you move your fingers, or adjust your posture, even slightly?\n\nWhat did that micro-movement feel like?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah... I think so. Maybe about 30 seconds ago? I adjusted my wrist slightly because it was starting to ache from being bent at an awkward angle while I was gazing at the phone. It was a tiny movement, almost involuntary, but it felt kind of... relieving? Like, it's not like I consciously relaxed or anything, but just that small adjustment made me feel a little more comfortable in my seat."
+    },
+    {
+      "role": "assistant",
+      "content": "That was a very specific, observable moment. A slight, almost involuntary adjustment of the wrist\u2014a physical response to a specific sensation of ache.\n\nYou described that small movement as feeling \"relieving.\" If we set aside the word 'relieving' for a moment, and just look at the mechanics of the action: When you adjusted your wrist, did the movement require you to use your elbow, or was it purely a rotation at the wrist itself?\n\nWhat was the point of resistance, or the point of *tension*, that the movement was correcting? Let's map the physical geometry of that adjustment."
+    },
+    {
+      "role": "user",
+      "content": "I think I used my forearm and elbow a bit when adjusting my wrist... it wasn't just a pure wrist rotation. The movement required me to flex my forearm slightly to get into position, so there was some gentle stretching involved.\n\nAnd as for the point of resistance or tension, I think it was just around the base of my pinky finger? Like, it felt like that area had been holding onto that awkward angle for a bit, and when I adjusted my wrist, that tension got released."
+    },
+    {
+      "role": "assistant",
+      "content": "You are giving me such precise, physical details\u2014moving beyond the abstract feeling and mapping the actual mechanics: the involvement of the forearm and the elbow, the necessary flexing, and the pinpoint location of the tension at the base of the pinky finger.\n\nThat small, functional adjustment\u2014the one that required the forearm to flex\u2014it sounds like a small, physical negotiation with the ache.\n\nWhen that tension at the base of the pinky finger finally released, what was the *texture* of that release? Was it a sudden snap, a gradual slide, or something else entirely?\n\nLet's focus only on the physical quality of the 'letting go.'"
+    },
+    {
+      "role": "user",
+      "content": "I think when I adjusted my wrist and that tension released at the base of my pinky finger, it was almost... gentle? Like, there wasn't any sudden snap or jolt. It was more like a very slight, smooth sliding sensation\u2014like when you gently stretch out a tight muscle and it just... eases up."
+    }
+  ]
+}

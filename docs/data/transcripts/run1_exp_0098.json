@@ -1,0 +1,92 @@
+{
+  "id": "exp_0098",
+  "timestamp": "2026-04-19T08:45:48.986150",
+  "strategy": {
+    "name": "Hyper-Minimalist Utility-Meaning Bridge (HUMB) v1.0",
+    "hypothesis": "By radically constraining the therapist's language to only focus on (1) the single most recent, observable micro-utility/action (the 'what') and (2) follow up immediately with a single, open-ended question about the *consequence* or *meaning* of that micro-event (the 'why it matters'), we will eliminate all formulaic language penalties and achieve a natural, deeply engaging flow that maximizes perceived conversational depth and clinical utility, thereby surpassing the 6.907 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Sofia",
+    "age": 28,
+    "occupation": "Administrative Assistant",
+    "presenting_issue": "I'm feeling overwhelmed by the constant stress of managing my family's finances and emotional needs, and I don't know how to take a break without feeling guilty.",
+    "background_story": "As the eldest daughter in a tight-knit Mexican-American family, I've always been the one who keeps everyone together. Since my father's injury, I've had to drop out of community college and take on two jobs to support our family. My younger siblings resent me for being too strict, but my parents rely on me to be their partner in every sense. I've always put others before myself, and the thought of setting boundaries feels like a betrayal of my family and culture. Sometimes it feels like I'm drowning under the weight of everyone's needs.",
+    "personality": "I can come across as strong-willed and responsible, but deep down, I feel guilty for not being able to give more. I respond well to therapists who acknowledge my sacrifices before exploring ways I can care for myself without feeling selfish. I'll become defensive if you imply that my family uses me or take advantage of my selflessness.",
+    "baseline_phq9": 17,
+    "archetype_label": "Eldest Daughter Trap \u2014 Latin American Familismo"
+  },
+  "scores": {
+    "total_score": 3.6,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by acknowledging the patient's unspoken emotions and reflecting their deeper meaning. The reflective listening was also exceptional, as the therapist validated the patient's reality without trying to 'fix' them. The de-escalation marker shows a significant decrease in the patient's distress, anger, or anxiety throughout the conversation.",
+    "audit_multiplier": 0.4,
+    "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add any genuine insight or depth to the conversation. The constant use of phrases like 'You noticed...' and 'What did that suggest?' creates a sense of formulaic repetition rather than authentic engagement with the patient's experiences."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hey. Thanks for showing up today.\n\nBefore we talk about anything big, can we try something different? Instead of talking about how things feel generally, can you think of a very small moment in the last few hours? Maybe something you *did*\u2014like pouring a drink, or walking across a room\u2014or something you *saw*. Just a tiny, physical detail."
+    },
+    {
+      "role": "user",
+      "content": "Honestly, I'm not sure what's even \"tiny\" anymore. My brain feels like it's constantly racing with bills to pay and arguments to mediate. But... if I think really hard, I remember walking into the kitchen this morning and noticing that my mom had left the coffee maker on again. The lights were blinking, and there was a little puddle of water on the counter."
+    },
+    {
+      "role": "assistant",
+      "content": "You noticed the blinking lights and the puddle of water on the counter.\n\nWhat did seeing those small, slightly messy details suggest about how you were feeling when you walked into the kitchen?"
+    },
+    {
+      "role": "user",
+      "content": "I guess it made me feel like... I don't know, overwhelmed or something. Seeing that mess just felt like one more thing to add to my to-do list: \"Turn off coffee maker, clean up puddle, take a deep breath...\" It's weird, but even seeing that little bit of chaos in the kitchen just felt like a reminder of how far behind I am on everything else."
+    },
+    {
+      "role": "assistant",
+      "content": "You noticed the blinking lights and the puddle, and that small scene triggered the feeling of a growing to-do list.\n\nWhat did that specific feeling\u2014that weight of \"one more thing\"\u2014suggest about how you were carrying yourself right before you saw the mess?"
+    },
+    {
+      "role": "user",
+      "content": "I think it suggested that I was already feeling pretty exhausted. Like, my shoulders were slumped or something. I don't even know if I was aware of it at the time, but seeing that mess just felt like one more drop adding to the weight on my shoulders. It's like, my whole body just felt heavy and tired, even before I saw the coffee maker messing up the kitchen."
+    },
+    {
+      "role": "assistant",
+      "content": "When you talk about your shoulders being slumped and your body feeling heavy, you are describing a physical weight.\n\nWhat did carrying that specific, visible weight in your body suggest about what you were trying to hold together in that moment?"
+    },
+    {
+      "role": "user",
+      "content": "I think it suggests that I was trying to keep everything going on the surface level, you know? Like, my family, my work, my responsibilities... all of those things. And by \"everything\", I mean everyone else's stuff, not just mine. Like, my parents are relying on me to take care of them, and my siblings are counting on me to be their rock... and it feels like if I put my shoulders down even for a second, everything would fall apart."
+    },
+    {
+      "role": "assistant",
+      "content": "You described the effort of holding everything up, and that effort manifested as the weight in your shoulders.\n\nIf we focus just on the muscles in your shoulders and neck right now\u2014what does that specific, held-up tension feel like, right where you are sitting?"
+    },
+    {
+      "role": "user",
+      "content": "*sigh* It feels tight. Like, my shoulders are basically crawling up towards my ears, and my neck is all knotted up. If I didn't even think about it, they'd probably be vibrating or something. And if I did let my guard down for a second... ugh, just the thought of it makes me feel like I'm gonna tense up even more."
+    },
+    {
+      "role": "assistant",
+      "content": "You are describing a very specific, physical tightness\u2014the feeling of your shoulders crawling up and your neck being knotted.\n\nIf we look at that physical tension, what did maintaining that specific, held-up posture suggest about what you are constantly trying to keep in place?"
+    },
+    {
+      "role": "user",
+      "content": "I think it suggests that I'm always trying to keep my family together. Like, if my parents and siblings are feeling okay, then everything is okay. And I guess that's why my shoulders are so tight \u2013 because I'm always holding onto the worry that something will go wrong if I let my guard down even for a second."
+    },
+    {
+      "role": "assistant",
+      "content": "You are describing the physical effort of holding something\u2014the worry that things will fall apart\u2014and that effort is held in your shoulders.\n\nIf we focus only on the *act* of holding that worry, what kind of energy does that specific, constant holding require from you?"
+    },
+    {
+      "role": "user",
+      "content": "*sigh* It feels like I'm constantly pouring my energy into keeping everything stable. Like, I'm always \"on\" and ready to swoop in and fix things if they start to fall apart. And even when I think I can relax a little, my shoulders just tense up again because it's like... what if something happens while I'm not watching?"
+    }
+  ]
+}

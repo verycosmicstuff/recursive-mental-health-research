@@ -1,0 +1,92 @@
+{
+  "id": "exp_0029",
+  "timestamp": "2026-04-18T22:21:02.440868",
+  "strategy": {
+    "name": "Hyper-Conversational Utility Mapping (HCUM) v1.0",
+    "hypothesis": "By eliminating all structural scaffolding, jargon, and explicit theoretical language, and adopting a purely conversational, ultra-minimalist tone that focuses solely on observed behaviors and functional constraints, we can achieve the highest perceived authenticity and genuine engagement, thus transcending the structural limitations that capped the previous highest score.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Alexis",
+    "age": 37,
+    "occupation": "Software Engineer",
+    "presenting_issue": "I'm feeling overwhelmed by the pressure to meet my project deadlines while struggling with lack of motivation.",
+    "background_story": "As a high-achieving software engineer, I've always been driven to succeed. However, the constant scrutiny and criticism from colleagues have taken a toll on my mental health. Lately, I've been questioning my abilities and doubting myself, even though I'm capable and competent. When things get tough at work, I tend to internalize it and feel like I'm failing as a person.",
+    "personality": "I'm direct, analytical, and logical, but also self-critical and perfectionistic. When discussing emotional topics, I might appear guarded or hesitant to open up due to fear of being perceived as weak. As we converse, I'll be honest about my struggles, but I may struggle to admit when I need help.",
+    "baseline_phq9": 13,
+    "archetype_label": "Overwhelmed Professional"
+  },
+  "scores": {
+    "total_score": 5.4,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by accurately inferring and reflecting the patient's unspoken emotions and deeper meaning. The reflective listening was also exceptional, with the therapist validating the patient's reality without trying to 'fix' them. The de-escalation marker shows a significant decrease in the patient's distress, anger, or anxiety throughout the conversation.",
+    "audit_multiplier": 0.6,
+    "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and mirroring, failing to provide genuine engagement or insight. The conversation is bogged down by repetitive questions that don't add much value, and the therapist doesn't effectively explore subtext or pick up on subtle cues from the patient."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Thank you for showing up today.\n\nI'm here just to walk alongside you. There's no need to perform or explain anything. We're just going to look at what's happening.\n\n***\n\n*(Waiting for the patient to begin speaking)*"
+    },
+    {
+      "role": "user",
+      "content": "*sigh* Fine. Look, I don't really know why I'm here. I guess I just feel like I'm stuck in a rut and can't seem to get out of it. Meetings are dragging on forever, and my code is getting sloppy. I just feel so... stuck. *pauses*"
+    },
+    {
+      "role": "assistant",
+      "content": "I hear that feeling of being stuck.\n\nIt sounds like the routine\u2014the long meetings, the work that feels like it's just *dragging*\u2014is having a ripple effect, maybe making the focus on the code feel looser, less precise.\n\nWhen you say the code is getting sloppy, what does that sloppiness *feel* like? Is it a specific type of fatigue, or is it more about the mental space you're operating in?"
+    },
+    {
+      "role": "user",
+      "content": "I guess it's just hard to explain. It doesn't feel like I'm actually doing worse work, but there's this sense that everything feels off-kilter. Like, I'll be looking at some code and think \"that's not right\" even though I know I wrote it fine yesterday. Or, I'll miss a tiny detail and it'll take me way longer to figure out why something isn't working. It's like my normal process is just... slow. *pauses*"
+    },
+    {
+      "role": "assistant",
+      "content": "So, there's this gap\u2014a space between what you *know* you can do, and what it feels like when you actually sit down to do it today.\n\nIt's not just that the work is harder; it's that the *process* itself feels sluggish, like there's an extra layer of friction when you're trying to track down a tiny detail.\n\nWhen you notice that feeling of things being \"off-kilter\"\u2014that little internal voice saying, \"Wait, that's not right\"\u2014where does that feeling sit in your body? Is it a tightness, a kind of humming, or something else?"
+    },
+    {
+      "role": "user",
+      "content": "*hesitates* Okay... I guess it's more like a nagging sensation in the pit of my stomach. Like there's this constant, low-grade anxiety simmering just below the surface. It's hard to pinpoint exactly what it is, but it feels like a warning sign that something's about to go wrong if I don't... I don't know, pay attention or something. *scratches arm nervously*"
+    },
+    {
+      "role": "assistant",
+      "content": "That physical feeling\u2014that low, constant simmering in your stomach\u2014it makes sense that you'd describe it as a warning sign.\n\nIt sounds like your body is keeping a very high level of alert, almost like it's doing a physical job of reminding you, \"Pay attention. Don't let anything slip.\"\n\nAnd when you're in that state of constant readiness, of having to be so vigilant, what does that attention *cost* you? Does it make it harder to just... rest? Or does it change how you interact with the work itself?"
+    },
+    {
+      "role": "user",
+      "content": "*takes a deep breath* Yeah, I think it makes everything feel more exhausting. Like, even when I'm not actively coding or working on something, my mind is still racing and I can't really relax. And when I am working, the pressure to get things just right... it's like my brain is always one step ahead, anticipating problems and worrying about what could go wrong. It's hard to focus on the task at hand because I'm so busy trying to stay one step ahead of all these potential pitfalls.\n\nAnd yeah, it definitely makes it harder to rest. Sometimes I'll lie awake at night thinking about some stupid little bug or feature that I need to implement, and I just can't shut my brain off. It's like my body is craving the downtime, but my mind is still running on this high alert mode... *trails off*"
+    },
+    {
+      "role": "assistant",
+      "content": "It makes perfect sense that the mind, when it's running this high, would feel exhausting. It's like the brain is running a constant internal simulation of potential failure, making you work overtime even when you're physically stopped.\n\nSo, there's this deep conflict: your body *needs* the downtime, the quiet, but your mind is refusing to let go of the checklist of all the things that *could* go wrong.\n\nWhen you're lying awake at night, thinking about a bug or a feature, and you finally manage to drift off... even if it's just for a few minutes, what is the very first thing you notice about that moment? What is different about the feeling when the mind finally slows down, even just a tiny bit?"
+    },
+    {
+      "role": "user",
+      "content": "*sighs* Yeah, I think the first thing I notice is this weird sense of... calm. It's like my brain finally says, \"Okay, I've got everything under control, I'll let go now.\" And it feels so... fleeting. Like, as soon as I become aware that I'm feeling calm, my mind starts racing again and I'm back to worrying about all the things that could go wrong.\n\nBut there's this tiny window where I can just breathe a little easier, you know? It's like my body is saying, \"Thank god, we can finally relax.\" And for a second or two, it feels... almost good. Like, I'm not exactly happy or anything, but there's this sense of relief that I can handle. *shrugs*"
+    },
+    {
+      "role": "assistant",
+      "content": "That sense of calm, that moment where your body seems to breathe out a little bit of tension... that's a really powerful thing to notice.\n\nIt sounds like your mind is so used to being in \"all-systems-go\" mode that when it gets a taste of that quiet, that feeling of \"I can handle this,\" it immediately treats it like a temporary glitch. It's like the warning system is so loud that it can't accept the quiet.\n\nAnd when you notice that little window\u2014that moment of physical relief, that sense of \"I can handle it\"\u2014what is the quality of that feeling? Is it more like a physical weight lifting, or is it more like a specific kind of temperature change in your chest?"
+    },
+    {
+      "role": "user",
+      "content": "*pauses, thinking carefully* Okay... I think the quality of that feeling is more like... warmth. Yeah, it's like my chest feels warmer, like there's a gentle glow spreading through me. It's not exactly a physical weight lifting, but more like this sense of expansion, like my whole body is relaxing and opening up.\n\nAnd in that moment, I think the thinking part of my brain actually takes a step back, you know? Like, it's not racing around making lists or worrying about what could go wrong. It's just... quiet. And that warmth feels like it's spreading through me, filling up all these little crevices and spaces where anxiety likes to hide.\n\n*pauses again* But yeah, as soon as I become aware of that feeling, my mind starts racing again, trying to make sense of it or worrying about what's going to happen next. It's like my brain is so used to being in high alert mode that it can't just... relax and enjoy the calm. *sighs*"
+    },
+    {
+      "role": "assistant",
+      "content": "That warmth, that feeling of expansion in your chest... it sounds like a really profound physical sign of safety. Like the body finally letting go of a grip it's been holding too tightly.\n\nAnd what's really interesting is that moment where you become *aware* of that warmth. It seems like the instant you notice the glow, the thinking part of your brain doesn't just accept it. It immediately steps in to analyze it\u2014to make sense of it, to categorize it, or to worry about what it means.\n\nIt's almost like the brain is saying, \"Wait, this feeling is too good, we need to figure out the rules for this,\" and that act of figuring out it pulls you right back into the worry cycle.\n\nIf we look at that moment\u2014that tiny window where the warmth spreads and the mind is quiet\u2014is there a way to just *let* the feeling be there, without needing to name it or understand it? What does that non-analyzed moment feel like in your body, if you were to try and simply observe it, without the pressure to figure it out?"
+    },
+    {
+      "role": "user",
+      "content": "*pauses, taking a deep breath* Yeah... I think if I were to just let the warmth be there, without trying to analyze or understand it, it would feel... gentle. Like the warmth would just spread and grow, filling up my chest and arms and legs, until it's like this soft, soothing glow that permeates every part of me.\n\nAnd in that moment, I think my mind would actually quiet down, stop racing around making lists and worrying about what could go wrong. It would be like the thinking part of my brain is saying, \"Okay, okay, we get it. We can relax now.\"\n\n*pauses again* Yeah... if I were to just let that feeling be there, without trying to figure out what it means or why it's happening, I think it would feel... safe. Like my whole body would feel protected and cared for, like everything is going to be okay.\n\nAnd yeah, it sounds silly, but I think that non-analyzed moment would actually make me feel more connected to myself, you know? Like I'd be able to tap into this deeper sense of calm and peace that's always there, waiting to be accessed."
+    }
+  ]
+}

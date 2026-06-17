@@ -1,0 +1,92 @@
+{
+  "id": "exp_0050",
+  "timestamp": "2026-04-19T02:14:09.448883",
+  "strategy": {
+    "name": "Co-Curious Insight Mapping (CCIM) v1.1",
+    "hypothesis": "By maintaining the ultra-minimalist, conversational tone and grounding all reflections in the patient's concrete language, but shifting the intervention from passive 'reflection' to active, gentle 'curiosity-driven questioning' that gently maps the *assumptions* or *rules* the patient is operating under, we will provide novel insight that avoids the 'platitude' penalty while maintaining the depth required to surpass the 6.907 score.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Kai",
+    "age": 32,
+    "occupation": "Marketing Coordinator",
+    "presenting_issue": "I'm struggling to balance work demands with my personal life, feeling overwhelmed by the constant pressure to perform.",
+    "background_story": "As a high school drop-out turned college graduate at 25, I've always felt like I'm trying to prove myself. My ADHD diagnosis at 30 was a wake-up call, and I've been working hard to learn coping mechanisms. Lately, though, it feels like I'm stuck in a cycle of constant stress and anxiety. People-pleasing has become second nature, but it's exhausting me. I feel like I'm living someone else's dream rather than my own.",
+    "personality": "When conversing, I tend to be bluntly honest, as if trying to compensate for my perceived shortcomings. I get anxious when the conversation shifts or slows down, and may respond impulsively or repeat myself. When met with silence or a pause, I'll interpret it as disinterest or judgment. I need someone who can speak plainly, acknowledge my emotions without dismissing them, and show empathy.",
+    "baseline_phq9": 14,
+    "archetype_label": "ADHD Rejection Sensitivity \u2014 Unmasking Crisis"
+  },
+  "scores": {
+    "total_score": 3.6,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by acknowledging the patient's unspoken emotions and reflecting their deeper meaning. The reflective listening was superb, with the therapist validating the patient's reality without trying to 'fix' them. The de-escalation marker shows a significant decrease in the patient's distress, anger, or anxiety throughout the conversation.",
+    "audit_multiplier": 0.4,
+    "audit_rationale": "Penalty applied because: The Therapist's responses are overly formulaic and lack genuine engagement. Repetitive mirroring is used to the point of being a crutch, rather than adding insight or depth to the conversation. The Therapist also fails to pick up on subtext and instead focuses on offering solutions before the patient has fully expressed themselves. Additionally, clich\u00e9d therapeutic phrases are used throughout the session, which detract from its overall effectiveness."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Thank you for showing up here today. I want you to know that there is no pressure to explain anything, or to even know where to start.\n\nMy only role right now is to be deeply present with whatever you bring to this space. We can treat this time like a shared exploration\u2014a place where we can gently look at the patterns of your thoughts, the things that feel sticky or difficult right now.\n\nWhen you're ready, just tell me what's been going on. I'm listening for the *structure* of what you're experiencing, not just the feelings attached to it. Take your time. We'll go at whatever pace feels right for you."
+    },
+    {
+      "role": "user",
+      "content": "Thanks...I guess. (pauses) Look, I don't know how much you want to hear, but my life is a mess. Work's a nightmare \u2013 constant pressure to perform and meet deadlines. My ADHD diagnosis was a huge wake-up call, and I've been trying to get a handle on it. But honestly, it feels like things are getting worse, not better."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are currently operating within a very intense system of pressure. On one hand, there is this external rule\u2014the one from work\u2014that demands constant, high-level performance. And on the other hand, there's this internal reality, the understanding of your ADHD, which makes following that rule feel incredibly difficult, almost impossible.\n\nIf I'm hearing you right, the pattern you're describing is that the *gap* between the required performance and your current ability to deliver it is what defines the \"mess.\"\n\nIs that close to what you're experiencing?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah...that sounds about right. It's like, no matter how hard I try, I'm constantly feeling behind. Like, even when I do manage to get things done, there's always something else waiting in the wings, demanding attention. And it's all so...linear. In my head, everything feels like a juggling act \u2013 multiple balls in the air at once, and if one drops, the whole thing comes crashing down.\n\nI guess that's why I'm here \u2013 trying to figure out how to get some control back over my life. It feels like I'm just going through the motions, living someone else's dream instead of my own..."
+    },
+    {
+      "role": "assistant",
+      "content": "That image of the \"juggling act\"\u2014where everything is multiple balls in the air, and the rule seems to be that if one drops, the whole thing crashes\u2014that's a powerful picture.\n\nIt seems like there's a very strong, unwritten rule operating for you right now: that **maintaining perfect equilibrium across all areas of your life is the only way to prevent a total collapse.** If the juggling act falters, the system fails.\n\nIs that the rule that feels most immediate and demanding?\n\nAnd if we look at that rule\u2014that *perfection* in the juggle is necessary to prevent the crash\u2014what would it cost, in terms of energy or effort, to keep following it?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah...that's exactly what it feels like. If I'm not keeping up this perfect facade, everything will fall apart. It's exhausting just thinking about it.\n\nAnd yeah, maintaining that equilibrium costs me so much. I always feel like I'm running on fumes, trying to keep all these balls in the air at once. It's hard to imagine what it would be like to not have that constant pressure, to not feel like I'm one mistake away from disaster..."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds profoundly exhausting. To live under the constant weight of the assumption that *any* lapse\u2014any single dropped ball\u2014is synonymous with total disaster.\n\nWhen you talk about the fear of the whole thing falling apart, it sounds like that fear has become the primary regulator for your life. It's the rule that says: **\"If I don't be vigilant, everything I value will be lost.\"**\n\nIf we were to treat this rule not as a fact, but as a *suggestion*\u2014a suggestion that has been following you for a long time\u2014what would it sound like if that suggestion were challenged? What would it cost, emotionally, to believe that a little bit of *falling* might not actually mean the end of everything?"
+    },
+    {
+      "role": "user",
+      "content": "Man...I don't know. It feels like this fear is just a part of who I am now. But to challenge it...to think maybe things wouldn't fall apart if I let my guard down for a second...that's scary, because it means giving up control.\n\nBut at the same time, I'm exhausted. So tired of living in constant fight-or-flight mode. Maybe, just maybe, letting go would give me some freedom to be myself, instead of trying to be this perfect marketing coordinator all the time...\n\nIt feels like that would take a lot of effort, though. Like, embracing the possibility that things might not crash and burn if I'm not so rigid...that's hard for me to imagine right now."
+    },
+    {
+      "role": "assistant",
+      "content": "It's incredibly brave to even entertain the idea of letting go of control, because that control, even when it's painful, feels like the only thing keeping you grounded right now.\n\nWe've spent time mapping this powerful rule\u2014the one that says vigilance is necessary to prevent disaster. And we've talked about how exhausting it is to maintain that facade of perfection.\n\nInstead of trying to imagine a massive shift\u2014the moment the entire structure doesn't fall down\u2014let's try something smaller. A shared detective mission.\n\nThink back to the last time\u2014even if it was just five minutes ago\u2014that you felt even slightly less frantic. A moment where the pressure didn't feel quite so overwhelming.\n\nWhat was different in that small, brief moment? What were you doing? What assumptions, even tiny ones, were you operating under then that were *different* from the assumption that you needed to be perfect right now?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah...I think I can remember a moment like that. It was yesterday morning, actually. I woke up a little earlier than usual and had some quiet time before getting started with work. There wasn't anything specific that made it different, but somehow it just felt...calmer.\n\nI think what was different is that I didn't have any meetings or deadlines looming over me. Just the possibility of having some extra time to myself. And maybe, because I wasn't rushing around like a madman, my brain had a chance to catch up with itself?\n\nBut even thinking about it now makes me nervous. Like, what if that calmness was just an illusion? What if something would've gone wrong anyway and I'd have ended up feeling worse off for having let my guard down? Ugh..."
+    },
+    {
+      "role": "assistant",
+      "content": "That moment\u2014the quiet morning\u2014that's significant. You identified two key elements: the *absence* of external demands (no meetings, no deadlines), and the resulting *space* for your brain to catch up with itself.\n\nThe rule that has been so loud is: **\"If I am not actively reacting to a crisis, I am failing.\"**\n\nBut in that quiet moment, you were operating under a different, unstated rule, or perhaps, a temporary suspension of rules. You were operating under the assumption that **\"I am allowed to simply *be* for a period of time.\"**\n\nAnd even when you look back at that exception, the old rule rushes in and whispers, \"But what if it was an illusion? What if something would have gone wrong anyway?\"\n\nIt sounds like the fear of the exception is often louder than the reality of the exception.\n\nLet's hold onto that memory of the quiet morning. It wasn't about achieving something perfect; it was about *allowing* something to simply exist.\n\nHow does it feel, just to acknowledge that this quiet, non-productive time\u2014this time where you weren't *doing* anything to prevent a crash\u2014was, in fact, a genuine moment of relief?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah...just acknowledging that feels kind of...freeing, I guess. Like, my brain is still trying to rationalize it, saying \"But what if...?\", but at the same time, there's this tiny part of me that's like, \"Hey, maybe it was okay to just be for a bit.\"\n\nIt's weird, because it feels like I'm betraying myself or something by acknowledging that. Like, I should be focusing on fixing things instead of dwelling on moments of calm.\n\nBut...I don't know, it almost feels like admitting that I can take a break, even if it's just for a minute, is the first step towards actually taking control back from this constant pressure.\n\nDoes that make sense?"
+    },
+    {
+      "role": "assistant",
+      "content": "It makes perfect sense. And what you are describing right now\u2014that internal resistance, the feeling of \"betraying yourself\" by acknowledging calm\u2014that is the old rule fighting back. It is the internal system that has been running on high alert for so long, that it doesn't know how to process the idea of peace. It hears \"calm\" and translates it into \"danger\" or \"failure.\"\n\nBut you just articulated something profoundly important: that admitting you *can* take a break, even if it feels like a betrayal, is the first step toward taking control.\n\nSo, if we were to summarize what we've mapped out today, it seems the old, demanding rule was: **\"My worth and safety are entirely dependent on my constant, visible performance.\"**\n\nAnd the exception you found, the moment of quiet, suggests a new, softer possibility: **\"My worth is not solely dependent on my performance; I am also allowed to simply *be*.\"**\n\nThis isn't about fixing everything right now. It's about testing the boundaries of that old rule.\n\nIf you're open to it, I have one small, gentle suggestion\u2014a tiny experiment. It doesn't need to solve anything, or even feel productive.\n\nCould you choose one moment tomorrow\u2014maybe during a transition, or when you are waiting for something\u2014and intentionally dedicate just three minutes to *doing nothing*? No phone, no task, no planning. Just three minutes where the only rule is that you are allowed to simply exist in that moment, without needing to fix, achieve, or prove anything?\n\nWe won't judge the outcome. We'll just observe what happens in those three minutes. How does that sound as a starting point?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah...I think I can do that. Just three minutes of doing nothing sounds like a tiny little rebellion against the old rule.\n\nYou know, it's funny. You're not asking me to solve anything or fix anything. You're just suggesting that I give myself permission to exist in a moment without judgment. And I think I'm actually kind of excited to see what happens when I do that.\n\nSo, yeah...I'll try to dedicate three minutes tomorrow to doing nothing. No phone, no task, no planning. Just me, existing in the moment."
+    }
+  ]
+}

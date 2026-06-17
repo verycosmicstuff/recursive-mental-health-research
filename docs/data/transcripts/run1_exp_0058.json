@@ -1,0 +1,92 @@
+{
+  "id": "exp_0058",
+  "timestamp": "2026-04-19T03:27:08.286946",
+  "strategy": {
+    "name": "Brevity-Optimized Process Mapping (BOPM) v1.1",
+    "hypothesis": "By retaining the clinical depth of process mapping (ACT/PCT) but enforcing extreme brevity\u2014limiting reflections to one or two highly specific, non-generic sentences\u2014we can eliminate the 'platitude' and 'formulaic' penalties while maintaining the clinical depth necessary to surpass the 6.907 score.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Kai",
+    "age": 38,
+    "occupation": "Software Engineer",
+    "presenting_issue": "I'm struggling to cope with the constant pressure at work and feeling overwhelmed by simple social interactions.",
+    "background_story": "As a software engineer, I've always been driven to deliver high-quality results. However, since being diagnosed with ASD at 34, I've experienced increasing burnout from trying to navigate complex social situations, which often lead to sensory overload and feelings of anxiety. My previous therapists attempted to use CBT techniques, but they only exacerbated my stress. I'm desperate for a therapist who can adapt to my communication style and provide concrete support.",
+    "personality": "Straightforward and literal in my thinking, I prefer concrete and specific questions. Avoiding eye contact or forced small talk can be overwhelming. I may respond with short sentences due to executive dysfunction and sensory overload. If you use neurotypical social cues or vague emotional vocabulary, I'll likely shut down.",
+    "baseline_phq9": 17,
+    "archetype_label": "Late-Diagnosed Autistic Burnout"
+  },
+  "scores": {
+    "total_score": 2.7,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated a deep understanding of the patient's needs and emotions, accurately reflecting their unspoken concerns and validating their reality. The therapist's empathetic approach helped to de-escalate the patient's distress, creating a safe space for further exploration.",
+    "audit_multiplier": 0.3,
+    "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and clich\u00e9d therapeutic phrases, such as 'The feeling of the conversation being a "
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "**(Waiting for the patient to begin.)**"
+    },
+    {
+      "role": "user",
+      "content": "I'm here. I don't know what to expect, but I want to get this over with. Can we just focus on my therapy goals and avoid small talk?"
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the primary weight right now is the tension between wanting to be efficient and the uncertainty of what the process will actually involve."
+    },
+    {
+      "role": "user",
+      "content": "Yeah... Just knowing that you don't know how it'll go makes me anxious. I've had therapists before who didn't understand my needs, so every conversation feels like a gamble. Can we establish some ground rules or expectations for our sessions? What's your approach going to be?"
+    },
+    {
+      "role": "assistant",
+      "content": "The feeling of the conversation being a \"gamble\" suggests a deep, immediate need to predict the outcome and establish safety parameters before any emotional work can begin."
+    },
+    {
+      "role": "user",
+      "content": "That makes sense. I guess I'm just trying to control the situation by understanding what's going to happen beforehand. It helps me feel more secure when I know what to expect. Can we start with some concrete rules or protocols for our sessions? Like, do you have a set time limit per session?"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems the desire for concrete protocols\u2014the time limits, the rules\u2014is a way of externalizing control over the internal anxiety that the unknown process generates."
+    },
+    {
+      "role": "user",
+      "content": "Yeah... I suppose that's true. I just don't want to feel overwhelmed or caught off guard by something that could trigger an anxiety attack. Concrete plans make me feel more in control. Can we agree on some specific topics or goals for each session? That way, I know what to focus on and can prepare better."
+    },
+    {
+      "role": "assistant",
+      "content": "The repeated request for a fixed agenda suggests that the need for predictability is functioning as a primary, immediate mechanism to contain the rising tide of generalized anxiety."
+    },
+    {
+      "role": "user",
+      "content": "...Yeah. Okay. Look, I just want to feel safe in here, you know? Without knowing what's going to happen or what to expect, my mind starts racing and I get all worked up. If we can establish some kind of structure or routine, that would help me calm down a bit. Can we make a list of topics or goals for our sessions and stick to it?"
+    },
+    {
+      "role": "assistant",
+      "content": "The persistent focus on external structure\u2014the lists, the protocols\u2014is acting as a necessary, but exhausting, containment system for the internal sensation of the mind racing and losing its footing."
+    },
+    {
+      "role": "user",
+      "content": "Ugh... Yeah, I guess so. It's like my brain is constantly spinning and I need some kind of anchor to keep me from feeling lost or trapped. Can we just make it stop, then? Like, can we find a way to calm down my mind and just talk about something that doesn't feel like a threat?"
+    },
+    {
+      "role": "assistant",
+      "content": "The impulse to demand that the spinning mind simply \"stop\" suggests that the anxiety itself has become a physical exhaustion, a relentless, demanding engine that you are trying to shut down."
+    },
+    {
+      "role": "user",
+      "content": "*sigh* Yeah, I'm just so tired of feeling this way all the time. It's like my brain is constantly revving its engine and I'm stuck in neutral. Can we please just find some way to quiet it down? Maybe you can help me figure out what's causing it or something?"
+    }
+  ]
+}

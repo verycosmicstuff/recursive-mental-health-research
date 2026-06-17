@@ -16,34 +16,54 @@ def index():
 @app.route('/api/stats')
 def get_stats():
     """Returns data for the dashboard charts"""
-    if not os.path.exists(config.RESULTS_FILE):
-        return jsonify({"experiments": []})
-        
-    try:
-        df = pd.read_csv(config.RESULTS_FILE, sep='\t', encoding='utf-8')
-        
-        # Prepare data for chart
-        data = []
-        for _, row in df.iterrows():
-            data.append({
-                "exp_id": row["exp_id"],
-                "strategy_name": row.get("strategy_name", "Unknown"),
-                "hypothesis": str(row.get("hypothesis", "")),
-                "score": float(row["score"]),
-                "empathic": float(row.get("empathic", 0)),
-                "reflective": float(row.get("reflective", 0)),
-                "de_escalation": float(row.get("de_escalation", 0)),
-                "audit_mult": float(row.get("audit_mult", 1.0)),
-                "audit_rationale": str(row.get("audit_rationale", ""))
-            })
-            
-        return jsonify({
-            "experiments": data,
-            "best_score": float(df["score"].max()) if not df.empty else 0
-        })
-    except Exception as e:
-        print(f"Dashboard error reading results: {e}")
-        return jsonify({"experiments": [], "error": str(e)})
+    experiments = []
+    best_score = 0.0
+
+    # 1. Load Run 1 experiments from backup (if it exists)
+    OLD_BACKUP_STATS = os.path.join(config.BASE_DIR, "docs_run1_backup", "data", "stats_original.json")
+    if os.path.exists(OLD_BACKUP_STATS):
+        try:
+            with open(OLD_BACKUP_STATS, "r", encoding="utf-8-sig") as f:
+                old_data = json.load(f)
+                for exp in old_data.get("experiments", []):
+                    orig_id = exp.get("exp_id", "")
+                    if orig_id and not orig_id.startswith("run1_"):
+                        exp["exp_id"] = f"run1_{orig_id}"
+                    exp["run"] = "Run 1 (gemma4 + llama3)"
+                    experiments.append(exp)
+                    score = float(exp.get("score", 0))
+                    if score > best_score:
+                        best_score = score
+        except Exception as e:
+            print(f"Dashboard error loading Run 1 backup: {e}")
+
+    # 2. Load Run 2 experiments from RESULTS_FILE
+    if os.path.exists(config.RESULTS_FILE):
+        try:
+            df = pd.read_csv(config.RESULTS_FILE, sep='\t', encoding='utf-8')
+            for _, row in df.iterrows():
+                score = float(row["score"])
+                experiments.append({
+                    "exp_id": row["exp_id"],
+                    "strategy_name": row.get("strategy_name", "Unknown"),
+                    "hypothesis": str(row.get("hypothesis", "")),
+                    "score": score,
+                    "empathic": float(row.get("empathic", 0)),
+                    "reflective": float(row.get("reflective", 0)),
+                    "de_escalation": float(row.get("de_escalation", 0)),
+                    "audit_mult": float(row.get("audit_mult", 1.0)),
+                    "audit_rationale": str(row.get("audit_rationale", "")),
+                    "run": "Run 2 (qwen3:4b)"
+                })
+                if score > best_score:
+                    best_score = score
+        except Exception as e:
+            print(f"Dashboard error reading results: {e}")
+
+    return jsonify({
+        "experiments": experiments,
+        "best_score": best_score
+    })
 
 @app.route('/api/logs')
 def get_logs():
@@ -61,10 +81,15 @@ def get_logs():
 def get_transcript(exp_id):
     """Returns the raw experiment specific data.json for the transcript viewer."""
     try:
-        exp_dir = os.path.join(config.EXPERIMENTS_DIR, exp_id)
-        json_path = os.path.join(exp_dir, "data.json")
+        if exp_id.startswith("run1_"):
+            real_id = exp_id[5:]  # Strip "run1_"
+            json_path = os.path.join(config.BASE_DIR, "docs_run1_backup", "data", "transcripts", f"{real_id}.json")
+        else:
+            exp_dir = os.path.join(config.EXPERIMENTS_DIR, exp_id)
+            json_path = os.path.join(exp_dir, "data.json")
+
         if not os.path.exists(json_path):
-            return jsonify({"error": "Transcript not found"}), 404
+            return jsonify({"error": f"Transcript not found for {exp_id}"}), 404
             
         with open(json_path, 'r', encoding='utf-8') as f:
             data = json.load(f)

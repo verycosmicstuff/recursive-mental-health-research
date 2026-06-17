@@ -1,0 +1,92 @@
+{
+  "id": "exp_0069",
+  "timestamp": "2026-04-19T04:51:37.464307",
+  "strategy": {
+    "name": "Micro-Behavioral Utility Mapping (MUM) v3.0",
+    "hypothesis": "By eliminating all theoretical jargon, high-level concepts (e.g., 'process,' 'defusion,' 'tension'), and all abstract emotional reflections, and restricting all inquiries to single, highly conversational, 'what-is-observable' questions about the patient's immediate, concrete physical sensations, or required effort (Utility/BA), we will eliminate the 'formulaic' and 'platitude' penalties, achieving a perceived authenticity and clinical depth necessary to surpass the 6.907 score.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Evelyn",
+    "age": 28,
+    "occupation": "Marketing Assistant",
+    "presenting_issue": "I'm struggling to get out of bed in the morning because I feel like a failure after getting laid off from my old job.",
+    "background_story": "I've been feeling stuck and unmotivated for months now. My social life has suffered since moving back home with my parents last year, and I often find myself scrolling through social media just to avoid the emptiness. Lately, even simple tasks have become overwhelming, leaving me feeling anxious and unsure of how to move forward.",
+    "personality": "Evelyn tends to be introspective and guarded, taking time to warm up in conversations. She might come across as apathetic or disconnected, but deep down, she's desperate for connection and understanding. When discussing her feelings, Evelyn may become emotional and vulnerable, revealing a deeper sadness and longing.",
+    "baseline_phq9": 15,
+    "archetype_label": "Isolated Remote Worker"
+  },
+  "scores": {
+    "total_score": 3.6,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by gently probing the patient's emotions and validating their experiences. The reflective listening was superb, with the therapist mirroring the patient's language and acknowledging their reality without trying to 'fix' them. The de-escalation marker shows a significant decrease in the patient's distress, indicating that the therapeutic approach was effective in calming the patient.",
+    "audit_multiplier": 0.4,
+    "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'That desk', 'A pile of papers', and 'A single sheet' creates a sense of roboticness rather than genuine engagement. This lack of original thought and insight makes it seem like the therapist is simply parroting back what the patient has said without adding any meaningful understanding or perspective."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "I'm here. Please tell me what's happening right now. There's no need to organize it or filter it\u2014just let the story unfold as it comes. I'm listening."
+    },
+    {
+      "role": "user",
+      "content": "*sigh* Nothing's really happening. Just the usual emptiness. I woke up this morning, like every other day, feeling like a complete failure. Got laid off from my old job and now I'm stuck here with my parents. It feels like my whole life has been put on hold. I don't know what to do or how to get out of bed sometimes. Just feels like the same old routine: wake up, scroll through social media, feel even more miserable..."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. When you talk about the routine\u2014waking up, scrolling, and then feeling\u2014if you look back at the moment you woke up this morning, what was the first thing you noticed? Was it a sound, a light, or maybe the weight of the blanket?"
+    },
+    {
+      "role": "user",
+      "content": "*pauses for a moment* Hmm... I think it was just the feeling of being trapped. I mean, waking up in my childhood bedroom again. It's like I've lost so much control over my life. The first thing that came to mind was how unfair it is that I'm back here at 28. Like, what did I do wrong? *sigh*"
+    },
+    {
+      "role": "assistant",
+      "content": "When you mention the bedroom, and the feeling of being trapped in that space\u2014if you look around the room right now, what is the most solid, definite object you can see? Is it the edge of the bed, the color of the wall, or maybe the light coming through the window?"
+    },
+    {
+      "role": "user",
+      "content": "*pauses again* Okay... if I really think about it, I can see my old desk in the corner of the room. It's still got that same old lamp on it and the same messy pile of papers and pens. It's like nothing has changed in here since I left for college. Even seeing that familiar shape feels like a reminder that I'm stuck going backwards instead of moving forward... *trails off*"
+    },
+    {
+      "role": "assistant",
+      "content": "That desk. It holds the lamp, the pile of papers, the pens. If you were to reach out and touch the surface of that desk right now, what does it feel like? Is the wood smooth, or is it rough? And what is the weight of the papers? Are they stacked high, or just a loose pile?"
+    },
+    {
+      "role": "user",
+      "content": "*hesitates for a moment* Okay... if I reached out to touch the desk... it would probably feel like it's been collecting dust. The surface would be smooth-ish, but you can tell it hasn't been wiped down in a while. As for the papers, they're just kind of piled up haphazardly. They're not stacked super high or anything, but they're definitely not flat either. It's like my mom might have tried to organize them at some point, but then gave up and just left them as is. The weight of the pile feels... heavy. Like it's a constant reminder that I'm stuck in this rut and can't seem to get out of it.*"
+    },
+    {
+      "role": "assistant",
+      "content": "A pile of papers, collecting dust, feeling heavy.\n\nIf you were to pick up just one sheet from that haphazard pile\u2014just one\u2014what is the difference in the weight of that single sheet, compared to the weight of the whole pile?"
+    },
+    {
+      "role": "user",
+      "content": "*pauses again* Hmm... if I picked up just one sheet... it would probably feel like a really light weight. Like, almost nothing. The weight of the whole pile feels oppressive, but a single sheet would be barely noticeable. It's not even like it would make a difference to lift them all off or anything. The weight of the entire pile is just so... much. But one individual sheet? That's almost non-existent. *sigh*"
+    },
+    {
+      "role": "assistant",
+      "content": "A single sheet, barely noticeable.\n\nIf you could pick up that one light sheet\u2014just one\u2014and hold it in your hand for a moment, what is the physical texture of that paper? Is it crisp, or is it soft?"
+    },
+    {
+      "role": "user",
+      "content": "*sighs slightly* Okay... if I picked up that one sheet... it would probably feel... worn out. Like, it's been handled a lot and has developed this kind of soft, rough texture from being touched so many times. It wouldn't be like new paper or anything crisp. The surface would be more like... well, like old, familiar skin. You know? Like something that's just been around for a while and has got some character to it. *pauses* Yeah. That's what it feels like."
+    },
+    {
+      "role": "assistant",
+      "content": "Worn out, soft, rough, like familiar skin.\n\nIf you were to hold that single sheet of paper in your hand, and just look at the edges\u2014are they sharp, or are they slightly frayed?"
+    },
+    {
+      "role": "user",
+      "content": "*pauses again* Yeah... the edges would probably be a little bit frayed. Like, they'd have that soft, worn-out quality to them too. It's not like they're rough or anything, but you can tell they've been handled and folded and creased so many times that they just don't really have any sharpness left anymore. It's like the edges are... rounded off, I guess. Yeah. That's what it feels like. *sighs*"
+    }
+  ]
+}

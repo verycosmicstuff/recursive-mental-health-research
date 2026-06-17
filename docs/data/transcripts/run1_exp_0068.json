@@ -1,0 +1,92 @@
+{
+  "id": "exp_0068",
+  "timestamp": "2026-04-19T04:44:23.169672",
+  "strategy": {
+    "name": "Micro-Utility Mapping (MUM) v2.0",
+    "hypothesis": "By adopting an ultra-minimalist, highly conversational 'Utility Mapper' persona, and restricting *all* reflections and inquiries exclusively to the patient's observable, concrete, and immediate behavioral 'utility' (what they *do* or what *needs to happen* for them to function), we will eliminate the 'formulaic' and 'platitude' penalties while retaining the necessary clinical focus on actionable change (BA/CBT), thereby achieving a score above 6.907.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Ava",
+    "age": 35,
+    "occupation": "Marketing Manager",
+    "presenting_issue": "I'm feeling overwhelmed by my workload and struggling to make time for self-care.",
+    "background_story": "As a high-achieving professional, I've always been driven to succeed. Lately, though, the pressure has taken a toll on my mental health. My partner and I are trying to buy our first home, and we're experiencing some disagreements about finances. When I'm not working, I just want to relax and unwind, but even that feels like a luxury I can't afford.",
+    "personality": "I tend to be straightforward and efficient in my communication. However, when it comes to my own struggles, I have a hard time admitting vulnerability. I'm self-critical and often put others' needs before my own. In our conversations, I appreciate directness and honesty but might take some convincing to open up about my emotions.",
+    "baseline_phq9": 14,
+    "archetype_label": "Overwhelmed Professional"
+  },
+  "scores": {
+    "total_score": 6.3,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by acknowledging the patient's emotional experience and validating their feelings. The reflective listening was superb, with the therapist mirroring the patient's language and providing a safe space for them to express themselves. The de-escalation marker shows a significant decrease in the patient's distress, indicating that the therapist effectively helped the patient feel heard and understood.",
+    "audit_multiplier": 0.7,
+    "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add genuine insight or depth to the conversation. The constant use of phrases like 'That must be hard' and 'It sounds like...' creates a sense of formulaic roboticness rather than authentic engagement."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. I'm here with you, and there's no pressure for anything at all. We just get to talk about what's happening, in whatever way feels easiest right now.\n\nTo start, let's skip the big picture for a moment. I'm curious about something very small, very concrete. What was the most noticeable thing you had to *do* today? It could be as simple as pouring a glass of water, or tying a shoe. Just tell me what the action was."
+    },
+    {
+      "role": "user",
+      "content": "Honestly, it was making myself a cup of coffee in my break at work. I usually take care to savor the quiet time and enjoy the pause from the chaos, but today felt like just another item on my never-ending to-do list. It was like I was going through the motions without really being present in the moment."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that. Making coffee is a very concrete action.\n\nWhen you were making that cup today\u2014the specific steps, like getting the mug, scooping the grounds, or waiting for the machine\u2014what was the most noticeable *effort* required? Was there any particular moment in the process that felt like it pulled energy from you?"
+    },
+    {
+      "role": "user",
+      "content": "I guess what stood out to me was when I had to stop and re-grind the beans because they were too fine. It was a small annoyance, but it took up more mental space than it should have. I found myself thinking about all the other things that needed doing, like responding to those pending emails or reviewing reports... and before I knew it, my mind was racing again."
+    },
+    {
+      "role": "assistant",
+      "content": "That's a very specific point of friction\u2014the beans needing to be re-ground. It sounds like that small physical annoyance acted as a trigger, and then your mind immediately jumped back to the list of pending tasks.\n\nLet's focus just on that moment of re-grinding. You had to stop and adjust the beans. When you were standing there, dealing with that small mechanical issue, what was the most immediate, physical thing you did to occupy your hands or your attention? Did you touch anything specific, or did you just stand still?"
+    },
+    {
+      "role": "user",
+      "content": "I remember I was fiddling with the grinder settings, trying to get it just right. My hands were moving slowly and deliberately as I adjusted the coarseness of the grind. It was almost like my brain was too overwhelmed to focus on anything else, so I defaulted to a physical activity that required minimal mental effort but still kept my hands busy."
+    },
+    {
+      "role": "assistant",
+      "content": "That is a very clear description of the movement\u2014slow, deliberate, keeping the hands occupied. It sounds like the physical act of adjusting the grinder provided a small, necessary anchor when your mind was racing.\n\nLet's look at that moment again, just the moment you were adjusting the settings. If you were to describe the *feeling* of your hands moving\u2014was the movement repetitive, or did it require you to think about where your fingers needed to go? Was it a pattern, or was it random?"
+    },
+    {
+      "role": "user",
+      "content": "I'd say it was more repetitive than anything else. As I adjusted the settings, my fingers kind of fell into this automatic rhythm, like they were doing something they'd done many times before. It was almost meditative in a way, like my hands were taking over and just getting the job done without needing me to think too much about it."
+    },
+    {
+      "role": "assistant",
+      "content": "That sense of automatic rhythm, where the hands take over, is a very concrete observation. It sounds like the physical action of adjusting the grinder provided a functional kind of pause\u2014a physical task that allowed your mind a break.\n\nLet's zoom in on that rhythm. When your fingers were moving, were they moving in a circle, or were they moving up and down, or maybe back and forth across the adjustment dial? What was the specific, directional path your fingers took?"
+    },
+    {
+      "role": "user",
+      "content": "I remember it was more like a gentle rocking motion, where my fingers would move up and down along the dial, adjusting the settings. It was a slow, smooth movement that felt almost soothing."
+    },
+    {
+      "role": "assistant",
+      "content": "That image\u2014the slow, smooth, up-and-down rocking motion\u2014is incredibly vivid. It's a very specific, contained, physical action.\n\nIt seems like that repetitive, rhythmic movement provided a functional kind of relief when your mental energy was depleted.\n\nIf you were to face that same kind of mental 'overload' again\u2014when your mind starts racing back to the emails and reports\u2014and you wanted to recreate that physical pause, but without the coffee grinder, what is the absolute smallest, simplest physical action you could do right now? Something that requires only your hands and takes less than sixty seconds."
+    },
+    {
+      "role": "user",
+      "content": "Honestly, I think it would be just taking a few slow, deliberate breaths, like, inhaling for two counts, holding for one count... You know, something simple like that. My hands might not be doing anything specific, but I'd still be engaging my physical presence in the moment, you know?"
+    },
+    {
+      "role": "assistant",
+      "content": "Taking slow, deliberate breaths\u2014inhale for two, hold for one\u2014that is a very concrete, measurable physical action. It\u2019s a way of anchoring your physical presence.\n\nLet's look at the mechanics of that breathing, just for a moment. When you count in that slow, deliberate way, is the most noticeable part the *feeling* of the breath, or is it the physical act of counting the seconds? Is the effort in the diaphragm, or is the effort in the conscious counting?"
+    },
+    {
+      "role": "user",
+      "content": "For me, I think the noticing and focusing on the counting itself becomes a kind of anchor. The actual breathing happens without much attention, but the counting requires just enough mental focus to quiet my mind for that brief moment. It's like the counting provides a gentle framework for my brain to settle into, you know?"
+    }
+  ]
+}

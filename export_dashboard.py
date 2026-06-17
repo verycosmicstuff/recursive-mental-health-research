@@ -36,6 +36,9 @@ def export():
             with open(OLD_BACKUP_STATS, "r", encoding="utf-8-sig") as f:
                 old_data = json.load(f)
                 for exp in old_data.get("experiments", []):
+                    orig_id = exp.get("exp_id", "")
+                    if orig_id and not orig_id.startswith("run1_"):
+                        exp["exp_id"] = f"run1_{orig_id}"
                     exp["run"] = "Run 1 (gemma4 + llama3)"
                     old_experiments.append(exp)
             print(f"[Export] Loaded {len(old_experiments)} experiments from Run 1 backup")
@@ -87,6 +90,17 @@ def export():
 
     # ── 2. Copy individual transcript JSONs ───────────────────────────────────
     transcript_count = 0
+    # First copy Run 1 transcripts from backup with "run1_" prefix
+    BACKUP_TRANSCRIPTS_DIR = os.path.join(BASE_DIR, "docs_run1_backup", "data", "transcripts")
+    if os.path.exists(BACKUP_TRANSCRIPTS_DIR):
+        for filename in sorted(os.listdir(BACKUP_TRANSCRIPTS_DIR)):
+            if filename.endswith(".json"):
+                src = os.path.join(BACKUP_TRANSCRIPTS_DIR, filename)
+                dst = os.path.join(DOCS_TRANSCRIPTS_DIR, f"run1_{filename}")
+                shutil.copy2(src, dst)
+                transcript_count += 1
+
+    # Then copy Run 2 transcripts from experiments directory
     if os.path.exists(EXPERIMENTS_DIR):
         for exp_dir in sorted(os.listdir(EXPERIMENTS_DIR)):
             src = os.path.join(EXPERIMENTS_DIR, exp_dir, "data.json")

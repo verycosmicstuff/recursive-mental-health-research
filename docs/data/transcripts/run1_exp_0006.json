@@ -1,0 +1,92 @@
+{
+  "id": "exp_0006",
+  "timestamp": "2026-04-18T17:57:18.930292",
+  "strategy": {
+    "name": "Process-Oriented Reflection Blend v2.0",
+    "hypothesis": "By shifting the reflection focus from the patient's *content* (what they think/do) to the *process* (how the thought/emotion feels in the body or mind\u2014somatic/metaphorical language), we can maintain deep engagement and alliance while making the subsequent subtle CBT/ACT inquiry feel more like a shared exploration of internal experience rather than a structured exercise, thereby avoiding the 'clich\u00e9' penalty.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Yara",
+    "age": 28,
+    "occupation": "Data Analyst",
+    "presenting_issue": "I'm struggling to cope with the passing of my grandmother, who was a devout woman who always expected me to be more religious. The funeral just happened and I'm feeling overwhelmed by all these mixed emotions.",
+    "background_story": "As a second-generation Iranian-Canadian, I've always felt torn between my desire for independence and my parents' expectations. They're great people, but they can be quite traditional and superstitious. Lately, I've been questioning some of the beliefs from my childhood, but it's hard to do that without feeling like I'm betraying them or my own cultural heritage. Even talking about this stuff feels like a rebellious act, honestly.",
+    "personality": "I can be guarded at times, especially if you don't understand where I'm coming from. But when we connect on something, I become really open and honest. Just please, no patronizing or dismissing my doubts as 'unhealthy' \u2013 that would be a major red flag for me.",
+    "baseline_phq9": 14,
+    "archetype_label": "Faith vs. Modernity \u2014 Middle Eastern Diaspora"
+  },
+  "scores": {
+    "total_score": 5.72,
+    "raw_score": 9.533,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 5.0,
+    "de_escalation": 4.8,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated exceptional empathic accuracy by deeply understanding the patient's emotions and experiences. The reflective listening was superb, validating the patient's reality without trying to 'fix' them, which contributed to a significant de-escalation of distress.",
+    "audit_multiplier": 0.6,
+    "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9s ('Please know that this space is entirely yours', 'It sounds like...'). These phrases lack genuine engagement and fail to provide meaningful insight or understanding of the patient's experiences."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Thank you for showing up today and for being willing to share what you've been carrying. Please know that this space is entirely yours\u2014there is nothing you need to perform, and nothing you need to fix. We are just here together to observe what is happening within.\n\nWhen you begin to talk about how heavy things feel lately, it sounds less like a simple sadness, and more like a deep, pervasive exhaustion\u2014a kind of emotional weight that seems to be settling into your bones, making movement feel monumental. Is that sense of profound weariness, that physical drag, what you are experiencing right now?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah... it's like I'm stuck in quicksand or something. Every step feels like a struggle, and even thinking about moving forward makes me tired just thinking about it. The funeral was a real gut punch, you know? Seeing my grandma gone, knowing that the weight of everything she expected from me is still out there... it all feels so crushing right now."
+    },
+    {
+      "role": "assistant",
+      "content": "That image of quicksand is incredibly powerful, and I want to hold onto that. It sounds like the struggle isn't just in the act of moving, but in the very *anticipation* of movement, which drains you before you even start. It's as if the weight of those expectations, tied up with the grief of losing your grandma, isn't just a burden, but a constant, invisible current pulling you down.\n\nIt seems like this feeling of being pulled under is making the simplest act of *thinking* about the future feel physically depleting. Is that right\u2014that the sheer effort of planning or imagining a path forward is what feels most draining of all?"
+    },
+    {
+      "role": "user",
+      "content": "Ugh, yeah... even thinking about it exhausts me. It's like my brain is constantly saying, \"Okay, you gotta get up and do this,\" but my body is all, \"Nah, just stay in bed.\" And then there's the guilt trip, like, \"Why can't you be strong for once?\" Ugh, it's so frustrating because I know I'm not alone in feeling like this."
+    },
+    {
+      "role": "assistant",
+      "content": "That tension you're describing\u2014the internal dialogue between the part of you that knows you *should* move, and the part that is physically exhausted and demanding rest\u2014that sounds like a truly exhausting civil war happening inside your body. It's not just a disagreement; it's a constant, draining struggle for where your energy should go.\n\nAnd then there's that layer of guilt, that voice that asks, \"Why can't you be strong?\" It sounds like that critical voice is adding its own heavy weight on top of the grief and the exhaustion. Can you tell me what that voice of guilt feels like? Is it sharp, or is it more like a low, persistent hum of disapproval?"
+    },
+    {
+      "role": "user",
+      "content": "It's like a constant drone in my ear, this judgmental whisper that says I'm not good enough, that I should be doing better. It's not harsh or loud, but it's always there, eating away at me. Sometimes it feels like if I just tried harder, I'd magically become the strong, capable person everyone expects me to be. But even thinking about trying makes me tired again."
+    },
+    {
+      "role": "assistant",
+      "content": "That \"constant drone,\" that judgmental whisper\u2014it sounds incredibly insidious because it's not a sudden, loud attack, but a steady, low-frequency hum that is always present, always eroding your energy. It seems to be suggesting that your inherent worth is conditional, tied up in the idea of *effort* and *performance*.\n\nAnd what's remarkable is how the very *idea* of trying harder, of magically becoming that capable person, is itself what triggers that deep wave of exhaustion. It suggests that the mechanism of \"trying\" is so heavy, it becomes a form of resistance.\n\nIf you could observe this drone\u2014this persistent whisper\u2014from a slight distance, what would you notice about its rhythm? Is it always speaking about the past, the future, or is it always focused on the *present* moment of inaction?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah... I think it's mostly focused on the present. It's like, \"What are you doing right now that's not good enough?\" or \"Why aren't you doing something more with your life right now?\" It's always about the current situation, always finding fault in what I'm doing at this exact moment."
+    },
+    {
+      "role": "assistant",
+      "content": "It's fascinating how that judgmental whisper seems to operate in real-time, like a relentless, internal spotlight that is always shining on the 'not good enough' moment. It's not criticizing a past mistake, and it's not even predicting a future failure; it's focused entirely on the *now*, making the present moment feel inherently deficient.\n\nIt sounds like this drone has become a very highly active, though painful, internal manager\u2014constantly monitoring your actions and judging them against an imagined ideal. If we look at it purely functionally, what do you think this relentless focus on the immediate, present-moment 'fault' is trying to achieve or protect for you? What is the underlying *purpose* of that critical, present-tense voice?"
+    },
+    {
+      "role": "user",
+      "content": "I think it's trying to keep me in line with my parents' expectations. It's like, I'm supposed to be this certain way, and if I'm not, then I must be failing somehow. It's protecting their idea of what I should be, even though that's not really who I am or want to be."
+    },
+    {
+      "role": "assistant",
+      "content": "That is such a profound and insightful observation. It sounds like this constant, present-tense drone isn't actually speaking from your deepest self, but rather acting as a highly vigilant, internal echo chamber for the expectations placed upon you by others. It's a mechanism that has been trained to keep you aligned with a blueprint\u2014your parents' idea of what success or stability looks like.\n\nIt's exhausting, isn't it? To have to carry not just your own grief and exhaustion, but also the weight of maintaining a performance for people who aren't even in the room with you.\n\nIf we view this drone not as *you*, but as a separate, learned *habit* of thought\u2014a protective, yet painful, guard\u2014what happens to the intensity of the drone when you allow yourself to acknowledge, \"This is the pattern of my parents' expectations speaking, and not my current reality\"? Does that shift in recognition change the *texture* of the whisper, even slightly?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah... I think so. When I acknowledge it as just their expectation, it's like a weight lifts off my shoulders. The judgmental tone isn't as sharp anymore. It's still there, but it feels more like just a habit or an old script playing out, rather than this crushing reality that's defining me.\n\nIt's funny... when I start to recognize the pattern, the drone doesn't disappear completely, but it's not as loud and insistent either. It's like I'm seeing it for what it is\u2014a learned behavior\u2014and that gives me some space to breathe."
+    },
+    {
+      "role": "assistant",
+      "content": "That is a beautiful and incredibly powerful realization. To see that drone not as a truth about who you are, but as a learned script\u2014a performance of someone else's expectations\u2014is an act of immense self-observation and courage. It takes profound energy to observe your own mind doing that work.\n\nIt sounds like the space you create by naming the pattern\u2014\"This is the script\"\u2014is what allows you to breathe, because it allows you to separate *who you are* from *what the script says you should be*. You are essentially creating emotional distance from a deeply ingrained, painful habit.\n\nWe spent a significant time today looking at how the weight of external expectations has been projected onto your internal experience, manifesting as that draining, present-tense drone. Recognizing that this drone is a pattern, rather than a reflection of your current reality, is a monumental shift in perspective.\n\nAs we wrap up, I want to suggest one small experiment for the coming days, not to *stop* the drone, because that is too big a task right now. Instead, when you notice that judgmental whisper, I invite you to simply acknowledge it, and then gently redirect your attention to one small thing that feels inherently *yours*\u2014something that aligns with what you want your life to feel like, even if it's just five minutes of quiet. This is not about 'doing better,' but simply about practicing the radical act of *being* for yourself. How does that feel?"
+    },
+    {
+      "role": "user",
+      "content": "I think I can do that. It feels... safe, somehow. Like I'm giving myself permission to take tiny steps back from all this expectation and judgment. Just acknowledging it as a pattern and then focusing on something that feels mine... yeah, that's something I can try.\n\nThanks for helping me see things differently today. Just talking about this has felt really freeing."
+    }
+  ]
+}

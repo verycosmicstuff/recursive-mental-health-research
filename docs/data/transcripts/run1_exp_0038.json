@@ -1,0 +1,92 @@
+{
+  "id": "exp_0038",
+  "timestamp": "2026-04-18T23:44:50.165155",
+  "strategy": {
+    "name": "Ambient Utility Mapping (AUM) v1.0",
+    "hypothesis": "By eliminating all structural scaffolding, all explicit theoretical frameworks (PCT, ACT, CBA), and all complex reflection language, and instead adopting a purely conversational, ultra-minimalist tone that grounds all reflections and inquiries exclusively in the patient's observable, concrete functional language, we will maximize perceived authenticity and genuine engagement, thereby finally surpassing the previous best score of 6.907.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Mei",
+    "age": 42,
+    "occupation": "Accountant",
+    "presenting_issue": "I'm feeling overwhelmed and anxious about juggling my elderly parents' care while dealing with the stress of work and trying to make ends meet.",
+    "background_story": "As the only child, I've always felt responsible for taking care of my parents who moved from Guangzhou to Vancouver when they were older. As they become increasingly dependent, it's like being consumed by a tsunami - I'm exhausted and struggling to keep up. My chest is tight all the time, and I feel guilty whenever I think about not doing enough. It's like I'm stuck in this perpetual cycle of caregiving duty without any reprieve.",
+    "personality": "I'm a perfectionist who tries to anticipate everyone else's needs before my own. When stressed, I get quiet and withdrawn, avoiding conflict at all costs. Direct discussions can be challenging for me; I prefer subtle, nuanced approaches that acknowledge the complexity of relationships. Honesty is important, but so is tact.",
+    "baseline_phq9": 15,
+    "archetype_label": "Filial Piety Conflict \u2014 East Asian Elder Care"
+  },
+  "scores": {
+    "total_score": 6.3,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by recognizing the patient's unspoken emotions and reflecting their deeper meaning. The reflective listening was also exceptional, as the therapist validated the patient's reality without trying to 'fix' them. The de-escalation marker shows a significant decrease in the patient's distress, anger, or anxiety throughout the conversation.",
+    "audit_multiplier": 0.7,
+    "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and mirroring, failing to add any genuine insight or depth to the conversation. The use of phrases like 'That must be hard' and 'The pattern seems to be...' feels formulaic and lacks authentic engagement with the patient's experiences."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Thanks for showing up today.\n\nTo start, if you can just tell me what you are doing right now, or what was the last concrete thing that happened before you walked in the door\u2014anything at all, even just a physical feeling\u2014what is it?"
+    },
+    {
+      "role": "user",
+      "content": "I'm sitting in my car outside your office building. I just got stuck in traffic on the way here and feeling like I'm already running behind schedule. My mind's racing with all the things I need to do today - finish some reports at work, pick up groceries for my parents... it feels like there are too many demands on me from every direction."
+    },
+    {
+      "role": "assistant",
+      "content": "Stuck in the car. The traffic is the immediate thing.\n\nWhen the mind is racing with all those things\u2014the reports, the groceries\u2014is it more about the *number* of things, or is it the *feeling* of the clock ticking on those things?"
+    },
+    {
+      "role": "user",
+      "content": "I think it's a bit of both, to be honest. The clock ticking really gets to me - I feel like I'm constantly playing catch-up with my workload and my parents' needs. But also, the sheer number of things feels overwhelming. It's like, no matter how many boxes I check off, there are always more to fill in."
+    },
+    {
+      "role": "assistant",
+      "content": "When you say it feels like there are always more boxes to fill in, what does that 'always more' feel like in your body? Is it a tightness, a pressure, or something else?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah... it's a tightness in my chest, like my heart is racing and my breath is getting short. It's hard to explain, but it's like I can feel the stress and anxiety building up inside me, just waiting to overflow. Sometimes when I'm feeling really stuck or overwhelmed, I'll catch myself holding my breath without even realizing it - it's like my body is trying to cope with all this pressure somehow."
+    },
+    {
+      "role": "assistant",
+      "content": "The holding of the breath. That's a very specific physical action.\n\nWhen you find yourself holding your breath like that, what is the immediate internal signal that tells you, 'I need to hold it'? Is it a thought, a sound, or is it tied to a specific moment of waiting or being stuck?"
+    },
+    {
+      "role": "user",
+      "content": "It's usually when I'm stuck in traffic, waiting for something to happen - whether it's my parents' care appointment, a meeting at work, or just getting stuck behind slow drivers. My mind starts racing with all the things that could go wrong if I don't get there on time... and before I know it, I've stopped breathing without realizing it."
+    },
+    {
+      "role": "assistant",
+      "content": "So the pattern seems to be: *Stuck* or *Waiting* leads to *Rushing thoughts* about what might go wrong, which then leads to the physical holding of the breath.\n\nIf we look at those times\u2014the traffic, the appointments, the waiting\u2014was there any time this week, even for just a few minutes, when you were waiting, but the breath didn't feel like it needed to be held? What was different about *that* time?"
+    },
+    {
+      "role": "user",
+      "content": "Hmm... actually, yeah. There was one time yesterday when I was waiting in line at the grocery store, and my mind started to get a bit anxious because I was worried about getting all the things on their list, but then I just let myself be still for a few minutes, focusing on the feeling of the air moving in and out of me. It was weird... it felt almost... calm? Like my body just kind of relaxed into the moment, even though my mind was still racing with thoughts about getting everything done."
+    },
+    {
+      "role": "assistant",
+      "content": "At the grocery store, when you let yourself be still and focused on the air moving in and out... that was a moment where the breath didn't need to be held.\n\nIt sounds like the difficulty\u2014the chest tightness, the breath holding\u2014is strongest when there is a feeling of external pressure, a sense of *waiting* for something to change or for time to pass.\n\nBut the moment you were able to pause, even briefly, and just notice the air, that was the shift.\n\nFor this coming week, I wonder if you could treat that breath-focusing like a small curiosity. Not a goal, just a curiosity. When you feel the urge to hold your breath\u2014in the car, at work, or anywhere\u2014could you just notice it? Just notice the physical urge, and then let the air move in and out, just once, without needing to fix anything or get anywhere? No expectations, just noticing the air.\n\nHow does that sound?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah... that sounds okay. I mean, I'm not sure if it'll make a big difference, but I can try. It's not like it would hurt, right? Just noticing the air moving in and out. I might even forget to hold my breath sometimes and just breathe normally again."
+    },
+    {
+      "role": "assistant",
+      "content": "It's not about making a big difference. It's just about noticing.\n\nThe pattern we looked at today was that when you feel time pressing down\u2014when you are stuck, or waiting for a result\u2014the body reacts by holding the breath.\n\nThe curiosity for this week is simply to notice the physical urge to hold your breath, and then gently allow the air to move through, just once. Like a tiny, quiet observation.\n\nWe can check in next time about how that feels. Thank you for talking through this today."
+    },
+    {
+      "role": "user",
+      "content": "Okay, got it. Just noticing the urge to hold my breath and letting go... seems simple enough. Thanks for listening, I guess I needed to talk about all this stuff. See you next week?"
+    }
+  ]
+}

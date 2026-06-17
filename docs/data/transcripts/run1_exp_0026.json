@@ -1,0 +1,92 @@
+{
+  "id": "exp_0026",
+  "timestamp": "2026-04-18T21:53:54.297382",
+  "strategy": {
+    "name": "Ultra-Minimalist Behavioral Query (UMBQ) v1.0",
+    "hypothesis": "By stripping away all theoretical language, structural framing, and complex emotional reflection, and grounding 100% of the conversation in ultra-minimalist, concrete, present-tense questions about observable actions and functional constraints, we can achieve the deep clinical focus of utility-based inquiry while eliminating the 'formulaic,' 'jargon-heavy,' and 'detached' penalties, thereby maximizing the perceived authenticity and leading to a score significantly higher than 6.907.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Yasmin",
+    "age": 28,
+    "occupation": "Marketing Coordinator",
+    "presenting_issue": "I'm feeling overwhelmed by the pressure to conform to my family's expectations while struggling with my own sense of purpose and identity.",
+    "background_story": "As a second-generation Iranian-Canadian, I've always felt like I'm caught between cultures. My parents expect me to marry well and start a family soon, but I'm not even sure what I want for myself. Lately, I've been feeling anxious about my lack of direction and the weight of their expectations is crushing me. It's hard to explain, but sometimes I feel like I'm suffocating under the gaze of others - my parents, community, even strangers on social media.",
+    "personality": "I tend to be guarded at first, but once you earn my trust, I open up quickly. I appreciate when therapists acknowledge the complexities of faith and spirituality without dismissing it as unhealthy. When we discuss sensitive topics, I might get defensive if you're too critical or judgmental. Otherwise, I'm willing to explore the depths of my emotions and work through this crisis with a compassionate and understanding therapist.",
+    "baseline_phq9": 13,
+    "archetype_label": "Faith vs. Modernity \u2014 Middle Eastern Diaspora"
+  },
+  "scores": {
+    "total_score": 3.6,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by acknowledging the patient's emotional experience and validating their feelings. The reflective listening was also impressive, as the therapist mirrored the patient's language and validated their reality without trying to 'fix' them. The de-escalation marker shows a significant decrease in the patient's distress, indicating that the therapy session was effective in reducing anxiety.",
+    "audit_multiplier": 0.4,
+    "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add any genuine insight or depth to the conversation. The constant echoing of the patient's words ('Okay', 'Yeah', etc.) creates a sense of roboticness rather than authentic engagement."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Thanks for being here today.\n\nWhen you woke up this morning, what was the first physical thing you noticed about the room?"
+    },
+    {
+      "role": "user",
+      "content": "*sigh* Honestly, when I woke up this morning, the first thing that caught my attention was the mess on my nightstand. My mom had left me a reminder note to call her later and there were some old bills and credit card offers scattered around. It just felt like another day, another stress piled on top of all the others."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, the bills and the notes are right there on the nightstand.\n\nWhen you look at those specific items\u2014the bills, the notes\u2014what is the very first physical thought that pops into your head, and what does that thought tell you to avoid doing next?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah... okay... When I see those bills and notes, my mind immediately jumps to feeling anxious about being overwhelmed. The first thought that pops up is something like \"Oh no, I need to get these paid before they're late\" or \"I should call Mom back soon so she doesn't worry\". It's like my brain is already racing ahead to all the things I need to do, and it gives me a sense of dread. That thought tells me to avoid dealing with them right now, probably because I'm just not ready to face everything that comes with responsibility..."
+    },
+    {
+      "role": "assistant",
+      "content": "When that racing thought comes\u2014like the one about needing to pay the bills\u2014and it tells you to avoid dealing with them, what is the most specific physical sensation in your body right at that moment? Is it a tightness, a weight, or something else?"
+    },
+    {
+      "role": "user",
+      "content": "*sigh* Yeah... When that thought comes up, I feel this knot forming in my chest. It's like a lump of tension just sitting there, making it hard to take a deep breath. Sometimes it feels like there's even a slight constriction around my throat, like I'm getting choked up or something. It's like my body is trying to tell me that I need to slow down or something..."
+    },
+    {
+      "role": "assistant",
+      "content": "If that knot forms in your chest and constricts your throat, and that feeling is telling you to slow down, what is the very next physical action\u2014the thing you *don't* do\u2014because of that tightness?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah... because of that tightness, I don't take a deep breath. Instead, I kind of hold my breath and try to push through the feeling, like it's not really there or something. I might even subtly tense up my shoulders a bit, trying to \"get past\" this sensation without really acknowledging it. It's like my body is just trying to power through and get away from that feeling..."
+    },
+    {
+      "role": "assistant",
+      "content": "When you tense up your shoulders and hold your breath to try and get past that feeling, and then\u2014just for a moment\u2014you finally let the tension drop, or the breath goes out... what is the immediate physical sensation in your neck or shoulders right at that moment of release? Is it a sudden weight, a jolt, or something else?"
+    },
+    {
+      "role": "user",
+      "content": "*pauses slightly* Ah, yeah... when I finally let go of that tension and my breath releases... I feel this subtle relaxation wash over me. It's hard to describe, but it's like my neck and shoulders just sort of... release. It's not a sudden weight or jolt, but more like a slow, gentle unwinding. Sometimes it even feels a bit like there's a soft, soothing pressure spreading through those areas, almost like someone is massaging me. It's this weird, fleeting sense of calm in the midst of all that anxiety and tension..."
+    },
+    {
+      "role": "assistant",
+      "content": "When that soft, soothing pressure washes over you, and you experience that sense of release in your neck and shoulders, what is the very first small action\u2014the functional thing\u2014that you find yourself doing with your hands or your eyes? Does that physical feeling allow you to shift your attention to something specific?"
+    },
+    {
+      "role": "user",
+      "content": "*smiles slightly* Okay... when I feel that release in my neck and shoulders, I often find myself reaching for my phone. It's like my hand just kind of naturally goes there, maybe because it's a familiar habit or because I'm thinking about texting someone. Sometimes I'll even rub my eyes or massage the bridge of my nose, trying to squish out any remaining tension. That physical feeling of release seems to allow me to shift my attention away from all that anxiety and towards something more mundane... like checking my phone or doing some other mindless task."
+    },
+    {
+      "role": "assistant",
+      "content": "When your hands naturally go to the phone, or when you start rubbing your eyes or nose, what is the immediate, observable change in your focus? Does that specific action allow you to physically block out or move away from the bills on the nightstand, or the knot in your chest?"
+    },
+    {
+      "role": "user",
+      "content": "*sigh* Yeah... when I reach for my phone or start touching my face, it's like I'm shifting gears. My attention starts to drift away from all those overwhelming thoughts and worries about my life. The bills on the nightstand, the expectations from my parents, the unknowns in my future... they all kind of recede into the background as I focus on this tangible thing in front of me \u2013 my phone or my face. It's like I'm creating a mental \"buffer zone\" around myself, giving me space to breathe and regroup without having to confront all those other feelings just yet."
+    }
+  ]
+}

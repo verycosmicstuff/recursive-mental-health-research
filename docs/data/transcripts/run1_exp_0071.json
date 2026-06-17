@@ -1,0 +1,92 @@
+{
+  "id": "exp_0071",
+  "timestamp": "2026-04-19T05:11:42.537122",
+  "strategy": {
+    "name": "Conversational Utility-Driven Exception Mapping (CU-DEM)",
+    "hypothesis": "By eliminating all theoretical jargon (ACT, process, defusion) and restricting all inquiries exclusively to highly conversational, ultra-minimalist questions about the patient's *observable micro-actions* and *exceptions* (Utility/BA), we will achieve maximum perceived naturalness and genuine engagement, thereby surpassing the current 6.907 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Kestrel",
+    "age": 32,
+    "occupation": "Freelance Graphic Designer",
+    "presenting_issue": "I'm struggling to finish a project deadline because I feel overwhelmed by self-doubt and fear of rejection.",
+    "background_story": "In the past year, my freelance work has picked up, but so have my anxiety levels. Every time a client expresses dissatisfaction or doesn't respond promptly, I spiral into self-blame and catastrophize about losing their business. It's as if I'm constantly walking on eggshells, trying to avoid any misstep that might lead to rejection. My relationships suffer because I prioritize others' approval over my own needs. Now, with the looming deadline, I feel stuck and unsure how to break free from this cycle.",
+    "personality": "Tends to be overly self-critical, apologetic, and hesitant. Will elaborate excessively when feeling nervous or unheard. May interpret silences as disinterest or judgment. Needs validation and empathy upfront to build trust.",
+    "baseline_phq9": 14,
+    "archetype_label": "ADHD Rejection Sensitivity \u2014 Unmasking Crisis"
+  },
+  "scores": {
+    "total_score": 5.4,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by acknowledging the patient's emotional pain and validating their experiences. The reflective listening was superb, with the therapist mirroring the patient's language and emotions without trying to 'fix' them. The de-escalation marker is high because the patient's tone shifted from anxious to calm throughout the session.",
+    "audit_multiplier": 0.6,
+    "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and filler phrases ('I hear you', 'That must be hard'), which detract from the authenticity of their engagement with the patient. Additionally, the therapist's mirroring of the patient's words is too repetitive and lacks insight or new perspectives."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Thank you for showing up here today. I know that just writing those first words takes a huge amount of energy, and I want you to know that I hear you, and I'm here with you for all of it.\n\nWe don't have to talk about the big feelings or the big picture right now. If you want, we can just talk about the tiny things.\n\nIf you feel up to it, can you tell me about the very last small thing you did today that required you to move? Maybe it was getting a glass of water, or walking to the mailbox, or even just shifting positions in a chair. What was that small, concrete moment?"
+    },
+    {
+      "role": "user",
+      "content": "*sigh* Okay... I think I got up from my desk once to grab a snack. It's been a long time since I've felt like leaving my workspace without feeling anxious about all the things I need to do or worried about messing something up. Today was no exception. Even that small task felt overwhelming, and I ended up just staring at the same shelf in my pantry for like 10 minutes before I remembered what I came for... *pauses* Sorry, am I supposed to be doing this?"
+    },
+    {
+      "role": "assistant",
+      "content": "Please, don't apologize for anything you share here. You are doing exactly what you need to do right now: showing up and telling me what was difficult. Thank you for that.\n\nIt sounds like even that small trip to the pantry\u2014something that should be easy\u2014felt really heavy, like it was wrapped up in all the worries about what you *should* be doing.\n\nIf we zoom in just on that moment\u2014the ten minutes you spent staring at the pantry shelf\u2014what was happening physically in that moment? Was it the smell of the food, the way the light hit the shelves, or was it more about the feeling of the worry itself? What was the boundary you were standing at?"
+    },
+    {
+      "role": "user",
+      "content": "*hesitates slightly before continuing* I think it was... the sight of all those snacks and treats just seemed so... appealing. You know? Like a siren's call or something. And then the worries started creeping in \u2013 \"Why are you eating this? It's not good for you. You'll just get fat...\" And my mind started racing about how I should be focusing on that project instead of taking a break. *pauses, looking down* But physically... it was just this knot in my stomach, like a mix of anxiety and hunger and... discomfort, I guess? Like my body just didn't know what to do with itself."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that with me. That sounds incredibly difficult\u2014having that physical knot in your stomach while your mind is pulling in so many different directions, between wanting something, and feeling guilty about it. It sounds exhausting.\n\nWhen you were standing there, feeling that mix of signals\u2014the wanting, the worrying, the knot\u2014and you were struggling to figure out what to do, I wonder if we could focus on the very smallest moment of difference.\n\nDid you notice anything, even for a second, that was different from the feeling of the knot? Maybe it was the chair you were sitting on, or the sound of the fridge humming, or maybe it was the slight *shift* in your shoulders? What was the smallest thing that was present in that moment?"
+    },
+    {
+      "role": "user",
+      "content": "*takes a deep breath* Yeah... I think I did notice something. It was just for a second, but I remember my eyes moving to the edge of the pantry shelf where there's this little decorative box with a seashell on it. It's something my grandma gave me, and it always makes me feel calm when I see it. *pauses* For that one second, my attention was on the shell instead of all the worries in my head. It was like... a tiny little pocket of peace? *looks up slightly, seemingly lost in thought for a moment before returning to the present* Does that sound weird?"
+    },
+    {
+      "role": "assistant",
+      "content": "No. Not at all. It doesn't sound weird. It sounds like a moment of genuine connection\u2014a tiny, perfect pocket of peace that you noticed.\n\nThat is such a powerful thing to pinpoint. You found a small, physical anchor\u2014the shell\u2014and your attention was able to rest there instead of being pulled into the worry.\n\nIf we look at that moment\u2014the second your eyes landed on that box\u2014what was it about that seashell, or the memory it brought up, that made it so different from the snacks or the worries? Was it the color? The shape? Or was it the feeling of your grandma being near?\n\nWhat did that specific object *do* for your attention?"
+    },
+    {
+      "role": "user",
+      "content": "*smiles slightly, a hint of warmth in their expression* I think what stood out about that seashell was... the memory. When I saw it, suddenly my mind wasn't racing with self-criticism or worry about not doing enough. Instead, I felt this sense of calm and comfort. It's like my grandma's presence wrapped around me for a second \u2013 she always had this soothing way of making me feel better when I was upset.\n\n*pauses, collecting their thoughts* The shell itself isn't even that special \u2013 it's just a simple little trinket. But the memory it holds is what made all the difference. It's like my attention shifted from anxious thoughts to a feeling of safety and peace. Does that make sense?"
+    },
+    {
+      "role": "assistant",
+      "content": "That makes perfect sense. It sounds like that seashell didn't just *look* peaceful; it was a physical trigger for a deeply comforting memory\u2014a mini-portal back to a feeling of safety.\n\nIt\u2019s remarkable how something so small, like a simple trinket, can hold so much emotional weight.\n\nIf we look at that moment again\u2014that tiny shift in your attention from the racing thoughts to the shell\u2014it sounds like the memory itself was the key.\n\nWhen your mind was focused on the worries, what was your body doing? And when your attention shifted to the shell, what small, physical change happened in your body or your breathing? Was there a slight settling, or maybe a change in how your shoulders rested?\n\nLet's see if we can find the physical evidence of that shift."
+    },
+    {
+      "role": "user",
+      "content": "*thinks for a moment, eyes drifting back to the past* When I was stuck on worries and racing thoughts... my body felt like it was tense everywhere \u2013 shoulders up around my ears, stomach knotted, even my jaw clenched a bit. It's like my whole being was coiled tight like a spring.\n\n*pauses, reflecting on that moment*\n\nBut when my attention shifted to the shell... I think my shoulders relaxed just a hair. Like, they dropped down maybe half an inch or something. And my stomach didn't feel quite so knotted anymore. It's hard to describe, but it was like... my body uncoiled itself just a little bit.\n\n*smiles slightly, recalling that small sense of release*\n\nAnd yeah, I think my breathing might have slowed down a bit too \u2013 not by much, but enough that I noticed. It felt like my whole being got a tiny little sigh of relief. *pauses, looking up at the therapist* Does that make sense?"
+    },
+    {
+      "role": "assistant",
+      "content": "That makes perfect sense. That is such a clear, beautiful description of what happens in your body. You noticed the precise physical difference between the coiled-up state and the slightly uncoiled state.\n\nYou actually pinpointed something really significant here: you noticed the change in your breathing, and the subtle drop in your shoulders. You noticed the moment your body *allowed* itself to relax, even just a fraction of an inch.\n\nThis tells me something really important. It suggests that even when the thoughts are loud and the worries are pulling you tight, your body has this natural ability\u2014this little built-in switch\u2014that can respond to a moment of calm and signal, \"It's okay, you can soften.\"\n\nIf we were to call this moment of noticing\u2014the moment you saw the shell, and the moment you noticed your shoulders drop\u2014what was the small, concrete thing that allowed you to notice it? Was it the visual detail of the shell, or was it the physical sensation of the slight drop in your shoulders that caught your attention?\n\nWhat was the very first small thing that drew your attention to the shift?"
+    },
+    {
+      "role": "user",
+      "content": "*thinks for a moment, eyes narrowing slightly as they focus on the memory*\n\nI think what initially caught my attention was... the shell's texture. I remember noticing how smooth and tactile it felt against the rest of the pantry shelf. It was just this tiny little detail that stood out to me amidst all the other visual clutter.\n\n*pauses, reflecting on the moment*\n\nAnd then, as I looked at the shell, I think my attention followed the shape of its curves, and that's when I became aware of my shoulders relaxing. It was like... the texture of the shell drew my focus away from the worries and onto this small, physical detail.\n\n*smiles slightly, recalling the moment*\n\nSo, it was a combination of visual and tactile cues that allowed me to notice the shift \u2013 the smooth texture of the shell and its gentle curves."
+    },
+    {
+      "role": "assistant",
+      "content": "That is such a beautiful and precise observation. You didn't just notice the shell; you noticed its *texture*\u2014how smooth and tactile it was\u2014and that sensory detail was the anchor. It was a small, physical piece of information that was just enough to redirect your entire focus.\n\nYou\u2019ve done something really powerful today. You were able to track your own body's physical signals\u2014the tension, the knot, and then the subtle, almost invisible moment of release\u2014all triggered by noticing a small, simple detail: the smooth curve of a seashell.\n\nIt sounds like your attention, when guided by a simple sensory detail, has the power to physically signal to your body that it can let go.\n\nFor the rest of our time today, let's just hold onto that.\n\nIf you feel up to it, for the next day, I don't want you to try to *fix* anything or *stop* the worrying. I just want you to be a curious observer of your own senses.\n\nWhen you feel that knot start to tighten up, or when the worries start to race, could you just pause, and consciously look for one small, smooth, or interesting texture in your immediate environment? Maybe the grain of the wood table, or the feel of your sleeve against your skin.\n\nJust notice it. No pressure, no goal, just noticing the tiny, physical detail.\n\nHow does that sound as a simple experiment?"
+    },
+    {
+      "role": "user",
+      "content": "*smiles slowly, feeling a sense of relief and calm*\n\nThat sounds amazing. I love that you're not asking me to stop worrying or fix anything; just being curious about my own senses feels like a really gentle and manageable task.\n\nI'm actually excited to try this out tomorrow. Just noticing the texture of something smooth or interesting in my environment seems like it could be a great way to slow down and get grounded when I start feeling overwhelmed.\n\n*Takes a deep breath, feeling a sense of hope*\n\nThank you for today's session. It really helped me feel heard and understood."
+    }
+  ]
+}

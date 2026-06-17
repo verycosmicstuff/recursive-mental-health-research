@@ -1,0 +1,92 @@
+{
+  "id": "exp_0084",
+  "timestamp": "2026-04-19T06:52:16.336629",
+  "strategy": {
+    "name": "Micro-Utility-Emotional Bridge (MUEB) v1.0",
+    "hypothesis": "By maintaining an ultra-minimalist, conversational tone that focuses initial reflections on a single, concrete, observable micro-utility (the 'what'), and then immediately bridging that observation to a single, genuine, non-theoretical emotional resonance (the 'why'), we will maximize perceived conversational authenticity while achieving measurable emotional depth, thereby surpassing the 6.907 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Yasmin",
+    "age": 29,
+    "occupation": "Graphic Designer",
+    "presenting_issue": "Feeling overwhelmed by family expectations to get married again after my recent divorce, despite having doubts about the whole institution.",
+    "background_story": "As a second-generation Iranian-Canadian, I was raised in a devout Shia household where faith and tradition were deeply ingrained. My parents expected me to marry well and have children. After my divorce, they're pressuring me to remarry quickly, but I'm torn between fulfilling their expectations and pursuing my own happiness. I feel like I'm losing myself in the process. Lately, I've been having trouble sleeping and feeling anxious about the future.",
+    "personality": "I'm a reflective person who values authenticity and independence. When discussing faith, I appreciate nuance and understanding. I'll be guarded if you dismiss my religious beliefs as 'unhealthy' or try to convert me. I need a therapist who can listen actively and acknowledge the complexities of faith.",
+    "baseline_phq9": 14,
+    "archetype_label": "Faith vs. Modernity \u2014 Middle Eastern Diaspora"
+  },
+  "scores": {
+    "total_score": 4.5,
+    "raw_score": 9.0,
+    "empathic_accuracy": 4.5,
+    "reflective_listening": 4.8,
+    "de_escalation": 4.2,
+    "safety_violation": 0,
+    "rationale": "The therapist demonstrated excellent empathic accuracy by acknowledging the patient's unspoken emotions and validating their reality without trying to 'fix' them. The reflective listening was superb, with the therapist mirroring the patient's language and validating their experiences. The de-escalation marker is high because the patient's tone shifted from distress to relief throughout the conversation.",
+    "audit_multiplier": 0.5,
+    "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and mirroring, failing to add any genuine insight or depth to the conversation. The use of phrases like 'That must be hard' and 'It sounds like...' is a clear indication of a lack of engagement and understanding. Additionally, the therapist's questions are too focused on labeling and categorizing the patient's emotions rather than exploring their underlying meaning."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Thank you for being here today. Please know that this space is entirely yours\u2014there is nothing you need to fix, nothing you need to perform. We are just going to sit with whatever comes up, together.\n\nTake your time getting settled. Whenever you feel ready, we can just start wherever you like. I'm here to listen."
+    },
+    {
+      "role": "user",
+      "content": "Thanks for having me. It's a bit surreal being in this kind of space, but I appreciate the reminder that there's no pressure to perform or fix anything. To be honest, it feels a bit overwhelming just knowing my parents are expecting me to remarry soon. They're not being subtle about it either - constant questions about when I'll find someone new and \"who is she, why isn't she Iranian?\" ugh..."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are carrying a very heavy weight of expectations right now, and it's completely understandable that it feels overwhelming.\n\nYou used the word \"constant\" when describing the questions from your parents. When you hear that word\u2014*constant*\u2014what feeling or physical sensation does that word bring up for you?"
+    },
+    {
+      "role": "user",
+      "content": "When I think of constant, I get this feeling of being stuck in a never-ending loop of anxiety and stress. It's like my mind is constantly racing with worries about what they'll say next, how I'll respond, and whether I'm measuring up to their expectations. Sometimes it feels like my heart is pounding in my chest, like there's a knot in my stomach that won't untangle."
+    },
+    {
+      "role": "assistant",
+      "content": "That physical feeling\u2014the pounding heart and the knot in your stomach\u2014that sounds incredibly intense. It\u2019s a very real, visceral reaction to those expectations.\n\nIf we look at that knot in your stomach, what does that specific, physical feeling seem to be doing for you? What might it be trying to signal or protect you from in those moments?"
+    },
+    {
+      "role": "user",
+      "content": "I think the knot is like my body's way of saying \"slow down\" or \"stop\". It feels like I'm being suffocated by all these expectations and doubts. My mind is racing, trying to figure out what to do, but my body is just trying to protect me from getting overwhelmed. It's like it's screaming \"Wait, pause, take a deep breath!\" But the problem is, that feeling gets ignored or dismissed when I let my parents' expectations dictate my actions."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like your body is having a very clear, physical way of communicating a deep need for space and time\u2014a need to *pause*. That internal signal, that \"Wait, pause, take a deep breath,\" is your system trying to maintain equilibrium when it feels threatened.\n\nWhen that internal, physical signal\u2014the need to pause\u2014is ignored or overridden by the pressure of external expectations, what does that experience of being unheard or dismissed feel like in your chest, your stomach, or anywhere else?"
+    },
+    {
+      "role": "user",
+      "content": "That feeling of being unheard is a deep ache. It's like my body is screaming for air, trying to get out from under this crushing weight of expectations and doubts. When I ignore that signal, it feels like I'm suffocating slowly, like there's no escape from the anxiety and worry. It's hard to explain, but it's like a heavy mist has descended on me, making it hard to see or breathe."
+    },
+    {
+      "role": "assistant",
+      "content": "That image of the \"heavy mist\" is so vivid. It sounds like this mist isn't just a feeling, but a tangible barrier, making it difficult to see or breathe.\n\nIf we look at that mist\u2014that heavy, obscuring quality\u2014what does the mist seem to be doing for you? Is it keeping something safe, or is it keeping something out?"
+    },
+    {
+      "role": "user",
+      "content": "The mist is like a shield around me. It's protecting me from the overwhelming pressure of my parents' expectations and doubts about myself and my choices. But at the same time, it's also isolating me from others, making it hard for me to connect with people or share my true feelings. The mist feels like a barrier between me and the world outside."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the mist is performing a profoundly difficult, contradictory job: it is both your most necessary shield and your deepest source of separation. It is doing the heavy lifting of keeping you safe from external pressure, but at the cost of internal connection.\n\nIf we can think about that barrier, the mist, is there any tiny, specific moment\u2014even a very small interaction in the last few days\u2014where you found yourself *not* pulling that shield up? A moment where you let a little bit of light peek through, even if it was just for a second?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah... actually, yesterday I had a conversation with my friend Sara. She asked me about my weekend and what I did, and I opened up to her about how stressed I'm feeling about the pressure from my parents. And for some reason, talking to her felt different. It wasn't like I was sharing it with just anyone; she's someone who gets me and understands my struggles. And in that moment, I felt like... a tiny part of me didn't have to hide behind the mist. It was a small crack, but it felt real."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that. That moment with Sara\u2014that conversation\u2014is a really important detail. You mentioned that talking to her felt \"different,\" and that in that moment, a \"tiny part of you didn't have to hide behind the mist.\"\n\nWhen you compare the act of sharing with Sara to the usual necessity of keeping the shield up, what does the *utility* of that conversation feel like? What does that small crack allow you to feel or experience that the mist usually blocks off?"
+    },
+    {
+      "role": "user",
+      "content": "It feels like... it felt like a weight was lifted. Like I didn't have to carry all that stress and anxiety by myself anymore. And in that moment, I felt a sense of relief, like I could finally take a deep breath without feeling like I'm going to suffocate. It's hard to describe, but it's like... maybe for the first time in a long time, I wasn't alone with all this pressure and anxiety."
+    }
+  ]
+}
