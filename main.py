@@ -16,7 +16,7 @@ class LoggerWriter:
         try:
             self.terminal.write(message)
         except UnicodeEncodeError:
-            self.terminal.write(message.encode("utf-8", "replace").decode("utf-8"))
+            self.terminal.write(message.encode("ascii", "replace").decode("ascii"))
             
         self.log.write(message)
         self.log.flush()
@@ -45,20 +45,7 @@ import session_config
 import patient_archetypes
 import sync
 
-def update_best_strategy(score: float, exp_id: str):
-    """Saves the current top performing strategy."""
-    print(f"\n NEW BEST STRATEGY FOUND! Score: {score}")
-    shutil.copy2(config.THERAPIST_FILE, config.BEST_STRATEGY_FILE)
-    shutil.copy2(config.SESSION_CONFIG_FILE, config.BEST_SESSION_CONFIG_FILE)
-    shutil.copy2(config.PATIENT_ARCHETYPES_FILE, config.BEST_ARCHETYPES_FILE)
-    
-    # Append to markdown file to make it easily readable
-    with open(config.BEST_STRATEGY_FILE, "a", encoding="utf-8") as f:
-        f.write(f"\n\n# --- RECORDED AT EXPERIMENT: {exp_id} ---\n")
-        f.write(f"# --- SCORE: {score} ---\n")
-    
-    # Sync "New Best" immediately
-    sync.sync(f"New Best Strategy: {exp_id} (Score: {score:.3f})")
+import orchestrator_graph
 
 def main():
     print("=====================================================")
@@ -93,73 +80,23 @@ def main():
                     current_best_score = max(scores)
                 print(f"[Main] Resumed! Starting at iteration {iteration}. Best score so far: {current_best_score}")
     
-    # Optional Backup of the baseline strategy so we can revert if agent goes crazy
-    shutil.copy2(config.THERAPIST_FILE, config.THERAPIST_FILE + ".backup")
-    shutil.copy2(config.SESSION_CONFIG_FILE, config.SESSION_CONFIG_FILE + ".backup")
-    shutil.copy2(config.PATIENT_ARCHETYPES_FILE, config.PATIENT_ARCHETYPES_FILE + ".backup")
+    print("[Main] Initializing LangGraph Orchestrator...")
+    graph = orchestrator_graph.build_graph()
     
-    while True:
-        paused_logged = False
-        while os.path.exists(os.path.join(config.BASE_DIR, "PAUSED.txt")):
-            if not paused_logged:
-                print("[Main] Paused. Waiting for manual resume via dashboard...")
-                paused_logged = True
-            time.sleep(2)
-            
-        if config.MAX_EXPERIMENTS > 0 and iteration > config.MAX_EXPERIMENTS:
-             print(f"\n[Main] Reached max experiments ({config.MAX_EXPERIMENTS}). Stopping.")
-             break
-             
-        exp_id = f"exp_{iteration:04d}"
-        
-        # 1. Run the simulation and score it
-        try:
-            # Important: reload modules so it picks up code changes made by agent in prior loops
-            reload(config)
-            reload(therapist)
-            reload(session_config)
-            reload(patient_archetypes)
-            
-            scores = harness.run_experiment(exp_id)
-            total_score = scores["total_score"]
-            
-            # 2. Check if it's the new best
-            if total_score > current_best_score:
-                current_best_score = total_score
-                update_best_strategy(total_score, exp_id)
-                # Keep the current strategy!
-            else:
-                print(f"[Main] Score {total_score} did not beat {current_best_score}. Reverting to previous best.")
-                # We revert because we only want to compound ON TOP of successes
-                if os.path.exists(config.BEST_STRATEGY_FILE):
-                     shutil.copy2(config.BEST_STRATEGY_FILE, config.THERAPIST_FILE)
-                     shutil.copy2(config.BEST_SESSION_CONFIG_FILE, config.SESSION_CONFIG_FILE)
-                     shutil.copy2(config.BEST_ARCHETYPES_FILE, config.PATIENT_ARCHETYPES_FILE)
-                else: 
-                     # if we never had a best, revert to backup
-                     shutil.copy2(config.THERAPIST_FILE + ".backup", config.THERAPIST_FILE)
-                     shutil.copy2(config.SESSION_CONFIG_FILE + ".backup", config.SESSION_CONFIG_FILE)
-                     shutil.copy2(config.PATIENT_ARCHETYPES_FILE + ".backup", config.PATIENT_ARCHETYPES_FILE)
-                     
-            
-            # 3. Pause
-            print(f"Sleeping {config.EXPERIMENT_PAUSE_SECS} secs...")
-            time.sleep(config.EXPERIMENT_PAUSE_SECS)
-            
-            # 4. Agent proposes next modification
-            success = agent.propose_next_experiment(current_best_score)
-            if not success:
-               print("[Main] Agent failed to propose. We will try again next loop.")
-            
-            # 5. Heartbeat Sync to GitHub
-            sync.sync(f"Experiment Complete: {exp_id} (Score: {total_score:.3f})")
-            
-        except Exception as e:
-            print(f"\n[Main] CRITICAL ERROR IN LOOP: {e}")
-            print("Trying to recover next iteration...")
-            time.sleep(5)
-            
-        iteration += 1
+    initial_state = {
+        "messages": [],
+        "persona": {},
+        "strategy_info": {},
+        "active_prompt": "", # Will fall back to baseline therapist prompt
+        "score": None,
+        "iteration": iteration,
+        "baseline_score": current_best_score,
+        "exp_id": ""
+    }
+    
+    # Let LangGraph handle the loop via its optimizer routing
+    for event in graph.stream(initial_state, {"recursion_limit": 1000}): # Give it plenty of recursions
+        pass # Nodes handle their own logging
 
 if __name__ == "__main__":
     import os

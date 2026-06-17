@@ -24,10 +24,10 @@ def get_current_therapist_py() -> str:
     with open(config.THERAPIST_FILE, "r", encoding="utf-8") as f:
          return f.read()
 
-def propose_next_experiment(current_best_score: float) -> bool:
+def propose_next_experiment(current_best_score: float, current_prompt: str) -> dict | None:
     """
-    Analyses past results and proposes a NEW therapist.py file.
-    Returns True if proposal parsed successfully, False otherwise.
+    Analyses past results and proposes a NEW system prompt.
+    Returns a dict with strategy_name, hypothesis, and new_system_prompt if successful, None otherwise.
     """
     print("[Agent] Analyzing results and proposing next experiment...")
     
@@ -40,10 +40,8 @@ RESEARCH PROGRAM GUIDELINES:
 PAST RESULTS (TSV Format):
 {load_results()}
 
-CURRENT THERAPIST.PY CODE:
-```python
-{get_current_therapist_py()}
-```
+CURRENT SYSTEM PROMPT:
+{current_prompt}
 
 CURRENT BEST SCORE TO BEAT: {current_best_score}
 
@@ -78,7 +76,7 @@ CRITICAL: Do NOT write python code or wrap your response in markdown blocks. Out
             data = json.loads(response.strip() + "}")
         except json.JSONDecodeError:
             print(f"[Agent] Critical Error: Failed to parse Agent JSON proposal (Error: {e}).")
-            return False
+            return None
             
     reasoning = data.get("reasoning", "")
     strategy_name = data.get("strategy_name", "")
@@ -87,38 +85,12 @@ CRITICAL: Do NOT write python code or wrap your response in markdown blocks. Out
     
     if not new_system_prompt:
         print("[Agent] Rejected proposal: No system prompt provided.")
-        return False
+        return None
         
     print(f"[Agent] Hypothesis: {reasoning}")
     
-    # Template the new therapist.py file to prevent the LLM from causing Python SyntaxErrors
-    # Also strip any stray triple quotes from the prompt that could break the python template.
-    clean_prompt = new_system_prompt.replace('\"\"\"', "'''")
-    
-    templated_code = f'''# therapist.py (AUTO-GENERATED)
-
-STRATEGY_CONFIG = {{
-    "name": "{strategy_name}",
-    "hypothesis": "{hypothesis}"
-}}
-
-SYSTEM_PROMPT = """{clean_prompt}"""
-
-def get_therapist_system_prompt() -> str:
-    return SYSTEM_PROMPT
-
-def get_strategy_info() -> dict:
-    return STRATEGY_CONFIG.copy()
-'''
-    
-    try:
-        compile(templated_code, "<string>", "exec")
-    except SyntaxError as e:
-        print(f"[Agent] Template Compile Error: {e}. The prompt likely contained illegal characters.")
-        return False
-        
-    with open(config.THERAPIST_FILE, "w", encoding="utf-8") as f:
-        f.write(templated_code)
-    print("[Agent] New strategy committed to therapist.py")
-
-    return True
+    return {
+        "strategy_name": strategy_name,
+        "hypothesis": hypothesis,
+        "new_system_prompt": new_system_prompt
+    }

@@ -147,48 +147,37 @@ def get_hardware():
 
 @app.route('/api/history')
 def get_history():
+    import difflib
+    history_file = os.path.join(config.BASE_DIR, "prompt_history.jsonl")
+    if not os.path.exists(history_file):
+        return jsonify([])
+        
     try:
-        # Run git log on therapist.py
-        result = subprocess.run(
-            ['git', 'log', '-p', '--', 'therapist.py'],
-            capture_output=True, text=True, check=True
-        )
-        content = result.stdout
-        
-        # Parse history
-        commits = re.split(r'^commit ', content, flags=re.MULTILINE)
+        entries = []
+        with open(history_file, "r", encoding="utf-8") as f:
+            for line in f:
+                if line.strip():
+                    entries.append(json.loads(line))
+                    
         parsed_commits = []
+        previous_prompt = ""
         
-        for c in commits:
-            if not c.strip():
-                continue
-                
-            lines = c.split('\n')
-            commit_hash = lines[0].strip()
+        for idx, entry in enumerate(entries):
+            current_prompt = entry.get("prompt", "")
             
-            author = ""
-            date = ""
-            message_lines = []
-            diff_lines = []
-            is_diff = False
-            
-            for line in lines[1:]:
-                if line.startswith('Author: '):
-                    author = line.replace('Author: ', '').strip()
-                elif line.startswith('Date: '):
-                    date = line.replace('Date: ', '').strip()
-                elif line.startswith('diff --git'):
-                    is_diff = True
-                    diff_lines.append(line)
-                elif is_diff:
-                    diff_lines.append(line)
-                elif line.startswith('    '):
-                    message_lines.append(line.strip())
+            # Generate unified diff
+            diff = list(difflib.unified_diff(
+                previous_prompt.splitlines(),
+                current_prompt.splitlines(),
+                n=3,
+                lineterm=""
+            ))
+            previous_prompt = current_prompt
             
             hunks = []
             current_hunk = None
             
-            for line in diff_lines:
+            for line in diff:
                 if line.startswith('@@'):
                     if current_hunk:
                         hunks.append(current_hunk)
@@ -198,21 +187,22 @@ def get_history():
                         current_hunk["lines"].append({"type": "add", "content": line[1:]})
                     elif line.startswith('-') and not line.startswith('---'):
                         current_hunk["lines"].append({"type": "remove", "content": line[1:]})
-                    else:
+                    elif not line.startswith('---') and not line.startswith('+++'):
                         current_hunk["lines"].append({"type": "context", "content": line[1:] if len(line) > 0 else ""})
-            
+                        
             if current_hunk:
                 hunks.append(current_hunk)
-
+                
             parsed_commits.append({
-                "hash": commit_hash[:8],
-                "author": author,
-                "date": date,
-                "message": " ".join(message_lines),
+                "hash": entry.get("exp_id", "unknown"),
+                "author": "LangGraph Optimizer",
+                "date": entry.get("timestamp", ""),
+                "message": f"{entry.get('strategy_name', '')}\n\nHypothesis: {entry.get('hypothesis', '')}",
                 "hunks": hunks
             })
             
-        return jsonify(parsed_commits)
+        # Reverse to show newest first, matching git log behavior
+        return jsonify(parsed_commits[::-1])
     except Exception as e:
         print(f"Error reading Agent History: {e}")
         return jsonify([])

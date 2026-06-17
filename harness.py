@@ -2,6 +2,7 @@ import os
 import json
 import time
 import datetime
+import threading
 from openai import OpenAI
 import config
 import therapist
@@ -20,6 +21,8 @@ client_evaluator = OpenAI(
     base_url=config.EVALUATOR_BASE_URL,
     api_key=config.EVALUATOR_API_KEY
 )
+
+_LLM_LOCK = threading.Lock()
 
 def check_pause():
     """Blocks execution if the system is paused, dropping GPU/CPU usage instantly."""
@@ -48,7 +51,11 @@ def chat_completion(messages, temperature=0.7, json_format=False, use_evaluator=
     else:
         kwargs["timeout"] = 60
         
-    response = active_client.chat.completions.create(**kwargs)
+    if not use_evaluator:
+        with _LLM_LOCK:
+            response = active_client.chat.completions.create(**kwargs)
+    else:
+        response = active_client.chat.completions.create(**kwargs)
     return response.choices[0].message.content
 
 
@@ -149,9 +156,9 @@ Here is the conversation so far:"""
     response = chat_completion(messages, temperature=patient_temp, use_evaluator=True)
     return response
 
-def get_therapist_response(conversation_history: list) -> str:
+def get_therapist_response(conversation_history: list, active_prompt: str) -> str:
     """Gets the therapist's response using the currently loaded strategy."""
-    sys_prompt = therapist.get_therapist_system_prompt()
+    sys_prompt = active_prompt
     
     messages = [{"role": "system", "content": sys_prompt}]
     messages.extend(conversation_history)
