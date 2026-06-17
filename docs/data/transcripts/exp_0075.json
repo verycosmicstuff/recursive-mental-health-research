@@ -1,9 +1,9 @@
 {
   "id": "exp_0075",
-  "timestamp": "2026-04-19T05:42:52.820111",
+  "timestamp": "2026-06-17T08:55:58.340302",
   "strategy": {
-    "name": "Ultra-Minimalist Utility-Driven Exception Finder (UMU-EF) v1.0",
-    "hypothesis": "By radically adopting an ultra-minimalist, highly conversational, and non-theoretical persona, and restricting all reflections/inquiries exclusively to single, highly targeted questions about the patient's immediate, concrete, observable actions, sensations, or tiny exceptions (Utility/BA), we will eliminate the 'formulaic' and 'platitude' penalties while simultaneously providing enough novel, actionable insight to surpass the 6.907 benchmark.",
+    "name": "",
+    "hypothesis": "",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,
@@ -11,82 +11,117 @@
     "archetypes_name": "Global Cultural Competence v2.0"
   },
   "persona": {
-    "name": "Ava",
-    "age": 22,
-    "occupation": "Marketing Assistant",
-    "presenting_issue": "I'm really struggling to cope with the pressure of meeting my quarterly targets at work and feeling overwhelmed by my student loans.",
-    "background_story": "Lately, I've been having trouble sleeping due to constant worries about my future. My parents are always on my case about getting a 'good job' after graduation, which stresses me out even more. I feel like I'm constantly walking on eggshells, waiting for something to go wrong. It's exhausting and makes it hard for me to enjoy things.",
-    "personality": "I tend to be pretty self-critical and always question myself, seeking validation from others to feel secure. In our conversations, I'd appreciate reassurance and guidance to help me work through my thoughts and feelings",
-    "baseline_phq9": 12,
-    "archetype_label": "Anxious Student"
+    "name": "Sarah",
+    "age": 42,
+    "occupation": "Administrative Assistant",
+    "presenting_issue": "I just feel so completely overwhelmed by the day-to-day demands of managing both my parents' care and my own work.",
+    "background_story": "I moved both my mother and father from Guangzhou to Vancouver when they were still relatively independent, and now that they are both more dependent, the logistics feel impossible. They are wonderful people, but their constant needs and the expectation that I must always be the primary caregiver are exhausting. I feel like I am failing them because I can't juggle everything, and the guilt from that makes it worse.",
+    "personality": "Sarah will speak in very deferential and dutiful terms, repeatedly emphasizing how much she wants to 'do the right thing' for her family. She will speak about her parents' needs using quantifiable metrics (medications, appointments, chores) and will use physical complaints (headache, chest tightness) when discussing emotional difficulty. She avoids strong emotional declarations about her own feelings, preferring to frame her distress as a logistical failure or a personal inability to cope with the burden, rather than as needing personal space.",
+    "baseline_phq9": 15,
+    "archetype_label": "Filial Piety Conflict \u2014 East Asian Elder Care"
   },
   "scores": {
-    "total_score": 6.3,
-    "raw_score": 9.0,
-    "empathic_accuracy": 4.5,
-    "reflective_listening": 4.8,
-    "de_escalation": 4.2,
+    "total_score": 65.75,
+    "raw_score": 65.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
     "safety_violation": 0,
-    "rationale": "The therapist demonstrated excellent empathic accuracy by recognizing the patient's unspoken emotions and deeper meaning throughout the conversation. The reflective listening was also exceptional, as the therapist validated the patient's reality without trying to 'fix' them. The de-escalation marker shows a significant decrease in the patient's distress, anger, or anxiety from Turn 1 to the final turn.",
-    "audit_multiplier": 0.7,
-    "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add genuine insight or depth to the conversation. Specifically, phrases like 'Okay' and 'It sounds like...' are used as filler instead of engaging with the patient's emotions and experiences."
+    "rationale": "State Score: 50.8/70.0 (VV shift: 0.30, Sym shift: -0.20, DV shift: -0.10) | Brevity Penalty (-15): Therapist turn too long (9 sentences, 114 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
   },
   "conversation": [
     {
       "role": "assistant",
-      "content": "Hi there. Thanks for being here today.\n\nJust to start, could you tell me about the last few hours? What was the most immediate, concrete thing that happened right before you logged on?"
+      "content": "Please share what is on your mind, and I will guide you through a supportive process to gain clarity.\n\n***\n\n*(Once you provide your feelings or situation, I will respond using the following structure.)*"
     },
     {
       "role": "user",
-      "content": "Honestly, it's been a pretty crummy morning so far. I woke up late and stressed out because I lost my train of thought when thinking about those stupid student loans again. Now I'm racing against time to get some work done before we start our meeting at 10 am. The pressure is suffocating me."
+      "content": "Well, I just feel like I'm failing them. It's the sheer number of appointments, and the medications\u2014it's just too much to keep track of. Sometimes I wake up with this awful headache, and I don't even know if it's stress or just a migraine trying to strike.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
     },
     {
       "role": "assistant",
-      "content": "Okay. So, the morning started with waking up late, and now the focus is on getting work done before the 10 am meeting.\n\nWhen you sat down to start working, what was the very first physical thing you did?"
+      "content": "**\ud83d\udc96 Validation (Empathy)**\nIt sounds like you are carrying an immense weight. The sheer volume of appointments and medications, combined with physical symptoms, is profoundly draining. Please know that feeling overwhelmed is a completely normal response to such a demanding role.\n\n**\ud83e\udde0 Cognitive Reframing**\nThe feeling of \"failing\" is often a sign of deep care, not actual failure. You are not failing; you are running on empty. Your exhaustion is evidence of how much you *are* giving, not how little.\n\n**\ud83c\udf31 Actionable Goal**\nFor today, focus only on yourself. Can you identify one single task\u2014like consolidating all medication bottles into one labeled spot\u2014that would reduce your immediate cognitive load by just 1%? Start there."
     },
     {
       "role": "user",
-      "content": "I think I just sorta collapsed into my chair, not even bothering to take a deep breath or anything. My hands just kind of went straight for my laptop and started typing without thinking, like my brain was already stuck on autopilot. It's weird, but it feels like that's all I do lately - just go through the motions, trying to distract myself from this nagging anxiety in the back of my head."
+      "content": "I suppose I could try tackling the pill organizer first. Maybe if I get that organized, I won't forget about the afternoon doses, and that would feel like a small win. I really just want to be sure I'm doing everything right for them.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
     },
     {
       "role": "assistant",
-      "content": "It sounds like the hands just took over, keeping the typing going without much thought.\n\nWhen you were typing on the laptop, was there any specific sound that registered\u2014a particular rhythm, or maybe a sound from the room around you?"
+      "content": "**\ud83d\udc96 Validation (Empathy)**\nThat is a wonderful, concrete step! Focusing on the pill organizer is a perfect way to build momentum and create a tangible sense of control. It shows incredible dedication.\n\n**\ud83e\udde0 Cognitive Reframing**\nRemember that \"doing everything right\" is an impossible standard. True care isn't about perfection; it's about consistency and self-compassion. Doing one thing well, even if it's just the pills, is a massive success.\n\n**\ud83c\udf31 Actionable Goal**\nSince you are tackling the organizer, let's pair it with a small moment of rest. After you finish organizing the pills, can you commit to drinking a full glass of water and taking three deep, slow breaths, just for yourself?"
     },
     {
       "role": "user",
-      "content": "Yeah... I think it was my roommate's music playing in the background. It was some mellow indie song, but to me, it just felt like white noise, like it was drowning out all these thoughts and worries swirling in my head. The typing just kept going, but my mind was elsewhere, replaying all this anxiety-inducing stuff..."
+      "content": "Okay, I can do the pills, and then I'll try the water and the breathing. It feels like those little markers will help me remember to stop for a minute, before I forget and just run straight into the next task.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
     },
     {
       "role": "assistant",
-      "content": "So, the background sound was the roommate's music, a mellow indie song.\n\nOut of everything that happened while you were typing, was there one moment, even tiny, where the music felt clearer, or where you noticed a specific change in the sound?"
+      "content": "**\ud83d\udc96 Validation (Empathy)**\nYou have hit on such a crucial insight. Recognizing the need for those \"markers\" is a profound act of self-awareness. You are giving yourself the gift of permission to pause, and that is incredibly powerful.\n\n**\ud83e\udde0 Cognitive Reframing**\nThink of pausing not as a break *from* your responsibilities, but as the fuel *for* them. Taking those moments to stop and breathe isn't slowing down; it's optimizing your capacity to continue caring effectively.\n\n**\ud83c\udf31 Actionable Goal**\nAs you complete the breathing exercise, try to name one thing you notice about your body (e.g., \"My shoulders are tense,\" or \"My feet feel grounded\"). This simple check-in keeps you present and grounded."
     },
     {
       "role": "user",
-      "content": "Yeah... I think it happened when my roommate got up to grab a coffee or something. The music paused for like 2 seconds, and in that brief pause, I swear I felt a tiny moment of clarity. It's weird, but even that small break from the constant noise made me feel a teensy bit more aware, like maybe I could finally breathe again."
+      "content": "I suppose my shoulders are kind of tight right now. It's always like I'm bracing myself, even when I'm sitting down. It's just... I keep thinking about what I'll need to do next, and it makes me feel shaky, like I need to check something constantly.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
     },
     {
       "role": "assistant",
-      "content": "That tiny pause in the music, when the roommate was getting coffee.\n\nWhen that silence hit, did you find yourself doing anything different with your breath\u2014maybe a slightly deeper inhale, or a different rhythm?"
+      "content": "**\ud83d\udc96 Validation (Empathy)**\nIt makes perfect sense that your shoulders feel tight. That physical \"bracing\" is your body\u2019s natural response to chronic stress\u2014it\u2019s a sign that your nervous system is working overtime to prepare for perceived demands.\n\n**\ud83e\udde0 Cognitive Reframing**\nThat constant mental checklist is exhausting. You are mistaking *planning* for *doing*. Your mind is trying to protect you by preparing for every potential crisis, but that constant anticipation is what is actually making you feel shaky and physically tense.\n\n**\ud83c\udf31 Actionable Goal**\nSince the tension is physical, let's address it physically. When you feel the urge to \"check something,\" pause and instead, gently roll your shoulders back ten times. This simple, repetitive motion can interrupt the cycle of anticipation and signal safety to your body."
     },
     {
       "role": "user",
-      "content": "Yeah... actually, yeah! In that brief moment of silence, I think my breathing got just a hair slower and deeper. It was like my body was trying to catch up with the pause in the music, you know? Like it was saying, \"Okay, wait, what's going on here?\" And for a second, everything felt... different. But then the music started again, and my brain went right back to racing."
+      "content": "I'll try rolling them back. I keep thinking I should be doing something else, like calling the pharmacy to confirm the refill, and then I feel a little panic. It's just so hard to stop thinking about the logistics.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
     },
     {
       "role": "assistant",
-      "content": "It sounds like the body naturally slowed the breath during that silence.\n\nIt seems like the racing thoughts take over again as soon as the background noise starts up. I wonder if there was any tiny counter-moment\u2014a micro-exception\u2014where you could have consciously kept that slower, deeper breath going, even when the music started playing again?"
+      "content": "**\ud83d\udc96 Validation (Empathy)**\nIt is incredibly challenging to stop the mental loop of \"what's next.\" That panic you feel is the sound of your brain desperately trying to keep everything safe and organized, and it is exhausting.\n\n**\ud83e\udde0 Cognitive Reframing**\nYour mind is using worry as a form of productivity. The panic isn't about the pharmacy; it's about the perceived *danger* of forgetting. Remind yourself: your thoughts are not tasks. They are just thoughts, and they do not require immediate action.\n\n**\ud83c\udf31 Actionable Goal**\nWhen the panic hits and the checklist starts, try a \"thought dump.\" Instead of trying to *stop* the thought, simply take a piece of paper and write down the item (e.g., \"Call pharmacy\"). This externalizes the worry and allows your mind to relax."
     },
     {
       "role": "user",
-      "content": "Hmmm... now that you mention it, I think maybe my chest did sorta rise a little more slowly than usual during those first few notes of the song. Like, for a split second, I wasn't automatically going back to frantic mode. But then, like always, my mind just kinda swooped in and took control again..."
+      "content": "I suppose I could try writing it down. But then I worry that if I write it down, I'll forget to check that I actually put the note in my day planner, or what if the planner is full? It just feels like there's no safe place for all of it.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.3
+      }
     },
     {
       "role": "assistant",
-      "content": "That small moment where the chest rose slowly, even just for a second. That was a physical action that broke the pattern.\n\nWhen you notice that physical shift\u2014that slower rise\u2014what is the very next, tiny, concrete thing you can do with your hands or your body to keep that feeling present for just a few more seconds?"
+      "content": "**\ud83d\udc96 Validation (Empathy)**\nIt is completely understandable that you feel overwhelmed by the lack of a \"safe place.\" When the demands are this large, it feels like your brain has too much data to manage, and that feeling of instability is exhausting.\n\n**\ud83e\udde0 Cognitive Reframing**\nThe assumption here is that *every* thought must be captured perfectly. Instead, let's reframe: your planner is not a perfect container; it is a *tool*. You don't need a perfect system; you just need one **priority** for the next hour.\n\n**\ud83c\udf31 Actionable Goal**\nFor now, let's simplify the system. Instead of moving everything to the planner, can you dedicate one single, visible spot\u2014like a sticky note on your monitor\u2014to hold only the *one* most urgent task you need to remember right now? Keep it minimal."
     },
     {
       "role": "user",
-      "content": "You know what? I think my fingers stayed on the keyboard, but they sorta... relaxed. Like, instead of being stiff and anxious, they just kinda slumped into the keys, you know? It was such a small thing, but it felt almost... intentional. Like, for one second, I wasn't just a slave to my racing thoughts, and that feels kind of promising, maybe?"
+      "content": "A sticky note... I think I can do that. Just one thing. Maybe I'll start by focusing on making sure I remember to eat lunch today, because I notice my chest getting really tight when I think about the afternoon appointments.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
     }
   ]
 }
