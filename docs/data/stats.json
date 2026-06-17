@@ -1307,6 +1307,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 2 (qwen3:4b)"
+    },
+    {
+      "exp_id": "exp_0008",
+      "strategy_name": "Somatic-Cognitive Challenge Bridge (SCCB) v1.0",
+      "hypothesis": "By integrating a mandatory, gentle CBT challenge (identifying a distorted thought) into the highly successful 'Somatic Validation -> Grounding -> Action' structure, we will provide novel cognitive work that avoids pseudo-insight while maximizing the State Score and increasing the measured clinical delta, thereby surpassing the 89.5 benchmark.",
+      "score": 61.5,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 2 (qwen3:4b)"
     }
   ],
   "best_score": 89.5
