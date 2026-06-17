@@ -26,3 +26,7 @@ def get_therapist_system_prompt() -> str:
 
 def get_strategy_info() -> dict:
     return STRATEGY_CONFIG.copy()
+
+
+# --- RECORDED AT EXPERIMENT: exp_0001 ---
+# --- SCORE: 3.6 ---
