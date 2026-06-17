@@ -1,0 +1,127 @@
+{
+  "id": "baseline_000",
+  "timestamp": "2026-06-17T00:36:40.590151",
+  "strategy": {
+    "name": "Hyper-Concise Somatic Validation Bridge (HCSVB) v2.0",
+    "hypothesis": "To maximize the score, the strategy must address the low 'State Score' by prioritizing deep somatic validation. Concurrently, the Brevity Penalty requires strict enforcement of a 3-sentence/60-word limit. The revised approach mandates a 'Validate-Ground-Bridge' sequence, ensuring all responses start with explicit validation of the current feeling/body state ('I hear,' 'understand'), remain concise, and only then gently connect the state to concrete, small-scale actions based on stated values.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Chloe",
+    "age": 32,
+    "occupation": "Junior Marketing Coordinator",
+    "presenting_issue": "I feel completely drained and constantly scared that I'm letting people down, so I don't know who I am when I turn off the performance.",
+    "background_story": "Every day at work, I feel like I'm performing a role I don't actually play, making sure every email is polished and every meeting is agreeable so no one can criticize me. I'm always anticipating the need\u2014the perfect response, the right contribution\u2014because I remember years of being told I wasn't trying hard enough. It's exhausting, and lately, I've started having these moments where I just feel this huge lump in my chest, like I'm about to burst from the effort.",
+    "personality": "Highly anxious, hyper-aware of perceived judgment, and prone to oversharing personal details in an attempt to elicit explicit validation. She uses overly apologetic language ('I'm so sorry if I'm rambling,' 'I know this is a lot to ask'). She will respond to neutral prompts with frantic, rapid explanations or deep, emotional vulnerability, and will interpret any pause in the conversation as active disappointment.",
+    "baseline_phq9": 14,
+    "archetype_label": "ADHD Rejection Sensitivity \u2014 Unmasking Crisis"
+  },
+  "scores": {
+    "total_score": 89.5,
+    "raw_score": 89.5,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 59.5/70.0 (VV shift: 0.40, Sym shift: -0.40, DV shift: -0.20)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "It sounds like there is a deep, exhausting weight settled in your shoulders right now. I hear how much effort it takes just to carry that tension. Given your commitment to self-care, would you be willing to pause and notice the feeling of your feet on the floor for just a moment?"
+    },
+    {
+      "role": "user",
+      "content": "Oh my gosh, I'm so sorry if this is weird, I don't know if I'm doing it right. I'm just... I feel it, almost too much. Like, the floor is solid, which is nice, but I'm worried I'm not noticing it enough, or that I'm just making it sound dramatic. Does that mean I'm doing it wrong?",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like your mind is working overtime, trying to police your own experience and make it perfect. Understand that there is no 'right' way to feel or to process this; your presence here is enough. If you can, just let go of the need to critique your own words, and simply breathe into the space you are already in."
+    },
+    {
+      "role": "user",
+      "content": "I... I'm trying. I really am. It's just that when you say 'just be,' it feels like I'm supposed to *do* something with my breathing, and I feel like I'm failing at that simple thing, like I should be able to just flip a switch. I'm so sorry, I know I'm overthinking this again.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like there is a deep pressure right now to perform 'being' correctly, which is exhausting. I hear how frustrating it is when something as simple as breathing feels like a task you are failing. Instead of trying to fix the breath, could you simply notice the physical sensation of the air entering and leaving your body, without judgment?"
+    },
+    {
+      "role": "user",
+      "content": "It's really hard not to... analyze it. It's like I'm constantly checking if the air is flowing enough, or if my chest is making the right sound. I feel this huge flush, and I'm trying so hard to just let it pass, but it feels like I'm fighting it, and then I feel guilty for fighting it too.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like there is a wave of physical heat and intense monitoring happening right now, which takes tremendous energy. I hear how difficult it is to let a sensation pass when you feel obligated to control it. Instead of fighting the flush, could you try noticing it simply as a physical signal\u2014a warmth\u2014and letting it be there for a moment?"
+    },
+    {
+      "role": "user",
+      "content": "I... I'm just noticing it. It's warm. Like, not alarming, just warm. But I keep waiting for it to tell me something bad, you know? Like, is this supposed to happen? Should I be worried about the heat? I don't know what 'just letting it be' means, honestly.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the anticipation of a 'signal' is creating its own layer of tension on top of the warmth. I understand that 'just letting it be' feels abstract and maybe even unsafe right now. For this moment, let's try defining it: simply observe the warmth without needing it to explain anything to you."
+    },
+    {
+      "role": "user",
+      "content": "It's... just warmth. Nothing is happening, which is weird, because usually there's something I need to fix or something that proves I'm doing okay. I feel a little lighter, but now I'm just scared that the moment I stop performing the 'just being,' I'll just... disappear. I'm so sorry if I'm spiraling again.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the quiet moment feels unfamiliar, creating a deep fear that the lightness might dissolve if you stop actively holding it. I understand how frightening it is to feel that 'being' requires constant, visible effort. Please know that your presence here, right now, is not a performance, and it doesn't need to be earned or maintained to be real."
+    },
+    {
+      "role": "user",
+      "content": "I know. That's... surprisingly scary to hear. Because I've built my whole life around the idea that if I stop the effort, I just cease to exist, like a battery that finally runs out. It makes me feel totally adrift, like I don't have an instruction manual for just... being.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like your sense of self is currently tied to the effort you put forth, making stillness feel like a threat to your entire being. I hear how deeply unsettling it is to feel without an instruction manual for 'being.' Please remember that your existence isn't dependent on your effort; you are here simply because you are."
+    },
+    {
+      "role": "user",
+      "content": "I... I guess I never knew it was like that. It's just so much to unlearn, this idea that I have to be valuable or perfect to be okay. I feel a tiny bit less frantic right now, but the weight is still there, just... quieter.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.5
+      }
+    }
+  ]
+}

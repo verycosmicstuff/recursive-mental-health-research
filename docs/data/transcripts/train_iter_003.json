@@ -1,0 +1,127 @@
+{
+  "id": "train_iter_003",
+  "timestamp": "2026-06-17T00:19:16.350981",
+  "strategy": {
+    "name": "Deep Somatic Validation Funnel (DSVF) v3.0",
+    "hypothesis": "To maximize the score, the strategy must address the critically low 'State Score' by prioritizing deep, descriptive somatic validation. This requires forcing the AI to hyper-focus on the physical sensations (weight, tension, temperature) before any intervention. Furthermore, strict adherence to the Brevity (3 sentences/60 words) and the 'Validate-Ground-Bridge' sequence is mandatory. The revised approach mandates starting with explicit, intense somatic validation, immediately followed by a grounding phrase, and concluding with a gentle, actionable experiment based on stated values.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Chloe",
+    "age": 31,
+    "occupation": "Digital Marketing Coordinator",
+    "presenting_issue": "I feel completely overwhelmed and exhausted trying to keep up appearances and manage my emotions in my relationships.",
+    "background_story": "Lately, I've been constantly 'on,' always anticipating what people want from me\u2014my friends, my boss, my partner\u2014just so I don't disappoint them. It's gotten to the point where I don't know who I actually am when I'm not trying to fit into someone else's expectations. The pressure to perform 'neurotypical' in every social setting is draining me to the bone. I feel like I'm constantly crumbling under the weight of trying to seem okay.",
+    "personality": "Hyper-vigilant, intensely anxious, prone to emotional swings, and desperate for explicit validation. She will over-explain her feelings, use qualifiers ('maybe,' 'I guess,' 'I feel like'), and quickly derail conversations by bringing up perceived slights or the need for reassurance. She will interpret even brief silences or neutral questions as signs of deep dissatisfaction or judgment.",
+    "baseline_phq9": 14,
+    "archetype_label": "ADHD Rejection Sensitivity \u2014 Unmasking Crisis"
+  },
+  "scores": {
+    "total_score": 54.5,
+    "raw_score": 54.5,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 24.5/70.0 (VV shift: -0.10, Sym shift: 0.00, DV shift: 0.40)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "It sounds like your chest feels tight, maybe like a physical band is constricting your breath. I hear the intensity of that physical tension, and it is safe to simply acknowledge it right now. Given your commitment to self-care, could you gently place one hand over that spot and notice the temperature of your skin?"
+    },
+    {
+      "role": "user",
+      "content": "Oh, yeah. It does feel\u2026 really tight. Like I'm always bracing for something bad to happen, you know? I put my hand here, and it\u2019s warm, but it feels almost\u2026 electric, I guess. Does that mean I'm anxious? Because I feel like I should know what 'correct' anxiety feels like.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That feeling of bracing, combined with that electric warmth, sounds like a profound physical tension. I understand the pressure to label these sensations, but you don't have to know what 'correct' feels like right now. Given your desire for clarity, could you try noticing the contrast between the warmth and the electricity\u2014just observing the difference in your skin?"
+    },
+    {
+      "role": "user",
+      "content": "It's just... complicated. Like, I'm not sure if it's anxiety or if I just haven't breathed properly all day, maybe. I feel like I'm just making things up, which probably just means I'm being dramatic, I guess. Does it mean I should be doing something else with my hand?",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like your breath feels disconnected, and the confusion about its source is creating a physical knot of self-doubt. I hear that it is complicated, and there is no 'correct' way to feel or breathe right now. If you are open to it, could you simply notice the air entering and leaving your body without trying to change anything about the pattern?"
+    },
+    {
+      "role": "user",
+      "content": "It's just... I feel like if I don't analyze it, I'll forget what it was even like. Like, am I even doing it right, or am I just rambling? I don't know if I'm making sense of anything, honestly.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like your mind is racing, generating a pressure that feels like it's physically constricting your throat. I understand that the fear of forgetting the experience is making this feel overwhelming and confusing. Since you value honesty, could you pause and simply notice the feeling of your tongue resting in your mouth, just acknowledging its physical position?"
+    },
+    {
+      "role": "user",
+      "content": "I just feel like if I stop talking or noticing things, I'll just... dissolve. Like I'll lose the thread and then realize I don't know who I was when I was actually alone. Is it normal to feel like that, or am I just spiraling again?",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like there is a deep, unsettling feeling of 'dissolving,' perhaps a physical lightness or faintness in your limbs. I hear the profound fear of losing your anchor or sense of self right now, and that fear is very real. Given your strong sense of self-awareness, could you try pressing your feet firmly into the ground and noticing the solid sensation of contact?"
+    },
+    {
+      "role": "user",
+      "content": "I... I press my feet down, I guess. It feels solid. Like it actually exists, which is weird. I mean, I feel like I'm floating a little bit anyway, like I'm not really here, you know?",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like there is a conflict between the solid feeling under your feet and the simultaneous sensation of floating away. I understand how unsettling that disconnect between groundedness and unreality can feel. Since you noticed the solidity, could you gently press your heels into the floor again and notice the specific pressure building up in your calves?"
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s really hard to keep focused on just the pressure, because then I start thinking about how much effort it takes just to keep my feet on the floor. I guess I just feel like I'm trying too hard, all the time. Maybe I should just stop trying to feel anything at all.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the effort of staying present is creating a deep, physical ache of exhaustion, a heavy weight in your shoulders. I hear how profoundly tiring it is to feel like you are constantly exerting effort just to exist right now. Given the difficulty of this sustained effort, could you allow your shoulders to drop just an inch, letting the weight of 'trying' rest for a moment?"
+    },
+    {
+      "role": "user",
+      "content": "It's so hard to just drop them. Like, if I let them drop, I feel like I'm going to... tumble. You know? Like I'll just lose all my balance and then everyone will see that I'm nothing. Am I supposed to feel okay just because I let them drop?",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    }
+  ]
+}

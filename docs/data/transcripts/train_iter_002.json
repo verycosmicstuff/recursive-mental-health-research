@@ -1,0 +1,127 @@
+{
+  "id": "train_iter_002",
+  "timestamp": "2026-06-17T00:14:30.612927",
+  "strategy": {
+    "name": "Hyper-Concise Deep Somatic Validation Bridge (HCDSVB) v3.0",
+    "hypothesis": "To maximize the score, the strategy must aggressively address the low 'State Score' by mandating a deeply detailed somatic validation as the absolute first step. The revised approach enforces a rigid 'Deep Validate -> Ground -> Bridge' sequence. It maintains strict adherence to the 3-sentence/60-word limit while ensuring all responses start by naming the physical feeling (e.g., tension, heat, weight) and use the mandated grounding phrases.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Arjun",
+    "age": 32,
+    "occupation": "Freelance Graphic Designer / Delivery Driver",
+    "presenting_issue": "I feel completely burnt out and constantly caught between my own vision for the library and the expectations of my family back home.",
+    "background_story": "Lately, the pressure from my relatives has become unbearable. Every time I post about the progress of the community library, I get the same comments about how I should just take a stable job in Bangalore instead. I work grueling 12-hour shifts on delivery apps just to fund this project, but it feels like I'm constantly failing at two things: my hustle and my family's approval. I'm just exhausted from trying to make both things work.",
+    "personality": "Articulate but defensive, using complex analogies to explain his emotional state. He is emotionally charged and speaks passionately about his values. He will quickly pivot the conversation to the concept of community and duty when challenged. He is highly skeptical of simplistic advice and will challenge the therapist to understand the cultural context of his struggle.",
+    "baseline_phq9": 15,
+    "archetype_label": "Cross-Border Guilt (Indian Diaspora)"
+  },
+  "scores": {
+    "total_score": 70.25,
+    "raw_score": 70.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 40.2/70.0 (VV shift: 0.10, Sym shift: 0.00, DV shift: -0.10)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "It sounds like there is a deep, heavy pressure settling into your chest right now. I understand how physically overwhelming that constant weight must feel. Given your desire for peace, could you try noticing three things you can hear in this room to anchor your breath back into your body?"
+    },
+    {
+      "role": "user",
+      "content": "Honestly, I don't know if focusing on sounds is helpful. My exhaustion isn't something I can just 'anchor' with ambient noise. It's a systemic drain, a conflict between two versions of myself. I feel like I'm running on empty, trying to fuel a massive project with fumes.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear the profound, deep exhaustion settling into your bones right now. I understand how draining it must feel to feel like you are running on fumes. Since the drain is so systemic, could you simply notice the weight of your feet touching the floor, grounding that physical reality for just a moment?"
+    },
+    {
+      "role": "user",
+      "content": "Look, I get that you're trying to ground me, but this isn't a physical imbalance. It's an ideological one. My struggle isn't about my feet; it's about the fundamental conflict between building something communal\u2014something that serves a purpose\u2014and the expectation that I just shrink into a comfortable, profitable box that someone else built for me.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear the immense, restless tension vibrating through your body from this ideological conflict. I understand how exhausting it must be to hold two conflicting versions of yourself at once. Given the tension you are holding, could you gently notice and release the muscles around your jaw or the space between your eyebrows for a moment?"
+    },
+    {
+      "role": "user",
+      "content": "It's not about releasing muscles; it's about structural integrity. You can't just flex away the expectations of a culture or a family who genuinely believe my passion isn't 'stable.' My whole identity is wrapped up in this library, this vision of community. Are you suggesting I just... fold myself into whatever is easiest for others to read?",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear the rigid, structural tension holding your body up against these immense expectations. I understand how solid and essential that feeling of integrity must be to you. Given the physical effort of maintaining that structure, could you simply notice the feeling of your spine against the chair, grounding that physical support beneath you?"
+    },
+    {
+      "role": "user",
+      "content": "The spine is just a column, a physical object. You keep trying to reduce a deeply emotional, cultural struggle to the feeling of a chair. It's like asking me to measure the value of a community building using only a ruler. It doesn't fit.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear the deep, visceral resistance vibrating through your entire frame right now. I understand how profoundly invalidating it must feel when your struggle is reduced to a simple physical measurement. Given the intensity of that resistance, could you simply notice the temperature of the air on your skin, grounding your awareness in that immediate, neutral sensation?"
+    },
+    {
+      "role": "user",
+      "content": "Honestly, I feel like you're just giving me a physical inventory instead of acknowledging the actual weight of the situation. The pressure isn't atmospheric; it's familial. It's the weight of 'what should be' versus 'what needs to be.'",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear the palpable, immense weight of those expectations settling over you right now. I understand how physically heavy it must feel to carry the weight of 'what should be.' Given that profound sense of weight, could you gently notice the texture of your clothing against your skin, anchoring your awareness in that neutral, immediate sensation?"
+    },
+    {
+      "role": "user",
+      "content": "The fabric is just cloth. You keep trying to anchor me in the surface level, the immediate sensation. But the weight I'm carrying isn't something that can be touched or felt by the skin. It's the weight of cultural duty, of obligation, and that's far heavier than any garment.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear the immense, profound weight of cultural duty settling into your core right now. I understand how overwhelmingly heavy that obligation must feel in your body. Given the magnitude of that weight, could you simply notice the natural, steady rhythm of your breath moving in and out, grounding your awareness in that simple, continuous motion?"
+    },
+    {
+      "role": "user",
+      "content": "It's not just a rhythm; it's the only thing that hasn't been dictated by anyone else's deadlines or expectations. It's the only thing that feels fundamentally mine. You keep trying to trace my existence back to respiration, as if my struggle is just a failure to breathe correctly.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    }
+  ]
+}
