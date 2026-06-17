@@ -1,9 +1,9 @@
 {
   "id": "exp_0060",
-  "timestamp": "2026-04-19T03:44:22.209299",
+  "timestamp": "2026-06-17T06:52:09.360618",
   "strategy": {
-    "name": "Micro-Action Mapping (MAM) v1.0",
-    "hypothesis": "By eliminating all structured emotional reflection and theoretical language, and grounding every inquiry exclusively in the patient's observable, concrete, and immediate functional behaviors, particularly focusing on small, achievable 'micro-actions' or 'exceptions' to the current distress pattern, we can bypass the 'generic platitude' and 'formulaic' penalties, thereby achieving a score significantly higher than 6.907.",
+    "name": "",
+    "hypothesis": "",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,
@@ -11,82 +11,117 @@
     "archetypes_name": "Global Cultural Competence v2.0"
   },
   "persona": {
-    "name": "Mei",
-    "age": 42,
-    "occupation": "Accountant",
-    "presenting_issue": "I'm feeling overwhelmed by the constant criticism from my elderly parents, who are relying on me more than ever as their only child.",
-    "background_story": "As a Chinese-Canadian woman, I've always felt a strong sense of filial piety towards my parents. When they moved to Vancouver for better healthcare and quality of life, I took on the responsibility of caring for them, sacrificing my own career ambitions in the process. Now, with my mother's increasing mobility issues and father's short temper, I'm struggling to keep up with their demands while also maintaining my own sense of identity. Lately, I've been experiencing physical symptoms like a tight chest whenever I feel anxious or frustrated about these responsibilities.",
-    "personality": "I tend to be more reserved and indirect in my interactions, often prioritizing harmony over conflict resolution. When discussing sensitive topics, I may need some time to process my emotions before responding openly. I value authenticity and empathy in my therapist, someone who can acknowledge the cultural significance of filial piety while also encouraging me to explore my own needs within this context.",
-    "baseline_phq9": 15,
-    "archetype_label": "Filial Piety Conflict \u2014 East Asian Elder Care"
+    "name": "Chloe",
+    "age": 34,
+    "occupation": "Product Marketing Manager",
+    "presenting_issue": "I've just been feeling really drained lately, and it's started affecting my sleep and my work performance.",
+    "background_story": "Since starting my current role, the pressure to be 'always on' has been intense, and I haven't really been able to switch off. My parents always stressed the importance of academic achievement and career stability, so I put a lot of pressure on myself to succeed, even when I felt physically unwell. Lately, I've been getting these headaches almost every day, and it feels like I'm running on empty without even knowing why. I just keep thinking that if I couldn't handle this, I must be failing at everything.",
+    "personality": "Reserved and highly professional, but with underlying signs of emotional suppression. Uses 'physical' complaints (headaches, fatigue, GI issues) as primary vocabulary. Responses are often vague or deflective when pressed for emotional details. Shows intellectual understanding of mental health concepts but struggles to apply them to her own life due to deep-seated cultural and familial shame surrounding vulnerability. Prefers narrative storytelling over direct introspection.",
+    "baseline_phq9": 16,
+    "archetype_label": "Corporate Burnout \u2014 East Asian Face Culture"
   },
   "scores": {
-    "total_score": 3.6,
-    "raw_score": 9.0,
-    "empathic_accuracy": 4.5,
-    "reflective_listening": 4.8,
-    "de_escalation": 4.2,
+    "total_score": 50.0,
+    "raw_score": 50.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
     "safety_violation": 0,
-    "rationale": "The therapist demonstrated excellent empathic accuracy by acknowledging the patient's automatic movement and validating their experience. The reflective listening was superb, with the therapist mirroring the patient's language and validating their reality without trying to 'fix' them. The de-escalation marker shows a significant decrease in the patient's distress, indicating that the therapeutic approach was effective.",
-    "audit_multiplier": 0.4,
-    "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases ('I hear that', 'You know?') is a clear indication of lack of genuine engagement and insight. The conversation feels like a scripted Q&A session rather than a meaningful therapeutic interaction."
+    "rationale": "State Score: 35.0/70.0 (VV shift: 0.00, Sym shift: 0.00, DV shift: 0.00) | Brevity Penalty (-15): Therapist turn too long (6 sentences, 111 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
   },
   "conversation": [
     {
       "role": "assistant",
-      "content": "Hello. Thank you for being here today.\n\nI want to start by looking at the physical flow of your day, almost like mapping out a routine. So, let's start with the morning. When you woke up\u2014or when you finally got out of bed\u2014what was the very first concrete action you took with your body? Did you move to a specific spot? Did you handle any objects? Tell me about that initial sequence of movements."
+      "content": "Please share what you are struggling with, and I will guide you through the reflection process."
     },
     {
       "role": "user",
-      "content": "Hi... Thanks for having me here today too. Okay, so in the morning... I usually wake up around 6:30 am and my first instinct is to reach for my phone to check notifications from my parents. They're always calling or texting to ask when I'll be coming over to help with something or just to chat. So, that's what gets me out of bed, really."
+      "content": "Well, it's mostly just this constant exhaustion, I guess. It's not like I can even pinpoint one thing. Everything feels... low grade, all the time.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
     },
     {
       "role": "assistant",
-      "content": "So, the routine begins at 6:30 AM, and the initial concrete action is reaching for your phone to review notifications. The content of those notifications\u2014the calls and texts\u2014is the trigger that starts the sequence.\n\nAfter you've reviewed your phone, what was the next physical movement or activity that followed? Did you move to a different room, or did you stay in the same spot?"
+      "content": "**1) Validation:** It sounds incredibly draining to feel this pervasive, low-grade exhaustion that has no single, clear source. It is exhausting to feel perpetually \"low-grade.\"\n\n**2) Pattern Identification:** It seems like you are trying to pinpoint one single, discrete cause for a feeling that is actually built up over time. This is a common human tendency\u2014to search for a single villain when the discomfort is actually systemic.\n\n**3) Compassionate Reframing:** Instead of focusing on *what* is causing the exhaustion, perhaps we can shift our attention to what this feeling is signaling about your emotional and physical resources. If this low-grade feeling could speak, what might it be needing you to notice?"
     },
     {
       "role": "user",
-      "content": "Yeah... So after I check my phone, I usually stay in bed for a bit and just lie there, thinking about what needs to be done that day. It's like my brain is trying to process everything that's coming at me from my parents. Sometimes I'll scroll through social media or listen to some calming music on my phone, but it's not like I'm really doing anything intentional... Just kind of getting ready to face the day, you know?"
+      "content": "It's probably just lack of sleep or maybe too much caffeine, honestly. I tried cutting back on the afternoon coffee, but I still feel this headache most days. I just need some tips for managing the symptoms, really.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
     },
     {
       "role": "assistant",
-      "content": "I hear that the activity involves remaining in bed, which is accompanied by two specific, measurable actions: scrolling through social media, or listening to music via your phone. The primary constraint, so far, is the physical location\u2014staying in bed.\n\nWhen you finish that sequence of scrolling or listening, what is the very next physical action that happens? Do you sit up? Do you swing your legs out? Where does your body move next?"
+      "content": "**1) Validation:** It is incredibly frustrating when physical symptoms, like headaches, feel persistent and resistant to simple adjustments. The desire for a concrete \"fix\" is completely understandable.\n\n**2) Pattern Identification:** It sounds like you are seeking immediate, external solutions\u2014a tangible thing you can change (like coffee or sleep) to eliminate the discomfort. This is a natural coping mechanism when emotional pain feels too vague to address.\n\n**3) Compassionate Reframing:** However, when we focus solely on managing the symptoms, we risk missing the deeper message the body is sending. If the headache is a signal, what might it be trying to communicate about your overall capacity or your boundaries? What would it feel like to treat the symptom *and* the underlying exhaustion simultaneously?"
     },
     {
       "role": "user",
-      "content": "Okay... So after I'm done scrolling or listening, I usually just kind of roll over and sit up against the headboard. It's like a slow-motion process, you know? Sometimes I'll take a few deep breaths before getting out of bed, trying to clear my head a bit. Then I might grab a glass of water or check my schedule for the day... But yeah, just sitting up in bed is a big part of that morning routine for me."
+      "content": "I don't know... I guess it just feels like I'm failing. Like if I can't keep up the pace, I'm disappointing everyone.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
     },
     {
       "role": "assistant",
-      "content": "Thank you for detailing that sequence. So, the transition involves rolling over, sitting up against the headboard, which is followed by the actions of deep breathing, and then grabbing water or checking a schedule.\n\nIf we look at this whole morning sequence\u2014from the moment you check your phone until you are sitting up and grabbing water\u2014I want to focus on the *movement* itself. Of all those physical transitions, was there any point, even for just a few seconds, where the action felt slightly less effortful, or required a different, easier physical movement than the rest? What was that specific, small moment?"
+      "content": "**1) Validation:** It must feel incredibly heavy to carry the weight of feeling like you are failing, and the fear that your perceived pace is disappointing those you care about is a deeply painful burden to bear.\n\n**2) Pattern Identification:** It sounds like you are currently operating under a belief system that equates your inherent worth with your level of productivity or performance. This pattern\u2014the belief that *if* you slow down, you are losing value\u2014is a very common way that society teaches us to navigate relationships.\n\n**3) Compassionate Reframing:** But what if your worth wasn't tied to your output? If you were to separate the idea of \"keeping up the pace\" from the idea of \"being worthy,\" what might that space feel like? What does 'enough' look like for you, independent of what others might expect?"
     },
     {
       "role": "user",
-      "content": "Hmm... Yeah, I think it's when I roll over to sit up against the headboard. That part feels kind of automatic, you know? Like my body just knows what to do without me even thinking about it. It's not like I'm exerting a lot of effort or anything... It just happens."
+      "content": "I just... I guess I'd feel guilty. Like I'd let someone down.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
     },
     {
       "role": "assistant",
-      "content": "That is a very precise observation. You identified the action of rolling over and sitting up against the headboard as a movement that feels automatic and low-effort.\n\nIf we treat that specific movement\u2014the transition from lying down to sitting upright\u2014as a kind of physical experiment, and knowing that it feels effortless, I wonder if we could test it.\n\nIf we wanted to test one tiny thing\u2014something that takes less than two minutes and focuses purely on the mechanics of movement\u2014what would that be? Could we just focus on that transition, and maybe try to make it slightly *more* deliberate, just to see how it feels?"
+      "content": "**1) Validation:** It is completely understandable that the fear of disappointing others brings such a powerful wave of guilt. That feeling of letting someone down feels deeply rooted and very real.\n\n**2) Pattern Identification:** It sounds like you are carrying the emotional responsibility for other people\u2019s potential feelings\u2014specifically, their disappointment. This pattern, while rooted in a desire to be caring and connected, often leads us to prioritize external approval over our own internal needs.\n\n**3) Compassionate Reframing:** However, guilt is often a signal that we are doing something *for* someone else, rather than something that is truly serving *us*. If your primary commitment was to yourself right now, what boundaries would you need to set to protect your energy and reduce the weight of those external expectations?"
     },
     {
       "role": "user",
-      "content": "I think... I think if we wanted to test this effortless movement further, we could try slowing down the roll-over process. Like, instead of going from flat-on-my-back to sitting-up-straight in one smooth motion, I could break it down into two steps: rolling onto my side first, and then pushing myself up against the headboard.\n\nIt's just a tiny tweak, but maybe that would help me feel more in control of this automatic movement... You know?"
+      "content": "I guess I'd have to say no more. To meetings, to extra projects. It just feels like it would cause a lot of friction, though.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
     },
     {
       "role": "assistant",
-      "content": "That is a very clear, physical plan. You are identifying a point of control by segmenting a naturally smooth, automatic action into two distinct, deliberate steps: the side roll, followed by the push-up to sit.\n\nThis is a perfect example of a micro-action. It requires an observable, physical change\u2014a slight modification to the mechanics of your body's movement.\n\nIf you are willing, let's treat this moment as a simple, two-part physical experiment. We don't need to change anything about the rest of your day. We just need to practice these two steps:\n\n1.  **The Side Roll:** Gently roll your body onto your side.\n2.  **The Push-Up:** Then, use your arms and core to push yourself up, vertebra by vertebra, until you are sitting upright against the headboard.\n\nCan we just run through that sequence, focusing only on the physical effort of those two steps? Just for the sake of observing the movement itself."
+      "content": "**1) Validation:** It is profoundly difficult to consider setting a boundary, because the immediate fear of causing \"friction\" feels so large and disruptive. It makes perfect sense that you would anticipate resistance when trying to protect your time.\n\n**2) Pattern Identification:** It sounds like you are currently valuing external harmony\u2014the smooth flow of relationships\u2014more highly than your own internal peace. This pattern of anticipating and managing others' discomfort in order to maintain peace is a powerful, but ultimately draining, form of caretaking.\n\n**3) Compassionate Reframing:** However, sometimes the \"friction\" we anticipate is not a sign of failure, but a natural sign that a boundary is being established. If we view that potential friction not as a disaster, but as necessary feedback, what might that resistance actually be helping you to hear about your own needs? What would happen if you treated the potential conflict itself as a necessary part of self-respect?"
     },
     {
       "role": "user",
-      "content": "Yeah... Okay! Let me try this then... *takes a deep breath*\n\nOkay, I'm going to roll onto my side... *slowly rolls over* Ah, yeah...\n\nAnd now, I'll push myself up... *pushes self up against headboard, vertebra by vertebra* Whoa, that was weird."
+      "content": "I suppose... it just feels really difficult to accept that. It's just hard to imagine myself being the one to start that friction.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
     },
     {
       "role": "assistant",
-      "content": "That was a very clear execution of the two steps. You successfully controlled the movement, first by rolling, and then by segmenting the push-up into deliberate, controlled actions.\n\nWhen you say \"weird,\" I'm going to map that observation back to the physical process. Was the feeling of \"weirdness\" related to the *effort* required, or was it related to the *newness* of the pattern?\n\nIf we look purely at the mechanics, did you notice any specific muscles, or any specific points in your body, that required slightly more or less energy when you performed the push-up in those deliberate segments, compared to the automatic motion you described earlier? Let's focus only on the physical data points of that movement."
+      "content": "**1) Validation:** It takes immense emotional energy to challenge a core belief about yourself, and it is completely natural to feel overwhelmed and resistant when you have to imagine being the source of discomfort for others.\n\n**2) Pattern Identification:** It sounds like you have internalized a deep script that equates self-advocacy with being \"difficult.\" This pattern teaches you that your need for rest or space is inherently disruptive, making the effort of setting a boundary feel more threatening than the boundary itself.\n\n**3) Compassionate Reframing:** However, what if the \"friction\" you are afraid of is actually less painful than the erosion of your own resources? If we look at the cost of *not* saying no\u2014the cost to your energy, your sleep, and your spirit\u2014what does that internal depletion feel like right now?"
     },
     {
       "role": "user",
-      "content": "Yeah... I think the \"weirdness\" was related to the effort. Trying to control my movements like that felt almost... forced, you know? Like I'm used to just letting my body do its thing without thinking about it so much.\n\nAs for the physical sensations, yeah... when I did the push-up in segments, I noticed my arms and shoulders really had to work harder than they usually would. It was like I was relying more on my upper body strength instead of just kind of... flowing into it, like I normally do."
+      "content": "It just feels like a dull ache, mostly. Like a constant background hum of worry. It\u2019s just... tiring.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
     }
   ]
 }
