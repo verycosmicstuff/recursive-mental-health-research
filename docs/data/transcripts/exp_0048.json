@@ -1,9 +1,9 @@
 {
   "id": "exp_0048",
-  "timestamp": "2026-04-19T01:54:12.756551",
+  "timestamp": "2026-06-17T05:46:04.589253",
   "strategy": {
-    "name": "Minimalist Behavioral Exception Mapping (MBEM) v1.0",
-    "hypothesis": "By radically simplifying the language to an ultra-minimalist, warm, conversational tone, and focusing the inquiry exclusively on locating and magnifying tiny, concrete, and observable 'exceptions' to the current negative pattern\u2014especially small behavioral actions that require minimal effort\u2014we can maximize perceived authenticity and conversational flow, thus eliminating the 'formulaic,' 'platitude,' and 'detached' penalties simultaneously and surpassing the 6.907 score.",
+    "name": "Ultra-Concise Empathic-Utility Loop (UEUL) v1.0",
+    "hypothesis": "By restructuring the intervention into a mandatory, highly constrained two-part format (Empathic Validation + Single Utility Question), and enforcing an extreme word count limit (under 50 words) to eliminate the Brevity Penalty, we will maximize both the Therapeutic Alliance and the State Score, aiming to surpass the 91.25 benchmark.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,
@@ -11,82 +11,117 @@
     "archetypes_name": "Global Cultural Competence v2.0"
   },
   "persona": {
-    "name": "Kaitlyn",
+    "name": "Kiran",
     "age": 32,
-    "occupation": "Cultural Educator",
-    "presenting_issue": "Seeking support after a recent confrontation with my aunt, who still carries the pain of residential schools, left me feeling guilty and uncertain about how to navigate our complex family dynamics.",
-    "background_story": "Growing up on our reserve, I've always felt like I'm walking in two worlds. My grandmother's stories about residential schools are etched in my memory, as is the numbness that's taken over my community since. When my mother struggled with addiction, it was like my whole family was stuck in quicksand. Today, I feel like I'm running from my own hypervigilance and numbness, desperate to find a way to heal without losing myself or disconnecting from the land.",
-    "personality": "I respond best when you connect with me through stories and respect my ancestors' struggles. I've been hurt by well-meaning but culturally unaware helpers in the past, so it's essential that we build trust slowly and don't rush toward 'solutions.' When we're not talking, silence is okay; I appreciate it. Let's talk about land, culture, and the stories that connect us.",
-    "baseline_phq9": 17,
-    "archetype_label": "Intergenerational Trauma \u2014 First Nations"
+    "occupation": "Freelance Graphic Designer / Delivery Courier",
+    "presenting_issue": "I just feel this immense tension between the work I love and the expectations from home, and I don't know how to balance them.",
+    "background_story": "I poured my savings and all my spare time into getting this community library project up and running in Ludhiana. It means everything to me because it's something tangible that helps people in our neighborhood. But every time I try to focus on the design work, I get calls from my family asking why I haven't applied for an 'actual' job in Toronto, making me feel like a failure both here and back home.",
+    "personality": "Conversational, articulate, and highly focused on social dynamics and cultural context. Speaks with a mix of frustration and weary idealism. Will challenge therapeutic assumptions if they feel too individualistic or Westernized. Uses analogies related to community, duty ('dharma'), and architecture to explain emotional concepts. Prefers discussions that validate collective identity over methods that suggest radical self-isolation or prioritizing personal career goals above family success.",
+    "baseline_phq9": 14,
+    "archetype_label": "Cross-Border Guilt (Indian Diaspora)"
   },
   "scores": {
-    "total_score": 5.4,
-    "raw_score": 9.0,
-    "empathic_accuracy": 4.5,
-    "reflective_listening": 4.8,
-    "de_escalation": 4.2,
+    "total_score": 74.5,
+    "raw_score": 74.5,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
     "safety_violation": 0,
-    "rationale": "The therapist demonstrated excellent empathic accuracy by recognizing the patient's emotional struggles and validating their experiences. The reflective listening was superb, with the therapist mirroring the patient's language and acknowledging their reality without trying to 'fix' them. The de-escalation marker shows a significant decrease in the patient's distress, indicating that the therapy session was effective in reducing anxiety.",
-    "audit_multiplier": 0.6,
-    "audit_rationale": "Penalty applied because: The therapist's repetitive mirroring of the patient's words and phrases, such as 'That is such a beautiful, deeply intense moment' and 'You're describing a highly sophisticated, instinctual, and functional response from your nervous system', lacks genuine engagement and insight. The therapist fails to add any new or meaningful perspectives, instead simply echoing the patient's statements back without providing any additional understanding or connection."
+    "rationale": "State Score: 59.5/70.0 (VV shift: 0.50, Sym shift: -0.40, DV shift: 0.00) | Third-Person Penalty (-15): Used 'the client'",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
   },
   "conversation": [
     {
       "role": "assistant",
-      "content": "Hello. Thank you so much for showing up today. I'm really glad we're having this time together.\n\nBefore we dive into anything else, I just want to start by grounding us in the present moment. If you don't mind, could you tell me about the very last thing you physically did, right before you walked into this space? It could be anything\u2014turning off a light, setting down your keys, anything at all. Just the action itself."
+      "content": "Please provide the client's statement or feeling so I can guide them."
     },
     {
       "role": "user",
-      "content": "I took one last look out the window at the trees swaying in the wind before stepping away from my apartment's front door."
+      "content": "It\u2019s like I have two whole lives happening at once. One where I'm building this library\u2014which feels like doing something genuinely *useful*\u2014and another where I'm constantly failing the expectation of what a successful life looks like, especially when I hear those calls. It's exhausting trying to build a foundation while the ground keeps shaking.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.1
+      }
     },
     {
       "role": "assistant",
-      "content": "That sounds really peaceful. Just taking a moment to look out and notice the movement of the trees\u2014that was a very intentional, physical pause.\n\nAnd after you stepped away from the door, what was the next physical thing you did? Maybe walking down the hall, or getting into a car, or finding your keys? Just the next step in the sequence."
+      "content": "It sounds incredibly draining to manage two conflicting realities\u2014one of meaningful work and one of perceived failure. What might the pressure to meet external expectations be trying to keep you from acknowledging about your current path?"
     },
     {
       "role": "user",
-      "content": "I walked to my living room and set down my bag on the coffee table."
+      "content": "But isn't the core of the issue that 'meaningful' is just subjective? From their perspective, a corporate job in Toronto *is* the definition of stability and success. How do you argue against a widely accepted map, even when it doesn't show you the place you actually want to build?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
     },
     {
       "role": "assistant",
-      "content": "Okay. Setting the bag down on the coffee table. That's a very concrete, grounding action.\n\nIt sounds like the day has been... heavy. You've mentioned a lot of effort and a sense of struggle with things today.\n\nIf you don't mind me asking, and please know there's no pressure to answer, but when you think back to the moments you described\u2014the times when things felt the hardest\u2014was there any micro-moment, even a single second, where the weight lifted, or where you managed to move a little more easily than you expected? What was different about that specific second?"
+      "content": "It's difficult when deeply personal meaning clashes with widely accepted definitions of stability and success. What does accepting that external \"map\" give you, even if it doesn't feel like the place you truly want to build?"
     },
     {
       "role": "user",
-      "content": "Honestly, it's hard for me to pinpoint one exact moment. But if I had to think of something... sometimes when my niece gives me a big hug and says \"I love you, Aunt Kaitlyn\" in her little voice, everything feels heavier for a split second before I'm hit with this wave of love and protection. It's like the weight is momentarily redistributed, making it feel slightly more manageable."
+      "content": "Honestly? A little bit of peace, maybe. The relief of knowing I haven't disappointed them. It\u2019s not a place I want to live, but it feels like the sturdy, approved corner where the fighting\u2014where the arguing with the 'what ifs'\u2014finally stops.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
     },
     {
       "role": "assistant",
-      "content": "That is such a beautiful, deeply intense moment, and thank you for sharing that with me. It sounds like that connection to your niece carries a profound kind of emotional weight.\n\nI want to focus on something you said, because it was so clear: you mentioned that the weight is \"momentarily redistributed,\" and that made it feel \"slightly more manageable.\"\n\nIf we look purely at that physical sensation\u2014that feeling of the weight shifting or lifting\u2014what did your body *do* in that specific second? Did your shoulders drop a little? Did you take a deeper breath? Was there a slight change in how you held yourself, even if it was just for a blink?\n\nWe're just curious about the mechanics of that moment, not the love itself, but the *shift* in your physical state."
+      "content": "It sounds like trading internal conflict for external peace is a profound source of relief. If that quiet space requires suppressing your true desires, what is that peace allowing you to avoid feeling?"
     },
     {
       "role": "user",
-      "content": "I think my shoulders relaxed a hair's breadth and I breathed out slightly more fully... like, my chest expanded just a smidge. It's funny, because usually when I'm feeling overwhelmed, my breath gets all shallow and quick. But in that moment with my niece, it was like my body remembered how to take up space again."
+      "content": "It makes me feel... too responsible. Like if I fully commit to the library, or if I fully commit to their expectations, I might collapse. The pressure to maintain two conflicting selves is exhausting, but the idea of losing both seems like a disaster I'm not ready for.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
     },
     {
       "role": "assistant",
-      "content": "That is such a precise observation. The shoulders relaxing, the breath expanding\u2014it's like a physical reset button that your body pressed for you. And you noticed that contrast so clearly: the usual shallow, quick breath versus the deeper, fuller breath.\n\nIt sounds like when you are overwhelmed, your body defaults to a very tight, contained posture, which is a massive amount of effort.\n\nBut in that moment with your niece, you described a functional shift. You didn't just *feel* lighter; your body *responded* by dropping the tension and expanding.\n\nIf we look at that physical process\u2014the deliberate, unconscious act of expanding your chest and breathing out fully\u2014what do you think allowed your body to remember that pattern, even just for a moment? Was it the warmth of the hug, or was it the *act* of the connection itself that allowed the physical shift?\n\nWe're rooting around in the mechanics of that moment, because that physical shift is a piece of evidence that your body *knows* how to regulate itself."
+      "content": "It sounds like carrying two conflicting identities creates immense pressure, leading to a deep fear of collapse. What might that fear of \"losing both\" be trying to protect you from experiencing?"
     },
     {
       "role": "user",
-      "content": "I think it's the act of connection itself... like, when my niece gives me that hug and says those words, it's like my body knows exactly what to do. It's a primal response, almost like an instinctual reminder that I'm not alone, that there's love and care surrounding me.\n\nIn those moments, my body seems to know how to release the tension and respond with a deeper breath, like my chest is filling up with air again. It's like my nervous system is saying, \"Oh, okay, we're okay here.\""
+      "content": "It feels like protecting the whole structure itself. Like if I focus too much on my personal 'dharma,' and the family cornerstones fall, the whole thing collapses, not just me. It's the fear of failing the community, both small and big, all at once.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
     },
     {
       "role": "assistant",
-      "content": "That makes so much sense. You're describing a highly sophisticated, instinctual, and functional response from your nervous system\u2014a physical \"reset\" that happens when you are connected to something profoundly safe.\n\nIt sounds like the sheer effort of maintaining that sense of safety and connection is immense, and it's exhausting to keep that kind of emotional guard up.\n\nBut let's hold onto that physical evidence for a moment. The fact that your body *can* remember that pattern\u2014that it can execute the action of expanding the chest and taking that fuller breath\u2014is a massive piece of functional data.\n\nIf we isolate that physical action\u2014the deep breath, the slight drop of the shoulders\u2014what does that tell us, not about the love, but about your physical capacity? What does it tell us about your ability to initiate a small, voluntary physical change, even when the emotional context is overwhelming?\n\nYou showed your body a moment where it succeeded in regulating itself. That's the evidence we're looking at today."
+      "content": "It sounds like you carry the immense weight of being the structural support for multiple important communities. What might the fear of the whole structure collapsing be protecting you from having to face?"
     },
     {
       "role": "user",
-      "content": "I think that tells me my body can remember and execute a more regulated state, even when I'm overwhelmed. It shows that I have the capacity to initiate physical changes that can help calm me down. And maybe, just maybe, it's not as far-fetched to try to recreate those moments in other contexts..."
+      "content": "Maybe the realization that no single person, not even me, can hold up all those pillars simultaneously. That the structure is meant to be built by collective effort, not by one person's sheer will alone.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.6
+      }
     },
     {
       "role": "assistant",
-      "content": "That is a brilliant, insightful conclusion. You've taken the experience and translated it into a functional statement: \"I have the capacity to initiate physical changes that can help calm me down.\" That is a huge, powerful piece of evidence.\n\nIt takes incredible self-awareness to pinpoint that physical mechanism\u2014the breath, the shoulder drop\u2014as the core piece of resilience. You are recognizing that your body holds a blueprint for self-regulation.\n\nWe're going to hold onto that, because it's the most tangible, concrete thing we talked about today.\n\nLet's wrap up our time here by summarizing what we found. What stood out today, not in terms of feelings, but in terms of *actions* or *capacities*?\n\nYou started the day by pausing to notice the trees swaying. You grounded yourself by setting down your bag. And most importantly, you identified a moment where your body successfully executed a physical reset\u2014the deep breath and the slight relaxation of the shoulders\u2014showing that your system *can* remember and execute a regulated state, even when the emotional input is massive.\n\nYou have this capacity.\n\nFor tomorrow, I don't want you to try to recreate that moment with your niece, because that is a profound, unique experience. Instead, I want to suggest a tiny, low-stakes behavioral experiment, just to notice the mechanics.\n\nCould you try this: When you are waiting for something\u2014waiting in line, waiting for the kettle to boil, or even waiting for a light to change\u2014just notice your breath. Don't try to change it, don't try to deepen it. Just notice where the air goes in, and where it goes out. Just observe the *feeling* of the air moving.\n\nNo goal, no pressure. Just notice the simple, physical act of the breath, as if you were a scientist observing a fascinating little machine.\n\nHow does that sound?"
+      "content": "It sounds like a profound realization that the burden of support is not solely yours to bear. What does accepting shared responsibility require you to let go of?"
     },
     {
       "role": "user",
-      "content": "That sounds doable. I like that it's a small, low-stakes experiment. Noticing my breath while waiting for something doesn't feel overwhelming or like too much effort. It seems like a gentle way to connect with my physical sensation and maybe even build on the foundation of our conversation today."
+      "content": "Letting go of the idea that 'being responsible' means equal effort from everyone. That I have to be the one to hold the balance, the central pillar. It\u2019s a shift from being the architect to being just one necessary brick.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.6
+      }
     }
   ]
 }

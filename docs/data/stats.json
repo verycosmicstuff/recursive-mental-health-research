@@ -1787,6 +1787,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 2 (qwen3:4b)"
+    },
+    {
+      "exp_id": "exp_0048",
+      "strategy_name": "Ultra-Concise Empathic-Utility Loop (UEUL) v1.0",
+      "hypothesis": "By restructuring the intervention into a mandatory, highly constrained two-part format (Empathic Validation + Single Utility Question), and enforcing an extreme word count limit (under 50 words) to eliminate the Brevity Penalty, we will maximize both the Therapeutic Alliance and the State Score, aiming to surpass the 91.25 benchmark.",
+      "score": 74.5,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 2 (qwen3:4b)"
     }
   ],
   "best_score": 91.25
