@@ -24,7 +24,7 @@ This project implements a **recursive improvement loop** where an AI agent auton
 2. 📊 **Scores** the session using clinical micro-skills (Empathic Accuracy, Reflective Listening, De-escalation)
 3. 🤖 **Analyzes** what worked and proposes changes exclusively to the **Therapist System Prompt** (managed dynamically in LangGraph State)
 4. 🔁 **Repeats** — keeping improvements, or discarding failures.
-5. ⚖️ **Asymmetric Architecture** — Uses a smaller model to write the therapist strategy, but uses a separate reasoning model (e.g. Llama 3) to roleplay the patient and act as clinical judge.
+5. ⚖️ **Unified Architecture** — Uses a single model (e.g. Qwen 3 4B) for all roles (Therapist, Patient, Evaluator, Agent) to eliminate VRAM swapping on consumer GPUs while maintaining complex orchestration via LangGraph.
 
 Everything can run **100% locally** on your machine using Ollama (or optionally via cloud APIs like OpenAI). No API keys required for local offline runs.
 
