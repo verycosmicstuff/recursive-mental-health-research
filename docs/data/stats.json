@@ -1499,6 +1499,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 2 (qwen3:4b)"
+    },
+    {
+      "exp_id": "exp_0024",
+      "strategy_name": "Value-Guided Experiential Bridge (VGEB) v2.0",
+      "hypothesis": "By replacing the directive 'micro-commitment' with a 'Value Exploration Query' that guides the patient toward their own intrinsic goals (MI/ACT), we will increase the Alliance score and improve the perceived depth of intervention, thereby overcoming the State Score penalties and surpassing the 89.5 benchmark.",
+      "score": 61.25,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 2 (qwen3:4b)"
     }
   ],
   "best_score": 89.5
