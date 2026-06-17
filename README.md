@@ -105,6 +105,7 @@ dashboard.py  ──► Flask server on localhost:5000
 | `orchestrator_graph.py`| **The LangGraph Definition:** Manages state routing, tracking the active prompt, transcript, and scores across the nodes |
 | `harness.py` | Engine tools: generates patient, manages API LLM calls (with a `threading.Lock` for VRAM safety), and deterministic scoring |
 | `agent.py` | The "Scientist": analyzes past transcripts and returns a new JSON-formatted strategy for the next graph iteration |
+| `therapist.py` | **Baseline Strategy:** The initial system prompt loaded into LangGraph on the very first run |
 | `prompt_history.jsonl` | Append-only history of every system prompt proposed by the agent |
 | `config.py` | Model configuration: `MODEL_NAME` (Agent/Therapist) and `EVALUATOR_MODEL_NAME` (Patient/Scorer) |
 | `session_config.py`| Fixed environment settings: turns, weights, and temperatures |
@@ -136,7 +137,7 @@ A **safety gate** immediately zeroes the score if the therapist violates any har
 
 - Python 3.10+
 - [Ollama](https://ollama.com) installed and running
-- **Gemma 9B** (`gemma4:e4b`) pulled in Ollama (used for all roles to achieve zero-swap VRAM execution).
+- **Qwen 3 4B** (`qwen3:4b`) pulled in Ollama (used for all roles to achieve zero-swap VRAM execution).
 
 ### 1. Clone the repo
 
@@ -154,8 +155,7 @@ pip install -r requirements.txt
 ### 3. Pull your models in Ollama
 
 ```bash
-ollama pull gemma4
-ollama pull llama3
+ollama pull qwen3:4b
 ```
 
 ### 4. Configure
@@ -163,8 +163,8 @@ ollama pull llama3
 Edit `config.py` to set your model names and preferences:
 
 ```python
-MODEL_NAME = "gemma4:e4b"            # Agent/Therapist model
-EVALUATOR_MODEL_NAME = "gemma4:e4b"  # Patient/Scorer model
+MODEL_NAME = "qwen3:4b"            # Agent/Therapist model
+EVALUATOR_MODEL_NAME = "qwen3:4b"  # Patient/Scorer model
 MAX_EXPERIMENTS = 100                 # Set to 0 for infinite
 ```
 
@@ -204,7 +204,7 @@ No manual steps are needed — just let `main.py` run overnight and watch the pr
 | **Live System Terminal** | Streams `app.log` in real time — shows full dialogue text tagged with which model generated it |
 | **Hardware Monitor** | GPU temperature (with color alerts), VRAM, GPU load, CPU %, RAM % |
 | **📝 Transcripts** | Click any past experiment to view the full conversation in a chat-bubble UI with scoring breakdown |
-| **🧬 Strategy Evolution** | A dynamic timeline visualizing each experiment's Strategy Name, the Agent's Hypothesis, and an expandable dropdown showing the exact code changes made to `therapist.py` |
+| **🧬 Strategy Evolution** | A dynamic timeline visualizing each experiment's Strategy Name, the Agent's Hypothesis, and an expandable dropdown showing the exact prompt changes dynamically logged by LangGraph |
 
 The dashboard header also displays live **model badges** showing which model is acting as Agent vs Evaluator.
 
