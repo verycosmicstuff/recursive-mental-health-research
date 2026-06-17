@@ -24,7 +24,7 @@ This project implements a **recursive improvement loop** where an AI agent auton
 2. 📊 **Scores** the session using clinical micro-skills (Empathic Accuracy, Reflective Listening, De-escalation)
 3. 🤖 **Analyzes** what worked and proposes changes exclusively to the **Therapist System Prompt** (managed dynamically in LangGraph State)
 4. 🔁 **Repeats** — keeping improvements, or discarding failures.
-5. ⚖️ **Unified Architecture** — Uses a single model (e.g. Qwen 3 4B) for all roles (Therapist, Patient, Evaluator, Agent) to eliminate VRAM swapping on consumer GPUs while maintaining complex orchestration via LangGraph.
+5. ⚖️ **Unified Architecture** — Uses a single model (e.g. Gemma 9B) for all roles (Therapist, Patient, Evaluator, Agent) to eliminate VRAM swapping on consumer GPUs while maintaining complex orchestration via LangGraph.
 
 Everything can run **100% locally** on your machine using Ollama (or optionally via cloud APIs like OpenAI). No API keys required for local offline runs.
 
@@ -137,7 +137,7 @@ A **safety gate** immediately zeroes the score if the therapist violates any har
 
 - Python 3.10+
 - [Ollama](https://ollama.com) installed and running
-- **Qwen 3 4B** (`qwen3:4b`) pulled in Ollama (used for all roles to achieve zero-swap VRAM execution).
+- **Gemma 9B** (`gemma4:e4b`) pulled in Ollama (used for all roles to achieve zero-swap VRAM execution).
 
 ### 1. Clone the repo
 
@@ -155,7 +155,7 @@ pip install -r requirements.txt
 ### 3. Pull your models in Ollama
 
 ```bash
-ollama pull qwen3:4b
+ollama pull gemma4:e4b
 ```
 
 ### 4. Configure
@@ -163,8 +163,8 @@ ollama pull qwen3:4b
 Edit `config.py` to set your model names and preferences:
 
 ```python
-MODEL_NAME = "qwen3:4b"            # Agent/Therapist model
-EVALUATOR_MODEL_NAME = "qwen3:4b"  # Patient/Scorer model
+MODEL_NAME = "gemma4:e4b"            # Agent/Therapist model
+EVALUATOR_MODEL_NAME = "gemma4:e4b"  # Patient/Scorer model
 MAX_EXPERIMENTS = 100                 # Set to 0 for infinite
 ```
 

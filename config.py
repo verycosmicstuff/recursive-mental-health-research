@@ -8,14 +8,14 @@ import os
 # ─── Ollama Settings ──────────────────────────────────────────────────────────
 OLLAMA_BASE_URL = "http://localhost:11434/v1"
 OLLAMA_API_KEY  = "ollama"          # Required by openai client, value doesn't matter for Ollama
-MODEL_NAME      = "qwen3:4b"        # Single model for all roles (agent + therapist)
+MODEL_NAME      = "gemma4:e4b"        # Single model for all roles (agent + therapist)
 
 # ─── Evaluator Settings (Asymmetric API Split) ──────────────────────────────
 # Using the same model for evaluator to avoid constant VRAM swapping on 6GB GPU.
 # This keeps the model loaded permanently — zero swap overhead.
 EVALUATOR_BASE_URL = "http://localhost:11434/v1"
 EVALUATOR_API_KEY = "ollama"
-EVALUATOR_MODEL_NAME = "qwen3:4b"   # Same model as agent — no swapping
+EVALUATOR_MODEL_NAME = "gemma4:e4b"   # Same model as agent — no swapping
 # ─── Experiment Settings ──────────────────────────────────────────────────────
 MAX_EXPERIMENTS       = 100         # Total iterations before auto-stopping (set to 0 for infinite)
 EXPERIMENT_PAUSE_SECS = 2           # Brief pause between experiments
