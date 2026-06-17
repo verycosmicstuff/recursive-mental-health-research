@@ -1451,6 +1451,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 2 (qwen3:4b)"
+    },
+    {
+      "exp_id": "exp_0020",
+      "strategy_name": "Mindful Acceptance and Micro-Engagement Bridge (MAMEB) v1.0",
+      "hypothesis": "By replacing the explicit CBT challenge with a reflection-based 'Acceptance/Defusion' statement (ACT/PCT) and ensuring the micro-action is purely experiential and non-judgmental, we will maximize the score by addressing the historical need for somatic focus while mitigating the structural penalties associated with aggressive cognitive shifts.",
+      "score": 29.75,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 2 (qwen3:4b)"
     }
   ],
   "best_score": 89.5

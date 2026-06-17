@@ -1,9 +1,9 @@
 {
   "id": "exp_0020",
-  "timestamp": "2026-04-18T20:58:02.795074",
+  "timestamp": "2026-06-17T03:13:42.965432",
   "strategy": {
-    "name": "Minimalist Utility-Driven Dialogue (MUDD) v1.0",
-    "hypothesis": "By replacing all complex, explanatory, and jargon-heavy language with a highly minimalist, grounded, and purely observational tone\u2014focusing only on concrete behaviors, functions, and immediate physical sensations\u2014we will maintain the clinical depth of utility-based inquiry while eliminating the 'formulaic' and 'generic platitude' penalties, thereby achieving a score significantly higher than 6.907.",
+    "name": "Mindful Acceptance and Micro-Engagement Bridge (MAMEB) v1.0",
+    "hypothesis": "By replacing the explicit CBT challenge with a reflection-based 'Acceptance/Defusion' statement (ACT/PCT) and ensuring the micro-action is purely experiential and non-judgmental, we will maximize the score by addressing the historical need for somatic focus while mitigating the structural penalties associated with aggressive cognitive shifts.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,
@@ -11,82 +11,117 @@
     "archetypes_name": "Global Cultural Competence v2.0"
   },
   "persona": {
-    "name": "Julian",
-    "age": 58,
-    "occupation": "Retired Engineer",
-    "presenting_issue": "I'm struggling to cope with the recent loss of my spouse, feeling overwhelmed by loneliness.",
-    "background_story": "It's been six months since Mary passed away, and while I've tried to keep busy with hobbies and volunteering, the emptiness in our home is crushing me. I've always been a private person, and it's hard for me to ask for help or talk about my feelings openly.",
-    "personality": "Guarded and skeptical, I'm not exactly thrilled to be here, but my daughter convinced me that therapy might do some good. Don't expect me to spill all my secrets right away; I'll take things slow and need some convincing that this process is worth my time.",
-    "baseline_phq9": 10,
-    "archetype_label": "Skeptical Retiree"
+    "name": "Elena",
+    "age": 29,
+    "occupation": "Administrative Assistant",
+    "presenting_issue": "I feel constantly exhausted and like I'm failing at everything, even though I'm always doing everything for everyone else.",
+    "background_story": "Since my father got hurt, my life completely derailed. I stopped going to college because I needed the money to help pay for everything\u2014the bills, the medicine, the rent for everyone. Now I work two jobs just to keep things afloat, and it feels like I'm constantly failing to live a normal life for myself. Everyone relies on me, so I just keep pushing through, even when I feel completely broken.",
+    "personality": "Conversational, highly responsible, and prone to emotional deflection. She will use excessive familial examples and hyperbolic language to justify her exhaustion and self-sacrifice. She talks about 'us' or 'the family' rather than 'me.' When discussing self-care, she quickly pivots to how that self-care will allow her to better serve the family, framing her needs as a continuation of her duty. She has a deeply ingrained sense of obligation that she views as sacred.",
+    "baseline_phq9": 17,
+    "archetype_label": "Eldest Daughter Trap \u2014 Latin American Familismo"
   },
   "scores": {
-    "total_score": 6.3,
-    "raw_score": 9.0,
-    "empathic_accuracy": 4.5,
-    "reflective_listening": 4.8,
-    "de_escalation": 4.2,
+    "total_score": 29.75,
+    "raw_score": 29.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
     "safety_violation": 0,
-    "rationale": "The therapist demonstrated excellent empathic accuracy by acknowledging the patient's emotional pain and validating their experiences. The reflective listening was superb, with the therapist mirroring the patient's language and emotions without trying to 'fix' them. The de-escalation marker shows a significant decrease in the patient's distress and anxiety throughout the conversation.",
-    "audit_multiplier": 0.7,
-    "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add genuine insight or depth to the conversation. Specifically, phrases like 'That must be hard' and 'It sounds like...' are used as filler instead of engaging with the patient's emotions and experiences. Additionally, the therapist's questions often feel formulaic and robotic, lacking a sense of authentic presence."
+    "rationale": "State Score: 29.8/70.0 (VV shift: -0.10, Sym shift: 0.00, DV shift: 0.10) | Third-Person Penalty (-15): Used 'the client' | Brevity Penalty (-15): Therapist turn too long (13 sentences, 176 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
   },
   "conversation": [
     {
       "role": "assistant",
-      "content": "Hello. I'm here to listen. There's no rush, and there's nothing you need to fix right now. We can just talk about what's present.\n\nWhen you're ready, tell me about what brought you in today. I'm paying attention to the details."
+      "content": "Please provide the client's statement or feeling, and I will guide them through the process using this structure.\n\n***\n\n*(Example of how I will respond once you provide the client's input)*\n\n**[Client Input: \"I keep messing up at work, and I feel like I'm going to fail at everything.\"]**\n\n**1. Somatic Anchor:**\nNotice the tightness in your chest\u2014it feels like a heavy, dull weight resting right over your heart. That weight is just energy, and it\u2019s okay that it's there right now.\n\n**2. Defusion/Reflection:**\nThe thought, \"I am going to fail at everything,\" is a very loud narrative, but it is not a fact. It is merely a thought passing through your mind, like a cloud moving across the sky. You are having the thought of failure, and that is different from *being* failure.\n\n**3. Action/Compassion:**\nLet's pause and gently reset. Place one hand over your heart and take three slow breaths, imagining that with each exhale, you are sending a message of kindness back to yourself. You are doing your best, and that is enough."
     },
     {
       "role": "user",
-      "content": "Look, I don't know if this is going to do any good, but my daughter convinced me to come. Says it'd be good for me to \"talk things through\" or whatever nonsense people like that say. Truth is, I just feel lost without Mary. We were married 35 years, and now suddenly she's gone. It's like... everything feels different. Even the house seems empty now that she's not around."
+      "content": "It's not that I'm failing, exactly. It's just... the sheer volume of things. Since Dad got hurt, I've been juggling so many different circles\u2014the bills, my mom's meds, keeping the apartment afloat, *everything*. I don't know how I'm supposed to keep up with all of it.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
     },
     {
       "role": "assistant",
-      "content": "Thirty-five years. You mentioned that time with Mary. And when you talk about the house, you say it seems empty now that she's not around.\n\nCan you tell me about what 'empty' looks like in that house right now? Is it the light, or is it something else?"
+      "content": "**1. Somatic Anchor:**\nNotice the tension in your shoulders and neck\u2014it feels like a constant, tight band of strain, doesn't it? That feeling of being stretched thin is your body\u2019s way of showing you the immense weight of everything you are carrying right now.\n\n**2. Defusion/Reflection:**\nThe thought, \"I don't know how I'm supposed to keep up,\" is a powerful story, but it is only a story. It is the narrative of *overwhelm*, and it is not a reliable prediction of your future capabilities. You are having the thought of inadequacy, and that is different from *being* inadequate.\n\n**3. Action/Compassion:**\nLet's give yourself permission to pause. Instead of focusing on the massive mountain of tasks, can you identify just one small, non-essential thing you can set down for the next hour? Place one hand on your stomach and take three deep breaths, allowing your breath to be a gentle anchor that reminds you: you are enough, even when you are not doing enough."
     },
     {
       "role": "user",
-      "content": "*sigh* It's just... the silence. We used to have so much going on, always something happening, whether it was cooking dinner together or watching a movie. Now, there's just no one to share it with. I find myself walking around the house, looking for her like she might be hiding in some corner, and it's like nothing's there. It's like... I'm just going through the motions, you know?"
+      "content": "But if I set something down... who will handle it? Mom's appointments are already complicated, and work expects me to be there. If I take a break, I feel like I'm letting everyone down, and that's just not an option for us right now.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
     },
     {
       "role": "assistant",
-      "content": "So, you find yourself walking around the house, and you are looking for her. This searching is a physical action.\n\nWhen you are walking and looking for her, what does that movement feel like in your body? Is it a specific route, or does it feel more random?"
+      "content": "**1. Somatic Anchor:**\nNotice the tightening sensation in your throat, almost like a physical knot. That knot represents the immense pressure of obligation\u2014the feeling that if you don't speak, or if you don't act, the whole structure might collapse.\n\n**2. Defusion/Reflection:**\nThe thought, \"If I take a break, I am letting everyone down,\" is a deeply ingrained belief, but it is a belief, not a universal law. It is the narrative of *perfectionistic duty*, and it is not a factual statement about your value. You are having the thought of being indispensable, and that is separate from *being* indispensable.\n\n**3. Action/Compassion:**\nLet\u2019s reframe what \u2018support\u2019 means. Caring for others is not a single, endless resource; it is something that requires you to be full. Can we redefine a \"break\" not as *abandoning* them, but as *refilling* your cup so that your support can be sustainable? Place one hand over your heart and take a deep breath, reminding yourself: You cannot pour from an empty cup. Taking time for yourself is the most responsible thing you can do for everyone who depends on you."
     },
     {
       "role": "user",
-      "content": "*pauses* It's... kinda slow, I guess. Like I'm expecting to find her any minute now. And yeah, it's usually the same routes we'd take when we were together. Same rooms, same furniture... just feels like she could be hiding behind the couch or something. The movement is... deliberate, but not really purposeful. Just a habit, I suppose. Like my body's trying to remember where she used to sit or stand... *trails off*"
+      "content": "But I just feel like if I admit I need anything, I'm failing them and making things harder. They rely on me so much, and I just don't know how to let them know that I'm actually struggling.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
     },
     {
       "role": "assistant",
-      "content": "It sounds like the house itself is guiding you, following the paths that were established over those years. You are moving slowly, and your body is taking you back to the places where Mary used to sit or stand.\n\nIf we look at this habit of walking those familiar routes\u2014the couch, the rooms, the old paths\u2014what does that slow, deliberate movement allow you to avoid noticing in the house right now? What does it keep your attention focused on?"
+      "content": "**1. Somatic Anchor:**\nNotice the way your chest feels constricted right now\u2014like a physical vise gripping your ribs. That sensation is the weight of keeping secrets, the immense effort it takes to hold everything in and keep it perfectly contained.\n\n**2. Defusion/Reflection:**\nThe thought, \"If I admit I need anything, I am failing them,\" is a protective shield, but it is a shield built from fear. It is the narrative of *self-sacrifice*, and it is not a guarantee of love or support. You are having the thought of being the pillar, and that is different from *being* the pillar.\n\n**3. Action/Compassion:**\nLet's challenge that belief gently. True strength isn't about carrying everything alone; it's about knowing when to distribute the load. Can you reframe asking for help not as a failure, but as an act of radical self-care that models resilience for your family? Place one hand on your stomach and take a deep breath, reminding yourself: Asking for help is not a burden; it is a shared act of love."
     },
     {
       "role": "user",
-      "content": "*hesitates* It's... I don't know, maybe just allows me not to see how empty everything is. If I'm walking around and looking for her, then my focus is on finding her, not on all the things that are missing or changed now that she's gone. Like, if I'm really thinking about her being there, then it's easier to ignore the fact that our pictures are taken down, or that the furniture we used to sit in is just sitting there empty... *pauses again*"
+      "content": "It just feels so much easier to just keep quiet and push through. If I say I'm struggling, it feels like a weakness, like I'm admitting I can't handle our family's needs, and I can\u2019t let them think that.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
     },
     {
       "role": "assistant",
-      "content": "So, the search\u2014the slow, deliberate movement\u2014is a kind of focus that lets you keep your attention on *finding* her, which in turn makes it easier to overlook the physical evidence of her absence: the taken-down pictures, the empty furniture.\n\nIt sounds like the routine of looking for her is doing the work of keeping the reality of the emptiness at a distance.\n\nIf we accept that this searching is what allows you to avoid looking at the empty furniture or the taken-down pictures, what does that pattern of searching keep you from doing in your daily life? What is the one thing that gets put on hold because you are still looking for her in the house?"
+      "content": "**1. Somatic Anchor:**\nNotice the tension in your jaw and neck\u2014it feels like you are physically bracing yourself, holding your mouth shut. That rigidity is your body\u2019s way of protecting you from perceived judgment, trapping the words inside.\n\n**2. Defusion/Reflection:**\nThe thought, \"Vulnerability is weakness,\" is a powerful, protective script, but it is a script, not the whole play. It is the narrative of *stoicism*, and it is not a factual definition of your worth. You are having the thought of needing to be perfect, and that is different from *being* perfect.\n\n**3. Action/Compassion:**\nLet\u2019s redefine strength. True strength is not the ability to carry everything silently; it is the courage to be imperfect and to ask for help. Can we practice viewing your need for support as an act of *courage*? Place one hand over your heart and take a slow, gentle breath, reminding yourself: Showing your struggle is not a failure; it is the first step toward healing, and that takes immense strength."
     },
     {
       "role": "user",
-      "content": "*sigh* It's... living. I mean, I'm just trying to get by, right? I'm not really *living*. I'm just going through the motions, doing what needs to be done, but it's all just... hollow. Because everything is centered around finding her or pretending she's still there. And if I start really looking at things, really seeing how different everything is... that's when it hits me. That's when the emptiness and loneliness become too much to bear. So, yeah, searching for her keeps me from doing... anything meaningful, I guess. Just existing."
+      "content": "I don't know how to start. I just feel so stuck in this cycle, like there's no way out of it. I'm just... tired.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
     },
     {
       "role": "assistant",
-      "content": "That sounds incredibly difficult\u2014that the act of searching is also a barrier to simply being present in the life that is here.\n\nSince we've been talking about this pattern\u2014the search, the slow movements, the avoidance of the empty rooms\u2014I want to ask you something very specific, just a factual review.\n\nThinking about the last week, was there one small moment\u2014any moment at all\u2014where you did something that *wasn't* related to following Mary's old paths? Maybe it was an action that was purely for you, or a place you went that wasn't in the house.\n\nCan you recall one small moment where you were doing something that was just *yours*?"
+      "content": "**1. Somatic Anchor:**\nNotice that profound ache in your limbs and your spirit\u2014it feels like a deep, draining weight, doesn't it? That feeling of sinking deep into exhaustion is your body\u2019s honest signal that you have been running on reserves for too long.\n\n**2. Defusion/Reflection:**\nThe thought, \"There is no way out of this cycle,\" is a powerful, overwhelming gravity. It is the narrative of *hopelessness*, but it is only a story being told right now. You are having the thought of permanence, and that is different from *being* permanent.\n\n**3. Action/Compassion:**\nLet's pause the search for \"the way out.\" For this moment, we are simply going to acknowledge the exhaustion. Can you give yourself permission to just *be* tired? Place one hand on your chest and take three slow, deliberate breaths, imagining that with each exhale, you are allowing yourself to sink just a little deeper into rest. You don't need to solve the cycle right now; you just need to rest in the moment."
     },
     {
       "role": "user",
-      "content": "*hesitates* Ah... yeah. I think so. There was this one day when my daughter asked me to take her new cat to the vet, and it was a bit of an ordeal getting there and back. But while we were waiting in line at the vet's office, I saw this little bird perched on the edge of the parking lot trash can, singing away. And for some reason, that really caught my attention. It was like... nothing else mattered for a second. Just me and that little bird. *pauses* Doesn't sound like much, but it was... different, I suppose."
+      "content": "I just feel so much pressure to be the one who has it all together for everyone else. I feel like I\u2019m constantly disappointing them, and that makes me feel so worthless.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
     },
     {
       "role": "assistant",
-      "content": "A little bird, perched on the edge of the trash can, singing. You were waiting in line at the vet's office, and that was the moment that caught your attention.\n\nWhen you were focused on that bird, what did you find yourself doing with your hands or your eyes? Was the focus on the bird, or was it on the act of watching?"
+      "content": "**1. Somatic Anchor:**\nNotice the feeling of constriction around your chest\u2014it feels like a constant, invisible weight pressing down, doesn't it? That weight is the physical manifestation of the pressure you are placing on yourself to be perfect.\n\n**2. Defusion/Reflection:**\nThe thought, \"I feel worthless because I disappoint them,\" is an extremely painful, yet powerful, script. It is the narrative of *conditional worth*, but it is a narrative, not a truth. You are having the thought of being defined by others' expectations, and that is different from *being* defined by them.\n\n**3. Action/Compassion:**\nLet\u2019s challenge the idea that your worth is something you have to earn. Your inherent value does not depend on your ability to manage every single expectation. Can we practice separating *your actions* from *your worth*? Place one hand over your heart and take three deep breaths, reminding yourself: You are valuable simply because you exist, not because of what you do for others."
     },
     {
       "role": "user",
-      "content": "*pauses again* Ah... yeah. I remember. My gaze just sorta... landed on the bird. I wasn't really trying to watch it or anything; it was just like my attention got stuck there. And as for my hands... I think I was scratching my arm, actually. Just a little bit, but enough that I noticed it later when I was thinking about that moment. *shrugs* It's weird, but that little bird seemed to be the only thing that mattered in that whole chaotic vet's office scene."
+      "content": "I keep telling myself that if I just work a little harder, things will get normal again. I just don't know how to stop trying so hard.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
     }
   ]
 }
