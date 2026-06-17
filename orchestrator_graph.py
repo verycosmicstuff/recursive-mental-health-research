@@ -112,6 +112,7 @@ def evaluator_node(state: GraphState) -> Dict[str, Any]:
     persona = state.get("persona", {})
     strategy_info = state.get("strategy_info", {})
     exp_id = state.get("exp_id", "exp_XXXX")
+    baseline_score = state.get("baseline_score", -999.0)
     
     scores = harness.score_conversation(persona, messages)
     harness.save_experiment(exp_id, persona, messages, scores, strategy_info)
@@ -119,7 +120,22 @@ def evaluator_node(state: GraphState) -> Dict[str, Any]:
     print(f"[{exp_id}] Finished! Score: {scores['total_score']} (Emp: {scores['empathic_accuracy']}, Refl: {scores['reflective_listening']}, De-esc: {scores['de_escalation']})")
     print(f"[{exp_id}] Rationale: {scores['rationale']}")
     
-    return {"score": scores['total_score']}
+    updates = {"score": scores['total_score']}
+    
+    if scores['total_score'] > baseline_score:
+        print(f"[{exp_id}] NEW HIGH SCORE! {scores['total_score']} > {baseline_score}")
+        updates["baseline_score"] = scores['total_score']
+        sync.sync(f"New Best Strategy: {exp_id} (Score: {scores['total_score']:.3f})")
+        
+        # Save to best_strategy.md
+        with open(config.BEST_STRATEGY_FILE, "a", encoding="utf-8") as f:
+            f.write(f"\n\n# --- RECORDED AT EXPERIMENT: {exp_id} ---\n")
+            f.write(f"# --- SCORE: {scores['total_score']} ---\n")
+            f.write(f"# --- LANGGRAPH NEW SYSTEM PROMPT: ---\n{state.get('active_prompt', '')}\n")
+    else:
+        sync.sync(f"Experiment Complete: {exp_id} (Score: {scores['total_score']:.3f})")
+        
+    return updates
 
 def optimizer_node(state: GraphState) -> Dict[str, Any]:
     active_prompt = state.get("active_prompt", "")
@@ -127,7 +143,10 @@ def optimizer_node(state: GraphState) -> Dict[str, Any]:
     score = state.get("score", 0.0)
     iteration = state.get("iteration", 0)
     
-    print(f"[Optimizer] Score {score} did not beat {baseline_score}. Optimizing...")
+    if score >= baseline_score and score > -999.0:
+        print(f"[Optimizer] Evolving strategy from NEW baseline score {baseline_score}...")
+    else:
+        print(f"[Optimizer] Score {score} did not beat {baseline_score}. Optimizing...")
     print(f"Sleeping {config.EXPERIMENT_PAUSE_SECS} secs...")
     time.sleep(config.EXPERIMENT_PAUSE_SECS)
     
@@ -173,26 +192,7 @@ def route_after_patient(state: GraphState) -> str:
     return "therapist"
 
 def route_after_evaluator(state: GraphState) -> str:
-    score = state.get("score", 0.0)
-    baseline_score = state.get("baseline_score", -999.0)
     iteration = state.get("iteration", 1)
-    
-    exp_id = state.get("exp_id", f"exp_{iteration:04d}")
-    
-    if score > baseline_score:
-        print(f"Score {score} > Baseline {baseline_score}. Goal achieved!")
-        sync.sync(f"New Best Strategy: {exp_id} (Score: {score:.3f})")
-        
-        # Save to best_strategy.md as requested
-        with open(config.BEST_STRATEGY_FILE, "a", encoding="utf-8") as f:
-            f.write(f"\n\n# --- RECORDED AT EXPERIMENT: {exp_id} ---\n")
-            f.write(f"# --- SCORE: {score} ---\n")
-            # We can also dump the best prompt here if we want, but for now just preserving original behavior
-            f.write(f"# --- LANGGRAPH NEW SYSTEM PROMPT: ---\n{state.get('active_prompt', '')}\n")
-            
-        return "end"
-        
-    sync.sync(f"Experiment Complete: {exp_id} (Score: {score:.3f})")
     
     if config.MAX_EXPERIMENTS > 0 and iteration >= config.MAX_EXPERIMENTS:
         print(f"\n[Main] Reached max experiments ({config.MAX_EXPERIMENTS}). Stopping.")
