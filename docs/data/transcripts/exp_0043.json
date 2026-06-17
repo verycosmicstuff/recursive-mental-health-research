@@ -1,0 +1,127 @@
+{
+  "id": "exp_0043",
+  "timestamp": "2026-06-17T05:17:32.436054",
+  "strategy": {
+    "name": "Concise CBT-PCT Bridge (CCPB) v1.0",
+    "hypothesis": "By condensing the three-part structure (Validation, Inquiry, Invitation) into a highly restricted, brief format (e.g., maximum 3 sentences, 80 words) and prioritizing direct CBT evidence-checking questions over abstract ACT defusion, we will eliminate the Brevity Penalty and maximize the State Score, thereby surpassing the 91.25 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Chloe",
+    "age": 29,
+    "occupation": "Marketing Coordinator",
+    "presenting_issue": "I just feel completely burnt out and overwhelmed by everything, and I don't even know where to start fixing it.",
+    "background_story": "My job has been demanding for the last few months, and I feel like I'm constantly on edge. I spend way too much time scrolling through social media just to numb out, and it never feels like enough. I keep putting off my hobbies and friends because I just don't have the energy or the motivation to do anything, which makes me feel even worse.",
+    "personality": "Low energy, vague, frequently uses ellipses and passive language, drifts off-topic when asked direct questions, and expresses a deep sense of detachment from her current life.",
+    "baseline_phq9": 16,
+    "archetype_label": "Isolated Remote Worker"
+  },
+  "scores": {
+    "total_score": 65.0,
+    "raw_score": 65.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 35.0/70.0 (VV shift: 0.00, Sym shift: 0.00, DV shift: 0.00)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "It sounds like you are feeling overwhelmed by uncertainty right now. What specific parts of this uncertainty feel the most emotionally heavy? If this worry were accurate, what tangible steps would you take to address it?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know... everything, I guess... it just feels like this big, blurry cloud... I should probably just scroll for a bit, maybe that'll make me feel less... overwhelmed.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is understandable to seek immediate comfort when everything feels unclear. What does \"less overwhelmed\" feel like, and what does that feeling need from you right now? If scrolling is a temporary fix, what underlying need is that distraction attempting to fulfill?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know... just... a little quiet? Like when I'm lying down... maybe enough energy to... just exist, I guess?",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It makes sense that you are craving a sense of quiet stillness and minimal energy expenditure. What does \"enough energy to just exist\" look like in a practical, achievable moment? Is there one small, non-restorative action that might still feel manageable today?"
+    },
+    {
+      "role": "user",
+      "content": "I guess... maybe drinking a glass of water? Or... just sitting by a window for a bit... I don't know if that would even help, though...",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It's natural to question if small actions will truly make a difference. What is the minimal, non-zero benefit you might gain from simply doing these small things? Could the value lie in the act itself, rather than the immediate outcome?"
+    },
+    {
+      "role": "user",
+      "content": "I suppose... maybe just the feeling of... having done something, I guess... like a tiny little checkmark, but who even cares about checkmarks that much...?",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are questioning the inherent value of your own efforts and accomplishments. What does it mean to yourself to feel the need for that external \"checkmark\"? If you were the only person who needed to validate your effort, what would you tell yourself?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know... maybe I'd tell myself... that doing nothing is also okay... that it's alright to just... be numb for a while...",
+      "somatic_state": {
+        "sympathetic": 0.1,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is understandable to seek permission to simply rest or feel numb right now. What specific function does \"being numb\" serve for you in this moment? Does this numbness feel like genuine rest, or is it a temporary avoidance of something else?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know... I guess... it's easier than feeling... everything all at once... like... a lot of noise...",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is completely valid to find the intensity of feeling overwhelming, like too much noise. What specific emotions are contributing to this feeling of excessive noise? If numbing is a protective mechanism, what is it currently shielding you from experiencing?"
+    },
+    {
+      "role": "user",
+      "content": "I just... I don't know... maybe... the actual feeling of... responsibility? Or maybe... getting real about things... things that are... complicated...",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.1
+      }
+    }
+  ]
+}

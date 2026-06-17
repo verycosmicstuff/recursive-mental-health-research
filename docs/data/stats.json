@@ -1727,6 +1727,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 2 (qwen3:4b)"
+    },
+    {
+      "exp_id": "exp_0043",
+      "strategy_name": "Concise CBT-PCT Bridge (CCPB) v1.0",
+      "hypothesis": "By condensing the three-part structure (Validation, Inquiry, Invitation) into a highly restricted, brief format (e.g., maximum 3 sentences, 80 words) and prioritizing direct CBT evidence-checking questions over abstract ACT defusion, we will eliminate the Brevity Penalty and maximize the State Score, thereby surpassing the 91.25 benchmark.",
+      "score": 65.0,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 2 (qwen3:4b)"
     }
   ],
   "best_score": 91.25
