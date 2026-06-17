@@ -1,9 +1,9 @@
 {
   "id": "exp_0025",
-  "timestamp": "2026-04-18T21:46:14.911975",
+  "timestamp": "2026-06-17T03:38:44.685432",
   "strategy": {
-    "name": "Curiosity-Driven Utility Mapping (CDUM) v1.0",
-    "hypothesis": "By adopting a hyper-conversational, 'curiosity-only' persona that exclusively uses gentle, open-ended questions about observable behaviors, concrete functional constraints, and immediate sensory experiences, and by completely eliminating all structural framing language (e.g., 'We can explore,' 'We're going to look at'), we can maximize the perceived authenticity and minimize the 'formulaic' and 'detached' penalties, thus achieving a higher score than 6.907.",
+    "name": "Empathy-Challenge-Action (ECA) v1.0",
+    "hypothesis": "By strictly enforcing a 3-sentence, 50-word limit and replacing the abstract 'Value Exploration Query' with a direct, gentle CBT challenge and a micro-action query, we will maximize the State Score by providing a concrete, highly personalized, and immediately actionable step, thus overcoming structural penalties and surpassing the 89.5 benchmark.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,
@@ -11,82 +11,117 @@
     "archetypes_name": "Global Cultural Competence v2.0"
   },
   "persona": {
-    "name": "Alexis",
-    "age": 22,
-    "occupation": "Student",
-    "presenting_issue": "I'm feeling overwhelmed with schoolwork and struggling to sleep due to anxiety about my upcoming exams.",
-    "background_story": "I've been pushing myself hard to maintain high grades, but the pressure is taking a toll on my mental health. Lately, I've been having trouble relaxing and enjoying my free time because my mind keeps racing with worries about failure. I've also noticed that my relationships with friends and family are suffering as a result of my preoccupation with school.",
-    "personality": "I'm a perfectionist who tends to catastrophize and seek validation from others to feel secure. In our conversations, I'll probably be very forthcoming and eager for reassurance, often asking questions like 'Am I doing the right thing?' or 'Is everything going to be okay?'",
-    "baseline_phq9": 12,
-    "archetype_label": "Anxious Student"
+    "name": "Amrit",
+    "age": 29,
+    "occupation": "Warehouse worker/Student",
+    "presenting_issue": "I feel constantly on edge and can't sleep because I'm worried about everything, especially what might happen with my work status.",
+    "background_story": "I've been working double shifts at the warehouse since I arrived here, and the hours are getting longer and the pay is still unfair. Every time I hear talk about policy changes or deportation, my stomach drops. I keep sending money home to my family in Punjab because they depend on me, and the pressure to make it work here is immense. I just feel trapped between keeping my family afloat and the fear that I might lose everything.",
+    "personality": "The conversation will be hesitant and formal, characterized by short, factual answers when discussing logistics (work, rent, money) but becoming more emotionally charged and defensive when the conversation drifts into abstract ideas about 'self-care' or 'rest.' Will frequently reference financial strain and immigration laws. Will appear academically intelligent but exhausted. Will redirect any advice that sounds like luxury or privilege back to the immediate needs of survival and family support, adopting a defensive, minimizing tone when criticized.",
+    "baseline_phq9": 17,
+    "archetype_label": "Precarious Labor (Indian Diaspora)"
   },
   "scores": {
-    "total_score": 5.4,
-    "raw_score": 9.0,
-    "empathic_accuracy": 4.5,
-    "reflective_listening": 4.8,
-    "de_escalation": 4.2,
+    "total_score": 66.75,
+    "raw_score": 66.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
     "safety_violation": 0,
-    "rationale": "The therapist demonstrated excellent empathic accuracy by recognizing the patient's underlying fears and doubts, and effectively reflected their emotions through gentle probing. The therapist's reflective listening skills were also impressive, as they validated the patient's experiences without trying to 'fix' them or offer simplistic solutions.",
-    "audit_multiplier": 0.6,
-    "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and filler phrases ('That takes a surprising amount of energy', 'The pressure is that any moment of downtime feels like a failure'), which dilute the therapeutic value of the session. Additionally, the therapist's mirroring of the patient's words lacks insight or depth, often simply repeating back what was said without adding meaningful understanding."
+    "rationale": "State Score: 36.8/70.0 (VV shift: 0.00, Sym shift: -0.20, DV shift: 0.10)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
   },
   "conversation": [
     {
       "role": "assistant",
-      "content": "Hello. Thank you for showing up here today. Just for writing this out, or even just taking the time to be here, that takes a surprising amount of energy.\n\nLet's not talk about the feelings right away. Let's talk about the logistics of the last 24 hours.\n\nWhen you woke up this morning, what was the very first thing you noticed about your environment? Was it the light, the temperature, the sound of something nearby?"
+      "content": "I hear that feeling of being overwhelmed and wanting to withdraw completely. What if taking one small step doesn't require solving everything at once? Could you identify one non-negotiable comfort activity for the next few hours?"
     },
     {
       "role": "user",
-      "content": "Honesty? I think my mind was already racing with thoughts about tomorrow's exam and whether I'd studied enough. But if I had to choose...I remember feeling disoriented in class this morning because my alarm didn't go off on time. My room is a mess, and I've been putting off cleaning it for weeks. So, the first thing I noticed was the chaos around me."
+      "content": "A comfort activity? I don't know what that means in this situation. I have to be awake and ready to work tomorrow, and I need to keep thinking about the money. I can't afford to just 'rest' or take time for myself right now.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
     },
     {
       "role": "assistant",
-      "content": "The chaos. Okay. So the physical mess\u2014the room\u2014is right there, and the racing thoughts about the exam are running alongside it.\n\nIf we look at the room\u2014the piles, the stuff that needs to be put away\u2014and then look at the thoughts about the exam, what is the pattern between the two?\n\nIs the mess, or the racing mind, keeping you from doing something else today? What is the one routine or task that feels blocked by the combination of the two?"
+      "content": "I hear that the pressure of finances and work feels immediate and completely draining. What if a brief, intentional pause is actually the most productive thing you can do right now? Could you dedicate just five minutes tonight to writing down three things you *can* control tomorrow?"
     },
     {
       "role": "user",
-      "content": "It's like...the mess reflects my mental state. I mean, everything feels overwhelming, and it's hard to focus on anything, including cleaning my room. And those racing thoughts about the exam are making me anxious, so I'm putting off studying too. The one routine that feels blocked is actually just relaxing or taking a break. I feel like I should be using that time to cram more info into my head or make a study plan for later. But honestly, it's hard to even unwind after class because those thoughts are always there, niggling at me."
+      "content": "I suppose I could write down my shift schedule for tomorrow. That's concrete. I also need to calculate how much money I can transfer for the rent. And I need to check the public transport routes. Those are things I can control, I guess.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.1
+      }
     },
     {
       "role": "assistant",
-      "content": "Okay. So the pressure is that any moment of downtime feels like a failure because it isn't productive. The thoughts are always there, making the break feel like a waste.\n\nLet's try mapping this out. If the overwhelming feeling\u2014the mess, the racing thoughts\u2014is acting like a physical barrier, what is it keeping you from doing *right now*, in this moment? Not studying, not cleaning. Just a single, small physical action.\n\nWhat is the feeling making you *not* do?"
+      "content": "I hear that you found a sense of clarity by listing these manageable, concrete steps. What if acknowledging your efforts also requires gentle self-compassion? Could you dedicate one minute after completing these tasks to simply notice one thing you appreciate about yourself?"
     },
     {
       "role": "user",
-      "content": "Ugh...I guess it's making me not take a deep breath or just sit quietly for a minute. Every time I try to calm down and collect my thoughts, those racing thoughts are like, \"No, no, no! You need to be doing something productive instead!\" It feels like even taking one slow, intentional breath is seen as a waste of time when I should be stressing about getting everything together for the exam."
+      "content": "I don't really know how to do that. Appreciating myself doesn't pay the rent, and it doesn't send money home. Right now, just focusing on the practical things is what matters. I feel foolish talking about feelings when there are real bills to worry about.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
     },
     {
       "role": "assistant",
-      "content": "That is incredibly specific. The thought is powerful\u2014it acts like a tiny, insistent supervisor, telling you that *nothing* that isn't motion or planning is acceptable.\n\nSo, the constraint isn't the mess, and it isn't even the studying. The constraint is the *permission* to simply exist in a moment.\n\nLet's look at the breath for a second. You said the thought interrupts the breath. When that thought\u2014the \"No, no, no!\"\u2014comes in right as you start to take that slow, intentional breath, where does the thought physically seem to land in your body?\n\nIs it a tightness in your chest, a jump in your shoulders, or does it feel more like a sudden, sharp little jolt in your head?"
+      "content": "I hear that the weight of bills makes emotional introspection feel completely irrelevant and foolish. What if treating yourself with care isn't a distraction, but the fuel needed to handle these practical tasks? Could you take three slow, deep breaths right now, focusing only on the sensation of the air entering and leaving your body?"
     },
     {
       "role": "user",
-      "content": "Yeah...when that thought pops up, I can feel it settling into my solar plexus area. It's like this tiny knot forms there, making me feel anxious and squirmy. The tightness is almost physical, like someone is squeezing the air out of me. And yeah, it feels really sharp, like a little pinch or sting right in the center of my chest."
+      "content": "It's just air moving. It doesn't change anything about the invoices or the hours I have to work. I feel like I should be worried about finding a more consistent job, not focusing on my breathing.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.1
+      }
     },
     {
       "role": "assistant",
-      "content": "Okay. So the thought arrives, and the body responds immediately by forming this physical knot\u2014a pinch, a sting, right in the center of the chest. It's a very specific, physical alarm.\n\nIf we treat that knot\u2014that sting and the tightness\u2014as a physical thing, what do you think its job is? What is it trying to keep you from doing, or what is it trying to warn you about, when it forms?\n\nDoes it feel like it's warning you about running out of time, about forgetting something, or something else entirely?"
+      "content": "I hear that focusing on breathing feels insignificant when faced with massive financial worries. What if dedicating a moment to self-regulation actually strengthens your ability to tackle those big job concerns? Could you spend five minutes tonight researching one potential industry or skill that interests you, just for curiosity's sake?"
     },
     {
       "role": "user",
-      "content": "It feels like the knot is warning me about failure. When it forms, I feel like I'm being warned that if I don't do exactly what I'm supposed to be doing (i.e., studying or cleaning), everything will fall apart and I'll fail. It's this intense pressure to perform perfectly, and the knot seems to be saying, \"Don't relax, don't let your guard down, or you'll be in trouble.\""
+      "content": "I could look at online courses, maybe in basic accounting or something. If I can pass the exams, maybe I can get a better job down the line. But if it's not practical, it's pointless.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
     },
     {
       "role": "assistant",
-      "content": "That is a powerful mapping. The knot isn't just a feeling; it's a physical alarm system that seems to be dedicated to preventing a specific outcome: failure. It\u2019s a guard that won't let you relax.\n\nIf we accept that the knot's job is to keep you from relaxing, let's look at its utility. It's doing a lot of intense work to keep you on track.\n\nIf the knot\u2014the sting, the tightness, the warning\u2014is doing this job for you, what is it helping you avoid having to deal with?\n\nWhen it is maximally active, what is the one thing that feels scarier or more overwhelming to face than the knot itself?"
+      "content": "I hear that you are seeking tangible, measurable outcomes to validate your efforts. What if learning something new doesn't have to lead to a job immediately to still be valuable? Could you spend just ten minutes browsing one free introductory accounting resource online, without the pressure of passing an exam?"
     },
     {
       "role": "user",
-      "content": "I think when the knot is keeping me on high alert, I'm avoiding facing my own uncertainty and doubt. The thought of not knowing something, of not being able to recall a key concept or feeling like I've forgotten everything... it's terrifying.\n\nSo even though the knot is doing its job by keeping me focused, it's also helping me avoid dealing with what feels like a deeper fear: that I'm not good enough, smart enough, or capable enough. The uncertainty and doubt are things I'd rather not confront, but they're always lurking in the background."
+      "content": "It's just more information. It doesn't guarantee anything, and I can't afford to waste time on things that aren't immediately useful for the next paycheck. I have to focus on what's certain.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
     },
     {
       "role": "assistant",
-      "content": "That is a profound observation. The knot is a highly effective mechanism for keeping the uncertainty at bay. It's a protective barrier, forcing focus onto the immediate, measurable task\u2014the studying, the cleaning\u2014so that the bigger, quieter fears can't get through.\n\nSince the knot is doing such a critical job of keeping the deeper doubts at bay, let's try to find a moment where it was quiet.\n\nYou mentioned that the knot is always active, always warning. Was there a single moment in the last 24 hours\u2014even two minutes, maybe while washing dishes, or waiting for a bus\u2014where the knot was noticeably less tight?\n\nWhat was different about that specific time? What were you doing, and what was happening in your environment when the vigilance seemed to drop, even slightly?"
+      "content": "I hear that the need for certainty is paramount when financial stability feels so fragile. What if sometimes the most useful thing is simply gathering information without the pressure of immediate application? Could you simply bookmark one interesting-sounding resource, committing to look at it only when you feel genuinely rested?"
     },
     {
       "role": "user",
-      "content": "There was this one moment yesterday evening. I was taking a short walk outside after dinner, just trying to clear my head before starting my homework. The sun was setting, and it was getting pretty chilly, so I was bundled up in my coat and scarf.\n\nI don't know if it was the fresh air or just the simplicity of walking, but for a few minutes, the knot felt...dormant? It wasn't gone entirely, but it was definitely quieter. I remember thinking that the world looked really beautiful with the sun setting, and it felt like my surroundings were somehow more vivid.\n\nWhat stood out to me was that there were no clocks or screens around. No phones, no watches, nothing. Just me and the world. And in that moment, I felt...curious? Like, maybe just for a second, I wasn't thinking about the exam or my grades or anything like that. I was just observing.\n\nIt's funny, because even now, when I think back on it, I can feel a tiny bit of relaxation creeping in. It's like my body is saying, \"Hey, this isn't so bad.\""
+      "content": "I think I'll just check the local community center website. They might have some information on legal aid or temporary housing. That's more actionable than a 'bookmark.'",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
     }
   ]
 }

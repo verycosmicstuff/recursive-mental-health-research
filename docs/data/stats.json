@@ -1511,6 +1511,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 2 (qwen3:4b)"
+    },
+    {
+      "exp_id": "exp_0025",
+      "strategy_name": "Empathy-Challenge-Action (ECA) v1.0",
+      "hypothesis": "By strictly enforcing a 3-sentence, 50-word limit and replacing the abstract 'Value Exploration Query' with a direct, gentle CBT challenge and a micro-action query, we will maximize the State Score by providing a concrete, highly personalized, and immediately actionable step, thus overcoming structural penalties and surpassing the 89.5 benchmark.",
+      "score": 66.75,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 2 (qwen3:4b)"
     }
   ],
   "best_score": 89.5
