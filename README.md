@@ -12,7 +12,7 @@
 ---
 
 > [!IMPORTANT]
-> **Project Evolution: Tier 3 (LangGraph Orchestration)** is now live! We've migrated from a raw procedural `while True` loop that rewrote Python files dynamically, to a robust, state-based **Multi-Agent Architecture using LangGraph**. Prompts are now cleanly managed in graph memory, eliminating syntax errors while maintaining a strict single-thread lock to protect VRAM.
+> **Project Evolution: Tier 4 (LangGraph Orchestration)** is now live! We've migrated from a raw procedural `while True` loop that rewrote Python files dynamically, to a robust, state-based **Multi-Agent Architecture using LangGraph**. Prompts are now cleanly managed in graph memory, eliminating syntax errors while maintaining a strict single-thread lock to protect VRAM.
 
 ---
 
