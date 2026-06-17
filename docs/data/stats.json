@@ -2099,6 +2099,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 2 (qwen3:4b)"
+    },
+    {
+      "exp_id": "exp_0074",
+      "strategy_name": "Concise PCT-ACT Resonance Loop (CPARL) v2.0",
+      "hypothesis": "By enforcing a maximum of three highly focused, integrated steps\u2014Empathy, Reframing, and Single-Action Micro-Commitment\u2014and strictly adhering to a concise, conversational tone, we hypothesize that we can achieve the highest score by maximizing the perceived utility of every sentence, significantly surpassing the current high-scoring average.",
+      "score": 69.25,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 2 (qwen3:4b)"
     }
   ],
   "best_score": 91.25
