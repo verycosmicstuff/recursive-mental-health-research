@@ -1883,6 +1883,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 2 (qwen3:4b)"
+    },
+    {
+      "exp_id": "exp_0056",
+      "strategy_name": "Hyper-Constrained Empathy-Utility-Value Core (HEUVC) v1.0",
+      "hypothesis": "By enforcing a strict 3-sentence, 60-80 word limit, and structuring the response to prioritize (1) Deep Empathic Validation, (2) Single Utility Question, and (3) Value Connection, we will maximize structural adherence and clinical depth, thereby surpassing the 91.25 benchmark.",
+      "score": 62.25,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 2 (qwen3:4b)"
     }
   ],
   "best_score": 91.25
