@@ -28,8 +28,22 @@ def export():
     # Create output directories
     os.makedirs(DOCS_TRANSCRIPTS_DIR, exist_ok=True)
 
+    # ── 0. Load old Run 1 data from backup (if it exists) ─────────────────────
+    OLD_BACKUP_STATS = os.path.join(BASE_DIR, "docs_run1_backup", "data", "stats.json")
+    old_experiments = []
+    if os.path.exists(OLD_BACKUP_STATS):
+        try:
+            with open(OLD_BACKUP_STATS, "r", encoding="utf-8") as f:
+                old_data = json.load(f)
+                for exp in old_data.get("experiments", []):
+                    exp["run"] = "Run 1 (gemma4 + llama3)"
+                    old_experiments.append(exp)
+            print(f"[Export] Loaded {len(old_experiments)} experiments from Run 1 backup")
+        except Exception as e:
+            print(f"[Export] Warning: Could not load Run 1 backup: {e}")
+
     # ── 1. Build stats.json from results.tsv ──────────────────────────────────
-    experiments = []
+    new_experiments = []
     best_score = 0
 
     if os.path.exists(RESULTS_FILE):
@@ -48,20 +62,28 @@ def export():
                         "de_escalation": float(row.get("de_escalation", 0)),
                         "audit_mult": float(row.get("audit_mult", 1.0)),
                         "audit_rationale": row.get("audit_rationale", ""),
+                        "run": "Run 2 (qwen3:4b)",
                     }
-                    experiments.append(exp)
+                    new_experiments.append(exp)
                     if score > best_score:
                         best_score = score
                 except (ValueError, KeyError) as e:
                     print(f"[Export] Skipping bad row: {e}")
                     continue
 
-    stats = {"experiments": experiments, "best_score": best_score}
+    # Merge: old Run 1 + new Run 2
+    all_experiments = old_experiments + new_experiments
+    # Update best_score across all runs
+    for exp in old_experiments:
+        if exp.get("score", 0) > best_score:
+            best_score = exp["score"]
+
+    stats = {"experiments": all_experiments, "best_score": best_score}
 
     stats_path = os.path.join(DOCS_DATA_DIR, "stats.json")
     with open(stats_path, "w", encoding="utf-8") as f:
         json.dump(stats, f, indent=2)
-    print(f"[Export] Wrote {len(experiments)} experiments to stats.json")
+    print(f"[Export] Wrote {len(all_experiments)} experiments to stats.json ({len(old_experiments)} old + {len(new_experiments)} new)")
 
     # ── 2. Copy individual transcript JSONs ───────────────────────────────────
     transcript_count = 0

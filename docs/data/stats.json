@@ -9,7 +9,20 @@
       "reflective": 4.8,
       "de_escalation": 4.2,
       "audit_mult": 0.4,
-      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and mirroring, failing to provide genuine engagement or insight. The constant use of phrases like 'That sounds incredibly heavy' and 'I hear the physical sensation...' feels like a formulaic attempt to appear empathetic rather than an authentic expression of understanding."
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and mirroring, failing to provide genuine engagement or insight. The constant use of phrases like 'That sounds incredibly heavy' and 'I hear the physical sensation...' feels like a formulaic attempt to appear empathetic rather than an authentic expression of understanding.",
+      "run": "Run 1 (gemma4 + llama3)"
+    },
+    {
+      "exp_id": "exp_0001",
+      "strategy_name": "Utility-Inferred Meaning Bridge (UIMB) v1.0",
+      "hypothesis": "By maintaining the ultra-minimalist, conversational, and micro-exception focus (Utility/BA) and structurally forcing the therapist to follow up the observation not with a question, but with a single, non-theoretical, inferred statement that connects the 'what' (the micro-utility) to a potential, underlying pattern or resource (the 'what it suggests'), we will provide the necessary novel insight to overcome the 'platitude' and 'lack of depth' penalties and surpass the 6.907 benchmark.",
+      "score": 3.6,
+      "empathic": 4.5,
+      "reflective": 4.8,
+      "de_escalation": 4.2,
+      "audit_mult": 0.4,
+      "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and mirroring, failing to provide genuine engagement or insight. The constant use of phrases like 'That sounds incredibly heavy' and 'I hear the physical sensation...' feels like a formulaic attempt to appear empathetic rather than an authentic expression of understanding.",
+      "run": "Run 2 (qwen3:4b)"
     }
   ],
   "best_score": 3.6
