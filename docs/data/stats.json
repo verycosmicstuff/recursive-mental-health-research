@@ -1487,6 +1487,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 2 (qwen3:4b)"
+    },
+    {
+      "exp_id": "exp_0023",
+      "strategy_name": "Defusion-Validated Action Bridge (DVAB) v1.0",
+      "hypothesis": "By replacing the directive 'Motivational Reflection' component with a non-judgmental 'Validation-Defusion Bridge' (focusing on the nature of thoughts/feelings rather than the gap between self and goal), we will increase the Alliance score (PCT/ACT) and maintain the high State Score structural adherence, thus surpassing the 89.5 benchmark.",
+      "score": 77.25,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 2 (qwen3:4b)"
     }
   ],
   "best_score": 89.5
