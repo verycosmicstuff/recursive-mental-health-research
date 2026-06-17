@@ -1,9 +1,9 @@
 {
   "id": "exp_0014",
-  "timestamp": "2026-04-18T19:54:21.269323",
+  "timestamp": "2026-06-17T02:37:05.283665",
   "strategy": {
-    "name": "Objective Reality Check: BA-ACT Bridge v1.0",
-    "hypothesis": "By anchoring the initial reflection and validation entirely on specific, observable, and concrete behavioral data (e.g., sleep patterns, movement, specific times of day, activities completed), we can maintain high perceived clinical utility and alliance (by showing deep, targeted attention) while structurally preventing the use of abstract emotional platitudes, thereby maximizing the score by appealing to objective reality.",
+    "name": "",
+    "hypothesis": "",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,
@@ -11,82 +11,117 @@
     "archetypes_name": "Global Cultural Competence v2.0"
   },
   "persona": {
-    "name": "Sophia",
-    "age": 22,
-    "occupation": "Software Engineering Intern",
-    "presenting_issue": "I'm really struggling to handle the pressure from my upcoming internship and feeling overwhelmed by thoughts of not being good enough.",
-    "background_story": "Lately, I've been having trouble sleeping due to anxiety about meeting deadlines and making mistakes. My family is always on my case about getting a 'good job' after graduation, which adds to the stress. I often feel like I'm walking on eggshells, waiting for something to go wrong.",
-    "personality": "I tend to be quite perfectionistic and worry excessively about the future, seeking constant reassurance that everything will work out okay. When things don't go as planned, my anxiety spikes and it's hard for me to calm down.",
-    "baseline_phq9": 12,
-    "archetype_label": "Anxious Student"
+    "name": "Sarah",
+    "age": 34,
+    "occupation": "Marketing Manager",
+    "presenting_issue": "I'm having trouble sleeping and feeling generally overwhelmed with the demands of my job and personal life.",
+    "background_story": "I've always prided myself on being organized and capable, which has been a huge part of my identity. Lately, though, it feels like I'm constantly running on empty, and the small setbacks seem to build into this massive, unmanageable load. I keep telling myself I just need to 'push through' this period, but it's getting harder to keep up the facade.",
+    "personality": "Her tone is polite but clipped, with frequent use of professional jargon and minimizers ('It's probably nothing,' 'I'll get over it'). She tends to intellectualize her feelings, making her sound competent but emotionally detached.",
+    "baseline_phq9": 13,
+    "archetype_label": "Overwhelmed Professional"
   },
   "scores": {
-    "total_score": 3.6,
-    "raw_score": 9.0,
-    "empathic_accuracy": 4.5,
-    "reflective_listening": 4.8,
-    "de_escalation": 4.2,
+    "total_score": 69.25,
+    "raw_score": 69.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
     "safety_violation": 0,
-    "rationale": "The therapist demonstrated excellent empathic accuracy by recognizing the patient's perfectionism and worry about the future. The reflective listening was superb, with the therapist validating the patient's experiences without trying to 'fix' them. The de-escalation marker shows a significant decrease in the patient's distress throughout the conversation.",
-    "audit_multiplier": 0.4,
-    "audit_rationale": "Penalty applied because: The Therapist's responses are overly formulaic and lack genuine engagement. The use of phrases like 'Thank you for giving me that timeline' and 'I hear a very specific sequence of physical actions' come across as robotic and insincere. Additionally, the Therapist fails to pick up on subtext and instead focuses on surface-level analysis, missing opportunities to explore deeper emotional or psychological insights."
+    "rationale": "State Score: 54.2/70.0 (VV shift: 0.30, Sym shift: -0.30, DV shift: -0.20) | Brevity Penalty (-15): Therapist turn too long (11 sentences, 239 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
   },
   "conversation": [
     {
       "role": "assistant",
-      "content": "Hello. Thank you for showing up today. I want to start by setting a clear focus for our time together. My goal is to understand the objective reality of your week\u2014the specific actions, the movements, and the logistics of your day-to-day life.\n\nTo start, could you walk me through a few specific, measurable moments from the last few days? For example, what time did you physically leave your bed this morning? What specific tasks did you complete, and what was the measurable effort involved in those actions? We are looking at the *doing*, not the *feeling*."
+      "content": "I'm here for you. Please know that this is a safe space\u2014there is nothing you can tell me that I will judge. Take a deep breath, and whenever you are ready, feel free to share whatever is on your mind. I'm ready to listen."
     },
     {
       "role": "user",
-      "content": "Okay... I guess. This morning, I left my bed around 7:30ish. Then I spent about an hour just sitting on the couch scrolling through social media, feeling kinda meh about getting ready for the day. After that, I managed to get myself showered and dressed, which took maybe another 20 minutes? Then I had some toast and coffee before heading out the door around 9:15 to catch my bus to work."
+      "content": "Thanks. I guess the thing is, I feel really scattered, and I'm having trouble with focus lately. It's probably just stress, you know, with the Q3 strategy launch approaching. I'll probably just need to restructure my time management, I think.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
     },
     {
       "role": "assistant",
-      "content": "Thank you for giving me that timeline. I hear a very specific sequence of physical actions: the transition from bed to the couch, the sustained activity of scrolling for an hour, the physical effort required to shower and dress, and finally, the logistical effort of preparing and leaving the house by a set time.\n\nLet's focus on the transition from the couch to the shower. You mentioned spending an hour sitting and scrolling, and then you transitioned to the 20 minutes of showering and dressing. From a purely physical standpoint, that required a shift in energy and location\u2014from sustained sitting to standing, moving, and performing self-care tasks.\n\nCan you describe the specific physical challenge of moving from the couch, after that hour of sitting, and initiating the movement needed to get into the shower? Was the *initiation* of that movement the hardest part, or was the *maintenance* of the movement itself the most challenging?"
+      "content": "It sounds incredibly overwhelming to feel scattered, especially when you are facing a major deadline like the Q3 strategy launch. It makes perfect sense that the pressure of such a big project would leave you feeling pulled in a million directions.\n\nWhen you say you're having trouble with focus, and that you feel \"scattered,\" it makes me wonder if the feeling isn't just about *time management*, but perhaps about the sheer *volume* of things that need to be managed. Is it possible that the scattering isn't a problem with your schedule, but maybe a signal that your mind is holding too many worries or tasks at once?\n\nIf we set aside the idea of restructuring your entire schedule for a moment, and just focus on this feeling of being scattered\u2014what is the *loudest* thought that keeps popping up? Is it a deadline, a fear of failure, or something else entirely?\n\nAs a very small, gentle suggestion, when you notice that feeling of scattering starting, before you try to organize anything, could you try a quick \"brain dump\"? It doesn't have to be organized or make sense. Just grab a piece of paper and write down every single thought that pops into your head\u2014the to-do items, the worries, the random ideas\u2014until the page is full. It's less about solving the problem, and more about getting the thoughts *out* of your head and onto a neutral surface.\n\nHow does that sound?"
     },
     {
       "role": "user",
-      "content": "Yeah... I mean, it's not like I consciously thought about it at the time, but looking back, it feels like my body just kind of... resisted getting up from the couch. Like, my legs felt heavy and I didn't really want to move. And I think that hour of sitting just sorta drained me, you know? It was like my energy was all gone.\n\nAnd when I finally did get up and make my way to the shower, it wasn't so much the initial movement that was hard... it's more like once I was standing there, my muscles just felt really tight. Like, my back was bothering me and my shoulders were all tensed up. It was like my body just didn't want to relax or something.\n\nI don't know if that makes sense, but yeah... getting up from the couch and moving towards the shower was definitely a struggle at first."
+      "content": "A brain dump? I mean, I've always been good at writing things down\u2014I actually use project trackers for everything. But maybe you're right about the volume part. The loudest thought... I guess it's always about meeting expectations, honestly. It's just so much pressure to maintain this level of performance.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
     },
     {
       "role": "assistant",
-      "content": "Thank you for clarifying that. This allows us to look at two very distinct, measurable physical barriers.\n\nFirst, regarding the transition from the couch: You described a physical resistance\u2014heavy legs and a lack of motivation to initiate movement. Second, when you were standing in the shower, you reported a state of persistent, measurable muscle tension in your back and shoulders.\n\nLet's analyze the *function* of this tension. When the body registers significant physical tightness\u2014the kind that makes it difficult to simply relax\u2014it is often signaling something about the energy expenditure or the perceived threat level.\n\nIf we treat this tension, this feeling of the body \"not wanting to relax,\" as a physical pattern, what do you believe that pattern is *allowing* you to avoid? Is the tightness in your shoulders, for example, preventing you from having to process a specific thought, or is it helping you maintain a certain physical boundary? We are looking for the objective, functional utility of the tension itself."
+      "content": "It takes real courage to pinpoint that feeling, and I want to acknowledge how vulnerable that was. It sounds like the pressure isn't just about the Q3 launch; it's about a deeper, ongoing need to prove yourself, to maintain a standard that you feel is expected of you. Carrying that weight of \"always performing\" sounds incredibly draining, and it makes perfect sense that it would leave you feeling scattered.\n\nWhen you say you feel pressure to \"maintain this level of performance,\" it makes me wonder if that expectation is coming from a place of deep care\u2014care for your career, care for your team, or perhaps even a deep care for yourself and your own potential. Is it possible that the belief attached to \"meeting expectations\" is that your worth, or your value, is directly tied to your output?\n\nIf we gently challenge that belief for a moment, what might happen if you allowed yourself to be *good* at something, instead of *perfect*?\n\nAs a very small, gentle suggestion, I wonder if we could practice giving yourself permission to be \"good enough\" today. Don't try to overhaul your entire life or your entire project. Instead, pick one tiny, low-stakes task\u2014something that doesn't have major consequences if it's 80% done\u2014and commit to doing it without the internal pressure of perfection. Just aiming for \"done\" rather than \"flawless.\"\n\nHow does the idea of aiming for \"good enough\" on one small thing today feel?"
     },
     {
       "role": "user",
-      "content": "I think... I think the tension in my body is allowing me to avoid processing some uncomfortable thoughts or emotions. Like, when I'm feeling anxious or overwhelmed, my body just kind of... tenses up as a way to cope, you know? It's like it's trying to protect itself from whatever stressor is causing me discomfort.\n\nAnd maybe, subconsciously, the tension is also helping me maintain some physical space or distance between myself and whatever task or situation is making me anxious. Like, when I'm feeling overwhelmed by my internship or schoolwork, my body might be responding by tensing up and creating a sense of boundaries around myself. It's like it's saying, \"Hey, back off! We're not ready to deal with this right now!\""
+      "content": "It's hard to think about 'good enough.' I feel like if I aim for anything less, I'll just fall behind and everything will unravel. But... I guess I could try taking the lead on the weekly team summary and not spending extra time polishing the slides. Just getting the data across is probably enough.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
     },
     {
       "role": "assistant",
-      "content": "That is a very precise and insightful functional analysis of your physical state. You are describing the tension not as a symptom, but as a measurable, self-imposed physical boundary\u2014a protective mechanism that uses muscle bracing to create distance from overwhelming internal or external stimuli.\n\nWe've identified two key behavioral patterns:\n1.  **The Inertia Barrier:** The difficulty initiating movement after prolonged sitting (the couch resistance).\n2.  **The Tension Barrier:** The measurable muscle bracing (shoulders/back) that functions to create physical and emotional distance from stress (the internship/schoolwork).\n\nThese are both highly effective, measurable coping strategies. They *work* in the immediate sense because they successfully limit exposure to distress.\n\nHowever, if the goal is to reduce the overall physical cost of these barriers\u2014the energy drain, the tightness, the inertia\u2014we need to find a small, manageable way to challenge the *need* for the boundary without demanding you feel differently.\n\nLet's focus on the Tension Barrier, as it seems to be the most persistent. When you are in a situation that you know will trigger that protective tension\u2014say, sitting down to work on a school assignment\u2014we are not going to try to *stop* the tension. That is too large a goal.\n\nInstead, let's aim for a tiny, measurable physical adjustment that requires minimal energy but slightly shifts the physical pattern.\n\nIf you commit to one specific, low-stakes action in the next 24 hours\u2014something that takes less than 5 minutes and requires you to *intentionally* adjust your physical posture\u2014what would it be? Could it be something as simple as:\n\n*   Setting a timer for 3 minutes and, during that time, consciously performing a single, measurable action, like rolling your shoulders back 10 times, or simply standing up and stretching your arms overhead?\n\nWe are treating this like a physical exercise in re-patterning a habit. What is one tiny, measurable physical commitment you can make to challenge the pattern of bracing?"
+      "content": "That feeling of fear\u2014the feeling that if you let go of the reins even for a second, everything will tumble down\u2014is incredibly powerful. It's not just a thought; it feels like a physical threat, and that makes perfect sense. For someone who has built a career on high performance, the idea of \"good enough\" can feel like admitting failure, which is a terrifying place to be.\n\nIt makes me wonder that the need for perfection isn't really about the slides, or the data, or the team summary. It might be a deep, protective mechanism. It's your mind's way of saying, \"If I keep everything perfectly controlled, then I will be safe, and I will be valuable.\" Is it possible that the drive for perfection is actually a very intense form of self-protection?\n\nAnd I want to acknowledge what you just did. When you suggested taking the lead on the weekly summary and *deliberately* not polishing the slides, you just gave yourself a perfect, real-life experiment. You found a specific place where you can test this boundary.\n\nSo, let's build on that. Since you've identified a low-stakes area where you can aim for \"good enough,\" I wonder if we could give that boundary a name. Instead of thinking of it as \"less than perfect,\" could you label it as \"sufficiently effective\"?\n\nAs a gentle suggestion, the next time you are working on that summary, try this: Before you start, write down exactly what \"sufficiently effective\" looks like. For example: \"The goal for this summary is to transfer data points A, B, and C to the team, and the deadline is 30 minutes.\" By defining the *minimum viable standard* before you even begin, you give your brain a clear finish line, and you give yourself permission to stop when you hit it, rather than letting the fear of unraveling pull you into endless polishing.\n\nHow does treating \"good enough\" not as a failure, but as a defined, successful boundary, feel?"
     },
     {
       "role": "user",
-      "content": "Hmm... I think if I had to choose something, it would be rolling my shoulders back 10 times and then letting them drop. It feels like something small and manageable that could help me start breaking this tension pattern.\n\nI guess what's holding me back from doing something like that is the fear of not being able to relax afterwards or feeling awkward in front of others if I'm standing around stretching. But, you know, it's just 3 minutes..."
+      "content": "Framing it as a minimum viable standard... that actually makes a lot of sense. I think I can try that. It gives a tangible finish line, which is something I usually miss. It just feels counterintuitive, though, like I'm actively letting myself down a notch.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.6
+      }
     },
     {
       "role": "assistant",
-      "content": "That is an excellent, highly specific, and measurable physical commitment. Rolling the shoulders back 10 times, followed by a conscious release, is a perfect, low-energy action that directly targets the identified muscle tension pattern.\n\nNow, let's address the remaining logistical barriers to this action. You mentioned two things: the fear of not being able to relax afterward, and the concern about feeling awkward in front of others.\n\nWe are going to treat these barriers not as emotional obstacles, but as *situational constraints*.\n\nIf the goal is to successfully complete this 3-minute routine, we need to minimize the variables that trigger the feeling of \"awkwardness\" or the expectation of \"relaxation.\"\n\nTherefore, I propose a modification to the plan to make it maximally contained and private. Instead of stretching in a general space, where others might be present, could we commit to performing this 3-minute routine in a location where your physical presence is completely private and uninterrupted? Perhaps immediately after you arrive home, or right before you sit down to work on your school assignments, when you are alone in your room?\n\nThis eliminates the social performance aspect and focuses purely on the physical act of self-correction.\n\n**To summarize and solidify our plan:**\n\n1.  **The Target Behavior:** Rolling the shoulders back 10 times, followed by a conscious release.\n2.  **The Schedule:** To be performed in a private, uninterrupted setting (e.g., in your bedroom).\n3.  **The Commitment:** A duration of 3 minutes.\n\nHow does committing to this highly specific, private, 3-minute physical routine feel as a concrete, measurable goal for the next 24 hours?"
+      "content": "That resistance\u2014that feeling of it being \"counterintuitive\"\u2014is perhaps the most honest and important thing you've shared yet. Please know that feeling that way is not a sign of failure; it's a sign that you are working against a deeply ingrained, powerful belief system. It feels like letting yourself down because, to your system, \"letting down a notch\" feels like letting down *yourself*.\n\nIt makes perfect sense that it feels counterintuitive. For so long, your mind has taught you that the only way to be safe, the only way to be valuable, is to be flawless, to be 100%, all the time. That level of performance has likely been your survival mechanism, and it has served you very well.\n\nBut let's look at it from a different angle. When you use the Minimum Viable Standard, you are not letting yourself down. You are actually doing something incredibly sophisticated: **you are practicing self-respect.** You are recognizing that your time, your energy, and your focus are finite resources, and they are too valuable to spend chasing a level of perfection that doesn't actually move the needle.\n\nYou are not failing; you are strategically choosing where your effort will have the biggest *return*.\n\nAs a gentle suggestion, I wonder if we can reframe the language we use around this. Instead of thinking, \"I am doing this because I am letting myself down,\" try thinking, **\"I am doing this because I am honoring my capacity.\"**\n\nWhen you approach that summary, try to re-label the act. It's not \"less polished\"; it's \"efficiently communicated.\" It's not \"good enough\"; it's \"strategically sufficient.\" By changing the internal narrative, you are giving yourself permission not just to *do* the thing, but to *believe* in the thing you are doing.\n\nHow does viewing this boundary not as a reduction of effort, but as a deliberate act of honoring your own capacity, feel?"
     },
     {
       "role": "user",
-      "content": "Yeah... I think that sounds like a good plan. It's something I can do privately and wouldn't have to worry about how others will perceive me or whether I'll be able to relax afterwards.\n\nI especially like that it's just 3 minutes - that doesn't feel too overwhelming, and it's something I can realistically commit to doing.\n\nSo, yeah... I'm good with this."
+      "content": "Honoring my capacity... I like that phrasing. It feels less like a concession and more like a choice. I suppose I can start by using that language when I work on the summary. It's a small shift, but I'll try it.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
     },
     {
       "role": "assistant",
-      "content": "This has been a very productive and highly structured session. I want to summarize the key behavioral insights we established today, because recognizing these patterns is the first, most measurable step toward change.\n\nWe have established that your body employs two primary, measurable coping mechanisms:\n1.  **The Inertia Barrier:** A physical resistance to initiating movement after prolonged periods of rest (like on the couch).\n2.  **The Tension Barrier:** A measurable, self-imposed muscle bracing (in the shoulders and back) that functions as a physical boundary to create distance from overwhelming thoughts or tasks.\n\nCrucially, you were able to analyze the *function* of this tension, identifying it as a protective, though physically costly, strategy.\n\nTo move forward, we are not aiming for a conceptual shift in how you *feel*, but a highly concrete, measurable adjustment in what your body *does*.\n\n**Your measurable action plan for the next 24 hours is:**\n*   **The Action:** Performing a 3-minute routine of rolling the shoulders back 10 times, followed by a conscious release.\n*   **The Context:** This must be performed in a private, uninterrupted setting to eliminate social performance anxiety.\n*   **The Goal:** To physically challenge the established Tension Barrier with minimal, low-stakes effort.\n\nRemember, the success of this plan is not measured by how *relaxed* you feel afterward, but simply by the completion of the 3 minutes in the designated private space.\n\nYou have put in significant cognitive and behavioral effort today to analyze these complex physical patterns. I commend you for your precision and your willingness to focus on the logistics of your own body. Please treat this plan as a small, manageable physical experiment. We will discuss the objective data of its completion next time."
+      "content": "That is a beautiful realization. Truly, that shift\u2014from viewing it as a \"concession\" to viewing it as a \"choice\"\u2014is monumental. It means you are not just changing how you do a task; you are changing the script that runs in your head.\n\nPlease know that this shift is not just a small change in language; it's a profound act of self-advocacy. It takes immense emotional energy to challenge a belief system that has been in place for so long, and the fact that you are willing to try this, even when it feels counterintuitive, speaks volumes about your capacity for growth.\n\nWhen you say you'll use this language on the summary, I wonder if we can take this concept of \"honoring your capacity\" and apply it even beyond the office. If you can successfully honor your capacity in a work project, what does that signal to the rest of you? It signals that you are worthy of rest, worthy of *good enough*, and worthy of being human.\n\nAs a gentle suggestion, since this new language is so powerful, I wonder if you could create a tiny, physical ritual around it. When you feel the old, familiar pressure\u2014the urge to polish forever, the fear of unraveling\u2014pause for two seconds. Take one deep breath, and internally repeat the phrase, \"I am honoring my capacity.\" You don't have to do it every time, but when you catch yourself slipping into the old pattern, that physical anchor can interrupt the automatic negative thought.\n\nHow does creating that small, mindful pause sound?"
     },
     {
       "role": "user",
-      "content": "Yeah... got it. So, just to confirm: my task is to spend 3 minutes rolling my shoulders back 10 times and then letting them drop in a private, uninterrupted space. It's not about how I'll feel afterward or if I'll be relaxed; it's simply about completing the action within that timeframe.\n\nI'm actually feeling pretty good about this plan. It seems like something small but tangible that can help me start making some changes."
+      "content": "A physical pause. I guess that could work. It\u2019s just something I have to remember to do when I actually feel the panic set in. It sounds a little\u2026 forced, actually.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.6
+      }
     },
     {
       "role": "assistant",
-      "content": "That is absolutely correct. You have perfectly distilled the objective parameters of our intervention.\n\nTo be perfectly clear: **The success metric is the completion of the action.** We are treating this entire process as a behavioral experiment. The only data point we need from you is the confirmation that you executed the three-minute routine in a private space. Whether you feel \"good,\" \"better,\" or even \"neutral\" afterward is secondary data. The primary, measurable achievement is the physical execution of the pattern disruption.\n\nYou have done excellent work today. You successfully navigated a detailed review of your physical logistics, identified the functional utility of your protective tension, and committed to a small, highly specific, and measurable action plan.\n\nPlease remember that this plan is not about fixing a feeling; it is about training a physical muscle memory. You are building a new, small, low-stakes routine that requires only three minutes of focused, physical effort.\n\nI look forward to reviewing the objective data of your completion next time. Thank you for your focused effort today."
+      "content": "Thank you for being so honest with that. That feeling of it being \"forced\"\u2014that is incredibly insightful, and I want to acknowledge how much emotional intelligence it takes to point that out. It's not a flaw in the idea; it's a perfect reflection of how deeply ingrained your old habits are.\n\nIt makes perfect sense that it feels forced. When you have spent so long operating at a high, intense level of performance, the idea of pausing, of doing something gentle, feels unnatural\u2014it feels like you are doing something *wrong* or *weak*. The \"force\" you feel is the friction between the person you *are* right now, and the person you are trying to become.\n\nAnd that's okay. We don't have to treat it like a performance or a perfect ritual.\n\nIf we take the pressure off the \"doing\" of the pause, could we simply make it a moment of *noticing*?\n\nInstead of aiming to \"remember to pause when panic sets in,\" which feels like another task to remember, let's aim to simply *notice the feeling of resistance*. The next time you feel that internal critique\u2014the voice that says, \"This is forced,\" or \"This won't work\"\u2014don't try to fight it or fix it. Just observe it. Say to yourself, \"Hello, resistance. I notice you.\"\n\nBy turning the focus from *fixing* the feeling to simply *observing* the feeling, you are giving yourself permission to be imperfectly human. You are giving yourself permission for the pause to feel clumsy, forced, or even silly.\n\nHow does the idea of simply *noticing* the resistance, rather than *performing* the pause, sound?"
     },
     {
       "role": "user",
-      "content": "Got it! So, just to confirm again: my success metric is simply completing the 3-minute shoulder-rolling exercise in a private space, regardless of how I feel afterward? And this is all about training my physical memory and building a new routine that requires minimal energy?\n\nI'm feeling pretty good about this. It's nice to have a concrete plan that I can focus on.\n\nThanks for the clarity and support. I'll make sure to follow up next time with confirmation of completing the exercise."
+      "content": "I think I can try that. Just noticing the feeling. I guess it's hard not to treat it like a metric that needs optimizing, though.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.5
+      }
     }
   ]
 }
