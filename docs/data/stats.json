@@ -1619,6 +1619,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 2 (qwen3:4b)"
+    },
+    {
+      "exp_id": "exp_0034",
+      "strategy_name": "Validation-Socratic-Value-Bridge (VSVB) v2.0",
+      "hypothesis": "By systematically replacing the general 'Connection' step with a targeted, gentle Socratic questioning about the *utility* or *evidence* of the negative thoughts, we will increase clinical depth and achieve a higher score than previous attempts, surpassing the 89.9 benchmark.",
+      "score": 36.75,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 2 (qwen3:4b)"
     }
   ],
   "best_score": 89.5
