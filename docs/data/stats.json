@@ -1859,6 +1859,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 2 (qwen3:4b)"
+    },
+    {
+      "exp_id": "exp_0054",
+      "strategy_name": "Empathic-Utility-Value Flow (EUVF) v3.0",
+      "hypothesis": "By adopting a conversational, narrative flow that integrates validation and utility questioning seamlessly, while removing overly restrictive word counts and avoiding third-person language, we can improve the perceived depth of the therapeutic relationship and increase the State Score, surpassing the 91.5 benchmark.",
+      "score": 53.5,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 2 (qwen3:4b)"
     }
   ],
   "best_score": 91.25
