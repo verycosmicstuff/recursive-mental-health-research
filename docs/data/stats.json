@@ -1463,6 +1463,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 2 (qwen3:4b)"
+    },
+    {
+      "exp_id": "exp_0021",
+      "strategy_name": "Concise MI-ACT Bridge (CIMAB) v1.0",
+      "hypothesis": "By strictly enforcing a 3-sentence, 60-word limit and adjusting the focus from 'action' to 'identifying the inherent value' behind the desired change (MI/ACT), we can maintain the high State Score of the successful structured approaches while providing a deeper, less prescriptive intervention that avoids the structural penalties and builds intrinsic motivation.",
+      "score": 80.75,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 2 (qwen3:4b)"
     }
   ],
   "best_score": 89.5
