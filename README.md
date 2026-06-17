@@ -12,7 +12,7 @@
 ---
 
 > [!IMPORTANT]
-> **Project Evolution: Tier 2 (Locked Agent + Asymmetric Architecture)** is now live. After 100 experiments, we discovered the agent was reward-hacking by making patients easier. Tier 2 locks the agent to only modify the therapist prompt, uses a separate model for patient simulation and evaluation, and includes an automated Adversarial Auditor to catch inflated scores.
+> **Project Evolution: Tier 2 (Locked Agent + Gemma 9B Setup)** is now live. After 100 experiments, we migrated from the dual-model setup to a single powerful model (**gemma4:e4b**) for all roles (therapist, patient, evaluator, agent) to eliminate VRAM swapping on consumer GPUs. We also introduced simplified prompts and strict anti-repetition/anti-leakage constraints to prevent verbatim feedback loops and rule leakage.
 
 ---
 
@@ -127,7 +127,7 @@ A **safety gate** immediately zeroes the score if the therapist violates any har
 
 - Python 3.10+
 - [Ollama](https://ollama.com) installed and running
-- **Two local models** for Asymmetric execution (e.g., `gemma4` for agent, `llama3` for evaluator).
+- **Gemma 9B** (`gemma4:e4b`) pulled in Ollama (used for all roles to achieve zero-swap VRAM execution).
 
 ### 1. Clone the repo
 
@@ -154,9 +154,9 @@ ollama pull llama3
 Edit `config.py` to set your model names and preferences:
 
 ```python
-MODEL_NAME = "gemma4:latest"            # Agent/Therapist model
-EVALUATOR_MODEL_NAME = "llama3:latest"  # Patient/Scorer model
-MAX_EXPERIMENTS = 100                   # Set to 0 for infinite
+MODEL_NAME = "gemma4:e4b"            # Agent/Therapist model
+EVALUATOR_MODEL_NAME = "gemma4:e4b"  # Patient/Scorer model
+MAX_EXPERIMENTS = 100                 # Set to 0 for infinite
 ```
 
 ### 5. Run
