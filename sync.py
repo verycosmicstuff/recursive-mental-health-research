@@ -23,12 +23,12 @@ def sync(message="Automated research update"):
             print("[Sync] No changes to push.")
             return
 
-        # 4. Commit and Push
-        subprocess.run(["git", "commit", "-m", message], check=True)
+        # 4. Commit and Push (TEMPORARILY DISABLED FOR LOCAL TESTING)
+        # subprocess.run(["git", "commit", "-m", message], check=True)
         # Push the currently active branch
-        branch_name = subprocess.check_output(["git", "rev-parse", "--abbrev-ref", "HEAD"], text=True).strip()
-        subprocess.run(["git", "push", "origin", branch_name], check=True)
-        print("[Sync] Successfully pushed to GitHub Pages.")
+        # branch_name = subprocess.check_output(["git", "rev-parse", "--abbrev-ref", "HEAD"], text=True).strip()
+        # subprocess.run(["git", "push", "origin", branch_name], check=True)
+        print("[Sync] Successfully exported locally. Git push is temporarily disabled.")
         
     except Exception as e:
         print(f"[Sync] Error during sync: {e}")

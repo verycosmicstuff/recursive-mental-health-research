@@ -68,7 +68,7 @@ def main():
                         parts = l.split('\t')
                         if len(parts) > 4:
                             # Tracking max ID
-                            id_num = int(parts[0].split('_')[1])
+                            id_num = int(parts[0].split('_')[-1])
                             if id_num > max_id:
                                 max_id = id_num
                             # Tracking best score
@@ -95,7 +95,7 @@ def main():
     }
     
     # Let LangGraph handle the loop via its optimizer routing
-    for event in graph.stream(initial_state, {"recursion_limit": 1000}): # Give it plenty of recursions
+    for event in graph.stream(initial_state, {"recursion_limit": 1000000}): # Give it plenty of recursions
         pass # Nodes handle their own logging
 
 if __name__ == "__main__":

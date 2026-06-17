@@ -41,6 +41,7 @@ def get_stats():
     if os.path.exists(config.RESULTS_FILE):
         try:
             df = pd.read_csv(config.RESULTS_FILE, sep='\t', encoding='utf-8')
+            df = df.fillna("")
             for _, row in df.iterrows():
                 score = float(row["score"])
                 experiments.append({

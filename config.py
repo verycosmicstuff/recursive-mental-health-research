@@ -17,7 +17,7 @@ EVALUATOR_BASE_URL = "http://localhost:11434/v1"
 EVALUATOR_API_KEY = "ollama"
 EVALUATOR_MODEL_NAME = "gemma4:e4b"   # Same model as agent — no swapping
 # ─── Experiment Settings ──────────────────────────────────────────────────────
-MAX_EXPERIMENTS       = 100         # Total iterations before auto-stopping (set to 0 for infinite)
+MAX_EXPERIMENTS       = 1000        # Total iterations before auto-stopping (set to 0 for infinite)
 EXPERIMENT_PAUSE_SECS = 2           # Brief pause between experiments
 
 # ─── Fixed LLM Parameters (not agent-tunable) ────────────────────────────────

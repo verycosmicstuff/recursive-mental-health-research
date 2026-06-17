@@ -1,5 +1,7 @@
 import json
 import time
+import datetime
+import os
 from typing import TypedDict, List, Dict, Any, Optional
 from langgraph.graph import StateGraph, END
 import harness
@@ -23,7 +25,7 @@ class GraphState(TypedDict):
 
 def init_node(state: GraphState) -> Dict[str, Any]:
     iteration = state.get("iteration", 1)
-    exp_id = f"exp_{iteration:04d}"
+    exp_id = f"exp_{datetime.datetime.now().strftime('%Y%m%d')}_{iteration:04d}"
     print(f"\n[{exp_id}] Starting Experiment...")
     
     strategy_info = state.get("strategy_info")
@@ -52,7 +54,6 @@ def init_node(state: GraphState) -> Dict[str, Any]:
         active_prompt = therapist.get_therapist_system_prompt()
         
         # Log baseline prompt to history if file is empty/new
-        import os, datetime
         history_file = os.path.join(config.BASE_DIR, "prompt_history.jsonl")
         if not os.path.exists(history_file):
             with open(history_file, "a", encoding="utf-8") as f:
