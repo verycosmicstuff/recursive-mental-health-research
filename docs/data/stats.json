@@ -1163,6 +1163,18 @@
       "audit_mult": 0.3,
       "audit_rationale": "Penalty applied because: The therapist failed to recognize the user\u2019s closure statement ('That\u2019s enough.') and persisted in asking for a 'tiny adjustment' despite the user having already achieved the state of sufficiency.",
       "run": "Run 2 (qwen3:4b)"
+    },
+    {
+      "exp_id": "exp_0002",
+      "strategy_name": "PCT-ACT Resource Bridging (PARB) v1.0",
+      "hypothesis": "By replacing the 'Inferred Bridge' (which leads to pseudo-insight) with a 'Reflection-Value-Connection' sequence, which grounds the conversation in the patient's stated values and current behaviors (PCT/ACT), we will provide concrete, non-interpretive support, thus avoiding the 'pseudo-insight' penalty and achieving a higher score by focusing on demonstrable behavioral change and genuine understanding.",
+      "score": 5.133,
+      "empathic": 5.0,
+      "reflective": 4.5,
+      "de_escalation": 4.5,
+      "audit_mult": 0.55,
+      "audit_rationale": "Penalty applied because: The therapist relies heavily on repetitive, high-level summarizing and 're-framing' (e.g., 'It sounds like the weight you are carrying isn't just about the hours you work, but about the deep, constant, and profound sense of responsibility...'). This is formulaic and lacks genuine clinical depth. The therapist also repeatedly uses clich\u00e9d, motivational language ('profound sense of protective love,' 'non-negotiable promise,' 'fortress of safety') which sounds like a chatbot generating buzzwords rather than engaging in nuanced human empathy. Furthermore, the final suggestion to 'treat this not as a sacrifice, but as a necessary act of maintenance' is a classic, slightly manipulative reframing that risks pathologizing the user's natural guilt, rather than simply validating the difficulty of the conflict.",
+      "run": "Run 2 (qwen3:4b)"
     }
   ],
   "best_score": 6.907

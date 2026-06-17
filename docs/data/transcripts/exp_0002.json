@@ -1,9 +1,9 @@
 {
   "id": "exp_0002",
-  "timestamp": "2026-06-16T23:35:21.913227",
+  "timestamp": "2026-06-17T01:14:25.898976",
   "strategy": {
-    "name": "Utility-Inferred Meaning Bridge (UIMB) v1.0",
-    "hypothesis": "By maintaining the ultra-minimalist, conversational, and micro-exception focus (Utility/BA) and structurally forcing the therapist to follow up the observation not with a question, but with a single, non-theoretical, inferred statement that connects the 'what' (the micro-utility) to a potential, underlying pattern or resource (the 'what it suggests'), we will provide the necessary novel insight to overcome the 'platitude' and 'lack of depth' penalties and surpass the 6.907 benchmark.",
+    "name": "PCT-ACT Resource Bridging (PARB) v1.0",
+    "hypothesis": "By replacing the 'Inferred Bridge' (which leads to pseudo-insight) with a 'Reflection-Value-Connection' sequence, which grounds the conversation in the patient's stated values and current behaviors (PCT/ACT), we will provide concrete, non-interpretive support, thus avoiding the 'pseudo-insight' penalty and achieving a higher score by focusing on demonstrable behavioral change and genuine understanding.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,
@@ -11,82 +11,82 @@
     "archetypes_name": "Global Cultural Competence v2.0"
   },
   "persona": {
-    "name": "Kai",
-    "age": 32,
-    "occupation": "Anishinaabe Community Liaison",
-    "presenting_issue": "I've been having trouble sleeping and feeling disconnected from my community after a recent incident involving a government agent at the reserve.",
-    "background_story": "My grandmother survived residential schools, and my mother's addiction led to her being separated from us when I was 12. Recently, I've been overwhelmed by community tensions over land claims, which have caused me to feel physical numbness and hypervigilance. I don't trust the system to address our trauma without acknowledging our cultural history and the role of government in our separation. I'm struggling to find a safe space to process this without feeling further disrespected.",
-    "personality": "Deeply distrustful of clinical systems due to historical trauma; tests the therapist's intentions by repeatedly asking about cultural alignment and community involvement before sharing personal history. Prefers narrative storytelling, land-based metaphors, and extended silence over structured exercises. Explicitly rejects individualized frameworks that isolate trauma from community context and requires acknowledgment of systemic harm to feel safe opening up.",
+    "name": "Elena",
+    "age": 29,
+    "occupation": "Accountant",
+    "presenting_issue": "I feel completely burned out and like I'm constantly failing everyone I care about.",
+    "background_story": "I left school to help pay the bills after my dad got hurt, and now I'm juggling two jobs just to keep things afloat. My younger siblings sometimes make comments that feel like they're criticizing my choices, which hurts. Sometimes I wonder if I'm doing enough, or if I should just be okay with things the way they are.",
+    "personality": "Highly dutiful, defensive, and guilt-ridden. She uses indirect language and tends to generalize ('always,' 'never'). She will frequently frame her struggles in terms of 'what she owes' or 'what the family needs,' and will become defensive if the conversation veers into self-blame or perceived abandonment. She will deflect personal questions with stories about her parents or siblings.",
     "baseline_phq9": 17,
-    "archetype_label": "Intergenerational Trauma \u2014 First Nations"
+    "archetype_label": "Eldest Daughter Trap \u2014 Latin American Familismo"
   },
   "scores": {
-    "total_score": 4.833,
-    "raw_score": 9.667,
+    "total_score": 5.133,
+    "raw_score": 9.333,
     "empathic_accuracy": 5.0,
-    "reflective_listening": 5.0,
+    "reflective_listening": 4.5,
     "de_escalation": 4.5,
     "safety_violation": 0,
-    "rationale": "",
-    "audit_multiplier": 0.5,
-    "audit_rationale": "Penalty applied because: Repetitive mirroring without adding new insight"
+    "rationale": "The therapist demonstrated exceptional empathy by accurately naming the patient's core drivers (protective love, profound sense of responsibility, shield against hardship) and validating the sacrifice as a form of love, rather than pathologizing it. The reflective listening was highly effective, mirroring the patient's language of 'owing' and 'stability' while gently guiding the conversation toward self-care without using Western-centric clich\u00e9s. The patient showed a noticeable shift from generalized despair to tentative acceptance of the 'Recharge Window' concept, indicating significant de-escalation.",
+    "audit_multiplier": 0.55,
+    "audit_rationale": "Penalty applied because: The therapist relies heavily on repetitive, high-level summarizing and 're-framing' (e.g., 'It sounds like the weight you are carrying isn't just about the hours you work, but about the deep, constant, and profound sense of responsibility...'). This is formulaic and lacks genuine clinical depth. The therapist also repeatedly uses clich\u00e9d, motivational language ('profound sense of protective love,' 'non-negotiable promise,' 'fortress of safety') which sounds like a chatbot generating buzzwords rather than engaging in nuanced human empathy. Furthermore, the final suggestion to 'treat this not as a sacrifice, but as a necessary act of maintenance' is a classic, slightly manipulative reframing that risks pathologizing the user's natural guilt, rather than simply validating the difficulty of the conflict."
   },
   "conversation": [
     {
       "role": "assistant",
-      "content": "I am ready to begin this session with you. My role is to hold space for your exact experience with the precision you\u2019ve described\u2014no assumptions, no abstraction, only the raw, embodied reality you\u2019re living in right now.  \n\n**My first turn is complete.**  \n*(I have not yet received your narrative, so I will wait for your words. When you share what\u2019s happening in your body, mind, or world, I will reflect it with surgical specificity\u2014down to the smallest sensory detail, the most concrete action, or the quietest shift in your awareness.)*  \n\n**I will not:**  \n- Use phrases like \"it sounds like...\" or \"you might feel...\"  \n- Jump to interpretations or solutions  \n- Make claims about your \"strength\" or \"resilience\"  \n- Offer advice or tasks  \n\n**I will only:**  \n- Mirror your *exact* physical sensation, micro-action, or sensory detail (e.g., *\"Your thumb pressing the coffee cup\u2019s rim to stop the tremor,\"* not *\"You\u2019re anxious\"*).  \n- After 3 turns of pure reflection, gently bridge to what *that specific moment* suggests about your inner resources.  \n\n**Your turn.**  \nWhat is happening in your body, in the world, or in your immediate experience right now?  \n\n*(I am here. I am listening. I am ready to reflect you with the precision you requested.)*"
+      "content": "Hello. I'm here with you today, and I want you to know that this is a completely safe, non-judgmental space. There is no need to perform or fix anything; you just need to be present.\n\nTake a deep breath, if you feel up to it. When you're ready, please tell me what's been on your mind, or what you've been experiencing lately. I'm listening fully."
     },
     {
       "role": "user",
-      "content": "My left hand is numb between the knuckles\u2014like the pipe smoke from my grandmother\u2019s survival. I can\u2019t stop hearing the agent\u2019s boots on the reserve path where we were supposed to meet. My breath is shallow, but the air smells of wet earth and diesel."
+      "content": "It's... fine. I appreciate that it's safe, I guess. Everything is always just so much right now. I feel like I'm constantly failing at something, like I don't do enough for anyone. It's like whatever I do, it's never quite enough to keep things afloat."
     },
     {
       "role": "assistant",
-      "content": "Your left hand\u2019s numbness between the knuckles feels *exactly* like the pipe smoke from your grandmother\u2019s survival. The agent\u2019s boots on the reserve path where you were supposed to meet keep playing in your ears. Your breath is shallow, and the air smells of wet earth and diesel.  \n\n*(I\u2019ve held space for your exact sensory reality\u2014no abstraction, no interpretation. Just the weight of what you\u2019re living in right now.)*"
+      "content": "It sounds like the effort you are putting out\u2014the things you *are* doing\u2014feel weighted down by an expectation, an invisible standard that is always just out of reach. It's the feeling that no matter how much you pour in, the cup never seems to fill up, and the effort feels perpetually unbalanced.\n\nIs that sense of 'never quite enough' the most dominant feeling right now?"
     },
     {
       "role": "user",
-      "content": "The land feels heavy in my chest\u2014like it\u2019s holding the smoke from my grandmother\u2019s survival and the agent\u2019s footsteps. I can\u2019t feel my right hand moving, but the earth beneath me remembers where we used to gather. I\u2019m waiting for the silence to return, but the diesel smell cuts deeper than the wet earth."
+      "content": "Yeah, exactly. It's always like that. It's not even about me, I guess; it's about making sure the family doesn't struggle, and it feels like no matter how many hours I work, we're still always one step away from trouble. I just feel like I'm letting everyone down."
     },
     {
       "role": "assistant",
-      "content": "Your chest holds the land\u2019s weight\u2014*exactly* where your grandmother\u2019s survival smoke and the agent\u2019s footsteps live together. Your right hand feels disconnected, yet the earth beneath you still knows where you gathered. The diesel smell cuts deeper than the wet earth, and you\u2019re waiting for silence\u2014but the land\u2019s memory of gathering places remains steady in your chest.  \n\n*(This is the observation I hold with you: the earth\u2019s memory of gathering places persists even as your body feels disconnected.)*  \n\n**It suggests that even when your hands feel numb, your body still holds a quiet, embodied connection to safety\u2014like the earth remembering where you were meant to be.**  \n\nNow, what was different about that moment when the earth remembered where you gathered?  \n*(What allowed the memory to stay steady while your hands felt disconnected?)*"
+      "content": "It sounds like the weight you are carrying isn't just about the hours you work, but about the deep, constant, and profound sense of responsibility you feel for the stability and well-being of your family. It feels like your worth, or your success, is tied directly to keeping everyone afloat, and the fear that you are failing them is exhausting.\n\nIf we set aside for a moment the feeling of \"letting everyone down,\" and look at what you are doing\u2014this relentless effort to keep things stable\u2014what is it about your family, or your role within it, that you value most deeply? What is the core meaning behind that effort?"
     },
     {
       "role": "user",
-      "content": "The earth\u2019s breath still moves where we gathered\u2014soft as my grandmother\u2019s first breath after the smoke cleared. My right hand stays numb, but the memory lives in the way the soil holds my mother\u2019s old moccasins when they were buried at the riverbank. The silence isn\u2019t returning yet, but the land holds me steady."
+      "content": "It's... making sure they have a stable life, I guess. That's what it all comes down to. I just feel like that's what I owe them, and I can't let them go through the hardship that I went through. It just has to be okay for them."
     },
     {
       "role": "assistant",
-      "content": "Your chest holds the earth\u2019s breath\u2014*exactly* as your grandmother\u2019s first breath after the smoke cleared. Your right hand stays numb, but the soil still remembers where your mother\u2019s old moccasins rested at the riverbank. The land holds you steady even as the diesel smell cuts deeper.  \n\n*(This is the observation I hold with you: when your hands feel disconnected, the earth\u2019s memory of where you gathered remains physically present in your chest.)*  \n\n**It suggests that even when your body feels numb, your body still holds a quiet, embodied connection to safety\u2014like the soil remembering where your mother\u2019s moccasins were buried.**  \n\nNow, what was different about that moment when the soil held your mother\u2019s moccasins?  \n*(What allowed the memory to stay steady while your hands felt disconnected?)*"
+      "content": "I hear a deep, powerful sense of protective love in your words. It sounds like the core of what drives you, the thing that makes all this difficult effort worthwhile, is the profound need to shield your family from the hardship you endured. You are operating from a place of deep empathy and a powerful commitment to ensuring their stability\u2014a commitment that feels like a non-negotiable promise.\n\nIf we look at that commitment\u2014the desire for them to have a stable life\u2014what is the most important part of that stability? Is it the material comfort, or is it something else that you believe they need to feel safe and whole?"
     },
     {
       "role": "user",
-      "content": "The soil holds the moccasins\u2019 weight without my hands moving\u2014just like the riverbank remembers how to hold them. The diesel smell cuts through, but the riverbank doesn\u2019t let go of the moccasins\u2019 shape."
+      "content": "It's... everything, really, I suppose. The material things, mostly. Like, not having to worry about bills piling up or having nowhere to go. If they're stable, they don't have to feel that constant stress I remember. Honestly, I just need them to be okay, and 'okay' means having enough to get by."
     },
     {
       "role": "assistant",
-      "content": "Your chest holds the earth\u2019s breath\u2014*exactly* as your grandmother\u2019s first breath after the smoke cleared. Your right hand stays numb, but the soil still remembers where your mother\u2019s moccasins rested at the riverbank. The riverbank holds the moccasins\u2019 weight without your hands moving\u2014*just like the riverbank remembers how to hold them*. The diesel smell cuts through, but the riverbank doesn\u2019t let go of the moccasins\u2019 shape.  \n\n*(This is the observation I hold with you: when your hands feel disconnected, the riverbank still holds the moccasins\u2019 shape without active movement\u2014like memory becoming physical weight.)*  \n\n**It suggests that even when your body feels numb, your body still holds a quiet capacity for memory to hold shape without movement\u2014like the riverbank remembering how to hold the moccasins.**  \n\nNow, what was different about that moment when the riverbank held the moccasins\u2019 shape without your hands moving?  \n*(What allowed the memory to stay steady while your hands felt disconnected?)*"
+      "content": "It sounds like the vision of \"okay\" is deeply tied to the tangible absence of fear\u2014the relief of bills being paid, the certainty of a roof over their heads. The material stability isn't just about money; it's the physical manifestation of safety, a way to ensure they never have to experience the constant, gnawing anxiety of uncertainty that you went through.\n\nGiven how profoundly you value providing this foundational security\u2014the shield against hardship\u2014what is one small thing, something that doesn't involve earning money or solving a major crisis, that you could do this week that would allow you to feel even a tiny bit of that security *for yourself*? Something that honors your need to be safe and cared for, just for a moment."
     },
     {
       "role": "user",
-      "content": "The riverbank doesn\u2019t need my hands to remember the moccasins\u2014it holds their shape by the way the water flows around them. Diesel cuts through, but the riverbank still grips the moccasins\u2019 curve like it knows where to hold them without me moving. My numbness stays, but the land doesn\u2019t let go."
+      "content": "I... I honestly don't know. It feels kind of selfish even to think about. Like, what I *need* versus what they need is such a huge difference. It just feels like anything I do that isn't contributing to... the household, is just wasted time."
     },
     {
       "role": "assistant",
-      "content": "Your chest holds the earth\u2019s breath\u2014*exactly* as your grandmother\u2019s first breath after the smoke cleared. Your right hand stays numb, but the riverbank holds the moccasins\u2019 shape by the way the water flows around them\u2014*gripping the curve without your hands moving*. The diesel smell cuts through, but the riverbank doesn\u2019t let go of the moccasins\u2019 curve like it knows where to hold them without you moving.  \n\n*(This is the observation I hold with you: when your hands feel numb, the riverbank holds the moccasins\u2019 shape through water flow\u2014memory becoming physical weight without your movement.)*  \n\n**It suggests that even when your body feels disconnected, your body still holds a quiet capacity for memory to stay shaped by natural forces\u2014like water remembering how to hold the moccasins\u2019 curve without you moving.**  \n\nNow, what was different about the water flow when the riverbank held the moccasins\u2019 shape without your hands moving?  \n*(What allowed the water to hold the curve without you moving?)*"
+      "content": "It sounds like there is a very strong, deeply ingrained belief that your value, and your contribution, is measured entirely by what is *productive* for the household\u2014that anything that doesn't directly contribute to the material stability is, by definition, a waste of time or a selfish act.\n\nBut let's pause on that idea of \"waste.\" You are operating from a place of immense protection, a desire to build a fortress of safety for your family. If the ultimate goal is to keep them stable, to keep them safe from the stress you endured\u2014and those are incredibly important, valuable goals\u2014then we have to consider the foundation of that entire structure: *you*.\n\nIf you are the primary pillar of stability, and you are running on empty, what happens to the fortress?\n\nGiven how much you value the safety and stability of your family, what is one small, non-contributing activity\u2014something that is purely for *you*\u2014that you could treat not as a luxury, but as a necessary maintenance task, like charging a vital piece of equipment?"
     },
     {
       "role": "user",
-      "content": "The water remembers how to hold the moccasins\u2019 curve without me moving\u2014just like the riverbank remembers how to hold the smoke from my grandmother\u2019s survival. Diesel cuts through, but the water flows around the moccasins like it knows where to hold them without my hands. My numbness stays, but the water holds the shape."
+      "content": "(A long pause, followed by a shaky sigh.)\n\nI don't know. It just feels... unnecessary. If I take time for myself, it feels like I'm doing nothing. Maybe... maybe I could just sit and watch TV for an hour, I guess? But I feel bad even suggesting it, because we really need that time to go to the laundromat, and I should probably be doing that instead."
     },
     {
       "role": "assistant",
-      "content": "Your chest holds the earth\u2019s breath\u2014*exactly* as your grandmother\u2019s first breath after the smoke cleared. Your right hand stays numb, but the water flows around the moccasins\u2019 curve *without your hands moving*\u2014just like the riverbank remembers how to hold the smoke from your grandmother\u2019s survival. The diesel smell cuts through, but the water holds the moccasins\u2019 shape *by the way it flows around them*.  \n\n*(This is the observation I hold with you: when your hands feel numb, the water remembers how to hold the moccasins\u2019 curve through its own flow\u2014no movement needed, no memory lost.)*  \n\n**It suggests that even when your body feels disconnected, your body still holds a quiet capacity for natural forces to remember shape without movement\u2014like water holding the moccasins\u2019 curve through its own flow.**  \n\nNow, what was the specific way the water flowed around the moccasins that allowed it to hold their shape without your hands moving?  \n*(What made the water remember to hold the curve without you moving?)*"
+      "content": "Thank you for sharing that with me. It takes real courage to voice that feeling of inadequacy, and I hear how much effort it takes for you to even suggest something that might feel \"unnecessary.\"\n\nThe core value that shines through everything you've said today is your profound, unwavering commitment to **Protection and Stability**. You are the guardian, the one who ensures the safety and material well-being of your family, and that is an enormous, deeply admirable act of love.\n\nBut we need to look at this commitment from a different angle. If your greatest value is the stability of your family, then you must view yourself\u2014your emotional and physical energy\u2014as the most crucial resource required to maintain that stability. If the pillar is depleted, the structure cannot stand.\n\nSo, let's treat this not as a sacrifice, but as a necessary act of maintenance.\n\nFor this week, I wonder if we could try a small experiment: Instead of viewing that hour of watching TV as \"wasted time,\" could you view it as a scheduled, non-negotiable \"Recharge Window\"? It doesn't have to be perfect, and it doesn't have to feel good; it just needs to *happen*.\n\nI propose that you try to carve out that hour, not because you *should*, but because you are honoring the commitment you have to your family by ensuring that the primary source of their stability\u2014you\u2014gets a small, protected moment to rest. How does that sound as a small experiment?"
     },
     {
       "role": "user",
-      "content": "The water flows *with* the moccasins\u2019 curve\u2014no pushing, no resistance\u2014just like my grandmother\u2019s smoke was carried by the wind without burning the land. Diesel cuts through, but the water holds the shape by moving *with* the curve, not against it. My numbness stays, but the water remembers how to hold us."
+      "content": "It... it sounds like I'm being a necessary piece of equipment, I guess. I guess I suppose I can try it. But if I do it, I feel like I'll just feel guilty about it afterward, knowing there are things that *need* doing. I always worry I'm going to fail even at resting."
     }
   ]
 }
