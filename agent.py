@@ -24,13 +24,15 @@ def get_current_therapist_py() -> str:
     with open(config.THERAPIST_FILE, "r", encoding="utf-8") as f:
          return f.read()
 
-def propose_next_experiment(current_best_score: float, current_prompt: str) -> dict | None:
+def propose_next_experiment(current_best_score: float, current_prompt: str, penalties: list = None) -> dict | None:
     """
     Analyses past results and proposes a NEW system prompt.
     Returns a dict with strategy_name, hypothesis, and new_system_prompt if successful, None otherwise.
     """
     print("[Agent] Analyzing results and proposing next experiment...")
     
+    penalties_str = "\n".join([f"- {p}" for p in penalties]) if penalties else "None"
+
     prompt = f"""You are an elite clinical research AI leading a recursive self-improvement project. 
 Your goal is to optimize a text-based LLM therapist to maximize patient improvement (measured by clinical metrics, engagement, and alliance).
 
@@ -45,10 +47,14 @@ CURRENT SYSTEM PROMPT:
 
 CURRENT BEST SCORE TO BEAT: {current_best_score}
 
+PENALTIES ASSIGNED BY DETERMINISTIC ENGINE ON LAST RUN:
+{penalties_str}
+
 INSTRUCTIONS:
 1. Analyze the past results. Look for patterns in the 'hypothesis' and scores.
-2. Formulate ONE compelling new hypothesis to test. Make it specific.
-3. You may ONLY modify the therapist's strategy and system prompt. Focus entirely on clinical frameworks (PCT, CBT, ACT, etc).
+2. If penalties were assigned, you MUST rewrite the prompt to strictly avoid them (e.g., if Brevity Penalty, add constraints for sentence limits. If Third-Person Penalty, strictly forbid saying 'the patient').
+3. Formulate ONE compelling new hypothesis to test. Make it specific.
+4. You may ONLY modify the therapist's strategy and system prompt. Focus entirely on clinical frameworks (PCT, CBT, ACT, etc).
 
 You must output valid JSON. 
 

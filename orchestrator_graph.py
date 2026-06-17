@@ -16,6 +16,7 @@ class GraphState(TypedDict):
     strategy_info: Dict[str, Any]
     active_prompt: str
     score: Optional[float]
+    penalties: List[str]
     iteration: int
     baseline_score: float
     exp_id: str
@@ -98,10 +99,10 @@ def patient_node(state: GraphState) -> Dict[str, Any]:
     messages = state.get("messages", [])
     persona = state.get("persona", {})
     
-    patient_msg = harness.get_patient_response(persona, messages)
-    new_message = {"role": "user", "content": patient_msg}
+    patient_msg, somatic_state = harness.get_patient_response(persona, messages)
+    new_message = {"role": "user", "content": patient_msg, "somatic_state": somatic_state}
     
-    print(f"[Patient ({config.EVALUATOR_MODEL_NAME})]: {patient_msg}\n")
+    print(f"[Patient ({config.EVALUATOR_MODEL_NAME})]: {patient_msg} (State: {somatic_state})\n")
     
     return {
         "messages": messages + [new_message]
@@ -117,10 +118,10 @@ def evaluator_node(state: GraphState) -> Dict[str, Any]:
     scores = harness.score_conversation(persona, messages)
     harness.save_experiment(exp_id, persona, messages, scores, strategy_info)
     
-    print(f"[{exp_id}] Finished! Score: {scores['total_score']} (Emp: {scores['empathic_accuracy']}, Refl: {scores['reflective_listening']}, De-esc: {scores['de_escalation']})")
+    print(f"[{exp_id}] Finished! Score: {scores['total_score']}")
     print(f"[{exp_id}] Rationale: {scores['rationale']}")
     
-    updates = {"score": scores['total_score']}
+    updates = {"score": scores['total_score'], "penalties": scores['rationale'].split(" | ")}
     
     if scores['total_score'] > baseline_score:
         print(f"[{exp_id}] NEW HIGH SCORE! {scores['total_score']} > {baseline_score}")
@@ -150,7 +151,7 @@ def optimizer_node(state: GraphState) -> Dict[str, Any]:
     print(f"Sleeping {config.EXPERIMENT_PAUSE_SECS} secs...")
     time.sleep(config.EXPERIMENT_PAUSE_SECS)
     
-    result = agent.propose_next_experiment(baseline_score, active_prompt)
+    result = agent.propose_next_experiment(baseline_score, active_prompt, state.get("penalties", []))
     
     if result:
         strategy_info = state.get("strategy_info", {}).copy()
