@@ -1571,6 +1571,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 2 (qwen3:4b)"
+    },
+    {
+      "exp_id": "exp_0030",
+      "strategy_name": "Empathic Validation-Socratic Defusion-Intrinsic Connection (EVS-IDC) v1.0",
+      "hypothesis": "By replacing the rigid 'Defusion Query' with an open-ended, gently guided Socratic Questioning technique that focuses on *evidence* (CBT) and refining the final step to a soft 'Intrinsic Invitation' (ACT), we will maintain the high structural score while significantly boosting the clinical delta and alliance scores, thereby surpassing the 89.5 benchmark.",
+      "score": 65.75,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 2 (qwen3:4b)"
     }
   ],
   "best_score": 89.5
