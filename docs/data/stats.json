@@ -1847,6 +1847,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 2 (qwen3:4b)"
+    },
+    {
+      "exp_id": "exp_0053",
+      "strategy_name": "Hyper-Concise Empathy-Utility-Values Loop (HEUVL) v1.0",
+      "hypothesis": "By enforcing a mandatory, highly constrained three-part structure (Ultra-Concise Empathy + Single Utility Question + Single Value Anchor), and limiting the total response to strictly under 60 words, we will maximize both the Therapeutic Alliance and the State Score by delivering maximum clinical depth in minimum space, aiming to surpass the 91.25 benchmark.",
+      "score": 53.5,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 2 (qwen3:4b)"
     }
   ],
   "best_score": 91.25
