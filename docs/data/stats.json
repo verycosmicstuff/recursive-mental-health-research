@@ -1835,6 +1835,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 2 (qwen3:4b)"
+    },
+    {
+      "exp_id": "exp_0052",
+      "strategy_name": "Hyper-Concise Empathy-Defusion-Utility (HCEDU) v1.0",
+      "hypothesis": "By enforcing a strict, ultra-concise three-part structure (Validation, Defusion, Utility Question) and limiting the total response to under 75 words, we will eliminate the Brevity/Length Penalty while maximizing the perceived depth of intervention, aiming to surpass the 91.25 benchmark.",
+      "score": 62.25,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 2 (qwen3:4b)"
     }
   ],
   "best_score": 91.25
