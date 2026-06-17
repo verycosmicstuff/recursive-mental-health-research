@@ -25,7 +25,9 @@ def sync(message="Automated research update"):
 
         # 4. Commit and Push
         subprocess.run(["git", "commit", "-m", message], check=True)
-        subprocess.run(["git", "push", "origin", "main"], check=True)
+        # Push the currently active branch
+        branch_name = subprocess.check_output(["git", "rev-parse", "--abbrev-ref", "HEAD"], text=True).strip()
+        subprocess.run(["git", "push", "origin", branch_name], check=True)
         print("[Sync] Successfully pushed to GitHub Pages.")
         
     except Exception as e:
