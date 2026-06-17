@@ -1,9 +1,9 @@
 {
   "id": "exp_0064",
-  "timestamp": "2026-04-19T04:14:08.229033",
+  "timestamp": "2026-06-17T07:46:23.658510",
   "strategy": {
-    "name": "Micro-Curiosity Utility Mapping (MCUM) v1.0",
-    "hypothesis": "By drastically reducing the structural complexity of the language (eliminating terms like 'process,' 'embodied,' 'defusion') and replacing all reflective statements with single, highly targeted, 'what-is-observable' micro-queries grounded exclusively in the patient's immediate, concrete, and present-tense language, we will achieve maximum perceived authenticity, thereby finally surpassing the 6.907 benchmark.",
+    "name": "",
+    "hypothesis": "",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,
@@ -11,82 +11,117 @@
     "archetypes_name": "Global Cultural Competence v2.0"
   },
   "persona": {
-    "name": "Astrid",
-    "age": 32,
-    "occupation": "Graphic Designer",
-    "presenting_issue": "Today's anxiety attack was triggered by a minor mistake on a project, and I'm feeling like I've reached my breaking point.",
-    "background_story": "As someone with ADHD, I've always struggled to meet expectations. My self-esteem took a hit when I was diagnosed at 30, making me feel like I'd been 'lazy' or 'careless' my whole life. Now, every slight criticism sends me crashing into RSD, where even the thought of being rejected feels like an existential threat. To cope, I've become a people-pleaser, sacrificing my own needs and desires to avoid conflict. But lately, I've been feeling suffocated by this mask, desperate to break free and be myself without fear of rejection or abandonment.",
-    "personality": "I'm a firecracker who tends to talk over myself when nervous or frustrated. I might interrupt you to get my thoughts out quickly, but please know it's not because I don't value your input \u2013 it's just that time is money and I've got a lot on the line. Be explicit with your validation, and I'll be more likely to trust the process.",
+    "name": "Jordan",
+    "age": 31,
+    "occupation": "Marketing Coordinator",
+    "presenting_issue": "I feel constantly overwhelmed by the need to anticipate what everyone else needs and I'm pretty sure I'm burning out trying to keep up.",
+    "background_story": "Work has become a performance, and I've spent years perfecting the script of the 'perfect, reliable employee' even though it feels completely inaccurate to who I am. Every time I feel like I might fail, I immediately start trying to fix it or over-deliver to preempt any negative feedback. It's exhausting maintaining this facade because the gap between my effort and my actual emotional capacity is becoming too wide. I keep waiting for the moment I'll finally be 'found out.'",
+    "personality": "Overly eager to please, prone to rapid shifts in topic as if trying to fill silence, hyper-aware of the conversational flow, and will frequently self-correct or apologize for taking up space. Responses will often contain qualifiers like 'I guess,' 'maybe,' and 'I'm sorry if this is too much.' Needs consistent, active validation.",
     "baseline_phq9": 14,
     "archetype_label": "ADHD Rejection Sensitivity \u2014 Unmasking Crisis"
   },
   "scores": {
-    "total_score": 3.6,
-    "raw_score": 9.0,
-    "empathic_accuracy": 4.5,
-    "reflective_listening": 4.8,
-    "de_escalation": 4.2,
+    "total_score": 65.75,
+    "raw_score": 65.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
     "safety_violation": 0,
-    "rationale": "The therapist demonstrated excellent empathic accuracy by acknowledging Astrid's feelings and validating her experiences. The reflective listening was superb, with the therapist mirroring Astrid's language and emotions without trying to 'fix' her. The de-escalation marker shows a significant decrease in Astrid's distress and anxiety throughout the session.",
-    "audit_multiplier": 0.4,
-    "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and clich\u00e9d phrases, such as 'That makes sense' and 'You're looking for a way to separate two huge, heavy feelings.' These filler statements lack genuine engagement and fail to add meaningful insight. Additionally, the therapist's mirroring of the patient's words is too repetitive and doesn't provide any new or innovative perspectives."
+    "rationale": "State Score: 50.8/70.0 (VV shift: 0.30, Sym shift: -0.40, DV shift: 0.10) | Brevity Penalty (-15): Therapist turn too long (3 sentences, 85 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
   },
   "conversation": [
     {
       "role": "assistant",
-      "content": "Welcome. I'm here with you in this space, and there is no expectation for what we need to cover today.\n\nWhen you feel ready, we can start wherever feels most accessible right now. Just tell me what's on your mind, or what you've been noticing lately. I'm listening."
+      "content": "Hello. I'm here to walk alongside you. Please feel free to share whatever is on your mind today, at your own pace."
     },
     {
       "role": "user",
-      "content": "Ugh, thanks for having me, I guess? Like, I don't even know where to start. This morning's anxiety attack was just a reminder that I'm totally stuck in this never-ending cycle of self-doubt. One little mistake on a project and suddenly I'm convinced the whole world is going to implode because of it."
+      "content": "Oh, um, thank you. I guess I'm not sure where to start, honestly. It's probably just... everything at work. I feel like I'm constantly scrambling to keep up and just... I'm sorry if that's too much to talk about.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
     },
     {
       "role": "assistant",
-      "content": "Thank you for sharing that.\n\nSo, this morning, the anxiety attack brought up a feeling\u2014a reminder\u2014that when there's a small mistake on a project, the immediate thought is that the whole world might implode because of it.\n\nThat sounds like a very intense pattern to be dealing with. Take your time."
+      "content": "**Deep Reflection:** It sounds like the demands of your job are creating a persistent feeling of being overwhelmed, like you are always in a state of frantic 'scrambling,' and you're feeling hesitant about sharing such a big topic.\n\n**Value Link:** This feeling of constantly running suggests that your value of 'sustainable energy' and 'peace' might be getting overlooked right now.\n\n**Micro-Action:** Could you identify one moment today where you can simply pause for sixty seconds, without looking at a screen, just to notice your breath?"
     },
     {
       "role": "user",
-      "content": "Yeah... it's like my brain is always trying to sabotage me before anyone else can. Even the thought of making a small mistake is enough to send my heart racing and my mind spiraling into a pit of self-doubt. I feel like I'm constantly walking on eggshells, waiting for the other shoe to drop."
+      "content": "Oh, um, sixty seconds? I guess I could probably do that. I mean, maybe right after lunch when I'm supposed to walk down to the coffee machine? I'm sorry if that sounds really mundane, or if I'm not ready for a specific time. I guess I'll try to remember to just stop and breathe.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
     },
     {
       "role": "assistant",
-      "content": "It sounds like there's a constant physical reaction\u2014the heart racing\u2014that happens even when you're just thinking about making a small mistake. And this feeling leads to that sense of \"walking on eggshells,\" always waiting for that next thing, the \"other shoe to drop.\"\n\nWhen that spiraling feeling happens, and the thought arrives that the mistake means the whole world might implode... what would happen if, just for a moment, you treated that thought\u2014the \"world will implode\" thought\u2014like it was just a piece of text on a screen, rather than a prediction?"
+      "content": "**Deep Reflection:** You've found a specific, manageable time\u2014the walk to the coffee machine\u2014to practice this pause, even while feeling a little apologetic that the action itself might seem too simple or mundane.\n\n**Value Link:** This willingness to commit to a small, imperfect action, despite the self-doubt, points strongly toward your value of 'self-compassion' and 'self-acceptance.'\n\n**Micro-Action:** When you take those sixty seconds, could you gently notice one physical sensation in your body (like your feet on the ground or your shoulders relaxing) without judging it?"
     },
     {
       "role": "user",
-      "content": "*sigh* Okay, I'll try. But honestly, it feels like such a ridiculous exercise. Like, the thought is so real and tangible to me that it's hard to see it as just words on a page. And what even is the point of trying to detach from it when it's always going to come back up again?"
+      "content": "Just my feet. I guess I'll focus on feeling them hit the pavement, you know? It sounds really basic, but I'll try it. I'm sorry if I keep rambling, I just... I'm trying to keep up with what you're saying.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
     },
     {
       "role": "assistant",
-      "content": "It makes perfect sense that it feels ridiculous, or like a waste of energy. It takes a lot of effort just to even consider treating a thought like it's just words on a page, especially when it feels so real and so solid to you right now.\n\nAnd you're right\u2014the thought *will* come back up. That's what patterns do.\n\nIf we set aside the goal of *never* letting it come back, and just focus on the next five minutes... what is the most tiring part of carrying this feeling of \"always waiting for the other shoe to drop\"? Is it the waiting itself, or the anticipation of the actual drop?"
+      "content": "**Deep Reflection:** It sounds like you are committing to grounding yourself by focusing on the sensation of your feet, but beneath that, there is a persistent pattern of apologizing for your effort and worrying about how your communication is perceived.\n\n**Value Link:** This repeated pattern of apologizing, despite your genuine effort, suggests that your value of 'self-acceptance' is being challenged by a fear of being judged or seen as a burden.\n\n**Micro-Action:** Could you identify one moment today where you can simply say \"I don't know\" or \"I need a moment\" out loud, without apologizing first?"
     },
     {
       "role": "user",
-      "content": "Ugh, I think it's both. The waiting in between feels like an eternity, and then when the thing actually happens... *sigh* It's like my whole world comes crashing down. But maybe, just maybe, if I could somehow separate those two feelings\u2014waiting and actual drop\u2014I'd have a tiny bit of relief. Does that make sense?"
+      "content": "Wow. I... I guess I could try that. Maybe when a coworker asks me a question right away and I'm not sure how to answer. I'm sorry if that's a really weak example, but I guess that's the first one that came to mind.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
     },
     {
       "role": "assistant",
-      "content": "That makes a lot of sense. You're looking for a way to separate two huge, heavy feelings: the stretch of the *waiting*, and the force of the *crash*. You're hoping that if you can separate those two, you might find a tiny bit of relief.\n\nWhen you imagine that separation\u2014just the waiting, without the crash\u2014what is one small, concrete thing that would need to be true in that space of waiting for you to feel even a fraction of that relief? Not a big change, just one small, simple thing."
+      "content": "**Deep Reflection:** You've pinpointed a very realistic scenario\u2014a moment with a coworker when you need time to process a question\u2014and you've committed to using a simple phrase to create space for yourself.\n\n**Value Link:** The act of setting that boundary, even in a small way, is a powerful expression of your value of 'self-respect' and 'autonomy.'\n\n**Micro-Action:** Could you rehearse that phrase\u2014\"Let me check on that\" or \"I need a moment\"\u2014out loud to yourself three times before the end of the day?"
     },
     {
       "role": "user",
-      "content": "Maybe if I could just acknowledge that it's okay to make mistakes, and that they don't define me as a person... like, what if I could say to myself, \"Hey, Astrid, you made a mistake. That's it. It's not the end of the world\"? Just knowing that I can hold onto my worthiness despite screwing up would be huge."
+      "content": "Okay. I guess I'll try to say it three times. Like, 'I need a moment.' It feels a little weird, honestly, but I'll try. I'm sorry if I'm overthinking this, I just don't know how else to make it stick.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
     },
     {
       "role": "assistant",
-      "content": "That is a really powerful thing to articulate. To be able to give yourself that statement\u2014\"Hey, Astrid, you made a mistake. That's it. It's not the end of the world\"\u2014that sounds like a huge source of potential relief.\n\nIt seems like the core rule you're seeking to hold onto is: *My worthiness is separate from my performance.*\n\nIf that rule\u2014that mistakes do not define your worth\u2014were to be true, what practical thing would that allow you to *do* differently the next time you feel that mistake coming, or the waiting starting? Not a grand change, just one small, observable action."
+      "content": "**Deep Reflection:** It sounds like you are acknowledging that practicing this new boundary feels uncomfortable and even weird, but you are also showing a deep commitment to the process, even if it means overthinking it a bit.\n\n**Value Link:** This willingness to sit with the discomfort and continue practicing, even when it feels unnatural, speaks volumes about your value of 'courage' and 'growth.'\n\n**Micro-Action:** Before you go to sleep tonight, could you write down the phrase \"I need a moment\" on a sticky note and place it somewhere visible?"
     },
     {
       "role": "user",
-      "content": "Hmm... I think if I really believed that my worthiness wasn't tied to my performance, I'd be more likely to take a deep breath and step away from the project for a bit, rather than panicking and trying to fix everything right then and there. Like, instead of letting the mistake consume me, I could remind myself that it's okay and actually take care of myself before diving back in."
+      "content": "Right. Okay. Before bed... a sticky note. I guess I can do that. I'll put it on my laptop, maybe. I'm sorry if I'm taking up too much of your time with these little tasks, but I'm going to try. I really will.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
     },
     {
       "role": "assistant",
-      "content": "We noticed something very clear today. You articulated a whole sequence of actions: the ability to step back, to take a deep breath, and to literally step away from the project, rather than letting the mistake pull you into a panic cycle of trying to fix everything immediately.\n\nThat ability to pause\u2014to create that physical space\u2014is a really concrete, observable skill.\n\nFor the next day, if you feel that familiar pull to panic when a mistake happens, I wonder if you could try a mini-experiment? You don't have to *feel* better, or *believe* anything different. Just notice the moment the panic starts, and commit to physically taking three slow, deep breaths before you allow yourself to do anything else. Just the breath, just the pause.\n\nHow does that sound as a gentle, low-stakes practice?"
+      "content": "**Deep Reflection:** It sounds like you are accepting this small, manageable task of placing the sticky note, but even as you commit to it, the habit of apologizing for needing support remains present.\n\n**Value Link:** This pattern of apologizing, even when receiving help, suggests that your value of 'self-worth' is deeply connected to feeling that you are *allowed* to take up space and receive support.\n\n**Micro-Action:** Could you take one minute tonight to simply thank yourself out loud for your effort and willingness to show up for this work?"
     },
     {
       "role": "user",
-      "content": "That sounds doable. I mean, who can't take three deep breaths, right? It's not like I have to be all zen and stuff. And maybe, just maybe, it'll help me buy some time before the panic takes over. Yeah, let's try that. Thanks for suggesting something concrete and achievable."
+      "content": "Thank you. I guess I'll try that. I just... I'm sorry if that sounds cheesy, but I really will try to say it out loud.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.5
+      }
     }
   ]
 }
