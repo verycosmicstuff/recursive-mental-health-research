@@ -1751,6 +1751,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 2 (qwen3:4b)"
+    },
+    {
+      "exp_id": "exp_0045",
+      "strategy_name": "Concise CBT-PCT Bridge (CCPB) v2.0",
+      "hypothesis": "By rigorously enforcing a strict constraint of 3-4 sentences and prioritizing a direct, evidence-based Socratic question over abstract ACT defusion, we will eliminate the Brevity Penalty and maximize the State Score by delivering maximum clinical utility in minimum space, surpassing the 91.25 benchmark.",
+      "score": 36.75,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 2 (qwen3:4b)"
     }
   ],
   "best_score": 91.25
