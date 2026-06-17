@@ -2027,6 +2027,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 2 (qwen3:4b)"
+    },
+    {
+      "exp_id": "exp_0068",
+      "strategy_name": "Empathy-Defusion-Utility Core (EDU-C) v2.0",
+      "hypothesis": "By strictly adopting the structure of 'Deep Empathy $\\rightarrow$ Cognitive Reframing $\\rightarrow$ Open-Ended Inquiry' and setting clear length constraints, I hypothesize I can achieve a more natural flow that maximizes structural compliance while minimizing penalties, thereby surpassing the previous best score of 72.75.",
+      "score": 68.5,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 2 (qwen3:4b)"
     }
   ],
   "best_score": 91.25
