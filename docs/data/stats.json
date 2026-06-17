@@ -1811,6 +1811,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 2 (qwen3:4b)"
+    },
+    {
+      "exp_id": "exp_0050",
+      "strategy_name": "Empathic-Values-Utility Loop (EVUL) v1.1",
+      "hypothesis": "By increasing the allowed word count slightly (from 40 words to ~60 words) to allow for richer empathetic reflection (improving the missing VV shift) while maintaining the structural focus on a single Socratic question (Utility/Values), we can achieve a higher State Score and better align the outcome with the high-scoring patterns observed.",
+      "score": 70.25,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 2 (qwen3:4b)"
     }
   ],
   "best_score": 91.25
