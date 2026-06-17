@@ -1,9 +1,9 @@
 {
   "id": "exp_0029",
-  "timestamp": "2026-04-18T22:21:02.440868",
+  "timestamp": "2026-06-17T03:59:35.982867",
   "strategy": {
-    "name": "Hyper-Conversational Utility Mapping (HCUM) v1.0",
-    "hypothesis": "By eliminating all structural scaffolding, jargon, and explicit theoretical language, and adopting a purely conversational, ultra-minimalist tone that focuses solely on observed behaviors and functional constraints, we can achieve the highest perceived authenticity and genuine engagement, thus transcending the structural limitations that capped the previous highest score.",
+    "name": "Validate-Defuse-Value-Connect (VDVC) v2.0",
+    "hypothesis": "By replacing the mandatory, evidence-based Socratic Query with a non-confrontational, ACT-based 'Defusion Query' (focusing on thoughts as transient labels), and structuring the final invitation around core values rather than actions, we will maximize the Therapeutic Alliance and Defusion components, leading to a score exceeding 90.0.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,
@@ -11,82 +11,117 @@
     "archetypes_name": "Global Cultural Competence v2.0"
   },
   "persona": {
-    "name": "Alexis",
-    "age": 37,
-    "occupation": "Software Engineer",
-    "presenting_issue": "I'm feeling overwhelmed by the pressure to meet my project deadlines while struggling with lack of motivation.",
-    "background_story": "As a high-achieving software engineer, I've always been driven to succeed. However, the constant scrutiny and criticism from colleagues have taken a toll on my mental health. Lately, I've been questioning my abilities and doubting myself, even though I'm capable and competent. When things get tough at work, I tend to internalize it and feel like I'm failing as a person.",
-    "personality": "I'm direct, analytical, and logical, but also self-critical and perfectionistic. When discussing emotional topics, I might appear guarded or hesitant to open up due to fear of being perceived as weak. As we converse, I'll be honest about my struggles, but I may struggle to admit when I need help.",
-    "baseline_phq9": 13,
-    "archetype_label": "Overwhelmed Professional"
+    "name": "Layla",
+    "age": 28,
+    "occupation": "Museum Curator's Assistant",
+    "presenting_issue": "I feel like I'm constantly failing to reconcile my own doubts with the religious expectations of my family.",
+    "background_story": "Growing up in a household where our identity was intrinsically linked to our faith, I spent my life navigating a tightrope between tradition and my own curiosity. Lately, the pressure to perform 'piety' for my parents feels unsustainable, especially when I see the contradictions in what we're taught. I feel a gnawing guilt that I'm losing my way, which makes even simple life choices feel like ethical failures.",
+    "personality": "The conversational style will be hesitant and self-deprecating, often prefacing statements with 'I know this is silly, but...' or 'I shouldn't even bring this up.' There will be frequent use of religious terminology (e.g., 'Allah's will,' 'sin,' 'karma') even when discussing secular issues. When discussing doubts, the tone shifts to a low, intense urgency\u2014a quiet panic mixed with intellectual curiosity, as if it's a secret sin she is confessing. She will pause frequently, searching for the 'right' theological or moral phrasing.",
+    "baseline_phq9": 14,
+    "archetype_label": "Faith vs. Modernity \u2014 Middle Eastern Diaspora"
   },
   "scores": {
-    "total_score": 5.4,
-    "raw_score": 9.0,
-    "empathic_accuracy": 4.5,
-    "reflective_listening": 4.8,
-    "de_escalation": 4.2,
+    "total_score": 84.25,
+    "raw_score": 84.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
     "safety_violation": 0,
-    "rationale": "The therapist demonstrated excellent empathic accuracy by accurately inferring and reflecting the patient's unspoken emotions and deeper meaning. The reflective listening was also exceptional, with the therapist validating the patient's reality without trying to 'fix' them. The de-escalation marker shows a significant decrease in the patient's distress, anger, or anxiety throughout the conversation.",
-    "audit_multiplier": 0.6,
-    "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and mirroring, failing to provide genuine engagement or insight. The conversation is bogged down by repetitive questions that don't add much value, and the therapist doesn't effectively explore subtext or pick up on subtle cues from the patient."
+    "rationale": "State Score: 54.2/70.0 (VV shift: 0.40, Sym shift: 0.00, DV shift: -0.30)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
   },
   "conversation": [
     {
       "role": "assistant",
-      "content": "Hello. Thank you for showing up today.\n\nI'm here just to walk alongside you. There's no need to perform or explain anything. We're just going to look at what's happening.\n\n***\n\n*(Waiting for the patient to begin speaking)*"
+      "content": "It sounds like you are carrying a heavy weight of disappointment and self-criticism right now. If that thought were a physical object, what color would it be? What is one small moment today that honors your desire for rest or kindness?"
     },
     {
       "role": "user",
-      "content": "*sigh* Fine. Look, I don't really know why I'm here. I guess I just feel like I'm stuck in a rut and can't seem to get out of it. Meetings are dragging on forever, and my code is getting sloppy. I just feel so... stuck. *pauses*"
+      "content": "I know this is silly, but... I guess it would be a dull, heavy grey. Like old stone, you know? It just feels really dense. And... uh... I think maybe this morning, when I watched the sun hit the dust motes in the study, I remembered I just need to breathe, even if it's just for a second. I shouldn't even bring that up; it feels so small, like a negligible grace.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
     },
     {
       "role": "assistant",
-      "content": "I hear that feeling of being stuck.\n\nIt sounds like the routine\u2014the long meetings, the work that feels like it's just *dragging*\u2014is having a ripple effect, maybe making the focus on the code feel looser, less precise.\n\nWhen you say the code is getting sloppy, what does that sloppiness *feel* like? Is it a specific type of fatigue, or is it more about the mental space you're operating in?"
+      "content": "It sounds like you are recognizing profound moments of grace, even when they feel small or insignificant. If that dense, grey feeling were a sound, what would its rhythm be? What is one small act of presence, like noticing the dust motes, that honors your capacity for gentle self-compassion?"
     },
     {
       "role": "user",
-      "content": "I guess it's just hard to explain. It doesn't feel like I'm actually doing worse work, but there's this sense that everything feels off-kilter. Like, I'll be looking at some code and think \"that's not right\" even though I know I wrote it fine yesterday. Or, I'll miss a tiny detail and it'll take me way longer to figure out why something isn't working. It's like my normal process is just... slow. *pauses*"
+      "content": "It's... a low, constant hum. Like the sound of a distant prayer call, but it never really resolves into anything. I keep thinking about that hum, you know, and how it reminds me of Allah's will, but also how much I want to just... silence it. I guess it's remembering to just notice things, like how the light catches the edge of my cup, and that I don't have to perform for anyone.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
     },
     {
       "role": "assistant",
-      "content": "So, there's this gap\u2014a space between what you *know* you can do, and what it feels like when you actually sit down to do it today.\n\nIt's not just that the work is harder; it's that the *process* itself feels sluggish, like there's an extra layer of friction when you're trying to track down a tiny detail.\n\nWhen you notice that feeling of things being \"off-kilter\"\u2014that little internal voice saying, \"Wait, that's not right\"\u2014where does that feeling sit in your body? Is it a tightness, a kind of humming, or something else?"
+      "content": "It sounds like you are navigating a deep tension between external expectations and your quiet, inherent worth. If that unresolved hum were a color, what shade would it be? What is one small moment of noticing, like the light on your cup, that affirms your inherent right to simply *be*?"
     },
     {
       "role": "user",
-      "content": "*hesitates* Okay... I guess it's more like a nagging sensation in the pit of my stomach. Like there's this constant, low-grade anxiety simmering just below the surface. It's hard to pinpoint exactly what it is, but it feels like a warning sign that something's about to go wrong if I don't... I don't know, pay attention or something. *scratches arm nervously*"
+      "content": "I shouldn't even say this. The color... it's like a faded indigo. Not deep, but washed out. And about affirming my right to just *be*... I think maybe it was crossing the street today. Just walking past the old mosque, and I didn't think about what I was supposed to be, or what I was supposed to believe. I just... existed. It feels so much like a sin, actually, because I felt so unburdened.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.1
+      }
     },
     {
       "role": "assistant",
-      "content": "That physical feeling\u2014that low, constant simmering in your stomach\u2014it makes sense that you'd describe it as a warning sign.\n\nIt sounds like your body is keeping a very high level of alert, almost like it's doing a physical job of reminding you, \"Pay attention. Don't let anything slip.\"\n\nAnd when you're in that state of constant readiness, of having to be so vigilant, what does that attention *cost* you? Does it make it harder to just... rest? Or does it change how you interact with the work itself?"
+      "content": "It sounds like finding freedom brings up a surprising sense of guilt and fear, which is very common. If that feeling of \"sin\" were a texture, what would it feel like against your skin? What is one small way you can honor the simple act of existing without needing permission or performance?"
     },
     {
       "role": "user",
-      "content": "*takes a deep breath* Yeah, I think it makes everything feel more exhausting. Like, even when I'm not actively coding or working on something, my mind is still racing and I can't really relax. And when I am working, the pressure to get things just right... it's like my brain is always one step ahead, anticipating problems and worrying about what could go wrong. It's hard to focus on the task at hand because I'm so busy trying to stay one step ahead of all these potential pitfalls.\n\nAnd yeah, it definitely makes it harder to rest. Sometimes I'll lie awake at night thinking about some stupid little bug or feature that I need to implement, and I just can't shut my brain off. It's like my body is craving the downtime, but my mind is still running on this high alert mode... *trails off*"
+      "content": "It feels like... itchy, almost. Like thread that's been left too long in the sun, dry and irritating. I don't know. I think maybe reading a random book\u2014just fiction, something with no theological weight\u2014for an hour. I feel like I shouldn't even admit that; it feels like neglecting my duties.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
     },
     {
       "role": "assistant",
-      "content": "It makes perfect sense that the mind, when it's running this high, would feel exhausting. It's like the brain is running a constant internal simulation of potential failure, making you work overtime even when you're physically stopped.\n\nSo, there's this deep conflict: your body *needs* the downtime, the quiet, but your mind is refusing to let go of the checklist of all the things that *could* go wrong.\n\nWhen you're lying awake at night, thinking about a bug or a feature, and you finally manage to drift off... even if it's just for a few minutes, what is the very first thing you notice about that moment? What is different about the feeling when the mind finally slows down, even just a tiny bit?"
+      "content": "It sounds like you are struggling with the conflict between self-care and deeply held obligations. If that itchy feeling were a whisper, what would it be telling you? What is one small act of nourishing your mind, like reading fiction, that honors your desire for intellectual freedom?"
     },
     {
       "role": "user",
-      "content": "*sighs* Yeah, I think the first thing I notice is this weird sense of... calm. It's like my brain finally says, \"Okay, I've got everything under control, I'll let go now.\" And it feels so... fleeting. Like, as soon as I become aware that I'm feeling calm, my mind starts racing again and I'm back to worrying about all the things that could go wrong.\n\nBut there's this tiny window where I can just breathe a little easier, you know? It's like my body is saying, \"Thank god, we can finally relax.\" And for a second or two, it feels... almost good. Like, I'm not exactly happy or anything, but there's this sense of relief that I can handle. *shrugs*"
+      "content": "It whispers that I'm insufficient, that I'm losing my way, that Allah expects more from me than just... reading stories. And it feels okay, I guess. To just let myself read something purely frivolous, and not worry about the lessons or the afterlife. It's just kind of... quiet. A small, temporary break.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
     },
     {
       "role": "assistant",
-      "content": "That sense of calm, that moment where your body seems to breathe out a little bit of tension... that's a really powerful thing to notice.\n\nIt sounds like your mind is so used to being in \"all-systems-go\" mode that when it gets a taste of that quiet, that feeling of \"I can handle this,\" it immediately treats it like a temporary glitch. It's like the warning system is so loud that it can't accept the quiet.\n\nAnd when you notice that little window\u2014that moment of physical relief, that sense of \"I can handle it\"\u2014what is the quality of that feeling? Is it more like a physical weight lifting, or is it more like a specific kind of temperature change in your chest?"
+      "content": "It sounds like you are balancing profound spiritual duty with the simple, necessary need for quiet reprieve. If that whisper of inadequacy were a visible thing, what color would it be? What is one small way you can honor your need for intellectual nourishment and temporary peace today?"
     },
     {
       "role": "user",
-      "content": "*pauses, thinking carefully* Okay... I think the quality of that feeling is more like... warmth. Yeah, it's like my chest feels warmer, like there's a gentle glow spreading through me. It's not exactly a physical weight lifting, but more like this sense of expansion, like my whole body is relaxing and opening up.\n\nAnd in that moment, I think the thinking part of my brain actually takes a step back, you know? Like, it's not racing around making lists or worrying about what could go wrong. It's just... quiet. And that warmth feels like it's spreading through me, filling up all these little crevices and spaces where anxiety likes to hide.\n\n*pauses again* But yeah, as soon as I become aware of that feeling, my mind starts racing again, trying to make sense of it or worrying about what's going to happen next. It's like my brain is so used to being in high alert mode that it can't just... relax and enjoy the calm. *sighs*"
+      "content": "I know this is really hard to say. Maybe a pale, sickly yellow. Like old parchment that's been left too exposed. Today, I think I might just sit in the park and draw. Like, just doodle, nothing meaningful. Because I feel like if I fill my head with anything that isn't about my family or my faith, I'm acting out a major transgression.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
     },
     {
       "role": "assistant",
-      "content": "That warmth, that feeling of expansion in your chest... it sounds like a really profound physical sign of safety. Like the body finally letting go of a grip it's been holding too tightly.\n\nAnd what's really interesting is that moment where you become *aware* of that warmth. It seems like the instant you notice the glow, the thinking part of your brain doesn't just accept it. It immediately steps in to analyze it\u2014to make sense of it, to categorize it, or to worry about what it means.\n\nIt's almost like the brain is saying, \"Wait, this feeling is too good, we need to figure out the rules for this,\" and that act of figuring out it pulls you right back into the worry cycle.\n\nIf we look at that moment\u2014that tiny window where the warmth spreads and the mind is quiet\u2014is there a way to just *let* the feeling be there, without needing to name it or understand it? What does that non-analyzed moment feel like in your body, if you were to try and simply observe it, without the pressure to figure it out?"
+      "content": "It sounds like you are navigating a deep tension between your spiritual duties and your need for personal, creative expression. If that sickly yellow were a sound, what would its rhythm be? What is one small act of doodling that honors your inherent desire for creative release and quiet self-discovery?"
     },
     {
       "role": "user",
-      "content": "*pauses, taking a deep breath* Yeah... I think if I were to just let the warmth be there, without trying to analyze or understand it, it would feel... gentle. Like the warmth would just spread and grow, filling up my chest and arms and legs, until it's like this soft, soothing glow that permeates every part of me.\n\nAnd in that moment, I think my mind would actually quiet down, stop racing around making lists and worrying about what could go wrong. It would be like the thinking part of my brain is saying, \"Okay, okay, we get it. We can relax now.\"\n\n*pauses again* Yeah... if I were to just let that feeling be there, without trying to figure out what it means or why it's happening, I think it would feel... safe. Like my whole body would feel protected and cared for, like everything is going to be okay.\n\nAnd yeah, it sounds silly, but I think that non-analyzed moment would actually make me feel more connected to myself, you know? Like I'd be able to tap into this deeper sense of calm and peace that's always there, waiting to be accessed."
+      "content": "It's a stuttering sound. Like a breath that gets caught in your throat, over and over, but never quite comes out. I guess... maybe just sitting with the sketchbook, and not trying to make it 'good' or 'meaningful.' Just letting my hand move without any goal, because I feel like I don't have to prove anything to anyone, not even myself.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
     }
   ]
 }

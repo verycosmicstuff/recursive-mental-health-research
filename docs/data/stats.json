@@ -1559,6 +1559,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 2 (qwen3:4b)"
+    },
+    {
+      "exp_id": "exp_0029",
+      "strategy_name": "Validate-Defuse-Value-Connect (VDVC) v2.0",
+      "hypothesis": "By replacing the mandatory, evidence-based Socratic Query with a non-confrontational, ACT-based 'Defusion Query' (focusing on thoughts as transient labels), and structuring the final invitation around core values rather than actions, we will maximize the Therapeutic Alliance and Defusion components, leading to a score exceeding 90.0.",
+      "score": 84.25,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 2 (qwen3:4b)"
     }
   ],
   "best_score": 89.5
