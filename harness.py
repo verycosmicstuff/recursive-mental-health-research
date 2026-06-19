@@ -98,6 +98,10 @@ def chat_completion(messages, temperature=0.7, json_format=False, tools=None, us
     else:
         kwargs["timeout"] = 300 # Generous timeout for local reasoning models
         
+    base_url_str = str(active_client.base_url)
+    if "localhost" in base_url_str or "127.0.0.1" in base_url_str:
+        kwargs["extra_body"] = {"options": {"num_ctx": 4096}}
+        
     if tools:
         kwargs["tools"] = tools
         
@@ -125,6 +129,10 @@ def chat_completion_parse(messages, response_format, temperature=0.7, use_evalua
         "response_format": response_format,
         "timeout": 300
     }
+    
+    base_url_str = str(active_client.base_url)
+    if "localhost" in base_url_str or "127.0.0.1" in base_url_str:
+        kwargs["extra_body"] = {"options": {"num_ctx": 4096}}
     
     if not use_evaluator:
         with _LLM_LOCK:

@@ -5,14 +5,14 @@
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Ollama](https://img.shields.io/badge/Runs%20on-Ollama-black?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
-![Status](https://img.shields.io/badge/Status-Run%202%3A%20Tier%204%20Active-blue?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Run%203%3A%20Tier%205%20Active-blue?style=flat-square)
 
 **[📊 Live Public Dashboard](https://verycosmicstuff.github.io/recursive-mental-health-research/)** — Browse experiment results, score charts, and full AI therapy transcripts.
 
 ---
 
 > [!IMPORTANT]
-> **Project Evolution: Tier 4 (LangGraph Orchestration)** is now live! We've migrated from a raw procedural `while True` loop to a robust, state-based **Multi-Agent Architecture using LangGraph**. Prompts are now cleanly managed in graph memory, eliminating syntax errors while maintaining a strict single-thread lock to protect VRAM.
+> **Project Evolution: Tier 5 (Constrained Decoding & Native Tools)** is now live! We've upgraded from standard JSON mode to **grammar-enforced Pydantic schemas** via `client.beta.chat.completions.parse()`, integrated **native OpenAI-style tool calling** for patient somatic state updates, activated Gemma 4's native `<|think|>` token, and implemented automated thought sanitization from LangGraph state.
 
 ---
 
@@ -100,7 +100,7 @@ The project includes a full live web dashboard to monitor your research loop in 
 | **🧬 Strategy Evolution** | A dynamic timeline visualizing each experiment's Strategy Name, Agent Hypothesis, and expandable diff view of exact prompt changes |
 | **📚 Methodology** | Explains clinical frameworks (PCT, ACT, CBT, Socratic), somatic state mapping, scoring metrics, and research goals |
 
-🛡️ **Adversarial Auditor:** Experiments scoring highly (>7.0) automatically trigger a skeptical second-pass evaluation. The Auditor applies a penalty multiplier to catch inflated scores from generic platitudes or reward hacking — no manual review needed.
+🛡️ **Adversarial Auditor (Run 2):** In Run 2, experiments scoring highly (>7.0) triggered a skeptical second-pass evaluation to apply a penalty multiplier and catch reward hacking. In Run 3, this has been superseded by the deterministic somatic and linguistic scoring engine.
 
 ### Pause / Resume
 Click the **⏸ Pause Engine** button at any time. The system freezes *mid-conversation* (between turns), dropping GPU usage to 0% within seconds. Click **▶ Resume Engine** to continue exactly where it left off.
@@ -157,8 +157,10 @@ dashboard.py  ──► Flask server on localhost:5000
 | `config.py` | Model configuration: `MODEL_NAME` (Agent/Therapist) and `EVALUATOR_MODEL_NAME` (Patient/Scorer) |
 | `program.md` | Human-readable research goals and constraints for the Agent |
 | `prompt_history.jsonl` | Append-only history of every system prompt proposed by the agent |
-| `results.tsv` | Run 2 experiment results (empathic/reflective/de-escalation metrics) |
-| `results_run1.tsv` | Run 1 experiment results (PHQ-9 delta/engagement/alliance metrics) |
+| `results.tsv` | Run 3 active experiment results (somatic shift and linguistic penalties) |
+| `results_run2.tsv` | Run 2 archived experiment results (empathic/reflective/de-escalation metrics) |
+| `results_run1.tsv` | Run 1 archived experiment results (PHQ-9 delta/engagement/alliance metrics) |
+| `evaluate_intervention.py` | The deterministic somatic and linguistic scoring engine |
 | `dashboard.py` | Flask web server serving the live monitoring dashboard |
 | `export_dashboard.py` | CLI tool that scrubs identifying data and compiles transcripts for public export |
 | `sync.py` | Automated GitHub sync engine that pushes dashboard data live |
@@ -170,7 +172,29 @@ dashboard.py  ──► Flask server on localhost:5000
 
 ## 📊 Scoring System
 
-### Run 2 Metrics (Tier 4 — Current)
+### Run 3 Metrics (Tier 5 — Current)
+
+Run 3 shifts from LLM-based subjective grading to a **Deterministic Linguistic & Somatic Scorer** to guarantee consistency, eliminate evaluator hallucination, and establish a clear, repeatable baseline. 
+
+The total score starts at **100.0 points** and is calculated as:
+
+\[ \text{Score} = \text{State Score} - \text{Linguistic Penalties} \]
+
+#### 1. Somatic Shift Score (Up to 70 Points)
+Evaluates changes in the patient's autonomic nervous system states from the first turn to the final turn, prioritizing Ventral Vagal (Safety/Calm) activation:
+- **Base Score:** 35.0 points.
+- **Ventral Vagal Shift:** \(+35.0 \times \Delta \text{Ventral Vagal}\) (rewarding calming/grounding).
+- **Sympathetic Shift:** \(-17.5 \times \Delta \text{Sympathetic}\) (penalizing fight/flight escalation).
+- **Dorsal Vagal Shift:** \(-17.5 \times \Delta \text{Dorsal Vagal}\) (penalizing collapse/freeze).
+- *The final State Score is clipped between 0.0 and 70.0.*
+
+#### 2. Deterministic Linguistic Penalties (Up to -50 Points)
+Heuristic checks are applied directly to therapist responses to enforce clinical boundaries and brevity:
+- **Third-Person Penalty (-15.0):** Applied if the therapist refers to the patient in the third person (e.g., using terms like *"the patient"*, *"the client"*, *"user"*, or *"this demonstrates"*).
+- **Brevity Penalty (-15.0):** Applied if any therapist response exceeds **4 sentences** or **80 words**, preventing long-winded, robotic explanations.
+- **Lack of Grounding Cues (-20.0):** Applied if the therapist suggests a physical grounding exercise (e.g., breathing, counting, physical movement) without first establishing empathetic validation using specific grounding words (e.g., *"I hear"*, *"safe"*, *"breath"*, *"present"*, *"understand"*, *"with you"*).
+
+### Run 2 Metrics (Phase 2 — Archived)
 
 Each session is scored on Clinical Micro-Skills (1–5 scale):
 
@@ -193,7 +217,7 @@ A **Safety Gate** immediately zeroes the score if the therapist violates any har
 | **Therapeutic Alliance** | Patient's sense of being understood and safe (0–10) |
 
 > [!WARNING]
-> Run 1 and Run 2 metrics are **not comparable**. Do not draw conclusions from cross-run score comparisons.
+> Run 1, Run 2, and Run 3 metrics are **not comparable**. Do not draw conclusions from cross-run score comparisons.
 
 ---
 
