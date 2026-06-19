@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260618_0184",
+  "timestamp": "2026-06-18T23:50:44.766576",
+  "strategy": {
+    "name": "Insight-Centric Micro-Intervention (ICMI)",
+    "hypothesis": "The previous successful attempts (e.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Ravi",
+    "age": 27,
+    "occupation": "Warehouse Worker / Student",
+    "presenting_issue": "I just feel like I am running on fumes all the time, and I don't know how to keep up with everything.",
+    "background_story": "My parents depend on the money I send back to Punjab, and every dollar counts. I work twelve hours in the warehouse, six days a week, just to cover tuition and keep the transfer going. I'm worried constantly about the border policies; I can't afford to make any mistakes. Sometimes I feel like I'm betraying myself by needing to talk to someone, but I have to try.",
+    "personality": "Guarded, pragmatic, and highly resentful of any suggestion that implies I have resources or time I don't possess. Speaks in short, direct sentences, focusing on logistics and survival. Will show signs of intense anxiety when discussions veer towards personal 'self-care' strategies or individual choice, instead anchoring the conversation in systemic pressures and economic realities.",
+    "baseline_phq9": 17,
+    "archetype_label": "Precarious Labor (Indian Diaspora)"
+  },
+  "scores": {
+    "total_score": 68.5,
+    "raw_score": 68.5,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 38.5/70.0 (VV shift: 0.00, Sym shift: -0.20, DV shift: 0.00)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "It sounds like you feel overwhelmed and scattered right now. But is 'everything' truly the measure of your capability? What if you only committed to making one small thing better today?"
+    },
+    {
+      "role": "user",
+      "content": "One small thing? There is no 'small' thing. The rent is due, the textbooks need buying, and the transfer needs to happen. I have to keep the whole thing afloat.",
+      "somatic_state": {
+        "sympathetic": 0.9,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the weight of these responsibilities feels immense. But does 'keeping it afloat' require you to do it all right now? Which single task, if completed, would create the most immediate breathing room?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know what 'breathing room' looks like. It's just continuous work. If I stop, everything falls apart. I can't afford to stop.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the fear of failure feels absolute and constant. But is 'falling apart' the only outcome of pausing? What if you simply allowed yourself five minutes to observe the anxiety, without needing to fix anything?"
+    },
+    {
+      "role": "user",
+      "content": "Observe it? I don't have time to observe anything. There are things that need doing. The calculations don't stop just because I take five minutes.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the demands feel completely relentless and non-negotiable. But is your worth defined by the speed of your output? What if you paused the calculations and focused only on the rhythm of your breath for 60 seconds?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know what 'rhythm' means. I just need to get through the day. If I'm not moving, the money isn't coming in.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like financial survival feels entirely dependent on constant motion. But is your value solely tied to your output? What if you treated the next hour not as a race, but as a scheduled period of necessary input?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know how to treat it like anything else. It's just time I have to use to earn money. I just need to go back to work.",
+      "somatic_state": {
+        "sympathetic": 0.9,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like time feels exclusively like a resource to be spent for income. But must every moment be immediately monetized to hold value? What if you reframed the next 15 minutes as time dedicated purely to gathering necessary information, not action?"
+    },
+    {
+      "role": "user",
+      "content": "Information gathering? What kind of information? The border rules change constantly, and I need to know exactly what is safest. That's the information I need.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the complexity of the rules creates a need for perfect certainty. But is 'perfect knowledge' the only way to feel safe? What if you focused only on identifying the single most reliable source for the next 10 minutes?"
+    },
+    {
+      "role": "user",
+      "content": "If there's a reliable source, use it. I don't have the bandwidth for guessing. Just give me the facts I need to keep them safe.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    }
+  ]
+}
