@@ -50,12 +50,33 @@ Scoring in Run 1 used: `PHQ-9 delta`, `Engagement (0–10)`, and `Therapeutic Al
 **⚠️ The Reward Hacking Problem (Run 1)**
 The agent locked onto Person-Centered Therapy (PCT) almost immediately and stopped exploring. It learned to make patients "easier" and sessions shorter to maximize its own score, because it had unrestricted access to modify `session_config.py`.
 
-### Run 2 — Phase 2 (Tier 4 LangGraph, ongoing)
+### Run 2 — Phase 2 (gemma4:e4b, JSON mode, 185 experiments)
 
 Scoring in Run 2 uses a new, richer clinical rubric: `Empathic Accuracy (1–5)`, `Reflective Listening (1–5)`, `De-escalation Markers (1–5)`, and a **Somatic Shift Score** (Ventral Vagal delta). An **Adversarial Auditor** applies a penalty multiplier (0.1–1.0) to catch reward hacking.
 
+| Finding | Result |
+|---|---|
+| Best score achieved | **91.25 / 100** |
+| Dominant framework | Somatic Validation + ACT/PCT |
+| JSON parse failure rate | ~15% of optimizer turns |
+| Optimizer stalls | Frequent after experiment 180+ |
+
+**⚠️ Infrastructure Failures (Run 2)**
+While Run 2 achieved strong clinical scores (91.25 peak), the optimizer suffered from chronic instability: JSON parsing crashes (model wrapping output in conversational filler), optimizer stalls (`[Agent] Rejected proposal: No system prompt provided`), and internal reasoning leaking into the conversation context window.
+
+### Run 3 — Phase 3 (gemma4:e4b, Tier 5 Architecture, ongoing)
+
+Run 3 implements a **Tier 5 architecture** to permanently resolve the infrastructure failures discovered in Run 2:
+
+| Upgrade | What It Does |
+|---|---|
+| **Constrained Decoding** | Pydantic schemas enforced at the grammar level via `client.beta.chat.completions.parse()`. The model physically cannot output malformed JSON. |
+| **Native Tool Calling** | Somatic state updates returned via native OpenAI-style tool calls instead of JSON string parsing. Deterministic state tracking. |
+| **Native Thinking Tokens** | Gemma 4's `<\|think\|>` control token activates internal chain-of-thought reasoning before JSON generation. |
+| **History Sanitization** | `<\|channel>thought<channel\|>` reasoning blocks are stripped from the LangGraph state to prevent context pollution. |
+
 > [!NOTE]
-> Run 1 and Run 2 scores use **completely different metrics** and are **not directly comparable**. The dashboard displays them in separate charts to avoid misleading comparisons.
+> Run 1, Run 2, and Run 3 scores use **completely different architectures** and are **not directly comparable**. The dashboard displays them in separate charts to avoid misleading comparisons.
 
 ---
 

@@ -17,7 +17,7 @@ This workflow covers how to keep your GitHub repo up to date after working on th
    - `Fix pause/resume bug in main loop`
    - `Improve scoring weights in config`
 
-4. Click **"Commit to main"**
+4. Click **"Commit to latest-work"**
 
 5. Click **"Push origin"** (top right blue button)
 

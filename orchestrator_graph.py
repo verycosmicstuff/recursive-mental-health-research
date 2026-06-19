@@ -2,6 +2,7 @@ import json
 import time
 import datetime
 import os
+import re
 from typing import TypedDict, List, Dict, Any, Optional
 from langgraph.graph import StateGraph, END
 import harness
@@ -11,6 +12,16 @@ import therapist
 import patient_archetypes
 import config
 import sync
+
+def sanitize_message_content(text: str) -> str:
+    """Strips Gemma 4 internal reasoning/thinking blocks from text."""
+    if not isinstance(text, str):
+        return text
+    # Strip <|channel>thought ... <channel|> blocks
+    cleaned = re.sub(r'<\|channel>thought\s*[\s\S]*?<channel\|>', '', text)
+    # Strip <think> ... </think> blocks
+    cleaned = re.sub(r'<think>[\s\S]*?</think>', '', cleaned)
+    return cleaned.strip()
 
 class GraphState(TypedDict):
     messages: List[Dict[str, str]]
@@ -88,6 +99,7 @@ def therapist_node(state: GraphState) -> Dict[str, Any]:
     print(f"[{exp_id}] Turn {turn}/{max_turns}")
     
     therapist_msg = harness.get_therapist_response(messages, active_prompt)
+    therapist_msg = sanitize_message_content(therapist_msg)
     new_message = {"role": "assistant", "content": therapist_msg}
     
     print(f"\n[Therapist ({config.MODEL_NAME})]: {therapist_msg}\n")
@@ -95,12 +107,13 @@ def therapist_node(state: GraphState) -> Dict[str, Any]:
     return {
         "messages": messages + [new_message]
     }
-
+ 
 def patient_node(state: GraphState) -> Dict[str, Any]:
     messages = state.get("messages", [])
     persona = state.get("persona", {})
     
     patient_msg, somatic_state = harness.get_patient_response(persona, messages)
+    patient_msg = sanitize_message_content(patient_msg)
     new_message = {"role": "user", "content": patient_msg, "somatic_state": somatic_state}
     
     print(f"[Patient ({config.EVALUATOR_MODEL_NAME})]: {patient_msg} (State: {somatic_state})\n")

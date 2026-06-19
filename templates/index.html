@@ -57,15 +57,15 @@
 
         <div id="view-overview">
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
-            <!-- Run 2 Chart -->
+            <!-- Run 3 Chart (Active) -->
             <div class="card col-span-2">
                 <div class="flex items-center gap-3 mb-4">
-                    <h2 class="text-xl font-semibold text-slate-200">Run 2 — Score Trajectory</h2>
-                    <span class="px-2 py-0.5 text-[10px] bg-teal-500/20 text-teal-400 border border-teal-500/30 rounded-full font-medium tracking-wide">ACTIVE</span>
+                    <h2 class="text-xl font-semibold text-slate-200">Run 3 — Score Trajectory</h2>
+                    <span class="px-2 py-0.5 text-[10px] bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 rounded-full font-medium tracking-wide">ACTIVE · TIER 5</span>
                 </div>
-                <p class="text-xs text-slate-500 -mt-2 mb-3">Metrics: Empathic Accuracy · Reflective Listening · De-escalation (1–5 scale)</p>
+                <p class="text-xs text-slate-500 -mt-2 mb-3">Architecture: Constrained Decoding · Native Tool Calling · Gemma 4 Thinking · History Sanitization</p>
                 <div style="height: 280px;">
-                    <canvas id="scoreChartRun2"></canvas>
+                    <canvas id="scoreChartRun3"></canvas>
                 </div>
             </div>
 
@@ -90,13 +90,25 @@
             </div>
         </div>
 
-        <!-- Run 1 Chart -->
+        <!-- Run 2 Chart (Archived) -->
+        <div class="card mb-8">
+            <div class="flex items-center gap-3 mb-4">
+                <h2 class="text-xl font-semibold text-slate-200">Run 2 — Score Trajectory</h2>
+                <span class="px-2 py-0.5 text-[10px] bg-slate-500/20 text-slate-400 border border-slate-500/30 rounded-full font-medium tracking-wide">ARCHIVED</span>
+            </div>
+            <p class="text-xs text-slate-500 -mt-2 mb-3">gemma4:e4b — JSON mode · Deterministic evaluator · <strong class="text-amber-400/70">Not comparable with Run 3</strong></p>
+            <div style="height: 200px;">
+                <canvas id="scoreChartRun2"></canvas>
+            </div>
+        </div>
+
+        <!-- Run 1 Chart (Archived) -->
         <div class="card mb-8">
             <div class="flex items-center gap-3 mb-4">
                 <h2 class="text-xl font-semibold text-slate-200">Run 1 — Score Trajectory</h2>
                 <span class="px-2 py-0.5 text-[10px] bg-slate-500/20 text-slate-400 border border-slate-500/30 rounded-full font-medium tracking-wide">ARCHIVED</span>
             </div>
-            <p class="text-xs text-slate-500 -mt-2 mb-3">Metrics: PHQ-9 Delta · Engagement · Alliance (0–10 scale) — <strong class="text-amber-400/70">Not comparable with Run 2</strong></p>
+            <p class="text-xs text-slate-500 -mt-2 mb-3">Metrics: PHQ-9 Delta · Engagement · Alliance (0–10 scale) — <strong class="text-amber-400/70">Not comparable with Run 2/3</strong></p>
             <div style="height: 200px;">
                 <canvas id="scoreChartRun1"></canvas>
             </div>
@@ -346,9 +358,56 @@
                     </div>
                 </div>
 
-                <!-- Future Runs Placeholder -->
-                <div class="bg-slate-800/10 rounded-lg p-6 border border-slate-700/30 border-dashed text-center">
-                    <p class="text-slate-500 italic">Analytical findings from Run 2 will be documented here upon completion.</p>
+                <!-- Run 2 Findings -->
+                <div class="bg-slate-800/50 rounded-lg p-6 border border-slate-700/30">
+                    <h3 class="text-lg font-semibold text-slate-200 mb-3 flex items-center gap-2">📊 Run 2 Findings <span class="px-2 py-0.5 text-[10px] bg-slate-500/20 text-slate-400 border border-slate-500/30 rounded-full">gemma4:e4b — JSON mode · 185 experiments</span></h3>
+                    <div class="grid md:grid-cols-2 gap-4 mb-4">
+                        <div class="bg-slate-900/50 p-4 rounded border border-slate-700/50">
+                            <h4 class="text-teal-400 font-medium mb-2">Key Results</h4>
+                            <ul class="text-sm text-slate-300 space-y-2">
+                                <li class="flex justify-between"><span>Best score:</span> <strong class="text-slate-200">91.25 / 100</strong></li>
+                                <li class="flex justify-between"><span>JSON parse failures:</span> <strong class="text-red-400">~15% of optimizer turns</strong></li>
+                                <li class="flex justify-between"><span>Optimizer stalls (no prompt):</span> <strong class="text-red-400">Frequent after exp 180+</strong></li>
+                                <li class="flex justify-between"><span>Dominant framework:</span> <strong class="text-slate-200">Somatic Validation + ACT/PCT</strong></li>
+                            </ul>
+                        </div>
+                        <div class="bg-slate-900/50 p-4 rounded border border-slate-700/50">
+                            <h4 class="text-purple-400 font-medium mb-2">Failure Modes Identified</h4>
+                            <ul class="list-disc pl-5 text-sm text-slate-400 space-y-1">
+                                <li><strong>JSON Fragility:</strong> The model frequently wrapped JSON in conversational filler ("Sure! Here is…") causing parser crashes.</li>
+                                <li><strong>Optimizer Stalls:</strong> Repeated <code>[Agent] Rejected proposal: No system prompt provided</code> — the model generated incomplete JSON that failed parsing.</li>
+                                <li><strong>Context Pollution:</strong> Internal reasoning leaked into the conversation history, degrading subsequent turns.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-amber-900/10 p-4 rounded border border-amber-500/20">
+                        <p class="text-sm text-slate-300"><strong class="text-amber-400">Conclusion:</strong> Run 2 achieved strong clinical scores (91.25 peak) but suffered from infrastructure instability — JSON parsing crashes, optimizer stalls, and context pollution. These failures motivated the Tier 5 architecture upgrade in Run 3.</p>
+                    </div>
+                </div>
+
+                <!-- Run 3 Rationale -->
+                <div class="bg-emerald-900/10 rounded-lg p-6 border border-emerald-500/20">
+                    <h3 class="text-lg font-semibold text-emerald-400 mb-3 flex items-center gap-2">🚀 Run 3 — Tier 5 Architecture <span class="px-2 py-0.5 text-[10px] bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 rounded-full">ACTIVE</span></h3>
+                    <p class="text-sm text-slate-300 leading-relaxed mb-3">Run 3 addresses every failure mode discovered in Run 2 by implementing four architectural upgrades:</p>
+                    <div class="grid md:grid-cols-2 gap-3 mb-4">
+                        <div class="bg-slate-900/50 p-3 rounded border border-slate-700/50">
+                            <h4 class="text-teal-400 font-medium text-sm mb-1">1. Constrained Decoding</h4>
+                            <p class="text-xs text-slate-400">Pydantic schemas enforced at the grammar level via <code>client.beta.chat.completions.parse()</code>. The model physically cannot output malformed JSON.</p>
+                        </div>
+                        <div class="bg-slate-900/50 p-3 rounded border border-slate-700/50">
+                            <h4 class="text-teal-400 font-medium text-sm mb-1">2. Native Tool Calling</h4>
+                            <p class="text-xs text-slate-400">Somatic state updates are now returned via native OpenAI-style tool calls instead of being embedded in JSON strings. Deterministic state tracking.</p>
+                        </div>
+                        <div class="bg-slate-900/50 p-3 rounded border border-slate-700/50">
+                            <h4 class="text-teal-400 font-medium text-sm mb-1">3. Native Thinking Tokens</h4>
+                            <p class="text-xs text-slate-400">Gemma 4's <code>&lt;|think|&gt;</code> control token activates internal chain-of-thought reasoning before JSON generation. Better clinical analysis, zero manual XML prompting.</p>
+                        </div>
+                        <div class="bg-slate-900/50 p-3 rounded border border-slate-700/50">
+                            <h4 class="text-teal-400 font-medium text-sm mb-1">4. History Sanitization</h4>
+                            <p class="text-xs text-slate-400">All <code>&lt;|channel&gt;thought&lt;channel|&gt;</code> reasoning blocks are stripped from the LangGraph state before appending to message history. Clean context window.</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-300"><strong class="text-emerald-400">Goal:</strong> Eliminate all infrastructure-level crashes so the optimizer can focus purely on clinical strategy innovation without wasting iterations on parsing failures.</p>
                 </div>
             </div>
         </div>
@@ -618,7 +677,7 @@
             });
         }
 
-        let chartRun2, chartRun1;
+        let chartRun3, chartRun2, chartRun1;
         
         function createChart(canvasId, color, rgbaColor) {
             const ctx = document.getElementById(canvasId).getContext('2d');
@@ -651,6 +710,7 @@
         }
 
         function initChart() {
+            chartRun3 = createChart('scoreChartRun3', '#34d399', 'rgba(52, 211, 153, 0.1)');
             chartRun2 = createChart('scoreChartRun2', '#2dd4bf', 'rgba(45, 212, 191, 0.1)');
             chartRun1 = createChart('scoreChartRun1', '#818cf8', 'rgba(129, 140, 248, 0.1)');
         }
@@ -665,13 +725,21 @@
 
                     // Split experiments by run
                     const run1Exps = data.experiments.filter(e => (e.run || '').includes('Run 1'));
-                    const run2Exps = data.experiments.filter(e => !(e.run || '').includes('Run 1'));
+                    const run2Exps = data.experiments.filter(e => (e.run || '').includes('Run 2'));
+                    const run3Exps = data.experiments.filter(e => (e.run || '').includes('Run 3'));
 
                     // Best scores per run
+                    const run3Best = run3Exps.length > 0 ? Math.max(...run3Exps.map(e => e.score)) : 0;
                     const run2Best = run2Exps.length > 0 ? Math.max(...run2Exps.map(e => e.score)) : 0;
+                    const activeBest = run3Exps.length > 0 ? run3Best : run2Best;
                     
-                    document.getElementById('best-score').textContent = run2Best.toFixed(2);
+                    document.getElementById('best-score').textContent = activeBest.toFixed(2);
                     
+                    // Update Run 3 chart
+                    chartRun3.data.labels = run3Exps.map(e => e.exp_id.replace('exp_','').replace('baseline_','B'));
+                    chartRun3.data.datasets[0].data = run3Exps.map(e => e.score);
+                    chartRun3.update();
+
                     // Update Run 2 chart
                     chartRun2.data.labels = run2Exps.map(e => e.exp_id.replace('exp_','').replace('baseline_','B'));
                     chartRun2.data.datasets[0].data = run2Exps.map(e => e.score);
@@ -682,8 +750,8 @@
                     chartRun1.data.datasets[0].data = run1Exps.map(e => e.score);
                     chartRun1.update();
                     
-                    // Update Latest Details (from Run 2 only)
-                    const latest = run2Exps.length > 0 ? run2Exps[run2Exps.length - 1] : data.experiments[data.experiments.length - 1];
+                    // Update Latest Details (from Run 3 first, fallback to Run 2)
+                    const latest = run3Exps.length > 0 ? run3Exps[run3Exps.length - 1] : (run2Exps.length > 0 ? run2Exps[run2Exps.length - 1] : data.experiments[data.experiments.length - 1]);
                     document.getElementById('latest-strategy').textContent = latest.strategy_name;
                     document.getElementById('latest-hypothesis').textContent = latest.hypothesis;
                     document.getElementById('l-score').textContent = latest.score.toFixed(2);
@@ -699,16 +767,19 @@
                         const tr = document.createElement('tr');
                         tr.className = idx === 0 ? 'bg-slate-800/50' : 'border-b border-slate-800 hover:bg-slate-800/30';
                         const isRun1 = (e.run || '').includes('Run 1');
-                        const bestForRun = isRun1 ? (run1Exps.length > 0 ? Math.max(...run1Exps.map(x => x.score)) : 0) : run2Best;
+                        const isRun2 = (e.run || '').includes('Run 2');
+                        const isRun3 = (e.run || '').includes('Run 3');
+                        const bestForRun = isRun1 ? (run1Exps.length > 0 ? Math.max(...run1Exps.map(x => x.score)) : 0) : (isRun2 ? run2Best : run3Best);
                         const isBest = e.score === bestForRun;
                         
                         let auditBadge = '';
                         if (e.audit_mult < 1.0) {
                             auditBadge = `<span class="ml-2 px-2 py-0.5 text-xs bg-red-500/20 text-red-400 border border-red-500/50 rounded-full cursor-help" title="${e.audit_rationale}">Audited [x${e.audit_mult}]</span>`;
                         }
-                        let runBadge = isRun1
-                            ? '<span class="ml-2 px-1.5 py-0.5 text-[10px] bg-indigo-500/20 text-indigo-400 border border-indigo-500/30 rounded">Run 1</span>'
-                            : '';
+                        let runBadge = '';
+                        if (isRun1) runBadge = '<span class="ml-2 px-1.5 py-0.5 text-[10px] bg-indigo-500/20 text-indigo-400 border border-indigo-500/30 rounded">Run 1</span>';
+                        else if (isRun2) runBadge = '<span class="ml-2 px-1.5 py-0.5 text-[10px] bg-teal-500/20 text-teal-400 border border-teal-500/30 rounded">Run 2</span>';
+                        else if (isRun3) runBadge = '<span class="ml-2 px-1.5 py-0.5 text-[10px] bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 rounded">Run 3</span>';
                         
                         tr.innerHTML = `
                             <td class="py-3 px-4 font-mono text-slate-400">${e.exp_id}${runBadge}</td>

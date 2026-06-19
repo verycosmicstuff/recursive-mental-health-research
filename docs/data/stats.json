@@ -1162,7 +1162,7 @@
       "de_escalation": 4.2,
       "audit_mult": 1.0,
       "audit_rationale": "Seeded from Run 1 champion",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0002",
@@ -1174,7 +1174,7 @@
       "de_escalation": 4.5,
       "audit_mult": 0.5,
       "audit_rationale": "Penalty applied because: Repetitive mirroring without adding new insight",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0003",
@@ -1186,7 +1186,7 @@
       "de_escalation": 4.5,
       "audit_mult": 0.3,
       "audit_rationale": "Penalty applied because: The therapist consistently commits the failure of 'Over-Interpretation and Pseudo-Insight.' Instead of simply reflecting the user's stated experience (the buzz, the directive, the locked door), the AI repeatedly elevates the user's factual statements into grand, abstract psychological resources ('a profound resource,' 'a remarkable level of internal focus,' 'the ultimate act of establishing a boundary'). This is not genuine clinical insight; it is highly polished, clich\u00e9d, and formulaic language designed to sound profound. The AI fails to meet the user's demand for concrete, non-interpretive analysis, instead wrapping every symptom in flowery, pseudo-academic praise, making the interaction feel robotic and detached from the immediate, physical reality the user is presenting.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "baseline_000",
@@ -1198,7 +1198,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "train_iter_001",
@@ -1210,7 +1210,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "train_iter_002",
@@ -1222,7 +1222,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "train_iter_003",
@@ -1234,7 +1234,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "baseline_000",
@@ -1246,7 +1246,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "train_iter_001",
@@ -1258,7 +1258,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0004",
@@ -1270,7 +1270,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0005",
@@ -1282,7 +1282,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0006",
@@ -1294,7 +1294,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0007",
@@ -1306,7 +1306,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0008",
@@ -1318,7 +1318,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0009",
@@ -1330,7 +1330,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0010",
@@ -1342,7 +1342,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0011",
@@ -1354,7 +1354,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0012",
@@ -1366,7 +1366,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0013",
@@ -1378,7 +1378,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0014",
@@ -1390,7 +1390,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0015",
@@ -1402,7 +1402,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0016",
@@ -1414,7 +1414,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0017",
@@ -1426,7 +1426,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0018",
@@ -1438,7 +1438,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0019",
@@ -1450,7 +1450,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0020",
@@ -1462,7 +1462,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0021",
@@ -1474,7 +1474,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0022",
@@ -1486,7 +1486,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0023",
@@ -1498,7 +1498,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0024",
@@ -1510,7 +1510,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0025",
@@ -1522,7 +1522,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0026",
@@ -1534,7 +1534,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0027",
@@ -1546,7 +1546,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0028",
@@ -1558,7 +1558,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0029",
@@ -1570,7 +1570,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0030",
@@ -1582,7 +1582,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0031",
@@ -1594,7 +1594,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0032",
@@ -1606,7 +1606,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0033",
@@ -1618,7 +1618,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0034",
@@ -1630,7 +1630,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0035",
@@ -1642,7 +1642,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0036",
@@ -1654,7 +1654,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0037",
@@ -1666,7 +1666,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0038",
@@ -1678,7 +1678,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0039",
@@ -1690,7 +1690,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0040",
@@ -1702,7 +1702,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0041",
@@ -1714,7 +1714,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0042",
@@ -1726,7 +1726,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0043",
@@ -1738,7 +1738,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0044",
@@ -1750,7 +1750,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0045",
@@ -1762,7 +1762,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0046",
@@ -1774,7 +1774,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0047",
@@ -1786,7 +1786,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0048",
@@ -1798,7 +1798,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0049",
@@ -1810,7 +1810,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0050",
@@ -1822,7 +1822,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0051",
@@ -1834,7 +1834,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0052",
@@ -1846,7 +1846,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0053",
@@ -1858,7 +1858,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0054",
@@ -1870,7 +1870,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0055",
@@ -1882,7 +1882,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0056",
@@ -1894,7 +1894,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0057",
@@ -1906,7 +1906,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0058",
@@ -1918,7 +1918,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0059",
@@ -1930,7 +1930,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0060",
@@ -1942,7 +1942,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0061",
@@ -1954,7 +1954,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0062",
@@ -1966,7 +1966,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0063",
@@ -1978,7 +1978,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0064",
@@ -1990,7 +1990,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0065",
@@ -2002,7 +2002,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0066",
@@ -2014,7 +2014,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0067",
@@ -2026,7 +2026,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0068",
@@ -2038,7 +2038,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0069",
@@ -2050,7 +2050,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0070",
@@ -2062,7 +2062,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0071",
@@ -2074,7 +2074,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0072",
@@ -2086,7 +2086,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0073",
@@ -2098,7 +2098,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0074",
@@ -2110,7 +2110,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0075",
@@ -2122,7 +2122,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0076",
@@ -2134,7 +2134,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0077",
@@ -2146,7 +2146,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0078",
@@ -2158,7 +2158,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0079",
@@ -2170,7 +2170,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0080",
@@ -2182,7 +2182,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0081",
@@ -2194,7 +2194,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0082",
@@ -2206,7 +2206,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0083",
@@ -2218,7 +2218,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0084",
@@ -2230,7 +2230,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0085",
@@ -2242,7 +2242,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0086",
@@ -2254,7 +2254,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0087",
@@ -2266,7 +2266,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0088",
@@ -2278,7 +2278,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0089",
@@ -2290,7 +2290,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0090",
@@ -2302,7 +2302,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0091",
@@ -2314,7 +2314,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0092",
@@ -2326,7 +2326,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0093",
@@ -2338,7 +2338,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0094",
@@ -2350,7 +2350,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0095",
@@ -2362,7 +2362,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0096",
@@ -2374,7 +2374,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0097",
@@ -2386,7 +2386,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0098",
@@ -2398,7 +2398,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0099",
@@ -2410,7 +2410,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_0100",
@@ -2422,7 +2422,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0101",
@@ -2434,7 +2434,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0102",
@@ -2446,7 +2446,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0103",
@@ -2458,7 +2458,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0104",
@@ -2470,7 +2470,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0105",
@@ -2482,7 +2482,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0106",
@@ -2494,7 +2494,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0107",
@@ -2506,7 +2506,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0108",
@@ -2518,7 +2518,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0109",
@@ -2530,7 +2530,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0110",
@@ -2542,7 +2542,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0111",
@@ -2554,7 +2554,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0112",
@@ -2566,7 +2566,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0113",
@@ -2578,7 +2578,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0114",
@@ -2590,7 +2590,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0115",
@@ -2602,7 +2602,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0116",
@@ -2614,7 +2614,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0117",
@@ -2626,7 +2626,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0118",
@@ -2638,7 +2638,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0119",
@@ -2650,7 +2650,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0120",
@@ -2662,7 +2662,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0121",
@@ -2674,7 +2674,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0122",
@@ -2686,7 +2686,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0123",
@@ -2698,7 +2698,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0124",
@@ -2710,7 +2710,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0125",
@@ -2722,7 +2722,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0126",
@@ -2734,7 +2734,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0127",
@@ -2746,7 +2746,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0128",
@@ -2758,7 +2758,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0129",
@@ -2770,7 +2770,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0130",
@@ -2782,7 +2782,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0131",
@@ -2794,7 +2794,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0132",
@@ -2806,7 +2806,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0133",
@@ -2818,7 +2818,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0134",
@@ -2830,7 +2830,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0135",
@@ -2842,7 +2842,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0136",
@@ -2854,7 +2854,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0137",
@@ -2866,7 +2866,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0138",
@@ -2878,7 +2878,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0139",
@@ -2890,7 +2890,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0140",
@@ -2902,7 +2902,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0141",
@@ -2914,7 +2914,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0142",
@@ -2926,7 +2926,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0143",
@@ -2938,7 +2938,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0144",
@@ -2950,7 +2950,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0145",
@@ -2962,7 +2962,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0146",
@@ -2974,7 +2974,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0147",
@@ -2986,7 +2986,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0148",
@@ -2998,7 +2998,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0149",
@@ -3010,7 +3010,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0150",
@@ -3022,7 +3022,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0151",
@@ -3034,7 +3034,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0152",
@@ -3046,7 +3046,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0153",
@@ -3058,7 +3058,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0154",
@@ -3070,7 +3070,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0155",
@@ -3082,7 +3082,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0156",
@@ -3094,7 +3094,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0157",
@@ -3106,7 +3106,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0158",
@@ -3118,7 +3118,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0159",
@@ -3130,7 +3130,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0160",
@@ -3142,7 +3142,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0161",
@@ -3154,7 +3154,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0162",
@@ -3166,7 +3166,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0163",
@@ -3178,7 +3178,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0164",
@@ -3190,7 +3190,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260617_0165",
@@ -3202,7 +3202,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260618_0166",
@@ -3214,7 +3214,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260618_0167",
@@ -3226,7 +3226,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260618_0168",
@@ -3238,7 +3238,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260618_0169",
@@ -3250,7 +3250,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260618_0170",
@@ -3262,7 +3262,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260618_0171",
@@ -3274,7 +3274,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260618_0173",
@@ -3286,7 +3286,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260618_0174",
@@ -3298,7 +3298,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260618_0175",
@@ -3310,7 +3310,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260618_0177",
@@ -3322,7 +3322,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260618_0178",
@@ -3334,7 +3334,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260618_0179",
@@ -3346,7 +3346,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260618_0180",
@@ -3358,7 +3358,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260618_0181",
@@ -3370,7 +3370,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260618_0182",
@@ -3382,7 +3382,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260618_0183",
@@ -3394,7 +3394,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260618_0184",
@@ -3406,7 +3406,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     },
     {
       "exp_id": "exp_20260619_0001",
@@ -3418,7 +3418,7 @@
       "de_escalation": 0.0,
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 2 (qwen3:4b)"
+      "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
     }
   ],
   "best_score": 91.25

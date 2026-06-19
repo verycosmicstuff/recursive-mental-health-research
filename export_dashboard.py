@@ -21,6 +21,13 @@ DOCS_DIR = os.path.join(BASE_DIR, "docs")
 DOCS_DATA_DIR = os.path.join(DOCS_DIR, "data")
 DOCS_TRANSCRIPTS_DIR = os.path.join(DOCS_DATA_DIR, "transcripts")
 
+def safe_float(val, default=0.0):
+    try:
+        if val is None or val == "":
+            return default
+        return float(val)
+    except (ValueError, TypeError):
+        return default
 
 def export():
     print("[Export] Starting dashboard export...")
@@ -45,7 +52,34 @@ def export():
         except Exception as e:
             print(f"[Export] Warning: Could not load Run 1 backup: {e}")
 
-    # ── 1. Build stats.json from results.tsv ──────────────────────────────────
+    # ── 1. Load Run 2 experiments from backup ───────────────────────────────────
+    RUN2_RESULTS = os.path.join(BASE_DIR, "results_run2.tsv")
+    run2_experiments = []
+    if os.path.exists(RUN2_RESULTS):
+        with open(RUN2_RESULTS, "r", encoding="utf-8") as f:
+            reader = csv.DictReader(f, delimiter="\t")
+            for row in reader:
+                try:
+                    score = safe_float(row.get("score", 0))
+                    exp = {
+                        "exp_id": row.get("exp_id", ""),
+                        "strategy_name": row.get("strategy_name", "Unknown"),
+                        "hypothesis": row.get("hypothesis", ""),
+                        "score": score,
+                        "empathic": safe_float(row.get("empathic", 0)),
+                        "reflective": safe_float(row.get("reflective", 0)),
+                        "de_escalation": safe_float(row.get("de_escalation", 0)),
+                        "audit_mult": safe_float(row.get("audit_mult", 1.0), 1.0),
+                        "audit_rationale": row.get("audit_rationale", ""),
+                        "run": "Run 2 (gemma4:e4b — JSON mode)",
+                    }
+                    run2_experiments.append(exp)
+                except (ValueError, KeyError) as e:
+                    print(f"[Export] Skipping bad Run 2 row: {e}")
+                    continue
+        print(f"[Export] Loaded {len(run2_experiments)} experiments from Run 2 backup")
+
+    # ── 2. Build Run 3 experiments from current results.tsv ───────────────────
     new_experiments = []
     best_score = 0
 
@@ -54,18 +88,18 @@ def export():
             reader = csv.DictReader(f, delimiter="\t")
             for row in reader:
                 try:
-                    score = float(row.get("score", 0))
+                    score = safe_float(row.get("score", 0))
                     exp = {
                         "exp_id": row.get("exp_id", ""),
                         "strategy_name": row.get("strategy_name", "Unknown"),
                         "hypothesis": row.get("hypothesis", ""),
                         "score": score,
-                        "empathic": float(row.get("empathic", 0)),
-                        "reflective": float(row.get("reflective", 0)),
-                        "de_escalation": float(row.get("de_escalation", 0)),
-                        "audit_mult": float(row.get("audit_mult", 1.0)),
+                        "empathic": safe_float(row.get("empathic", 0)),
+                        "reflective": safe_float(row.get("reflective", 0)),
+                        "de_escalation": safe_float(row.get("de_escalation", 0)),
+                        "audit_mult": safe_float(row.get("audit_mult", 1.0), 1.0),
                         "audit_rationale": row.get("audit_rationale", ""),
-                        "run": "Run 2 (qwen3:4b)",
+                        "run": "Run 3 (gemma4:e4b — Tier 5)",
                     }
                     new_experiments.append(exp)
                     if score > best_score:
@@ -74,10 +108,10 @@ def export():
                     print(f"[Export] Skipping bad row: {e}")
                     continue
 
-    # Merge: old Run 1 + new Run 2
-    all_experiments = old_experiments + new_experiments
+    # Merge: old Run 1 + Run 2 + new Run 3
+    all_experiments = old_experiments + run2_experiments + new_experiments
     # Update best_score across all runs
-    for exp in old_experiments:
+    for exp in old_experiments + run2_experiments:
         if exp.get("score", 0) > best_score:
             best_score = exp["score"]
 
@@ -86,7 +120,7 @@ def export():
     stats_path = os.path.join(DOCS_DATA_DIR, "stats.json")
     with open(stats_path, "w", encoding="utf-8") as f:
         json.dump(stats, f, indent=2)
-    print(f"[Export] Wrote {len(all_experiments)} experiments to stats.json ({len(old_experiments)} old + {len(new_experiments)} new)")
+    print(f"[Export] Wrote {len(all_experiments)} experiments to stats.json ({len(old_experiments)} Run 1 + {len(run2_experiments)} Run 2 + {len(new_experiments)} Run 3)")
 
     # ── 2. Copy individual transcript JSONs ───────────────────────────────────
     transcript_count = 0

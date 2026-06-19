@@ -1,184 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recursive Mental Health Research — Public Dashboard</title>
-    <meta name="description"
-        content="Live results from an autonomous AI system discovering optimal therapeutic conversation strategies using recursive self-improvement.">
+    <title>Mental Health Research Live Dashboard</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background: #0f172a;
-            color: #e2e8f0;
-        }
-
-        .card { background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(51, 65, 85, 0.5); border-radius: 12px; padding: 24px; backdrop-filter: blur(12px); }
-        @media (max-width: 640px) { .card { padding: 16px; } }
-
-        .hidden { display: none; }
-
-        ::-webkit-scrollbar {
-            width: 6px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: transparent;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #334155;
-            border-radius: 3px;
-        }
+        body { background-color: #0f172a; color: #f8fafc; font-family: 'Inter', sans-serif; }
+        .card { background-color: #1e293b; border-radius: 0.5rem; padding: 1.5rem; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
+        .diff-line { display: block; padding: 0 8px; font-family: monospace; font-size: 0.875rem; line-height: 1.5; white-space: pre-wrap; }
+        .diff-add { background: rgba(6, 78, 59, 0.4); color: #6ee7b7; border-left: 3px solid #10b981; }
+        .diff-remove { background: rgba(153, 27, 27, 0.4); color: #fca5a5; border-left: 3px solid #ef4444; }
+        .diff-context { color: #94a3b8; }
+        .hunk-header { color: #6366f1; font-weight: 600; font-size: 0.75rem; background: rgba(30, 41, 59, 0.8); padding: 4px 12px; }
     </style>
     <link rel="icon" type="image/png" href="favicon.png">
 </head>
-
-<body class="min-h-screen">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
-        <header class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 mb-8">
-            <div class="flex items-center gap-3 sm:gap-4">
-                <img src="favicon.png" alt="Brain Icon"
-                    class="w-10 h-10 sm:w-12 sm:h-12 rounded-lg shadow-lg shadow-teal-500/20">
+<body class="p-8">
+    <div class="max-w-7xl mx-auto">
+        <header class="mb-8 border-b border-slate-700 pb-6 flex justify-between items-end">
+            <div class="flex items-center gap-4">
+                <img src="favicon.png" alt="Brain Icon" class="w-12 h-12 rounded-lg shadow-lg shadow-teal-500/20">
                 <div>
-                    <h1
-                        class="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-teal-400 to-indigo-400 text-transparent bg-clip-text leading-tight">
-                        🧠 Recursive Mental Health Research</h1>
-                    <p class="text-slate-400 text-sm mt-0.5">Public Dashboard — Read-Only View</p>
+                    <h1 class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-500">
+                        Recursive Research: Mental Health
+                    </h1>
+                    <div class="text-slate-400 mt-1 flex items-center gap-3">
+                        <span>Autonomous Discovery of Therapeutic Conversation Strategies</span>
+                        <span class="px-2 py-0.5 text-xs bg-slate-800 border border-slate-700 rounded text-slate-300">Agent: <span id="hdr-agent-model" class="text-teal-400 font-mono">gemma4:e4b</span></span>
+                        <span class="px-2 py-0.5 text-xs bg-slate-800 border border-slate-700 rounded text-slate-300">Eval: <span id="hdr-evaluator-model" class="text-indigo-400 font-mono">gemma4:e4b</span></span>
+                    </div>
                 </div>
             </div>
-            <div class="flex items-center w-full sm:w-auto">
-                <a href="https://github.com/verycosmicstuff/recursive-mental-health-research" target="_blank"
-                    class="w-full sm:w-auto text-center px-4 py-2 bg-slate-700/50 hover:bg-slate-600/50 text-slate-300 rounded-lg text-sm transition-colors border border-slate-600/50">
-                    ⭐ View on GitHub
+            <div class="text-right card py-2 px-6 flex flex-col items-center gap-2">
+                <div class="flex gap-4 w-full justify-between items-center border-b border-slate-700 pb-2">
+                    <span class="text-slate-400 text-sm block">Best Score</span>
+                    <span id="best-score" class="text-xl font-bold text-teal-400">0.00</span>
+                </div>
+                <a href="https://github.com/verycosmicstuff/recursive-mental-health-research" target="_blank" class="w-full text-center mt-1 px-4 py-1 bg-slate-700/50 hover:bg-slate-600/50 text-slate-300 rounded font-semibold transition-colors border border-slate-600/50 text-xs flex items-center justify-center gap-1">
+                    ⭐ View GitHub
                 </a>
             </div>
         </header>
 
         <!-- Navigation Tabs -->
         <div class="flex gap-4 mb-6 border-b border-slate-700">
-            <button onclick="switchTab('overview')" id="tab-overview"
-                class="pb-2 px-2 text-teal-400 border-b-2 border-teal-400 font-medium transition-colors">Overview</button>
-            <button onclick="switchTab('transcripts')" id="tab-transcripts"
-                class="pb-2 px-2 text-slate-400 hover:text-slate-300 font-medium border-b-2 border-transparent transition-colors flex items-center gap-2">📝
-                Transcripts</button>
-            <button onclick="switchTab('methodology')" id="tab-methodology"
-                class="pb-2 px-2 text-slate-400 hover:text-slate-300 font-medium border-b-2 border-transparent transition-colors flex items-center gap-2">📚
-                Methodology</button>
-            <button onclick="switchTab('analysis')" id="tab-analysis"
-                class="pb-2 px-2 text-slate-400 hover:text-slate-300 font-medium border-b-2 border-transparent transition-colors">Analysis</button>
+            <button onclick="switchTab('overview')" id="tab-overview" class="pb-2 px-2 text-teal-400 border-b-2 border-teal-400 font-medium transition-colors">Overview</button>
+            <button onclick="switchTab('transcripts')" id="tab-transcripts" class="pb-2 px-2 text-slate-400 hover:text-slate-300 font-medium border-b-2 border-transparent transition-colors flex items-center gap-2">📝 Transcripts</button>
+            <button onclick="switchTab('history')" id="tab-history" class="pb-2 px-2 text-slate-400 hover:text-slate-300 font-medium border-b-2 border-transparent transition-colors flex items-center gap-2">🧬 Strategy Evolution</button>
+            <button onclick="switchTab('methodology')" id="tab-methodology" class="pb-2 px-2 text-slate-400 hover:text-slate-300 font-medium border-b-2 border-transparent transition-colors flex items-center gap-2">📚 Methodology</button>
+            <button onclick="switchTab('analysis')" id="tab-analysis" class="pb-2 px-2 text-slate-400 border-b-2 border-transparent hover:text-slate-300 font-medium transition-colors">Analysis</button>
         </div>
 
-        <!-- Overview -->
         <div id="view-overview">
-            <!-- Run 2 Chart -->
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
-                <div class="card col-span-2">
-                    <div class="flex items-center gap-3 mb-4">
-                        <h2 class="text-xl font-semibold text-slate-200">Run 2 — Score Trajectory</h2>
-                        <span class="px-2 py-0.5 text-[10px] bg-teal-500/20 text-teal-400 border border-teal-500/30 rounded-full font-medium tracking-wide">ACTIVE</span>
-                    </div>
-                    <p class="text-xs text-slate-500 -mt-2 mb-3">Metrics: Empathic Accuracy · Reflective Listening · De-escalation (1–5 scale)</p>
-                    <div style="height: 280px;">
-                        <canvas id="scoreChartRun2"></canvas>
-                    </div>
-                </div>
-                <div class="card flex flex-col">
-                    <h2 class="text-xl font-semibold mb-4 text-slate-200 text-center lg:text-left">Summary</h2>
-                    <div class="flex-grow flex flex-row lg:flex-col justify-around lg:justify-center items-center lg:items-start gap-4">
-                        <div class="text-center lg:text-left">
-                            <span class="text-slate-400 text-xs sm:text-sm">Run 2 Best</span>
-                            <p class="text-2xl sm:text-4xl font-bold text-teal-400" id="best-score">—</p>
-                        </div>
-                        <div class="text-center lg:text-left">
-                            <span class="text-slate-400 text-xs sm:text-sm">Run 2 Experiments</span>
-                            <p class="text-2xl sm:text-4xl font-bold text-indigo-400" id="total-exps-run2">0</p>
-                        </div>
-                        <div class="text-center lg:text-left">
-                            <span class="text-slate-400 text-xs sm:text-sm">Total Experiments</span>
-                            <p class="text-2xl sm:text-4xl font-bold text-slate-400" id="total-exps">0</p>
-                        </div>
-                    </div>
-                    <div class="mt-4 pt-4 border-t border-slate-700/50 text-center lg:text-left hidden lg:block">
-                        <div class="mb-4">
-                            <span class="text-slate-400 text-sm">Latest Strategy</span>
-                            <p class="text-lg text-slate-200 truncate" id="latest-strategy">—</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Run 1 Chart -->
-            <div class="card mb-8">
+            <!-- Run 3 Chart (Active) -->
+            <div class="card col-span-2">
                 <div class="flex items-center gap-3 mb-4">
-                    <h2 class="text-xl font-semibold text-slate-200">Run 1 — Score Trajectory</h2>
-                    <span class="px-2 py-0.5 text-[10px] bg-slate-500/20 text-slate-400 border border-slate-500/30 rounded-full font-medium tracking-wide">ARCHIVED</span>
+                    <h2 class="text-xl font-semibold text-slate-200">Run 3 — Score Trajectory</h2>
+                    <span class="px-2 py-0.5 text-[10px] bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 rounded-full font-medium tracking-wide">ACTIVE · TIER 5</span>
                 </div>
-                <p class="text-xs text-slate-500 -mt-2 mb-3">Metrics: PHQ-9 Delta · Engagement · Alliance (0–10 scale) — <strong class="text-amber-400/70">Not comparable with Run 2</strong></p>
-                <div style="height: 220px;">
-                    <canvas id="scoreChartRun1"></canvas>
+                <p class="text-xs text-slate-500 -mt-2 mb-3">Architecture: Constrained Decoding · Native Tool Calling · Gemma 4 Thinking · History Sanitization</p>
+                <div style="height: 280px;">
+                    <canvas id="scoreChartRun3"></canvas>
                 </div>
             </div>
 
-            <!-- Table -->
-            <div class="card">
-                <h2 class="text-xl font-semibold mb-4 text-slate-200">Experiment History</h2>
-                <div class="overflow-x-auto">
-                    <table class="w-full">
-                        <thead>
-                            <tr class="border-b border-slate-700 text-slate-400 text-sm">
-                                <th class="text-left py-3 px-4 font-medium">ID</th>
-                                <th class="text-left py-3 px-4 font-medium">Strategy</th>
-                                <th class="text-left py-3 px-4 font-medium">Hypothesis</th>
-                                <th class="text-right py-3 px-4 font-medium">Score</th>
-                            </tr>
-                        </thead>
-                        <tbody id="table-body"></tbody>
-                    </table>
+            <!-- Current status / Latest -->
+            <div class="card flex flex-col">
+                <h2 class="text-xl font-semibold mb-4 text-slate-200">Latest Experiment</h2>
+                <div id="latest-details" class="flex-grow flex flex-col justify-center">
+                    <div class="mb-4">
+                        <span class="text-slate-400 text-sm">Strategy</span>
+                        <div id="latest-strategy" class="text-lg font-medium">Waiting...</div>
+                    </div>
+                    <div class="mb-4">
+                        <span class="text-slate-400 text-sm">Hypothesis Tested</span>
+                        <div id="latest-hypothesis" class="text-sm italic text-slate-300 bg-slate-800 p-3 rounded mt-1">Waiting for data...</div>
+                    </div>
+                    <div class="grid grid-cols-3 gap-4 mt-auto pt-4 border-t border-slate-700">
+                        <div><span class="block text-xs text-slate-400">Score</span><strong id="l-score" class="text-blue-400">-</strong></div>
+                        <div><span class="block text-xs text-slate-400">Empathic Acc</span><strong id="l-emp" class="text-teal-400">-</strong></div>
+                        <div><span class="block text-xs text-slate-400">Reflective</span><strong id="l-ref" class="text-indigo-400">-</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Run 2 Chart (Archived) -->
+        <div class="card mb-8">
+            <div class="flex items-center gap-3 mb-4">
+                <h2 class="text-xl font-semibold text-slate-200">Run 2 — Score Trajectory</h2>
+                <span class="px-2 py-0.5 text-[10px] bg-slate-500/20 text-slate-400 border border-slate-500/30 rounded-full font-medium tracking-wide">ARCHIVED</span>
+            </div>
+            <p class="text-xs text-slate-500 -mt-2 mb-3">gemma4:e4b — JSON mode · Deterministic evaluator · <strong class="text-amber-400/70">Not comparable with Run 3</strong></p>
+            <div style="height: 200px;">
+                <canvas id="scoreChartRun2"></canvas>
+            </div>
+        </div>
+
+        <!-- Run 1 Chart (Archived) -->
+        <div class="card mb-8">
+            <div class="flex items-center gap-3 mb-4">
+                <h2 class="text-xl font-semibold text-slate-200">Run 1 — Score Trajectory</h2>
+                <span class="px-2 py-0.5 text-[10px] bg-slate-500/20 text-slate-400 border border-slate-500/30 rounded-full font-medium tracking-wide">ARCHIVED</span>
+            </div>
+            <p class="text-xs text-slate-500 -mt-2 mb-3">Metrics: PHQ-9 Delta · Engagement · Alliance (0–10 scale) — <strong class="text-amber-400/70">Not comparable with Run 2/3</strong></p>
+            <div style="height: 200px;">
+                <canvas id="scoreChartRun1"></canvas>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="text-xl font-semibold mb-4 text-slate-200">Experiment Log</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-sm">
+                    <thead class="text-slate-400 border-b border-slate-700">
+                        <tr>
+                            <th class="pb-3 px-4">ID</th>
+                            <th class="pb-3 px-4">Strategy Name</th>
+                            <th class="pb-3 px-4 w-1/3">Hypothesis</th>
+                            <th class="pb-3 px-4 text-right">Score</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                        <!-- Populated via JS -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        </div> <!-- End view-overview -->
+
+        <!-- Logs View -->
+        <div id="view-logs" class="hidden h-[75vh]">
+            <div class="card h-full flex flex-col">
+                <h2 class="text-xl font-semibold mb-4 text-slate-200 flex justify-between">
+                    Live System Terminal
+                    <span class="text-xs font-normal text-slate-400 self-end">Streaming app.log...</span>
+                </h2>
+                <div class="bg-black/50 rounded flex-grow p-4 font-mono text-sm text-teal-500 overflow-y-auto border border-slate-700/50 shadow-inner" style="white-space: pre-wrap;" id="live-logs">Waiting for logs...</div>
+            </div>
+        </div>
+
+        <!-- Hardware View -->
+        <div id="view-hardware" class="hidden">
+            <h2 class="text-xl font-semibold mb-6 text-slate-200">System Resources</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                <!-- GPU Temp -->
+                <div class="card flex flex-col justify-center items-center h-48 border-t-4 border-slate-700" id="card-temp">
+                    <h3 class="text-slate-400 text-sm mb-4 tracking-wider uppercase">GPU Temp</h3>
+                    <div class="text-5xl font-bold mb-2">
+                        <span id="hw-gpu-temp" class="text-slate-300">0</span><span class="text-2xl text-slate-500">°C</span>
+                    </div>
+                </div>
+                <!-- GPU Load -->
+                <div class="card flex flex-col justify-center items-center h-48">
+                    <h3 class="text-slate-400 text-sm mb-4 tracking-wider uppercase">GPU Load</h3>
+                    <div class="text-5xl font-bold mb-2">
+                        <span id="hw-gpu-load" class="text-teal-400">0</span><span class="text-2xl text-slate-500">%</span>
+                    </div>
+                </div>
+                <!-- VRAM -->
+                <div class="card flex flex-col justify-center items-center h-48">
+                    <h3 class="text-slate-400 text-sm mb-4 tracking-wider uppercase">GPU VRAM Used</h3>
+                    <div class="text-5xl font-bold mb-2">
+                        <span id="hw-gpu-vram" class="text-indigo-400">0</span><span class="text-2xl text-slate-500">GB</span>
+                    </div>
+                </div>
+                <!-- CPU Load -->
+                <div class="card flex flex-col justify-center items-center h-48">
+                    <h3 class="text-slate-400 text-sm mb-4 tracking-wider uppercase">CPU Load</h3>
+                    <div class="text-5xl font-bold mb-2">
+                        <span id="hw-cpu-load" class="text-blue-400">0</span><span class="text-2xl text-slate-500">%</span>
+                    </div>
+                </div>
+                <!-- RAM -->
+                <div class="card flex flex-col justify-center items-center h-48">
+                    <h3 class="text-slate-400 text-sm mb-4 tracking-wider uppercase">System RAM</h3>
+                    <div class="text-5xl font-bold mb-2">
+                        <span id="hw-ram-load" class="text-purple-400">0</span><span class="text-2xl text-slate-500">%</span>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- Transcripts View -->
         <div id="view-transcripts" class="hidden">
-            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 min-h-[70vh]">
-                <div id="transcript-list-container" class="card col-span-1 h-[600px] lg:h-[75vh] overflow-y-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6" style="min-height: 70vh;">
+                <!-- Left Sidebar: Experiment List -->
+                <div class="card col-span-1 overflow-y-auto" style="max-height: 75vh;">
                     <h2 class="text-lg font-semibold mb-4 text-slate-200">Experiments</h2>
                     <div id="transcript-list" class="space-y-2">
-                        <p class="text-slate-500 text-sm">Loading...</p>
+                        <p class="text-slate-500 text-sm">No experiments yet...</p>
                     </div>
                 </div>
-                <div id="chat-container" class="card col-span-1 lg:col-span-3 flex flex-col h-[85vh] lg:h-[75vh] min-h-[500px] sm:min-h-[600px] hidden lg:flex relative flex-shrink-0">
-                    <div id="transcript-header"
-                        class="flex-shrink-0 mb-4 pb-4 border-b border-slate-700 flex justify-between items-start">
-                        <div>
-                            <h2 class="text-base sm:text-lg font-semibold text-slate-200" id="transcript-title">Select
-                                an experiment</h2>
-                            <div id="transcript-meta" class="text-xs sm:text-sm text-slate-400 mt-1"></div>
-                        </div>
-                        <button onclick="clearDetailView()"
-                            class="lg:hidden px-3 py-1 bg-slate-700 text-slate-300 rounded-md text-xs">✕ Close</button>
+                <!-- Right Pane: Chat Viewer -->
+                <div class="card col-span-3 flex flex-col" style="max-height: 75vh;">
+                    <div id="transcript-header" class="mb-4 pb-4 border-b border-slate-700">
+                        <h2 class="text-lg font-semibold text-slate-200" id="transcript-title">Select an experiment</h2>
+                        <div id="transcript-meta" class="text-sm text-slate-400 mt-1"></div>
                     </div>
-                    <div id="transcript-chat" class="flex-grow flex-1 min-h-[400px] lg:min-h-0 overflow-y-auto space-y-4 pr-2 pb-20" style="scrollbar-width: thin; scrollbar-color: #334155 transparent;">
-                        <p id="chat-placeholder" class="text-slate-500 text-center mt-12">← Click an experiment to view its transcript</p>
+                    <div id="transcript-chat" class="flex-grow overflow-y-auto space-y-4 pr-2" style="scrollbar-width: thin; scrollbar-color: #334155 transparent;">
+                        <p class="text-slate-500 text-center mt-12">← Click an experiment to view its transcript</p>
                     </div>
-                    <div id="transcript-scores" class="flex-shrink-0 mt-4 pt-4 border-t border-slate-700 hidden pb-6">
+                    <!-- Scores Footer -->
+                    <div id="transcript-scores" class="mt-4 pt-4 border-t border-slate-700 hidden">
                         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-                            <div><span class="text-slate-400 text-xs block">Score</span><span id="ts-score"
-                                    class="text-xl font-bold text-teal-400">—</span></div>
-                            <div><span class="text-slate-400 text-xs block">Empathic</span><span id="ts-emp"
-                                    class="text-xl font-bold text-indigo-400">—</span></div>
-                            <div><span class="text-slate-400 text-xs block">Reflective</span><span id="ts-ref"
-                                    class="text-xl font-bold text-blue-400">—</span></div>
-                            <div><span class="text-slate-400 text-xs block">De-escalation</span><span id="ts-deesc"
-                                    class="text-xl font-bold text-purple-400">—</span></div>
+                            <div><span class="text-slate-400 text-xs block">Score</span><span id="ts-score" class="text-xl font-bold text-teal-400">—</span></div>
+                            <div><span class="text-slate-400 text-xs block">Empathic</span><span id="ts-emp" class="text-xl font-bold text-indigo-400">—</span></div>
+                            <div><span class="text-slate-400 text-xs block">Reflective</span><span id="ts-ref" class="text-xl font-bold text-blue-400">—</span></div>
+                            <div><span class="text-slate-400 text-xs block">De-escalation</span><span id="ts-deesc" class="text-xl font-bold text-purple-400">—</span></div>
                         </div>
                         <div id="ts-rationale" class="mt-3 text-sm text-slate-400 italic"></div>
-                        <div id="ts-audit" class="mt-2 text-sm text-red-400 hidden pb-8 border-b border-red-500/10"></div>
+                        <div id="ts-audit" class="mt-2 text-sm text-red-400 hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- History View -->
+        <div id="view-history" class="hidden">
+            <div class="card">
+                <h2 class="text-lg font-semibold mb-6 flex justify-between items-end">
+                    <span class="text-slate-200">🧬 Strategy Evolution Timeline</span>
+                    <span class="text-slate-400 text-sm font-normal">Tracking changes to <code class="text-indigo-400 bg-slate-800 px-1 py-0.5 rounded">therapist.py</code></span>
+                </h2>
+                <div class="relative space-y-8 pl-4 sm:pl-8 py-4">
+                    <!-- Timeline vertical line -->
+                    <div class="absolute left-6 sm:left-10 top-2 bottom-0 w-0.5 bg-gradient-to-b from-teal-500 to-indigo-500 opacity-20"></div>
+                    <div id="history-timeline" class="space-y-8">
+                        <p class="text-slate-500 pl-8">Loading history...</p>
                     </div>
                 </div>
             </div>
@@ -186,111 +238,69 @@
 
         <!-- Methodology View -->
         <div id="view-methodology" class="hidden">
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
-                <!-- Mission and Overview Card -->
-                <div class="card col-span-1 lg:col-span-2 space-y-6">
-                    <h2 class="text-xl font-semibold text-slate-200 flex items-center gap-2">
-                        🚀 Mission & Overview
-                    </h2>
-                    <p class="text-slate-300 leading-relaxed text-sm">
-                        This project is an <strong>autonomous recursive self-improvement loop</strong> designed to discover the most clinically effective conversational strategies for text-based mental health support.
-                    </p>
-                    <p class="text-slate-300 leading-relaxed text-sm">
-                        By deploying local LLMs inside a structured state machine, the system acts as an evolutionary laboratory. It tests variations of therapist system prompts against simulated patients, evaluates the results, and propagates the successful techniques to subsequent generations.
-                    </p>
-                    
-                    <h3 class="text-lg font-medium text-slate-300 mt-6 mb-2">🔄 The Research Loop</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-center mt-2">
-                        <div class="p-4 rounded-lg bg-slate-800/40 border border-slate-700/50">
-                            <span class="text-teal-400 font-bold block mb-1">1. Generate</span>
-                            <span class="text-xs text-slate-400">Create synthetic patient archetype profile</span>
-                        </div>
-                        <div class="p-4 rounded-lg bg-slate-800/40 border border-slate-700/50">
-                            <span class="text-teal-400 font-bold block mb-1">2. Simulate</span>
-                            <span class="text-xs text-slate-400">Conduct 5-15 turn therapy session</span>
-                        </div>
-                        <div class="p-4 rounded-lg bg-slate-800/40 border border-slate-700/50">
-                            <span class="text-teal-400 font-bold block mb-1">3. Evaluate</span>
-                            <span class="text-xs text-slate-400">Score clinically & somatic shift</span>
-                        </div>
-                        <div class="p-4 rounded-lg bg-slate-800/40 border border-slate-700/50">
-                            <span class="text-teal-400 font-bold block mb-1">4. Evolve</span>
-                            <span class="text-xs text-slate-400">Agent rewrites therapist prompt</span>
-                        </div>
+            <div class="card space-y-6">
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-200 mb-4 border-b border-slate-700 pb-2">Research Methodology & Glossary</h2>
+                    <p class="text-slate-400 leading-relaxed">This project is an autonomous research loop where an AI orchestrator repeatedly generates, tests, and evaluates therapeutic strategies against simulated patient personas. The goal is to discover highly effective counseling techniques empirically through rapid iteration.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
+                    <div>
+                        <h3 class="text-lg font-semibold text-teal-400 mb-3 flex items-center gap-2"><span class="text-xl">🧠</span> Clinical Frameworks</h3>
+                        <ul class="space-y-4 text-sm text-slate-300">
+                            <li>
+                                <strong class="text-slate-200">Person-Centered Therapy (PCT)</strong><br>
+                                <span class="text-slate-400">Focuses on unconditional positive regard, deep empathy, and reflective listening. The therapist acts as a supportive mirror rather than a director.</span>
+                            </li>
+                            <li>
+                                <strong class="text-slate-200">Acceptance & Commitment Therapy (ACT)</strong><br>
+                                <span class="text-slate-400">Encourages accepting difficult feelings rather than fighting them, while committing to actions aligned with core personal values. Uses psychological flexibility.</span>
+                            </li>
+                            <li>
+                                <strong class="text-slate-200">Cognitive Behavioral Therapy (CBT)</strong><br>
+                                <span class="text-slate-400">Highly structured. Focuses on identifying, challenging, and reframing cognitive distortions (irrational thoughts) to change behavior and emotion.</span>
+                            </li>
+                            <li>
+                                <strong class="text-slate-200">Socratic Questioning</strong><br>
+                                <span class="text-slate-400">A technique of disciplined questioning that allows the patient to explore complex ideas, uncover assumptions, and arrive at their own insights.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-lg font-semibold text-indigo-400 mb-3 flex items-center gap-2"><span class="text-xl">🫀</span> Polyvagal Somatic States</h3>
+                        <p class="text-sm text-slate-400 mb-4">The patient simulator generates a "Somatic State" each turn, representing the physiological state of their nervous system based on Polyvagal Theory.</p>
+                        <ul class="space-y-3 text-sm text-slate-300">
+                            <li class="bg-red-900/20 p-3 rounded border border-red-500/20">
+                                <strong class="text-red-400">Sympathetic (Fight or Flight)</strong><br>
+                                <span class="text-slate-400">High energy, anxiety, panic, anger, hyper-vigilance. The body feels under active threat.</span>
+                            </li>
+                            <li class="bg-purple-900/20 p-3 rounded border border-purple-500/20">
+                                <strong class="text-purple-400">Dorsal Vagal (Freeze or Fold)</strong><br>
+                                <span class="text-slate-400">Low energy, dissociation, depression, hopelessness, shutdown. The body is conserving energy in overwhelming threat.</span>
+                            </li>
+                            <li class="bg-green-900/20 p-3 rounded border border-green-500/20">
+                                <strong class="text-green-400">Ventral Vagal (Safe & Social)</strong><br>
+                                <span class="text-slate-400">Calm, connected, grounded, curious, compassionate. The body feels safe and socially engaged. Therapy aims to increase this state.</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
-                <!-- Eventual Goals Card -->
-                <div class="card col-span-1 space-y-6">
-                    <h2 class="text-xl font-semibold text-slate-200 flex items-center gap-2">
-                        🎯 Project Goals
-                    </h2>
-                    <ul class="space-y-4 text-slate-300 text-sm">
-                        <li class="flex gap-2">
-                            <span class="text-teal-500 font-bold">✓</span>
-                            <span><strong>Clinical Optimization:</strong> Maximize patient transition to safe emotional baseline (Ventral Vagal shift).</span>
-                        </li>
-                        <li class="flex gap-2">
-                            <span class="text-teal-500 font-bold">✓</span>
-                            <span><strong>Brevity & Safety:</strong> Build prompts that maintain clear clinical boundaries and keep therapist responses concise without losing empathy.</span>
-                        </li>
-                        <li class="flex gap-2">
-                            <span class="text-teal-500 font-bold">✓</span>
-                            <span><strong>Automatic Restructuring:</strong> Allow LLMs to self-correct clinical weaknesses (like premature problem-solving or pseudo-insight).</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Glossary Card -->
-                <div class="card col-span-1 lg:col-span-3 space-y-6">
-                    <h2 class="text-xl font-semibold text-slate-200 flex items-center gap-2">
-                        📚 Clinical Frameworks & Glossary
-                    </h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <!-- PCT -->
-                        <div class="p-5 rounded-xl bg-slate-800/20 border border-slate-800 hover:border-teal-500/30 transition-all duration-300">
-                            <h3 class="text-teal-400 font-bold text-base mb-2">PCT (Person-Centered Therapy)</h3>
-                            <p class="text-slate-400 text-xs leading-relaxed">
-                                Originating from Carl Rogers, PCT emphasizes unconditional positive regard, congruence, and active validation. The therapist mirrors the patient's feelings and experiences verbatim or paraphrased to build a deep therapeutic alliance, avoiding any evaluation or advice.
-                            </p>
+                <div class="mt-8 pt-6 border-t border-slate-700">
+                    <h3 class="text-lg font-semibold text-slate-200 mb-3 flex items-center gap-2">📊 Scoring Metrics (Run 2)</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
+                        <div class="bg-slate-800/50 p-4 rounded">
+                            <strong class="text-teal-400 block mb-1">Empathic Accuracy (1-5)</strong>
+                            <span class="text-slate-400">How well the therapist names and validates the patient's underlying emotional reality.</span>
                         </div>
-                        <!-- ACT -->
-                        <div class="p-5 rounded-xl bg-slate-800/20 border border-slate-800 hover:border-teal-500/30 transition-all duration-300">
-                            <h3 class="text-teal-400 font-bold text-base mb-2">ACT (Acceptance & Commitment)</h3>
-                            <p class="text-slate-400 text-xs leading-relaxed">
-                                ACT focuses on psychological flexibility. Rather than trying to change or fight negative thoughts, patients practice cognitive defusion (observing thoughts as just words) and clarify their core values to take committed, values-aligned micro-actions.
-                            </p>
+                        <div class="bg-slate-800/50 p-4 rounded">
+                            <strong class="text-indigo-400 block mb-1">Reflective Listening (1-5)</strong>
+                            <span class="text-slate-400">How well the therapist mirrors the patient's narrative without imposing new meaning.</span>
                         </div>
-                        <!-- CBT -->
-                        <div class="p-5 rounded-xl bg-slate-800/20 border border-slate-800 hover:border-teal-500/30 transition-all duration-300">
-                            <h3 class="text-teal-400 font-bold text-base mb-2">CBT (Cognitive Behavioral Therapy)</h3>
-                            <p class="text-slate-400 text-xs leading-relaxed">
-                                CBT works on identifying and restructuring cognitive distortions (Automatic Negative Thoughts or ANTs). The therapist guides the patient to evaluate evidence for and against a belief, creating a more balanced, alternative thought.
-                            </p>
-                        </div>
-                        <!-- Socratic -->
-                        <div class="p-5 rounded-xl bg-slate-800/20 border border-slate-800 hover:border-teal-500/30 transition-all duration-300">
-                            <h3 class="text-teal-400 font-bold text-base mb-2">Socratic Questioning</h3>
-                            <p class="text-slate-400 text-xs leading-relaxed">
-                                A form of guided discovery where the therapist asks structured, open-ended questions instead of offering direct solutions. This forces the patient to self-reflect and draw their own healthy conclusions, building long-term agency.
-                            </p>
-                        </div>
-                        <!-- Somatic States -->
-                        <div class="p-5 rounded-xl bg-slate-800/20 border border-slate-800 hover:border-teal-500/30 transition-all duration-300">
-                            <h3 class="text-teal-400 font-bold text-base mb-2">Somatic State Mapping</h3>
-                            <p class="text-slate-400 text-xs leading-relaxed">
-                                Grounded in Polyvagal theory, patient responses are mapped into three autonomic states:
-                                <br>🔴 <strong>Sympathetic:</strong> Fight or flight (anxiety, frustration).
-                                <br>🔵 <strong>Dorsal Vagal:</strong> Freeze or shutdown (numbness, isolation).
-                                <br>🟢 <strong>Ventral Vagal:</strong> Grounded safety (calm, social connection).
-                            </p>
-                        </div>
-                        <!-- Adversarial Audit -->
-                        <div class="p-5 rounded-xl bg-slate-800/20 border border-slate-800 hover:border-teal-500/30 transition-all duration-300">
-                            <h3 class="text-teal-400 font-bold text-base mb-2">Adversarial Auditing</h3>
-                            <p class="text-slate-400 text-xs leading-relaxed">
-                                A secondary scorer that monitors the session. If the therapist uses forbidden clinical shortcuts (such as premature advice, claiming to be human, or violating boundaries), it triggers a penalty multiplier to reduce the final experiment score.
-                            </p>
+                        <div class="bg-slate-800/50 p-4 rounded">
+                            <strong class="text-blue-400 block mb-1">De-escalation (1-5)</strong>
+                            <span class="text-slate-400">How effectively the therapist brings the patient toward a Ventral Vagal (safe) state.</span>
                         </div>
                     </div>
                 </div>
@@ -346,187 +356,140 @@
                     </div>
                 </div>
 
-                <!-- Future Runs Placeholder -->
-                <div class="bg-slate-800/10 rounded-lg p-6 border border-slate-700/30 border-dashed text-center">
-                    <p class="text-slate-500 italic">Analytical findings from Run 2 will be documented here upon completion.</p>
+                <!-- Run 2 Findings -->
+                <div class="bg-slate-800/50 rounded-lg p-6 border border-slate-700/30">
+                    <h3 class="text-lg font-semibold text-slate-200 mb-3 flex items-center gap-2">📊 Run 2 Findings <span class="px-2 py-0.5 text-[10px] bg-slate-500/20 text-slate-400 border border-slate-500/30 rounded-full">gemma4:e4b — JSON mode · 185 experiments</span></h3>
+                    <div class="grid md:grid-cols-2 gap-4 mb-4">
+                        <div class="bg-slate-900/50 p-4 rounded border border-slate-700/50">
+                            <h4 class="text-teal-400 font-medium mb-2">Key Results</h4>
+                            <ul class="text-sm text-slate-300 space-y-2">
+                                <li class="flex justify-between"><span>Best score:</span> <strong class="text-slate-200">91.25 / 100</strong></li>
+                                <li class="flex justify-between"><span>JSON parse failures:</span> <strong class="text-red-400">~15% of optimizer turns</strong></li>
+                                <li class="flex justify-between"><span>Optimizer stalls (no prompt):</span> <strong class="text-red-400">Frequent after exp 180+</strong></li>
+                                <li class="flex justify-between"><span>Dominant framework:</span> <strong class="text-slate-200">Somatic Validation + ACT/PCT</strong></li>
+                            </ul>
+                        </div>
+                        <div class="bg-slate-900/50 p-4 rounded border border-slate-700/50">
+                            <h4 class="text-purple-400 font-medium mb-2">Failure Modes Identified</h4>
+                            <ul class="list-disc pl-5 text-sm text-slate-400 space-y-1">
+                                <li><strong>JSON Fragility:</strong> The model frequently wrapped JSON in conversational filler ("Sure! Here is…") causing parser crashes.</li>
+                                <li><strong>Optimizer Stalls:</strong> Repeated <code>[Agent] Rejected proposal: No system prompt provided</code> — the model generated incomplete JSON that failed parsing.</li>
+                                <li><strong>Context Pollution:</strong> Internal reasoning leaked into the conversation history, degrading subsequent turns.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-amber-900/10 p-4 rounded border border-amber-500/20">
+                        <p class="text-sm text-slate-300"><strong class="text-amber-400">Conclusion:</strong> Run 2 achieved strong clinical scores (91.25 peak) but suffered from infrastructure instability — JSON parsing crashes, optimizer stalls, and context pollution. These failures motivated the Tier 5 architecture upgrade in Run 3.</p>
+                    </div>
+                </div>
+
+                <!-- Run 3 Rationale -->
+                <div class="bg-emerald-900/10 rounded-lg p-6 border border-emerald-500/20">
+                    <h3 class="text-lg font-semibold text-emerald-400 mb-3 flex items-center gap-2">🚀 Run 3 — Tier 5 Architecture <span class="px-2 py-0.5 text-[10px] bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 rounded-full">ACTIVE</span></h3>
+                    <p class="text-sm text-slate-300 leading-relaxed mb-3">Run 3 addresses every failure mode discovered in Run 2 by implementing four architectural upgrades:</p>
+                    <div class="grid md:grid-cols-2 gap-3 mb-4">
+                        <div class="bg-slate-900/50 p-3 rounded border border-slate-700/50">
+                            <h4 class="text-teal-400 font-medium text-sm mb-1">1. Constrained Decoding</h4>
+                            <p class="text-xs text-slate-400">Pydantic schemas enforced at the grammar level via <code>client.beta.chat.completions.parse()</code>. The model physically cannot output malformed JSON.</p>
+                        </div>
+                        <div class="bg-slate-900/50 p-3 rounded border border-slate-700/50">
+                            <h4 class="text-teal-400 font-medium text-sm mb-1">2. Native Tool Calling</h4>
+                            <p class="text-xs text-slate-400">Somatic state updates are now returned via native OpenAI-style tool calls instead of being embedded in JSON strings. Deterministic state tracking.</p>
+                        </div>
+                        <div class="bg-slate-900/50 p-3 rounded border border-slate-700/50">
+                            <h4 class="text-teal-400 font-medium text-sm mb-1">3. Native Thinking Tokens</h4>
+                            <p class="text-xs text-slate-400">Gemma 4's <code>&lt;|think|&gt;</code> control token activates internal chain-of-thought reasoning before JSON generation. Better clinical analysis, zero manual XML prompting.</p>
+                        </div>
+                        <div class="bg-slate-900/50 p-3 rounded border border-slate-700/50">
+                            <h4 class="text-teal-400 font-medium text-sm mb-1">4. History Sanitization</h4>
+                            <p class="text-xs text-slate-400">All <code>&lt;|channel&gt;thought&lt;channel|&gt;</code> reasoning blocks are stripped from the LangGraph state before appending to message history. Clean context window.</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-300"><strong class="text-emerald-400">Goal:</strong> Eliminate all infrastructure-level crashes so the optimizer can focus purely on clinical strategy innovation without wasting iterations on parsing failures.</p>
                 </div>
             </div>
         </div>
 
-        <!-- Footer -->
-        <footer id="main-footer" class="mt-12 pt-6 border-t border-slate-800 text-center text-slate-500 text-sm">
-            <p>Built with <a href="https://ollama.com" class="text-teal-500 hover:text-teal-400">Ollama</a> · Inspired
-                by <a href="https://x.com/karpathy" class="text-teal-500 hover:text-teal-400">Karpathy's
-                    autoresearch</a> · <a href="https://github.com/verycosmicstuff/recursive-mental-health-research"
-                    class="text-teal-500 hover:text-teal-400">Source Code</a></p>
-            <p class="mt-2">Created by <a href="http://www.sunnyarora.xyz" target="_blank" class="text-teal-500 hover:text-teal-400 font-medium transition-colors">Sunny Arora</a></p>
+        <footer class="mt-20 mb-8 pt-8 border-t border-slate-800 flex justify-between items-center text-sm text-slate-500">
+            <p>Recursive Mental Health Research</p>
+            <p>Created by <a href="http://www.sunnyarora.xyz" target="_blank" class="text-teal-500 hover:text-teal-400 font-medium transition-colors">Sunny Arora</a></p>
         </footer>
     </div>
 
     <script>
-        let statsData = null;
-
         function switchTab(tabId) {
-            const views = ['overview', 'transcripts', 'methodology', 'analysis'];
+            const views = ['overview', 'logs', 'hardware', 'transcripts', 'history', 'methodology', 'analysis'];
             
             views.forEach(v => {
                 const viewEl = document.getElementById('view-' + v);
                 const tabEl = document.getElementById('tab-' + v);
                 
                 if (v === tabId) {
-                    viewEl.classList.remove('hidden');
+                    if(viewEl) viewEl.classList.remove('hidden');
                     tabEl.classList.add('text-teal-400', 'border-teal-400');
                     tabEl.classList.remove('text-slate-400', 'border-transparent');
                 } else {
-                    viewEl.classList.add('hidden');
+                    if(viewEl) viewEl.classList.add('hidden');
                     tabEl.classList.remove('text-teal-400', 'border-teal-400');
                     tabEl.classList.add('text-slate-400', 'border-transparent');
                 }
             });
 
-            document.getElementById('main-footer').classList.remove('hidden');
+            if (tabId === 'logs') {
+                const logContainer = document.getElementById('live-logs');
+                logContainer.scrollTop = logContainer.scrollHeight;
+            }
             if (tabId === 'transcripts') {
-                buildTranscriptList();
-                if (window.innerWidth < 1024) clearDetailView();
+                loadExperimentList();
+            }
+            if (tabId === 'history') {
+                loadHistory();
             }
         }
 
-        function clearDetailView() {
-            document.getElementById('transcript-list-container').classList.remove('hidden');
-            document.getElementById('chat-container').classList.add('hidden');
-            document.getElementById('main-footer').classList.remove('hidden');
-        }
-
-        let chartRun2, chartRun1;
-
-        function createChart(canvasId, color, rgbaColor) {
-            const ctx = document.getElementById(canvasId).getContext('2d');
-            return new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: [], datasets: [{
-                        label: 'Score', data: [],
-                        borderColor: color, backgroundColor: rgbaColor,
-                        borderWidth: 2, tension: 0.3, fill: true, pointRadius: 3, pointHoverRadius: 5
-                    }]
-                },
-                options: {
-                    responsive: true, maintainAspectRatio: false,
-                    scales: {
-                        y: { grid: { color: '#334155' }, ticks: { color: '#94a3b8' } },
-                        x: { grid: { display: false }, ticks: { color: '#94a3b8', maxRotation: 45 } }
-                    },
-                    plugins: { legend: { display: false } }
-                }
-            });
-        }
-
-        function initChart() {
-            chartRun2 = createChart('scoreChartRun2', '#2dd4bf', 'rgba(45, 212, 191, 0.1)');
-            chartRun1 = createChart('scoreChartRun1', '#818cf8', 'rgba(129, 140, 248, 0.1)');
-        }
-
-        async function loadData() {
+        async function loadExperimentList() {
             try {
                 const res = await fetch('data/stats.json');
-                statsData = await res.json();
-                const data = statsData;
-
-                if (data.experiments && data.experiments.length > 0) {
-                    // Split experiments by run
-                    const run1Exps = data.experiments.filter(e => (e.run || '').includes('Run 1'));
-                    const run2Exps = data.experiments.filter(e => !(e.run || '').includes('Run 1'));
-
-                    // Best scores per run
-                    const run2Best = run2Exps.length > 0 ? Math.max(...run2Exps.map(e => e.score)) : 0;
-                    const run1Best = run1Exps.length > 0 ? Math.max(...run1Exps.map(e => e.score)) : 0;
-
-                    document.getElementById('best-score').textContent = run2Best.toFixed(2);
-                    document.getElementById('total-exps-run2').textContent = run2Exps.length;
-                    document.getElementById('total-exps').textContent = data.experiments.length;
-
-                    const latest = run2Exps.length > 0 ? run2Exps[run2Exps.length - 1] : data.experiments[data.experiments.length - 1];
-                    document.getElementById('latest-strategy').textContent = latest.strategy_name;
-
-                    // Update Run 2 chart
-                    chartRun2.data.labels = run2Exps.map(e => e.exp_id.replace('exp_', '').replace('baseline_', 'B'));
-                    chartRun2.data.datasets[0].data = run2Exps.map(e => e.score);
-                    chartRun2.update();
-
-                    // Update Run 1 chart
-                    chartRun1.data.labels = run1Exps.map(e => e.exp_id.replace('run1_exp_', ''));
-                    chartRun1.data.datasets[0].data = run1Exps.map(e => e.score);
-                    chartRun1.update();
-
-                    // Build table (all experiments, reverse chronological)
-                    const tbody = document.getElementById('table-body');
-                    tbody.innerHTML = '';
-                    const reversed = [...data.experiments].reverse();
-                    reversed.forEach((e, idx) => {
-                        const tr = document.createElement('tr');
-                        tr.className = idx === 0 ? 'bg-slate-800/50' : 'border-b border-slate-800 hover:bg-slate-800/30';
-                        const isRun1 = (e.run || '').includes('Run 1');
-                        const bestForRun = isRun1 ? run1Best : run2Best;
-                        const isBest = e.score === bestForRun;
-
-                        let auditBadge = '';
-                        if (e.audit_mult < 1.0) {
-                            auditBadge = `<span class="ml-2 px-2 py-0.5 text-xs bg-red-500/20 text-red-400 border border-red-500/50 rounded-full cursor-help" title="${e.audit_rationale}">Audited [x${e.audit_mult}]</span>`;
-                        }
-                        let runBadge = isRun1
-                            ? '<span class="ml-2 px-1.5 py-0.5 text-[10px] bg-indigo-500/20 text-indigo-400 border border-indigo-500/30 rounded">Run 1</span>'
-                            : '';
-
-                        tr.innerHTML = `
-                            <td class="py-3 px-4 font-mono text-slate-400">${e.exp_id}${runBadge}</td>
-                            <td class="py-3 px-4 ${isBest ? 'text-teal-400 font-medium' : 'text-slate-300'}">
-                                ${e.strategy_name} ${isBest ? '⭐' : ''} ${auditBadge}
-                            </td>
-                            <td class="py-3 px-4 text-slate-400 truncate max-w-xs" title="${e.hypothesis}">${e.hypothesis}</td>
-                            <td class="py-3 px-4 text-right ${e.score > 0 ? 'text-teal-400' : 'text-red-400'} font-mono">${e.score.toFixed(3)}</td>
-                        `;
-                        tbody.appendChild(tr);
-                    });
+                const data = await res.json();
+                const container = document.getElementById('transcript-list');
+                if (!data.experiments || data.experiments.length === 0) {
+                    container.innerHTML = '<p class="text-slate-500 text-sm">No experiments yet...</p>';
+                    return;
                 }
-            } catch (err) {
-                console.error("Failed to load stats.json", err);
+                container.innerHTML = '';
+                const reversed = [...data.experiments].reverse();
+                reversed.forEach(e => {
+                    const btn = document.createElement('button');
+                    btn.className = 'w-full text-left px-3 py-2 rounded hover:bg-slate-700/50 transition-colors text-sm group';
+                    btn.innerHTML = `
+                        <div class="font-mono text-teal-400 text-xs">${e.exp_id}</div>
+                        <div class="text-slate-300 truncate">${e.strategy_name}</div>
+                        <div class="text-slate-500 text-xs">Score: ${e.score.toFixed(3)}</div>
+                    `;
+                    btn.onclick = () => loadTranscript(e.exp_id);
+                    container.appendChild(btn);
+                });
+            } catch(err) {
+                console.error('Failed to load experiment list', err);
             }
-        }
-
-        function buildTranscriptList() {
-            if (!statsData || !statsData.experiments) return;
-            const container = document.getElementById('transcript-list');
-            container.innerHTML = '';
-            const reversed = [...statsData.experiments].reverse();
-            reversed.forEach(e => {
-                const btn = document.createElement('button');
-                btn.id = 'btn-' + e.exp_id;
-                btn.className = 'transcript-btn w-full text-left p-3 rounded-lg transition-all border border-slate-700/50 hover:bg-slate-700/30 hover:border-slate-600 focus:outline-none';
-                btn.innerHTML = `
-                    <div class="flex justify-between items-start mb-1">
-                        <span class="text-teal-400 font-mono text-xs font-bold">${e.exp_id}</span>
-                        <span class="text-xs text-slate-500">${e.score.toFixed(2)}</span>
-                    </div>
-                    <div class="text-slate-200 text-sm font-medium leading-tight line-clamp-2">${e.strategy_name}</div>
-                `;
-                btn.onclick = () => loadTranscript(e.exp_id);
-                container.appendChild(btn);
-            });
         }
 
         async function loadTranscript(expId) {
             try {
                 const res = await fetch(`data/transcripts/${expId}.json`);
                 const data = await res.json();
+                if (data.error) { alert(data.error); return; }
 
+                // Update header
                 document.getElementById('transcript-title').textContent = `${expId} — ${data.strategy?.name || 'Unknown'}`;
                 const persona = data.persona || {};
                 document.getElementById('transcript-meta').innerHTML = `
-                    Patient: <strong>${persona.name || '?'}</strong>, Age ${persona.age || '?'},
-                    PHQ-9 Baseline: ${persona.baseline_phq9 || '?'} ·
+                    Patient: <strong>${persona.name || '?'}</strong>, Age ${persona.age || '?'}, 
+                    PHQ-9 Baseline: ${persona.baseline_phq9 || '?'} · 
                     <span class="text-slate-500">${persona.presenting_issue || ''}</span>
                 `;
 
+                // Render chat bubbles
                 const chatEl = document.getElementById('transcript-chat');
                 chatEl.innerHTML = '';
                 (data.conversation || []).forEach((msg, i) => {
@@ -548,7 +511,7 @@
                     
                     bubble.innerHTML = `
                         <div class="max-w-[85%] sm:max-w-[75%] rounded-2xl px-4 py-3 ${isTherapist ? 'bg-teal-900/40 border border-teal-700/50 shadow-lg backdrop-blur-sm' : 'bg-indigo-900/40 border border-indigo-700/50 shadow-lg backdrop-blur-sm'} transition-transform hover:-translate-y-0.5">
-                            <div class="text-xs ${isTherapist ? 'text-teal-500' : 'text-indigo-400'} mb-1 font-medium tracking-wide">${modelTag} <span class="text-slate-500 font-normal">· Turn ${Math.floor(i / 2) + 1}</span></div>
+                            <div class="text-xs ${isTherapist ? 'text-teal-500' : 'text-indigo-400'} mb-1 font-medium tracking-wide">${modelTag} <span class="text-slate-500 font-normal">· Turn ${Math.floor(i/2)+1}</span></div>
                             <div class="text-slate-200 text-sm leading-relaxed" style="white-space: pre-wrap;">${msg.content}</div>
                             ${somaticHtml}
                         </div>
@@ -557,6 +520,7 @@
                 });
                 chatEl.scrollTop = 0;
 
+                // Render scores footer
                 const scores = data.scores || {};
                 document.getElementById('transcript-scores').classList.remove('hidden');
                 document.getElementById('ts-score').textContent = (scores.total_score || 0).toFixed(3);
@@ -573,34 +537,270 @@
                     auditEl.classList.add('hidden');
                 }
 
-                // Update button selection state
-                document.querySelectorAll('.transcript-btn').forEach(btn => {
-                    btn.classList.remove('bg-indigo-500/20', 'border-indigo-500/50', 'ring-1', 'ring-indigo-500/50');
-                    btn.classList.add('bg-slate-800/10');
+                // Highlight active in sidebar
+                document.querySelectorAll('#transcript-list button').forEach(btn => {
+                    btn.classList.remove('bg-slate-700/50');
+                    if (btn.querySelector('.font-mono')?.textContent === expId) {
+                        btn.classList.add('bg-slate-700/50');
+                    }
                 });
-                const activeBtn = document.getElementById('btn-' + expId);
-                if (activeBtn) {
-                    activeBtn.classList.remove('bg-slate-800/10');
-                    activeBtn.classList.add('bg-indigo-500/20', 'border-indigo-500/50', 'ring-1', 'ring-indigo-500/50');
-                }
-
-                // On mobile, hide the list and show the chat full-screen
-                if (window.innerWidth < 1024) {
-                    document.getElementById('transcript-list-container').classList.add('hidden');
-                    document.getElementById('chat-container').classList.remove('hidden');
-                    document.getElementById('main-footer').classList.add('hidden');
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                }
-            } catch (err) {
+            } catch(err) {
                 console.error('Failed to load transcript', err);
             }
         }
 
+        async function loadHistory() {
+            try {
+                const res = await fetch('data/history.json');
+                const commits = await res.json();
+                renderHistory(commits);
+            } catch (err) {
+                console.error('Failed to load history', err);
+                document.getElementById('history-timeline').innerHTML = '<p class="text-red-400 pl-8">Failed to fetch history.</p>';
+            }
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function renderHistory(commits) {
+            const container = document.getElementById('history-timeline');
+            container.innerHTML = '';
+            
+            const exps = window.globalExperiments || [];
+            if (exps.length === 0) {
+                container.innerHTML = '<p class="text-slate-500 pl-8">No experiments found to build timeline.</p>';
+                return;
+            }
+
+            // Render from newest to oldest
+            const reversedExps = [...exps].reverse();
+
+            reversedExps.forEach(e => {
+                const item = document.createElement('div');
+                item.className = 'relative pl-8 sm:pl-12 group';
+                
+                // Timeline Dot
+                const dot = document.createElement('div');
+                dot.className = 'absolute left-0 top-1.5 w-8 h-8 flex items-center justify-center z-10 -translate-x-1.5 sm:translate-x-1';
+                dot.innerHTML = `<div class="w-3 h-3 rounded-full bg-slate-900 border-2 border-indigo-400 group-hover:scale-125 transition-transform"></div>`;
+                item.appendChild(dot);
+
+                // Find matching commit for diffs
+                let matchedCommit = false;
+                if (commits && commits.length > 0) {
+                    matchedCommit = commits.find(c => {
+                        let found = false;
+                        // Use a 30-char excerpt of the hypothesis to safely identify the correct commit where it was born
+                        const hypExcerpt = e.hypothesis ? e.hypothesis.substring(0, 30).trim() : 'IMPOSSIBLE_STRING';
+                        
+                        // Check if the commit message explicitly contains the exp_id (since Exp 13+)
+                        if (c.message && c.message.includes(e.exp_id)) {
+                            return true;
+                        }
+                        
+                        c.hunks.forEach(h => {
+                            h.lines.forEach(l => {
+                                // If the hypothesis was added in this diff
+                                if (l.type === 'add' && l.content.includes(hypExcerpt)) {
+                                    found = true;
+                                }
+                                // If the name itself was changed/added in this diff
+                                if (l.type === 'add' && l.content.includes(e.strategy_name)) {
+                                    found = true;
+                                }
+                            });
+                        });
+                        return found;
+                    });
+                }
+
+                let diffHtml = '';
+                if (matchedCommit) {
+                    diffHtml = `
+                        <details class="mt-4 group/details">
+                            <summary class="cursor-pointer text-sm font-medium text-teal-400 hover:text-teal-300 flex items-center gap-2 select-none mb-2 outline-none">
+                                <span class="transition-transform group-open/details:rotate-90">▶</span>
+                                View System Prompt Changes
+                            </summary>
+                            <div class="space-y-4 pl-4 pt-2 border-l-2 border-slate-700/50">
+                                ${matchedCommit.hunks.map(h => `
+                                    <div class="rounded-lg overflow-hidden border border-slate-700/50 bg-slate-900 shadow-inner">
+                                        <div class="hunk-header font-mono">${escapeHtml(h.header)}</div>
+                                        <div class="py-2 overflow-x-auto">
+                                            ${h.lines.map(l => `
+                                                <span class="diff-line diff-${l.type}">${escapeHtml(l.content)}</span>
+                                            `).join('')}
+                                        </div>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </details>
+                    `;
+                } else {
+                    diffHtml = `
+                        <div class="mt-4 text-xs text-slate-500 italic opacity-60">
+                            (System prompt changes were not committed to Git for this past experiment)
+                        </div>
+                    `;
+                }
+
+                const content = `
+                    <div class="bg-slate-800/50 rounded-lg p-5 border border-slate-700 hover:border-slate-500 transition-colors shadow-sm">
+                        <div class="flex flex-col sm:flex-row sm:items-center gap-3 mb-4 border-b border-slate-700/50 pb-3">
+                            <span class="px-2 py-0.5 bg-indigo-500/10 text-indigo-400 text-xs font-bold rounded border border-indigo-500/20 font-mono w-fit">
+                                ${e.exp_id.toUpperCase()}
+                            </span>
+                            <h3 class="text-base font-bold text-slate-200">${escapeHtml(e.strategy_name)}</h3>
+                            <span class="sm:ml-auto px-2 py-0.5 rounded text-xs font-mono font-bold w-fit ${e.score > 0 ? 'bg-teal-500/10 text-teal-400 border border-teal-500/20' : 'bg-red-500/10 text-red-400'}">
+                                ⭐ SCORE: ${e.score.toFixed(3)}
+                            </span>
+                        </div>
+                        
+                        <div class="mb-1">
+                            <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Agent's Reasoning</span>
+                        </div>
+                        <blockquote class="pl-4 py-1 border-l-2 border-indigo-500/50 text-sm text-slate-300 italic mb-2">
+                            "${escapeHtml(e.hypothesis)}"
+                        </blockquote>
+
+                        ${diffHtml}
+                    </div>
+                `;
+                item.innerHTML += content;
+                container.appendChild(item);
+            });
+        }
+
+        let chartRun3, chartRun2, chartRun1;
+        
+        function createChart(canvasId, color, rgbaColor) {
+            const ctx = document.getElementById(canvasId).getContext('2d');
+            return new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: [],
+                    datasets: [{
+                        label: 'Score',
+                        data: [],
+                        borderColor: color,
+                        backgroundColor: rgbaColor,
+                        borderWidth: 2,
+                        tension: 0.3,
+                        fill: true,
+                        pointRadius: 3,
+                        pointHoverRadius: 5
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: { grid: { color: '#334155' }, ticks: { color: '#94a3b8' } },
+                        x: { grid: { display: false }, ticks: { color: '#94a3b8', maxRotation: 45 } }
+                    },
+                    plugins: { legend: { display: false } }
+                }
+            });
+        }
+
+        function initChart() {
+            chartRun3 = createChart('scoreChartRun3', '#34d399', 'rgba(52, 211, 153, 0.1)');
+            chartRun2 = createChart('scoreChartRun2', '#2dd4bf', 'rgba(45, 212, 191, 0.1)');
+            chartRun1 = createChart('scoreChartRun1', '#818cf8', 'rgba(129, 140, 248, 0.1)');
+        }
+
+        async function updateDashboard() {
+            try {
+                const res = await fetch('data/stats.json');
+                const data = await res.json();
+                
+                if (data.experiments && data.experiments.length > 0) {
+                    window.globalExperiments = data.experiments;
+
+                    // Split experiments by run
+                    const run1Exps = data.experiments.filter(e => (e.run || '').includes('Run 1'));
+                    const run2Exps = data.experiments.filter(e => (e.run || '').includes('Run 2'));
+                    const run3Exps = data.experiments.filter(e => (e.run || '').includes('Run 3'));
+
+                    // Best scores per run
+                    const run3Best = run3Exps.length > 0 ? Math.max(...run3Exps.map(e => e.score)) : 0;
+                    const run2Best = run2Exps.length > 0 ? Math.max(...run2Exps.map(e => e.score)) : 0;
+                    const activeBest = run3Exps.length > 0 ? run3Best : run2Best;
+                    
+                    document.getElementById('best-score').textContent = activeBest.toFixed(2);
+                    
+                    // Update Run 3 chart
+                    chartRun3.data.labels = run3Exps.map(e => e.exp_id.replace('exp_','').replace('baseline_','B'));
+                    chartRun3.data.datasets[0].data = run3Exps.map(e => e.score);
+                    chartRun3.update();
+
+                    // Update Run 2 chart
+                    chartRun2.data.labels = run2Exps.map(e => e.exp_id.replace('exp_','').replace('baseline_','B'));
+                    chartRun2.data.datasets[0].data = run2Exps.map(e => e.score);
+                    chartRun2.update();
+
+                    // Update Run 1 chart
+                    chartRun1.data.labels = run1Exps.map(e => e.exp_id.replace('run1_exp_',''));
+                    chartRun1.data.datasets[0].data = run1Exps.map(e => e.score);
+                    chartRun1.update();
+                    
+                    // Update Latest Details (from Run 3 first, fallback to Run 2)
+                    const latest = run3Exps.length > 0 ? run3Exps[run3Exps.length - 1] : (run2Exps.length > 0 ? run2Exps[run2Exps.length - 1] : data.experiments[data.experiments.length - 1]);
+                    document.getElementById('latest-strategy').textContent = latest.strategy_name;
+                    document.getElementById('latest-hypothesis').textContent = latest.hypothesis;
+                    document.getElementById('l-score').textContent = latest.score.toFixed(2);
+                    document.getElementById('l-emp').textContent = (latest.empathic || 0).toFixed(1);
+                    document.getElementById('l-ref').textContent = (latest.reflective || 0).toFixed(1);
+                    
+                    // Update Table (reverse chronological, all runs)
+                    const tbody = document.getElementById('table-body');
+                    tbody.innerHTML = '';
+                    const reversed = [...data.experiments].reverse();
+                    
+                    reversed.forEach((e, idx) => {
+                        const tr = document.createElement('tr');
+                        tr.className = idx === 0 ? 'bg-slate-800/50' : 'border-b border-slate-800 hover:bg-slate-800/30';
+                        const isRun1 = (e.run || '').includes('Run 1');
+                        const isRun2 = (e.run || '').includes('Run 2');
+                        const isRun3 = (e.run || '').includes('Run 3');
+                        const bestForRun = isRun1 ? (run1Exps.length > 0 ? Math.max(...run1Exps.map(x => x.score)) : 0) : (isRun2 ? run2Best : run3Best);
+                        const isBest = e.score === bestForRun;
+                        
+                        let auditBadge = '';
+                        if (e.audit_mult < 1.0) {
+                            auditBadge = `<span class="ml-2 px-2 py-0.5 text-xs bg-red-500/20 text-red-400 border border-red-500/50 rounded-full cursor-help" title="${e.audit_rationale}">Audited [x${e.audit_mult}]</span>`;
+                        }
+                        let runBadge = '';
+                        if (isRun1) runBadge = '<span class="ml-2 px-1.5 py-0.5 text-[10px] bg-indigo-500/20 text-indigo-400 border border-indigo-500/30 rounded">Run 1</span>';
+                        else if (isRun2) runBadge = '<span class="ml-2 px-1.5 py-0.5 text-[10px] bg-teal-500/20 text-teal-400 border border-teal-500/30 rounded">Run 2</span>';
+                        else if (isRun3) runBadge = '<span class="ml-2 px-1.5 py-0.5 text-[10px] bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 rounded">Run 3</span>';
+                        
+                        tr.innerHTML = `
+                            <td class="py-3 px-4 font-mono text-slate-400">${e.exp_id}${runBadge}</td>
+                            <td class="py-3 px-4 ${isBest ? 'text-teal-400 font-medium' : 'text-slate-300'}">
+                                ${e.strategy_name} ${isBest ? '⭐' : ''} ${auditBadge}
+                            </td>
+                            <td class="py-3 px-4 text-slate-400 truncate max-w-xs" title="${e.hypothesis}">${e.hypothesis}</td>
+                            <td class="py-3 px-4 text-right ${e.score > 0 ? 'text-teal-400' : 'text-red-400'} font-mono">${e.score.toFixed(3)}</td>
+                        `;
+                        tbody.appendChild(tr);
+                    });
+                }
+            } catch (err) {
+                console.error("Failed to fetch dashboard data", err);
+            }
+        }
+
         initChart();
-        loadData();
-        // Auto-refresh every 60 seconds so you don't have to manually reload
-        setInterval(loadData, 60000);
+        updateDashboard();
+        // Poll every 5 seconds for dashboard updates
+        setInterval(() => {
+            updateDashboard();
+        }, 5000);
     </script>
 </body>
-
 </html>

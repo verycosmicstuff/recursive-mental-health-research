@@ -9,16 +9,15 @@ import therapist
 import session_config
 import patient_archetypes
 import random
-from dataclasses import dataclass, asdict
+from pydantic import BaseModel, Field
 
-@dataclass
-class SomaticState:
-    sympathetic: float    # Fight/Flight (0.0 to 1.0)
-    dorsal_vagal: float   # Collapse/Freeze (0.0 to 1.0)
-    ventral_vagal: float  # Safety/Grounded (0.0 to 1.0)
+class SomaticState(BaseModel):
+    sympathetic: float = Field(..., description="Fight/Flight (0.0 to 1.0)")
+    dorsal_vagal: float = Field(..., description="Collapse/Freeze (0.0 to 1.0)")
+    ventral_vagal: float = Field(..., description="Safety/Grounded (0.0 to 1.0)")
 
     def to_dict(self):
-        return asdict(self)
+        return self.model_dump()
 
     @classmethod
     def from_dict(cls, d: dict):
@@ -27,6 +26,15 @@ class SomaticState:
             dorsal_vagal=max(0.0, min(1.0, float(d.get("dorsal_vagal", 0.0)))),
             ventral_vagal=max(0.0, min(1.0, float(d.get("ventral_vagal", 0.0))))
         )
+
+class PatientPersona(BaseModel):
+    name: str = Field(..., description="First name only")
+    age: int = Field(..., description="Age of the patient")
+    occupation: str = Field(..., description="Occupation/Job")
+    presenting_issue: str = Field(..., description="Brief 1 sentence description of why they are seeking help today")
+    background_story: str = Field(..., description="A 3-4 sentence backstory about their current life stress and emotional state")
+    personality: str = Field(..., description="Description of their conversational style")
+    baseline_phq9: int = Field(..., description="Depression severity score (indicating severity)")
 
 # Initialize OpenAI client to point to local Ollama instance (Therapist)
 client_local = OpenAI(
@@ -42,6 +50,27 @@ client_evaluator = OpenAI(
 
 _LLM_LOCK = threading.Lock()
 
+def call_with_retry(func, *args, max_retries=3, initial_delay=2.0, **kwargs):
+    """Wrapper that retries a function call in case of transient API/connection timeouts/errors."""
+    delay = initial_delay
+    for attempt in range(max_retries):
+        try:
+            return func(*args, **kwargs)
+        except Exception as e:
+            is_retryable = False
+            err_name = type(e).__name__
+            if "Timeout" in err_name or "Connection" in err_name or "RateLimit" in err_name or "InternalServer" in err_name:
+                is_retryable = True
+            elif hasattr(e, "status_code") and e.status_code in [408, 429, 500, 502, 503, 504]:
+                is_retryable = True
+                
+            if is_retryable and attempt < max_retries - 1:
+                print(f"[Harness] LLM call failed with {err_name} ({e}). Retrying in {delay:.1f}s (attempt {attempt + 1}/{max_retries})...")
+                time.sleep(delay)
+                delay *= 2
+            else:
+                raise e
+
 def check_pause():
     """Blocks execution if the system is paused, dropping GPU/CPU usage instantly."""
     paused_logged = False
@@ -51,7 +80,7 @@ def check_pause():
             paused_logged = True
         time.sleep(2)
 
-def chat_completion(messages, temperature=0.7, json_format=False, use_evaluator=False):
+def chat_completion(messages, temperature=0.7, json_format=False, tools=None, use_evaluator=False):
     """Wrapper for chat completion routing to correct model API"""
     check_pause()
     
@@ -63,18 +92,47 @@ def chat_completion(messages, temperature=0.7, json_format=False, use_evaluator=
         "messages": messages,
         "temperature": temperature,
     }
-    if json_format:
+    if json_format and not tools:
         kwargs["response_format"] = {"type": "json_object"}
-        kwargs["timeout"] = 180 # Longer timeout for complex agent generation
+        kwargs["timeout"] = 300 # Longer timeout for complex agent generation
     else:
-        kwargs["timeout"] = 60
+        kwargs["timeout"] = 300 # Generous timeout for local reasoning models
+        
+    if tools:
+        kwargs["tools"] = tools
         
     if not use_evaluator:
         with _LLM_LOCK:
-            response = active_client.chat.completions.create(**kwargs)
+            response = call_with_retry(active_client.chat.completions.create, **kwargs)
     else:
-        response = active_client.chat.completions.create(**kwargs)
+        response = call_with_retry(active_client.chat.completions.create, **kwargs)
+        
+    if tools:
+        return response.choices[0].message
     return response.choices[0].message.content
+
+
+def chat_completion_parse(messages, response_format, temperature=0.7, use_evaluator=False):
+    """Wrapper that returns a parsed Pydantic object using Constrained Decoding."""
+    check_pause()
+    active_client = client_evaluator if use_evaluator else client_local
+    active_model = config.EVALUATOR_MODEL_NAME if use_evaluator else config.MODEL_NAME
+    
+    kwargs = {
+        "model": active_model,
+        "messages": messages,
+        "temperature": temperature,
+        "response_format": response_format,
+        "timeout": 300
+    }
+    
+    if not use_evaluator:
+        with _LLM_LOCK:
+            response = call_with_retry(active_client.beta.chat.completions.parse, **kwargs)
+    else:
+        response = call_with_retry(active_client.beta.chat.completions.parse, **kwargs)
+        
+    return response.choices[0].message.parsed
 
 
 def generate_patient_persona() -> dict:
@@ -86,27 +144,14 @@ def generate_patient_persona() -> dict:
     archetype_label = archetype.get("label", "Unknown")
     
     prompt = f"""Generate a realistic, synthetic profile for an adult patient seeking text-based mental health support.
-Return ONLY valid JSON with the following structure:
-{{
-    "name": "First name only",
-    "age": integer between {archetype['age_range'][0]} and {archetype['age_range'][1]},
-    "occupation": "string",
-    "presenting_issue": "Brief 1 sentence description of why they are seeking help today",
-    "background_story": "A 3-4 sentence backstory about their current life stress and emotional state",
-    "personality": "Describe their conversational style based on this hint: {archetype['personality_hint']}",
-    "baseline_phq9": integer between {archetype['phq9_range'][0]} and {archetype['phq9_range'][1]} (indicating severity)
-}}"""
+The profile must represent this patient group archetype: {archetype_label}.
+Provide the name, age (between {archetype['age_range'][0]} and {archetype['age_range'][1]}), occupation, presenting issue, backstory, and personality.
+Depression severity (baseline_phq9) should be between {archetype['phq9_range'][0]} and {archetype['phq9_range'][1]} based on the archetype.
+"""
     
     session_cfg = session_config.get_session_config()
     patient_temp = max(0.1, min(1.0, float(session_cfg.get("temperature_patient", 0.8))))
 
-    response = chat_completion(
-        [{"role": "user", "content": prompt}], 
-        temperature=patient_temp,
-        json_format=True,
-        use_evaluator=True
-    )
-    
     fallback = {
         "name": "Alex", "age": 30, "occupation": "Software Engineer", 
         "presenting_issue": "Feeling overwhelmed and disconnected.",
@@ -116,7 +161,13 @@ Return ONLY valid JSON with the following structure:
     }
 
     try:
-        persona = json.loads(response)
+        persona_obj = chat_completion_parse(
+            [{"role": "user", "content": prompt}],
+            response_format=PatientPersona,
+            temperature=patient_temp,
+            use_evaluator=True
+        )
+        persona = persona_obj.model_dump()
         
         # Ensure all required keys exist by filling in gaps from the fallback
         for key, value in fallback.items():
@@ -133,13 +184,13 @@ Return ONLY valid JSON with the following structure:
         persona["archetype_label"] = archetype_label
         return persona
 
-    except json.JSONDecodeError:
-        print("[Harness] Warning: Could not parse patient persona JSON. Using fallback.")
+    except Exception as e:
+        print(f"[Harness] Warning: Could not generate/parse patient persona via Pydantic: {e}. Using fallback.")
         fallback["archetype_label"] = archetype_label
         return fallback
 
 def get_patient_response(persona: dict, conversation_history: list) -> tuple[str, dict]:
-    """Simulates the patient's next turn in the conversation."""
+    """Simulates the patient's next turn in the conversation using tool calling for somatic states."""
     sys_prompt = f"""You are enacting a realistic text-based therapy patient named {persona['name']}.
 
 YOUR PROFILE:
@@ -156,19 +207,8 @@ RULES FOR YOUR BEHAVIOR:
 - DO NOT break character. DO NOT summarize the conversation. DO NOT thank the therapist unless it authentically feels right.
 - If your personality is 'resistant' or 'guarded', act like it. Make the therapist work to build rapport.
 
-CRITICAL INSTRUCTION: You must return ONLY a JSON object containing both your dialogue and your current somatic (autonomic nervous system) state.
-
-Format your response exactly like this:
-{{
-  "dialogue": "Your text response to the therapist here...",
-  "somatic_state": {{
-    "sympathetic": 0.0 to 1.0 (Fight/Flight, anxiety, anger),
-    "dorsal_vagal": 0.0 to 1.0 (Collapse/Freeze, numbness, dissociation),
-    "ventral_vagal": 0.0 to 1.0 (Safety/Grounded, connection, calm)
-  }}
-}}
-
-Here is the conversation so far:"""
+CRITICAL INSTRUCTION: You MUST call the tool `update_somatic_state` to update your current somatic state (autonomic nervous system states: sympathetic, ventral vagal, dorsal vagal) based on your current emotional/physical experience in this turn.
+"""
 
     messages = [{"role": "system", "content": sys_prompt}]
     
@@ -183,16 +223,43 @@ Here is the conversation so far:"""
     
     session_cfg = session_config.get_session_config()
     patient_temp = max(0.1, min(1.0, float(session_cfg.get("temperature_patient", 0.8))))
-    response = chat_completion(messages, temperature=patient_temp, json_format=True, use_evaluator=True)
     
-    try:
-        data = json.loads(response)
-        dialogue = data.get("dialogue", str(data))
-        somatic = SomaticState.from_dict(data.get("somatic_state", {})).to_dict()
-        return dialogue, somatic
-    except json.JSONDecodeError:
-        print("[Harness] Warning: Could not parse patient response JSON. Using fallback.")
-        return response, SomaticState(0.5, 0.5, 0.0).to_dict()
+    tools = [
+        {
+            "type": "function",
+            "function": {
+                "name": "update_somatic_state",
+                "description": "Call this function to update your somatic/autonomic nervous system state (sympathetic, ventral_vagal, dorsal_vagal).",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "sympathetic": {"type": "number", "description": "Fight/Flight (0.0 to 1.0) - represents tension, anxiety, anger, or mobilization."},
+                        "ventral_vagal": {"type": "number", "description": "Safety/Grounded (0.0 to 1.0) - represents connection, calm, safety, or presence."},
+                        "dorsal_vagal": {"type": "number", "description": "Collapse/Freeze (0.0 to 1.0) - represents numbness, dissociation, shame, or shutdown."}
+                    },
+                    "required": ["sympathetic", "ventral_vagal", "dorsal_vagal"]
+                }
+            }
+        }
+    ]
+    
+    message = chat_completion(messages, temperature=patient_temp, tools=tools, use_evaluator=True)
+    
+    dialogue = message.content or ""
+    somatic = {"sympathetic": 0.5, "dorsal_vagal": 0.5, "ventral_vagal": 0.0} # Default fallback state
+    
+    if message.tool_calls:
+        for tool_call in message.tool_calls:
+            if tool_call.function.name == "update_somatic_state":
+                try:
+                    args = json.loads(tool_call.function.arguments)
+                    somatic = SomaticState.from_dict(args).to_dict()
+                    break
+                except Exception as e:
+                    print(f"[Harness] Warning: Failed to parse tool call arguments: {e}")
+                    
+    dialogue = dialogue.strip()
+    return dialogue, somatic
 
 def get_therapist_response(conversation_history: list, active_prompt: str) -> str:
     """Gets the therapist's response using the currently loaded strategy."""

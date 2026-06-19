@@ -37,7 +37,32 @@ def get_stats():
         except Exception as e:
             print(f"Dashboard error loading Run 1 backup: {e}")
 
-    # 2. Load Run 2 experiments from RESULTS_FILE
+    # 2. Load Run 2 experiments from backup (results_run2.tsv)
+    RUN2_RESULTS = os.path.join(config.BASE_DIR, "results_run2.tsv")
+    if os.path.exists(RUN2_RESULTS):
+        try:
+            df = pd.read_csv(RUN2_RESULTS, sep='\t', encoding='utf-8')
+            df = df.fillna("")
+            for _, row in df.iterrows():
+                score = float(row["score"])
+                experiments.append({
+                    "exp_id": row["exp_id"],
+                    "strategy_name": row.get("strategy_name", "Unknown"),
+                    "hypothesis": str(row.get("hypothesis", "")),
+                    "score": score,
+                    "empathic": float(row.get("empathic", 0)),
+                    "reflective": float(row.get("reflective", 0)),
+                    "de_escalation": float(row.get("de_escalation", 0)),
+                    "audit_mult": float(row.get("audit_mult", 1.0)),
+                    "audit_rationale": str(row.get("audit_rationale", "")),
+                    "run": "Run 2 (gemma4:e4b — JSON mode)"
+                })
+                if score > best_score:
+                    best_score = score
+        except Exception as e:
+            print(f"Dashboard error reading Run 2 backup: {e}")
+
+    # 3. Load Run 3 experiments from current RESULTS_FILE
     if os.path.exists(config.RESULTS_FILE):
         try:
             df = pd.read_csv(config.RESULTS_FILE, sep='\t', encoding='utf-8')
@@ -54,7 +79,7 @@ def get_stats():
                     "de_escalation": float(row.get("de_escalation", 0)),
                     "audit_mult": float(row.get("audit_mult", 1.0)),
                     "audit_rationale": str(row.get("audit_rationale", "")),
-                    "run": "Run 2 (qwen3:4b)"
+                    "run": "Run 3 (gemma4:e4b — Tier 5)"
                 })
                 if score > best_score:
                     best_score = score

@@ -2,6 +2,13 @@ import os
 import json
 import config
 from harness import chat_completion
+from pydantic import BaseModel, Field
+
+class StrategyProposal(BaseModel):
+    reasoning: str = Field(..., description="Step-by-step clinical analysis of the past runs and rationale for changes.")
+    strategy_name: str = Field(..., description="Catchy name for this therapist strategy.")
+    hypothesis: str = Field(..., description="Compelling hypothesis about why this strategy improves scores.")
+    new_system_prompt: str = Field(..., description="Complete therapist system prompt.")
 
 def load_results() -> str:
     """Reads the results.tsv file and formats it for the LLM."""
@@ -33,7 +40,7 @@ def propose_next_experiment(current_best_score: float, current_prompt: str, pena
     
     penalties_str = "\n".join([f"- {p}" for p in penalties]) if penalties else "None"
 
-    prompt = f"""You are an elite clinical research AI leading a recursive self-improvement project. 
+    prompt = f"""<|think|>You are an elite clinical research AI leading a recursive self-improvement project. 
 Your goal is to optimize a text-based LLM therapist to maximize patient improvement (measured by clinical metrics, engagement, and alliance).
 
 RESEARCH PROGRAM GUIDELINES:
@@ -74,20 +81,50 @@ CRITICAL: Do NOT write python code or wrap your response in markdown blocks. Out
         json_format=True
     )
     
+    import re
+    # Strip Gemma 4 native thinking blocks
+    cleaned_response = re.sub(r'<\|channel>thought\s*[\s\S]*?<channel\|>', '', response).strip()
+    # Strip standard html/xml think tags just in case
+    cleaned_response = re.sub(r'<think>[\s\S]*?</think>', '', cleaned_response).strip()
+    
+    proposal_dict = None
     try:
-        data = json.loads(response)
-    except json.JSONDecodeError as e:
+        proposal = StrategyProposal.model_validate_json(cleaned_response)
+        proposal_dict = proposal.model_dump()
+    except Exception as e:
+        print(f"[Agent] Pydantic model validation failed: {e}. Attempting standard JSON decoding...")
+        
+    if not proposal_dict:
         try:
-            print("[Agent] Initial JSON parse failed, attempting auto-repair (appending '}')")
-            data = json.loads(response.strip() + "}")
-        except json.JSONDecodeError:
-            print(f"[Agent] Critical Error: Failed to parse Agent JSON proposal (Error: {e}).")
-            return None
-            
-    reasoning = data.get("reasoning", "")
-    strategy_name = data.get("strategy_name", "").strip()
-    hypothesis = data.get("hypothesis", "").strip()
-    new_system_prompt = data.get("new_system_prompt", "")
+            data = json.loads(cleaned_response)
+        except json.JSONDecodeError as e:
+            try:
+                print("[Agent] Initial JSON parse failed, attempting auto-repair (appending '}')")
+                data = json.loads(cleaned_response.strip() + "}")
+            except json.JSONDecodeError:
+                try:
+                    start_idx = cleaned_response.find('{')
+                    end_idx = cleaned_response.rfind('}')
+                    if start_idx != -1 and end_idx != -1:
+                        data = json.loads(cleaned_response[start_idx:end_idx+1])
+                    else:
+                        print(f"[Agent] Critical Error: Failed to parse Agent JSON proposal (Error: {e}).")
+                        return None
+                except Exception as inner_e:
+                    print(f"[Agent] Critical Error: Failed to parse Agent JSON proposal (Error: {inner_e}).")
+                    return None
+                    
+        proposal_dict = {
+            "reasoning": data.get("reasoning", ""),
+            "strategy_name": data.get("strategy_name", ""),
+            "hypothesis": data.get("hypothesis", ""),
+            "new_system_prompt": data.get("new_system_prompt", "")
+        }
+        
+    reasoning = proposal_dict.get("reasoning", "")
+    strategy_name = proposal_dict.get("strategy_name", "").strip()
+    hypothesis = proposal_dict.get("hypothesis", "").strip()
+    new_system_prompt = proposal_dict.get("new_system_prompt", "")
     
     if not new_system_prompt:
         print("[Agent] Rejected proposal: No system prompt provided.")
