@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260618_0171",
+  "timestamp": "2026-06-18T22:51:27.873667",
+  "strategy": {
+    "name": "Socratic Reframing Cycle (SRC) v1.0",
+    "hypothesis": "A rigid, multi-step Socratic Reframing Cycle will limit verbosity while ensuring therapeutic depth.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Minho",
+    "age": 34,
+    "occupation": "Product Manager",
+    "presenting_issue": "I've just been feeling really run down lately and it's hard to sleep at night.",
+    "background_story": "Work has been getting more demanding, and lately, the hours seem to never end. I keep noticing that my stomach hurts a lot, especially in the mornings, and I think it's just stress. My parents always said I needed to be pragmatic and just work harder to make us better, so I haven't really given the feelings much thought. I just want the discomfort to stop.",
+    "personality": "Minho speaks in a very measured, formal tone, often using passive language and minimizing his own struggles. He tends to use physical symptoms (headaches, stomach aches) as proxies for emotional distress. When discussing work, he speaks of 'efficiency' and 'optimization' rather than personal frustration. He is hesitant to commit or share deep feelings, often redirecting the conversation back to practical concerns or discussing trivial events to avoid emotional depth. He uses qualifiers like 'maybe' and 'it seems like'.",
+    "baseline_phq9": 16,
+    "archetype_label": "Corporate Burnout \u2014 East Asian Face Culture"
+  },
+  "scores": {
+    "total_score": 43.0,
+    "raw_score": 43.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 28.0/70.0 (VV shift: -0.10, Sym shift: -0.10, DV shift: 0.30) | Brevity Penalty (-15): Therapist turn too long (5 sentences, 88 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please provide the thought or situation you would like to reframe, and I will guide you through the Reframing Cycle."
+    },
+    {
+      "role": "user",
+      "content": "Well, I suppose it's the project timeline that's becoming difficult. It seems like we just keep pushing the deadlines out, which makes the whole thing feel... unmanageable.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**VALIDATION**\nIt is completely understandable that constantly shifting deadlines create a feeling of unmanageability and stress. Feeling out of control when the timeline keeps moving is exhausting.\n\n**Socratic CHALLENGE**\nIf the deadlines are shifting because the scope or requirements are changing, what might that actually signal about the project, rather than signaling failure?\n\n**REFRAME**\nA flexible timeline does not mean failure; it means the project is complex and requires adaptive planning. Viewing these shifts as necessary adjustments, rather than setbacks, allows you to regain a sense of control."
+    },
+    {
+      "role": "user",
+      "content": "Adaptive planning... I suppose that's true. It's just that when the pressure is on, I tend to focus on the missing pieces, you know? Maybe I should just try to map out the *next* manageable step instead of looking at the whole mountain.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**VALIDATION**\nIt is very common to fall into the trap of focusing on deficiencies when the pressure is high. That tendency to see the \"missing pieces\" is a natural response to perceived risk.\n\n**Socratic CHALLENGE**\nIf you only focus on the missing pieces, what valuable information or potential solutions are you inadvertently filtering out?\n\n**REFRAME**\nFocusing on the next manageable step is a powerful strategy called \"chunking.\" It shifts your energy from anxiety about the unknown whole to actionable momentum on the immediate part."
+    },
+    {
+      "role": "user",
+      "content": "Chunking, right. I can think about that. It would probably just mean having to reorganize the task list a bit, I guess. It doesn't sound like a major change in effort, though.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**VALIDATION**\nIt is natural to resist the idea of extra effort, especially when you are already feeling drained by the project's complexity. It feels easier to minimize the required change.\n\n**Socratic CHALLENGE**\nIf the effort required to reorganize the task list is minimal, what is the potential cost\u2014in terms of time or stress\u2014of *not* making those necessary adjustments?\n\n**REFRAME**\nEffort is not a penalty; it is the mechanism of progress. By dedicating a small amount of time to reorganization, you are proactively reducing future stress and building sustainable momentum."
+    },
+    {
+      "role": "user",
+      "content": "I see your point, I guess. It would just take a little bit of time, nothing too drastic. I should probably just try to block out an hour tomorrow morning for that. Maybe I'll feel better once it's organized.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**VALIDATION**\nIt is completely understandable to anticipate feeling better *after* you've taken the time to organize. That sense of relief and control is a powerful motivator.\n\n**Socratic CHALLENGE**\nIf you block out the time and complete the organization, will the feeling of relief come purely from the finished list, or will it come from the act of setting that boundary for yourself?\n\n**REFRAME**\nThe goal of the hour is not to *make* you feel better, but to *practice* self-compassion and structure. The act of scheduling and committing to the task is the source of empowerment, regardless of how perfect the final list is."
+    },
+    {
+      "role": "user",
+      "content": "I suppose... I guess I'll try to focus on the 'boundary' aspect. It just feels... hard to put that into practice when everything feels so overwhelming.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**VALIDATION**\nIt is incredibly difficult to implement boundaries when the feeling of overwhelm is so intense. It feels like you need massive energy just to identify where the limits are.\n\n**Socratic CHALLENGE**\nIf setting a boundary feels too large, what is the absolute smallest, most non-confrontational boundary you could set for yourself in the next hour?\n\n**REFRAME**\nBoundaries are not permanent walls; they are temporary agreements with yourself. Start by setting micro-boundaries\u2014like taking five minutes of silence or declining one non-essential request\u2014to build the muscle of self-respect and control."
+    },
+    {
+      "role": "user",
+      "content": "Five minutes of silence... that sounds manageable. It's just that I always feel like I should be doing something, you know? Like wasting time, even if it's just sitting still.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**VALIDATION**\nThe feeling that you \"should\" always be productive is deeply ingrained, often stemming from high standards and the pressure to perform. It's exhausting to fight that internal critic.\n\n**Socratic CHALLENGE**\nIf you were to treat \"silence\" or \"rest\" not as a lack of action, but as a necessary input, what positive outcome might that input provide to your ability to function later?\n\n**REFRAME**\nRest and stillness are not wasted time; they are essential, productive maintenance periods. Think of them as charging the battery that allows you to perform your tasks with greater focus and less anxiety."
+    },
+    {
+      "role": "user",
+      "content": "It's just... I keep thinking about the physical symptoms, too. The headaches and the stomach aches. I suppose that's just the body signaling that I need to slow down, I guess. But I still don't know what to do about it.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    }
+  ]
+}

@@ -85,13 +85,48 @@ CRITICAL: Do NOT write python code or wrap your response in markdown blocks. Out
             return None
             
     reasoning = data.get("reasoning", "")
-    strategy_name = data.get("strategy_name", "")
-    hypothesis = data.get("hypothesis", "")
+    strategy_name = data.get("strategy_name", "").strip()
+    hypothesis = data.get("hypothesis", "").strip()
     new_system_prompt = data.get("new_system_prompt", "")
     
     if not new_system_prompt:
         print("[Agent] Rejected proposal: No system prompt provided.")
         return None
+        
+    # --- Robust Validation & Fallback Extraction ---
+    import re
+    
+    if not strategy_name:
+        print("[Agent] Warning: strategy_name is empty. Attempting auto-extraction...")
+        # Look for a pattern like "Minimalist Reflect-Link-Inquiry (MRLI)" or "Ultra-Concise PCT-ACT Nano-Flow"
+        acronym_match = re.search(r'\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*\s+\([A-Z]{2,}\))\b', reasoning + " " + new_system_prompt)
+        if acronym_match:
+            strategy_name = acronym_match.group(1)
+            print(f"[Agent] Extracted strategy_name: {strategy_name}")
+        else:
+            # Fallback to detected clinical frameworks
+            frameworks = []
+            for fw in ["CBT", "ACT", "PCT", "Socratic", "Dialectical"]:
+                if fw.lower() in (reasoning + " " + new_system_prompt).lower():
+                    frameworks.append(fw)
+            if frameworks:
+                strategy_name = f"Evolved {'-'.join(frameworks)} Flow"
+            else:
+                strategy_name = "Evolved Therapy Flow"
+            print(f"[Agent] Fallback strategy_name generated: {strategy_name}")
+            
+    if not hypothesis:
+        print("[Agent] Warning: hypothesis is empty. Attempting auto-extraction...")
+        if reasoning:
+            # Use the first sentence of reasoning as the hypothesis
+            sentences = [s.strip() for s in re.split(r'[.!?]', reasoning) if s.strip()]
+            if sentences:
+                hypothesis = sentences[0] + "."
+            else:
+                hypothesis = "Refine therapist strategy based on past feedback."
+        else:
+            hypothesis = "Refine therapist strategy based on past feedback."
+        print(f"[Agent] Extracted hypothesis: {hypothesis}")
         
     print(f"[Agent] Hypothesis: {reasoning}")
     
