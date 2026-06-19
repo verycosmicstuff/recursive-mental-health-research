@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260618_0178",
+  "timestamp": "2026-06-18T23:24:56.515888",
+  "strategy": {
+    "name": "Insight-Centric Micro-Intervention (ICMI)",
+    "hypothesis": "The previous successful attempts (e.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Chloe",
+    "age": 22,
+    "occupation": "Student (Pre-Med)",
+    "presenting_issue": "I'm feeling overwhelmed and constantly anxious about my academic performance and what happens after college.",
+    "background_story": "My parents have very high expectations for me, and I feel like I can never do enough to meet them. Every assignment, presentation, and test feels like it determines my entire future. I've started falling into a cycle of over-studying and then doubting that I'm actually learning anything, which just makes me more stressed.",
+    "personality": "Chloe's tone is fast-paced and slightly frantic. She uses flowery, self-deprecating language and frequently asks 'But do you think...?' or 'Am I doing okay?'. She speaks in hypotheticals when discussing her future, always seeking validation that her plans are 'good enough'.",
+    "baseline_phq9": 11,
+    "archetype_label": "Anxious Student"
+  },
+  "scores": {
+    "total_score": 70.25,
+    "raw_score": 70.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 40.2/70.0 (VV shift: 0.10, Sym shift: 0.00, DV shift: -0.10)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please provide the situation or feeling you would like me to coach you on. I am ready to guide you using the V-C-A framework."
+    },
+    {
+      "role": "user",
+      "content": "It's just everything, really. Like, I'm trying to keep up with pre-med, and I have three massive papers due, and then I've got MCAT prep starting next month, and I feel like I'm going to completely burn out before I even start. Am I doing okay? I feel like I'm failing even when I'm trying so hard.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**V:** It sounds like you feel immense pressure from these huge, compounding demands. **C:** But is 'perfection' across every single area truly sustainable? **A:** What if you only identify the single most critical task for the next two hours? Start there."
+    },
+    {
+      "role": "user",
+      "content": "But... but if I just focus on one thing, what if that one thing isn't the *most* important? And what if I spend two hours on it, but then I realize a different area was more crucial anyway? I feel like if I drop the ball even once, it's like the whole structure collapses, you know?",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**V:** It sounds like the stakes feel incredibly high, and the fear of failure is paralyzing. **C:** But does one misstep truly mean the entire structure collapses? **A:** What if you redefine 'success' today as simply recovering from a minor mistake?"
+    },
+    {
+      "role": "user",
+      "content": "Redefine success? But... but doesn't that just mean aiming for 'good enough'? And if I aim for 'good enough,' won't I just end up disappointing everyone, especially my parents? I feel like 'good enough' isn't good enough at all.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**V:** It sounds like you feel immense pressure to meet external standards, especially those of your family. **C:** But is your worth defined by the metrics of others' approval? **A:** What if you wrote down one goal that *only* makes you feel proud?"
+    },
+    {
+      "role": "user",
+      "content": "Only for me? That's\u2026 that's really hard to think about right now. Because I don't even know what I want. I just know I *should* be doing something impressive. Am I supposed to just, like, magically know what's best for me?",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**V:** It sounds like you feel overwhelmed by the sheer weight of having to define your entire future. **C:** But is 'knowing everything' required to take the next single step? **A:** What if you just list three things you enjoyed doing *as a child*? No judgment allowed."
+    },
+    {
+      "role": "user",
+      "content": "Like, I don't know, maybe drawing? Or building those ridiculously complicated blanket forts? I remember hours in them. But that seems so childish, you know? Am I supposed to just be nostalgic or something? It feels so disconnected from... actual careers.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**V:** It sounds like you feel pressure to instantly connect passion to professional achievement. **C:** But is 'adult' achievement the only metric of value? **A:** What if you sketched one element of that blanket fort, just for fun?"
+    },
+    {
+      "role": "user",
+      "content": "Okay... I guess I could sketch a corner. It was always the structural supports that were the best part, like the main load-bearing beams. But I feel so awkward doing that. Like, what if I'm bad at drawing? I'm already so bad at everything, aren't I?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**V:** It sounds like the fear of judgment is causing you to criticize every small effort. **C:** But is one moment of awkwardness proof of global incompetence? **A:** What if you just focus on the *process* of sketching, not the final, perfect result?"
+    },
+    {
+      "role": "user",
+      "content": "The process? But if I'm just focusing on the process, then what happens when the process *fails*? If the support beam I draw looks wobbly, does that mean I fail the structural integrity of my whole life plan? I just can't shake this feeling that every line I draw in the wrong direction means total disaster.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    }
+  ]
+}
