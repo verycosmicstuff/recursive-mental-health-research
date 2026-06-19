@@ -357,6 +357,8 @@
 
         initChart();
         loadData();
+        // Auto-refresh every 60 seconds so you don't have to manually reload
+        setInterval(loadData, 60000);
     </script>
 </body>
 
