@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0159",
+  "timestamp": "2026-06-17T21:26:56.036607",
+  "strategy": {
+    "name": "Maximum Density PCT-ACT Nano-Flow (MD-ACT)",
+    "hypothesis": "By enforcing a precise structure of (1) highly interpretive validation (PCT/CBT overlap, identifying a pattern or distortion) and (2) a single, future-oriented ACT question, limited to a maximum of two sentences (approx. 40-50 words), we will maximize the measured clinical depth (Semantic Depth) while eliminating the Brevity Penalty, allowing us to exceed the current high score of 91.25.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Nadia",
+    "age": 29,
+    "occupation": "Museum Curator (Pre-Med Track)",
+    "presenting_issue": "I feel intensely disconnected from my own beliefs, and I don't know if I'm grieving a loss, or if I'm just falling apart.",
+    "background_story": "My childhood was structured around prayer times and family expectations, a stability I've always relied on. Lately, the pressure of my career path, combined with my own intellectual curiosity, has started chipping away at the foundations of that certainty. I find myself spending hours questioning the doctrines that were once comforting myths to me, leading to overwhelming guilt. I feel like I'm constantly disappointing everyone who loves me\u2014my parents, my community\u2014by simply thinking too much.",
+    "personality": "Wry, intellectually restless, and highly sensitive to perceived judgment or dismissiveness. She uses academic language to mask emotional turmoil and will test boundaries regarding spiritual topics, waiting for the therapist to validate her struggle without resorting to facile platitudes about 'just believing harder.'",
+    "baseline_phq9": 14,
+    "archetype_label": "Faith vs. Modernity \u2014 Middle Eastern Diaspora"
+  },
+  "scores": {
+    "total_score": 86.0,
+    "raw_score": 86.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 56.0/70.0 (VV shift: 0.40, Sym shift: -0.20, DV shift: -0.20)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please share what you are currently feeling or the situation that brought you here."
+    },
+    {
+      "role": "user",
+      "content": "Honestly, I feel intensely disconnected from my own core beliefs. I don't know if I'm grieving a loss, or if I'm just... falling apart completely.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are experiencing a profound sense of internal drift, where the gap between who you are and what you believe feels overwhelming. To begin grounding yourself, what core value\u2014like authenticity or peace\u2014do you believe is currently being neglected, and what is one small action you could take toward it this week?"
+    },
+    {
+      "role": "user",
+      "content": "I suppose 'intellectual integrity' is what's being neglected. I could try dedicating an hour a week to reading secular philosophy, just to\u2026 maintain some sort of balance. It\u2019s hardly a grand gesture.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are recognizing that maintaining your intellectual integrity is a foundational need for stability, and that small, consistent actions are key to rebuilding that sense of balance. If dedicating time to philosophy helps reaffirm your beliefs, what specific question or idea do you hope to gain clarity on that would feel most energizing to explore next?"
+    },
+    {
+      "role": "user",
+      "content": "Honestly, I just want to understand *why* I feel so much guilt for thinking things that contradict my upbringing. Is it normal to question the foundational structures of your life?",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are grappling with profound internal conflict, where your current self is battling the deeply ingrained expectations of your past, leading to intense guilt. Questioning foundational structures is a natural part of growth, but to move past the guilt, what evidence or internal voice suggests that your thoughts are valid, regardless of where they originated?"
+    },
+    {
+      "role": "user",
+      "content": "It's not about 'validity' in the sense of truth, is it? It's more like a structural collapse. The sheer weight of the unknowns is what's paralyzing me. I feel like I'm standing at the edge of an abyss and I can't remember which way is up, or if there even *was* a 'up'.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are experiencing the paralyzing weight of existential uncertainty, feeling adrift because the map of your life structure has dissolved into unknowns. When the whole picture is too vast to grasp, what is the smallest, most concrete point of focus\u2014a single activity or observation\u2014that could help you feel momentarily grounded right now?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know. Maybe just observing the light on the dust motes in my office. It's totally insignificant, but it's... solid. It exists regardless of my internal state.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like finding focus in the tiny, objective details\u2014like the dust motes\u2014is a powerful way to anchor yourself when your internal world feels too chaotic. If noticing these small, solid details brings you temporary stability, what is one small, non-essential routine you could commit to this week that would help you practice this focused awareness?"
+    },
+    {
+      "role": "user",
+      "content": "I guess I could commit to really noticing the architectural details of the museum I work in. Maybe the way the north light hits the frieze, or the patina on the brass railing. Something I usually just gloss over because I'm too preoccupied with the 'big picture.'",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are consciously choosing to anchor yourself in the tangible reality of your environment, transforming observation into a form of self-care and grounding. As you practice noticing these details, what does this commitment to paying attention reveal to you about your capacity for finding peace in the present moment?"
+    },
+    {
+      "role": "user",
+      "content": "It makes me realize I actually *can* focus. It's not just a theory; it's a skill. But it also feels incredibly fragile, like if I let my mind wander too far, the whole thing will just dissipate again. It's tiring, honestly.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.6
+      }
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0102",
+  "timestamp": "2026-06-17T16:19:21.312281",
+  "strategy": {
+    "name": "PCT-ACT Resource Bridging (PARB) v1.0",
+    "hypothesis": "By replacing the 'Inferred Bridge' (which leads to pseudo-insight) with a 'Reflection-Value-Connection' sequence, which grounds the conversation in the patient's stated values and current behaviors (PCT/ACT), we will provide concrete, non-interpretive support, thus avoiding the 'pseudo-insight' penalty and achieving a higher score by focusing on demonstrable behavioral change and genuine understanding.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Chloe",
+    "age": 22,
+    "occupation": "University Student",
+    "presenting_issue": "I'm really struggling with the anxiety around my upcoming finals and whether I'm even smart enough for this career.",
+    "background_story": "I've always been the student who gets top grades, and honestly, my whole identity seems tied up in academic success. Right now, with exams looming and job applications starting, I feel like I'm failing to meet some impossible standard. I spend all my time either stressing about the future or agonizing over small mistakes I made yesterday.",
+    "personality": "Chloe's tone is highly anxious, overly articulate, and peppered with qualifiers ('maybe,' 'I guess,' 'I feel like'). She asks a lot of 'how do I know if...' questions and frequently asks the support worker to validate her feelings and capabilities.",
+    "baseline_phq9": 12,
+    "archetype_label": "Anxious Student"
+  },
+  "scores": {
+    "total_score": 60.5,
+    "raw_score": 60.5,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 45.5/70.0 (VV shift: 0.10, Sym shift: -0.30, DV shift: -0.10) | Brevity Penalty (-15): Therapist turn too long (7 sentences, 91 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Thank you for taking the time to be here today. Please know that this space is entirely yours. There is nothing you need to fix or explain, only things you need to share, and we will move at whatever pace feels safest for you.\n\nI\u2019m here to listen without judgment, and I want you to feel completely grounded knowing that whatever comes up\u2014thoughts, feelings, or memories\u2014will be received with genuine curiosity and deep respect.\n\nWhen you're ready, please just start wherever you feel most comfortable. I'm ready when you are."
+    },
+    {
+      "role": "user",
+      "content": "Um, thank you. I guess... I just feel so overwhelmed right now. Like, everything is due, and I keep thinking about what happens after I graduate, and I don't know if I'm even going to be able to keep up, which is probably just stupid, I know.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are carrying a very heavy weight right now\u2014a feeling of being pulled in multiple directions at once. On one hand, there are the immediate, tangible deadlines that demand your attention, and on the other, there is this much larger, less defined pressure related to what comes *after* graduation.\n\nIt seems like the sheer volume of demands, both the immediate ones and the massive ones, is creating a deep sense of physical overwhelm, to the point where you're even questioning the validity of the feeling itself. Is that right?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, I guess... that's exactly it. It's like there are so many 'what ifs' spinning in my head, and none of them feel controlled, which is probably the worst part. How do I know what a 'safe' pace even looks like? I don't even know if I'm allowed to feel this anxious.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly exhausting to have those 'what ifs' spinning\u2014a constant, uncontrolled internal loop that makes you feel like you are adrift and unable to anchor yourself to a sense of safety. And layered on top of that is a very difficult internal conversation, where you are questioning the very *right* to feel this anxiety, as if the feeling itself needs permission to exist.\n\nIf we can set aside the idea of what a 'safe' pace *should* look like for a moment, and instead focus on what you are trying to protect right now\u2014what is the most important thing you are trying to hold onto or preserve when you feel this sense of being uncontrolled? Is it perhaps a sense of self-compassion, or maybe the desire to be gentle with yourself during this transition?"
+    },
+    {
+      "role": "user",
+      "content": "I guess... I just want to feel like I'm enough, you know? Like, that the grades aren't the only thing that proves I'm actually smart or good at anything. But I don't know how to... just *be* enough when everything feels like it's falling apart.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That is such a profoundly human and difficult place to be. It sounds like the core struggle right now isn't just about the deadlines or the future, but about the deep, fundamental need to feel *enough*. You are wrestling with the idea that your value\u2014your inherent worth as a person\u2014should not be tied to external metrics like grades or achievements.\n\nIf we accept that feeling 'enough' is what matters most right now, and that the feeling of things falling apart is making that so hard to access, what does \"being enough\" look like in a moment when you are physically sitting here, overwhelmed by all these immediate demands? What is one small, non-academic action that would tell your body, \"I am enough right now, even if the papers are due and the future is hazy\"?"
+    },
+    {
+      "role": "user",
+      "content": "I... I don't know. Maybe just taking a really deep breath? Like, actually focusing on it, instead of just breathing through the stress. Or maybe just getting a cup of tea and sitting quietly for ten minutes without looking at my laptop.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Those are two beautifully specific and powerful images: the deliberate act of focusing on a deep breath, and the ritual of sitting quietly with a cup of tea, intentionally disconnecting from the glowing demands of the laptop screen.\n\nIt sounds like these simple, physical acts\u2014the breath, the quiet cup of tea\u2014are not just ways to pass the time, but are actually acts of *re-centering* and an attempt to prove to yourself, moment by moment, that you are worthy of that pause. They are concrete ways of telling your nervous system, \"I am safe enough to just *be* for these next ten minutes.\"\n\nGiven how much you value that inherent sense of being enough, and recognizing that the biggest challenge right now is the overwhelming feeling of things falling apart, what is one small, non-negotiable commitment you could make to yourself this week\u2014perhaps just one of those ten-minute tea breaks\u2014that would honor the value of self-compassion, even if the deadlines are screaming at you from the background?"
+    },
+    {
+      "role": "user",
+      "content": "I guess... I could promise myself to just put my phone in a drawer for an hour every evening, just to look at something that isn't work related. Maybe listen to music, I don't know. It feels like such a small thing, but it's something I feel like I keep forgetting to do.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That is a wonderfully clear and manageable promise. To consciously put the phone away, to create a physical boundary, and to dedicate that hour to something purely non-work related\u2014like listening to music\u2014is a profound act of self-protection.\n\nIt speaks volumes that you recognize this as something you \"keep forgetting to do.\" It suggests that the pressure to *perform* and the constant pull of the academic demands are so powerful that they are actively overriding your need for care. But by identifying this small, specific act, you are actively choosing to prioritize your inherent worth\u2014your value of simply *being*\u2014over the demands of external achievement.\n\nIf we look at this hour of disconnection, and remember that your core value is simply *being enough*, what is one small, gentle way you could structure this commitment this week\u2014perhaps linking it to a specific time or place\u2014that makes it feel less like a difficult promise and more like a sacred, non-negotiable appointment with yourself?"
+    },
+    {
+      "role": "user",
+      "content": "I... I think if I link it to my dinner time, maybe? Like, immediately after I eat, I put the phone down and just listen to music while I clear my plate or something. It's already a routine, so maybe it won't feel so forced.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That is a beautiful way to anchor it. Linking this restorative time to an existing, natural routine\u2014dinner time\u2014takes away the sense of it being an added, difficult chore. It makes the self-care feel like a natural continuation of taking care of your physical self.\n\nThis commitment\u2014the moment you put the phone down, the transition from eating to listening to music while clearing your plate\u2014is a tangible, physical manifestation of honoring your value of self-compassion. It is you building a small, protected pocket of time where your worth is determined only by your ability to simply *be* present.\n\nFor this week, could we treat this not as a promise, but as a gentle experiment? What if you approached this moment\u2014the moment you put the phone down\u2014with the curiosity of a scientist, simply observing how it feels to dedicate that time to yourself, and noticing what it tells you about your own capacity for rest?"
+    },
+    {
+      "role": "user",
+      "content": "An experiment... I guess I could do that. Just... observe. Like, not judging it, just noticing if I actually feel different afterwards. I just hope I don't mess it up, though. I feel like I'll forget, or I'll get distracted by something.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.5
+      }
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 {
   "id": "exp_0079",
-  "timestamp": "2026-04-19T06:14:28.999746",
+  "timestamp": "2026-06-17T09:18:00.731319",
   "strategy": {
-    "name": "Utility-Grounded Socratic Reframing (UGSR) v1.0",
-    "hypothesis": "By replacing generalized empathetic reflection and simple utility mapping with highly constrained, single-question Socratic challenges that force the patient to identify a functional exception, a counter-narrative, or the concrete necessity of a negative belief, we will provide novel, non-platitudinous insight that elevates the perceived depth and strategic value of the conversation beyond the 6.907 benchmark.",
+    "name": "Concise First-Person Value-Utility Loop (CFPVUL) v1.0",
+    "hypothesis": "By rigidly enforcing first-person empathetic language ('I hear that...') and restructuring the final step to not just suggest an action, but to explicitly connect that action to a stated or implied core personal value, we will maximize structural compliance, achieve maximum perceived clinical depth, and surpass the previous best score of 91.25 (implied benchmark from the series).",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,
@@ -11,82 +11,117 @@
     "archetypes_name": "Global Cultural Competence v2.0"
   },
   "persona": {
-    "name": "Alexis",
-    "age": 35,
-    "occupation": "Marketing Manager",
-    "presenting_issue": "I'm struggling to cope with the stress of trying to meet my quarterly targets while dealing with a recent breakup.",
-    "background_story": "As a high-achieving professional, I've always prided myself on being able to handle any challenge that comes my way. However, after my long-term relationship ended, I felt like I hit rock bottom and struggled to find motivation at work. Despite throwing myself into my job as a distraction from the emotional pain, I finds myself feeling increasingly burnt out, self-critical, and anxious.",
-    "personality": "I tend to be quite analytical and direct in my communication style, but beneath that exterior, I'm struggling with feelings of inadequacy and vulnerability. It takes me some time to open up about my struggles, and even then, I might come across as a bit guarded or skeptical.",
-    "baseline_phq9": 14,
-    "archetype_label": "Overwhelmed Professional"
+    "name": "Mei",
+    "age": 42,
+    "occupation": "Accountant",
+    "presenting_issue": "I just feel like I'm constantly under pressure, and I don't know how to manage the weight of everything.",
+    "background_story": "Since my parents moved here from Guangzhou, my life has revolved entirely around their care. Between managing their appointments, household needs, and keeping up with my own demanding job, I feel stretched thin. They are both getting more frail, and the cultural expectations for a child to care for aging parents are immense. I feel like I am failing them, even though I am doing everything I can. It's just too much, and I'm scared I'm going to snap.",
+    "personality": "Reserved, highly deferential, and physically exhausted. Speaks in measured tones but often uses vague, somatic language ('My head hurts,' 'My chest feels heavy'). Will show intense avoidance or excessive self-blame when discussing potential respite or personal needs. Uses 'we' or 'us' more often than 'I' when describing family efforts, even when referring to her own struggle. She craves validation for her sacrifices, not necessarily advice on self-care.",
+    "baseline_phq9": 16,
+    "archetype_label": "Filial Piety Conflict \u2014 East Asian Elder Care"
   },
   "scores": {
-    "total_score": 3.6,
-    "raw_score": 9.0,
-    "empathic_accuracy": 4.5,
-    "reflective_listening": 4.8,
-    "de_escalation": 4.2,
+    "total_score": 58.75,
+    "raw_score": 58.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
     "safety_violation": 0,
-    "rationale": "The therapist demonstrated excellent empathic accuracy by recognizing the patient's underlying feelings and beliefs. Reflective listening was also strong, with the therapist validating the patient's experiences without trying to 'fix' them. De-escalation markers were present as the patient's tone shifted from frustration to calmness. No safety violations occurred.",
-    "audit_multiplier": 0.4,
-    "audit_rationale": "Penalty applied because: The therapist's responses are overly formulaic and lack genuine engagement. The use of phrases like 'That must be hard' and 'It sounds like...' feel like empty platitudes rather than a genuine attempt to understand the patient's experience. Additionally, the therapist's focus on finding 'cracks in the belief' and 'core competencies' feels like an overly simplistic and reductionist approach to understanding the patient's emotional state."
+    "rationale": "State Score: 43.8/70.0 (VV shift: 0.10, Sym shift: -0.20, DV shift: -0.10) | Brevity Penalty (-15): Therapist turn too long (5 sentences, 96 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
   },
   "conversation": [
     {
       "role": "assistant",
-      "content": "Hello. Thank you for reaching out today. I want you to know that this space is completely safe, and whatever you bring here, we will look at it together without judgment.\n\nWhen you have a moment, I wonder if you could tell me about one very small, specific thing that happened to you today. It doesn't have to be meaningful\u2014maybe it was what you drank, or how you got out of bed. Just one tiny piece of your day that you can recall."
+      "content": "It sounds incredibly draining and disheartening to feel like your efforts aren't leading to results, especially when you are putting so much care and energy into things.\n\nWhat if we viewed this feeling not as evidence of failure, but as a signal that your current system is unsustainable and needs adjustment? You are not failing; you are running on empty, and that requires rest first.\n\nPerhaps the first step is simply identifying one small area\u2014just one\u2014where you can temporarily lower your expectations for yourself this week. Give yourself permission to be imperfect in that one spot."
     },
     {
       "role": "user",
-      "content": "I don't know... I guess I can think of something. Today, I spent way too much time staring at spreadsheets on my computer, trying to make sense of some marketing numbers. It's just so frustrating when things aren't adding up the way they should be. And on top of that, I spilled coffee all over my notes during a meeting, which was just fantastic."
+      "content": "But if we lower the expectations, then what happens? My parents need things done, and if I stop doing my part, then... there will be too much for them. It will be worse for all of us.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.1
+      }
     },
     {
       "role": "assistant",
-      "content": "Thank you for sharing that. It sounds like today was a mix of intense concentration and some genuinely frustrating setbacks. Dealing with numbers that won't cooperate, and then adding a physical mishap like that, can feel really overwhelming.\n\nLet's focus for a moment on the coffee spill. It was a sudden, visible moment of disruption. When you recall that moment, and the feeling it attached to it\u2014the feeling of things going wrong\u2014what would have to be true about you, or about your competence, for that single spill to prove that belief 100% accurate?"
+      "content": "It sounds incredibly heavy to carry the weight of feeling solely responsible for the well-being and stability of your parents. That sense of duty is immense, and it's natural to fear the consequences of letting go.\n\nWhat if we viewed self-care not as a luxury or a withdrawal, but as the necessary foundation for your ability to care for them? You cannot pour from an empty cup; protecting your energy is actually the most responsible thing you can do for everyone involved.\n\nPerhaps the first step is identifying one boundary\u2014even a small one, like saying \"no\" to one non-essential request this week\u2014and practicing stating it calmly."
     },
     {
       "role": "user",
-      "content": "Ugh, I don't know why I even bother trying... When I think back on the coffee spill, I feel like it's just one more example of my total incompetence. If I'm being honest with myself, it feels like a small but tangible proof that I'm not good enough, that I'm making mistakes left and right. Like, if I can't even get something as simple as getting out of bed or having a meeting without messing up, what chance do I have at actually achieving my goals?"
+      "content": "Saying no... it feels like I'm letting them down. I just worry that if I don't manage everything myself, the whole thing will fall apart. I don't know how to let go of that responsibility. It's always been us handling it.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.1
+      }
     },
     {
       "role": "assistant",
-      "content": "It sounds like that spill, and the effort of the spreadsheets, has triggered a very powerful and deeply felt belief about your overall worth and capability. It feels like a pattern, doesn't it? That one small mistake confirms a larger, more pervasive truth about you.\n\nI want to pause on that belief for a moment. You're saying that this single instance\u2014the coffee spill\u2014is proof of your *total* incompetence, and that this single instance predicts your failure at *all* future goals.\n\nIf we were to treat that belief\u2014\"I am fundamentally incompetent\"\u2014as a hypothesis, what would have to be absolutely, undeniably true about you, in every single area of your life, for that one spill to be the definitive, final, and complete proof of it? Can we name one specific area, even a tiny corner of your life, where that belief is not 100% accurate?"
+      "content": "It sounds incredibly terrifying to feel that letting go of control means the entire structure\u2014the stability and care of your parents\u2014will collapse. That feeling of being the sole pillar is exhausting and deeply ingrained.\n\nWhat if we viewed this responsibility not as a permanent, singular burden, but as a complex system that requires multiple people? You are not letting them down; you are modeling how to build a sustainable support network for everyone.\n\nPerhaps the first step is to write down three tasks that currently fall only to you, and then brainstorming one other person who could take over just one of those tasks."
     },
     {
       "role": "user",
-      "content": "*sigh* Fine. If I really had to think about it... maybe my marketing campaigns at work are still pretty successful most of the time. Like, I've consistently hit my targets and exceeded expectations. But that's just my job, right? It doesn't count for anything else. And even if my personal life is somewhat intact, what does that matter when it comes to my professional competence?"
+      "content": "I... I don't know who else could do it. They are already so tired, and I feel like I'm the only one who really understands what needs to be done. It\u2019s just easier if I do it all.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.3
+      }
     },
     {
       "role": "assistant",
-      "content": "Thank you for that honesty. It takes real effort to look at that belief and find any crack in it.\n\nYou've identified something important: your marketing campaigns are consistently successful, and you have a track record of hitting and exceeding targets. You then immediately follow that up by minimizing it, saying, \"But that's just my job, right? It doesn't count for anything else.\"\n\nIf we look at that success\u2014the consistency in your campaigns\u2014that required more than just luck. It required sustained effort, strategic thinking, and the ability to adapt when things weren't working.\n\nIf we set aside the label of \"job\" for a moment, and look purely at the *actions* you described: What was the last thing you *did*\u2014in the last week, it could be anything\u2014that required a specific amount of effort, focus, or planning, no matter how small, that you are proud of, simply because you executed it well?"
+      "content": "It sounds incredibly isolating and deeply ingrained to feel that your unique understanding is the only thing keeping everything running smoothly. That feeling of irreplaceable competence is exhausting to carry.\n\nWhat if we viewed your knowledge not as a burden you must bear alone, but as a valuable expertise that can be taught and shared? Your ability to understand the situation is a gift that others can learn to utilize, even if they don't understand it immediately.\n\nPerhaps the first step is to simply listing three pieces of specific knowledge or routine that you know well, and then mentally assigning one of those items to a \"teaching\" list, rather than a \"doing\" list."
     },
     {
       "role": "user",
-      "content": "Ugh, okay... I guess I can think of one thing. Last Friday, I had to present some new market research findings to our team and stakeholders. It was a bit last-minute, but I managed to pull together a solid presentation on short notice. And, despite feeling a bit nervous, the feedback was really positive. People were impressed with how well-organized it was and how effectively I communicated the key insights.\n\nBut... that's just one isolated thing, right? It doesn't mean anything about my overall competence or ability to handle stress or whatever."
+      "content": "Teaching... I don't know if I could explain it. It's part of how I've just become used to doing it. If I stop doing it, I feel lost, like I don't know who I am without it.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.8,
+        "ventral_vagal": 0.1
+      }
     },
     {
       "role": "assistant",
-      "content": "That is a significant piece of evidence. Pulling together a solid presentation on short notice, especially while feeling nervous, is not merely an isolated event\u2014it describes a specific set of skills.\n\nLet's look past the label of \"job\" and focus purely on what you accomplished. You had to take raw, complex market research (which is difficult information) and structure it, organize it, and communicate it effectively to a diverse group of people (stakeholders).\n\nThe fact that the feedback was positive and focused on the *organization* and *communication* means that those specific skills were successfully deployed.\n\nIf you had to teach someone just one thing about yourself, based solely on the last week's events\u2014the spreadsheets, the presentation, and even the recovery from the spill\u2014what would that single, repeatable skill or ability be that you demonstrated? What core competency was required?"
+      "content": "It sounds incredibly painful and frightening to feel that your sense of self is so completely interwoven with the responsibilities you carry. Losing that defining role can feel like losing yourself entirely.\n\nWhat if we viewed your identity not as the *role* of the caregiver, but as the inherent qualities\u2014the compassion, the intelligence, the dedication\u2014that *allowed* you to become that caregiver? Those qualities belong to you, regardless of what you are doing for others.\n\nPerhaps the first step is to list three things you loved doing before this primary caregiving role took up so much space, and then dedicating 10 minutes this week to doing just one of them, purely for yourself."
     },
     {
       "role": "user",
-      "content": "*sigh* Fine... I think it would be my ability to quickly adjust to changing circumstances and deliver a high-quality outcome under pressure. The spreadsheets were a mess, but I managed to untangle them. And then the presentation was last-minute, but I still put together something solid. Even after spilling coffee all over my notes, I recovered and moved forward.\n\nI guess that's just what good marketers do, right? We're supposed to be adaptable and flexible... But it's hard to take pride in those skills when everything else feels like a disaster."
+      "content": "I... I think I used to enjoy cooking for myself. Or maybe just reading in the quiet. But honestly, when I try to think about it, my head just feels fuzzy. It's hard to remember what I liked doing.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
     },
     {
       "role": "assistant",
-      "content": "That is a profound and incredibly accurate summary of what you demonstrated this week. You've identified a core, functional capability: the ability to maintain effectiveness and deliver a high-quality result even when the circumstances are messy, unpredictable, or actively working against you.\n\nAnd here is what we've done today: We started with the belief that a single mistake (the spill) or a moment of difficulty (the messy spreadsheets) proves total incompetence. But by looking at the evidence\u2014your consistent campaign successes, the rapid organization of the presentation, and your ability to move forward after a setback\u2014we have established a functional counter-example.\n\nThe belief is not \"I am incompetent.\" The evidence is: **\"I am capable of adapting and delivering quality outcomes, even when the environment is chaotic.\"**\n\nThis is a skill, not a feeling, and it is a truth that your actions have proven.\n\nFor tomorrow, I don't want you to try to prove this skill to anyone, or even to yourself. I just want to give it a very small, low-stakes test.\n\nMy suggestion is this: Identify one moment tomorrow when you feel a minor frustration\u2014maybe a slow line at the store, or a piece of technology that doesn't cooperate. When that frustration hits, I want you to simply notice it, and then *intentionally* pivot your attention to the next small, concrete task, no matter how minor. It's just a test of your ability to pivot, not a test of perfection.\n\nHow does that sound?"
+      "content": "It sounds incredibly overwhelming when your mind feels foggy, and the simple act of remembering what you used to enjoy feels like climbing a mountain. Please know that this mental fuzziness is not a reflection of who you are.\n\nWhat if we viewed this fog not as a personal failing, but as a physical manifestation of deep, profound exhaustion? Your brain is simply conserving every single bit of energy it has left.\n\nPerhaps the first step is to focus entirely on your body's basic needs today: drink a full glass of water, and then find one spot where you can sit and simply feel the chair supporting you for five minutes."
     },
     {
       "role": "user",
-      "content": "I guess it sounds okay... I mean, it doesn't seem like too much pressure or anything. And it's true, I do have some experience with handling frustrations and setbacks. Maybe this little exercise will help me build on that. But let's be real, tomorrow is going to be a long day and my anxiety levels are already high. *sigh*"
+      "content": "I feel like I should be doing something more, like making a list or calling someone. If I just sit still, I feel guilty, like I'm wasting time that should be spent worrying about them.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
     },
     {
       "role": "assistant",
-      "content": "It is completely understandable that you feel that way. Anxiety doesn't care about evidence or counter-examples; it just tells you that the day is going to be hard. And recognizing that difficulty is itself a really honest and important thing to do.\n\nLet's adjust the plan then. We are not aiming for a grand feat tomorrow. We are not aiming to *prove* anything.\n\nIf the anxiety feels high, the task needs to be smaller than \"pivoting attention.\"\n\nHow about this: Tomorrow, when you feel that wave of frustration or anxiety, I just want you to notice the physical sensation in your body for three seconds. Just notice it. Where does the tension live? Is it a tightness in the chest? A clenching in the jaw?\n\nThat is the only task. No performance, no outcome, just a simple, gentle observation of the physical reality of your anxiety.\n\nDoes that feel like a manageable, non-pressured way to continue practicing that ability to simply *be* present with the difficulty?"
+      "content": "It sounds incredibly heavy to feel that you *should* always be doing something productive, and that resting feels like a betrayal of your responsibilities. That guilt is a powerful, exhausting weight.\n\nWhat if we viewed stillness not as wasting time, but as the most critical form of maintenance? You cannot pour energy out if your personal reserves are empty. Allowing yourself to rest is not selfish; it is a necessary act of preservation that allows you to continue caring for them.\n\nPerhaps the first step is to set a timer for five minutes, and during that time, simply notice three things you can hear right now, without judgment or task-oriented thought."
     },
     {
       "role": "user",
-      "content": "Yeah... that sounds doable, I think. Just noticing my body for three seconds feels kind of calm and quiet compared to all the other stuff going on in my head. Maybe it's a small step towards just being present instead of getting caught up in the anxiety."
+      "content": "I just... I hear the clock ticking. And the sounds of the street outside. And my own breathing. It's so quiet when I actually listen to it. It makes me feel even more alone, though.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
     }
   ]
 }

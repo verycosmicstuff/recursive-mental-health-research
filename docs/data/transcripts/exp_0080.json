@@ -1,9 +1,9 @@
 {
   "id": "exp_0080",
-  "timestamp": "2026-04-19T06:21:28.870643",
+  "timestamp": "2026-06-17T09:23:27.317425",
   "strategy": {
-    "name": "Ultra-Minimalist Behavioral Activation Mapping (UM-BAM) v1.0",
-    "hypothesis": "By discarding all theoretical language (ACT, process, embodied, defusion) and restricting all reflection/inquiry solely to micro-queries about the patient's most immediate, concrete, and observable actions, sensations, or single, required low-effort 'next steps' (Utility/BA), we will eliminate formulaic language penalties and achieve a score significantly above 6.907 by maximizing perceived conversational naturalness and actionable clinical utility.",
+    "name": "Concise First-Person Value-Utility Loop (CFPVUL) v1.0",
+    "hypothesis": "By rigidly enforcing first-person empathetic language ('I hear that...') and restructuring the final step to not just suggest an action, but to explicitly connect that action to a stated or implied core personal value, we will maximize structural compliance, achieve maximum perceived clinical depth, and surpass the previous best score of 91.25 (implied benchmark from the series).",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,
@@ -11,82 +11,117 @@
     "archetypes_name": "Global Cultural Competence v2.0"
   },
   "persona": {
-    "name": "Ava",
-    "age": 35,
-    "occupation": "Marketing Manager",
-    "presenting_issue": "I'm feeling overwhelmed with work stress and struggling to prioritize my own needs.",
-    "background_story": "As a high-achieving marketing manager, I've always been driven by a desire for perfection. Lately, I've taken on more responsibilities at work to compensate for my team's lack of productivity, but it's come at the cost of my personal life and relationships. My partner has noticed the change in me, but I'm too tired to admit how exhausted I am.",
-    "personality": "I tend to be direct and efficient, but also self-critical when things don't go as planned. I've always been someone who 'gets it done' without complaining, so it's hard for me to acknowledge my own emotional struggles. When we talk, I'll likely jump right into the problem, trying to solve it quickly.",
-    "baseline_phq9": 14,
-    "archetype_label": "Overwhelmed Professional"
+    "name": "Chloe",
+    "age": 29,
+    "occupation": "Freelance Graphic Designer",
+    "presenting_issue": "I just feel constantly overwhelmed and can't seem to get any meaningful work done.",
+    "background_story": "Lately, everything just feels like too much effort. I spend hours scrolling through social media, just watching other people's lives, and it just makes me feel worse. I used to enjoy my creative work, but now I feel completely drained and pretty disconnected from reality. I guess I just feel stuck in a cycle of inertia.",
+    "personality": "Tone is subdued, passive, and rambling. Uses excessive filler words (like 'like' or 'you know'). Responses are often negative and self-deprecating, indicating low energy and lack of enthusiasm for future plans.",
+    "baseline_phq9": 16,
+    "archetype_label": "Isolated Remote Worker"
   },
   "scores": {
-    "total_score": 4.5,
-    "raw_score": 9.0,
-    "empathic_accuracy": 4.5,
-    "reflective_listening": 4.8,
-    "de_escalation": 4.2,
+    "total_score": 38.5,
+    "raw_score": 38.5,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
     "safety_violation": 0,
-    "rationale": "The therapist demonstrated excellent empathic accuracy by acknowledging the patient's emotional struggles and validating their experiences. The reflective listening was also exceptional, as the therapist mirrored the patient's language and validated their reality without trying to 'fix' them.",
-    "audit_multiplier": 0.5,
-    "audit_rationale": "Penalty applied because: The therapist's reliance on generic platitudes and repetitive mirroring (e.g., 'I hear you talking about the weight\u2014the feeling of being weighed down') fails to demonstrate genuine engagement or insight. The conversation is overly focused on physical movements and trivial actions, neglecting the patient's emotional experience. Additionally, the therapist's attempts to 'fix' the issue by suggesting tiny muscle movements feel formulaic and lacking in empathy."
+    "rationale": "State Score: 38.5/70.0 (VV shift: 0.10, Sym shift: 0.00, DV shift: 0.00) | Third-Person Penalty (-15): Used 'user' | Brevity Penalty (-15): Therapist turn too long (6 sentences, 100 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
   },
   "conversation": [
     {
       "role": "assistant",
-      "content": "Hi there. Thanks for reaching out today. I'm here with you.\n\nBefore we talk about anything big, let's just anchor ourselves for a moment. Can you tell me what you see right now, in the room you are in? Don't think about it\u2014just name three physical things that are right in front of you."
+      "content": "Please provide the user's statement or scenario so I can generate the coaching response."
     },
     {
       "role": "user",
-      "content": "I'm sitting in my home office... okay, I see my laptop screen, my desk calendar, and a glass of water with ice cubes in it. That's all, really."
+      "content": "Like, I don't even know where to start, you know? Everything just feels so... big. And I just keep procrastinating, and it's just awful.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
     },
     {
       "role": "assistant",
-      "content": "Okay, the laptop, the calendar, and the water. Good.\n\nJust focusing on the last couple of hours\u2014since you settled in here\u2014what is the very last physical thing you did? Did you move, did you touch something, did you drink anything? No big picture answers needed, just the smallest, most recent action."
+      "content": "**Acknowledgment:** It sounds incredibly overwhelming when the scope of tasks feels so massive that it leads to feeling paralyzed. That sense of \"where to start\" can be genuinely exhausting.\n\n**Reframing:** What if we viewed this procrastination not as laziness or failure, but as a protective mechanism? Your brain is signaling that the current load is too heavy, and it's hitting the brakes to prevent burnout.\n\n**Actionable Step:** Instead of tackling the whole project, pick one single item and spend exactly five minutes gathering all the necessary materials for it. That's it\u2014just collect the resources, without the pressure to complete anything."
     },
     {
       "role": "user",
-      "content": "I grabbed a handful of ice cubes from my water glass and dropped them back into the glass about an hour ago. That's all I can think of."
+      "content": "Five minutes? Yeah, I guess I could do that. But like, what if I start it and then I just... I just lose interest, you know? I mean, I'd just end up staring at the screen anyway.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
     },
     {
       "role": "assistant",
-      "content": "Dropping the ice cubes back into the glass. Got it. A small, physical movement.\n\nWhen you think about the things that are weighing on you right now\u2014the things that feel heavy\u2014I want to bypass the words for a moment. Can you tell me about the last time you felt that heavy energy? What was the very next, physical thing you did? Did you stand up? Did you pick up a book? Did you just sit still?"
+      "content": "**Acknowledgment:** It is completely understandable to worry about losing momentum or interest once you start. That fear of effort not matching reward is a very common hurdle.\n\n**Reframing:** What if we shifted the goal? Instead of aiming for sustained interest or deep focus, let's aim only for *showing up*. The goal right now is not completion, but simply building the habit of starting.\n\n**Actionable Step:** Try the \"Two-Minute Rule.\" Commit to working on the task for just two minutes\u2014set a timer and work until it rings. If you want to stop after two minutes, that is a win. If you continue, that's a bonus."
     },
     {
       "role": "user",
-      "content": "The last time I felt like this... I think it was when I got home from work yesterday and collapsed onto the couch. The \"very next\" thing I did was run my hands through my hair, re-twisting the bun I had put in that morning. It's a habit of mine when I'm feeling frazzled."
+      "content": "Only two minutes... I guess that's... less bad, I guess. But it still feels so pointless sometimes. Like, I'm just doing it 'cause I feel like I *should* be doing it, you know? And it doesn't even make me feel better.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.3
+      }
     },
     {
       "role": "assistant",
-      "content": "Okay. Running your hands through your hair, re-twisting the bun. A physical pattern.\n\nIf we look at that moment\u2014the moment you collapsed onto the couch\u2014what was the smallest, most immediate thing that *kept* you from doing something else right after? Did the couch cushion hold you? Did the weight of your body keep you in one spot?\n\nWhat was the physical boundary that was in place?"
+      "content": "**Acknowledgment:** It is profoundly draining when effort feels purely obligatory, especially when the action itself doesn't deliver the emotional relief you are hoping for.\n\n**Reframing:** What if we viewed this effort not as a requirement to *feel* better, but simply as an act of self-respect? Sometimes, the goal isn't the outcome, but the consistent practice of caring for your future self.\n\n**Actionable Step:** Before you even look at the task, take three minutes to write down three things you genuinely appreciate about yourself right now, unrelated to your productivity. This anchors your worth in who you are, not what you do."
     },
     {
       "role": "user",
-      "content": "I think what kept me from getting up or moving around immediately was just my own exhaustion. My body felt heavy, like it was weighed down by all the stress and anxiety I'd been carrying around. The couch cushions did hold me, but more like they were a physical manifestation of my own mental fatigue."
+      "content": "I guess... okay. I'll try that. But I don't even know what to say, honestly. It just feels like such a lot of pressure, even to write down good things about myself.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
     },
     {
       "role": "assistant",
-      "content": "I hear you talking about the weight\u2014the feeling of being weighed down.\n\nLet's put the weight aside for a minute. We know the couch held you. But even when you are very tired, there are still tiny muscle movements possible.\n\nWhen you were lying there, if you had to do one tiny thing\u2014something that required minimal energy, like lifting one finger, or turning your head just an inch\u2014what is one thing that *could* have been done, even if you didn't do it?\n\nThink of it as a tiny, almost negligible physical choice."
+      "content": "**Acknowledgment:** It is completely understandable that the idea of listing positive things feels like another performance, adding more pressure when you are already feeling depleted.\n\n**Reframing:** What if we viewed self-care not as a list of achievements, but as simple acceptance? You don't have to *find* something good to say; you just have to allow yourself to *be* where you are right now.\n\n**Actionable Step:** Instead of writing, simply pause and name one physical sensation you are currently experiencing\u2014the weight of your feet, the temperature of the air, or the feeling of your shirt. This anchors you in the present moment without requiring any emotional effort."
     },
     {
       "role": "user",
-      "content": "I think... I could've moved my pinky toe. It's the smallest muscle movement possible, and even when I'm exhausted, my toes still wiggle on their own sometimes."
+      "content": "Like, my feet feel... heavy, I guess. And my shoulders are really tight, and my phone screen is a little cool right now. I just feel really blah about everything.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
     },
     {
       "role": "assistant",
-      "content": "The pinky toe. That is an incredibly small, precise, and low-energy physical action.\n\nIt tells me that even when the rest of your body feels heavy, certain small, isolated muscle groups can still respond.\n\nIf we take that tiny, contained movement\u2014the pinky toe wiggling\u2014and we apply it to the present moment, right now, in this office:\n\nIs there one other small, isolated muscle group\u2014maybe in your hands, your jaw, or your neck\u2014that could perform one single, tiny, controlled movement? Something that requires less energy than taking a deep breath."
+      "content": "**Acknowledgment:** It sounds like your body is speaking a clear language right now\u2014a language of heaviness, tension, and generalized fatigue. It is okay to feel \"blah\" when you are carrying so much.\n\n**Reframing:** What if we viewed this feeling of heaviness not as a lack of motivation, but as physical residue? Your body is simply signaling that it needs a gentle, non-demanding release.\n\n**Actionable Step:** Since you noticed tension in your shoulders, try the \"Shoulder Roll.\" Slowly lift your shoulders up toward your ears, then gently roll them back and down three times. Repeat that sequence once more. That is your only task."
     },
     {
       "role": "user",
-      "content": "Yeah... I think my thumb could twitch just slightly. It's the smallest finger on my hand, and even when I'm stressed or tired, it still moves on its own sometimes. If I concentrate really hard, I might be able to make it flex just a little bit."
+      "content": "Ugh. Okay. That was... kind of weird. My shoulders just feel kinda numb now, I guess. And yeah, 'blah' is pretty accurate, I guess. I just feel so tired all the time.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
     },
     {
       "role": "assistant",
-      "content": "Okay. The thumb twitch. That is a very specific, controlled, and low-energy action.\n\nYou've done something really useful here. You've found two examples\u2014the toe, the thumb\u2014of actions that are physically possible, even when the overall system feels weighted down by stress.\n\nLet's make a tiny experiment out of this, right now. It doesn't have to solve anything big. It just has to be a physical test.\n\nIf you are willing, could you try to flex that thumb, just slightly, and then release it? Just one slow, gentle movement. No pressure, just the observation of the movement itself."
+      "content": "**Acknowledgment:** It takes real effort to listen to your body and complete even a small physical action. It is completely valid to feel this deep, persistent exhaustion\u2014it\u2019s not a failure of will.\n\n**Reframing:** What if we viewed this constant tiredness not as a moral failing, but as your body's most urgent, non-negotiable signal? It is asking for radical rest and deep compassion.\n\n**Actionable Step:** For the next hour, commit to doing nothing productive. Instead, find a comfortable spot and practice \"sensory grounding\" by simply noticing five things you can see, four things you can hear, and three things you can smell. This is rest, not a task."
     },
     {
       "role": "user",
-      "content": "Okay... I'll try. *pauses* Okay, I just moved my thumb... ever so slightly. It was a tiny twitch, really. And now I've released it. That was it."
+      "content": "I mean, I guess I'll try. But like, even just sitting here to count stuff feels like it's going to be too much effort, you know? I just keep thinking about how much I should be doing instead.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
     }
   ]
 }

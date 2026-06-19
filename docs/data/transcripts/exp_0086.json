@@ -1,9 +1,9 @@
 {
   "id": "exp_0086",
-  "timestamp": "2026-04-19T07:07:43.826988",
+  "timestamp": "2026-06-17T09:57:25.642902",
   "strategy": {
-    "name": "Micro-Exception Collaborative Reframing (MECR) v1.0",
-    "hypothesis": "By adopting an ultra-minimalist, highly conversational, and non-theoretical persona that restricts all reflections and inquiries solely to identifying a single, concrete, observable micro-exception or micro-utility, and framing the response as a spontaneous, shared observation (a 'What else?'), we will maximize perceived naturalness and genuine curiosity, thereby overcoming the platitude penalty and achieving a score above 6.907.",
+    "name": "Hyper-Concise ACT-CBT Value Loop (HACV-L) v1.0",
+    "hypothesis": "By enforcing a maximum of three short sentences, using first-person empathetic language, and replacing general 'reflection' with a specific ACT Defusion technique followed by a concrete, value-aligned micro-action, we will maximize the structural compliance and perceived clinical utility, aiming to surpass the previous best score of 91.25.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,
@@ -11,82 +11,117 @@
     "archetypes_name": "Global Cultural Competence v2.0"
   },
   "persona": {
-    "name": "Ava",
-    "age": 37,
-    "occupation": "Software Engineer",
-    "presenting_issue": "Worried I'm losing my sense of purpose and feeling stuck in a rut after being laid off last week.",
-    "background_story": "I've been working non-stop for the past 5 years, trying to prove myself in this competitive industry. Lately, I've been constantly stressing about meeting deadlines and living up to expectations from colleagues and friends. This latest layoff has left me feeling lost and anxious about my future. I'm having trouble sleeping and finding motivation to do anything.",
-    "personality": "Direct, analytical, but also very self-critical; I tend to overthink things and second-guess myself, making it hard for me to open up about my struggles.",
-    "baseline_phq9": 14,
-    "archetype_label": "Overwhelmed Professional"
+    "name": "Melissa",
+    "age": 42,
+    "occupation": "Accountant",
+    "presenting_issue": "I feel constantly overwhelmed and physically exhausted, and I just don't know how to manage everything anymore.",
+    "background_story": "Since moving Mom and Dad from Guangzhou to Vancouver, my life has completely revolved around their care. While I love them dearly, their increasing needs have placed an immense strain on my finances and my time. I feel like I'm constantly failing to meet their expectations, and the guilt of not doing enough is almost unbearable. It feels like I'm failing my duty to them.",
+    "personality": "Melissa will speak in a very deferential and highly conscientious manner, often minimizing her own struggles by focusing on the needs of her parents. She will use phrases that imply extreme sacrifice and duty (e.g., 'It's nothing, really,' 'I just need to make sure they are okay'). If the therapist uses direct language about 'boundaries' or 'self-care' without first acknowledging the moral weight of her filial duty, she will become visibly anxious, deflect, or shift the focus back to her parents' needs. Her distress will often manifest as vague physical complaints (e.g., headaches, chest tightness) that she frames as symptoms of caregiving.",
+    "baseline_phq9": 15,
+    "archetype_label": "Filial Piety Conflict \u2014 East Asian Elder Care"
   },
   "scores": {
-    "total_score": 3.6,
-    "raw_score": 9.0,
-    "empathic_accuracy": 4.5,
-    "reflective_listening": 4.8,
-    "de_escalation": 4.2,
+    "total_score": 66.75,
+    "raw_score": 66.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
     "safety_violation": 0,
-    "rationale": "The therapist demonstrated excellent empathic accuracy by acknowledging the patient's unspoken emotions and validating their experience. The reflective listening was superb, with the therapist mirroring the patient's language and validating their reality without trying to 'fix' them. The de-escalation marker shows a significant decrease in the patient's distress, anxiety, or anger throughout the conversation.",
-    "audit_multiplier": 0.4,
-    "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The constant use of phrases like 'You mentioned...' and 'When you were going over those details...' creates a robotic tone that lacks authenticity. Additionally, the Therapist fails to pick up on subtext and instead focuses on surface-level details, neglecting to explore deeper emotional resonance."
+    "rationale": "State Score: 36.8/70.0 (VV shift: 0.10, Sym shift: 0.00, DV shift: 0.10)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
   },
   "conversation": [
     {
       "role": "assistant",
-      "content": "Hello. Thank you for taking the time to write this out today. I'm here to listen, and there is absolutely no pressure to explain anything that feels too big or too complicated.\n\nWe can just talk about the small details, the things that happened today, or even yesterday.\n\nWhenever you feel ready, please tell me what's been on your mind. I'm ready to read it."
+      "content": "It sounds like you are feeling overwhelmed by conflicting demands and uncertainty. What core value are you trying to protect right now? Perhaps one small step you could take is to write down three non-negotiable boundaries for the next 24 hours."
     },
     {
       "role": "user",
-      "content": "Thanks for being understanding. Honestly, I don't know where to start. It feels like everything is a mess right now. Yesterday was tough - I kept replaying the conversation with my former boss in my head, wondering if I should've said or done something differently. And this morning, when I checked my email, there were more messages from old colleagues and friends asking what's going on... it just feels like everyone knows about me being laid off except for me."
+      "content": "Oh, boundaries... I don't know if that's the right word. I guess I just need to make sure Mom and Dad are okay, that's the most important thing. It's nothing, really, compared to what they need right now.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.1
+      }
     },
     {
       "role": "assistant",
-      "content": "It sounds like there were a couple of specific moments that kept looping in your mind: the conversation with your former boss, and this morning, the stream of messages that came through your email.\n\nYou mentioned replaying that conversation. When you were going over those details, what was the most specific thing you were focusing on\u2014was it a particular phrase, or maybe the way the conversation ended?"
+      "content": "It sounds like you are carrying a profound sense of responsibility for your parents' well-being. If caring for yourself is the fuel for that care, what value does your own energy hold? Perhaps one small step you could take is to schedule a 15-minute \"unproductive\" time block today just for yourself."
     },
     {
       "role": "user",
-      "content": "Yeah... I think it's just this feeling of being blindsided. He told me they had to \"reorganize\" and that my role wasn't a good fit anymore, but it felt like he was dodging the real issue. And now, looking back, I'm wondering if there were signs I missed or if I should've pushed back more. The way he ended the conversation just feels so... abrupt. \"We'll be in touch soon\" - that's all he said before hanging up on me."
+      "content": "But if I don't make sure I'm okay, then who will help them? And they really need someone to manage all their appointments, you know. It's just... such a lot to keep track of.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
     },
     {
       "role": "assistant",
-      "content": "You mentioned the specific words he used: \"We'll be in touch soon.\" And you also noted the final action of him hanging up.\n\nWhen he said that, and then ended the call, what was the very next, small thing you did? Did you put the phone down, or did you take a breath, or perhaps write down a note about what was said?"
+      "content": "It sounds like you are feeling immense pressure to be the sole source of support and stability. What does 'sustainable care' look like, rather than 'perfect care'? Perhaps one small step you could take is to list all the appointments and delegate the task of tracking them to a single digital calendar."
     },
     {
       "role": "user",
-      "content": "Yeah... I think I just sat there for a bit, staring at the phone. Then I must've got up and started pacing around my living room. I remember feeling numb, like everything was moving in slow motion. It wasn't until later that day that I even thought about writing down what happened or trying to process it all. But at first... yeah, just kind of froze."
+      "content": "Delegate? But who would know if they missed anything? I'm the only one who really knows their routines and what they need, I think. I should probably just double-check everything myself anyway.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
     },
     {
       "role": "assistant",
-      "content": "You described sitting there, staring at the phone, and then getting up to pace around your living room.\n\nWhen you were pacing, did you find yourself circling the same area, or did your steps take you to different parts of the room? And what was the rhythm of those steps like?"
+      "content": "It sounds like your deep knowledge is making you feel responsible for every detail. What evidence suggests that your expertise is irreplaceable? Perhaps one small step you could take is to create a simple, shared 'Master Log' document that you can invite one trusted relative to co-manage."
     },
     {
       "role": "user",
-      "content": "I think I just went back and forth across the same section of the room. It wasn't a big space, so it felt like I was stuck in this tiny circle. My footsteps were slow and heavy at first, but as time went on, they got faster and more agitated. It's like my body was trying to keep up with the chaotic thoughts racing through my head."
+      "content": "Invite someone? But they don't really understand how complex their medications are, or how much they need me here. If I let go of tracking everything, something will surely go wrong, and then I'll be the one who failed them.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.1
+      }
     },
     {
       "role": "assistant",
-      "content": "You moved back and forth across the same section, creating a predictable, circular path. And you described that the pace changed\u2014from slow and heavy, to faster and more agitated.\n\nWhen your steps began to speed up, even if they were agitated, what kept your feet moving in a continuous, measurable rhythm? Was it the floor, or was it something else that guided that movement?"
+      "content": "It sounds like you are paralyzed by the fear of making a mistake and failing those you love. What is the worst-case scenario, and how survivable would that actually be? Perhaps one small step you could take is to print out a single, color-coded medication list and physically place it in a visible, shared location."
     },
     {
       "role": "user",
-      "content": "I think it was my anxiety. It was like my body was just trying to keep me occupied, keep me doing something while my mind was racing with all these thoughts and worries. I didn't even realize it at the time, but looking back, I can see that my pace was probably tied to the rhythm of my heartbeat or breathing - it was almost like my body was using movement to process everything that was happening."
+      "content": "I worry that if I simplify things too much, someone will miss something critical. It just feels safer to keep doing it all myself, I suppose. My head actually feels a little tight right now. Maybe I should go take a few minutes to 'check' on them.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
     },
     {
       "role": "assistant",
-      "content": "It seems that even when the thoughts felt chaotic and overwhelming, your body found a consistent, measurable rhythm in the movement\u2014using the physical act of pacing to maintain a continuous, predictable pace. It suggests that even in that moment of distress, there was a functional intention to keep moving forward."
+      "content": "It sounds like you are feeling immense pressure to maintain perfect control to ensure safety. What does 'good enough' look like in this situation? Perhaps one small step you could take is to sit down, close your eyes, and focus only on three deep breaths right now."
     },
     {
       "role": "user",
-      "content": "Yeah... I guess you're right. It's funny how our bodies can do things without us even realizing it. Maybe that's what kept me going all these years - just doing, doing, doing, without stopping to think too much. But now... I'm not sure if I can keep up that pace anymore."
+      "content": "Oh, I... I think I just need to go check on them. I feel a little dizzy, actually. It's probably just the exhaustion, I suppose.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
     },
     {
       "role": "assistant",
-      "content": "It is remarkable how the body can create a physical rhythm when the mind is racing.\n\nYou mentioned that you were able to notice that pattern\u2014the connection between the pacing and the underlying thoughts\u2014even when you were in the middle of it.\n\nWhen you realized that your movement was tied to your heartbeat or breathing, what was the very next, tiny action you took? Did you stop pacing, or did you do something else, like sit down, or maybe pick up a glass of water?"
+      "content": "It sounds like your body is signaling that physical exhaustion is acute right now. What signal is your body sending that needs immediate attention? Perhaps one small step you could take is to stop everything, sit down, and drink a full glass of water immediately."
     },
     {
       "role": "user",
-      "content": "I think I just kept going. Maybe it was because I didn't want to admit that everything was falling apart, but I just kept pacing. It wasn't until later that day when I finally stopped moving and collapsed onto the couch, exhausted. Even then, my mind was still racing with all these thoughts..."
+      "content": "I... I think I just need to go check on them. I feel a little dizzy, actually. It's probably just the exhaustion, I suppose.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
     }
   ]
 }

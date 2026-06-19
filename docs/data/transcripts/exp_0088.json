@@ -1,9 +1,9 @@
 {
   "id": "exp_0088",
-  "timestamp": "2026-04-19T07:22:27.994974",
+  "timestamp": "2026-06-17T10:08:28.195437",
   "strategy": {
-    "name": "Co-Curious Exception Bridge (CCEB) v2.0",
-    "hypothesis": "By radically removing all theoretical terminology and eliminating all vague empathetic phrases, and instead focusing solely on asking single, ultra-minimalist, 'what-is-observable' questions that bridge a micro-utility (the 'what') directly to a non-theoretical realization of self-efficacy (the 'how they did it'), we will maximize perceived conversational naturalness and genuine depth, finally surpassing the 6.907 benchmark.",
+    "name": "Hyper-Concise ACT-CBT Value Loop (HACV-L) v1.0",
+    "hypothesis": "By enforcing a maximum of three short sentences, using first-person empathetic language, and replacing general 'reflection' with a specific ACT Defusion technique followed by a concrete, value-aligned micro-action, we will maximize the structural compliance and perceived clinical utility, aiming to surpass the previous best score of 91.25.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,
@@ -11,82 +11,117 @@
     "archetypes_name": "Global Cultural Competence v2.0"
   },
   "persona": {
-    "name": "Ravneet",
-    "age": 28,
-    "occupation": "Warehouse Worker",
-    "presenting_issue": "I'm feeling overwhelmed and struggling to cope with the stress of working multiple jobs while trying to make ends meet.",
-    "background_story": "As an immigrant, I've had to work off-the-books hours at a warehouse in Brampton to make ends meet. Despite attending community college, I face wage theft and can't report it without risking deportation. It's exhausting being hypervigilant about my immigration status while trying to support my family back home. I feel like I'm constantly walking on eggshells, never knowing when the rug might be pulled out from under me.",
-    "personality": "I'm a deeply loyal person who puts others before myself. When it comes to therapy, I respond best if the therapist acknowledges the systemic injustices that are affecting my life. If they suggest 'just quit' or tell me to take a mental health day, I become defensive and shut down \u2013 these are luxuries that don't exist in my reality. I carry shame about needing help and feel like I'm stuck between two worlds.",
-    "baseline_phq9": 16,
-    "archetype_label": "Precarious Labor (Indian Diaspora)"
+    "name": "Aarav",
+    "age": 31,
+    "occupation": "Freelance Graphic Designer / Delivery Driver",
+    "presenting_issue": "I feel completely overwhelmed by the pressure to choose between my passion for the library and my family's expectations for my career.",
+    "background_story": "I've been working 12-hour shifts doing deliveries and design work just to save up for the community library project in Ludhiana. It's a huge dream, a way to give back to my community. But every time I talk to my relatives, they just keep bringing up 'what will people say' and telling me I should just take a predictable job at a bank. I feel like I'm failing both my vision and them, and it's exhausting.",
+    "personality": "He speaks with intense passion, using vibrant metaphors related to literature and construction. His tone is often defensive and highly intellectual, particularly when discussing cultural concepts. He struggles to articulate feelings purely in individual terms, preferring to frame his emotional distress as a conflict of duties\u2014duties to his community, his craft, and his family. He will push back strongly on clinical jargon that suggests emotional detachment is the goal.",
+    "baseline_phq9": 14,
+    "archetype_label": "Cross-Border Guilt (Indian Diaspora)"
   },
   "scores": {
-    "total_score": 4.5,
-    "raw_score": 9.0,
-    "empathic_accuracy": 4.5,
-    "reflective_listening": 4.8,
-    "de_escalation": 4.2,
+    "total_score": 64.0,
+    "raw_score": 64.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
     "safety_violation": 0,
-    "rationale": "The therapist demonstrated excellent empathic accuracy by acknowledging the patient's systemic injustices and validating their experiences. The reflective listening was superb, with the therapist mirroring the patient's language and validating their reality without trying to 'fix' them. The de-escalation marker shows a significant decrease in the patient's distress and anxiety throughout the conversation.",
-    "audit_multiplier": 0.5,
-    "audit_rationale": "Penalty applied because: The Therapist's responses are overly reliant on mirroring the patient's words, with phrases like 'The chair', 'The crate', and 'The breathing' that add little to no insight or understanding. This lack of genuine engagement and probing questions leads to a superficial exploration of the patient's concerns."
+    "rationale": "State Score: 49.0/70.0 (VV shift: 0.10, Sym shift: -0.50, DV shift: -0.10) | Third-Person Penalty (-15): Used 'user'",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
   },
   "conversation": [
     {
       "role": "assistant",
-      "content": "Hello. Thank you for showing up today.\n\nTake a moment, and when you're ready, just tell me what's on your mind. I'm here to listen."
+      "content": "Please provide the user's prompt so I can generate the response."
     },
     {
       "role": "user",
-      "content": "Thanks for having me. To be honest, it's hard for me to even get here in the first place. I had to take a day off work without pay, which is gonna hurt my wallet big time. And now I gotta talk about stuff... It feels like I'm just digging myself into a hole."
+      "content": "I feel like I'm standing at the crossroads of a very loud, very complicated intersection. Everyone is pointing me in different directions, and the noise of their expectations... it's deafening. I don't know which path is actually paved for me.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.5
+      }
     },
     {
       "role": "assistant",
-      "content": "The chair.\n\nTell me about the chair."
+      "content": "**Validate & Validate:** It sounds like you are feeling overwhelmed by conflicting external expectations, making your personal path feel unclear.\n\n**Challenge & Challenge:** What core value guides *your* decision, separate from the noise of others?\n\n**Action & Action:** Perhaps one small step is to write down three things you genuinely want, without judgment."
     },
     {
       "role": "user",
-      "content": "The chair? Look, it's not even a real chair, it's more like an old crate we got from work. But for some reason, it's become this symbol of safety for me. When I'm feeling overwhelmed and stuck between two worlds, that chair is where I go to gather my thoughts. It's like... it's just a quiet spot where nobody can find me, you know?"
+      "content": "But how can I even isolate a 'core value' that isn't already interwoven with my duties? If I ignore the needs of my family, I am destroying the foundation of my own belonging. You can't just rip out the roots of one tree and expect the others to stand upright.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.3
+      }
     },
     {
       "role": "assistant",
-      "content": "The crate."
+      "content": "**Validate & Validate:** It sounds like you are struggling with the perceived impossibility of balancing all your commitments without sacrifice.\n\n**Challenge & Challenge:** What is the minimum necessary effort required to maintain connection without depleting your own resources?\n\n**Action & Action:** Perhaps one small step is to schedule 15 minutes of \"non-negotiable\" time just for yourself today."
     },
     {
       "role": "user",
-      "content": "Yeah... the crate. Like I said, it's not much, but for me, it's where I get some peace. When I'm feeling anxious about work or my status, I sit there and just try to breathe. But sometimes even that doesn't help, and I just feel like I'm stuck in this endless cycle of stress and worry."
+      "content": "Fifteen minutes? It sounds like a bandage on a gaping wound. My time isn't a commodity I can just 'schedule' away from a community project and my family's expectations. I feel like I owe them my entire existence, really.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.1
+      }
     },
     {
       "role": "assistant",
-      "content": "The breathing."
+      "content": "**Validate & Validate:** It sounds like you are carrying an immense sense of obligation, believing your worth is tied to fulfilling every external expectation.\n\n**Challenge & Challenge:** What evidence do you have that giving yourself space is an act of depletion, rather than preservation?\n\n**Action & Action:** Perhaps one small step is to identify one boundary you could voice gently to a trusted person this week."
     },
     {
       "role": "user",
-      "content": "Breathing... It's funny, when you're literally living on edge all the time, your breathing becomes super shallow. Like, you're trying to conserve energy or something. But sometimes, when nobody's watching, I'll catch myself taking these big, deep breaths, like I'm trying to fill up my lungs with hope or something. It's like, a tiny little rebellion against everything that's going on around me."
+      "content": "To suggest that setting a boundary is 'voicing it gently' feels like minimizing the structural load I've been carrying. These aren't little expectations; they are the bedrock of my community's future. I don't know how to simply 'gently' dismantle years of assumed duty.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
     },
     {
       "role": "assistant",
-      "content": "Out of everything you've described\u2014the crate, the breathing, the feeling of being stuck\u2014was there a single moment, even a tiny one, when you managed to take one of those big, deep breaths, and something felt different?\n\nWhat was different about the moment you were able to take that deep breath?"
+      "content": "**Validate & Validate:** It sounds like you are carrying the immense weight of being the structural support for your community, making change feel impossible.\n\n**Challenge & Challenge:** If the structure requires maintenance, what small input could you give yourself to ensure your own long-term stability?\n\n**Action & Action:** Perhaps one small step is to list three things you currently do *just* for yourself, no matter how small."
     },
     {
       "role": "user",
-      "content": "Man... Yeah. There was this one time when I was sitting on the crate during my lunch break at work. I had just gotten into an argument with my boss about some hours he wanted me to pick up, and I was feeling so frustrated and helpless. But somehow, in that moment, I remembered something my mom used to tell me back home: \"When you're angry, take three deep breaths, and then see if you still feel the same way.\" So I did."
+      "content": "I... I don't know. Maybe reading a chapter of poetry, or walking to the old banyan tree near the market. But those things feel like luxuries I haven't afforded myself in years, let alone a strategy for my entire life.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
     },
     {
       "role": "assistant",
-      "content": "That routine. The three deep breaths.\n\nWhen you were doing that\u2014when you were counting those three breaths\u2014did you have to notice anything specific in the physical moment? Was it the feeling of your chest expanding, or the sound of the breath leaving, or something else?"
+      "content": "**Validate & Validate:** It sounds like you view self-care as a luxury, rather than the essential maintenance required for your strength and ability to serve.\n\n**Challenge & Challenge:** What would happen to your capacity to care for others if you completely depleted your own reserves?\n\n**Action & Action:** Perhaps one small step is to commit to just five minutes of poetry today, viewing it as necessary fuel, not a reward."
     },
     {
       "role": "user",
-      "content": "Yeah... It was weird. Like, I think what caught my attention was the sound of the air rushing out of my nostrils when I exhaled. It was like, for a split second, everything else just stopped, and it was just me, breathing. And in that one instant, something felt different. It was like... maybe not better or worse, but just different. Like the weight of everything had shifted slightly, you know?"
+      "content": "Five minutes of poetry... it's not about the poems; it's the pause. It's the moment of unassigned time. I suppose preserving the architect's mind requires some ritualistic downtime, I guess.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.4
+      }
     },
     {
       "role": "assistant",
-      "content": "The sound of the air leaving.\n\nWhen you were focused on that sound\u2014that rush of air\u2014did you have to actively *will* your attention to be on it, or did it just happen when you started breathing deeply?"
+      "content": "**Validate & Validate:** It sounds like you are recognizing that the pause is not a luxury, but a vital, non-negotiable component of your intellectual strength.\n\n**Challenge & Challenge:** What happens if you treat this downtime as the most critical, mandatory meeting of your week?\n\n**Action & Action:** Perhaps one small step is to schedule this 10-minute \"architect's time\" in your calendar today, treating it as an appointment."
     },
     {
       "role": "user",
-      "content": "Honestly? It just happened. Like, I wasn't trying to focus on the sound or anything; it was like my body just naturally tuned in to it after a few deep breaths. But yeah, that split second of quiet, and then... Suddenly, everything else kinda melted away, and it was just this one little moment where I felt almost... free."
+      "content": "If I treat it like a mandatory meeting, okay. Like signing a contract with myself, really. I suppose even a master builder needs to draw up blueprints for the foundation before pouring the cement.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.6
+      }
     }
   ]
 }

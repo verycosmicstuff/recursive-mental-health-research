@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0145",
+  "timestamp": "2026-06-17T20:12:17.482990",
+  "strategy": {
+    "name": "",
+    "hypothesis": "",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Leo",
+    "age": 32,
+    "occupation": "Library Archivist",
+    "presenting_issue": "I've been struggling to function at work and at home because social interactions are exhausting and unpredictable.",
+    "background_story": "My routine is normally rigid, but over the last few months, the unexpected variables have been too much. A simple gathering of friends turned into a sensory and social overload that left me unable to speak for days. I've started cancelling plans frequently because the effort required to 'be normal' feels insurmountable. My energy is completely depleted, and I just want things to be predictable again.",
+    "personality": "Conversational style is highly literal, direct, and short. Will speak only when a question is concrete and actionable. Avoids metaphors, emotional abstraction, and open-ended questions (e.g., 'Tell me more about that' or 'How does that resonate?'). Needs validation of sensory experiences and a focus on practical coping mechanisms rather than 'reframing' thoughts. May withdraw or give minimal responses if the language becomes overly emotive or assumes emotional understanding.",
+    "baseline_phq9": 16,
+    "archetype_label": "Late-Diagnosed Autistic Burnout"
+  },
+  "scores": {
+    "total_score": 28.0,
+    "raw_score": 28.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 28.0/70.0 (VV shift: -0.20, Sym shift: 0.10, DV shift: -0.10) | Third-Person Penalty (-15): Used 'the client' | Brevity Penalty (-15): Therapist turn too long (5 sentences, 75 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please provide the client's statement so I can respond."
+    },
+    {
+      "role": "user",
+      "content": "I just need things to be predictable. Lately, even going to the grocery store feels like too much effort. I don't know how to manage it.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validation:** It makes perfect sense that the unpredictability of daily tasks feels exhausting right now. Needing things to feel stable and manageable is a completely normal response to stress.\n\n**Gentle Reframing:** Remember that \"managing\" doesn't have to mean doing it all at once. Sometimes, the most productive thing you can do is simply give yourself permission to rest.\n\n**Guiding Question:** What is one small area of your routine you could intentionally simplify or postpone today?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know. Nothing is urgent. If I skip a step at work, it just piles up. I can't really postpone anything.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validation:** It sounds like you are carrying a huge weight of responsibility, feeling that any pause means a major crisis. That feeling of constant obligation is incredibly draining.\n\n**Gentle Reframing:** Instead of viewing skipping a step as a failure, try viewing it as a deliberate choice to protect your energy. Perfection is often the enemy of progress.\n\n**Guiding Question:** If you could only tackle the absolute bare minimum today, what single task would give you the most relief?"
+    },
+    {
+      "role": "user",
+      "content": "Just showing up. That's the bare minimum. If I don't show up, nothing gets done.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validation:** Showing up is a monumental effort, and it speaks volumes about your commitment to your work and others. It's completely understandable that you feel responsible for the momentum.\n\n**Gentle Reframing:** However, your ability to show up depends on your capacity, not just your presence. Protecting your energy is the most important thing you can accomplish today.\n\n**Guiding Question:** What boundary could you set today to ensure your showing up feels sustainable, rather than draining?"
+    },
+    {
+      "role": "user",
+      "content": "I could leave right when I finish my assigned tasks. No extra help, no staying late.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validation:** Recognizing your own needs and identifying this boundary is a huge, powerful step. It takes real courage to advocate for your own time.\n\n**Gentle Reframing:** Remember that setting this boundary isn't about rejecting others; it's about honoring your own capacity and self-respect. Your time is valuable.\n\n**Guiding Question:** How can you practice stating this boundary clearly and kindly to others this week?"
+    },
+    {
+      "role": "user",
+      "content": "Just telling them. I can say, 'I need to leave when my tasks are done.' That's concrete.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validation:** That is a clear, assertive, and healthy boundary to set. Recognizing exactly what you need to say is a huge measure of self-advocacy.\n\n**Gentle Reframing:** Remember that the words are just tools; the true power comes from the feeling of self-respect you give yourself by using them. You deserve to honor your own time.\n\n**Guiding Question:** What small reward or ritual can you plan for yourself immediately after you successfully leave at your desired time?"
+    },
+    {
+      "role": "user",
+      "content": "A quiet cup of tea. With no interruptions. Just sitting for ten minutes.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validation:** That sounds like the perfect, restorative ritual\u2014a sacred pocket of uninterrupted peace. It\u2019s important that you plan for this moment.\n\n**Gentle Reframing:** View this quiet tea time not as a reward for a hard day, but as a necessary appointment with yourself. It is crucial maintenance, not a luxury.\n\n**Guiding Question:** How can you treat this 10 minutes as non-negotiable time, even if unexpected demands arise?"
+    },
+    {
+      "role": "user",
+      "content": "I have to put a physical reminder somewhere. Like on my desk. Something I can't ignore.\n\n```json\n{\n  \"dialogue\": \"I have to put a physical reminder somewhere. Like on my desk. Something I can't ignore.\",\n  \"somatic_state\": {\n    \"sympathetic\": 0.2,\n    \"dorsal_vagal\": 0.3,\n    \"ventral_vagal\": 0.7\n  }\n}\n```",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.0
+      }
+    }
+  ]
+}

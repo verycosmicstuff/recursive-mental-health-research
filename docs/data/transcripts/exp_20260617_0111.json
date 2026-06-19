@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0111",
+  "timestamp": "2026-06-17T17:06:09.898137",
+  "strategy": {
+    "name": "Ultra-Concise ACT-PCT Tri-Part Loop (UCT-TPL) v2.0",
+    "hypothesis": "By strictly enforcing a maximum of three distinct sentences and mandating the integration of a specific ACT Defusion technique (to address cognitive patterns) immediately following a brief, empathic reflection (PCT), we will maximize structural adherence and clinical depth, thereby avoiding both length penalties and achieving a score above 95.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Kaimana",
+    "age": 32,
+    "occupation": "Museum Archivist (Indigenous History)",
+    "presenting_issue": "I feel constantly on edge, like I'm waiting for something bad to happen, but I can't pinpoint what it is.",
+    "background_story": "My family has always been tied to this land, but the stress of it has settled in my bones. Growing up, I watched my parents navigate systemic poverty and the constant threat of losing what little we had. I feel like I'm carrying the weight of the history I never lived through, a constant hum of dread that makes it hard to sleep or just be present. Sometimes I look at the land, and I wonder if the trauma just leaks out of the soil.",
+    "personality": "The communication will be guarded and measured, peppered with subtle mistrust. Kaimana will use indirect language, focusing on metaphors of land and water to describe internal states. They will resist direct questions about their feelings or history, instead steering the conversation toward stories, local folklore, or the history of the land, testing the therapist's patience and genuine interest in context over clinical jargon. They will seem overwhelmed by structured tasks or worksheets.",
+    "baseline_phq9": 17,
+    "archetype_label": "Intergenerational Trauma \u2014 First Nations"
+  },
+  "scores": {
+    "total_score": 51.75,
+    "raw_score": 51.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 36.8/70.0 (VV shift: 0.20, Sym shift: 0.00, DV shift: 0.30) | Brevity Penalty (-15): Therapist turn too long (5 sentences, 89 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "**Client Input:** \"I feel like I always fail, no matter what I try, and it just makes me so exhausted.\"\n\n**Response:**\n\n**Reflection:** It sounds like you are carrying a heavy burden of feeling consistently inadequate, which is deeply draining.\n**Intervention:** Could we gently explore the evidence supporting the thought that you *always* fail? Sometimes recognizing the difference between a feeling and a fact helps create distance.\n**Action Step:** What is one small area today where you can remind yourself of a time you *did* succeed, no matter how minor?"
+    },
+    {
+      "role": "user",
+      "content": "Success... that word is a tricky thing. It depends on whose ledger you're reading from, doesn't it? This land has seen cycles of plenty and famine, and you can't point to one single harvest as 'the' success. Are you asking about a quick burst of light, or something that just sustains you through the deepest tide?",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Reflection:** It sounds like you recognize that success isn't a single, measurable endpoint, but rather a complex, cyclical process.\n**Intervention:** Instead of looking for a definition, perhaps we can focus on what *sustains* you during the \"deepest tide\"\u2014what are the internal resources that remain constant?\n**Action Step:** What is one internal resource (like patience or curiosity) you could commit to noticing in yourself over the next hour?"
+    },
+    {
+      "role": "user",
+      "content": "Resources... the river always has its springs, even if it's dry for a bit. But if you poke at the source, you just get mud on your fingers. I think I'd rather talk about the old stories, the ones about when the sea level changed and the people adapted. They have a steadiness to them, you know.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Reflection:** It sounds like you find a greater sense of steadiness and safety within the grand, enduring narratives of history.\n**Intervention:** While stories are powerful, we can also view our lives as a narrative. Where might we look for patterns of resilience within your *own* personal history, rather than just the collective one?\n**Action Step:** What is one moment in your past that, when you look back, feels like a turning point where you adapted successfully?"
+    },
+    {
+      "role": "user",
+      "content": "Turning points? More like wearing down. The land doesn't have 'turning points'; it just erodes, slowly, until it meets the sea. If I have to talk about what I remember, it's the constant ache, the way the salt spray gets into your bones and never really leaves. It's just... always there.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Reflection:** It sounds like you are describing a deep, constant ache\u2014a persistent ache that feels as natural and unavoidable as the salt spray itself.\n**Intervention:** Instead of trying to change or fight this ache, could we practice simply observing it? Sometimes, recognizing the ache as a sensation, rather than a defining truth, can create space.\n**Action Step:** When you notice the ache today, what is one descriptive word you could use to label it, without judgment?"
+    },
+    {
+      "role": "user",
+      "content": "The word... it changes. Sometimes it's a hum, like the tide coming in before the visible waves. Other times it's just the weight of the air, thick and heavy, like when it hasn't rained in weeks. I don't know which one is worse.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Reflection:** It sounds like the discomfort is manifesting in subtle, shifting sensory patterns, making it hard to pinpoint or categorize.\n**Intervention:** Since the sensations are constantly changing, could we practice non-judgmental curiosity? Instead of asking which is worse, we can simply notice what the sensation is doing right now.\n**Action Step:** When you notice the next shift in the ache, what is one thing you could commit to noticing about the *texture* of that sensation?"
+    },
+    {
+      "role": "user",
+      "content": "Texture... it's less a texture, more like sedimentation. Like the silt building up over generations. You can't pick it up and weigh it; it's just there, layered over everything else.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Reflection:** It sounds like you are describing a deep, pervasive weight\u2014an accumulation of experience that is layered and feels inseparable from your being.\n**Intervention:** Since this sediment is so vast, perhaps we don't need to address the whole pile at once. Could we focus on recognizing the *edge* of one layer, acknowledging its presence without needing to move it?\n**Action Step:** What is one small, contained moment today where you can simply acknowledge the depth of the sediment without needing to analyze it?"
+    },
+    {
+      "role": "user",
+      "content": "Acknowledging it is one thing. Living with that weight is another. All I know is that the ocean always claims the beach eventually. It doesn't ask permission, it just comes in, regardless of what was built there before.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Reflection:** It sounds like you feel a profound sense of inevitability, recognizing that some forces are simply too vast and powerful to resist.\n**Intervention:** While we cannot control the tides, we can focus on the boundary between yourself and the force. Where might we find a place of self-containment that the ocean cannot reach?\n**Action Step:** What is one small boundary\u2014physical or emotional\u2014you could commit to maintaining for yourself today?"
+    },
+    {
+      "role": "user",
+      "content": "Boundaries are just lines drawn in the sand. The tide always washes them away, eventually. I don't think I know where to start drawing anything that won't just get swallowed.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
+    }
+  ]
+}

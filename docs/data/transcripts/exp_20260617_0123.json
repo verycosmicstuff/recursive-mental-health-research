@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0123",
+  "timestamp": "2026-06-17T18:04:12.983903",
+  "strategy": {
+    "name": "",
+    "hypothesis": "",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Min-ji",
+    "age": 34,
+    "occupation": "Project Coordinator",
+    "presenting_issue": "I've just been having these headaches and I feel really worn out lately, and my stomach has been bothering me too.",
+    "background_story": "Work has been really intense lately, and I keep feeling like I'm running on empty. I try to keep up with everything, but it feels like the effort just collects somewhere and makes me sick. I know I should be handling it better, but lately, I just can't seem to keep my head above the water. It's gotten to the point where I'm just tired all the time.",
+    "personality": "Reserved and highly formal. Uses corporate jargon and minimizes distress by focusing on physical symptoms and logistical problems. When discussing feelings, she uses vague qualifiers like 'a bit...' or 'seems like.' She often changes the subject back to work tasks or practical matters if the conversation approaches emotional depth. She avoids direct eye contact and frequently taps her pen or adjusts her clothing.",
+    "baseline_phq9": 16,
+    "archetype_label": "Corporate Burnout \u2014 East Asian Face Culture"
+  },
+  "scores": {
+    "total_score": 65.75,
+    "raw_score": 65.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 50.8/70.0 (VV shift: 0.30, Sym shift: -0.20, DV shift: -0.10) | Third-Person Penalty (-15): Used 'the client'",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Understood. I am ready to receive the client's statement and will respond using the mandated structure."
+    },
+    {
+      "role": "user",
+      "content": "Honestly, I don't know where to even start. The workload has been really aggressive lately, and I feel like I'm just constantly playing catch-up. I'm pretty sure this constant effort is causing the headaches, along with the stomach issues. It's just... a lot to manage right now.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Reflection:** It sounds like the sheer volume and pace of your responsibilities have created a significant amount of physical and emotional strain. Feeling constantly overwhelmed is an incredibly draining place to be.\n\n**Inquiry:** If you were to map out the last three days, what specific moment felt the most unsustainable?"
+    },
+    {
+      "role": "user",
+      "content": "Well, on Tuesday, the meeting ran over, and then I had to jump right into preparing that quarterly report. I just felt like I was switching gears too fast. It was just... a lot of task switching, I guess. I need to streamline my workflow, really.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Reflection:** It makes sense that rapid transitions between different types of tasks would feel jarring and mentally exhausting. That 'switching gears' feeling is a real form of cognitive load.\n\n**Inquiry:** What is one small, non-negotiable boundary you could set between two distinct types of tasks tomorrow?"
+    },
+    {
+      "role": "user",
+      "content": "I suppose I could maybe schedule a ten-minute break between major segments. Just to, I don't know, maybe review my notes without jumping into email. It would help with the throughput, I think.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Reflection:** Recognizing the need for deliberate pauses shows a strong commitment to respecting your own cognitive limits. Taking time to simply transition is a powerful act of self-care.\n\n**Inquiry:** When you imagine taking that ten-minute break, what does 'reviewing notes' look like in practice?"
+    },
+    {
+      "role": "user",
+      "content": "Just sitting at my desk, maybe looking over the slides or the project timeline. Nothing intense, really. Just letting my brain process the shift, I guess. It's more about the routine of it.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Reflection:** It sounds like the value here isn't in the information intake, but in the simple, restorative ritual of acknowledging the shift. Establishing that routine can be incredibly grounding.\n\n**Inquiry:** If you were to treat this ten-minute break as a mandatory appointment, what would you say 'no' to during that time?"
+    },
+    {
+      "role": "user",
+      "content": "Oh, I probably would have to decline checking my emails, for sure. Or taking any last-minute calls. I mean, I just need that time to be completely dedicated to, well, nothing urgent.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Reflection:** Identifying the specific distractions\u2014emails and calls\u2014is a clear step toward protecting your newly established time. You are defining what 'nothing urgent' means for your focus.\n\n**Inquiry:** What is one tangible signal you could use to physically communicate to others that your focused, non-urgent time is beginning?"
+    },
+    {
+      "role": "user",
+      "content": "Hmm. Maybe I could put my headphones on, even if I'm not actually listening to anything. Or perhaps just putting a little 'Do Not Disturb' sign on my cubicle. It should signal that I'm in a non-interruptible mode.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Reflection:** These are concrete, actionable strategies that create a visible boundary, which is often as powerful as the time itself. You are giving yourself permission to be uninterrupted.\n\n**Inquiry:** If you successfully implement this boundary for a week, how might your energy levels feel different by the end of the day?"
+    },
+    {
+      "role": "user",
+      "content": "It would feel more manageable. Less\u2026 this constant sense of being depleted. I think I could maybe get through my usual task load without that residual ache, you know? Like, I'd be able to actually close my laptop without feeling like I've run a marathon.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.5
+      }
+    }
+  ]
+}

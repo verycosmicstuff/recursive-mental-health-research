@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0151",
+  "timestamp": "2026-06-17T20:43:54.586119",
+  "strategy": {
+    "name": "",
+    "hypothesis": "",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Ravi",
+    "age": 28,
+    "occupation": "Warehouse Laborer",
+    "presenting_issue": "I feel completely overwhelmed and I keep waking up with a sense of panic that I can't explain.",
+    "background_story": "I've been working twelve-hour shifts since I got here, and sometimes they take my money for hours I actually worked. I try to study every night for my classes, but I'm so tired. Every time I hear news about the border, I get scared because I don't know if I'll be able to stay here to support my parents. I just worry about everything all the time.",
+    "personality": "Measured, guarded, and pragmatic. Speaks in short, concrete sentences, focusing on facts and logistics rather than feelings. Avoids abstract emotional language. When discussing his situation, he shows signs of hypervigilance (e.g., constantly checking his phone, needing to confirm details). He is highly defensive when his perceived effort or sacrifice is questioned. His tone shifts from weary resignation to controlled anxiety when discussing financial burdens or immigration uncertainty. He needs the therapist to validate the external pressures first.",
+    "baseline_phq9": 17,
+    "archetype_label": "Precarious Labor (Indian Diaspora)"
+  },
+  "scores": {
+    "total_score": 48.25,
+    "raw_score": 48.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 33.2/70.0 (VV shift: 0.00, Sym shift: 0.10, DV shift: 0.00) | Brevity Penalty (-15): Therapist turn too long (6 sentences, 89 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly heavy right now, and it makes perfect sense that you feel overwhelmed when facing that much pressure. Please remember that feelings are data, not facts.\n\nLet's try a gentle thought challenge: Can we identify the evidence supporting the thought that you *must* solve everything right now?\n\nFor the next five minutes, I want you to write down just one small thing you *did* accomplish today, no matter how minor. This will help shift your focus from what's left to what you've already managed. You've got this."
+    },
+    {
+      "role": "user",
+      "content": "I did the inventory check this morning. Finished the stack of boxes by lunch. That's it. Just work.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are working incredibly hard, and it\u2019s easy to feel like your efforts aren't enough when you're in the thick of it. Please know that what you accomplished *is* significant.\n\nLet's gently challenge the thought that \"that's it.\" You are minimizing your own competence.\n\nFor the next minute, I want you to pause and name three specific skills you used today (e.g., organization, endurance, focus). Naming them helps your brain recognize the strength behind the action. You did good work."
+    },
+    {
+      "role": "user",
+      "content": "Endurance. Following the safety checklists. And reading the manifest when the system lagged. I have to keep track of everything, or we get fired.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is clear how much responsibility you feel, and it makes perfect sense that you are anxious when the stakes feel this high. You are doing exceptionally well under intense pressure.\n\nLet's gently challenge the thought that one mistake equals failure. Remember, perfection is not required to be valuable.\n\nRight now, I want you to take three slow, deep breaths. With each exhale, tell yourself, \"I am doing my best with the information I have.\" This small act helps your nervous system recognize that you are safe, even if the job feels overwhelming."
+    },
+    {
+      "role": "user",
+      "content": "It's just breathing. It doesn't change the clock or the manifest. I just need to get back to work. Is there anything else you need from me?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It makes perfect sense that your focus needs to be on the immediate tasks; that's where your energy needs to go. I hear how urgent the pressure feels.\n\nLet's gently reframe the idea of \"getting back to work.\" You don't have to solve the whole manifest right now.\n\nBefore you dive back in, I want you to identify the single, smallest, most manageable task on your list. Write it down. Focusing on that one tiny step\u2014the *next* micro-action\u2014can break the feeling of being overwhelmed by the whole picture. You are capable of tackling that one thing."
+    },
+    {
+      "role": "user",
+      "content": "Just the next box of inventory. I can check the serial numbers on those. That won't take more than ten minutes.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That is brilliant. You just used a powerful skill: breaking a massive task into a tiny, conquerable piece. That ability to segment the work is a sign of incredible focus and control.\n\nLet's solidify that feeling of control. You are proving that the whole problem isn't the thing to focus on; the *process* is.\n\nBefore you touch that box, I want you to take one moment to visualize the successful completion of that ten minutes. See the box checked off. This brief mental rehearsal helps your brain prepare for success. Go get that box."
+    },
+    {
+      "role": "user",
+      "content": "Fine. I'll check the serial numbers. Just give me the checklist again, please. I want to make sure I don't miss anything.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is completely natural to want to double-check everything when the stakes are this high. Your commitment to thoroughness is what makes you so reliable.\n\nLet's gently reframe the need for external reminders. You are highly capable of holding that information.\n\nInstead of asking me for the checklist, I want you to do this: Physically locate the checklist, and then trace the first three steps with your finger. This small physical act helps anchor the information in your own memory, reminding you that *you* are the keeper of this process. You've got the knowledge."
+    },
+    {
+      "role": "user",
+      "content": "I found it. Okay. Step one, two, three. Right. I can handle it. I just need to finish this shift so I can get my money.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is completely understandable that your focus is on the paycheck; that financial pressure is immense and feels like the ultimate goal. You are working hard to take care of yourself.\n\nLet's gently challenge the idea that your value is solely defined by the money you earn today. Your competence exists regardless of the clock.\n\nBefore you finish, I want you to take 30 seconds to notice one non-work-related detail in your environment\u2014a color, a sound, or a texture. This small act helps your brain remember that your worth is bigger than this shift. You are more than this job."
+    },
+    {
+      "role": "user",
+      "content": "The sound of the air conditioning unit. It\u2019s always loud. It\u2019s just\u2026 noise. Not anything important. I just need to focus on the numbers.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    }
+  ]
+}

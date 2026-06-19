@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0142",
+  "timestamp": "2026-06-17T19:57:15.982744",
+  "strategy": {
+    "name": "Deeply Anchored PCT-ACT Flow (DAP-ACT) v3.0",
+    "hypothesis": "By explicitly structuring the reflection component to be highly interpretive and psychologically nuanced (e.g., identifying underlying patterns or cognitive distortions, thus increasing semantic depth) while maintaining the PCT-ACT flow and the strict brevity constraint, we will maximize the measured clinical depth and perceived understanding, resulting in a score surpassing 91.25.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Michelle",
+    "age": 42,
+    "occupation": "Marketing Coordinator",
+    "presenting_issue": "I'm experiencing persistent physical symptoms, like chest tightness and exhaustion, that I can't seem to explain.",
+    "background_story": "My parents, who lived in Guangzhou, moved here to Vancouver when they were still quite active. Now that they are both retired and increasingly dependent, the caregiving has become overwhelming. I manage everything, from their medications to their appointments, and I feel like I'm constantly failing at being good enough for them and for everyone else. I keep thinking I worry about them, but sometimes it feels more like a crushing weight of responsibility.",
+    "personality": "Michelle is highly deferential, speaking in a polite, measured tone with frequent apologies or self-deprecating remarks. She tends to minimize the severity of her distress and often uses physical complaints (e.g., 'I just feel so heavy all the time') instead of emotional language. She avoids direct confrontation or discussions about her own needs, framing every problem through the lens of her parents' care or family obligation. She responds best to validation of the difficulty of her situation, rather than direct advice on self-care.",
+    "baseline_phq9": 16,
+    "archetype_label": "Filial Piety Conflict \u2014 East Asian Elder Care"
+  },
+  "scores": {
+    "total_score": 64.0,
+    "raw_score": 64.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 49.0/70.0 (VV shift: 0.20, Sym shift: -0.10, DV shift: -0.30) | Brevity Penalty (-15): Therapist turn too long (4 sentences, 81 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "It sounds like you are feeling a profound mix of exhaustion and deep uncertainty about the path forward. It makes perfect sense that you feel overwhelmed when the choices ahead seem so vast and unclear. Sometimes that sense of being lost comes when we are trying to manage too many different possibilities at once. If we could pause the 'shoulds' and 'coulds,' what single small step feels most aligned with your current energy?"
+    },
+    {
+      "role": "user",
+      "content": "Oh, I don't know. I suppose maybe just getting through the afternoon, I guess? I'm probably just overthinking things, and I apologize if I'm making this confusing.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is completely understandable to feel the weight of simply needing to make it through the next few hours. Please know that there is nothing to apologize for; your feelings are valid, no matter how confusing they feel right now. Often, when we are struggling, we minimize our own needs by apologizing for them. If we accept that simply getting through the afternoon is enough for now, what small act of kindness could you offer yourself in the next hour?"
+    },
+    {
+      "role": "user",
+      "content": "Honestly, I don't think I deserve any kind of kindness right now. I feel like I should be doing something useful, like organizing my mom's paperwork or checking on my dad's meds. I probably just take up space.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are carrying a tremendous burden of feeling that your worth is tied to your usefulness to others. It is so painful to feel that you are taking up space or that you aren't productive enough. This belief often comes from a deeply ingrained pattern of viewing self-care as a luxury that must be earned later. If we set aside the tasks for a moment, what does your body or spirit actually need to feel grounded right now?"
+    },
+    {
+      "role": "user",
+      "content": "I just feel this heavy ache in my chest, I think maybe it's just the air, I don't know. I'm sure I'm exaggerating, I'm sorry.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are experiencing a deep, physical ache, and the immediate response is to minimize or apologize for that sensation. Please remember that physical feelings, even vague ones, are valid signals from your body that deserve attention and respect. Sometimes we learn to dismiss our physical needs because we feel we shouldn't burden others with them. If we treat this ache not as an exaggeration, but as a message, what might it be trying to tell you right now?"
+    },
+    {
+      "role": "user",
+      "content": "It probably just means I\u2019m tired. I just feel so heavy all the time, like I'm carrying all of them on my chest. I'm just so sorry for talking about myself.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are carrying a constant, physical weight\u2014a profound heaviness that feels rooted in your chest. It is so important to remember that talking about your own feelings is never a burden; it is how you begin to heal. Often, that persistent ache is the physical manifestation of emotional weight that you have been shouldering for too long. If we imagine that weight was a physical object, what would it feel like to set it down, even just for a moment?"
+    },
+    {
+      "role": "user",
+      "content": "Oh. Like... I don't know. It would feel like nothing, I guess. Just an empty space where the tightness is. It sounds silly, I know. I apologize again for rambling.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the idea of that weight lifting brings a sense of peaceful emptiness, and you immediately follow it by dismissing that feeling. Please know that recognizing and naming these sensations is not silly; it is a powerful act of self-awareness. Often, that feeling of \"nothing\" is actually the necessary space where rest and possibility can finally enter. If we accept that empty space as a gift, what might you allow yourself to feel or notice in that quiet moment?"
+    },
+    {
+      "role": "user",
+      "content": "I'm not sure. Maybe just... relief? It's hard to think about it, really. I feel bad for even admitting that.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like relief is a profound, gentle feeling, yet you are immediately met with guilt for even acknowledging that sense of ease. Please know that feeling relief is not something to be apologized for; it is a natural, necessary human response to letting go of weight. This guilt often arises because we have spent so long believing that feeling good is somehow undeserved or difficult. If we let go of the need to justify this feeling, what does that simple, quiet relief feel like in your body right now?"
+    },
+    {
+      "role": "user",
+      "content": "It just... feels less tight. Like a little bit of air getting in. I can barely feel my chest, honestly. I shouldn't be focusing on this instead of the bills though.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.5
+      }
+    }
+  ]
+}

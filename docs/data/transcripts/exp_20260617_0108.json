@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0108",
+  "timestamp": "2026-06-17T16:50:25.742375",
+  "strategy": {
+    "name": "Ultra-Concise ACT-PCT Tri-Part Loop (UCT-TPL) v2.0",
+    "hypothesis": "By strictly enforcing a maximum of three distinct sentences and mandating the integration of a specific ACT Defusion technique (to address cognitive patterns) immediately following a brief, empathic reflection (PCT), we will maximize structural adherence and clinical depth, thereby avoiding both length penalties and achieving a score above 95.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Casey",
+    "age": 31,
+    "occupation": "Marketing Coordinator",
+    "presenting_issue": "I just keep feeling this overwhelming pressure to be 'normal' and I don't know how to stop performing for other people.",
+    "background_story": "Ever since I was little, I felt like I had to be 'the good one' to keep everyone happy, which meant constantly remembering to meet their expectations. Now that I'm an adult, the performance is exhausting, and I feel like I'm constantly vibrating at 80% capacity just to keep up appearances. I'm trying to figure out who I am when I'm not being observed or judged, but the void is really scary. It feels like I'm going to lose all my friends if I just... stop trying that hard.",
+    "personality": "High energy, prone to rapid topic shifts and hyper-fixation on feelings. Speech patterns are often highly deferential, using qualifiers like 'maybe,' 'I guess,' and 'I'm just so sorry.' They will jump in quickly to fill any silence and frequently over-apologize for their existence or emotional needs. They speak in emotionally loaded analogies and feel a deep need for immediate emotional mirroring and detailed validation.",
+    "baseline_phq9": 14,
+    "archetype_label": "ADHD Rejection Sensitivity \u2014 Unmasking Crisis"
+  },
+  "scores": {
+    "total_score": 30.75,
+    "raw_score": 30.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 15.8/70.0 (VV shift: -0.40, Sym shift: 0.10, DV shift: 0.20) | Brevity Penalty (-15): Therapist turn too long (5 sentences, 73 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "It sounds like you are grappling with a deep sense of inadequacy when it comes to meeting others' expectations. Could we explore the evidence for these thoughts? Sometimes recognizing that the feeling is a *story* rather than a fact can create space. For our next session, try tracking three moments where you felt judged, noting the thought that immediately preceded the feeling."
+    },
+    {
+      "role": "user",
+      "content": "Oh, wow, that's... that's so insightful, I guess. I mean, you're right, it is a story, but it's like the story is *me* now, you know? And I'm just so sorry if I'm overthinking this or whatever, I don't know how to separate the story from the actual person, I guess. I'll try to do that, maybe, but I'm not sure I'll be good at tracking it, I'm just so bad at remembering things.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the idea of separating yourself from this narrative feels overwhelming, and you are worried about your ability to follow through. It is completely understandable that these patterns feel deeply ingrained, and we don't need perfection here. Instead of tracking everything, could we practice simply noticing the *moment* you feel the story take over? For today, simply commit to noticing when you say, \"I should,\" and gently pausing for three seconds."
+    },
+    {
+      "role": "user",
+      "content": "Three seconds... okay. I guess I can do that. If I say 'I should,' I'll just... pause. I'll try to remember to do it, I'm just so sorry if I forget, I'm really not good at remembering stuff like that, I'm always forgetting things.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the fear of forgetting feels like a confirmation of your self-criticism, making the effort feel impossible. It is important to remember that self-compassion is not about perfect recall; it's about acknowledging the effort itself. Instead of focusing on remembering the pause, could you practice self-talk when you *do* forget, gently reminding yourself that it's okay? For the rest of the day, simply acknowledge the feeling of \"I forgot\" without judgment."
+    },
+    {
+      "role": "user",
+      "content": "Oh, wow. Acknowledging that I forgot... I guess that's easier than trying to remember to do it, I don't know. Like, if I just think, 'I forgot,' it's not a big deal, right? I'm just so sorry if I keep forgetting, it's probably just me being a mess, I guess.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are struggling to accept that imperfection is a normal part of being human, and you are criticizing yourself for it. We need to gently separate the temporary lapse from your inherent worth. Remember that forgetting is a function of human attention, not a measure of your value. For the next few hours, try offering yourself a specific, kind phrase\u2014like \"This is hard, and that's okay\"\u2014the moment you hear the critical voice."
+    },
+    {
+      "role": "user",
+      "content": "Okay, 'This is hard, and that's okay.' I guess I can try saying that. But what if it doesn't even sound convincing when I say it? Like, what if I just sound like an idiot anyway? I'm sorry for even asking that, I don't want to make it harder for you.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are afraid that even your attempts at self-kindness will fall flat or sound inauthentic. Remember that the goal of self-talk isn't to sound perfect, but simply to interrupt the critical loop. We are aiming for *acknowledgment*, not performance. For today, when you say that phrase, focus entirely on the physical feeling of the words leaving your mouth, rather than the sound they make."
+    },
+    {
+      "role": "user",
+      "content": "Focusing on the physical feeling... like, I can try that. It just feels so weird to think about it that way, like making it about the muscles doing it instead of the words. I don't know if I'll even remember to think about the feeling, I guess. I'm really sorry for needing to talk about how difficult this is.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the process itself feels unnatural and difficult, and you are worried about being a burden by needing to talk about this struggle. Please know that discussing difficulty is not a failure; it is simply information. We are learning a new skill, and skills require practice, not perfection. For today, let's redefine success: simply notice when you feel the resistance to the physical focus, and gently label that feeling as \"resistance.\""
+    },
+    {
+      "role": "user",
+      "content": "Oh, okay. Just noticing the resistance. I guess that's... that's less scary than trying to actually *do* the feeling thing. I'll try to just notice it when it happens, I guess. I'm just so sorry if I get it wrong, I really don't know if I can remember to label it when I do it.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like noticing the resistance feels manageable, but the fear of forgetting or getting it wrong is immediately resurfacing. We are not aiming for perfect labeling; we are simply practicing awareness, which is a skill that unfolds over time. If labeling feels too big, could you commit to simply making eye contact with yourself when you notice the resistance? For the rest of the day, just make that gentle, non-judgmental connection."
+    },
+    {
+      "role": "user",
+      "content": "Just looking at myself, okay. But... what if I'm not making enough eye contact? Or if I look like I'm staring weirdly, I'm sure everyone will notice, and I'll just feel worse, I guess. I'm sorry I'm making this weird, I really don't know if I'm doing it right.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    }
+  ]
+}

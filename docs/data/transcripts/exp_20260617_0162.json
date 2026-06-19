@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0162",
+  "timestamp": "2026-06-17T21:42:19.227765",
+  "strategy": {
+    "name": "Ultra-Concise PCT-ACT Nano-Flow (UCP-ACT Nano-Flow) v4.0",
+    "hypothesis": "By enforcing a structural limit of exactly two sentences (Validation and Question) and maintaining the interpretive depth (CBT/ACT) within those two sentences, we will maximize the semantic depth and eliminate the Brevity Penalty, achieving a score exceeding 95.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Daniel",
+    "age": 34,
+    "occupation": "Project Manager (Tech)",
+    "presenting_issue": "I've been having these headaches and trouble sleeping lately, and it's starting to affect my work.",
+    "background_story": "Lately, the hours have just been piling up, and I find myself feeling constantly drained, almost physically ill. I keep getting these stomach issues, too, which my doctor just says is stress-related. Sometimes it feels like there's just too much going on, and I don't even know where to start untangling it all.",
+    "personality": "Circumlocutory, highly formal, speaks in generalities about pressure and fatigue rather than emotions. Will deflect direct questions and pivot back to physical symptoms or work tasks. Uses qualifiers like 'maybe' or 'sort of'.",
+    "baseline_phq9": 16,
+    "archetype_label": "Corporate Burnout \u2014 East Asian Face Culture"
+  },
+  "scores": {
+    "total_score": 80.75,
+    "raw_score": 80.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 50.8/70.0 (VV shift: 0.40, Sym shift: -0.20, DV shift: 0.10)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly overwhelming to feel like you are constantly falling short of your own expectations. When you imagine a life where you are living in alignment with your core values, what small step feels most accessible right now?"
+    },
+    {
+      "role": "user",
+      "content": "Well, I'm not sure where to start with 'core values,' really. Maybe just making sure I get through the next project milestone will be enough, I guess. Everything feels pretty disorganized right now.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It makes perfect sense that when everything feels disorganized, identifying big concepts like \"core values\" feels impossible. If we set aside the projects for a moment, what is one small thing that, when you do it, makes you feel even slightly more like yourself?"
+    },
+    {
+      "role": "user",
+      "content": "I suppose... maybe when I get home and just sit in the quiet for a bit. Or when I manage to take the dog for a walk, I guess it helps me sort of reset. But it doesn't really fix the exhaustion, you know?",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is completely valid to feel disappointed when the things that help you reset don't seem to fix the deep, underlying exhaustion. If you could wave a magic wand and change one thing about your day *before* you feel this level of depletion, what would it be?"
+    },
+    {
+      "role": "user",
+      "content": "I honestly don't know. Maybe just having a little more buffer time between meetings. Or maybe if the sheer amount of information I have to process didn't feel so constant. It's just... a lot to manage, I guess.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is completely understandable that managing a constant stream of information and meetings feels like an unsustainable burden. If you were able to set one boundary this week\u2014even a small one\u2014what would give you the most immediate sense of relief?"
+    },
+    {
+      "role": "user",
+      "content": "A boundary? I suppose maybe I could try to leave work, like, fifteen minutes earlier a couple of days. Maybe that would give me a little sort of space before the evening starts, I guess.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Setting a small, predictable boundary like that shows immense self-awareness and a commitment to protecting your energy. When you visualize those extra fifteen minutes, what is one thing you hope to do with that time that genuinely nourishes you?"
+    },
+    {
+      "role": "user",
+      "content": "Probably just not having to think about work at all. Maybe just watching something mindless, or just sitting and doing nothing, I guess. It would feel... less pressurized.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is completely understandable that the idea of simply \"doing nothing\" feels like the most desirable form of mental decompression. If you were to structure those fifteen minutes of true quiet, what activity would feel like a gentle way to honor your mind instead of just letting it drift?"
+    },
+    {
+      "role": "user",
+      "content": "I'm not really sure, to be honest. Maybe just sitting and just looking out the window, I guess. Or maybe listening to some music, but I don't really focus on it, you know? It's more about the quiet itself.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is completely valid to realize that the value isn't in the activity itself, but in the profound state of mental rest that the quiet provides. If that quiet time allowed you to connect with one part of yourself that usually gets drowned out by external noise, what might that part need most right now?"
+    },
+    {
+      "role": "user",
+      "content": "I suppose it would need more... predictability. And maybe just a reminder that everything doesn't have to be solved immediately. Just that it's okay if things are a bit disorganized for a while.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.6
+      }
+    }
+  ]
+}

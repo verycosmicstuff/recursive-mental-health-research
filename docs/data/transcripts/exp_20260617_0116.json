@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0116",
+  "timestamp": "2026-06-17T17:30:35.021992",
+  "strategy": {
+    "name": "ACT-PCT Value-Guided Reflection Loop (AC-VGR-L) v1.0",
+    "hypothesis": "By replacing the rigid 'What if...?' challenge with a gentle, open-ended question that connects the patient's feelings to their long-term values (e.g., 'What does feeling X prevent you from achieving?'), we will improve the depth and relevance of the response, maximizing the score by integrating empathy (PCT) with motivational theory (ACT).",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Chloe",
+    "age": 29,
+    "occupation": "Freelance Graphic Designer",
+    "presenting_issue": "I just feel completely stuck and like nothing I do matters, so I'm not sure what I'm even supposed to talk about.",
+    "background_story": "Lately, it feels like I'm just existing rather than living. My work schedule has become unpredictable, which has only added to the feeling of drifting. I spend most of my time scrolling through feeds, comparing my life to these curated versions of other people's, which just makes everything feel worse. I guess I'm just tired of feeling this weight.",
+    "personality": "Detached and low-energy, prone to long silences and vague responses. Uses internet slang and minimizes her feelings while occasionally spiraling into self-deprecating commentary.",
+    "baseline_phq9": 16,
+    "archetype_label": "Isolated Remote Worker"
+  },
+  "scores": {
+    "total_score": 57.0,
+    "raw_score": 57.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 42.0/70.0 (VV shift: 0.10, Sym shift: 0.00, DV shift: -0.20) | Third-Person Penalty (-15): Used 'the client'",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "*Please provide the client's statement or emotion so I can respond.*"
+    },
+    {
+      "role": "user",
+      "content": "Honestly, I don't even know where to start. I just feel kinda... blah. Like, everything is just background noise, you know?",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly draining to feel like everything is just background noise, and that feeling of not knowing where to even begin can be really disorienting.\n\nIf you could move past that sense of \"blah,\" what would it look like for your days to feel more vibrant or meaningful again?"
+    },
+    {
+      "role": "user",
+      "content": "Ugh. I honestly don't think it would look like anything, tbh. I guess just... existing, I guess? Like not feeling this heavy weight constantly.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly heavy to carry that constant weight, and the simple desire just to feel less burdened\u2014to just exist with ease\u2014is a profound need.\n\nIf that weight were lifted, what kind of feeling or sensation would you notice in your body or your mind that would signal to you that you were finally finding some peace?"
+    },
+    {
+      "role": "user",
+      "content": "I dunno. Maybe like, just... a little less static? Like my brain would just stop buzzing so loud, you know? Just quiet. I guess.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds exhausting to have your mind constantly buzzing with static, and the deep desire for that quiet\u2014that sense of mental stillness\u2014is completely understandable.\n\nIf you could achieve that quiet, what is one thing you would finally have the mental space to notice or appreciate in your life that you can't see right now?"
+    },
+    {
+      "role": "user",
+      "content": "Probably just the good lighting in my apartment. I mean, the windows are actually pretty nice when the sun hits them, I guess. But like, I never notice it.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like your mind is working so hard to process everything that it's actually blocking out the simple, beautiful moments\u2014like the light in your apartment\u2014that are right there for you.\n\nIf you were able to consistently notice and appreciate these small moments of beauty, what would that open up for you to feel or experience in your overall life?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know. Probably nothing, tbh. It just feels like I'd be disappointed when the moment passes or something.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly vulnerable to feel that fear\u2014that any moment of beauty or peace might be temporary, leading to disappointment.\n\nIf you could allow yourself to simply *feel* a beautiful moment, without worrying about it passing or what comes next, what would that feeling of pure presence allow you to connect with within yourself?"
+    },
+    {
+      "role": "user",
+      "content": "I guess... just to stop panicking for like, five seconds? That would be it. I don't know how to feel anything else, tbh.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly exhausting and terrifying to feel that constant state of panic, and even a few seconds of quiet can feel like a monumental gift.\n\nIf you could sustain those few seconds of calm, what would you feel empowered to do or notice in the minutes that follow?"
+    },
+    {
+      "role": "user",
+      "content": "Probably just scroll through my feed and not feel bad about it, you know? Or maybe actually finish one of those design projects. I guess.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    }
+  ]
+}

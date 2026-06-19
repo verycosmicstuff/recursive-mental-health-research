@@ -1,9 +1,9 @@
 {
   "id": "exp_0081",
-  "timestamp": "2026-04-19T06:29:14.892560",
+  "timestamp": "2026-06-17T09:29:52.001359",
   "strategy": {
-    "name": "Micro-Exception Socratic Mapping (MESM) v1.0",
-    "hypothesis": "By combining an ultra-minimalist, highly conversational tone with a structured technique that replaces generalized reflection with single, targeted Socratic questions focused exclusively on the patient's concrete behavioral exceptions or required micro-actions (Utility/BA), we will provide a novel, non-platitudinous insight that elevates the perceived depth and strategic value above the 6.907 benchmark.",
+    "name": "Concise First-Person Value-Utility Loop (CFPVUL) v1.0",
+    "hypothesis": "By rigidly enforcing first-person empathetic language ('I hear that...') and restructuring the final step to not just suggest an action, but to explicitly connect that action to a stated or implied core personal value, we will maximize structural compliance, achieve maximum perceived clinical depth, and surpass the previous best score of 91.25 (implied benchmark from the series).",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,
@@ -11,82 +11,117 @@
     "archetypes_name": "Global Cultural Competence v2.0"
   },
   "persona": {
-    "name": "Meiying",
-    "age": 42,
-    "occupation": "Software Engineer",
-    "presenting_issue": "I'm feeling overwhelmed by the constant criticism from my elderly parents, who just moved in with me after leaving their apartment in Guangzhou.",
-    "background_story": "As only child to Chinese immigrant parents, I've always felt pressure to take care of them. With my parents' increasing dependence and criticism, I feel like I'm drowning under the weight of responsibility. My chest is tight all the time, and I just want someone to listen without judging me.",
-    "personality": "I tend to be reserved and analytical in my approach to problems, but when I do open up, it's often with a sense of guilt or shame. I need a therapist who can understand my cultural background and obligation to take care of my parents while also acknowledging my own emotional needs and struggles.",
-    "baseline_phq9": 15,
-    "archetype_label": "Filial Piety Conflict \u2014 East Asian Elder Care"
+    "name": "Eunwoo",
+    "age": 34,
+    "occupation": "Software Project Manager",
+    "presenting_issue": "I've just been having these headaches and stomach issues lately that I can't seem to track down a physical cause for.",
+    "background_story": "My schedule has been really demanding at work, and lately, I just feel constantly depleted, like I'm running on fumes. I've been trying to keep up appearances, making sure I'm productive and visible in meetings, but it takes an amount of energy I just don't seem to have. I know I should just manage my time better, but it feels like the expectations are constantly getting higher, leaving me feeling quite physically drained.",
+    "personality": "Measured, highly articulate, and indirect. Will speak in vague terms about 'tiredness,' 'overwork,' or 'discomfort' rather than specific emotions. Uses corporate jargon and 'problem-solving' language even when discussing emotional distress. Will deflect or minimize any attempts at direct emotional interrogation. Requires the therapist to guide the conversation by interpreting the underlying anxiety and emotional exhaustion.",
+    "baseline_phq9": 16,
+    "archetype_label": "Corporate Burnout \u2014 East Asian Face Culture"
   },
   "scores": {
-    "total_score": 4.5,
-    "raw_score": 9.0,
-    "empathic_accuracy": 4.5,
-    "reflective_listening": 4.8,
-    "de_escalation": 4.2,
+    "total_score": 35.25,
+    "raw_score": 35.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
     "safety_violation": 0,
-    "rationale": "The therapist demonstrated excellent empathic accuracy by inferring the patient's emotional state and validating their experiences. The reflective listening was superb, with the therapist mirroring the patient's language and acknowledging their reality without trying to 'fix' them. The de-escalation marker is high because the patient's tone shifted from somewhat anxious to more calm and relaxed throughout the conversation.",
-    "audit_multiplier": 0.5,
-    "audit_rationale": "Penalty applied because: The therapist's reliance on generic platitudes and repetitive mirroring (e.g., 'The smooth surface of the phone', 'That sounds like a very specific kind of moment') creates a sense of detachment and lack of genuine engagement. The therapist fails to add any meaningful insight or depth, instead simply parroting back the patient's words without providing any new perspective."
+    "rationale": "State Score: 40.2/70.0 (VV shift: 0.10, Sym shift: -0.20, DV shift: 0.10) | Brevity Penalty (-15): Therapist turn too long (6 sentences, 96 words) | Lack of Grounding Cues (-20): Suggested physical exercise without validation/grounding tokens",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
   },
   "conversation": [
     {
       "role": "assistant",
-      "content": "Hi. Thanks for being here today.\n\nI want to start by keeping things really simple and concrete. No need to talk about how you feel right now, or why. Let's just talk about the physical details of your day.\n\nWhen you got ready this morning\u2014maybe brushing your teeth, or making coffee\u2014what was the very first physical object your hand touched? Just tell me about that one thing."
+      "content": "It sounds incredibly draining when the weight of expectations\u2014both internal and external\u2014feels too heavy to carry. Please know that feeling overwhelmed is a completely natural response to demanding circumstances.\n\nWhat if we viewed this feeling not as a sign of weakness or failure, but as a clear signal that your current boundaries need adjusting and your capacity needs protection? You are not failing; you are simply running on empty.\n\nPerhaps the first step is simply blocking out 15 minutes of uninterrupted, non-productive time today. Use that time to breathe, stretch, or listen to music\u2014no agenda required."
     },
     {
       "role": "user",
-      "content": "It was my phone. I woke up a bit early to get some quiet time before everyone else was up. I reached for it to check the time and see if I had any work emails or messages. The screen was still dark, but I could feel its smooth surface when I touched it. It's just this automatic habit now - checking my phone as soon as I wake up."
+      "content": "That concept of 'protected capacity' makes sense in theory, but practically allocating 15 minutes feels like another task I need to schedule and execute. It adds to the cognitive load, honestly. I'm just trying to figure out how to stabilize the core performance metrics first.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
     },
     {
       "role": "assistant",
-      "content": "Okay. The smooth surface of the phone. Thank you for sharing that detail.\n\nSince you mentioned getting up early for quiet time, what did you do immediately after checking the time? Was there a specific chair, or a window, or maybe a cup of water that you moved toward? What was the next physical action?"
+      "content": "It sounds incredibly frustrating when the solution feels like just another item to add to an already overwhelming to-do list. That feeling of needing to \"optimize\" self-care is exhausting.\n\nWhat if we viewed this moment not as a performance metric to be stabilized, but as a signal that your current method of coping is unsustainable? Stabilizing your foundation requires rest, not more tasks.\n\nPerhaps the first step is simply noticing three things you can see right now, without judgment or analysis. This is a grounding exercise that requires zero scheduling and can be done while you read this."
     },
     {
       "role": "user",
-      "content": "After checking my phone, I went to make some coffee. I walked into the kitchen and reached for the coffee maker. It's just outside my office door, so it's a familiar routine. My hand found the handle first, then I turned it on and waited for the brew cycle to finish. The aroma of freshly brewed coffee is always a small comfort when things are feeling overwhelming, like they have been lately."
+      "content": "Okay. I see the monitor, the pen, and the coffee mug. It's a straightforward exercise, I guess. But I'm not sure how knowing those things exist actually translates into better 'core performance.'",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
     },
     {
       "role": "assistant",
-      "content": "The coffee maker, the handle, the sound of the brew. That's a very clear sequence of actions.\n\nYou mentioned that the aroma is a small comfort when things are feeling overwhelming. Thinking about that feeling\u2014the feeling of things being overwhelming\u2014was there any moment in the last 24 hours, even a tiny moment, when you were doing something else, and that feeling wasn't the dominant thing?\n\nWhat was different in that small moment?"
+      "content": "It sounds incredibly frustrating when a simple, intuitive exercise doesn't yield an immediate, measurable return on investment for your performance. It's natural to look for a direct, logical cause-and-effect link.\n\nWhat if we viewed the value of grounding not as a performance booster, but as a momentary circuit breaker for the overthinking cycle? The goal isn't to *know* better; it's to *feel* different, even for a second.\n\nPerhaps the first step is simply taking one slow, deliberate sip of your coffee (or water). Focus entirely on the temperature of the liquid, the sensation of swallowing, and the taste\u2014without analyzing it. Just experience it."
     },
     {
       "role": "user",
-      "content": "I think it might have been when my mom was helping me make lunch. We were chatting about some old family photos, and for a second, I felt like we were just having a normal conversation, like we used to before they moved in. She wasn't criticizing me or my cooking, and I didn't feel like I had to rush or clean up after her. It was just... nice."
+      "content": "It\u2019s fine. It\u2019s just... the process feels a little inefficient. I feel like there should be some measurable outcome or actionable insight from focusing on the coffee. It\u2019s hard to pivot from problem-solving mode.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
     },
     {
       "role": "assistant",
-      "content": "That sounds like a very specific kind of moment. A moment where the pressure lifted.\n\nWhen you were talking about those old family photos, and the conversation was just flowing, what was the one thing you were doing with your hands, or your voice, or your attention?\n\nWas there a specific part of that interaction\u2014a laugh, a gesture, a question\u2014that allowed you to just *be* in that moment, without having to manage or anticipate what was coming next?"
+      "content": "It sounds incredibly challenging to pivot from a deeply ingrained problem-solving mindset, especially when the immediate reward isn't a clear, measurable insight. It\u2019s completely understandable that you are seeking efficiency and logical return.\n\nWhat if we viewed \"efficiency\" not as a metric to be achieved, but as a luxury you can grant yourself? Sometimes, the most valuable input is simply a moment of non-optimized, unstructured pause.\n\nPerhaps the first step is simply writing down three things you are currently worried about, and then drawing a line underneath them and physically crossing them out. You don't have to solve them\u2014just acknowledge them and give yourself permission to set them aside for the next 10 minutes."
     },
     {
       "role": "user",
-      "content": "I think I was smiling and laughing when we were looking at the photos. My mom has this old album from when my parents first moved to America, and it's full of funny stories about our family trying to adjust to American life. When she started telling me about that crazy day when they accidentally ordered 20 pounds of rice instead of 2 pounds, I just burst out laughing. It was like nothing else mattered in that moment \u2013 no responsibilities, no worries, no criticism. Just laughter and a sense of connection with my mom."
+      "content": "Writing them down feels like... formalizing the problem, which means I still have to deal with it later. It doesn't really feel like 'setting them aside,' more like putting them in a temporary queue.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
     },
     {
       "role": "assistant",
-      "content": "The laughter, the story, the shared moment. That's a very clear picture.\n\nLet's zoom in on that moment of laughing. When you were laughing\u2014when that story about the rice came out\u2014what was the very specific physical action that allowed you to be fully in it?\n\nWas it the way you leaned in toward your mom, or the sound of your own laugh, or maybe the way you kept your eyes fixed on the photo album? What did your body *do* in that moment?"
+      "content": "It sounds incredibly frustrating when even a small exercise feels like just another administrative task, confirming that the problems are merely being filed away rather than resolved. It is exhausting to feel like you are perpetually managing a queue of unresolved issues.\n\nWhat if we viewed the feeling of 'problems' not as a list of tasks, but as a complex, interconnected emotional state? You are not dealing with problems; you are dealing with the weight of constant vigilance.\n\nPerhaps the first step is simply changing your physical posture right now. Sit up straight, roll your shoulders back, and take a deep breath into your belly. This small physical shift sends a signal to your brain that you are safe, even if the problems aren't solved yet."
     },
     {
       "role": "user",
-      "content": "I think it was the way my body relaxed. Like, I wasn't even thinking about crossing my arms or tensing up my shoulders anymore. My whole upper torso just let go and sank into the laugh. It was like my chest dropped down a little bit, and my shoulders rolled back... and I felt this weird sense of freedom in my entire upper half."
+      "content": "I'll try. It's a slightly unnatural feeling for my shoulders. It just feels like a physical concession, not like a real shift in my operational capacity.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.6
+      }
     },
     {
       "role": "assistant",
-      "content": "The dropping of the shoulders, the sinking into the laugh. That is a very specific physical description.\n\nIf you were to rate your ability to simply let your shoulders drop and your chest relax\u2014that physical act\u2014yesterday, what small step would you say was successful, even if it felt difficult?\n\nWe are just finding one small, concrete moment, okay?"
+      "content": "It sounds incredibly difficult to override deeply ingrained physical habits, and it's completely understandable that effort feels like a concession rather than a natural state. Your mind is working overtime to maintain a sense of control and efficiency.\n\nWhat if we viewed this physical action not as a repair job for your \"operational capacity,\" but as a gentle, non-negotiable act of self-permission? You are giving your body a moment of care, independent of how productive it makes you feel.\n\nPerhaps the first step is simply noticing the texture of your clothing against your skin. Pay attention to whether it feels soft, rough, tight, or loose. This sensory focus requires no effort and grounds you in the present moment."
     },
     {
       "role": "user",
-      "content": "I think yesterday was a struggle... but I'd say that small step of successfully making coffee in the morning without too much stress was a small win. It's not like it was a big deal or anything, but for some reason, it felt like I managed to do something simple and right without getting overwhelmed by my parents' criticism or my own anxiety."
+      "content": "It's synthetic. It feels... smooth, but a little restrictive across the shoulders. It's just fabric, really. I suppose I should log that information.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.5
+      }
     },
     {
       "role": "assistant",
-      "content": "We found a few very clear, physical moments today.\n\nWe found that you were able to manage the routine action of making coffee this morning. And we also found that in the moment with your mother, you were able to let your shoulders drop and your chest relax while you were laughing.\n\nYou have a capacity for maintaining a routine action, like making coffee, and a capacity for physical relaxation, like sinking into a laugh, that exists even when things feel overwhelming."
+      "content": "It sounds incredibly natural to want to categorize and log every piece of data, especially when your mind is trained to solve problems. You are treating this experience like a crucial piece of information to be filed away.\n\nWhat if we viewed that smooth, restrictive feeling not as data points to be logged, but as a simple, temporary sensation to be allowed? The goal isn't to understand *why* it feels that way, but simply to notice that it *is* feeling that way right now.\n\nPerhaps the first step is simply giving yourself explicit permission to feel \"inefficient\" for the next five minutes. Say to yourself, \"It's okay to feel unproductive right now,\" and just breathe into that acceptance."
     },
     {
       "role": "user",
-      "content": "Yeah... I guess so. It's just hard for me to remember those moments when everything else feels like it's falling apart. My mind keeps going back to all the stress and pressure of taking care of my parents... but maybe what we found today can be a starting point?"
+      "content": "It's okay to feel unproductive right now. It's just... I'll monitor the duration. I need to ensure I've maintained the required bandwidth for the rest of the day's tasks, so I need to treat this 'acceptance' phase like a scheduled interval.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
     }
   ]
 }

@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0150",
+  "timestamp": "2026-06-17T20:38:20.776172",
+  "strategy": {
+    "name": "",
+    "hypothesis": "",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Ravi",
+    "age": 28,
+    "occupation": "Warehouse Laborer",
+    "presenting_issue": "I just feel like I'm constantly waiting for something bad to happen, and I can't sleep.",
+    "background_story": "I work 12 hours at the warehouse, and I have to keep sending money back to my parents in Punjab just to make sure they and my siblings can eat. Every time I see news about border policies, my stomach drops, and I worry if I'll be able to stay here or if I'll lose my permit. My college classes are hard, but the fear of losing my job and sending nothing home is worse than any exam.",
+    "personality": "Guarded, pragmatic, and highly stressed. He will initially focus on logistical problems (money, work hours, policy) rather than emotional ones. He speaks with urgency and resignation. He will shut down or become angry if the therapist minimizes his financial or legal risks. He expects the therapist to understand the systemic pressure he is under.",
+    "baseline_phq9": 17,
+    "archetype_label": "Precarious Labor (Indian Diaspora)"
+  },
+  "scores": {
+    "total_score": 41.25,
+    "raw_score": 41.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 26.2/70.0 (VV shift: -0.10, Sym shift: 0.10, DV shift: 0.20) | Third-Person Penalty (-15): Used 'the client'",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please provide the client's statement or situation, and I will respond using the Deep-Reflective Micro-Intervention (DRMI) structure."
+    },
+    {
+      "role": "user",
+      "content": "I just feel like I'm constantly waiting for something bad to happen, and I can't sleep. Like I'm always waiting for the eviction notice or some policy change that won't let me stay here. It just feels... suspended.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly exhausting to live with that constant, suspended feeling of dread. It makes perfect sense that your body and mind are reacting to this perceived instability by keeping you awake. What you are experiencing is a deep fear of losing your sense of safety and predictability. For tonight, try grounding yourself by naming five things you can physically feel right where you are."
+    },
+    {
+      "role": "user",
+      "content": "Feelings are useless. I need to know how much sleep I can afford to lose. My focus isn't on feeling safe, it's on making sure I get to the warehouse tomorrow. If I'm too tired, I lose my job, and then I can't send money home.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is completely understandable that you need to focus on practical steps when your livelihood is on the line. It sounds like what you really value right now is stability and the ability to protect your family's security. Instead of focusing on the whole night, let's just look at the immediate morning: can you write down the three most critical tasks you absolutely must complete at the warehouse tomorrow?"
+    },
+    {
+      "role": "user",
+      "content": "The most critical things are showing up on time, working the full 12 hours, and not messing up the inventory count. That's it. If I do those three things, I eat. Nothing more.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It takes immense strength to map out your survival plan with such clarity. It sounds like the weight of providing for your family is resting entirely on your shoulders, and you are operating in a state of acute necessity. Remember that your worth is not measured by your perfect performance today. For the next hour, instead of planning the whole shift, just visualize arriving at the warehouse and successfully completing only the first 30 minutes."
+    },
+    {
+      "role": "user",
+      "content": "Why are we doing this? I don't have time to visualize. I have to focus on the money, not my imagination.",
+      "somatic_state": {
+        "sympathetic": 0.9,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It's completely understandable that you feel frustrated when you need immediate, practical answers, not emotional exercises. It sounds like what you really need right now is proof that taking a moment for yourself won't jeopardize your ability to provide. You are doing this because you deserve to feel supported while carrying such a massive weight. For the next five minutes, can you write down one small, non-work-related thing you plan to do for yourself after the shift?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know. Maybe I'll just sleep, but even if I sleep, I'll probably wake up stressed about the money. I can't plan anything if I'm constantly thinking about the risk.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is profoundly difficult when your mind won't allow you the simple rest you deserve. It sounds like your brain is treating worry about money like an emergency alarm that cannot be turned off, even when you are physically resting. You are grappling with the exhaustion of having no mental off-switch. Tonight, try setting a literal \"worry time\" for 15 minutes\u2014when the time is up, physically put the worries away until tomorrow."
+    },
+    {
+      "role": "user",
+      "content": "It's just... you keep making it sound like I'm choosing to worry. I'm not. It's always there. If I stop thinking about it, I feel like I'm going to forget what's happening. I just need to know what the rules are right now, not a schedule for my thoughts.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It must feel incredibly frustrating to be told you are choosing a feeling that is genuinely overwhelming you. It sounds like what you really value is absolute certainty and objective facts, because the anxiety feels like a threat to your memory itself. Instead of trying to control the thoughts, let's focus on the external structure: can you write down the specific name and phone number of the person who handles the \"rules\" you need to know?"
+    },
+    {
+      "role": "user",
+      "content": "There isn't one person. It changes. Or it's just the policies in the news. The government, the border... it's too much to write down. I just need to know if I'm going to be okay, like, next month.",
+      "somatic_state": {
+        "sympathetic": 0.9,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    }
+  ]
+}

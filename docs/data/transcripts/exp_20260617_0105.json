@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0105",
+  "timestamp": "2026-06-17T16:33:11.523252",
+  "strategy": {
+    "name": "",
+    "hypothesis": "",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Ethan",
+    "age": 34,
+    "occupation": "Project Coordinator",
+    "presenting_issue": "I've been having these terrible headaches and can't seem to sleep properly these days.",
+    "background_story": "I've been working really hard lately trying to keep up with everything at the office, and honestly, it feels like I'm just running on fumes. My parents always said that if I wanted something, I had to earn it through work, and that emotional stuff was just unprofessional. I try to keep things together for my team, but sometimes I just feel this constant buzzing tension, like I'm always about to snap.",
+    "personality": "Indirect and highly circumlocutory. Will frame distress through physical symptoms (e.g., 'I'm just so tired' instead of 'I'm depressed'). Will deflect direct emotional questioning. Responses will be measured, polite, but emotionally guarded, focusing on logic or external stressors rather than internal feelings.",
+    "baseline_phq9": 16,
+    "archetype_label": "Corporate Burnout \u2014 East Asian Face Culture"
+  },
+  "scores": {
+    "total_score": 80.75,
+    "raw_score": 80.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 50.8/70.0 (VV shift: 0.30, Sym shift: -0.30, DV shift: 0.00)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly draining to feel like you are carrying so much right now, and it makes perfect sense that you feel overwhelmed.\n\nIf you were to pause right now, what is the one thing\u2014physical or emotional\u2014that feels most present to your awareness?\n\nFor the next 24 hours, could you commit to just noticing three small moments of stillness, even if they are only 30 seconds long?"
+    },
+    {
+      "role": "user",
+      "content": "Honestly, I'm not sure I can commit to anything right now. It feels like I need to keep moving, or I'll just... fall apart. Maybe I'll try to remember to take some proper breaks. I'll keep it on my radar.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It makes perfect sense that when things feel unstable, the instinct is to keep moving, almost as if motion is the only thing keeping you grounded.\n\nIf we set aside the idea of 'breaking' for a moment, what does that constant need for momentum feel like in your body right now?\n\nCould you simply notice the path of your feet or the rhythm of your breath for the next hour, without needing to change it?"
+    },
+    {
+      "role": "user",
+      "content": "The momentum... it feels like a low hum, I guess. Like constantly brushing my teeth, you know? Just something you have to do to feel normal. I'll try to notice my breath, I suppose. It's just... there.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like this \"low hum\" is a deeply ingrained, almost automatic rhythm\u2014a protective routine that signals to you what \"normal\" feels like.\n\nIf that constant hum is doing its job, what do you think it is helping you keep out, or shield you from?\n\nFor the next few minutes, could you simply listen to the sound of your breath, treating it less like a task and more like background music?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know what it's keeping out. Probably just... the things that would make the work too complicated. It's easier if things just keep moving along.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It makes perfect sense that avoiding complication feels like the path of least resistance\u2014it's exhausting to feel like you have to constantly manage complexity.\n\nWhen you think about those \"complicated things,\" what is the specific feeling that tends to accompany them? Is it fear, frustration, or something else?\n\nFor the next hour, if you notice a thought that feels complicated, could you simply label it\u2014say, \"That is a complicated thought\"\u2014and let it pass without engaging with the content?"
+    },
+    {
+      "role": "user",
+      "content": "It's mostly just this dull ache, really. Like a pressure behind my eyes. Nothing specific that I can point to. I'll try labeling them. It shouldn't take too much effort.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly frustrating to feel a persistent ache that you can't quite pinpoint\u2014it's like trying to catch smoke, and the lack of a clear source can feel just as draining as the pain itself.\n\nWhen you feel that dull ache, where in your body does the pressure seem to collect or settle the most?\n\nFor the next few minutes, could you gently roll your shoulders back and down five times, just noticing the physical sensation in your upper back?"
+    },
+    {
+      "role": "user",
+      "content": "It seems to settle right between my shoulder blades, honestly. A kind of tightness, like I've been wearing a stiff collar all day. I can do that. Just five times.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like this tightness is a physical manifestation of holding yourself together\u2014a constant, subtle armor you wear to manage the weight of things.\n\nIf that \"stiff collar\" were to speak, what is the one thing it might be trying to protect you from?\n\nFor the next 24 hours, when you notice that tightness, could you simply place one hand gently on your back and breathe into that spot for three deep breaths?"
+    },
+    {
+      "role": "user",
+      "content": "It probably wants to protect me from having to admit that I don't actually have all the answers. Or that I might need help with something as simple as... emotional regulation. I can try the breathing thing, sure. Should be fine.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It takes immense courage and vulnerability to admit that you don't have all the answers, and that realization can feel incredibly scary.\n\nWhen you consider what it means to admit that you might need support, what is the physical feeling that comes with that sense of surrender?\n\nFor the next 24 hours, could you give yourself one moment of non-judgmental acknowledgment\u2014simply saying, \"This is hard right now,\" to yourself?"
+    },
+    {
+      "role": "user",
+      "content": "It... it feels weird. Like my chest gets really tight, almost shallow breathing. I guess I can do that. I'll try to remember to say it.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
+    }
+  ]
+}

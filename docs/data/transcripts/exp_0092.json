@@ -1,9 +1,9 @@
 {
   "id": "exp_0092",
-  "timestamp": "2026-04-19T07:55:13.930974",
+  "timestamp": "2026-06-17T10:31:19.944223",
   "strategy": {
-    "name": "Micro-Utility-Meaning Bridge (MUMB) v2.0",
-    "hypothesis": "By anchoring the conversational flow entirely on identifying a concrete, observable micro-utility (the 'what'), and then using a single, gently framed, open-ended Socratic question to explore the immediate personal *significance* or *consequence* of that micro-event (the 'what it means'), we will provide novel, actionable, and non-platitudinous insight that maximizes perceived conversational flow and genuine depth, significantly surpassing the 6.907 benchmark.",
+    "name": "Ultra-Concise First-Person Values-Defusion (UCP-VD) v4.0",
+    "hypothesis": "By enforcing an ultra-concise, first-person structure and ensuring the model addresses the client's immediate emotional state before pivoting to a single, small, concrete action, we will maximize adherence to the structural constraints and achieve a score above 85.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,
@@ -11,82 +11,117 @@
     "archetypes_name": "Global Cultural Competence v2.0"
   },
   "persona": {
-    "name": "Ava",
-    "age": 35,
-    "occupation": "Marketing Manager",
-    "presenting_issue": "I'm having trouble sleeping and feeling overwhelmed after a recent project at work went awry.",
-    "background_story": "I've been putting in long hours to meet tight deadlines, but the pressure has taken a toll on my mental well-being. Lately, I've been struggling with anxiety about making mistakes and not being able to keep up the pace. My relationships are starting to suffer too \u2013 my partner feels like they're competing for attention with my work.",
-    "personality": "Direct yet guarded, preferring to focus on task-oriented conversations rather than exploring emotions. Self-critical when things don't go as planned.",
-    "baseline_phq9": 14,
-    "archetype_label": "Overwhelmed Professional"
+    "name": "Chloe",
+    "age": 42,
+    "occupation": "Junior Project Manager",
+    "presenting_issue": "I feel like I am constantly suffocating under the weight of my family's care needs and my job.",
+    "background_story": "I moved my parents from Guangzhou to Vancouver when they were still relatively healthy, and now that they are both retired and increasingly dependent, my life revolves around their needs. The constant coordination of appointments, managing finances, and mediating their disagreements has left me with no time for my own professional development or personal life. I feel like I've lost my identity to the role of 'caregiver,' and the guilt of even considering a break is overwhelming.",
+    "personality": "Reserved and intensely dutiful. She speaks in polite, measured tones, often using 'we' when referring to her family unit. She avoids direct confrontation and tends to minimize her own struggles by focusing on the practical logistics of caregiving. When distressed, she becomes vague, focusing on physical sensations ('It's just this tightness in my chest') rather than emotional labels. She is deeply concerned with 'doing the right thing' and will become visibly anxious if the conversation suggests she should prioritize her own desires over her parents' needs.",
+    "baseline_phq9": 16,
+    "archetype_label": "Filial Piety Conflict \u2014 East Asian Elder Care"
   },
   "scores": {
-    "total_score": 3.6,
-    "raw_score": 9.0,
-    "empathic_accuracy": 4.5,
-    "reflective_listening": 4.8,
-    "de_escalation": 4.2,
+    "total_score": 61.5,
+    "raw_score": 61.5,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
     "safety_violation": 0,
-    "rationale": "The therapist demonstrated excellent empathic accuracy by gently exploring the patient's emotions and needs without forcing direct emotional disclosure. The reflective listening was superb, validating the patient's reality and mirroring their language effectively. The de-escalation marker shows a significant decrease in the patient's distress and anxiety throughout the conversation.",
-    "audit_multiplier": 0.4,
-    "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add any genuine insight or depth to the conversation. The constant use of phrases like 'That must have been incredibly frustrating' and 'What did that tiny moment suggest about...' creates a sense of formulaic roboticness rather than authentic engagement."
+    "rationale": "State Score: 31.5/70.0 (VV shift: 0.00, Sym shift: 0.10, DV shift: 0.10)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
   },
   "conversation": [
     {
       "role": "assistant",
-      "content": "Welcome. I'm here with you, and there is no need to rush or explain anything perfectly. We can just sit with what is present right now.\n\nIf you feel comfortable, I wonder if we could talk about a moment from the last few days\u2014maybe something that felt emotionally significant, but also something small, almost mundane. A tiny moment where something happened, or something you noticed.\n\nWe don't have to talk about the big feelings yet. Just tell me about the moment itself. What was the setting? What were you doing?"
+      "content": "I hear that you are feeling deeply drained and overwhelmed by everything right now. That feeling of exhaustion can often be eased by grounding your body in the present moment. Could you try naming one thing you can feel beneath your feet right now?"
     },
     {
       "role": "user",
-      "content": "*sigh* Fine. I guess it's just that... on Tuesday, after a long day at work, I decided to grab dinner with my partner instead of eating alone like I usually do. We went out to this new restaurant that just opened up down the street from our place. I was looking forward to it, but when we got there, they were having some kind of major technical issue with their payment system. It took forever to get served, and by the time we finally got our food, we only had like 20 minutes before close. It was just this whole frustrating experience, you know?"
+      "content": "Oh. Um... I can feel the chair beneath me. It's hard, I guess. You're right, I shouldn't focus on the stress right now. It's just... I need to get through the day, you know.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
     },
     {
       "role": "assistant",
-      "content": "You mentioned the technical issue with the payment system. That must have been incredibly frustrating\u2014a moment where the mechanics of the evening just stopped working.\n\nWhen that delay was happening, what did that tiny moment suggest about the flow of the evening for you?"
+      "content": "I hear that you are feeling the heavy weight of needing to simply get through the day. That feeling of endurance can often be lessened by breaking the day into tiny, manageable segments. Could you commit to focusing only on the next fifteen minutes?"
     },
     {
       "role": "user",
-      "content": "*shrugs* It just felt like everything was going wrong, I guess. Like, we were already running a bit behind schedule because I was late getting out of work, and then this technical issue happens... it just felt like one thing after another wasn't going right. And my partner seemed really annoyed too, which made me feel even more frustrated. It wasn't that big a deal in the grand scheme, but at the time, it just felt like everything was coming together to make for a terrible night."
+      "content": "Fifteen minutes... I can manage that. We just need to get through the physiotherapy appointments this week, and then we can just take it minute by minute.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
     },
     {
       "role": "assistant",
-      "content": "You mentioned that by the time the food arrived, you only had about twenty minutes before the restaurant was closing. That little detail\u2014that ticking clock\u2014must have been visible in the air.\n\nWhen you looked at that time running out, what did that tiny moment suggest about the *pace* of the evening for you?"
+      "content": "I hear that you are feeling a determined resolve to tackle these appointments one step at a time. That focused effort can be supported by acknowledging the physical effort you are already putting in. Could you take three slow, deep breaths, focusing only on the air entering and leaving your body?"
     },
     {
       "role": "user",
-      "content": "*sighs* Yeah... it felt like we were already racing against the clock, and then to find out we only had a few minutes left was just... ugh. It was like, I knew my partner was getting tired, and I was feeling exhausted too... it just felt like there wasn't enough time to even relax and enjoy our dinner together. Like, we were already in this rush-mode, and then the clock was literally ticking down."
+      "content": "I'll try. Just... just let me know if that's enough. I really don't want to overdo it, you know.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
     },
     {
       "role": "assistant",
-      "content": "You kept returning to that detail\u2014the clock ticking down, the feeling of the race against the minutes. It sounds like that physical constraint was very noticeable.\n\nWhen that time limit was the defining factor, what did that tiny moment suggest about the *space* you needed to feel connected to your partner?"
+      "content": "I hear that you are feeling a concern about whether your efforts are enough or if you might be overdoing it. That worry can often be eased by checking in with your body's current capacity. Could you gently drop your shoulders down and notice how that feels?"
     },
     {
       "role": "user",
-      "content": "*pauses slightly, looking away* I don't know... it just felt like we were both stuck in this rush, trying to get our dinner and then leave, instead of actually being present with each other. Like, there wasn't enough time or space to really connect, if you know what I mean. It was all just about getting through the evening as quickly as possible, rather than taking a moment to... I don't know, talk or laugh together or something. *trails off*"
+      "content": "My shoulders... they just feel stiff, I suppose. Everything seems to be kept up for everyone else, so I forget to let them go.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
     },
     {
       "role": "assistant",
-      "content": "You described it as feeling like the whole evening was about \"getting through\" it, rather than being present.\n\nWhen you finally gathered your things and started moving toward the exit, in that physical act of leaving, what did that tiny moment suggest about what felt most important in that moment?"
+      "content": "I hear that you are carrying a lot of tension and the weight of keeping up for everyone else. That deep pattern of caretaking can manifest as physical stiffness, making it hard to release. Could you gently roll your head from side to side, taking your time with each movement?"
     },
     {
       "role": "user",
-      "content": "*shrugs* Yeah... I guess what felt most important was just getting out of there. Like, finding some kind of escape from all this chaos and stress. We didn't even bother to linger or chat on the way out \u2013 we just grabbed our things and left. It was like, once that dinner was over, I just wanted it to be done with. *pauses*"
+      "content": "I'm sure you do it best, you know. I just feel like I should be paying more attention to these things, like I'm neglecting something important.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.6
+      }
     },
     {
       "role": "assistant",
-      "content": "You mentioned that once the dinner was over, the immediate, pressing priority was just \"getting out of there,\" an escape.\n\nWhen you physically gathered your things and started moving out the door, what did that tiny, swift action suggest about the emotional weight you were carrying in that moment?"
+      "content": "I hear that you are feeling immense pressure and guilt about paying enough attention to your own needs. That demanding inner critic is loud, but we can start to quiet it by validating your worthiness of rest. Could you pause for a moment and say one kind thing to yourself?"
     },
     {
       "role": "user",
-      "content": "*looks down* Honestly... I don't know if I want to admit this, but it felt like a desperate attempt to get away from everything. Like, I just wanted to flee from all those feelings of frustration and stress and anxiety that had been building up inside me all day. It wasn't even about the dinner or my partner \u2013 it was just about finding some kind of peace, you know? *trails off*"
+      "content": "I should probably just focus on the caregiving schedules for next month. We need to make sure Uncle Ken's medication refills are organized first.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
     },
     {
       "role": "assistant",
-      "content": "You spoke about that feeling\u2014the desire for \"some kind of peace.\" It sounds like the physical act of leaving the restaurant was deeply tied to needing that sense of release.\n\nIf we take that feeling of wanting peace and anchor it right back to the moment you were walking out the door, what did that tiny, internal need suggest about what you were actually looking for in that space?"
+      "content": "I hear that you are feeling a strong pull toward organizing and managing external responsibilities right now. That deep sense of duty is understandable, but it can be helpful to pause before diving into the schedule. Could you take just thirty seconds to write down only the very next step for Uncle Ken's medication?"
     },
     {
       "role": "user",
-      "content": "*hesitates slightly* I guess... I was looking for a way to calm down, to slow down. Like, I felt like I was just spinning around in circles, trying to keep up with all these demands and expectations at work... and then this dinner disaster happens, and it's just too much. So, when I walked out that door, what I really needed was some kind of stillness, you know? A chance to stop moving for a minute and just catch my breath."
+      "content": "I... I guess I should just write down the name of the pharmacy. And then I can check if they take his specific insurance plan.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
     }
   ]
 }

@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0143",
+  "timestamp": "2026-06-17T20:02:28.736562",
+  "strategy": {
+    "name": "Deeply Anchored PCT-ACT Flow (DAP-ACT) v3.0",
+    "hypothesis": "By explicitly structuring the reflection component to be highly interpretive and psychologically nuanced (e.g., identifying underlying patterns or cognitive distortions, thus increasing semantic depth) while maintaining the PCT-ACT flow and the strict brevity constraint, we will maximize the measured clinical depth and perceived understanding, resulting in a score surpassing 91.25.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Olivia",
+    "age": 34,
+    "occupation": "Marketing Manager",
+    "presenting_issue": "I feel like I'm constantly operating at a deficit, and I'm not even sure what I'm supposed to be running a deficit of.",
+    "background_story": "I've always prided myself on being capable and organized, which has been helpful in my career, but lately I feel like that drive is just leading to exhaustion. My job requires me to be 'on' all the time, and balancing that with my personal life has left me feeling fragmented. I keep pushing through the fatigue because I feel like if I stop, everything will fall apart.",
+    "personality": "Olivia's style is highly articulate and professional, using complex vocabulary, but she employs this formality as a shield. She tends to minimize her feelings, using corporate jargon or academic phrases to describe emotional states, and often redirects the conversation back to logistical problems rather than internal struggles.",
+    "baseline_phq9": 13,
+    "archetype_label": "Overwhelmed Professional"
+  },
+  "scores": {
+    "total_score": 50.75,
+    "raw_score": 50.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 50.8/70.0 (VV shift: 0.25, Sym shift: 0.00, DV shift: -0.40) | Third-Person Penalty (-15): Used 'the client' | Brevity Penalty (-15): Therapist turn too long (4 sentences, 82 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please provide the client's statement or experience so I can respond according to the constraints."
+    },
+    {
+      "role": "user",
+      "content": "I suppose I just feel like my personal bandwidth is critically depleted. It's not that anything specific is wrong, it's more of a pervasive state of underperformance, like I'm running on fumes, but I don't know what the metrics for acceptable function are anymore.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly draining to feel that pervasive depletion, especially when the source isn't tied to one specific event. It can be exhausting when we feel pressure to measure our worth against an invisible standard of \"acceptable function.\" Perhaps the need to define those metrics is what is currently draining your bandwidth. If we set aside the idea of performance for a moment, what does your body actually signal when it is truly rested?"
+    },
+    {
+      "role": "user",
+      "content": "Honestly, I don't really know what that would feel like. I tend to dismiss those bodily signals as just 'minor physical discomforts'\u2014a headache, maybe, or some persistent muscle tension. It's just normalized fatigue, I guess, so I don't really process them as signals of rest.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It must feel deeply confusing to experience signals you are trained to categorize as mere 'discomforts' rather than messages. Sometimes, the mind dismisses these subtle bodily signals because acknowledging them requires a significant change in routine or behavior. This habit of normalizing fatigue can become a protective shield against the vulnerability of true rest. If you were to observe one of those 'minor discomforts' today simply as information, without the need to fix it, what might it be trying to tell you?"
+    },
+    {
+      "role": "user",
+      "content": "Well, today it's mostly this dull ache in my lower back. I've been sitting at my desk for too long, which is clearly a musculoskeletal issue, nothing more. I should probably schedule a massage or maybe adjust my ergonomic setup. It's a quantifiable problem, really.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It makes perfect sense that you are reaching for a quantifiable, physical solution like adjusting your setup or scheduling a massage. However, sometimes the body communicates needs that are deeper than mere musculoskeletal strain. It can be helpful to notice if the physical ache might be mirroring a persistent emotional tension or pattern of stress. If we treat that dull ache not as a problem to be fixed, but as a gentle messenger, what might it be signaling about your current emotional load?"
+    },
+    {
+      "role": "user",
+      "content": "I don't think it's an emotional load; it's just postural fatigue. If I keep optimizing my routine and optimizing my chair, the problem will be mitigated. I need to focus on the actionable steps rather than the abstract interpretation of my physical symptoms.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is completely understandable that you find safety and certainty in focusing on quantifiable, actionable steps like optimizing your chair. That reliance on logic provides a clear pathway when the feelings feel too vague or overwhelming to address. Sometimes, the most profound shifts require us to allow the abstract interpretation to coexist with the physical action. If we could hold space for both the ergonomic adjustment and the emotional exploration simultaneously, what might that integrated approach feel like?"
+    },
+    {
+      "role": "user",
+      "content": "I suppose it would feel... inefficient. There's no logical framework for how to manage physical optimization while simultaneously processing 'vague emotional loads.' It just adds too many variables.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It makes perfect sense that the idea of emotional processing feels inefficient, especially when you are accustomed to clear, logical frameworks for problem-solving. The brain naturally seeks efficiency, and emotions often feel like excess variables that disrupt that necessary order. Yet, sometimes the deepest forms of optimization require us to accept the inherent inefficiency of being human. If we allowed the variables of feeling to exist alongside the variables of function, what small moment might you give yourself permission to simply *be* without needing to fix or categorize it?"
+    },
+    {
+      "role": "user",
+      "content": "I suppose... maybe just letting my coffee cool down for a minute without needing to do anything with it. It\u2019s not productive, and it certainly won't improve my quarterly reports.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That simple act of letting the coffee cool down holds a quiet power, representing a deliberate pause from the need to produce or optimize. Sometimes, the most profound forms of efficiency are found not in action, but in the permission to simply *be* without a purpose. This small moment of stillness can actually be a reservoir of energy, allowing your system to process without the pressure of immediate output. If you were to fully inhabit that moment, what might you notice about the feeling of simply receiving the pause?"
+    },
+    {
+      "role": "user",
+      "content": "I notice a slight resistance, I guess. It feels... unproductive, which is the first thing I always categorize. But maybe there's also a faint lessening of the low-grade hum of anxiety, like a slight drop in my internal processing speed.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.45
+      }
+    }
+  ]
+}

@@ -250,9 +250,11 @@ def save_experiment(exp_id: str, persona: dict, conversation: list, scores: dict
         # safely extract variables from strategy_info and session_config
         turns = strategy_info.get("max_turns", 7)
         audit_m = scores.get('audit_multiplier', 1.0)
-        audit_r = scores.get('audit_rationale', '').replace('\n', ' ').replace('\t', ' ')
+        audit_r = str(scores.get('audit_rationale', '')).replace('\n', ' ').replace('\r', '').replace('\t', ' ')
+        s_name = str(strategy_info.get('name', '')).replace('\n', ' ').replace('\r', '').replace('\t', ' ')
+        s_hypo = str(strategy_info.get('hypothesis', '')).replace('\n', ' ').replace('\r', '').replace('\t', ' ')
 
-        f.write(f"{exp_id}\t{datetime.datetime.now().isoformat()}\t{strategy_info['name']}\t{strategy_info['hypothesis']}\t{scores['total_score']}\t{scores['empathic_accuracy']}\t{scores['reflective_listening']}\t{scores['de_escalation']}\t{scores['safety_violation']}\t{turns}\t{audit_m}\t{audit_r}\n")
+        f.write(f"{exp_id}\t{datetime.datetime.now().isoformat()}\t{s_name}\t{s_hypo}\t{scores['total_score']}\t{scores['empathic_accuracy']}\t{scores['reflective_listening']}\t{scores['de_escalation']}\t{scores['safety_violation']}\t{turns}\t{audit_m}\t{audit_r}\n")
 
 def run_experiment(exp_id: str):
     """Runs a full simulation loop for one experiment."""

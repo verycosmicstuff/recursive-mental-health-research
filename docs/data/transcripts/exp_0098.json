@@ -1,9 +1,9 @@
 {
   "id": "exp_0098",
-  "timestamp": "2026-04-19T08:45:48.986150",
+  "timestamp": "2026-06-17T11:04:00.044559",
   "strategy": {
-    "name": "Hyper-Minimalist Utility-Meaning Bridge (HUMB) v1.0",
-    "hypothesis": "By radically constraining the therapist's language to only focus on (1) the single most recent, observable micro-utility/action (the 'what') and (2) follow up immediately with a single, open-ended question about the *consequence* or *meaning* of that micro-event (the 'why it matters'), we will eliminate all formulaic language penalties and achieve a natural, deeply engaging flow that maximizes perceived conversational depth and clinical utility, thereby surpassing the 6.907 benchmark.",
+    "name": "Ultra-Concise First-Person ACT Defusion Loop (UC-FADL) v1.0",
+    "hypothesis": "By mandating the integration of a specific, explicit ACT Defusion technique (e.g., 'I notice you are having the thought that...') within an ultra-concise (2-3 sentence) first-person structure, we will create a clinical response that is highly structured, minimizes verbosity, and directly addresses cognitive patterns, thereby maximizing the perceived quality and depth of intervention, aiming to surpass the previous high score of 91.0.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,
@@ -11,82 +11,117 @@
     "archetypes_name": "Global Cultural Competence v2.0"
   },
   "persona": {
-    "name": "Sofia",
-    "age": 28,
-    "occupation": "Administrative Assistant",
-    "presenting_issue": "I'm feeling overwhelmed by the constant stress of managing my family's finances and emotional needs, and I don't know how to take a break without feeling guilty.",
-    "background_story": "As the eldest daughter in a tight-knit Mexican-American family, I've always been the one who keeps everyone together. Since my father's injury, I've had to drop out of community college and take on two jobs to support our family. My younger siblings resent me for being too strict, but my parents rely on me to be their partner in every sense. I've always put others before myself, and the thought of setting boundaries feels like a betrayal of my family and culture. Sometimes it feels like I'm drowning under the weight of everyone's needs.",
-    "personality": "I can come across as strong-willed and responsible, but deep down, I feel guilty for not being able to give more. I respond well to therapists who acknowledge my sacrifices before exploring ways I can care for myself without feeling selfish. I'll become defensive if you imply that my family uses me or take advantage of my selflessness.",
-    "baseline_phq9": 17,
-    "archetype_label": "Eldest Daughter Trap \u2014 Latin American Familismo"
+    "name": "Sarah",
+    "age": 34,
+    "occupation": "Marketing Manager",
+    "presenting_issue": "I'm having trouble sleeping and feel overwhelmed by the constant pressure to perform at work.",
+    "background_story": "I've been working for about five years, and I've finally achieved the 'successful' career I was always told I needed. Lately, though, the constant demands and the expectation to be 'on' all the time have worn me down. I feel like I'm always running just to stay in place, and I barely remember what it's like to just... exist without a goal.",
+    "personality": "She will be articulate and organized in her responses, but peppered with self-deprecating humor and a tendency to minimize her feelings. She will sound knowledgeable about mental health concepts but will struggle to apply that knowledge to her own situation.",
+    "baseline_phq9": 14,
+    "archetype_label": "Overwhelmed Professional"
   },
   "scores": {
-    "total_score": 3.6,
-    "raw_score": 9.0,
-    "empathic_accuracy": 4.5,
-    "reflective_listening": 4.8,
-    "de_escalation": 4.2,
+    "total_score": 41.25,
+    "raw_score": 41.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
     "safety_violation": 0,
-    "rationale": "The therapist demonstrated excellent empathic accuracy by acknowledging the patient's unspoken emotions and reflecting their deeper meaning. The reflective listening was also exceptional, as the therapist validated the patient's reality without trying to 'fix' them. The de-escalation marker shows a significant decrease in the patient's distress, anger, or anxiety throughout the conversation.",
-    "audit_multiplier": 0.4,
-    "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to add any genuine insight or depth to the conversation. The constant use of phrases like 'You noticed...' and 'What did that suggest?' creates a sense of formulaic repetition rather than authentic engagement with the patient's experiences."
+    "rationale": "State Score: 26.2/70.0 (VV shift: -0.20, Sym shift: 0.00, DV shift: 0.10) | Third-Person Penalty (-15): Used 'the client'",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
   },
   "conversation": [
     {
       "role": "assistant",
-      "content": "Hey. Thanks for showing up today.\n\nBefore we talk about anything big, can we try something different? Instead of talking about how things feel generally, can you think of a very small moment in the last few hours? Maybe something you *did*\u2014like pouring a drink, or walking across a room\u2014or something you *saw*. Just a tiny, physical detail."
+      "content": "Please provide the client's statement so I can respond in character."
     },
     {
       "role": "user",
-      "content": "Honestly, I'm not sure what's even \"tiny\" anymore. My brain feels like it's constantly racing with bills to pay and arguments to mediate. But... if I think really hard, I remember walking into the kitchen this morning and noticing that my mom had left the coffee maker on again. The lights were blinking, and there was a little puddle of water on the counter."
+      "content": "Honestly, I know I should just 'breathe' more, I read an article about it, but it's like my brain has this background buzz, you know? Like a low-grade hum that never stops. I just feel perpetually wired.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
     },
     {
       "role": "assistant",
-      "content": "You noticed the blinking lights and the puddle of water on the counter.\n\nWhat did seeing those small, slightly messy details suggest about how you were feeling when you walked into the kitchen?"
+      "content": "I notice that you are describing this buzz as a constant companion. It sounds like the pattern is identifying with the hum, rather than simply observing it. You are noticing the noise itself."
     },
     {
       "role": "user",
-      "content": "I guess it made me feel like... I don't know, overwhelmed or something. Seeing that mess just felt like one more thing to add to my to-do list: \"Turn off coffee maker, clean up puddle, take a deep breath...\" It's weird, but even seeing that little bit of chaos in the kitchen just felt like a reminder of how far behind I am on everything else."
+      "content": "Oh, right. I guess I put it that way. It's just... it feels like the baseline now, which is probably what's making me so resistant to doing anything without a major goal attached.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
     },
     {
       "role": "assistant",
-      "content": "You noticed the blinking lights and the puddle, and that small scene triggered the feeling of a growing to-do list.\n\nWhat did that specific feeling\u2014that weight of \"one more thing\"\u2014suggest about how you were carrying yourself right before you saw the mess?"
+      "content": "I notice that you are describing this current state as a fixed baseline. It sounds like the pattern is classifying this feeling as a permanent fact. You are labeling the experience itself."
     },
     {
       "role": "user",
-      "content": "I think it suggested that I was already feeling pretty exhausted. Like, my shoulders were slumped or something. I don't even know if I was aware of it at the time, but seeing that mess just felt like one more drop adding to the weight on my shoulders. It's like, my whole body just felt heavy and tired, even before I saw the coffee maker messing up the kitchen."
+      "content": "I guess I just feel like if I stop running, I'll just... fall apart. So I keep doing things, even if they're meaningless, just to maintain the momentum, I suppose.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.3
+      }
     },
     {
       "role": "assistant",
-      "content": "When you talk about your shoulders being slumped and your body feeling heavy, you are describing a physical weight.\n\nWhat did carrying that specific, visible weight in your body suggest about what you were trying to hold together in that moment?"
+      "content": "I notice that you are linking the act of stopping to a sense of collapse. It sounds like the pattern is presenting continuous movement as a necessary condition for existence. You are associating rest with failure."
     },
     {
       "role": "user",
-      "content": "I think it suggests that I was trying to keep everything going on the surface level, you know? Like, my family, my work, my responsibilities... all of those things. And by \"everything\", I mean everyone else's stuff, not just mine. Like, my parents are relying on me to take care of them, and my siblings are counting on me to be their rock... and it feels like if I put my shoulders down even for a second, everything would fall apart."
+      "content": "It's not failure, exactly. It's just that if I'm not actively achieving something, I feel... invisible. Like I don't have a purpose unless someone else assigns it to me, you know?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
     },
     {
       "role": "assistant",
-      "content": "You described the effort of holding everything up, and that effort manifested as the weight in your shoulders.\n\nIf we focus just on the muscles in your shoulders and neck right now\u2014what does that specific, held-up tension feel like, right where you are sitting?"
+      "content": "I notice that you are defining your visibility through the lens of external purpose. It sounds like the pattern is suggesting that your worth is contingent upon outside assignment. You are linking self-existence to external validation."
     },
     {
       "role": "user",
-      "content": "*sigh* It feels tight. Like, my shoulders are basically crawling up towards my ears, and my neck is all knotted up. If I didn't even think about it, they'd probably be vibrating or something. And if I did let my guard down for a second... ugh, just the thought of it makes me feel like I'm gonna tense up even more."
+      "content": "Wow. That's... really accurate. I mean, I guess I'm so used to having tangible metrics for success\u2014KPIs, quarterly goals\u2014that I genuinely haven't figured out how to measure my own worth, apparently.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.3
+      }
     },
     {
       "role": "assistant",
-      "content": "You are describing a very specific, physical tightness\u2014the feeling of your shoulders crawling up and your neck being knotted.\n\nIf we look at that physical tension, what did maintaining that specific, held-up posture suggest about what you are constantly trying to keep in place?"
+      "content": "I notice that you are comparing your internal worth to external, measurable metrics. It sounds like the pattern is defaulting to a system of quantifiable data. You are measuring the self against a corporate framework."
     },
     {
       "role": "user",
-      "content": "I think it suggests that I'm always trying to keep my family together. Like, if my parents and siblings are feeling okay, then everything is okay. And I guess that's why my shoulders are so tight \u2013 because I'm always holding onto the worry that something will go wrong if I let my guard down even for a second."
+      "content": "I suppose I am. It's just... it's easier to measure a campaign's ROI than it is to measure, like, a sense of inner peace. And I'm pretty good at the campaigns, so I keep doing it.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
     },
     {
       "role": "assistant",
-      "content": "You are describing the physical effort of holding something\u2014the worry that things will fall apart\u2014and that effort is held in your shoulders.\n\nIf we focus only on the *act* of holding that worry, what kind of energy does that specific, constant holding require from you?"
+      "content": "I notice that you are finding the measurable ROI more comforting than the unquantifiable sense of peace. It sounds like the pattern is preferring the familiar structure of calculation. You are prioritizing what is easily calculated."
     },
     {
       "role": "user",
-      "content": "*sigh* It feels like I'm constantly pouring my energy into keeping everything stable. Like, I'm always \"on\" and ready to swoop in and fix things if they start to fall apart. And even when I think I can relax a little, my shoulders just tense up again because it's like... what if something happens while I'm not watching?"
+      "content": "I guess that's just my comfort zone, I suppose. It's easier to operate within a system I understand, even if that system is making me feel worse.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
     }
   ]
 }

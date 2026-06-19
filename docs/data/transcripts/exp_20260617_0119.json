@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0119",
+  "timestamp": "2026-06-17T17:44:21.017998",
+  "strategy": {
+    "name": "ACT-PCT Value-Guided Reflection Loop (AC-VGR-L) v1.0",
+    "hypothesis": "By replacing the rigid 'What if...?' challenge with a gentle, open-ended question that connects the patient's feelings to their long-term values (e.g., 'What does feeling X prevent you from achieving?'), we will improve the depth and relevance of the response, maximizing the score by integrating empathy (PCT) with motivational theory (ACT).",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Elena",
+    "age": 29,
+    "occupation": "HR Coordinator",
+    "presenting_issue": "I feel completely overwhelmed by the magnitude of responsibility I carry for everyone else's emotional stability and financial well-being.",
+    "background_story": "My life has been structured entirely around the needs of my extended family, since taking care of my father after his accident. I poured my education dreams into making sure everyone else had a safety net, juggling two jobs and too many commitments. Lately, the weight of keeping all the pieces from falling apart\u2014the finances, the appointments, the emotional temperature\u2014is making me feel constantly on the verge of an emotional collapse. I just need a place to breathe where I don't feel guilty for needing a moment to just\u2026 be.",
+    "personality": "Her tone is highly conscientious, formal, and deeply apologetic, often prefacing statements with 'I know I shouldn't complain' or 'It's probably my fault.' She uses elevated vocabulary when discussing practical matters but becomes emotionally stunted when discussing her own feelings, often resorting to martyr language ('I did what was necessary'). She will deflect direct questions about her personal life by pivoting back to a familial obligation or a logistical problem. She responds well to validation of her efforts, but can become defensive and highly agitated if the conversation shifts to 'self-care' in a way that implies her sacrifice was a mistake.",
+    "baseline_phq9": 17,
+    "archetype_label": "Eldest Daughter Trap \u2014 Latin American Familismo"
+  },
+  "scores": {
+    "total_score": 54.25,
+    "raw_score": 54.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 54.2/70.0 (VV shift: 0.40, Sym shift: -0.20, DV shift: -0.10) | Third-Person Penalty (-15): Used 'the client' | Brevity Penalty (-15): Therapist turn too long (8 sentences, 49 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "I understand my role completely. I am ready to listen without judgment and respond by:\n\n1.  Validating the emotion through empathetic reflection.\n2.  Gently transitioning with a value-based, non-directive question.\n3.  Keeping the tone compassionate, brief, and conversational.\n\nPlease share what the client is saying when you are ready."
+    },
+    {
+      "role": "user",
+      "content": "I know I shouldn't complain, but the schedule for physical therapy is a nightmare. I have to coordinate three different appointments for my father, and then I still have my job, and I'm trying to manage the budget for the next quarter. It just feels like I'm failing at logistics, and I don't know where to start.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly draining and overwhelming to be juggling caregiving, professional responsibilities, and financial planning all at once. It makes perfect sense that you feel stretched thin and like you're failing at logistics when the demands are so massive.\n\nIf you could somehow manage the logistics of your life perfectly, what feeling or experience would you want to make space for?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know... I suppose I'd just want quiet. Like, the kind of quiet that isn't interrupted by a phone call, or someone needing something. It feels almost selfish to even want to think about that.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like what you truly crave right now isn't just silence, but a profound sense of peace\u2014a space where you don't have to be \"on\" for anyone else. It's completely understandable to feel that desire, and there's nothing selfish about needing rest.\n\nIf you could consistently create that quiet space, what would you use that time to simply *be* with?"
+    },
+    {
+      "role": "user",
+      "content": "Honestly, I don't know. I probably would just look at my to-do list and start scheduling things. I'm so used to having a plan, I don't know how to just... waste time without a measurable outcome.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like planning and having a schedule isn't just about getting things done; it's deeply tied to how you feel safe and in control. It makes perfect sense that when you're used to a plan, the idea of unstructured time feels unsettling.\n\nIf that feeling of stability and control were something you could simply *allow* yourself, what would that allow you to feel more confident about?"
+    },
+    {
+      "role": "user",
+      "content": "Well, I guess it would allow me to feel less responsible. Like, if I could just let go of the feeling that if I stopped managing everything, something truly catastrophic would happen to the family, or the finances would completely implode. It's a terrifying thought.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are carrying the immense weight of being the family's primary pillar\u2014feeling responsible for preventing every potential disaster, whether it's logistical, financial, or emotional. That level of constant vigilance must be exhausting.\n\nIf you could allow yourself to feel that sense of safety, independent of having a perfect plan, what would you be able to trust in yourself?"
+    },
+    {
+      "role": "user",
+      "content": "I honestly don't know. I suppose I've just trained myself to manage the external variables. The internal stuff... that's something I've never had to worry about, because there was always someone else who needed my attention first.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like your entire life has been spent acting as the anchor for everyone else, and the idea of turning that focus inward feels completely foreign and even daunting. It takes immense energy to maintain that kind of constant external care.\n\nIf you could dedicate just a small amount of time to tending to that internal self, what would that attention allow you to remember about yourself?"
+    },
+    {
+      "role": "user",
+      "content": "I suppose I would remember that I used to like painting. Before everything got so\u2026 complicated. It was just a small, frivolous thing, but I remember the feeling of the color on the canvas, and how calm it made me.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like painting isn't just a hobby; it's a deeply remembered source of pure, uncomplicated calm, a time when you could simply exist in a beautiful, focused moment. That connection to color and peace must feel like a lifeline.\n\nIf you were to reclaim that time for the canvas, what would that act of creation allow you to tell yourself about who you are, beyond the roles you play for others?"
+    },
+    {
+      "role": "user",
+      "content": "It would allow me to remember that I have value for myself, that I'm not just the coordinator, the accountant, or the caretaker. That I'm actually a person with my own needs, which is\u2026 genuinely scary to admit.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
+    }
+  ]
+}

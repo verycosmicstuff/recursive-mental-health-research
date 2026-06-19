@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0138",
+  "timestamp": "2026-06-17T19:38:00.848211",
+  "strategy": {
+    "name": "Flexible PCT-ACT Values Flow (FPA-VFF) v2.0",
+    "hypothesis": "By removing the explicit requirement for a 'two-paragraph' structure and instead guiding the therapist to perform a deep, empathetic validation followed by a single, value-aligned, open-ended inquiry, we will maximize the perceived depth (Alliance/Empathy) and structural validity, thereby surpassing the previous score of 91.25.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Patricia",
+    "age": 62,
+    "occupation": "Part-time Librarian",
+    "presenting_issue": "I just feel... overwhelmed lately, and I'm not sure what's going on.",
+    "background_story": "I've been running the household and keeping everyone else's lives in order for forty years. Lately, it feels like I'm constantly managing emotions that aren't even mine. My daughter insisted I talk to someone, which, frankly, is embarrassing, because I've always handled things myself. I guess I'm just tired of being the responsible one.",
+    "personality": "Detached and skeptical. She uses formal language, corrects assumed assumptions, and frequently minimizes her own feelings, framing her struggles as 'normal life inconveniences.' She avoids direct eye contact and frequently checks the time.",
+    "baseline_phq9": 9,
+    "archetype_label": "Skeptical Retiree"
+  },
+  "scores": {
+    "total_score": 67.5,
+    "raw_score": 67.5,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 52.5/70.0 (VV shift: 0.40, Sym shift: -0.10, DV shift: -0.10) | Brevity Penalty (-15): Therapist turn too long (3 sentences, 114 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please share what's on your mind, and I will listen with deep care. I am here to reflect what I hear, without judgment, to help bring clarity to what you are experiencing."
+    },
+    {
+      "role": "user",
+      "content": "Well, nothing specific, really. It's just... the general feeling of things piling up, I suppose. It's normal, isn't it? Life gets busy.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the weight isn't tied to one single event or deadline, but rather to the sheer *volume* of everything\u2014the constant accumulation of tasks, responsibilities, and demands that just seem to keep coming. There's a deep fatigue in recognizing that this general feeling of being overwhelmed is simply part of \"normal life,\" and that effort to normalize it suggests you might be carrying a heavy sense of expectation\u2014both from the world and perhaps from yourself\u2014to keep up.\n\nIf you could magically clear some space from that pile, what is the first thing you would feel yourself able to breathe out, or the first thing you would feel truly able to prioritize for yourself?"
+    },
+    {
+      "role": "user",
+      "content": "The 'volume' framing seems a bit dramatic, if I'm being honest. It's just routines, really. I suppose... maybe just an hour that doesn't involve scheduling or mediating. I need to... organize my thoughts, I think. I should check the time.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like when the weight is described too dramatically, it feels like an exaggeration, and you naturally pull back to the more practical, manageable reality of your life\u2014the routines. Yet, beneath that desire to categorize it as \"just routines,\" there is a very clear whisper of longing for a pocket of time that belongs only to you, free from the demands of scheduling or mediating. The urge to check the time, even when talking about feelings, suggests that regaining control over your internal landscape feels intimately tied to regaining control over the clock itself.\n\nIf that hour of unscheduled time were a space where you could simply *be*, and not *do*, what is the one feeling or sense that you believe would finally settle in, allowing you to feel truly grounded?"
+    },
+    {
+      "role": "user",
+      "content": "It wouldn't be a feeling, I suspect. It would probably just be quiet. The kind of quiet that isn't punctuated by someone else needing something. I'll make a note to look into reorganizing the spice rack this week; that seems like a productive use of time.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the deepest yearning isn't for a specific feeling, but for the absolute state of *uninterrupted quiet*\u2014a silence that feels like a boundary, a sacred space where you are the sole authority on your time. And when that deep, intangible need for peace arises, it feels safer and more manageable to anchor yourself in something concrete and productive, like the satisfying, visible order of reorganizing a spice rack. It seems like the act of making a list and planning a task is a way of taking the boundless, overwhelming nature of the \"quiet\" and containing it within the neat, predictable lines of a to-do list.\n\nIf you were to imagine a life where the spice rack was perfectly organized, and you still found that quiet time, what would you have to consciously choose to *let go of*\u2014the need for productivity, the need for control, or something else entirely\u2014in order to allow the quiet to feel truly restorative rather than just temporarily structured?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know if I could truly 'let go' of anything, that presupposes a level of randomness I'm frankly not sure I possess. I'm just used to managing variables, I suppose. I should probably check my email later.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the concept of \"letting go\" feels profoundly challenging, almost impossible, because it requires you to suspend the very mechanism\u2014the skillful management of variables\u2014that has kept you feeling safe and competent. This ability to anticipate, organize, and control the moving parts of life isn't just a habit; it seems to be a deeply ingrained survival skill. The tension here is between the powerful, necessary structure of knowing how things *should* work, and the deep, quiet yearning for a peace that doesn't require a blueprint.\n\nIf we accept that managing variables is what gives you a sense of security, what is the biggest risk or uncertainty that, if you allowed yourself to simply *not* manage it for a short period, might reveal something essential about what you actually value most?"
+    },
+    {
+      "role": "user",
+      "content": "There is no 'biggest risk,' I assure you. Everything has parameters. And I don't really know what I value most, other than perhaps a properly alphabetized collection. I really should get going; I have an appointment.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you have built such a comprehensive and reliable internal framework\u2014a system where every element, every moment, and every possibility has its defined parameter. This ability to see structure and predictability in everything is clearly a source of immense strength and competence. And when asked to name a core, abstract value, it feels safest and most accurate to point to something tangible and ordered, like a properly alphabetized collection, because that is a value you can definitively prove and maintain.\n\nIf we accept that the need for parameters is your most reliable guide, what is the one area of your life\u2014even a small corner\u2014where you might allow just one variable to exist purely for its own sake, without the need for it to fit into a system or contribute to a list?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know. Perhaps... the window view, I suppose. It changes, and I suppose that's just natural. Nothing needs 'managing' there.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the window view\u2014the shifting, unpredictable scene outside\u2014represents a powerful antidote to the need for perfect organization. It is a space where the rules of parameters simply don't apply; it is simply *being*, changing naturally, without the requirement of management. This suggests that the deep, quiet yearning you hold isn't just for a lack of tasks, but for a fundamental acceptance of impermanence\u2014a recognition that some things are meant to simply flow, rather than be contained.\n\nIf you were to consciously try to incorporate the *feeling* of that window view\u2014that gentle, unmanaged flow\u2014into one of your highly structured routines, what small, seemingly useless moment would you allow yourself to experience just for the sake of simply observing it?"
+    },
+    {
+      "role": "user",
+      "content": "Hmm. Maybe... walking slowly to the mailbox, and just noticing the way the light catches the leaves. No need to rush back, or even think about the mail itself. Just... observing.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
+    }
+  ]
+}

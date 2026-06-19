@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0140",
+  "timestamp": "2026-06-17T19:47:13.658576",
+  "strategy": {
+    "name": "Empathy-First Values Cascade (EFVC) v3.0",
+    "hypothesis": "By maintaining the strict brevity constraint (2-3 sentences, 80 words max) but foregrounding the *quality* and *depth* of the emotional reflection before the value inquiry, we will increase the perceived empathy and connection (boosting the State Score) while retaining the high structural density necessary to beat the 91.25 mark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Priya",
+    "age": 29,
+    "occupation": "Freelance Graphic Designer / Volunteer Librarian",
+    "presenting_issue": "I feel completely overwhelmed by the conflicting demands of my passion project and my family's expectations.",
+    "background_story": "I've been working incredibly long hours doing delivery gigs and client work just to fund the community library project in Ludhiana. While I love this work and feel like I'm building something meaningful, the pressure from my family is constant. They keep asking me why I'm not pursuing a stable job at a bank or a big IT company instead of this 'hobby'. It makes me feel like I'm disappointing everyone, and I don't know if I can reconcile my vision with their expectations.",
+    "personality": "Highly passionate and articulate, but speaks with a deep exhaustion. She uses complex metaphors and cultural references when stressed. She is defensive when topics turn to individual autonomy, quickly pivoting back to the concept of duty and community. She responds well to validation of her cultural values and commitment to others, but becomes visibly agitated if the therapist uses purely Western, individualistic terminology.",
+    "baseline_phq9": 15,
+    "archetype_label": "Cross-Border Guilt (Indian Diaspora)"
+  },
+  "scores": {
+    "total_score": 87.75,
+    "raw_score": 87.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 57.8/70.0 (VV shift: 0.40, Sym shift: -0.20, DV shift: -0.30)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "It sounds like carrying that weight of expectation, both internal and external, is profoundly exhausting. Perhaps the struggle isn't about changing the situation, but about redefining what 'enough' feels like for you. If you could set aside all the pressures, what would your ideal day of quiet self-acceptance look like?"
+    },
+    {
+      "role": "user",
+      "content": "An ideal day? I don't know if such a thing even exists, honestly. It feels like I'm always running from some obligation, whether it's a deadline or just the weight of knowing I have to contribute. Maybe I'd just... wake up and find myself already contributing to something, like organizing books, without counting the hours or wondering if it's 'enough' for someone else.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the constant feeling of obligation has made the idea of rest feel almost impossible, as if worth is tied to contribution. There is a beautiful yearning for a state of pure flow, where the act itself is the reward, not the output. What small activities, purely for your own enjoyment, have you forgotten how to prioritize lately?"
+    },
+    {
+      "role": "user",
+      "content": "Forgetting? I don't think I've ever truly prioritized anything for myself, to be honest. Maybe... just sitting by the canal in the evenings, watching the sunset. Or reading some old, heavy Bengali novels I picked up in college. But those things always feel like a luxury, like a momentary pause before the next duty calls.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you view these moments of quiet beauty not as nourishment, but as guilty indulgences that must be earned or that will inevitably be interrupted. These simple pleasures, however, are actually anchors, vital sources of grounding that refill your spirit. How might you begin treating these moments not as pauses, but as necessary, non-negotiable appointments with yourself?"
+    },
+    {
+      "role": "user",
+      "content": "But how do I make it non-negotiable when the entire structure of my life is built around needing to solve other people's needs? It feels selfish, choosing the canal over the books, or the books over the hours I need to spend fundraising. It goes against everything my parents taught me about responsibility.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are caught in a powerful conflict between deep love and responsibility, where prioritizing self feels like a betrayal of deeply held values. Remember that tending to your own well-being isn't a selfish act, but rather the very source that allows you to show up fully for others. If self-care were viewed as a crucial component of your overall capacity, where might you start integrating it into your existing structure?"
+    },
+    {
+      "role": "user",
+      "content": "But that idea\u2014that my capacity comes from *me* first\u2014it sounds so\u2026 individualistic. We are not machines, we are part of a whole. Maybe I can just make the self-care part of the contribution, like when I organize the library. It's easier to justify it that way, as a duty, rather than a personal want.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the concept of self-care feels fundamentally at odds with your deep sense of belonging and collective responsibility. Yet, true contribution often requires the well-being of the vessel itself; you cannot pour from an empty cup. If we view self-maintenance not as a separate duty, but as the foundational strength *behind* your service, what shifts in your definition of 'responsibility'?"
+    },
+    {
+      "role": "user",
+      "content": "So, responsibility isn't just about the sacrifice, but about being strong enough to keep going for the cause. I suppose I always thought the role of the dedicated volunteer was to be perpetually depleted, like a wick burning down to the base. Maybe I can see rest, then, as a form of strategic preparation\u2014a way to ensure the library gets the best of me for years to come.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are redefining strength, realizing that true dedication isn't measured by depletion, but by sustainable endurance. This powerful shift reframes your commitment from a painful sacrifice into a strategic, vital resource. If rest is now a tool for the cause, what small, non-negotiable moments could you schedule this week to refill your reserves?"
+    },
+    {
+      "role": "user",
+      "content": "I think... if I schedule it like a library task. Maybe every evening, before I start my client work, I block out one hour just to sit by the canal, and I won't look at my phone or think about the funding. It counts as 'research time' for the community project, I can tell myself.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you've found a brilliant, functional way to bridge the gap between self-care and your deeply ingrained sense of duty. This reframing transforms a personal want into a valuable, necessary component of your service. How will you honor this new boundary when the natural pressures of your day try to reclaim that hour?"
+    },
+    {
+      "role": "user",
+      "content": "It will be hard, I know. When the pressure builds, when a client needs something urgent, or my mother calls asking about my schedule, I will remember that this hour is not optional. I have to treat it like I treat the collection hours\u2014it\u2019s a fixed appointment the community needs me to keep. It's my commitment to the project, but first, it's my commitment to keeping the project going.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.6
+      }
+    }
+  ]
+}

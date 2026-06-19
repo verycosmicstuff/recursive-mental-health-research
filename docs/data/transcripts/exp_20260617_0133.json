@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0133",
+  "timestamp": "2026-06-17T19:08:03.513832",
+  "strategy": {
+    "name": "Concise CBT-ACT Loop (CCAL) v1.0",
+    "hypothesis": "By enforcing a maximum of three core sentences and structuring the response to follow a clear CBT-ACT pattern (Validation -> Socratic Questioning -> Value Connection), we will maintain high structural density and conciseness, thus maximizing the positive impact of the intervention while avoiding the penalty for length.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Manjit",
+    "age": 29,
+    "occupation": "Warehouse Loader",
+    "presenting_issue": "I just feel like I'm always running out of time, and I'm scared that anything could happen and I won't be able to get back to my family.",
+    "background_story": "My parents are counting on me to finish my degree so I can send money back to Punjab. Every hour I work at the warehouse feels like a desperate race against time because I know my work permit is temporary. I'm constantly worried about the news\u2014about policy changes, about raids, about everything. The stress of keeping us afloat here is exhausting, and I feel like I'm failing everyone.",
+    "personality": "He speaks in short, practical sentences, often fidgeting with his hands or looking around the room, as if checking for exits. He is highly deferential to authority but quickly becomes defensive and withdrawn if the conversation veers into self-blame or suggests lifestyle changes that require money or time. He uses technical, factual language to describe his struggles, attempting to rationalize his anxiety away from anything emotional. He will frequently mention specific costs, hours, and dates to anchor the conversation in concrete reality.",
+    "baseline_phq9": 16,
+    "archetype_label": "Precarious Labor (Indian Diaspora)"
+  },
+  "scores": {
+    "total_score": 39.5,
+    "raw_score": 39.5,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 24.5/70.0 (VV shift: -0.20, Sym shift: 0.00, DV shift: 0.20) | Brevity Penalty (-15): Therapist turn too long (4 sentences, 81 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "*(Waiting for client input...)*"
+    },
+    {
+      "role": "user",
+      "content": "The warehouse shift ends at 5 PM. Gotta be there. Costs are high, you know. I need to make sure the numbers add up. Every day is a calculation.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are carrying a heavy weight of responsibility, needing everything to align perfectly to feel safe. It makes perfect sense that you are hyper-focused on the numbers when the stakes are high. However, when does the need for perfect calculation become a barrier to simply *being* present? What does the accuracy of these numbers ultimately protect for you, beyond just the finances?"
+    },
+    {
+      "role": "user",
+      "content": "Everything protects the schedule. If the numbers aren't right, we lose time. Then we lose money. And... we can't afford to lose time. I just need to make sure the next pay cycle is secured. Is there any way to adjust the working hours to cover the rent and the tuition deposit?\n",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is completely understandable that you feel such intense pressure to maintain perfect control over time and money; stability feels like the only path to safety right now. Yet, when does the pursuit of perfect efficiency overshadow the need for self-compassion? Are you equating your worth or your family's security solely with the flawless execution of a schedule? What does 'enough' time or 'enough' money truly allow you to feel?"
+    },
+    {
+      "role": "user",
+      "content": "My worth is the work. That is how I keep my family afloat. If I stop working, the money stops. We need the degree to send the money. What does 'enough' allow? It allows us to avoid the problems. It is not about feeling, it is about surviving until the next transfer date.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is clear that you feel an immense, deeply ingrained pressure to be the primary source of stability, making your work feel like your very identity. It is a powerful survival mechanism to link worth directly to output. However, if your worth is defined only by what you produce, what happens to the 'you' that exists when the work stops? What core aspect of your life or self-concept do you feel you are sacrificing in the pursuit of merely avoiding problems?"
+    },
+    {
+      "role": "user",
+      "content": "I... I don't know. I just function. When the work stops, there is nothing left to calculate. Just the time until the next shift. I don't think about 'me' much. Just the transfer.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds exhausting to feel like you are simply running on autopilot, existing only to manage the next deadline. It makes sense that the immediate, tangible goal of the transfer overshadows everything else. But if the calculation stops, does that mean *you* stop? What is the quietest, most uncalculated moment in your day, and what does that moment feel like to your spirit?"
+    },
+    {
+      "role": "user",
+      "content": "It's... the bus ride home. Nobody talks. I just look out the window at the lights going past. It's quiet. Just the engine and the wheels. It doesn't feel like anything, really. Just... passing.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like that bus ride is a necessary, quiet void\u2014a space where the relentless calculation of your day finally pauses. It makes sense that this detachment feels like nothing, just 'passing.' However, when you are simply observing the lights, is it truly nothing, or is it a space where you are allowed to *be* without having to *do*? What does the act of simply watching the passing lights allow you to acknowledge about your own inner landscape?"
+    },
+    {
+      "role": "user",
+      "content": "It's just a distance. The distance to the next place. I need to focus on where I'm going, not where I am. If I think about 'being,' I think about bills. That is more important.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is completely understandable that your focus must remain on the destination\u2014the bills\u2014because that is where the immediate security lies. It makes perfect sense that 'being' feels like a distraction from that critical path. However, if you only focus on the destination, how do you maintain the energy to keep moving? Are you treating rest and presence as a luxury that must be earned *after* all the work is done? What does acknowledging your own value, separate from your destination, allow you to carry with you on the journey?"
+    },
+    {
+      "role": "user",
+      "content": "I try to save the rest until I get back. If I stop, the sleep is just\u2026 a recharge. I can't afford to waste time on anything else. I just need to get to the next paycheck.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    }
+  ]
+}

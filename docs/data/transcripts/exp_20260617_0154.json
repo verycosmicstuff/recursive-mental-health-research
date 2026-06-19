@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0154",
+  "timestamp": "2026-06-17T20:59:44.358237",
+  "strategy": {
+    "name": "Ultra-Concise PCT-ACT Reflection Loop (UCP-ACT)",
+    "hypothesis": "By strictly adhering to a 2-part structure\u2014a highly empathetic validation statement followed immediately by a single, open-ended question focusing on future action or values\u2014we will maximize the depth of engagement while minimizing word count, thereby overcoming the previous penalties and surpassing the 90+ score benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Eleanor",
+    "age": 42,
+    "occupation": "Administrative Assistant",
+    "presenting_issue": "I've been feeling constantly overwhelmed and physically drained, and I don't know how to ask for help without feeling like I'm failing my family.",
+    "background_story": "Since my parents moved from Guangzhou to Vancouver, I've taken on the role of primary caregiver, managing everything from their medical appointments to their emotional needs. The constant demands, combined with their growing physical dependence, have left me with virtually no personal time. I feel like I am always performing a duty, and the weight of their expectations, coupled with my own fear of disappointing them, has been suffocating.",
+    "personality": "Polite, highly formal, and deferential, but prone to sudden emotional shutdowns when discussing 'selfish' needs. She uses indirect language and physical complaints (headaches, chest tightness) to describe emotional distress, often minimizing her own struggle by focusing on her commitment to duty. She deflects direct questions about her emotional needs by pivoting back to the logistical demands of caregiving.",
+    "baseline_phq9": 15,
+    "archetype_label": "Filial Piety Conflict \u2014 East Asian Elder Care"
+  },
+  "scores": {
+    "total_score": 80.75,
+    "raw_score": 80.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 50.8/70.0 (VV shift: 0.20, Sym shift: -0.10, DV shift: -0.40)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly heavy to carry the weight of professional overwhelm and the persistent feeling of comparison. That must feel exhausting, like you're running on empty while constantly measuring up to others' highlight reels.\n\nIf the pressure to compare yourself to others wasn't present, what kind of work or daily rhythm would feel most genuinely aligned with who you want to be?"
+    },
+    {
+      "role": "user",
+      "content": "Well, I suppose I would prefer something with a much more predictable schedule. Something that doesn't require so much constant emotional management. Keeping things straightforward, you know? My current work is fine, really, I just... I sometimes get these headaches when I think about the unpredictability.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the unpredictable nature of your emotional labor is causing significant physical and mental strain, and desiring a stable, straightforward rhythm makes perfect sense. That must feel like a deep yearning for a sense of safety and groundedness.\n\nIf you could design a work life that provided maximum predictability, what core quality\u2014like calm, mastery, or connection\u2014would that stability allow you to nurture and experience most fully?"
+    },
+    {
+      "role": "user",
+      "content": "Honestly, I think what I need is just more time. More control over the day-to-day. I don't want to choose a core quality; I just want the hours to expand a bit, if that makes sense. My feet have been aching constantly lately. It's probably just poor circulation, but it's distracting.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the lack of autonomy and the constant feeling of being rushed is manifesting as a deep physical drain, making even simple things like walking feel exhausting. That must feel incredibly frustrating\u2014to know what you need but feel constrained by the clock.\n\nIf you could magically expand your day, what kind of activities or moments would you dedicate yourself to that would restore your sense of control and allow you to breathe?"
+    },
+    {
+      "role": "user",
+      "content": "I suppose... maybe just having a full morning, without any appointments. Just me. Or perhaps a quiet time to sit with my parents while they aren't actively needing anything. That would feel restful. I just wish I knew how to carve out time like that without it making them feel neglected.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are deeply craving moments of restorative peace, both for yourself and for connection with your parents, and the guilt surrounding that need is making it feel impossible to carve out. That must feel like navigating a delicate balance between self-care and responsibility.\n\nIf you were able to dedicate time to yourself or your parents purely for the sake of deep, unhurried connection, what kind of feeling or experience would you most want that time to cultivate?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know. Perhaps just... normalcy. Just being able to sit in the same room, doing nothing, without having to manage schedules or concerns. That's probably the most selfish thing to want, isn't it?",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly draining to feel that the most fundamental need\u2014simply existing in peace\u2014is perceived as selfish, and that internal conflict must be exhausting. That deep desire for effortless, unmanaged presence is a powerful indicator of how much emotional labor you are currently carrying.\n\nIf we set aside the labels of \"selfish\" or \"responsible,\" what does that feeling of effortless, unmanaged presence allow you to genuinely feel about yourself?"
+    },
+    {
+      "role": "user",
+      "content": "I... I don't know how to put it into words. It's almost like feeling okay, I guess. Like I remember what it feels like to not be on guard all the time. It's just... relief, I think. A quiet kind of relief.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the deepest yearning is for a state of quiet safety\u2014a profound, effortless relief from the constant vigilance and emotional performance. That ability to simply *be* without needing to manage or perform is a powerful and deeply human need.\n\nIf \"feeling okay\" and experiencing that quiet relief were core values you wanted to prioritize, what small, achievable commitment could you make this week that would gently move you toward that feeling of safety?"
+    },
+    {
+      "role": "user",
+      "content": "Well... I could maybe start by making sure I take a proper ten-minute walk after dinner, even if I have to ask my husband to look after things briefly. I wouldn't even have to talk to anyone, really.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like identifying that small, manageable boundary\u2014a dedicated ten minutes of quiet time\u2014feels like a significant act of self-respect, and that is a wonderful, achievable step toward that much-needed relief. That commitment to prioritizing your quiet time is a powerful act of self-care.\n\nIf taking that walk isn't just about physical movement, but about establishing a boundary of quiet safety, what does that protected time allow you to affirm about your own inherent worth?"
+    },
+    {
+      "role": "user",
+      "content": "I suppose it allows me to affirm that I am not completely invisible. That even when everything else is demanding, there is still a small part of me that needs to just... exist. It reminds me that I am still here for myself, too.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.4
+      }
+    }
+  ]
+}

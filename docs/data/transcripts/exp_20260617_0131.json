@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0131",
+  "timestamp": "2026-06-17T18:55:53.044764",
+  "strategy": {
+    "name": "Flexible ACT-PCT Values Cascade (FAC-VC)",
+    "hypothesis": "By shifting from a rigid, three-part structural loop to a flexible 'Values Cascade' that prioritizes deep empathic reflection (PCT) before introducing a gentle, open-ended question that connects the immediate feeling to a core life value (ACT), we will increase the perceived depth and relevance of the conversation, thereby maximizing the score above 91.25.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Ethan",
+    "age": 34,
+    "occupation": "Software Project Manager",
+    "presenting_issue": "I'm having trouble shutting off my brain at night, and I feel like I'm constantly running on deficit.",
+    "background_story": "My work has demanded a relentless pace for the last year, and I've been juggling too many high-stakes projects to feel like I'm even keeping up. I feel like I'm always performing for everyone around me, and I've started believing that if I slow down, everything will fall apart. I keep dismissing my own exhaustion because I feel like I *should* be able to handle it.",
+    "personality": "His tone is highly articulate and intelligent, often using corporate jargon or self-deprecating logic to mask his distress. He will interject qualifiers ('maybe,' 'I guess,' 'it's probably nothing') when discussing emotions, making it difficult for the therapist to pinpoint specific feelings.",
+    "baseline_phq9": 14,
+    "archetype_label": "Overwhelmed Professional"
+  },
+  "scores": {
+    "total_score": 69.25,
+    "raw_score": 69.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 54.2/70.0 (VV shift: 0.30, Sym shift: -0.40, DV shift: -0.10) | Brevity Penalty (-15): Therapist turn too long (11 sentences, 115 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Please know that this is a completely safe and non-judgmental space. There is no need to have the answers right now, and you don't need to explain anything perfectly.\n\nSometimes, the feelings we carry\u2014whether they are frustration, confusion, sadness, or even just a deep sense of 'unsettled'\u2014are actually clues. They are pointing us toward something that is important to us, something that might be getting overlooked.\n\nWhenever you are ready, I invite you to share whatever is on your mind. What has been weighing on you lately? What emotions have been most prominent in your day-to-day life?\n\nWe can take it slowly, together. Just start wherever you feel most comfortable. I'm here to listen."
+    },
+    {
+      "role": "user",
+      "content": "A lot of things, I guess. It's mostly just... this feeling of being behind. Like I'm constantly playing catch-up on some invisible metric. Maybe I just need better time management, you know? It's probably just work stress, nothing deep.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that. It takes a lot of honesty to articulate a feeling that is so diffuse\u2014that feeling of being perpetually \"behind.\"\n\nPlease know that what you are describing\u2014this pressure of an \"invisible metric\"\u2014is incredibly common, but that doesn't make it any less draining or stressful when you're experiencing it. It sounds exhausting, like you're running a race where the finish line keeps moving.\n\nAnd it is so natural, when we feel this overwhelmed, to try and categorize it and solve it with a practical fix, like \"better time management.\" It's our brain's way of saying, \"If I just *do* X, then the feeling will go away.\"\n\nBut I wonder if the feeling of being \"behind\" might be carrying something deeper than just a scheduling issue.\n\nWhen you talk about this invisible metric, what do you think that metric represents? Is it success? Is it comparison? Or is it something else entirely?\n\nSometimes, the feeling isn't about the hours we don't have, but about the standards we've set for ourselves\u2014or the standards we feel others have set\u2014and how those standards clash with how we actually feel or what we actually value.\n\nIf we could put aside the logistics of time management for just a moment, what is it that this feeling of 'catching up' is actually connected to?"
+    },
+    {
+      "role": "user",
+      "content": "It... it represents performance, I guess. Like, I need to be doing something measurable, or useful. If I slow down, I feel like I'm failing the system, or worse, failing people. It's just... a default setting, I suppose. I guess I've just gotten really used to the high-stakes environment.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for being so open about that. It takes courage to name something that feels like a \"default setting,\" because it feels so ingrained\u2014like it's part of your operating system.\n\nWhat you've described\u2014that linking your sense of worth to measurable performance\u2014is an incredibly powerful, and often painful, pattern to be caught in. It sounds like you are operating under a massive amount of emotional weight, feeling that if you stop moving, you are not just failing a task, but failing your fundamental value of being *enough*.\n\nThe fear of \"failing the system\" or \"failing people\" is so potent because it touches on our deepest needs for belonging and acceptance. It suggests that your value, your inherent worth, is conditional\u2014that it depends on what you *do*.\n\nIf I may gently ask you to hold this thought with me: If we could imagine a scenario where you were completely unable to perform\u2014if you were forced to slow down, or even stop entirely, for an extended period\u2014what is the absolute worst thing you fear would happen?\n\nIs it the disappointment of others, or is it the disappointment of *yourself*?\n\nSometimes, when we are so focused on external metrics\u2014the grades, the deadlines, the measurable output\u2014we lose touch with our internal metrics. What does it feel like, emotionally, to simply *be* without having to *prove* anything?\n\nIf you could define what it means to be \"useful\" or \"valuable\" in terms of something that *cannot* be measured\u2014something that exists just in your presence\u2014what would that be?"
+    },
+    {
+      "role": "user",
+      "content": "I\u2026 I guess the worst thing is just that I don't know who I would be without the job, or the constant pressure. I don't have a clear replacement value, or anything. It just feels like I'd lose my structure, maybe.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that vulnerability. That is a profoundly difficult and frightening place to be. It sounds like the job, and the performance within it, has become not just a *source* of income, but a primary pillar of your entire sense of self and stability. When that pillar is questioned, it feels like the ground beneath your feet is dissolving.\n\nPlease allow me to acknowledge how massive that fear is. Losing the structure you rely on\u2014that sense of knowing what comes next, and that your efforts have a clear purpose\u2014is a form of grief. It's a grief for a potential future that feels suddenly undefined.\n\nWhat we are touching on here is the difference between **Structure** and **Self-Worth**. Right now, your structure feels dependent on external validation\u2014the metrics of the job.\n\nBut I wonder if the structure you are seeking might not be found in a title or a paycheck, but in the *act* of doing something.\n\nWhen you think about the times in your life\u2014even outside of work\u2014when you felt most grounded, most \"structured,\" or most like *yourself*?\n\nIt doesn't have to be a big life event. It could be something small. Maybe it\u2019s the ritual of making coffee in the morning. Maybe it\u2019s the time you spend with a specific friend. Maybe it\u2019s the feeling you get when you are immersed in a book or a creative project.\n\nWhat are the things you do, or the people you connect with, that give you a sense of rhythm, predictability, or pure, unmeasurable *flow*?\n\nLet's try to build a picture of who you are, not by looking at your job description, but by looking at the moments when you feel most authentically present."
+    },
+    {
+      "role": "user",
+      "content": "Sometimes, I guess, when I'm just gaming with friends. Or when I'm working on personal coding projects, nothing related to work. It's just... a different kind of flow. It doesn't feel like I'm being graded on it, which is weirdly calming.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That is such a beautiful, insightful contrast. Thank you for sharing that.\n\nWhat you have described\u2014gaming with friends, coding for personal interest\u2014these are not just hobbies; they are laboratories for your true self. They are places where you get to experience what I would call **Intrinsic Motivation**.\n\nIn your professional life, the goal is often **Extrinsic Motivation**: *I must do this because if I don't, I will face consequences (failure, disappointment).*\n\nIn your personal life, the goal is simply **Flow**: *I am doing this because I am curious, because I enjoy the process, or because I am connecting with someone I care about.*\n\nAnd the most telling part is that feeling of \"not being graded on it.\" That feeling is the sound of your nervous system finally relaxing. It is the sound of your inherent worth speaking up and saying, \"I am enough, even when I am just playing, or just creating, and no one is watching.\"\n\nIt seems that what you truly value, beneath the layers of performance pressure, is **Autonomy** (the freedom to choose your effort) and **Curiosity** (the joy of learning for its own sake).\n\nWhen you are coding a personal project, you aren't doing it to get a raise or to prove you're smart; you are doing it because you are *curious* about what happens next. When you are gaming with friends, you aren't doing it to win a championship; you are doing it because you are *connected* to them.\n\nThese moments are showing you who you are when the performance curtain is lowered.\n\nIf we look at these personal activities\u2014the flow, the connection, the curiosity\u2014what do they teach you about what you *need* to feel stable, regardless of what your job requires?\n\nIf you could somehow weave the *feeling* of that \"no grading\" calm into your professional life, even just one small part of it, what might that look like? It wouldn't be about changing your job, but about changing the *rules* of engagement with it."
+    },
+    {
+      "role": "user",
+      "content": "It would look like having designated blocks of time where I'm allowed to just explore something, without a clear deliverable or stakeholder expectation. Like, just tinkering. Or maybe having a space where the goal is just figuring out how to make something *work*, rather than making it *successful*.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That is such a profound and powerful articulation. You have given us a blueprint for what true professional well-being looks like for you.\n\nWhat you are describing is a need for a **Culture of Experimentation**, not a Culture of Perfection. You are asking for permission to be a learner, rather than just a producer.\n\nWhen you use the word \"tinkering,\" it carries so much meaning. It suggests play, curiosity, and the joy of the *process* itself. It means that the value is in the *figuring out*, and that is a massive shift away from the pressure of the *deliverable*.\n\nThis isn't just a request for better time management; it is a request for a **restructuring of expectation**. You are asking your environment to value the journey as much as the destination.\n\nAnd this insight, this understanding of what you truly need\u2014a space where \"making it work\" is the goal\u2014is incredibly valuable, because it is *yours*. It belongs to your core values: **Curiosity** and **Process**.\n\nNow, I want to leave you with a gentle thought, because asking for this kind of systemic change in a workplace is emotionally draining. It requires courage, and it requires you to advocate for your own deepest needs.\n\nSince you can't control the structure of your job or the expectations of your stakeholders right now, perhaps we can focus on creating small, internal \"tinkering blocks\" for yourself.\n\nEven if it's just 15 minutes at the end of a tough day, could you designate a small time period where you consciously tell yourself: \"For these 15 minutes, I am not allowed to be successful. I am only allowed to be curious. I am only allowed to make something messily *work*\"?\n\nWhat does that commitment to self-permission feel like? Does it feel like a small act of rebellion, or does it feel like a deep breath?"
+    },
+    {
+      "role": "user",
+      "content": "A deep breath, I guess. Like... a small rebellion, but a necessary one. Maybe I can actually try that. Just 15 minutes. I don't know if it will stick, though. I guess I'm pretty good at slipping back into the 'deliverable' mindset.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Please hear this: The fact that you are worried about slipping back into the old pattern is not a sign of failure; it is a sign of **deep self-awareness**. It means you recognize the pattern, and that recognition is the hardest, most powerful step in the entire process.\n\nWhat you are describing\u2014the tendency to revert to the \"deliverable\" mindset\u2014is not a flaw in your character. It is a deeply ingrained habit. It\u2019s like an old, reliable muscle memory. It feels safe, even if it is exhausting. It's the path of least resistance, and our brains are experts at taking the path of least resistance.\n\nAnd that's why we don't aim for perfection. We don't aim for a sudden, flawless shift.\n\nInstead, let's reframe the goal. The goal for these 15 minutes is not to *maintain* the flow, and it's not to *never* slip up.\n\nThe goal is simply to **notice it**.\n\nWhen you feel the familiar pull\u2014when the internal voice starts whispering, \"But what is the *deliverable*?\"\u2014the act of simply noticing that voice, and gently naming it (\"Ah, there is the 'deliverable' voice again\"), is the rebellion itself. It's a moment of self-compassion.\n\nYou are not fighting a battle against yourself; you are simply learning to observe your own mind with kindness.\n\nThis journey of defining your worth outside of performance is a marathon, not a sprint. Be patient with yourself. If you have a day where you feel completely pulled back into the metric, that is okay. You just acknowledge it, and you start again the next day.\n\nYou have identified something profoundly important about yourself: that your value comes from your curiosity and your ability to simply *be* in a state of flow. That is a beautiful, powerful, and necessary truth.\n\nThank you for sharing this with me. You have done some incredibly deep work today. Please be gentle with yourself as you begin to practice this new space for yourself. I am here whenever you need to talk about it again."
+    },
+    {
+      "role": "user",
+      "content": "Thanks. I guess I will try to remember that. It feels... less heavy today, actually. Maybe I can actually manage it.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.6
+      }
+    }
+  ]
+}

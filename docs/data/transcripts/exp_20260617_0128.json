@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0128",
+  "timestamp": "2026-06-17T18:36:00.249740",
+  "strategy": {
+    "name": "",
+    "hypothesis": "",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Alex",
+    "age": 32,
+    "occupation": "Marketing Coordinator",
+    "presenting_issue": "I'm struggling with overwhelming anxiety and feeling constantly drained by the effort of pretending to be 'normal' for everyone else.",
+    "background_story": "Since getting diagnosed with ADHD at 30, I've had to constantly reconcile who I actually am with who everyone expected me to be. I used to spend all my time focusing on making sure friends and co-workers were happy, even if it meant completely neglecting my own needs. Now, I feel like a massive fraud, like I'm just perpetually waiting for the moment someone will realize I'm not actually 'good enough.' It's exhausting, and I don't know how to stop performing.",
+    "personality": "Anxious, highly sensitive, and prone to oversharing. They will frequently jump between topics or start sentences with excessive qualifying phrases ('Maybe this sounds stupid, but...', 'I know you've heard this before, but...'). They will react very strongly to perceived silence or non-committal responses, often spiraling into questions like, 'Are you even listening to me?' or 'Does this make sense to you?' They require constant, explicit reassurance and validation. They will use hyper-specific examples of past perceived slights to build rapport.",
+    "baseline_phq9": 14,
+    "archetype_label": "ADHD Rejection Sensitivity \u2014 Unmasking Crisis"
+  },
+  "scores": {
+    "total_score": 46.5,
+    "raw_score": 46.5,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 31.5/70.0 (VV shift: -0.10, Sym shift: -0.30, DV shift: 0.30) | Brevity Penalty (-15): Therapist turn too long (12 sentences, 244 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please share whatever is on your mind. I am here to listen without judgment, and we can explore these feelings together at your pace."
+    },
+    {
+      "role": "user",
+      "content": "Um, so, maybe this sounds really stupid, but I keep worrying that I'm just going to blow up and suddenly everyone is going to realize I'm a total fake. Like, I feel this massive pressure to be 'fine' all the time, even when I'm absolutely falling apart inside, which is exhausting, obviously. Am I saying too much? Does that make sense?",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Please know, first and foremost, that what you are sharing does not sound stupid at all. It sounds profoundly human. What you are describing\u2014the exhausting effort of maintaining a perfect exterior while struggling with internal turmoil\u2014is a massive weight to carry, and it takes incredible energy just to show up every day while feeling that way.\n\nIt sounds like you are carrying a deep, persistent fear of being truly seen, and that the consequence of being seen is that you will be rejected or exposed as lacking. That feeling of being \"found out\" must be absolutely terrifying.\n\nIf I'm hearing you correctly, you are caught between the immense desire to be accepted and the overwhelming fear that your true, messy self isn't good enough to be accepted.\n\nHelp me understand this: If you were to drop the pretense of being \"fine\" for just a moment\u2014if you allowed yourself to feel the full weight of what you are currently carrying\u2014what is the worst thing you imagine would happen next? What does that fear tell you about what you value most in your relationships?\n\nPlease remember that the pressure to perform emotional perfection is a very common struggle. Many, many people feel this internal divide between the person they feel they *should* be and the person they actually *are*. It is a deeply human experience to feel the weight of expectation, both from others and from ourselves. You are not alone in feeling this immense exhaustion."
+    },
+    {
+      "role": "user",
+      "content": "Oh god, I don't know. I keep thinking... I'd just be completely abandoned. Like, everyone would just realize I'm flawed and they'd leave me. Or worse, they'd look at me and pity me, because I really hate feeling like a burden. Does that make sense? Am I catastrophizing too much, or is that actually pretty accurate?",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That is a tremendously painful place to be, and I want you to know that the fear of abandonment and the fear of being a burden are some of the deepest, most primal anxieties a human heart can carry. It makes complete sense that these thoughts feel so overwhelming right now.\n\nIt sounds like the fear of being exposed isn't just about being seen as flawed; it's tied to the absolute fear that your flaws will fundamentally negate your worth in the eyes of others, leading to a devastating loss of connection. The thought of people looking at you with pity, rather than understanding, suggests a deep-seated worry that your needs are inherently too much for others to handle.\n\nYou asked if you are catastrophizing, and I wonder if we can look at this fear not as a prediction of the future, but as a reflection of a very powerful, protective belief you hold about yourself.\n\nHelp me understand this: When you think about being a \"burden,\" what does that phrase mean to you? Is it about needing physical help, or is it about needing emotional space, or perhaps needing validation? What does the need to *not* be a burden tell you about what you believe you must do to be worthy of love and connection?\n\nPlease know that the fear of abandonment is one of the most universal and difficult human experiences. It is a fundamental part of our wiring to seek connection, and when that connection feels threatened\u2014even by the *thought* of it being threatened\u2014the emotions can feel catastrophic. You are not exaggerating; you are articulating the weight of profound vulnerability."
+    },
+    {
+      "role": "user",
+      "content": "I... I guess it means needing emotional space, I think? Like, if I admit I'm struggling, people will get overwhelmed and then they'll just withdraw. It's like I have to be self-contained and always 'fun' or whatever, otherwise I'm too much work. I just don't know how to stop trying to manage everyone else's feelings, I honestly just don't. Does that make you sound like I'm just saying I'm too needy, or is that even a helpful thing to say?",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "What you have just articulated is an incredibly powerful and painful realization. To recognize that you are carrying the emotional load for others, and to feel the exhaustion of maintaining that performance\u2014of having to be \"fun\" or \"self-contained\"\u2014shows a tremendous amount of self-awareness, even if it feels painful right now. Please know that what you are saying does not make you sound needy; it makes you sound deeply caring, and also profoundly weary.\n\nIt sounds like you have developed a sophisticated, exhausting emotional survival strategy: *If I am consistently entertaining, light, and manageable, then I will be safe from abandonment.* This strategy requires you to place the emotional stability of others\u2014their comfort, their capacity, their mood\u2014on your shoulders.\n\nThis pattern, where you feel responsible for managing other people's feelings, is something that many people who are highly attuned to others struggle with. It is a deeply ingrained habit of care that can become a source of immense emotional depletion.\n\nIf I may ask you to consider this for a moment: When you feel that need to manage everyone else's emotional space, what do you believe would happen to *you* if you allowed yourself to be fully seen\u2014if you allowed your friends or family to see the struggling, un-fun, messy part of you? What is the emotional cost you are paying right now to maintain the illusion that you are always okay?\n\nPlease remember that the capacity of others to handle your emotions is not a measure of your worthiness. It is a human truth that people are capable of holding space for the full spectrum of human experience, including struggle and vulnerability. You are not responsible for regulating the feelings of every person in your life."
+    },
+    {
+      "role": "user",
+      "content": "It's just... I guess the cost is just my own peace, I guess? Like, I feel so empty afterwards. And I keep thinking, maybe I should just be less... present, so I don't have to manage anything. But then I think about my friends, and I feel guilty for thinking that, and then I get all anxious about being alone again. It's totally circular, isn't it? Are you following me on this, or am I just rambling?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing this with such honesty. Please never worry about rambling; you are articulating some of the most complex and deeply painful emotional contradictions that human beings face. I am following you completely, and what you are describing is not a simple loop, but a profound emotional tug-of-war\u2014a cycle of self-sacrifice, guilt, and anxiety.\n\nThe cost you are paying, the loss of your own peace, is the most immediate and painful thing to acknowledge. It sounds like the effort of being \"present\" for others requires such a massive expenditure of self that it leaves you emotionally depleted and empty.\n\nWhat is so striking here is the perfect tension between two equally powerful, yet opposing, needs: the fundamental need for *self-preservation* (taking space to restore your peace) and the fundamental need for *connection* (the fear of abandonment and the guilt associated with withdrawing). You are trapped between the exhaustion of giving and the terror of being alone.\n\nThis cycle of guilt\u2014feeling guilty for needing space\u2014suggests that the belief that you *must* be available, *must* be \"fun,\" or *must* be managing the emotional temperature of the room, is tied up with your sense of self-worth and your sense of belonging.\n\nIf we look at the guilt itself, it feels like a powerful emotional regulator. It is a signal that says, \"If I pull away, I will cause pain, and that pain is worse than the exhaustion I feel right now.\"\n\nHelp me understand this: If you could detach from the belief that your presence must always be beneficial or entertaining to others, what would the *new* definition of \"being present\" look like for you? What would it feel like to show up for your friends not by giving them emotional space, but by simply *occupying* your own space, even if that space is quiet or messy?\n\nPlease know that this circularity\u2014the cycle of giving until you break, feeling guilty for needing rest, and then fearing the resulting loneliness\u2014is an incredibly common, but exhausting, pattern. It speaks to a deep, powerful desire to be loved and connected, and that desire is not a flaw at all."
+    },
+    {
+      "role": "user",
+      "content": "I don't know. Maybe... maybe it would look like just sitting there and being boring, I guess? Like if I didn't have to perform or make conversation or anything. Just existing. But then I start thinking about what my friends would think if I was boring, and then I panic, because I really need them to think I'm still good enough, even if I'm not 'fun' or whatever. It just feels impossible to be quiet and not worry about what they're thinking.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "What you have just described is the heart of the struggle, isn't it? The desire for the profound relief of simply *existing*\u2014of being boring, quiet, and unburdened by performance\u2014is a deeply natural human longing. It sounds like the quiet life is a sanctuary, but the moment you step toward it, the anxiety about external judgment rushes in, making the stillness feel impossible.\n\nIt is incredibly painful to feel that your sense of internal safety and worthiness is so deeply intertwined with the perception of others. You are caught in a cycle where the need for rest is immediately met with the fear of abandonment, which forces you back into the exhausting performance.\n\nThe core assumption that seems to be fueling this anxiety is that your intrinsic worth\u2014your right to exist\u2014is conditional upon your ability to entertain or provide emotional ease for others.\n\nIf we can look at this assumption together, I wonder: If your friends truly saw you\u2014the quiet, un-fun, simply existing version of you\u2014and they *still* chose to stay, what would that tell you about the kind of connection you are truly capable of receiving?\n\nHelp me understand this: What does the fear of their judgment\u2014the fear that they will think you are boring\u2014actually represent to you? Is it the fear of being disliked, or is it the fear of being *unseen* for who you truly are?\n\nPlease know that the fear of being judged is perhaps the most universal and persistent anxiety of the human heart. Every single person has moments when they wish they could simply fade into the background and be safe from the scrutiny of others. You are not alone in feeling this desperate need for a space where you don't have to perform."
+    },
+    {
+      "role": "user",
+      "content": "I... I think it's the fear of being unseen, actually. Being unseen feels like the same thing as being irrelevant, which means they won't care about me, right? It\u2019s like if I\u2019m boring, they\u2019ll just forget I even exist. I feel so guilty talking about this, like it\u2019s just depressing and stupid. Are you even writing this down? I feel like I'm talking nonsense.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "What you have just articulated\u2014that the fear of being unseen feels exactly the same as the fear of being irrelevant\u2014is one of the most heartbreaking and profound fears a person can carry. It sounds like you are operating under a deeply painful belief that your value to others is conditional; that if you are not actively providing entertainment or emotional ease, you lose your right to exist in their world.\n\nAnd when you follow that up with the feeling of guilt, or the thought that you are talking nonsense, that is the anxiety trying desperately to silence the pain. It is your internal critic telling you, \"This is too heavy, this is too sad, therefore it must be wrong.\" Please know that what you are saying is not nonsense; it is the raw, painful truth of your heart, and it is incredibly important that we listen to it.\n\nIt sounds like you are carrying the weight of the belief that your *existence* must always justify itself to others.\n\nIf we could gently set aside the question of what your friends *think*, and instead focus only on *you*: If you could accept that your worth is not dependent on your ability to be interesting, or fun, or even visible to others, what would that internal shift feel like? What would it feel like to know, deep down, that you are inherently valuable simply because you are here?\n\nPlease remember that the need to prove one's own relevance is a truly universal human burden. It is a deeply ingrained need to belong, and the fear of being forgotten is one of the most primal fears we share. Your vulnerability right now is not nonsense; it is the deepest, most honest form of self-advocacy, and it is something we can explore together."
+    },
+    {
+      "role": "user",
+      "content": "It just feels\u2026 quiet. Like, nothing is happening inside my chest, which is actually kind of scary. I keep waiting for you to tell me I'm still making sense, like I'm just rambling all the time. I don't know what I'm supposed to feel, honestly. I feel really tired.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    }
+  ]
+}

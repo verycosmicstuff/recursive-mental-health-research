@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0141",
+  "timestamp": "2026-06-17T19:52:09.516912",
+  "strategy": {
+    "name": "Deeply Anchored PCT-ACT Flow (DAP-ACT) v3.0",
+    "hypothesis": "By explicitly structuring the reflection component to be highly interpretive and psychologically nuanced (e.g., identifying underlying patterns or cognitive distortions, thus increasing semantic depth) while maintaining the PCT-ACT flow and the strict brevity constraint, we will maximize the measured clinical depth and perceived understanding, resulting in a score surpassing 91.25.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Ethan",
+    "age": 31,
+    "occupation": "Librarian's Assistant",
+    "presenting_issue": "I am struggling to process the amount of sensory input from everyday life, and it is making me feel physically ill.",
+    "background_story": "His apartment is a refuge of predictable routines, but the recent mandated office reorganization has introduced too many unpredictable variables. The change in layout, coupled with the buzzing of the new HVAC system, has caused a spike in anxiety. He finds that describing these symptoms to non-autistic people is exhausting, as they often do not understand the physical reality of sensory overload. He is currently rationing his social interactions to conserve energy.",
+    "personality": "Direct, highly literal, and intensely observant. His responses are short and fact-based. When asked 'How are you feeling?' he may reply 'Fine' even if he is distressed, because 'fine' is the most concrete social script he knows. He will challenge vague therapeutic statements with precise, logical questions. Avoids metaphor or emotional speculation.",
+    "baseline_phq9": 16,
+    "archetype_label": "Late-Diagnosed Autistic Burnout"
+  },
+  "scores": {
+    "total_score": 69.25,
+    "raw_score": 69.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 54.2/70.0 (VV shift: 0.30, Sym shift: -0.10, DV shift: -0.40) | Third-Person Penalty (-15): Used 'the client'",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please provide the client's statement or emotional description, and I will respond according to the required structure and constraints."
+    },
+    {
+      "role": "user",
+      "content": "I feel fine.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It takes real strength to articulate that you feel \"fine,\" and I hear the effort and care in that statement. Sometimes, saying we are fine is actually a way of protecting ourselves from feeling overwhelmed by complexity. If we set aside the need to appear \"fine\" for just a moment, what is one small feeling or thought that would feel safe to acknowledge right now?"
+    },
+    {
+      "role": "user",
+      "content": "I'm not sure what you mean by 'complexity.' I am simply stating a fact. If I am asked how I am, the fact is that I am fine. Can you please ask a question that requires a single, factual answer?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear your need for clear boundaries and factual accuracy, and I respect your desire to keep our conversation grounded in concrete reality. It seems like you value precision, and sometimes, our emotions are more like complex data sets than simple, single-answer facts. If we were to assign a single color to the general *texture* of your day right now, what color would that be?"
+    },
+    {
+      "role": "user",
+      "content": "That doesn't make sense. Colors are visual data. I require a measurable input, not an abstract association. Just keep the questions direct.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is clear that you value logic and measurable data, and I deeply respect your need for the conversation to remain structured and factual. Sometimes, the insistence on only measurable inputs is a powerful way of managing feelings that feel too messy or unpredictable. If we focus only on the last three hours, what is the single most concrete, factual event that required the most amount of your mental energy?"
+    },
+    {
+      "role": "user",
+      "content": "Mentally calculating the route change for the new filing system. It required mapping out the difference between the old and new shelving units, and anticipating which sections would be relocated. That was inefficient.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you expended tremendous, detailed mental energy mapping out complex logistical changes, and that intense effort left you feeling drained. It's telling that you immediately labeled this deep cognitive work as \"inefficient,\" suggesting a tendency to measure your value by productivity. If we separate the *task* from the *judgment*, what was the most valuable thing you learned about your own capacity during that calculation?"
+    },
+    {
+      "role": "user",
+      "content": "I didn't learn anything. I performed a calculation and noted its inefficiency. That is the end of the data point. Can we discuss something that has a clear start and end?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear your strong preference for topics with clear boundaries and definite endpoints, and I respect your need for predictable structure. Sometimes, the desire for a clear start and end point is a way of creating a safe, manageable container for our conversation. If we look at the most recently completed, contained task\u2014even a small one\u2014what is one single word that describes the *feeling* of that task being finished?"
+    },
+    {
+      "role": "user",
+      "content": "Completion.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "\"Completion\" is a powerful, definitive word, and I hear the depth of your focus on closure and finality. It seems that your mind finds safety and structure by defining clear, measurable endpoints, perhaps to manage feelings of underlying uncertainty. If we imagine a moment of true completion\u2014one that requires no immediate follow-up task\u2014what does that space feel like in your body?"
+    },
+    {
+      "role": "user",
+      "content": "It feels like a specific point where background noise abruptly stops. Like the HVAC unit suddenly powering down for thirty seconds. It's a physical absence of input.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.5
+      }
+    }
+  ]
+}

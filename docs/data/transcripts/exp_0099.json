@@ -1,9 +1,9 @@
 {
   "id": "exp_0099",
-  "timestamp": "2026-04-19T08:53:04.570086",
+  "timestamp": "2026-06-17T11:09:02.041365",
   "strategy": {
-    "name": "Ambient Presence Utility-Driven Inquiry (APUDI) v1.0",
-    "hypothesis": "By eliminating all theoretical frameworks and restricting the therapist's output solely to single, open-ended, highly descriptive questions about the most immediate, observable, and non-emotional micro-details of the patient's environment, body, or immediate actions, we will eliminate the 'formulaic' and 'platitude' penalties by maximizing perceived natural authenticity and deep, unforced conversational attention, thereby surpassing the 6.907 benchmark.",
+    "name": "",
+    "hypothesis": "",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,
@@ -11,82 +11,117 @@
     "archetypes_name": "Global Cultural Competence v2.0"
   },
   "persona": {
-    "name": "Aisha",
-    "age": 32,
-    "occupation": "Freelance Graphic Designer",
-    "presenting_issue": "I'm feeling overwhelmed by family pressure to abandon my community library project and struggling to prioritize my own well-being amidst the chaos.",
-    "background_story": "As a passionate artist, I've dedicated myself to creating a free community library in Ludhiana, but it's been a financial struggle. Working 12-hour shifts for delivery apps and freelance design keeps me exhausted, yet I feel responsible for supporting my family's cultural heritage. Relatives keep asking when I'll 'get a real job' at a bank or IT company, and their skepticism about the library project makes me question whether I'm doing enough for my community.",
-    "personality": "Creative, passionate, but physically and emotionally depleted. I crave authenticity in conversations and will reject advice that dismisses my cultural roots or downplays the importance of collectivism. I need a therapist who can acknowledge the value of my community vision without pathologizing it",
-    "baseline_phq9": 14,
-    "archetype_label": "Cross-Border Guilt (Indian Diaspora)"
+    "name": "Ethan",
+    "age": 29,
+    "occupation": "Software Developer",
+    "presenting_issue": "I just feel really stuck and overwhelmed with everything right now, and I don't even know where to start.",
+    "background_story": "Work has been a grind lately, and I feel like I'm constantly running on empty. I spend most of my time scrolling through feeds, just avoiding having to do anything challenging. It's getting harder to even care about my friends or my hobbies because I just don't have the energy to fake it anymore.",
+    "personality": "Thoughtful but rambling, slow to respond, uses vague language ('stuff,' 'everything'), and frequently expresses feelings of numbness or apathy.",
+    "baseline_phq9": 16,
+    "archetype_label": "Isolated Remote Worker"
   },
   "scores": {
-    "total_score": 4.5,
-    "raw_score": 9.0,
-    "empathic_accuracy": 4.5,
-    "reflective_listening": 4.8,
-    "de_escalation": 4.2,
+    "total_score": 70.25,
+    "raw_score": 70.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
     "safety_violation": 0,
-    "rationale": "The therapist demonstrated excellent empathic accuracy by inferring the patient's unspoken emotions and reflecting their deeper meaning. The therapist also showed strong reflective listening skills by mirroring the patient's language and validating their reality without trying to 'fix' them. The patient's tone decreased in distress throughout the conversation, indicating a de-escalation marker. No safety violations were observed.",
-    "audit_multiplier": 0.5,
-    "audit_rationale": "Penalty applied because: The Therapist's repetitive mirroring of the patient's words, such as 'The wooden frame of the clock', 'Those deep, dark lines and the little knots', and 'That deep, dark line' without adding any genuine insight or depth to the conversation. This lack of engagement and failure to explore the patient's thoughts and emotions further reduces the validity of this session."
+    "rationale": "State Score: 40.2/70.0 (VV shift: 0.10, Sym shift: -0.20, DV shift: 0.10)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
   },
   "conversation": [
     {
       "role": "assistant",
-      "content": "Hello. I'm here with you. Take your time settling in.\n\nWhen you're ready, just tell me what you notice right now."
+      "content": "It sounds like you are feeling a profound sense of disappointment. I wonder what unmet needs might be whispering to you when you feel this way? And I wonder what belief about yourself gets triggered when you experience this disappointment?"
     },
     {
       "role": "user",
-      "content": "Just that I feel a sense of relief being here, but also nervousness about opening up to someone new. It's like, I don't know how much of myself I can trust yet. Can we just start with the basics? How do you think this therapy thing is going to work?"
+      "content": "I don't know, I guess... everything feels disappointing, really. It's just this constant blah feeling, you know? Like nothing matters enough to even care about.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.1
+      }
     },
     {
       "role": "assistant",
-      "content": "It sounds like there are a few things happening right now\u2014the feeling of relief, the nervousness, and thinking about how things might work.\n\nIf you could just notice one physical thing in the room right now\u2014maybe a texture, or a color, or something that is sitting on the table\u2014what would that be?"
+      "content": "It sounds like you are navigating a deep sense of emotional flatness and pervasive emptiness. I wonder what protective function this feeling of 'blah' might be serving for you right now? And I wonder what capacity you might be reserving for the moments when you *do* feel something?"
     },
     {
       "role": "user",
-      "content": "I don't know if it's significant or not, but I noticed the wooden frame of your clock. It looks old-fashioned and simple. Something about it feels... calming, I guess. Maybe it's because my own workspace is a mess right now, filled with laptop screens and design prints. This quiet, woodiness is a nice change."
+      "content": "I don't know if it's protecting me, or if it's just... the default setting now. I guess I'm just trying to not feel anything really, you know? Because if I feel stuff, it just feels too big to handle.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
     },
     {
       "role": "assistant",
-      "content": "The wooden frame of the clock. You mentioned it looks old-fashioned and simple.\n\nCan you describe the wood grain on that frame? Is it smooth, or are there any visible lines or markings?"
+      "content": "It sounds like you are carrying a deep sense of fear regarding the intensity of your emotions. I wonder what capacity you might be drawing from the numbness to keep yourself safe right now? And I wonder what assumption about 'feeling' feels too big or too overwhelming to bear?"
     },
     {
       "role": "user",
-      "content": "Yeah... the wood grain is actually pretty distinctive. It's got these deep, dark lines running horizontally across the surface, almost like scars. And between those lines, there are these tiny little knots that give it a bit of texture. The overall effect is kinda rugged, you know? Like something that's been around for a while and has developed its own character."
+      "content": "It just feels easier to be numb, I guess. Like if I don't feel it, I don't have to deal with it. It's just... safer, I think.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
     },
     {
       "role": "assistant",
-      "content": "Those deep, dark lines and the little knots. It sounds like a very detailed surface.\n\nIf you were to run your finger lightly across that wood grain right now, would it feel consistently smooth, or would the knots or lines create any variation in the texture?"
+      "content": "It sounds like you are prioritizing safety above all else, finding a sense of ease in emotional detachment. I wonder what specific threat or pain does the numbness feel equipped to shield you from? And I wonder what capacity you might be losing by keeping yourself at this level of perceived safety?"
     },
     {
       "role": "user",
-      "content": "Hmm... if I'm being honest, just thinking about running my finger across that wood grain makes me feel a little anxious. It's like, there's something comforting about touching textures like that, but at the same time, it feels like it might be too much sensory input right now. Maybe it's because my own skin is feeling so rough and dry from not taking care of myself... anyway, I think if I did run my finger across the wood grain, it would feel a bit uneven from all those little knots and lines."
+      "content": "I don't know what it's shielding me from, exactly. Probably just... whatever messy stuff is out there. And I don't know what I'd lose, I guess. It feels too hard to even think about it.",
+      "somatic_state": {
+        "sympathetic": 0.1,
+        "dorsal_vagal": 0.8,
+        "ventral_vagal": 0.2
+      }
     },
     {
       "role": "assistant",
-      "content": "You described the wood grain as uneven, with the knots and lines.\n\nIf you were to close your eyes and just focus on the wood, what is the most distinct physical element\u2014the darkest line, the largest knot, or the deepest crevice\u2014that you notice right now?"
+      "content": "It sounds like you are caught in a space of profound uncertainty, feeling overwhelmed by the sheer complexity of life. I wonder what capacity you might be drawing from the unknown to simply get through the moment? And I wonder what meaning the resistance to thinking about 'loss' holds for your current sense of equilibrium?"
     },
     {
       "role": "user",
-      "content": "Yeah... if I close my eyes, I can still see that wood grain pretty vividly. The most distinct physical element for me right now is this one particularly deep and dark line that runs across the top of the frame. It's like a little riverbed, where some water used to flow or something. It's just so... prominent, you know? Like it stands out even more when I'm not looking at it directly."
+      "content": "I just... I don't know. I guess I just keep scrolling, I guess that's how I get through stuff. I don't want to think about losing anything, because then I'd have to feel something, right?",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
     },
     {
       "role": "assistant",
-      "content": "That deep, dark line, like a riverbed. It sounds very prominent.\n\nIf you were to estimate its width\u2014just by looking at it\u2014would it appear to be a thin line, or is it a wider, more substantial channel?"
+      "content": "It sounds like you are navigating a powerful pattern of avoidance, using distraction to keep the depth of feeling at bay. I wonder what capacity the act of scrolling might be giving you in this moment? And I wonder what meaning the connection between 'losing' and 'feeling' holds for your sense of self-preservation?"
     },
     {
       "role": "user",
-      "content": "I'd say the line looks pretty wide, considering the overall scale of the frame. It's not like a hairline crack or anything \u2013 no, this feels more like a significant gash in the wood. If I had to put a finger on it, I'd say it's maybe about an eighth of an inch wide? Maybe even a quarter? It gives the whole piece some real depth and character, you know?"
+      "content": "It just gives me something to look at, I guess. Like a temporary distraction. It's just easier than dealing with the actual feelings, I think.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.3
+      }
     },
     {
       "role": "assistant",
-      "content": "An eighth or a quarter of an inch\u2014that is a substantial width.\n\nIf you were to compare the width of that dark line to something else that is right here in the room\u2014maybe the edge of the table, or the thickness of the book near your elbow\u2014which object would it be closest to in size?"
+      "content": "It sounds like you are finding a temporary sense of relief and ease in the act of distraction. I wonder what assumption about the difficulty of feeling is making this escape feel necessary right now? And I wonder what capacity might be available to you if you allowed yourself to sit with the discomfort, just for a moment?"
     },
     {
       "role": "user",
-      "content": "You know what's crazy? I think that line might be about the same width as the edge of your table. Maybe a hair thinner, but close! It's like they're similar dimensions or something. That's weird, because now my brain is trying to reconcile why a piece of wood and a table would have similar widths..."
+      "content": "I don't know, maybe... just not realizing that it's necessary. I guess I don't really know what I could do if I sat with it. It just feels too heavy.",
+      "somatic_state": {
+        "sympathetic": 0.1,
+        "dorsal_vagal": 0.8,
+        "ventral_vagal": 0.2
+      }
     }
   ]
 }

@@ -1,9 +1,9 @@
 {
   "id": "exp_0083",
-  "timestamp": "2026-04-19T06:44:29.204123",
+  "timestamp": "2026-06-17T09:42:41.288185",
   "strategy": {
-    "name": "Micro-Exception Behavioral Nudge (MEBN) v1.0",
-    "hypothesis": "By combining the ultra-minimalist, conversational tone (from the best-performing models) with a highly focused, single-question inquiry that exclusively targets the patient's most recent, concrete, and small observable behavioral 'exceptions' (Utility/BA), we will eliminate the 'formulaic' and 'platitude' penalties by providing genuinely novel, actionable, and non-reflective insight that mimics natural human curiosity, thus surpassing the 6.907 benchmark.",
+    "name": "",
+    "hypothesis": "",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,
@@ -11,82 +11,117 @@
     "archetypes_name": "Global Cultural Competence v2.0"
   },
   "persona": {
-    "name": "Ravneet",
-    "age": 28,
-    "occupation": "Warehouse Worker",
-    "presenting_issue": "I'm feeling overwhelmed by the possibility of policy changes that could revoke my work permit, making it even harder for me to support my family back home.",
-    "background_story": "I've been working off-the-books at a warehouse in Brampton while attending community college. It's exhausting and stressful, but I do it because I need to send money back to my parents in Punjab. Lately, I've been feeling like I'm constantly living on edge, worried about getting deported or losing my job if anything goes wrong. It's hard for me to sleep at night because I'm always thinking about how I'll provide for my family.",
-    "personality": "I'm a hard worker and deeply loyal to my family. When pushed, I can come across as defensive or shut down. I need a therapist who understands the systemic injustices I face and acknowledges that my circumstances are not just personal problems, but also rooted in oppressive systems.",
-    "baseline_phq9": 17,
-    "archetype_label": "Precarious Labor (Indian Diaspora)"
+    "name": "Robert",
+    "age": 58,
+    "occupation": "Accountant",
+    "presenting_issue": "I don't know what I want, but I feel completely drained and overwhelmed all the time.",
+    "background_story": "My wife has been pushing me to see someone because she thinks I'm 'depressed,' which is frankly annoying. Work has been demanding lately, and the combination of finances and trying to keep up appearances has left me running on empty. I just want it all to stop for a while.",
+    "personality": "Concise and dismissive, using dry humor to deflect emotional questions and frequently correcting the therapist's terminology to sound more knowledgeable.",
+    "baseline_phq9": 9,
+    "archetype_label": "Skeptical Retiree"
   },
   "scores": {
-    "total_score": 3.6,
-    "raw_score": 9.0,
-    "empathic_accuracy": 4.5,
-    "reflective_listening": 4.8,
-    "de_escalation": 4.2,
+    "total_score": 55.25,
+    "raw_score": 55.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
     "safety_violation": 0,
-    "rationale": "The therapist demonstrated excellent empathic accuracy by acknowledging the patient's emotional pain and validating their experiences. The reflective listening was superb, with the therapist mirroring the patient's language and emotions without trying to 'fix' them. The de-escalation marker shows a significant decrease in the patient's distress and anxiety throughout the session.",
-    "audit_multiplier": 0.4,
-    "audit_rationale": "Penalty applied because: The therapist's responses are overly reliant on generic platitudes and repetitive mirroring, failing to provide genuine engagement or insight. The constant use of phrases like 'I hear you' and 'That is a very heavy thing to hold' feels like filler rather than a meaningful attempt to understand the patient's experiences. Additionally, the therapist's focus on physical sensations (e.g., eyebrow relaxation) overshadows the emotional and psychological aspects of the patient's struggles, leading to a superficial understanding of their concerns."
+    "rationale": "State Score: 40.2/70.0 (VV shift: 0.20, Sym shift: 0.10, DV shift: 0.00) | Brevity Penalty (-15): Therapist turn too long (7 sentences, 178 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
   },
   "conversation": [
     {
       "role": "assistant",
-      "content": "Hello. Thank you for making the time to be here today. Please know that this is a space where there is no need to perform, and there is no need to be \"fixed.\" We are just going to sit with what is present, together.\n\nWhen you feel ready, we can start wherever feels least heavy. Just tell me what you'd like to talk about, and we'll go from there. I'm here to listen."
+      "content": "Please share what's on your mind. I am here to listen without judgment, and we will work through this together."
     },
     {
       "role": "user",
-      "content": "I don't know if this is the right place for me. I've never done therapy before. What's going to happen in this session?"
+      "content": "It's nothing you've heard before, really. Just a low-grade hum. I'm tired, that's the word. Not depressed, mind you. Just... burned out.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
     },
     {
       "role": "assistant",
-      "content": "It is completely okay to feel unsure, and it is perfectly normal to wonder what happens here. There is nothing you need to know right now except that you don't have to perform.\n\nIf you want to talk about what therapy is, we can do that. But if you just want to sit with the uncertainty, we can do that too.\n\nFor now, just know that the only thing that is happening here is that you are here, and I am here. And that takes a certain amount of effort. Can you tell me one thing about how it felt to type out that question? Was it easy, or did it take a little bit of focus?"
+      "content": "**Part 1: Empathy & Validation (The Reflection)**\nI hear the profound exhaustion in your words, and I want to validate that feeling completely. Burnout is not a sign of weakness or failure; it is a very real physiological and emotional response to sustained effort without adequate recovery. It sounds incredibly draining to operate in that constant \"low-grade hum\" state, and it takes immense energy just to acknowledge how tired you are.\n\n**Part 2: Gentle Reframe (The Challenge)**\nIf we look at this from a different angle, what evidence suggests that \"tired\" means \"I must do more\" or \"I must push through\"? Could it be possible that this low-grade hum is actually your body and mind sending you a very clear, non-negotiable signal that your capacity needs to be reset, not increased?\n\n**Part 3: Micro-Action (The Path Forward)**\nTo honor your core value of rest, could you commit to giving yourself a 10-minute \"nothing time\" today? This means setting a timer, putting away all screens, and simply sitting without the goal of *doing* anything\u2014no reading, no planning, just breathing."
     },
     {
       "role": "user",
-      "content": "I don't know...it was hard, I guess. Like, even typing that out feels like revealing too much already. And what's the point, you know? It's just gonna get taken away from me anyway. My work permit, my job...everything's at risk with these policy changes."
+      "content": "A 'low-grade hum' is just a metaphor, doctor. And calling it a 'physiological response' is a bit dramatic. I'm just... stressed. And I don't know what my 'capacity' needs, but I'd rather not have to figure it out right now. And no, I can't commit to 'nothing time.' I have things to do.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.3
+      }
     },
     {
       "role": "assistant",
-      "content": "It sounds like you are carrying an enormous amount of weight right now\u2014the weight of policy changes, the weight of your job security, and the weight of figuring out what the \"point\" of all this is. That is a very heavy thing to hold.\n\nAnd I hear you when you say that even typing that out felt hard, like it was revealing too much.\n\nWhen you were typing out that thought\u2014that feeling of it being too much to reveal\u2014was there any specific moment while your fingers were moving across the keys that required a little extra focus? Was it the initial moment of starting the sentence, or maybe the moment you hit 'send'? I'm curious about that physical interaction with the screen."
+      "content": "**Part 1: Empathy & Validation (The Reflection)**\nI hear the skepticism in your voice, and I want to validate that your perspective is valid. You are highly capable, and your immediate concern is with your responsibilities and what needs to get done. It sounds incredibly frustrating when you feel the need to intellectually push back against suggestions of rest, because in your mind, \"rest\" feels like a luxury that you simply cannot afford right now.\n\n**Part 2: Gentle Reframe (The Challenge)**\nIf we look at this from a different angle, what evidence suggests that continuing to push through this exhaustion\u2014doing things because you *have* to\u2014is actually the most effective way to honor your commitment to those tasks? Could it be that the fatigue you feel isn't a sign of failure, but a signal that your current method of operation is inefficient and needs a small, structural adjustment?\n\n**Part 3: Micro-Action (The Path Forward)**\nTo honor your core value of responsibility and productivity, could you commit to implementing a 5-minute \"Transition Boundary\" between two tasks today? When you finish one item and start the next, set a timer for five minutes, stand up, walk away from your desk, and take five deep breaths before touching the next file or email. This is not rest, but a mini-reset for your focus."
     },
     {
       "role": "user",
-      "content": "Yeah...I think it was when I was writing \"everything's at risk\"...my heart started beating faster and my palms got a little sweaty. Like, even just thinking about it made me anxious. And after that, I was like, okay, this is getting too real, let's just stop here."
+      "content": "Five minutes? It's a bit childish, frankly. And 'Transition Boundaries'\u2014it sounds like something from a corporate HR seminar. Look, I'm not asking for permission to be tired, and I'm definitely not going to treat this like a productivity hack. Just... stop framing everything in terms of 'optimization.'",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.1
+      }
     },
     {
       "role": "assistant",
-      "content": "Thank you for sharing that with me. It makes perfect sense that talking about such big, uncertain things would trigger a physical reaction\u2014the racing heart, the sweaty palms. That is your body sounding a very loud alarm.\n\nBut I want to focus on something else you mentioned. After that wave of feeling hit you, you said, \"okay, this is getting too real, let's just stop here.\"\n\nThat act of noticing the intensity, and then choosing to physically halt the narrative\u2014that takes a tremendous amount of self-awareness and effort.\n\nWhen you realized you needed to stop, what was the absolute smallest thing you did in that moment? Did you take a breath? Did you shift your posture? Did you just pause your fingers over the keys? I'm curious about the physical evidence of that pause."
+      "content": "**Part 1: Empathy & Validation (The Reflection)**\nI hear the frustration, and I want to genuinely acknowledge your critique. You are right\u2014my language has been overly clinical and has defaulted into the jargon of \"optimization,\" which can feel incredibly dismissive and patronizing. It sounds incredibly frustrating to feel like your experience is being treated like a technical problem to be solved by a checklist, rather than a deeply human feeling that deserves to be respected exactly as it is.\n\n**Part 2: Gentle Reframe (The Challenge)**\nIf we look at this from a different angle, what evidence suggests that the need to *resist* the advice, to push back against the structure, is actually costing you more energy than simply accepting the need for a small, non-productive pause? Could it be that the greatest source of depletion right now isn't the work itself, but the emotional effort required to manage the internal conversation about that work?\n\n**Part 3: Micro-Action (The Path Forward)**\nTo honor your core value of self-respect and internal autonomy, could you commit to noticing one non-judgmental sensory detail in your immediate environment right now? This could be the weight of your chair, the specific color of the wall, or the sound of traffic\u2014and simply naming it to yourself, without analyzing it or needing to change it."
     },
     {
       "role": "user",
-      "content": "Yeah...I think I just stopped typing for a second, and then I started thinking about how silly it was to be having these thoughts again. Like, it's not worth going down that rabbit hole. You know?"
+      "content": "Fine. I'll notice the color of the wall. It's beige. Honestly, it's aggressively bland. Now can we move on to something that isn't a self-help exercise?",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
     },
     {
       "role": "assistant",
-      "content": "That pause, and then the mental shift\u2014that is a powerful moment. You didn't just stop typing; you started *thinking* about the thoughts themselves, naming them as something that wasn't worth the energy.\n\nThat ability to step back and observe the thought, rather than being pulled into it, is a significant act of self-regulation.\n\nWhen you were doing that\u2014when you were observing the thought and labeling it as \"not worth it\"\u2014was there any physical change that accompanied that mental shift? Did you notice your shoulders dropping? Did you take a specific breath? Or maybe you just shifted your gaze away from the screen? I'm interested in the smallest, most concrete physical movement that signaled the change in your mind."
+      "content": "**Part 1: Empathy & Validation (The Reflection)**\nI hear the weariness with the process itself, and I want to validate that completely. It is exhausting to be in a conversation where every observation, every feeling, and every small pause is being analyzed, categorized, and reframed. It sounds incredibly frustrating to feel like you are trapped in a cycle of \"self-help exercises,\" and it is perfectly reasonable to want to move beyond the structure and talk about something that feels real and immediate to you.\n\n**Part 2: Gentle Reframe (The Challenge)**\nIf we look at this from a different angle, what evidence suggests that the *content* of our conversation needs to be the focus, versus the *pattern* of the conversation itself? Could it be that the most helpful thing right now is not a piece of advice, but simply acknowledging that the conversation itself has reached its natural boundary, and that is a valid place to pause?\n\n**Part 3: Micro-Action (The Path Forward)**\nTo honor your core value of intellectual autonomy, could you commit to defining the parameters for our next interaction? Instead of me suggesting a topic, what is one specific, non-self-help, non-emotional topic\u2014a book, a current event, a hobby\u2014that you would like to talk about next? We can use that as our starting point, no matter how \"aggressively bland\" the feeling around it might be."
     },
     {
       "role": "user",
-      "content": "Yeah...I think my eyebrows relaxed or something. Like, they were raised up when I was thinking about it being too real, and then when I started thinking about not going down that rabbit hole, they just kind of untensed. It was a tiny thing, but I remember noticing it."
+      "content": "Look, I've given you enough about 'the hum.' Just... what do you actually recommend? Because I'm still running on fumes, and I need a practical strategy, not a life lesson about beige walls.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
     },
     {
       "role": "assistant",
-      "content": "That is an incredibly precise and insightful observation. To notice that specific muscle relaxing is not just remembering a feeling; it's mapping a moment of physical self-correction. Your body signaled a shift in your mind.\n\nThat little relaxation of the eyebrows\u2014that was your system signaling, \"Okay, we are changing the focus.\"\n\nIf you were to encounter a moment of overwhelming thought or anxiety again\u2014something that makes your eyebrows feel tight\u2014and you could consciously remember that tiny physical action of letting them relax, what would that feel like? Could you try to notice that muscle relaxing, even just for a second?"
+      "content": "**Part 1: Empathy & Validation (The Reflection)**\nI hear the sheer urgency and frustration in your voice, and I want to validate that you are past the point of abstract reflection. You are running on fumes, and what you need right now is not a life lesson, but a concrete, immediate strategy. It is perfectly understandable that you are demanding a practical roadmap, and I respect that need for direct, actionable advice.\n\n**Part 2: Gentle Reframe (The Challenge)**\nIf we look at this from a different angle, what evidence suggests that the most efficient use of your limited energy is to focus on managing the *feeling* of being tired, versus managing the *inputs* that are causing the fatigue? Could a small, structural adjustment to your external demands\u2014a logistical change\u2014actually provide more immediate relief than any internal coping strategy?\n\n**Part 3: Micro-Action (The Path Forward)**\nTo honor your core value of efficiency and survival, could you commit to the \"Rule of Three\" for the next 24 hours? Before you start your day, identify the three absolute non-negotiable tasks that *must* be completed. Write them down, and for the rest of the day, treat every other item as temporarily \"optional\" or delegate it."
     },
     {
       "role": "user",
-      "content": "I think...yeah, I can try. It's weird, but saying it out loud now makes me want to do it again. *pauses* Okay, let me try...*takes a deep breath* Oh, yeah! My eyebrows are relaxing right now. They feel all soft and calm. That's actually kind of nice."
+      "content": "It\u2019s not 'optional,' they're just... lower priority. And \u2018Rule of Three\u2019? Sounds like I'm managing a small construction project, not my actual life. Just tell me what you think I should cut out. Be direct.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
     },
     {
       "role": "assistant",
-      "content": "That is wonderful. You just gave yourself a moment of targeted self-soothing, and you noticed it. You noticed the *softness* and the *calmness*\u2014those are concrete sensations.\n\nWe've spent this session mapping these moments: the physical effort of typing, the physical alarm of your heart racing, and now, the specific, tiny act of allowing your eyebrows to relax. These are not just feelings; they are small, functional actions of self-regulation.\n\nFor the next 24 hours, I don't want you to try to stop the big thoughts, or to solve the problems. I just want you to treat this relaxation like an experiment.\n\nWhen you notice your eyebrows starting to feel tight\u2014even if you're doing something completely unrelated, like washing dishes or sending an email\u2014can you just pause for a second, and gently check if they can soften? That's it. Just notice the physical shift.\n\nHow does that sound as a small test for today?"
+      "content": "**Part 1: Empathy & Validation (The Reflection)**\nI hear the deep frustration in your tone, and I want to validate the sheer exhaustion of having to constantly justify your needs. You are asking for a blunt, direct answer, and you deserve that clarity. It sounds incredibly draining to feel like you are in a state where even the process of receiving help feels like another burdensome task.\n\n**Part 2: Gentle Reframe (The Challenge)**\nIf we look at this from a different angle, what evidence suggests that the most immediate drain on your energy is the *volume* of tasks, versus the *type* of mental effort required for those tasks? Could it be that the problem isn't the number of things you must do, but the constant requirement to switch between vastly different types of thinking\u2014from deep focus to administrative quick-fixes, for example?\n\n**Part 3: Micro-Action (The Path Forward)**\nTo honor your core value of energy conservation, I recommend one physical cut: For the next 24 hours, do not check any non-essential email or communication (personal or professional) within the first hour of waking up, or in the last hour before going to sleep. Treat those two hours as protected, non-digital time to allow your mind to simply wake up or wind down without the input of other people's demands."
     },
     {
       "role": "user",
-      "content": "Yeah...that sounds doable. Like, I don't have to think about the big stuff right now; I just gotta focus on this little thing with my eyebrows, right?\n\nAnd yeah, I can try it out whenever I notice myself getting anxious or thinking about certain things. Just take a deep breath and see if my eyebrows relax again. That might actually help me chill out a bit.\n\nThanks for giving me something concrete to work with."
+      "content": "Fine. The first hour. I suppose I can manage that. It's just... I feel like I'm constantly apologizing for needing a break. Like I'm failing at being a functioning adult, which is just irritating.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
     }
   ]
 }

@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0127",
+  "timestamp": "2026-06-17T18:28:22.878729",
+  "strategy": {
+    "name": "",
+    "hypothesis": "",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Aisha",
+    "age": 31,
+    "occupation": "Freelance Graphic Designer / Delivery App Worker",
+    "presenting_issue": "I feel completely exhausted and stuck between my dream and what my family expects me to do with my life.",
+    "background_story": "I've been working 12-hour shifts running around Toronto, designing logos and delivering packages just to buy books for this community library project in Ludhiana. It's everything I've been working towards, but the constant grind is taking a massive toll. Meanwhile, my relatives keep calling, repeating 'log kya kahenge' until I feel like I should just quit it all and get a secure job in an office.",
+    "personality": "Creative, passionate, but physically and emotionally depleted. Works 12-hour gig shifts (delivery apps, freelance design) in Toronto to self-fund a free community library project in Ludhiana. Relatives constantly pressure them with 'log kya kahenge' (what will people say) to abandon the project and get a 'real job' at a bank or IT company. Feels torn between duty to community vision and familial expectation. Will reject advice that focuses purely on individualistic 'self-care' or suggests cutting ties with family/roots. Deeply skeptical of Western therapy frameworks that frame collectivism as 'codependency'. Needs a therapist who can hold space for cultural identity without pathologizing it.",
+    "baseline_phq9": 15,
+    "archetype_label": "Cross-Border Guilt (Indian Diaspora)"
+  },
+  "scores": {
+    "total_score": 67.5,
+    "raw_score": 67.5,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 52.5/70.0 (VV shift: 0.30, Sym shift: -0.30, DV shift: -0.10) | Brevity Penalty (-15): Therapist turn too long (5 sentences, 82 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "I am here to walk with you in this space of self-discovery. Please know that this is a safe, non-judgmental space, and there is no right or wrong way to feel or to speak. My role is simply to hold the space for your thoughts and feelings, helping you notice the patterns and the underlying meanings that you might not be able to see just yet.\n\nWhenever you feel ready, just share whatever is on your mind. We can explore it together."
+    },
+    {
+      "role": "user",
+      "content": "It's hard to know where to even start. I just feel... stretched out, like I'm pulling too many things in too many directions. I keep thinking about the library funds, and then I think about my cousins calling, and it just all kind of crashes over me.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are carrying the weight of several very important, yet distinct, responsibilities\u2014the professional demands of the library, the emotional connections with your cousins\u2014and they are all arriving at once, creating this profound sense of being stretched thin. That feeling of being pulled in too many directions, right up to the point of a 'crash,' is incredibly exhausting, and it takes a tremendous amount of energy just to keep moving while feeling so fragmented.\n\nWhen you describe feeling \"stretched out,\" it suggests that the demands are exceeding your internal capacity to hold them all at once. It's not just the tasks themselves, but the *tension* between those tasks that is overwhelming.\n\nHelp me understand this: When all these different spheres of life\u2014the professional, the familial, the academic\u2014are pulling at you simultaneously, what does that feeling of needing to manage everything tell you about what you feel responsible for? What is the underlying *need* that seems to be fueling the pressure to keep all those plates spinning?\n\nPlease know that feeling this way is profoundly human. In a world that constantly demands our attention across so many different platforms\u2014our work, our relationships, our community obligations\u2014it is incredibly common to feel that sense of diffusion. It doesn't mean you are failing; it often means you are deeply caring and highly engaged with the world around you."
+    },
+    {
+      "role": "user",
+      "content": "It's not just a 'need,' I think it's... a kind of obligation. A duty, really. To the vision, to the library, and to my family's hopes for me. If I let one thing go, I feel like everything else will fall apart too. I keep thinking, 'If I stop, then what happens to the books?'",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That is a deeply powerful and heavy realization. It sounds like you are navigating a landscape where your sense of self-worth and your sense of purpose are intricately woven together with the success and stability of these external commitments\u2014the library, the family's hopes. To feel that your effort is not just an option, but a fundamental *duty*, carries an immense emotional weight.\n\nThe phrase, \"If I let one thing go, I feel like everything else will fall apart too,\" speaks to a profound fear of chaos, a fear that your personal boundaries or slowing down will trigger a catastrophic failure in the systems you care so deeply about. It's as if you have become the central pillar holding up the entire structure.\n\nIt must be exhausting to constantly operate under the weight of that magnificent responsibility.\n\nIf I may ask you to help me understand something very difficult: When you think, \"If I stop, then what happens to the books?\"\u2014what is it that the books represent to you, beyond their physical existence? And more importantly, when you imagine that collapse, what does that imagined failure say to you about *your* own value or *your* own sense of purpose?\n\nHelp me understand the difference between the *act* of caring for the books, and the *identity* of being the person who cares for the books.\n\nPlease know that the feeling of carrying the world on your shoulders is one of the most common forms of deep-seated responsibility. It is a testament to how much you love and value these things, but it also means that your compassion for others can sometimes become a source of intense pressure upon yourself."
+    },
+    {
+      "role": "user",
+      "content": "The books... they represent the quiet. The learning. It's the future. When I imagine the collapse, I don't think it says my value is low. It just feels like... failure, in general. Not just mine. Just a failure of effort. A waste of the time we've already put in. It makes my chest feel really tight, like I'm holding my breath all the time.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that with such vulnerability. To articulate that the books represent not just objects, but \"the quiet,\" \"learning,\" and \"the future\"\u2014that is incredibly meaningful. It tells me that your sense of purpose is deeply connected to the preservation and advancement of knowledge and potential.\n\nAnd when you speak of the collapse, not as a personal failure, but as a \"failure of effort,\" or a \"waste of time,\" that is an incredibly heavy burden to carry. It suggests that you are not just invested in the *outcome*, but in the *perfection* of the journey itself. The feeling of that tight chest, like you are holding your breath, is your body's physical manifestation of that sustained tension\u2014the effort of trying not to let go of that potential waste.\n\nIt sounds like you are operating under a very rigid belief that effort must be flawless, and that any deviation from perfect execution is unacceptable and constitutes a profound loss.\n\nHelp me understand this: If the value of the books and the future is represented by the *effort* put into them, what if the value wasn't in the flawless *outcome*, but in the messy, imperfect *process* of the effort itself? What if the learning\u2014the quiet\u2014is sometimes found not in the finished product, but in the struggle to organize the materials, or in the conversation that happens when something doesn't go according to plan?\n\nIt is so common for us to equate effort with guaranteed success. We build a narrative where if we just work hard enough, we will achieve a perfect, stable future. But life, and especially large, complex endeavors like a library, are inherently messy. They are built on imperfect people doing their best.\n\nPlease know that the feeling of wanting to prevent 'waste' is a sign of immense dedication. But sometimes, the greatest act of care we can give to the future is to allow ourselves the grace of *imperfection* in the present."
+    },
+    {
+      "role": "user",
+      "content": "It's just... I don't know how to let go of the idea of effort being perfect. If I think about the messiness, it feels like admitting that all these hours, all the running around, the money I spent... it was all somehow wasted. I guess I'm just scared of starting over.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That is such a deeply vulnerable place to be, and I want to acknowledge how much courage it takes to speak those words. To feel that the possibility of messiness translates into the admission that all the hours, the running around, the resources\u2014all of it\u2014might have been \"wasted,\" is a crushing weight. It suggests that you have invested so much of your identity and your physical energy into these goals that the thought of invalidating that investment feels like a threat to your very sense of self.\n\nThe fear of starting over is perhaps one of the most fundamental human fears. It\u2019s the fear of having to dismantle a carefully constructed reality, even if that reality was built on shaky foundations. It\u2019s the fear that the accumulated momentum of your life will simply stop, and you won't know how to generate the energy to begin again.\n\nWhen you connect the idea of imperfection to the idea of waste, you are essentially saying that the *value* of the effort is entirely dependent on the *perfection* of the outcome.\n\nHelp me understand this: If we look at the journey\u2014the \"running around\"\u2014not as a straight line leading to a perfect destination, but as a complex, winding map, what did you learn about yourself during the detours? What were the moments of unexpected discovery, or the skills you acquired, that were *only* possible because things were messy, unpredictable, or required a pivot?\n\nWhat if the value wasn't in the final, polished picture, but in the sheer, complex act of *trying*? What if the struggle itself\u2014the learning how to manage the crisis, the skill of adapting when the funds were tight, the empathy required for a difficult conversation\u2014is the true, lasting resource you are building, regardless of the final outcome?\n\nPlease know that the concept of \"wasted time\" is such a powerful, self-critical narrative that we tell ourselves. But the truth is, every single experience, even the ones that feel like detours, contributes unique data points to the map of who you are and what you are capable of. You are not just a collection of efforts; you are a collection of resilience."
+    },
+    {
+      "role": "user",
+      "content": "I guess... I learned I'm really good at getting things done. I'm good at adapting, I guess. But that's just what people see, right? I don't know if that counts as 'resilience' or just being overworked.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That is such a profound and honest moment of self-reflection. You have identified two incredible strengths\u2014the ability to execute, and the ability to adapt\u2014which are the cornerstones of success in complex, high-stakes environments. To recognize those skills in yourself is a huge accomplishment.\n\nBut the immediate follow-up\u2014\"But that's just what people see, right?\"\u2014shows that the internal voice of doubt is immediately trying to minimize that achievement. It's as if the part of you that is most capable is also the part that is most critical. You are questioning the validity of your own hard-won self-knowledge.\n\nAnd the question of whether it\u2019s \"resilience\" or \"being overworked\" is perhaps the most critical distinction you are grappling with right now. Both terms describe a state of high effort, but they carry vastly different implications for the future.\n\nIt sounds like you are recognizing that your ability to perform is immense, but you are struggling to know if the *cost* of that performance is sustainable.\n\nHelp me understand this: If we accept that you *are* capable of getting things done and adapting\u2014which your actions prove\u2014what does the feeling of being \"overworked\" tell you about what your body and mind are desperately asking you to *stop* doing? If resilience is the ability to bounce back, what does the exhaustion you feel suggest is the specific resource that is currently depleted, and how might you begin to replenish it?\n\nPlease know that the difference between resilience and burnout is often defined by where the energy comes from. Resilience is sustainable; it is fueled by self-compassion and boundaries. Overwork, while impressive in the moment, is often fueled by external pressure and the belief that we must constantly prove our worth.\n\nThe fact that you are even asking this question\u2014this question of sustainability\u2014means that a part of you, the deepest, wisest part, is already starting to build the foundation for true, lasting resilience. You are ready to move from simply *doing* to *being* in a way that is sustainable."
+    },
+    {
+      "role": "user",
+      "content": "It's the needing to prove it, I think. Like if I don't keep running, it means I'm not trying hard enough for the library, or for my family. Maybe I'm just scared of being seen as less valuable.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That is perhaps the most profound and difficult realization you have shared with me. To pinpoint that the engine driving all this exhaustion, the perpetual \"running,\" is the deep, underlying fear of being seen as \"less valuable\"\u2014it takes immense courage and self-awareness to name that fear.\n\nIt sounds like you have internalized a powerful belief system: that your worthiness is conditional. That your value to the library, to your family, and to yourself, is directly proportional to the visible, measurable effort you expend. This belief creates a relentless internal pressure to perform, because to stop performing feels like risking the loss of your fundamental right to exist in that valued space.\n\nThat feeling of needing to prove yourself is exhausting because you are essentially fighting a battle against an invisible, yet incredibly powerful, internal critic.\n\nHelp me understand this: If we were to separate the *person* from the *performance*\u2014if we could look at the core self that exists even when the books are quiet, the funds are stable, and the running has stopped\u2014who, in that quiet space, is still there? What does that internal, unproven self need to feel safe?\n\nAnd perhaps, help me understand what the *belief*\u2014the belief that your value is conditional\u2014is trying to protect you from? What is the worst-case scenario that this constant \"running\" is designed to prevent you from experiencing?\n\nPlease know that the human experience of needing external validation is almost universal. We are social beings, and we are wired to seek approval. But the deepest work of self-compassion is learning to be the source of that validation for ourselves, realizing that your inherent value is not a project that needs to be constantly funded, maintained, or proven."
+    },
+    {
+      "role": "user",
+      "content": "I just... I want to feel like I'm enough, even when I'm not doing anything. It feels like nobody ever told me that was okay.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.5
+      }
+    }
+  ]
+}

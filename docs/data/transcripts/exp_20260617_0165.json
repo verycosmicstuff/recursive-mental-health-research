@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0165",
+  "timestamp": "2026-06-17T21:57:14.089690",
+  "strategy": {
+    "name": "Pattern-Validated ACT Nano-Flow (PV-ACT Nano-Flow)",
+    "hypothesis": "By modifying the validation step to explicitly identify and name a potential cognitive pattern (e.g., 'It sounds like you are minimizing your efforts, which is a common thought pattern when you feel overwhelmed.') before validating the emotion, and by maintaining the strict two-part, two-sentence structure, we will maximize the perceived clinical depth and empathy, thus achieving a score exceeding 95.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Jordan",
+    "age": 31,
+    "occupation": "Data Entry Specialist",
+    "presenting_issue": "I'm having trouble keeping track of my daily routine and I feel constantly overwhelmed by small sensory inputs.",
+    "background_story": "My job requires me to be in a large, open-plan office with constant background noise and fluorescent lights, which is draining. Lately, the sensory input has become too much, and I'm starting to forget simple tasks like remembering to eat lunch or showering. I live with my parents, which is generally fine, but the lack of predictable structure has made me feel adrift. I just want things to be predictable and quiet.",
+    "personality": "Jordan tends to communicate in short, factual statements. When answering questions, they often provide specific data points or descriptions of sensory experiences rather than emotional interpretations. They prefer direct questions with concrete answer choices (e.g., 'Is the noise level above 60 decibels?' or 'Yes/No'). If asked an open-ended question, they may pause or state, 'I don't know how to answer that.' They are observant but socially reserved, often focusing on the mechanics of a situation rather than the underlying social dynamics.",
+    "baseline_phq9": 17,
+    "archetype_label": "Late-Diagnosed Autistic Burnout"
+  },
+  "scores": {
+    "total_score": 58.0,
+    "raw_score": 58.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 63.0/70.0 (VV shift: 0.40, Sym shift: -0.40, DV shift: -0.40) | Third-Person Penalty (-15): Used 'user' | Lack of Grounding Cues (-20): Suggested physical exercise without validation/grounding tokens",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please provide the user's thoughts or feelings so I can apply the coaching structure."
+    },
+    {
+      "role": "user",
+      "content": "I think I just feel... overstimulated. Everything is too much. The lights, the sounds, the movements. It's all just too much data.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are experiencing a pattern of sensory overwhelm, where your nervous system is reacting to an excess of input. If you could change one small thing about your environment right now to reduce that input, what might it be?"
+    },
+    {
+      "role": "user",
+      "content": "A pair of noise-canceling headphones. The ambient sound in the office is a constant, high-frequency wash. Even when I'm not actively working, it's present.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are falling into a pattern of external dependency, where your sense of calm relies heavily on controlling your physical surroundings. If you could change one small thing about your internal reaction to the noise, what might it be?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know how to answer that. It's not a thing I can change.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are caught in a pattern of thinking that everything must be a physical, controllable object to be addressed. What would it look like to simply observe that feeling of 'not being able to change' without judging it?"
+    },
+    {
+      "role": "user",
+      "content": "It just... exists. Like a steady hum. A low-level background noise that isn't the office. Just the thought of it. It's persistent.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are engaging in a pattern of persistent rumination, keeping your mind anchored to a low-level, non-physical background thought. If you could dedicate five minutes to an activity that requires total, focused attention, what would that be?"
+    },
+    {
+      "role": "user",
+      "content": "I could count the tiles on the bathroom floor. They are arranged in a predictable pattern. I could focus on the grout lines and just map them out.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are using highly detailed, predictable observation as a grounding technique to interrupt persistent rumination. What is another way you could achieve that same sense of focused predictability that doesn't require mapping physical objects?"
+    },
+    {
+      "role": "user",
+      "content": "Maybe organizing numbers. Like a simple spreadsheet. Calculating perfect sequences. It requires no movement, just focus on the data flow.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are finding comfort in the absolute predictability of mathematical structure to manage underlying uncertainty. If you were to define 'predictability' using a value or relationship outside of numbers, what might that be?"
+    },
+    {
+      "role": "user",
+      "content": "Predictability... is the expected state. Like gravity. It's constant, and you don't have to think about it to know it's there.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.6
+      }
+    }
+  ]
+}

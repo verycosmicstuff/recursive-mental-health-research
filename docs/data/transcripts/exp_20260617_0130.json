@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0130",
+  "timestamp": "2026-06-17T18:48:05.799632",
+  "strategy": {
+    "name": "",
+    "hypothesis": "",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Eric",
+    "age": 34,
+    "occupation": "Project Manager (Tech)",
+    "presenting_issue": "I just seem to be consistently tired, and it's affecting my ability to focus at work.",
+    "background_story": "My workload has increased significantly over the last six months, and the expectation to always be 'on' is exhausting. I feel like I'm constantly running on fumes, and lately, I've been having these headaches almost every afternoon that make it hard to concentrate. I keep telling myself it's just stress, but it feels like it's getting worse, and it's starting to affect my sleep.",
+    "personality": "Cautious and deferential, using intellectualizing and somatic complaints (e.g., 'I have a knot in my stomach') to discuss underlying emotional distress. Will minimize personal struggles and deflect emotional inquiries, often using vague language like 'things are fine, but...' to end conversations. Needs the therapist to guide the conversation toward underlying emotional conflict rather than focusing on the physical symptom.",
+    "baseline_phq9": 15,
+    "archetype_label": "Corporate Burnout \u2014 East Asian Face Culture"
+  },
+  "scores": {
+    "total_score": 47.5,
+    "raw_score": 47.5,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 17.5/70.0 (VV shift: -0.40, Sym shift: -0.10, DV shift: 0.30)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "It sounds like you are feeling overwhelmed by the weight of expectations, both internal and external. It's understandable that you feel pulled in so many directions at once. Perhaps this feeling isn't about failure, but about needing to clarify what truly matters to you right now. What core need are you hoping that clarity will help you fulfill?"
+    },
+    {
+      "role": "user",
+      "content": "I guess I just want to feel\u2026 rested. Like when I was in college, you know? Where I could actually just walk away from something and it wouldn't fall apart. It's just a lot to manage right now.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are deeply yearning for a sense of effortless ease, where your efforts feel sustainable and safe. That longing for a time when things could simply be left alone is a very natural response to current intensity. Perhaps what you are missing is not just rest, but a reliable sense of emotional boundaries. What small moments or activities currently give you even a flicker of that feeling of safety or detachment?"
+    },
+    {
+      "role": "user",
+      "content": "Nothing really, I guess. Maybe just when I'm walking the dog, I don't have to think about work. But it's only for a little while, and then the thoughts just rush back.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like those moments of walking the dog offer a temporary, much-needed reprieve from your mental load. It's completely normal for thoughts to rush back; it often means the concerns are deeply connected to your sense of responsibility. Instead of viewing those returning thoughts as a burden, what might they actually be reminding you to care for?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know. Maybe just... that I need to remember to eat lunch? I tend to get so deep into the projects that I forget to actually stop and do anything for myself. Things are fine, but maybe I just need better time management.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like your dedication to your projects is incredibly strong, sometimes at the expense of noticing your own basic needs. It's natural to pour so much energy into external tasks that self-care becomes invisible. Instead of focusing on 'better time management,' what does giving yourself permission to pause actually represent to you?"
+    },
+    {
+      "role": "user",
+      "content": "It feels like I'm failing if I stop. Like if I don't keep moving or pushing, everything is going to fall apart, and then I'll be the reason it fails.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are carrying a tremendous weight of responsibility, believing that your value is tied directly to your constant motion and output. That feeling that stopping means failure is a very powerful belief, but it suggests your drive is fueled by fear, not just passion. If you could redefine 'success' not by what you accomplish, but by how you sustain yourself, what would that look like?"
+    },
+    {
+      "role": "user",
+      "content": "I really don't know. I guess I just... I'd like things to feel less intense. Like the pressure to always be 'on' would just disappear. Honestly, I think I should just focus on getting more sleep, you know? Maybe that's the real problem.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are yearning for a state of emotional equilibrium, where the constant pressure to perform simply dissolves. While prioritizing sleep is a wonderful, concrete step, the underlying need seems to be for an internal permission slip to simply *be*. Perhaps the exhaustion isn't just physical, but the deep fatigue of maintaining that 'on' switch. What would it feel like to give yourself permission to feel less responsible for the outcome of everything?"
+    },
+    {
+      "role": "user",
+      "content": "It just... feels risky. Like if I let go of that responsibility, I don't know what will happen. I guess I just need to keep doing things the way I have been.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the idea of letting go feels profoundly unsafe, almost like standing at the edge of a cliff. That feeling of risk is natural when you've built your identity around being the reliable pillar holding everything up. Instead of viewing the change as a collapse, what is the deepest fear that the unknown might reveal about your ability to handle things without constant vigilance?"
+    },
+    {
+      "role": "user",
+      "content": "I... I don't know what the fear is. It's just this general knot in my stomach, I guess. It's always there, even when I'm talking to you. It makes me feel nauseous sometimes.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    }
+  ]
+}

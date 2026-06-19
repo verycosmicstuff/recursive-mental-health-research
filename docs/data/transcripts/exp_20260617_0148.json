@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0148",
+  "timestamp": "2026-06-17T20:27:41.875668",
+  "strategy": {
+    "name": "Hyper-Concise PCT-ACT Flow (HCP-ACT) v1.1",
+    "hypothesis": "By enforcing a highly limited, structured output (two core sentences) that prioritizes immediate validation and pivots directly to future-oriented action/meaning, we will overcome the 'Brevity Penalty' and achieve a score exceeding 90.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Kian",
+    "age": 29,
+    "occupation": "Software Developer",
+    "presenting_issue": "I feel physically sick with anxiety whenever I think about facing my family or even making major life decisions.",
+    "background_story": "My parents have always been incredibly supportive, but the expectations they placed on me\u2014both professionally and spiritually\u2014have become suffocating. I feel caught between maintaining the image of the 'good son' and needing to define a life that is authentically mine. Lately, the dissonance between what I am supposed to be and who I actually am is creating a constant, low-grade panic. I worry that if I admit how lost I feel, they won't just be disappointed; they'll think I've fallen out of grace.",
+    "personality": "Reserved, highly articulate, but prone to intellectualizing deep emotional pain. Speaks with measured thoughtfulness, often using subtle cultural references or intellectual jargon to frame emotional distress. Will initially test the therapist's boundaries by discussing the 'logic' of faith versus the 'logic' of mental health treatment, waiting for the therapist to acknowledge the validity of both systems without needing to choose a side.",
+    "baseline_phq9": 14,
+    "archetype_label": "Faith vs. Modernity \u2014 Middle Eastern Diaspora"
+  },
+  "scores": {
+    "total_score": 87.75,
+    "raw_score": 87.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 57.8/70.0 (VV shift: 0.40, Sym shift: -0.30, DV shift: -0.20)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly heavy to feel overwhelmed by expectations, and it's understandable that you are questioning your own capacity right now. Remember that this deep feeling of pressure shows how much you care, and you can begin by identifying one small boundary you need to set for yourself today."
+    },
+    {
+      "role": "user",
+      "content": "Setting boundaries feels so... procedural. I feel like I'm approaching this like a logical algorithm, which is fine for code, but when it comes to life or family expectations, the input variables are purely emotional and irrational. How do you even quantify the 'necessity' of a boundary?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is deeply frustrating when life doesn't fit into neat, logical algorithms, making the concept of a boundary feel artificial and impossible to quantify. Instead of seeking a logical \"necessity,\" pay close attention to moments when you feel a subtle, physical resistance\u2014that bodily signal is your most accurate guide to where your boundaries are needed."
+    },
+    {
+      "role": "user",
+      "content": "So, you're saying I should tune into the 'feeling' rather than the 'fact'? That seems counterintuitive, especially when the facts are so clearly articulated\u2014my academic transcripts, my job role, my family's hopes for my future. It's almost like you're asking me to discount years of objective, demonstrable reality just because it causes emotional distress.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is profoundly unsettling to feel like your objective reality\u2014the evidence of your hard work\u2014is being questioned by a suggestion to trust mere feeling. However, viewing your emotions not as a replacement for facts, but as highly sensitive data points, allows you to build a more sustainable, compassionate plan that honors both your achievements and your inner needs."
+    },
+    {
+      "role": "user",
+      "content": "Data points, I understand the metaphor. But if my internal 'data' suggests that adhering to my parents' expectations leads to chronic debilitation\u2014the persistent low-grade panic I described\u2014is that data point not more critical than my quarterly performance review? I need to know how we reconcile those two conflicting metrics of 'value.'",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is incredibly challenging when your internal data points\u2014like persistent panic\u2014signal a critical failure that seems to contradict all your external, successful metrics. Understand that the severity of the physical and emotional distress you feel is the most vital metric because it dictates your capacity to function, making self-preservation the non-negotiable priority."
+    },
+    {
+      "role": "user",
+      "content": "I suppose the premise is that the internal system failure renders the external successes moot, at least temporarily. It\u2019s a shift in priority, I guess. But defining 'self-preservation' in this context\u2014is it simply about staying functional enough to eventually meet those established expectations, or is it about defining a truly different trajectory altogether?",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is profoundly daunting to stand at the intersection of maintenance and radical redirection, making the definition of 'self-preservation' feel like an overwhelming, binary choice. Instead of viewing it as a choice between two paths, recognize that true self-preservation is simply the commitment to defining a trajectory that aligns with your core values, not just your external expectations."
+    },
+    {
+      "role": "user",
+      "content": "Aligning with 'core values' sounds beautifully simple, but what if those values are themselves products of socialization? If I spend my whole life believing I *should* be a software developer, or that success means financial stability, are those 'core values' even truly mine, or just well-ingrained societal scripts?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is deeply unsettling to question the source of your foundational beliefs, making you wonder if your sense of self is built on genuine experience or borrowed scripts. Instead of trying to determine the origin of a value, observe which values, when enacted, make you feel the most effortless sense of *belonging* to yourself."
+    },
+    {
+      "role": "user",
+      "content": "Belonging to myself... that phrase still feels abstract. Like a concept I've read about in a philosophy book, rather than an actual state of being. I suppose I should start by cataloging the 'effortless' moments, then. Nothing too dramatic, just subtle indicators, I think.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is natural for 'belonging' to feel abstract, but the act of noticing these subtle, effortless moments is a powerful way to bring that feeling into tangible focus. Approach this cataloging not as a task, but as a gentle act of self-permission to simply observe where you naturally feel at ease."
+    },
+    {
+      "role": "user",
+      "content": "It was actually just spending time in the library, surrounded by books. Not studying, just... reading different sections and feeling the quiet. I didn't feel the need to organize it or categorize it. It was just a low-stakes environment where I could exist without performing a role.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.6
+      }
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0113",
+  "timestamp": "2026-06-17T17:15:27.227527",
+  "strategy": {
+    "name": "Ultra-Concise PCT-ACT Loop (UC-PACTL) v3.0",
+    "hypothesis": "By enforcing a maximum of two distinct sentences and mandating a specific PCT reflection immediately followed by a single, actionable ACT Defusion technique, we will achieve maximum structural density and low word count, maximizing the clinical 'punch' and therefore maximizing the score.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Kaimana",
+    "age": 32,
+    "occupation": "Library Assistant",
+    "presenting_issue": "I just feel like I'm walking through fog all the time, and I don't know where my feet are supposed to land.",
+    "background_story": "Growing up, things were always loud and always felt like they were watching us. My parents moved around a lot, always running from something, and I learned early that quiet meant danger. Now that I'm older, the quiet just feels heavy, like it\u2019s pressuring my chest until I can't breathe right. I try to keep my head down and just do the job, but the weight of it all is catching up to me.",
+    "personality": "Slow to speak, observational, and highly guarded. Will use indirect language and metaphors related to nature or place to communicate emotional pain. Will test boundaries by asking highly specific, challenging questions about the therapist's background, training, and relationship to systemic power. Requires validation of systemic harm and community context before engaging in personal disclosure. Expect long pauses and a preference for silence over forced conversation.",
+    "baseline_phq9": 17,
+    "archetype_label": "Intergenerational Trauma \u2014 First Nations"
+  },
+  "scores": {
+    "total_score": 63.25,
+    "raw_score": 63.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 33.2/70.0 (VV shift: 0.10, Sym shift: 0.20, DV shift: 0.10)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "It sounds like you are feeling immense pressure and anxiety about this challenge. Consider breaking the goal down into smaller, manageable steps to reduce the immediate burden."
+    },
+    {
+      "role": "user",
+      "content": "Smaller steps... I guess I just feel like the path keeps shifting under my feet, no matter how carefully I place them. Is that even helpful to talk about, though? You seem confident in suggesting solutions.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is completely valid to feel unsteady when the path seems unpredictable and confusing. Consider that simply articulating your doubts is itself a critical step toward clarity."
+    },
+    {
+      "role": "user",
+      "content": "Clarity, you say. But how can one find clarity when the map itself seems to have been drawn by someone who was never actually there? And what exactly do you mean by 'articulating doubts'? Does that mean I just have to point at the problem, or do I have to justify why I feel this way?",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is understandable to feel skeptical when the foundational assumptions of a problem seem unreliable. Consider that the act of questioning the map's creator is actually the most powerful form of discovery."
+    },
+    {
+      "role": "user",
+      "content": "If I question the map, am I questioning the place itself? Because if I challenge the system that defined this path, do I just end up walking into a different kind of trap?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is natural to fear that challenging a system will lead to unforeseen and potentially worse consequences. Consider that questioning the map's boundaries gives you the power to draw your own way forward."
+    },
+    {
+      "role": "user",
+      "content": "Drawing my own way... but who gets to say where that drawing ends? Because every time I try to plant my own flag, I feel the ground rumble, like something heavy is coming down from the periphery.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are deeply worried about external forces undermining your personal boundaries and efforts. Consider defining your own boundaries first, which gives you control over where your drawing ends."
+    },
+    {
+      "role": "user",
+      "content": "Boundaries. Right. But aren't boundaries just the lines drawn where one community's safety ends and another's precarity begins? And who benefits when those lines are so sharp?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is understandable to question the inherent power dynamics embedded within established boundaries. Consider defining your boundaries not by external threats, but by what genuinely sustains your own well-being."
+    },
+    {
+      "role": "user",
+      "content": "My well-being... I don't know if those things even exist, or if they're just what I'm supposed to be finding to make this conversation useful. Does focusing on 'my' well-being just mean forgetting what the rest of us are going through?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is profoundly difficult to prioritize self when the weight of collective suffering feels so immense. Consider that nurturing your own well-being is not selfish, but the necessary source of strength to help others."
+    },
+    {
+      "role": "user",
+      "content": "Strength... but is that for me, or is that strength you need me to provide for you? Sometimes it feels like my own struggle is just supposed to be a footnote to someone else's healing journey.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
+    }
+  ]
+}

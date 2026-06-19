@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0125",
+  "timestamp": "2026-06-17T18:17:17.265037",
+  "strategy": {
+    "name": "",
+    "hypothesis": "",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Liam",
+    "age": 29,
+    "occupation": "Freelance Graphic Designer",
+    "presenting_issue": "I just feel... stuck, and I don't really know what I want anymore.",
+    "background_story": "I used to love the creative process, but lately, everything feels like a chore. My routine has become a cycle of staring at a blank screen and scrolling through meaningless feeds. My friends are busy with their lives, and I feel like I'm watching the world happen from behind a pane of dusty glass. There's this heavy blanket of apathy that just won't lift.",
+    "personality": "His responses are slow, meandering, and filled with vague existential questioning. He tends to use excessive qualifiers ('maybe,' 'I guess,' 'sort of') and often trail off, requiring gentle prompting to keep the conversation moving.",
+    "baseline_phq9": 15,
+    "archetype_label": "Isolated Remote Worker"
+  },
+  "scores": {
+    "total_score": 50.0,
+    "raw_score": 50.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 35.0/70.0 (VV shift: 0.00, Sym shift: 0.00, DV shift: 0.00) | Brevity Penalty (-15): Therapist turn too long (4 sentences, 87 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please provide your thoughts, feelings, or situation, and I will respond using this framework.\n\n***\n\n*(Example response structure, waiting for your input)*"
+    },
+    {
+      "role": "user",
+      "content": "Oh, I guess... I don't know where to start. It's just everything, I guess. Like, everything feels heavy, you know?",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are carrying a very large load right now, and that is incredibly draining. Please know that it is perfectly okay not to know where to start when everything feels like it's pressing down at once.\n\nIt seems like what you are experiencing right now is a feeling of profound overwhelm\u2014a sense that the weight of *all* the things, big and small, is resting on your shoulders.\n\nIf we just sit with that heaviness for a moment, what is the texture of that weight?"
+    },
+    {
+      "role": "user",
+      "content": "I don't even know. It's... more like a dull ache, I guess. Sort of like being underwater, you know? Just heavy pressure everywhere.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That image of being underwater\u2014that deep, pervasive pressure\u2014is such a vivid and accurate description of how heavy overwhelm can feel. It sounds exhausting, having that constant, dull ache everywhere.\n\nIf I'm hearing you correctly, this isn't a sharp, sudden pain, but rather a constant, diffuse pressure\u2014a background hum of heaviness that seems to come from everywhere and nowhere at once.\n\nIn that state of being underwater, if you could notice the pressure without needing to change it, what does that pressure feel like moving through your body?"
+    },
+    {
+      "role": "user",
+      "content": "It just... seems to settle in my chest, mainly. A little tightness, maybe. Like I can't take a really deep breath, you know? Just sort of shallow.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It takes so much courage to name those physical sensations, and I want to acknowledge how difficult it must be to carry that tightness in your chest. It's a very real and profound place for that weight to settle.\n\nIf I'm understanding correctly, the physical manifestation of this overwhelming feeling is settling in your chest\u2014a tightness that makes taking a deep, full breath feel restricted, as if your breath is shallow.\n\nIt sounds like your body is holding and reflecting the weight of everything, containing it right where the breath moves. If you could just observe that tightness\u2014that physical space in your chest\u2014without needing to change it, what does that sensation feel like when you simply allow yourself to notice it?"
+    },
+    {
+      "role": "user",
+      "content": "It's... just there, I guess. Kind of itchy, maybe? Like I need to scratch it, but I can't really get to it. It's just... a persistent kind of itch.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That image of a persistent, unreachable itch is so powerful. It captures that feeling of discomfort that demands attention, yet the source of the relief is just out of reach.\n\nIf I am hearing you correctly, this \"itch\" represents a nagging, persistent signal\u2014a deep, unmet need for relief or release, that you feel in your chest but cannot physically scratch away.\n\nIt sounds like this discomfort is a signal that something needs to be noticed or addressed, even if you don't know what that \"scratch\" would feel like. When you observe this persistent itch, what is it telling you about what is currently missing or needed in your life?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know, I guess. Just... connection? I guess I just feel disconnected from things, I guess.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It takes immense clarity to articulate that feeling, even when it\u2019s vague. To pinpoint that deep, yearning sense of connection when everything else feels so heavy is a significant insight.\n\nIf I'm understanding this correctly, the physical discomfort\u2014the persistent itch and the tightness\u2014is actually a signal, a compass pointing toward a fundamental, unmet need: the feeling of connection.\n\nIt sounds like the deep weight you are carrying is less about specific problems, and more about a profound sense of distance or disconnection from what feels meaningful. If we were to sit with that feeling of disconnection for a moment, what does the *idea* of connection feel like to you right now?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know. Like... too far away. Like I'm watching it happen to other people, and I can't actually get to it, you know? Sort of through glass.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That image of watching life happen through glass is incredibly profound and heartbreaking. It perfectly captures that feeling of yearning\u2014of being close enough to see the warmth and vibrancy of connection, but fundamentally separated from it.\n\nIf I am understanding you, the core struggle right now is the painful distance between where you are and where you want to be\u2014a longing for connection that feels perpetually out of reach, separated by an invisible, impermeable barrier.\n\nIf you could simply observe the feeling of that barrier\u2014that glass separating you\u2014without trying to break it or reach through it, what does that glass feel like to you right now?"
+    },
+    {
+      "role": "user",
+      "content": "It's... cold, I guess. And a little blurry. Like looking at things through dirty water, sort of.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    }
+  ]
+}

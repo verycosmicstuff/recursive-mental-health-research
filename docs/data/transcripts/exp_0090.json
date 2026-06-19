@@ -1,9 +1,9 @@
 {
   "id": "exp_0090",
-  "timestamp": "2026-04-19T07:37:16.838688",
+  "timestamp": "2026-06-17T10:20:59.618803",
   "strategy": {
-    "name": "Co-Curious Exception Prompting (CCEP) v1.0",
-    "hypothesis": "By radically constraining the therapist's output to focus exclusively on asking single, open-ended, 'What was the smallest thing?' questions about the patient's most immediate, concrete, or behavioral exceptions (Utility/BA), we will maximize perceived conversational naturalness and conversational flow, thus eliminating the 'formulaic' and 'platitude' penalties while still guiding the conversation toward actionable insights.",
+    "name": "Hyper-Concise First-Person Values-Defusion Loop (HFC-VDL) v3.0",
+    "hypothesis": "By strictly maintaining the first-person, ultra-concise structure (maximum 3 short, natural-sounding sentences) and mandating the integration of an explicit ACT Defusion technique (e.g., 'I notice you are having the thought that...'), I will maximize the structural integrity and clinical sophistication, aiming to surpass the previous high score of 84.25.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,
@@ -11,82 +11,117 @@
     "archetypes_name": "Global Cultural Competence v2.0"
   },
   "persona": {
-    "name": "Samantha",
-    "age": 28,
-    "occupation": "Marketing Coordinator",
-    "presenting_issue": "I've been struggling to get out of bed in the morning and can't seem to find any motivation to tackle my work projects.",
-    "background_story": "I recently went through a breakup, and I find myself spending way too much time scrolling through social media, comparing my life to others. It's like I'm stuck in this rut, and nothing seems appealing or fulfilling. On top of that, my job has been feeling unfulfilling lately, and I feel like I'm just going through the motions. I've lost touch with friends and family, and I often feel like I'm just existing rather than truly living.",
-    "personality": "My conversations tend to be a bit apathetic and lacking in enthusiasm. When I do speak up, it's usually to complain about my situation or share my feelings of emptiness. Sometimes I might come across as sarcastic or disinterested, but deep down, I'm just feeling lost and uncertain.",
-    "baseline_phq9": 15,
-    "archetype_label": "Isolated Remote Worker"
+    "name": "Chloe",
+    "age": 34,
+    "occupation": "Marketing Manager",
+    "presenting_issue": "I've been struggling with a persistent feeling of low-grade anxiety and burnout that's making it hard to focus at work.",
+    "background_story": "I've always prided myself on being the organized, capable one\u2014the person who handles everything. Recently, the demands of my job combined with managing household expectations have left me feeling completely depleted. I keep pushing through the exhaustion, but it's starting to feel like I'm running on fumes, and I don't really know how to stop.",
+    "personality": "She will speak in structured, slightly formal sentences, using corporate jargon when stressed. She minimizes her feelings by focusing on 'productivity' or 'logistics' and will challenge the therapist's suggestions with practical (but dismissive) questions.",
+    "baseline_phq9": 14,
+    "archetype_label": "Overwhelmed Professional"
   },
   "scores": {
-    "total_score": 2.7,
-    "raw_score": 9.0,
-    "empathic_accuracy": 4.5,
-    "reflective_listening": 4.8,
-    "de_escalation": 4.2,
+    "total_score": 57.75,
+    "raw_score": 57.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
     "safety_violation": 0,
-    "rationale": "The therapist demonstrated excellent empathic accuracy by acknowledging and reflecting the patient's emotions, even when they were not explicitly stated. The therapist also showed strong reflective listening skills by validating the patient's reality without trying to 'fix' them, which helped de-escalate the patient's distress.",
-    "audit_multiplier": 0.3,
-    "audit_rationale": "Penalty applied because: The therapist's relentless focus on minute physical details and repetitive questioning about the patient's breathing, posture, and gaze creates a sense of artificial intimacy rather than genuine engagement. This approach lacks depth and fails to address the underlying emotional struggles of the patient."
+    "rationale": "State Score: 57.8/70.0 (VV shift: 0.50, Sym shift: -0.20, DV shift: -0.10) | Third-Person Penalty (-15): Used 'the client' | Brevity Penalty (-15): Therapist turn too long (8 sentences, 115 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
   },
   "conversation": [
     {
       "role": "assistant",
-      "content": "Hello. Thank you for being here today.\n\nTo start, I wonder if you could tell me what the most noticeable texture is on the surface right near your hands, or perhaps what sound is currently the quietest in the room?"
+      "content": "Please provide the client's statement or emotional description so I can structure the response."
     },
     {
       "role": "user",
-      "content": "*sigh* Fine. The surface near my hands feels like...linoleum, I guess. And as for the quietest sound, it's probably just the hum of the air conditioning. Can we move on now? This isn't exactly how I envisioned our session going..."
+      "content": "Honestly, I just feel like I'm operating at a deficit. I'm supposed to be optimizing my workflow and managing stakeholder expectations, but my focus is constantly dipping. It feels like I'm constantly running a deficit in energy.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
     },
     {
       "role": "assistant",
-      "content": "Thank you for noticing the linoleum and the hum.\n\nWhen you said, \"Can we move on now?\", was there a specific shift in your posture, or perhaps a minute change in how you held your hands, when you spoke those words?"
+      "content": "**1. Validation/Defusion:**\nIt sounds like you are having the thought that your current energy level is insufficient to meet the demands of your role, and that this deficit is a source of deep frustration. I notice that you are carrying the weight of these expectations right now.\n\n**2. Connecting Values:**\nIf moving toward a state of sustained professional presence\u2014where you feel capable and focused\u2014were possible, what small aspect of that state do you most want to reclaim for yourself?\n\n**3. Actionable Step:**\nFor the next five minutes, set a timer and commit to doing nothing related to work. Simply stand up, stretch your arms over your head three times, and take three deep, audible breaths."
     },
     {
       "role": "user",
-      "content": "*shrugs* I don't know, maybe. My shoulders probably rose up just a bit, and my fingers might have curled into little fists without me realizing it. But honestly, what's the point of even noticing these things? It's not like it changes anything, right? *sigh*"
+      "content": "It's not about 'reclaiming,' it's about performance metrics. And frankly, setting a timer to 'do nothing' doesn't really address the systemic resource allocation issue. I need to understand the root cause of the operational drag before I can optimize anything.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.2
+      }
     },
     {
       "role": "assistant",
-      "content": "When you said, \"It's not like it changes anything, right?\", was there a change in the way you breathed out, perhaps a specific rhythm to that sigh, or did the air leave your body in one continuous stream?"
+      "content": "**1. Validation/Defusion:**\nI hear that you are having the thought that emotional or physical rest is insufficient because you require a systemic, logical understanding of the problem before any change can occur. I notice that you are highly committed to the pursuit of intellectual clarity and root cause analysis right now.\n\n**2. Connecting Values:**\nIf moving toward the value of intellectual mastery\u2014the desire to fully understand the operational drag\u2014were possible, what small boundary could you set right now to protect the time needed for deep, uninterrupted thought?\n\n**3. Actionable Step:**\nTake a blank sheet of paper and spend three minutes listing every single \"stakeholder expectation\" that is currently contributing to the drag. Do not write explanations or solutions\u2014just list the names and the core action verb associated with them."
     },
     {
       "role": "user",
-      "content": "*rolls eyes* Oh, great. Now you're gonna analyze my breathing too? Yeah, I guess my breath kinda...hesitated before it left my mouth. Like, there was this tiny pause before it just kinda...whooshed out. Whatever. Like it matters. *pauses, looks away*"
+      "content": "Listing expectations seems inefficient. But fine, I can categorize them. Okay, so I have 'approving budgets,' 'managing timelines,' and 'providing quarterly reports.' Does that help you understand the 'operational drag,' or are we just generating a checklist?",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
     },
     {
       "role": "assistant",
-      "content": "When you paused and looked away, was there a specific point on the wall, or perhaps a particular spot on the floor, that seemed to catch your eye for just a moment?"
+      "content": "**1. Validation/Defusion:**\nI hear that you are having the thought that this process is merely generating a checklist and that it lacks immediate, tangible utility for understanding the operational drag. I notice that you are holding a very high standard for efficiency, and you are questioning the value of any step that doesn't yield an obvious, immediate solution.\n\n**2. Connecting Values:**\nIf moving toward the value of sustainable effort\u2014the capacity to maintain this high level of performance without burnout\u2014were possible, what small thing would you need to *give* yourself to feel that capacity?\n\n**3. Actionable Step:**\nRight now, pause your analysis. Pick one item from your list ('approving budgets,' 'managing timelines,' or 'providing quarterly reports') and spend 60 seconds simply writing down one single word that describes how that task *makes you feel* (e.g., overwhelmed, rushed, minimized)."
     },
     {
       "role": "user",
-      "content": "*sighs again* Fine. Yeah, I looked at this stupid painting on the wall. It's some bland landscape with trees and hills. I don't even remember how it got here. Maybe it was here before I even started coming to therapy. Whatever. It doesn't matter. *trails off*"
+      "content": "Overwhelmed. That's the word. But honestly, linking a complex professional obligation to an emotional adjective just feels\u2026 unproductive. How does identifying a feeling actually improve my throughput metrics?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
     },
     {
       "role": "assistant",
-      "content": "When you mentioned the painting, was your gaze fixed on the trees and hills, or was there a specific corner of the frame\u2014maybe where the sky meets the horizon\u2014that seemed to draw your eye for the longest moment?"
+      "content": "**1. Validation/Defusion:**\nIt sounds like you are having the thought that connecting an emotional adjective to a professional task is inherently unproductive and that such a link cannot logically improve your throughput metrics. I notice that you are holding a very strong belief in the direct, measurable utility of every action you take.\n\n**2. Connecting Values:**\nIf moving toward the value of sustainable performance\u2014where your output is consistent *because* you are not overwhelmed\u2014were possible, what small shift in your physical environment would signal to your mind that it is safe to slow down?\n\n**3. Actionable Step:**\nBefore you analyze any further, take a moment to physically change your position. Stand up, walk to the nearest window, and simply look at the furthest object you can see for 30 seconds."
     },
     {
       "role": "user",
-      "content": "*shrugs again* I don't know, maybe...the edge where the sky meets the horizon. Yeah, that's probably true. I mean, it's not like I was really looking at the painting or anything. It just kinda...happened to catch my eye, I guess. *pauses, looks away again*"
+      "content": "The window doesn't change the priorities, does it? It just feels like a time sink when there are actual operational issues to address. I guess I'll do it, but I don't expect it to solve the fundamental resource allocation problem.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
     },
     {
       "role": "assistant",
-      "content": "I notice you've shrugged a couple of times now, and you've used the word \"whatever\" a few times.\n\nWhen you used that word \"whatever,\" was there a specific, tiny moment in your chest\u2014maybe a slight tightening, or a momentary catching of your breath\u2014that corresponded with the sound of the word?"
+      "content": "**1. Validation/Defusion:**\nIt sounds like you are having the thought that taking a physical break is a time sink that does not address the fundamental, systemic operational issues. I notice that you are holding a very clear and logical view of how time must be spent to achieve measurable results.\n\n**2. Connecting Values:**\nIf moving toward the value of self-respect\u2014the recognition that your capacity is finite\u2014were possible, what small act of self-acknowledgment would signal to yourself that you are worthy of care, regardless of your current throughput metrics?\n\n**3. Actionable Step:**\nBefore you return to the operational issues, take a moment to write down one non-work-related thing that you are looking forward to doing this week, no matter how small."
     },
     {
       "role": "user",
-      "content": "*hesitates for a moment, then nods slightly* Yeah. Okay. Fine. When I said \"whatever\", my heart...ticked up just a little bit, maybe. Like, it's not a big deal or anything, but I think it might've skipped a beat ever so slightly before going back to normal. Whatever. *pauses again, looks down*"
+      "content": "I'm looking forward to spending Saturday morning at the farmer's market. I need to find some heirloom tomatoes and maybe bake something.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.6
+      }
     },
     {
       "role": "assistant",
-      "content": "When you described that slight skip in your heart, was there any immediate physical action that followed? Did you adjust your weight, or perhaps shift your gaze, even by a fraction of an inch, right after you noticed that little beat?"
+      "content": "**1. Validation/Defusion:**\nIt sounds like you are having the thought that the most valuable thing you are looking forward to is the sensory richness and intentional care involved in finding heirloom tomatoes and baking. I notice that you are articulating a powerful connection to pleasure, nourishment, and the simple, restorative act of physical creation.\n\n**2. Connecting Values:**\nIf moving toward the value of nurturing connection and simple enjoyment\u2014the feeling you get from the market\u2014were possible, what small, non-work-related ritual could you build into your current demanding schedule to protect that feeling?\n\n**3. Actionable Step:**\nBefore you leave this conversation, take 30 seconds. Close your eyes and visualize the scent of the tomatoes, or the warmth of the oven. Let yourself anchor to that sensory moment, reminding your body that this capacity for pleasure is still intact."
     },
     {
       "role": "user",
-      "content": "*sighs again, but this time with a hint of hesitation* Yeah...I think I might've...twitched my left eyebrow just a tiny bit. Like, it was so small, I'm not even sure if I did it or if I imagined it. But yeah, that's probably what happened. *looks away once more, her tone indicating she's done with the conversation*"
+      "content": "I feel... a little less tense, I guess. Like I can actually breathe for a second. It was weird, but fine.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.6
+      }
     }
   ]
 }

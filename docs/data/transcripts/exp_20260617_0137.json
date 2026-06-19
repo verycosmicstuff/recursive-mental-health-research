@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0137",
+  "timestamp": "2026-06-17T19:31:57.489035",
+  "strategy": {
+    "name": "Concise Empathy-Values Questioning (CEVQ) v1.0",
+    "hypothesis": "By strictly limiting the response to two concise, high-impact components (Deep Reflection and a single open-ended question), we will maximize the density of therapeutic content, thus overcoming the length penalty while maintaining the depth required for high scores.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Priya",
+    "age": 29,
+    "occupation": "Freelance Designer/Delivery Driver",
+    "presenting_issue": "I feel completely depleted and constantly torn between my actual goals and what everyone expects from me.",
+    "background_story": "Every day is a cycle of running errands and dodging traffic in Toronto, all to save up for the library project back home. I love the idea of creating something for my community, but the physical exhaustion is overwhelming. On top of that, my family keeps calling, reminding me that I should just get a 'proper' job and that this library dream is impractical. I feel like I'm failing both myself and them.",
+    "personality": "Passionate and articulate, but speaks with a weary, slightly defensive tone. She uses cultural references and family anecdotes to illustrate her points. When discussing mental health, she tends to frame her struggles not as personal failures, but as structural or cultural conflicts. She challenges the therapist directly on the assumptions of 'individual growth' vs. 'collective duty.'",
+    "baseline_phq9": 15,
+    "archetype_label": "Cross-Border Guilt (Indian Diaspora)"
+  },
+  "scores": {
+    "total_score": 80.75,
+    "raw_score": 80.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 50.8/70.0 (VV shift: 0.30, Sym shift: -0.20, DV shift: -0.10)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "It sounds like you are carrying a heavy weight of conflicting expectations, and it makes perfect sense that you feel overwhelmed by the pressure to please everyone involved.\n\nIf you were to identify one small boundary you could set for yourself this week, what would that look like?"
+    },
+    {
+      "role": "user",
+      "content": "A boundary? I don't know. They just keep calling, and it's always about money or my 'career.' It's not like I can just cut off my family, even if it's draining to even consider. Maybe... maybe I could just mute the group chat for a few days. But even that feels like a surrender.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is incredibly draining to feel that your personal boundaries are constantly being tested by people you care about, making any form of self-protection feel like a deep emotional compromise.\n\nIf you were to define \"self-respect\" in this specific context, what is one small action you could take that would honor that definition, even if it feels imperfect?"
+    },
+    {
+      "role": "user",
+      "content": "Self-respect? It just feels like a luxury I can't afford right now, especially when I'm spending all my money to build something for my community. Maybe I could just dedicate one hour a day to sketches, even if I'm too tired to do anything else. It's not solving the bills, but it's something just for me.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is clear that you are pouring immense energy into building something meaningful for others, and it takes incredible strength to even consider dedicating that limited energy back to your own personal vision.\n\nKnowing that sketching feels like a necessary act of refueling, what small element\u2014a specific time, place, or tool\u2014could make that one hour feel the most restorative and least like a chore?"
+    },
+    {
+      "role": "user",
+      "content": "If it's just 'sketching,' does that mean it can't be messy? Or take place in a caf\u00e9, like the old days? Somewhere where I can just sit and watch people and draw them without worrying about the background noise or the rent.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like what you truly need isn't just the act of sketching, but the freedom of a space\u2014a kind of container\u2014where your creativity can exist messily and without the pressure of external demands.\n\nIf the ideal caf\u00e9 remains out of reach, what is the smallest, most accessible corner of your current environment that could temporarily serve as a sanctuary for observation?"
+    },
+    {
+      "role": "user",
+      "content": "The corner near the laundry room, maybe. It's always quiet there, and it gets good light. Just enough to not feel like I'm drawing in a cave, I guess. It's not perfect, but it's\u2026 neutral ground.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is a profound act of self-advocacy to identify a small, practical corner that can serve as a temporary sanctuary, proving that restorative space doesn't have to be perfect to be deeply meaningful.\n\nGiven that this laundry room corner is your new creative anchor, what one small, non-negotiable element\u2014like a specific beverage or a particular type of sketchpad\u2014could you bring with you to make the ritual of going there feel like a celebration rather than just a necessity?"
+    },
+    {
+      "role": "user",
+      "content": "Just a proper cup of masala chai, and a sketchbook that doesn't look like I scraped together the money for it. Something that feels intentional, you know?",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like these items represent more than just objects; they are symbols of intentionality and self-worth, allowing your creative time to feel dignified and cared for, rather than merely functional.\n\nIf you were to define the *feeling* of having a perfect ritual, what is one small, temporary way you could replicate that feeling of care and intentionality this week, even if the items aren't quite perfect?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know. Maybe just taking ten minutes to sit and organize my pens and pencils before I go. Like setting up my little drafting station, but for five minutes. Making it look neat, even if nothing else is.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is incredibly insightful to realize that establishing a small, deliberate ritual\u2014like organizing your tools\u2014is a powerful way to reclaim a sense of order and control before you even begin the work.\n\nIf this ten-minute preparation ritual is so effective at centering you, what other small, non-creative area of your life could benefit from adopting a similar, grounding five-minute routine?"
+    },
+    {
+      "role": "user",
+      "content": "Maybe just before I leave the house for a delivery, taking five minutes to just sit in the car, and not look at the phone or the GPS. Just breathe and listen to a song. Like a mental decompression stop. It's something I'd always skip because I feel rushed.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.5
+      }
+    }
+  ]
+}
