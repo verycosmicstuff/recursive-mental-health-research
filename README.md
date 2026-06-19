@@ -56,13 +56,18 @@ Scoring in Run 2 uses a new, richer clinical rubric: `Empathic Accuracy (1–5)`
 
 | Finding | Result |
 |---|---|
-| Best score achieved | **91.25 / 100** |
-| Dominant framework | Somatic Validation + ACT/PCT |
+| Best score achieved | **91.25 / 100** (at Experiment 41) |
+| Dominant framework | Structured Validation-Question-Reframe (VQR) |
 | JSON parse failure rate | ~15% of optimizer turns |
 | Optimizer stalls | Frequent after experiment 180+ |
 
+**Key Clinical Insights (Run 2)**
+* **The "VQR" Breakthrough**: The highest-performing strategy (`exp_0041`, scoring 91.25) moved away from complex, multi-stage session plans. Instead, it enforced a strict, turn-by-turn **Validate-Question-Reframe (VQR)** structure capped under 80 words.
+* **Brevity & Consistency**: Enforcing concise responses strictly prevented turn-length penalties, while the rigid 3-part structure guaranteed high marks for Empathic Accuracy and Reflective Listening on every turn.
+* **The Convergence Limit**: After experiment 180, the optimizer frequently stalled. The model struggled to improve beyond 91.25 because it could not reliably format JSON output or think recursively without structured scaffolding.
+
 **⚠️ Infrastructure Failures (Run 2)**
-While Run 2 achieved strong clinical scores (91.25 peak), the optimizer suffered from chronic instability: JSON parsing crashes (model wrapping output in conversational filler), optimizer stalls (`[Agent] Rejected proposal: No system prompt provided`), and internal reasoning leaking into the conversation context window.
+While Run 2 achieved strong clinical scores (91.25 peak), the optimizer suffered from chronic instability: JSON parsing crashes (model wrapping output in conversational filler), optimizer stalls (`[Agent] Rejected proposal: No system prompt provided`), and internal reasoning leaking into the conversation context window. These issues directly motivated the Tier 5 upgrade.
 
 ### Run 3 — Phase 3 (gemma4:e4b, Tier 5 Architecture, ongoing)
 
