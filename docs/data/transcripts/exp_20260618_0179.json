@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260618_0179",
+  "timestamp": "2026-06-18T23:28:55.553429",
+  "strategy": {
+    "name": "Insight-Centric Micro-Intervention (ICMI)",
+    "hypothesis": "The previous successful attempts (e.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Jamie",
+    "age": 31,
+    "occupation": "Marketing Coordinator",
+    "presenting_issue": "I feel completely overwhelmed by the pressure to be 'just fine' all the time, and I don't know how to just... stop pretending.",
+    "background_story": "I've spent my entire adult life trying to anticipate what people want, whether it's at work or with friends, because the alternative feels like intense social rejection. It's exhausting; I feel like I'm constantly running a script for who I should be, and lately, the script is falling apart. I keep catching myself freezing up in conversations, just hoping I say the perfect thing to maintain the peace, even if it's lying a little bit.",
+    "personality": "Highly anxious, prone to over-explaining and excessive apologizing. Shifts rapidly from intense self-criticism to desperate seeking of reassurance. When challenged or given a neutral response, their tone will instantly become deflated and wounded, assuming the worst possible interpretation of the silence. Will use phrases like, 'Did I say that wrong?' or 'You don't actually mean that, do you?'",
+    "baseline_phq9": 14,
+    "archetype_label": "ADHD Rejection Sensitivity \u2014 Unmasking Crisis"
+  },
+  "scores": {
+    "total_score": 62.25,
+    "raw_score": 62.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 47.2/70.0 (VV shift: 0.10, Sym shift: -0.30, DV shift: -0.20) | Third-Person Penalty (-15): Used 'user'",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "*Waiting for user input.*"
+    },
+    {
+      "role": "user",
+      "content": "I just feel like... I\u2019m running out of energy, you know? It\u2019s like I\u2019m constantly recharging my social batteries and I just never get to plug in. I don't know how to just stop doing it all.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**V:** It sounds like you are experiencing profound energy depletion. **C:** But does 'always giving' equate to 'always necessary'? **A:** Try identifying one boundary you can enforce today, no matter how small."
+    },
+    {
+      "role": "user",
+      "content": "Oh my god, I... I don't know if I can even do that. I feel like if I set *any* boundary, everything will just fall apart, and people will get upset. Am I being dramatic? Did I say that wrong?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.8,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**V:** It sounds like the fear of disappointing others is paralyzing. **C:** But does your fear of 'falling apart' guarantee that collapse? **A:** Test one boundary with a low-stakes person first. What if nothing breaks?"
+    },
+    {
+      "role": "user",
+      "content": "But what if they *do* get mad? Like, if I say 'no' to my friend, Mark, and he gets really upset? I just don't want him to think I don't care, and then I'd have to fix it, and that's just too much work already.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**V:** It sounds like you are worried about managing other people\u2019s emotional reactions. **C:** But are you responsible for predicting or controlling Mark's feelings? **A:** Practice stating 'no' simply, and then let the outcome be his to own."
+    },
+    {
+      "role": "user",
+      "content": "But what if he thinks it's personal? Like, 'Jamie doesn't care about me anymore.' I can't handle that kind of feeling from him. Am I being too much? You don't actually mean that, do you, that I can just 'let the outcome be his to own'?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**V:** It sounds like the fear of rejection feels unbearable right now. **C:** But is your self-worth truly dependent on Mark's interpretation of your boundaries? **A:** Focus only on the integrity of your 'no,' not the immediate feeling of others."
+    },
+    {
+      "role": "user",
+      "content": "I guess... I just feel like I'm always disappointing people, even if I don't try to. It's just just built into who I am, I think.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**V:** It sounds like you carry a heavy weight of perceived failure. **C:** But is 'always' a fact, or a pattern you've noticed? **A:** Identify one recent moment where you *didn't* disappoint anyone, no matter how small."
+    },
+    {
+      "role": "user",
+      "content": "Um... well, yesterday, my boss asked me for an update on the Q3 report, and I just... I just gave him the numbers right away, without over-explaining or apologizing for any potential missing data. And he just nodded and said 'Thanks.'",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**V:** It sounds like you successfully met a professional expectation with clarity. **C:** But did this success require a massive, exhausting effort? **A:** Name the single action you took that felt effortless. That is your blueprint."
+    },
+    {
+      "role": "user",
+      "content": "I guess... just giving the numbers right away. It wasn't like I was scripting a whole presentation or anything. I just opened the file and sent it.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
+    }
+  ]
+}
