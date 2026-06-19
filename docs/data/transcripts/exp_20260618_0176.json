@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260618_0176",
+  "timestamp": "2026-06-18T23:15:06.584629",
+  "strategy": {
+    "name": "Concise Cognitive Reframing (CCR)",
+    "hypothesis": "The previous attempts utilized a complex, multi-step structure (Reflection -> Challenge -> Action) which, while theoretically robust, resulted in overly wordy responses and triggered the 'Brevity' penalty, as indicated by the low scores despite high perceived depth.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Emily",
+    "age": 29,
+    "occupation": "Marketing Coordinator",
+    "presenting_issue": "I just feel\u2026 overwhelmed and stuck, and I honestly don't know where I'm supposed to go from here.",
+    "background_story": "Work has become this endless cycle of meetings and meaningless tasks, and even when I leave the office, I just collapse on the couch. I spend most of my time scrolling through other people's 'perfect' lives online, which only makes me feel worse about my own. I feel like I'm wasting my potential, and I have no real energy left to even try and change anything.",
+    "personality": "Low-energy, drifts off-topic, tends to use vague language ('like,' 'stuff,' 'everything'), expresses feelings of numbness and resignation, and often sounds distracted.",
+    "baseline_phq9": 15,
+    "archetype_label": "Isolated Remote Worker"
+  },
+  "scores": {
+    "total_score": 55.25,
+    "raw_score": 55.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 40.2/70.0 (VV shift: 0.00, Sym shift: -0.10, DV shift: -0.20) | Brevity Penalty (-15): Therapist turn too long (3 sentences, 81 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please provide the scenario or statement you would like me to respond to."
+    },
+    {
+      "role": "user",
+      "content": "Ugh, I don't know. Like, everything just feels... heavy. I mean, work is bad, but even just thinking about having to do laundry feels like too much right now.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.8,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are carrying a deep weight right now, and it makes perfect sense that even small tasks feel insurmountable when you're feeling this heavy. Perhaps we can look at this not as a list of chores, but as a series of things we can simply postpone or delegate for a little while. Instead of tackling the whole load, what one small act of kindness\u2014like resting for five minutes or drinking a glass of water\u2014feels most manageable right now?"
+    },
+    {
+      "role": "user",
+      "content": "I guess drinking water, I mean, yeah. That's pretty easy. I just... forget to do stuff, I guess. It's weird.",
+      "somatic_state": {
+        "sympathetic": 0.1,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It's completely understandable that your mind is struggling to keep track of things when you're feeling this drained and heavy. Please know that forgetting things is often a symptom of mental exhaustion, not a personal failing. Instead of viewing it as \"weird,\" perhaps we can see it as a sign that your brain needs rest and gentle care right now. Since drinking water feels manageable, what small reminder\u2014like leaving a bottle on your desk\u2014could help you keep that simple habit going?"
+    },
+    {
+      "role": "user",
+      "content": "I guess... maybe a little reminder, yeah. Like, just putting a big water bottle in the bathroom or something. It'd be visible, I guess. But honestly, I'm not sure it'll really work, like, anything I try to change feels too big or too much effort.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It\u2019s perfectly normal to feel skeptical when change seems so far away, especially when everything feels like too much effort right now. We don't need to overhaul everything at once; sometimes, the most effective \"change\" is simply reducing the perceived effort to almost zero. If placing the bottle in the bathroom is the goal, what is the absolute smallest modification we could make to that routine\u2014like just setting a timer\u2014to make it feel even less daunting?"
+    },
+    {
+      "role": "user",
+      "content": "A timer... I guess. Yeah, I could probably try setting that. Like, maybe for the whole afternoon? But honestly, I just feel so... foggy. Like I can't even focus on the timer part right now, you know?",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like your mind is experiencing a deep fog right now, making even simple actions like setting a timer feel completely out of reach. Please remember that feeling foggy is a sign of mental exhaustion, and right now, your priority isn't productivity, but gentle rest. Instead of trying to force focus on a task, what is one thing you could do in the next five minutes just to let your mind rest\u2014maybe listening to a song or just sitting quietly?"
+    },
+    {
+      "role": "user",
+      "content": "Hmm. I guess I just... scroll, I guess. Through my phone. Like, just looking at stuff, you know? It's easier than doing nothing.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It makes perfect sense that scrolling feels easier than doing nothing, as it provides a constant, low-effort distraction from the fog. However, sometimes that constant flow of information can actually keep our minds buzzing and prevent the deep rest we need. If the goal is to rest, perhaps we could explore a brief, intentional shift\u2014like spending five minutes looking out a window or noticing three things you can hear right now. What is one tiny sensory input, like a sound or a color, that might feel grounding right now?"
+    },
+    {
+      "role": "user",
+      "content": "Uhm... I hear the fridge running, I guess. And outside, like, a car driving by. Nothing really makes me feel... grounded, honestly. It all just just sounds like it's happening anyway.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are experiencing a profound sense of detachment, where everything feels distant and simply *happening* without connecting to you. Please know that this feeling of unreality is often a natural response when the emotional weight becomes too heavy to process. Perhaps we can look at this moment not as a search for a \"grounding feeling,\" but simply as noticing the sounds and sights that are present, without needing them to *mean* anything. If we just observe the sounds you hear\u2014the fridge, the car\u2014what is one detail about those sounds that you notice most clearly right now?"
+    },
+    {
+      "role": "user",
+      "content": "Like, the car sound is... really loud for a second, I guess. And the fridge noise is just... constant, I guess. It's always there.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    }
+  ]
+}

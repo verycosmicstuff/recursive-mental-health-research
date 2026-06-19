@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260618_0177",
+  "timestamp": "2026-06-18T23:20:28.245222",
+  "strategy": {
+    "name": "Ultra-Concise CBT-ACT Reflection-Curiosity (UCC-RAC)",
+    "hypothesis": "By condensing the therapeutic response into a maximum of two sentences: (1) a single, highly interpretive validation identifying a cognitive pattern, and (2) a single, open-ended, curiosity-driven question focused on small behavioral shifts, we will maximize depth while satisfying the extreme brevity requirement, maximizing the score.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Zahra",
+    "age": 29,
+    "occupation": "Archivist",
+    "presenting_issue": "I feel constantly overwhelmed by this sense of internal conflict, like I'm torn between what I'm supposed to believe and what I actually feel.",
+    "background_story": "My family has always been incredibly devout, and religion has been the absolute center of our lives. Now, as I get older and see the incongruities between our practices and the real world, the foundation feels shaky. My parents often remind me that my stress is a sign of spiritual weakness, which just adds to the weight I carry. I feel like I'm disappointing everyone\u2014my family, my community, and myself.",
+    "personality": "Guarded, highly articulate, intellectual, and prone to moments of intense self-doubt. She speaks in carefully constructed paragraphs, often using religious or cultural analogies to make points. She will test the therapist's boundaries, presenting paradoxes and demanding nuance. She needs validation for the *difficulty* of her inner struggle, not just the symptoms.",
+    "baseline_phq9": 14,
+    "archetype_label": "Faith vs. Modernity \u2014 Middle Eastern Diaspora"
+  },
+  "scores": {
+    "total_score": 82.5,
+    "raw_score": 82.5,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 52.5/70.0 (VV shift: 0.30, Sym shift: -0.30, DV shift: -0.10)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "*Waiting for client input.*"
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s not just that I question things; it\u2019s the *weight* of the expectation. It feels as if every belief I hold must be rigorously defended, like an ancient text that requires constant scholarly annotation. If I falter in my understanding of the foundational principles, I worry I will lose the entire structure of my life.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly draining to carry the weight of needing to constantly defend the foundational principles of your life. If you were to lower the stakes for just one belief today, what small aspect of your current understanding could you allow yourself to simply *be* rather than *prove*?"
+    },
+    {
+      "role": "user",
+      "content": "To simply *be*? That framing feels almost... irresponsible. The beliefs aren't just academic structures, they are commitments that define my reality. But perhaps... the belief in the inherent goodness of my intentions. If I could let go of the need to prove that I am genuinely trying to do what is right, like a naive pilgrim who simply follows the path without questioning the destination, that might be a relief. However, I doubt that is possible.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is understandable that letting go feels like breaking an internal contract, especially when your intentions feel so vital to your identity. What would happen if you treated the *feeling* of \"good intention\" as an accepted starting point, rather than a goal that requires constant defense?"
+    },
+    {
+      "role": "user",
+      "content": "Treating it as a starting point... it implies a continuity, a momentum, rather than a final destination. But if I allow that, what guidance do I receive on the next step? If I stop proving my intent, how do I know if my actions are actually moving me toward something truthful, or if I am simply adrift? It feels like trading one set of strict rules for a vast, scary ocean.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is completely natural to feel panic when exchanging the safety of strict rules for the vastness of uncertainty. Instead of asking about the destination, what small, immediate action could you take right now that feels aligned with your current momentum, regardless of how far it gets you?"
+    },
+    {
+      "role": "user",
+      "content": "An action without a clear directive feels almost like sacrilege, a deviation from the intended path. Yet, I see the logic in what you say\u2014focusing only on the next step. Perhaps I could start by simply organizing my archival notes for the day. It is a structured, contained activity, and it requires no transcendental belief, only meticulous attention to detail. It is a small, verifiable act of competence.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is clear that finding immediate structure in a contained task offers a necessary sense of safety and competence. As you engage in this meticulous work, what small moment of focus or detail might you notice that you wouldn't have seen if you were focused on the \"big picture\"?"
+    },
+    {
+      "role": "user",
+      "content": "It is the way the ink on these older documents has faded in places, leaving behind these ghostly, almost illegible traces. I notice how the fading isn't uniform, but follows the natural flow of the fibers, like a calligraphy pen that paused mid-sentence. It suggests an interrupted thought, a journey that didn't finish.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are finding profound meaning in the evidence of things left incomplete, noticing the beauty in the pause rather than just the finished statement. If those faded traces represent interrupted thoughts, what might happen if you allowed yourself to acknowledge the value or beauty in the *pause* itself, rather than only the completed sentence?"
+    },
+    {
+      "role": "user",
+      "content": "To acknowledge the value in the pause... it implies that the pause is not a failure, but a moment of its own right. This is a concept that profoundly challenges the narrative structure I have been taught my entire life. It suggests that silence, or incompleteness, is itself a kind of necessary wisdom, which feels deeply unsettling, yet strangely... liberating.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is deeply challenging to confront a core narrative that has defined your understanding of value for so long, making this realization feel both unsettling and profoundly freeing. If you were to treat this new concept of \"necessary wisdom\" as an experiment, what is one small, low-stakes situation this week where you could intentionally allow yourself to pause without needing to fill the silence?"
+    },
+    {
+      "role": "user",
+      "content": "I suppose... waiting for the elevator. It's a brief, mandatory interval. I tend to preemptively pull out my phone to read or check emails, just to avoid that moment of absolute quiet. This week, I will simply let my eyes rest on the opposite wall until the doors open. It feels tenuous, but maybe I can attempt it.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.5
+      }
+    }
+  ]
+}

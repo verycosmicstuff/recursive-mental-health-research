@@ -3311,6 +3311,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 2 (qwen3:4b)"
+    },
+    {
+      "exp_id": "exp_20260618_0177",
+      "strategy_name": "Ultra-Concise CBT-ACT Reflection-Curiosity (UCC-RAC)",
+      "hypothesis": "By condensing the therapeutic response into a maximum of two sentences: (1) a single, highly interpretive validation identifying a cognitive pattern, and (2) a single, open-ended, curiosity-driven question focused on small behavioral shifts, we will maximize depth while satisfying the extreme brevity requirement, maximizing the score.",
+      "score": 82.5,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 2 (qwen3:4b)"
     }
   ],
   "best_score": 91.25
