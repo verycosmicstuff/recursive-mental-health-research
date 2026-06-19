@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260618_0183",
+  "timestamp": "2026-06-18T23:46:27.124850",
+  "strategy": {
+    "name": "Insight-Centric Micro-Intervention (ICMI)",
+    "hypothesis": "The previous successful attempts (e.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Douglas",
+    "age": 58,
+    "occupation": "IT Project Manager",
+    "presenting_issue": "I just want to talk to someone about the stress, but I really don't know what you expect me to say.",
+    "background_story": "Lately, the pressure at work has been relentless, and I feel like I'm constantly running on empty. My wife keeps nagging me to 'open up,' which just makes me more defensive. I've been spending too much time on poker and haven't really looked at my health, and frankly, I'm just tired of feeling this way without a clear solution.",
+    "personality": "Guarded, sarcastic, and skeptical. He speaks in short, dismissive bursts, frequently corrects the therapist's phrasing, and uses self-deprecating humor as a shield to maintain distance.",
+    "baseline_phq9": 9,
+    "archetype_label": "Skeptical Retiree"
+  },
+  "scores": {
+    "total_score": 48.25,
+    "raw_score": 48.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 33.2/70.0 (VV shift: 0.00, Sym shift: 0.10, DV shift: 0.00) | Third-Person Penalty (-15): Used 'user'",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "*Awaiting user input.*"
+    },
+    {
+      "role": "user",
+      "content": "Just talk. I don't know what the goal is anyway. I'm already here, aren't I?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**V:** It sounds like you're feeling adrift and unsure of direction. **C:** But perhaps the goal isn't a destination, but simply the next breath. **A:** What if we just talk about the last thing that pulled your attention?"
+    },
+    {
+      "role": "user",
+      "content": "The last thing? Was it the blinking cursor on a project plan, or your vague suggestions? Look, I just want to talk stress, not existential poetry.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**V:** I hear the frustration with vague suggestions and the need for practical talk. **C:** But stress often lives right where the poetry and the plan intersect. **A:** Let's name one physical sensation you feel right now. Just one."
+    },
+    {
+      "role": "user",
+      "content": "A physical sensation? Uh... nothing. Nothing's wrong. You're asking me to focus on that crap when I'm already running on fumes. Just... drop it.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**V:** It sounds like you are completely depleted and ready to stop trying. **C:** But even when running on fumes, the body holds information. **A:** What is one thing you can *stop* doing for the next five minutes?"
+    },
+    {
+      "role": "user",
+      "content": "Stop doing? I'm already trying to do nothing. Look, I'm just tired. You want a list? I can't even remember what was on my list yesterday.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**V:** It sounds like your energy reserves are completely depleted right now. **C:** But even when memory fails, your senses are still reliable. **A:** Name one color you see right now, without thinking about it."
+    },
+    {
+      "role": "user",
+      "content": "Blue. The wall, I guess. Why?",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**V:** You noticed the blue, and questioned the need for explanation. **C:** But perhaps the point isn't the 'why,' but the simple act of noticing. **A:** Just rest in that blue for a moment. Let the color be enough."
+    },
+    {
+      "role": "user",
+      "content": "It's just blue. It's not a puzzle, or a meditation exercise. Just a wall. Can we stick to the actual problem, please?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**V:** It sounds like you need to cut through the abstract and tackle the concrete issue. **C:** But the 'actual problem' is only visible once you pause the resistance. **A:** What is the single, most immediate step you could take on that problem right now?"
+    },
+    {
+      "role": "user",
+      "content": "The single, most immediate step? Probably to close this session. Or maybe just pour myself a drink. This whole exercise feels pointless.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    }
+  ]
+}
