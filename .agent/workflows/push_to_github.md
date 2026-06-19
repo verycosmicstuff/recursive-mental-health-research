@@ -10,7 +10,7 @@ This workflow covers how to keep your GitHub repo up to date after working on th
 
 1. Open **GitHub Desktop**
 
-2. You will see a list of changed files in the left panel. Review them to make sure you're only committing code files (`.py`, `.html`, `.bat`, `.md`) and not any data files (`results.tsv`, `app.log`, `experiments/`). The `.gitignore` handles this automatically.
+2. You will see a list of changed files in the left panel. Review them to make sure you're committing code and experiment data files, but not `app.log`. The `.gitignore` handles `app.log` automatically.
 
 3. In the **Summary** box (bottom left), write a short description of what you changed. Examples:
    - `Add hardware monitor tab to dashboard`
@@ -34,6 +34,4 @@ Good times to push:
 ## What NOT to Push
 
 The `.gitignore` already blocks these, but double-check:
-- Never manually add `results.tsv` to a commit (it contains all your raw run data)  
-- Never add the `experiments/` folder (thousands of JSON files, not useful to others)
 - Never add `app.log` or `*.backup` files
