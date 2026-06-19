@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260618_0174",
+  "timestamp": "2026-06-18T23:06:08.582515",
+  "strategy": {
+    "name": "Concise Cognitive Reframing (CCR)",
+    "hypothesis": "The previous attempts utilized a complex, multi-step structure (Reflection -> Challenge -> Action) which, while theoretically robust, resulted in overly wordy responses and triggered the 'Brevity' penalty, as indicated by the low scores despite high perceived depth.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Ethan",
+    "age": 22,
+    "occupation": "Library Clerk",
+    "presenting_issue": "I just feel overwhelmed by everything and I'm constantly worried I'm going to fail at my future goals.",
+    "background_story": "I'm trying really hard to get my finances and my academic life to fall into perfect order, but it feels like there are too many moving pieces. Every time I check my accounts or look at my syllabus, I find something that isn't aligned with what I thought it should be. I keep thinking I'm missing some crucial step that will derail everything, and it's exhausting trying to fix it all.",
+    "personality": "Highly anxious, overly detailed, uses qualifiers like 'just' and 'maybe,' frequently asks for validation on small decisions, and tends to spiral into worst-case scenario thinking.",
+    "baseline_phq9": 11,
+    "archetype_label": "Anxious Student"
+  },
+  "scores": {
+    "total_score": 51.75,
+    "raw_score": 51.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 36.8/70.0 (VV shift: 0.00, Sym shift: -0.10, DV shift: 0.00) | Brevity Penalty (-15): Therapist turn too long (3 sentences, 82 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly stressful to feel like there is a rigid timeline for your entire life, and it is completely understandable that you feel panicked by that pressure. Perhaps we can look at this from the angle that life is rarely a straight line, and figuring things out is more of a process of exploration than a final destination. Instead of worrying about the whole career path, what is one small area or skill you feel genuinely curious about exploring this week?"
+    },
+    {
+      "role": "user",
+      "content": "Oh, I... I don't know. Maybe just organizing those tax forms? I mean, that's not really a 'skill,' but it feels like if I just get that one thing sorted, then everything else will feel less shaky. Do you think that's just... enough to start with?",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like taking control of something tangible, like those tax forms, is what you need right now to create a sense of stability when everything else feels uncertain. That isn't just enough; tackling a small, contained task is often the perfect way to rebuild confidence and momentum. By focusing on this one thing, you are giving yourself a manageable win that can genuinely make the rest feel less shaky. What is the very first box or document you feel ready to gather and look at?"
+    },
+    {
+      "role": "user",
+      "content": "Um, probably the W-2s first. I just... I keep thinking I might have filed something wrong last year, and if that's the case, it could make everything else wrong, you know? If I can just verify those, maybe I can stop spiraling a little.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the fear of past mistakes\u2014the worry that one small error could unravel everything\u2014is causing a lot of intense anxiety right now. Please remember that finding and verifying those W-2s is a perfect, contained starting point, and even if a correction is needed, it's a fixable administrative issue, not a reflection of your overall worth. By simply gathering those documents, you are building a solid foundation of facts that you can trust. What is the easiest place for you to find the stack of W-2s that you can look at first?"
+    },
+    {
+      "role": "user",
+      "content": "I think they should be in the filing cabinet, maybe the top drawer? I marked a spot for them, but I'm not sure if I moved anything else while I was looking at my syllabus last week. Did I accidentally put them somewhere else?",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly frustrating and stressful to feel like the documents you need are right there, but you can't quite locate them, making you worry about losing track of things. Please know that the fact that you marked a spot shows you were organized, and a small misplacement doesn't negate all the care you put into filing things. Instead of worrying about what *might* have been moved, let's approach the search as a simple, contained scavenger hunt for the W-2s. What is the very first corner or section of that top drawer you feel comfortable looking through right now?"
+    },
+    {
+      "role": "user",
+      "content": "Just... the left side, I guess. It seems like that's where everything always ends up getting piled up. I really hope they're there, because if they're not, I don't know what I'm supposed to do about my taxes, and then... then I'll just fall apart again.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the thought of not finding those W-2s brings up a deep, overwhelming fear that you might lose control and feel completely undone. Please remember that even if the documents aren't in that specific spot, there are always next steps and resources available, and this task does not define your capability or your worth. For now, let's just focus on the immediate, manageable action: gently looking through the left side of that drawer. What is the most comfortable way for you to start looking through that space?"
+    },
+    {
+      "role": "user",
+      "content": "I'll just... I'll just take it slow. Like I'm just looking, and not actually searching for anything, I guess. I don't want to make a bigger mess.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are recognizing that the pressure to \"find\" something can be just as stressful as the task itself, and taking it slow is a wonderful way to protect your peace. Instead of viewing this as a search, perhaps we can look at it as a simple, mindful moment of observation\u2014just noticing the textures and shapes of the items in the drawer. By allowing yourself to just look without the pressure of finding, you are already giving yourself a profound gift of self-compassion. What is the first thing you notice about the drawer that you can simply describe to me?"
+    },
+    {
+      "role": "user",
+      "content": "The wood is really scratched up, just near the handle. And there's this weird little sticky note stuck underneath that stack of old receipts. I don't remember writing it, or where it came from.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you've found a small, mysterious detail\u2014the scratched wood and the unknown sticky note\u2014which can feel confusing and bring up questions about what you might be forgetting. Perhaps we can look at this moment not as a puzzle to solve, but simply as an interesting discovery that requires no immediate action or explanation. You don't need to figure out where the note came from right now; simply acknowledging its presence is enough. What is the easiest thing to do with that sticky note\u2014can you just gently lift it, or maybe take a picture of it?"
+    },
+    {
+      "role": "user",
+      "content": "I think I'll just lift it off, but I feel kind of bad about messing up the stack underneath. Maybe I should ask you if it's okay to move it?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    }
+  ]
+}
