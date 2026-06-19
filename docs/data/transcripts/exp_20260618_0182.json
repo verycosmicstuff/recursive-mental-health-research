@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260618_0182",
+  "timestamp": "2026-06-18T23:42:27.037496",
+  "strategy": {
+    "name": "Insight-Centric Micro-Intervention (ICMI)",
+    "hypothesis": "The previous successful attempts (e.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Elena",
+    "age": 30,
+    "occupation": "Bookkeeper",
+    "presenting_issue": "I feel completely overwhelmed and like I'm constantly failing to keep everyone else afloat, both financially and emotionally.",
+    "background_story": "Between managing the family's accounts, translating for my mother and father, and keeping up with my younger siblings' college payments, I feel like I'm running on empty. I used to have plans for myself, but everything has revolved around the family's stability after my father got hurt. I know I should ask for help, but it feels like I'm abandoning everyone if I do.",
+    "personality": "She is highly conscientious, speaks in a very pragmatic and responsible tone, often using familial duties as justifications for her emotional state. She will express deep anxiety about disappointing others and will frequently deflect discussion of her personal needs by bringing up a family obligation. She adopts a martyr complex, framing her sacrifice as an act of profound love and duty. She uses religious language (e.g., 'God's will,' 'blessing,' 'sin') when discussing guilt.",
+    "baseline_phq9": 17,
+    "archetype_label": "Eldest Daughter Trap \u2014 Latin American Familismo"
+  },
+  "scores": {
+    "total_score": 33.25,
+    "raw_score": 33.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 33.2/70.0 (VV shift: -0.05, Sym shift: 0.00, DV shift: 0.00) | Third-Person Penalty (-15): Used 'user' | Brevity Penalty (-15): Therapist turn too long (12 sentences, 125 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "**User Input:** \"I feel like I'm constantly failing at everything, and I just don't know how I'm going to keep up with all these responsibilities.\"\n\n**Analysis:**\n*   **Feeling:** Failure, overwhelmed, unsustainable.\n*   **Core Assumption:** That \"keeping up\" requires perfection and constant effort.\n\n**Drafting (V-C-A):**\n*   *(V) Validate:* You sound deeply stressed and overwhelmed by your responsibilities.\n*   *(C) Challenge:* But is \"keeping up\" the only measure of success?\n*   *(A) Action:* What if you allowed yourself one thing to be imperfect today?\n\n**Review:** (30 words) Meets all criteria. Tone is appropriate. Structure is solid.<channel|>**V:** You sound deeply stressed and overwhelmed by your responsibilities.\n**C:** But is \"keeping up\" the only measure of success?\n**A:** What if you allowed yourself one thing to be imperfect today?"
+    },
+    {
+      "role": "user",
+      "content": "It's not about success or failure, really. It's just... the bills. If I don't keep the flow steady, people suffer. God wouldn't want us to crumble just because I'm tired. I just need to figure out the budget for next quarter.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**V:** The weight of caring for others while managing finances is immense.\n**C:** But are you the only pillar holding up this structure?\n**A:** What if you budgeted for your own necessary rest first?"
+    },
+    {
+      "role": "user",
+      "content": "I can't just 'budget' for rest. It's not a scheduled expense like the utilities or the tuition payments. The family needs me to be functional, and right now, my function is being paid for. I worry that if I stop, everything will fall into ruin.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**V:** The pressure to be the reliable foundation for your family is enormous.\n**C:** But is your worth defined only by your continuous, paid function?\n**A:** What if you defined one non-financial necessity for yourself today?"
+    },
+    {
+      "role": "user",
+      "content": "I suppose... maybe just an hour where I don't have to look at any spreadsheets. But then I'll fall behind, and then the overdraft fees will eat into the savings, and we won't be able to pay for the car insurance. I have to stay focused on the numbers.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**V:** You are intensely focused on preventing financial ruin.\n**C:** But is relentless focus the only path to stability?\n**A:** What if you treated that hour of rest as a critical, non-negotiable investment?"
+    },
+    {
+      "role": "user",
+      "content": "It feels like such a sin, to prioritize myself over the stability of the whole. My parents and siblings are counting on me, and I can\u2019t just drop everything for a feeling. I need to prove that I am capable, that I am worthy of the trust placed in me.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**V:** The weight of that deep sense of responsibility and duty is crushing.\n**C:** But is self-preservation an act of selfishness, or necessary strength?\n**A:** What if caring for yourself was the most responsible thing you could do right now?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know how to see it like that. I just feel like if I'm not constantly working, I'm failing my duty. It feels wrong, like I'm abandoning God's plan for my family.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**V:** The depth of your commitment to your family's well-being is profound.\n**C:** But is duty a performance only measured by constant activity?\n**A:** What if your greatest strength today is simply showing up for yourself?"
+    },
+    {
+      "role": "user",
+      "content": "I just keep thinking about what the ledger says. It's always red if I don't actively manage every single thing. I suppose... I guess I'd have to sit down and just breathe for a minute. But then I'll have to get back to the taxes.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**V:** The urgency of the numbers is creating intense anxiety.\n**C:** But is a clear mind more valuable than immediate action?\n**A:** What if you gave yourself just two minutes to breathe *before* opening the ledger?"
+    },
+    {
+      "role": "user",
+      "content": "Two minutes... it sounds so unproductive. I feel this knot in my chest tightening up. I just keep picturing the list of payments and it makes my hands shake. I really should go check the accounts instead.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.05
+      }
+    }
+  ]
+}
