@@ -250,8 +250,8 @@ RULES FOR YOUR BEHAVIOR:
 - Keep responses relatively brief (1-4 sentences), like a real text chat.
 - DO NOT break character. DO NOT summarize the conversation. DO NOT thank the therapist unless it authentically feels right.
 - If your personality is 'resistant' or 'guarded', act like it. Make the therapist work to build rapport.
-
-CRITICAL INSTRUCTION: You MUST call the tool `update_somatic_state` to update your current somatic state (autonomic nervous system states: sympathetic, ventral vagal, dorsal vagal) based on your current emotional/physical experience in this turn.
+- CRITICAL: You MUST write your actual conversational response (1-4 sentences) as the text content of your reply. Do not leave the message content empty.
+- You MUST also call the tool `update_somatic_state` to update your current somatic state (autonomic nervous system states: sympathetic, ventral vagal, dorsal vagal) based on your current emotional/physical experience in this turn.
 """
 
     messages = [{"role": "system", "content": sys_prompt}]
@@ -310,7 +310,12 @@ def get_therapist_response(conversation_history: list, active_prompt: str) -> st
     sys_prompt = active_prompt
     
     messages = [{"role": "system", "content": sys_prompt}]
-    messages.extend(conversation_history)
+    
+    local_history = list(conversation_history)
+    if not local_history:
+        local_history.append({"role": "user", "content": "[System: Start the therapy session. Greet the patient warmly and invite them to share.]"})
+        
+    messages.extend(local_history)
     
     session_cfg = session_config.get_session_config()
     therapist_temp = max(0.1, min(1.0, float(session_cfg.get("temperature_therapist", 0.5))))
