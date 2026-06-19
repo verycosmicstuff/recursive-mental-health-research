@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260618_0173",
+  "timestamp": "2026-06-18T23:01:47.371616",
+  "strategy": {
+    "name": "Concise CBT-ACT Reframing (CCAR) v2.0",
+    "hypothesis": "By condensing the therapeutic response into three brief, highly focused steps (validate, challenge, redirect) and strictly enforcing a maximum word count, we will eliminate the Brevity Penalty, improve conciseness, and boost the State Score by directly introducing CBT reframing techniques while maintaining the core empathetic connection.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Mei-Ling",
+    "age": 42,
+    "occupation": "Accountant",
+    "presenting_issue": "I feel like I am constantly running on empty, and I just don't know how to manage the physical symptoms of stress anymore.",
+    "background_story": "My parents moved from Guangzhou to Vancouver when I was in college, and since then, my life has centered around their care. Now that they are both retired and increasingly dependent, the demands have multiplied, leaving no time for me. I feel immense pressure to keep everything running smoothly, financially and logistically, and I worry that if I stop giving, everything will crumble.",
+    "personality": "She speaks in very polite, measured tones, often apologizing for taking up time or seeming overwhelmed. She uses physical complaints\u2014like headaches or chest tightness\u2014to describe emotional distress rather than naming feelings like frustration or anger. She frequently references her parents' needs and sacrifices, framing her own exhaustion as a moral failure rather than a personal need for rest.",
+    "baseline_phq9": 16,
+    "archetype_label": "Filial Piety Conflict \u2014 East Asian Elder Care"
+  },
+  "scores": {
+    "total_score": 58.75,
+    "raw_score": 58.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 43.8/70.0 (VV shift: 0.20, Sym shift: -0.10, DV shift: 0.00) | Brevity Penalty (-15): Therapist turn too long (5 sentences, 52 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Thank you for making the time to connect today. Please know that this space is entirely yours; there is nothing you need to perform here. Take a deep breath, and when you are ready, I am here to listen without judgment. How are you doing right now, in this very moment?"
+    },
+    {
+      "role": "user",
+      "content": "Oh, thank you. I'm sorry, I know I'm already taking up your time. I feel... a bit tight in my chest, actually. Maybe that's just the car ride, but I hope it's nothing.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the physical tension\u2014that tightness in your chest\u2014is making you feel a bit vulnerable and perhaps even self-conscious about taking up space. Please know that your presence here is exactly where it needs to be. Let's just focus on that sensation for a moment. Can you describe what that tightness feels like, maybe in one word?"
+    },
+    {
+      "role": "user",
+      "content": "It's just... heavy. Like something is sitting there, just pressing down. I apologize if I can't describe it better; I'm not sure what it is.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That feeling of heaviness, like a physical weight pressing down, sounds incredibly draining. It also seems like you are apologizing for having this physical feeling, which suggests you feel you should be able to explain it perfectly. But you don't need to explain it to me. Can we try something small? Just notice where you are connecting with the chair or the floor right now. What is one small point of contact you can feel, and can you name it?"
+    },
+    {
+      "role": "user",
+      "content": "The chair... I can feel my lower back against the cushion. It's solid. It's a very noticeable pressure.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like finding that solid, noticeable pressure against the cushion is a very grounding point right now. It seems like your body is telling you where it is anchored, even when the emotional weight feels heavy. Given that solid point of contact, what is one tiny, non-verbal movement\u2014like shifting your fingers or adjusting your posture\u2014that feels like it might release just a fraction of that heaviness?"
+    },
+    {
+      "role": "user",
+      "content": "I... I think if I just adjust my shoulders slightly, maybe they'll settle. It might be a little movement, but maybe it will help with the chest tightness.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like adjusting your shoulders is a gentle attempt to use a physical action to manage that heavy, pressing feeling. It suggests that movement is a pathway to finding a little more space. But what if the goal isn't *fixing* the heaviness, but simply noticing what happens *after* the adjustment? What is one thing you could notice about your breath\u2014maybe just the air coming in\u2014that you can focus on for the next minute, without needing it to feel better?"
+    },
+    {
+      "role": "user",
+      "content": "I'm trying. It feels... a little shallow, I think. I keep worrying I'm not breathing enough, or maybe too much. I shouldn't be focusing on it so much.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the act of focusing on your breath itself has become a source of worry, leading to the feeling that you shouldn't be paying attention to it. It seems like you are judging your own effort, thinking that focusing on it is somehow a mistake. But what if the breath is just data, not a performance? What is one tiny way you could physically guide the air *out* of your body right now\u2014like a slow, silent exhale\u2014just to give yourself a moment of permission?"
+    },
+    {
+      "role": "user",
+      "content": "It's difficult. I feel like if I let it out, it will just feel like a big sigh of relief, and I don't know if I'm allowed to feel that much of a burden.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like that potential sigh of relief feels like it would be admitting to a burden\u2014a weight that, in your mind, you feel you aren't allowed to carry or feel. That feeling of needing permission is very powerful. But what if the breath doesn't require permission to simply *be*? Could you allow yourself one tiny, silent exhale right now, just as a simple acknowledgment of the weight, without needing it to feel like a 'sigh of relief'?"
+    },
+    {
+      "role": "user",
+      "content": "I think... maybe I can just let it go. It feels a little less heavy, just for a moment. Thank you.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.5
+      }
+    }
+  ]
+}
