@@ -426,12 +426,16 @@
                 
                 if (v === tabId) {
                     if(viewEl) viewEl.classList.remove('hidden');
-                    tabEl.classList.add('text-teal-400', 'border-teal-400');
-                    tabEl.classList.remove('text-slate-400', 'border-transparent');
+                    if(tabEl) {
+                        tabEl.classList.add('text-teal-400', 'border-teal-400');
+                        tabEl.classList.remove('text-slate-400', 'border-transparent');
+                    }
                 } else {
                     if(viewEl) viewEl.classList.add('hidden');
-                    tabEl.classList.remove('text-teal-400', 'border-teal-400');
-                    tabEl.classList.add('text-slate-400', 'border-transparent');
+                    if(tabEl) {
+                        tabEl.classList.remove('text-teal-400', 'border-teal-400');
+                        tabEl.classList.add('text-slate-400', 'border-transparent');
+                    }
                 }
             });
 
