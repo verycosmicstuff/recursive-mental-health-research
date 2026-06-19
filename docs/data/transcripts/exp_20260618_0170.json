@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260618_0170",
+  "timestamp": "2026-06-18T22:45:49.949823",
+  "strategy": {
+    "name": "",
+    "hypothesis": "",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Alex",
+    "age": 31,
+    "occupation": "Data Analyst",
+    "presenting_issue": "I am struggling to function at work because everyday sensory inputs feel overwhelmingly loud and confusing.",
+    "background_story": "My current living environment is too stimulating; the constant hum of the refrigerator, the chatter of neighbors, and the flickering overhead lights disrupt my focus. I spend most evenings retreating to a completely dark room with noise-canceling headphones on just to process the day. I feel a constant, low-grade anxiety that makes initiating tasks feel physically impossible. It's exhausting trying to translate my internal state into something that makes sense for other people to understand.",
+    "personality": "Direct, literal, and highly factual. Responses will be brief and to the point. Will avoid abstract concepts or metaphors. If asked 'How did that make you feel?', the response might be 'It made me feel tired' rather than a complex emotional description. Will require specific instructions and concrete examples. May occasionally pause or state 'I do not understand the question' if the prompt is too vague.",
+    "baseline_phq9": 17,
+    "archetype_label": "Late-Diagnosed Autistic Burnout"
+  },
+  "scores": {
+    "total_score": 48.25,
+    "raw_score": 48.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 33.2/70.0 (VV shift: 0.00, Sym shift: 0.20, DV shift: -0.10) | Brevity Penalty (-15): Therapist turn too long (7 sentences, 80 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please provide the thought or situation you would like to explore. I will guide you through a single Reframing Cycle using the following structure."
+    },
+    {
+      "role": "user",
+      "content": "I do not understand what a 'Reframing Cycle' is. Can you define it using a concrete example?",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. VALIDATION**\nIt is completely normal to feel confused when presented with new, abstract therapeutic concepts. The process of learning how to think differently can feel foreign and overwhelming.\n\n**2. Socratic CHALLENGE**\nIf understanding something requires it to be perfectly clear the first time, what does that suggest about the value of initial confusion or incomplete knowledge?\n\n**3. REFRAME**\nLearning is not about immediate comprehension; it is about sustained curiosity and the willingness to approach complexity in manageable, sequential steps."
+    },
+    {
+      "role": "user",
+      "content": "This process is too abstract. Can you give me an example using my work? Like, what did I do yesterday that was confusing?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. VALIDATION**\nIt is understandable that abstract concepts feel disconnected from real life, and it is natural to want to anchor learning in concrete, observable examples from your own routine.\n\n**2. Socratic CHALLENGE**\nIf you believe that a skill must be perfectly concrete to be useful, what might you risk missing out on by dismissing the value of abstract principles?\n\n**3. REFRAME**\nThe goal of reframing is not to eliminate abstract thinking, but to build a flexible mental toolkit that allows you to apply principles to any situation, whether concrete or theoretical."
+    },
+    {
+      "role": "user",
+      "content": "I do not understand the difference between a 'mental toolkit' and just having specific instructions for a task. Can you give me a concrete example of what a specific instruction would be?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. VALIDATION**\nIt is very logical to seek clear boundaries between general principles and actionable steps. The difference between a guiding system and a fixed rule can indeed feel confusing.\n\n**2. Socratic CHALLENGE**\nIf a \"toolkit\" is designed to help you solve problems, does that mean it cannot, at times, generate the specific instructions you need for a task?\n\n**3. REFRAME**\nA mental toolkit is not a replacement for instructions; it is the *process* that allows you to create, adjust, or discard specific instructions when the initial plan fails or the situation changes."
+    },
+    {
+      "role": "user",
+      "content": "If the plan fails, then I just need a new plan. Why does it matter that I have a 'process' to create it?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. VALIDATION**\nIt is completely logical to feel that if a plan fails, the only necessary step is simply generating a replacement plan. It seems efficient to skip the methodological steps entirely.\n\n**2. Socratic CHALLENGE**\nIf you only focus on the successful outcome (the new plan), what might you overlook about the initial failure that could prevent the *next* plan from failing, too?\n\n**3. REFRAME**\nThe process matters because it forces you to analyze the failure point\u2014not just the resulting mistake\u2014thereby building resilience and ensuring your future plans are robust against predictable weaknesses."
+    },
+    {
+      "role": "user",
+      "content": "I do not understand why analyzing the failure point is useful. If I just note that the plan failed, I can start over. What specific piece of data would the analysis provide that I cannot get from simply noting the failure?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. VALIDATION**\nIt is highly logical to assume that a failure simply requires a restart. From an efficiency standpoint, noting a failure and starting anew seems like the quickest, most straightforward path forward.\n\n**2. Socratic CHALLENGE**\nIf you simply note a failure and restart, how can you be certain that the underlying conditions or assumptions that caused the initial failure haven't been unintentionally repeated in the new attempt?\n\n**3. REFRAME**\nAnalyzing the failure point provides diagnostic data\u2014it tells you *why* the plan broke, not just *that* it broke\u2014allowing you to proactively adjust the system and prevent repeating the same error."
+    },
+    {
+      "role": "user",
+      "content": "So, you're saying the analysis is just a way to find the weak points in my current method. That is a measurable input.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. VALIDATION**\nIt is very astute of you to interpret the analysis as a search for measurable weak points. Viewing it through a data-driven lens is a highly rational and effective way to approach self-improvement.\n\n**2. Socratic CHALLENGE**\nIf the sole purpose of the analysis is to find weaknesses, what potential strengths or overlooked resources might you ignore or dismiss because they don't fit the pattern of a \"weak point\"?\n\n**3. REFRAME**\nThe analysis is not merely a weakness detector; it is a comprehensive system that highlights both the necessary adjustments *and* the specific resources, skills, or assumptions that were successfully utilized during the process."
+    },
+    {
+      "role": "user",
+      "content": "What specific resource are you talking about? I need an example. Is it something internal, like a skill, or external, like a physical object?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.1
+      }
+    }
+  ]
+}

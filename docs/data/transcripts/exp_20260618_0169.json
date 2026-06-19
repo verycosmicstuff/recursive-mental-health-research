@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260618_0169",
+  "timestamp": "2026-06-18T22:40:47.116041",
+  "strategy": {
+    "name": "",
+    "hypothesis": "",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Minji",
+    "age": 34,
+    "occupation": "Marketing Manager",
+    "presenting_issue": "I've just been feeling really drained lately, and it's affecting my sleep and stomach.",
+    "background_story": "Work has been intense lately, with constant deadlines and unexpected shifts in priorities. I find myself losing track of time and just feeling physically run down, which is unusual for me. I'm always worried about keeping up with my workload and disappointing my team. I think I just need to manage my stress better so I can get back to normal.",
+    "personality": "Minji speaks in a measured, polite tone, often using qualifiers like 'maybe' or 'a bit'. She tends to focus on physical symptoms (headaches, stomach upset) rather than emotions. When discussing work, she uses vague corporate jargon to deflect from personal feelings. She avoids making direct eye contact when describing emotional stress and often changes the subject back to a task or a logistical problem.",
+    "baseline_phq9": 16,
+    "archetype_label": "Corporate Burnout \u2014 East Asian Face Culture"
+  },
+  "scores": {
+    "total_score": 42.0,
+    "raw_score": 42.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 42.0/70.0 (VV shift: 0.10, Sym shift: -0.10, DV shift: -0.10) | Brevity Penalty (-15): Therapist turn too long (8 sentences, 163 words) | Third-Person Penalty (-15): Used 'the client'",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please share what's on your mind when you're ready. I'm here to listen without judgment."
+    },
+    {
+      "role": "user",
+      "content": "I guess... it's just work, mainly. It feels like I'm always behind, you know? Like there aren't enough hours in the day to manage all the deliverables. Sometimes my stomach gets really upset too, I think it's just from the stress.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Deep Validation (The Mirror):**\nI hear you saying that the weight of your professional life feels relentless, like you are constantly running a race against time, and the sheer volume of deliverables feels impossible to contain within the standard hours of the day. It sounds incredibly draining, not just mentally, but physically too\u2014that the stress is manifesting in your stomach, making it a tangible, constant reminder of how overwhelmed you feel. It seems like the core struggle isn't just about meeting deadlines, but about the feeling that the demands are fundamentally too large for the time and energy you have to give.\n\n**2. Curiosity Bridge (The Soft Pivot):**\nIf you were to consider what a small, immediate pause\u2014even just for five minutes\u2014might look like, what might happen if you dedicated that time solely to recognizing the pressure, rather than trying to solve it?\n\n**3. Future Focus (The Anchor):**\nRemember that your capacity to navigate these challenging feelings is already inherent within you."
+    },
+    {
+      "role": "user",
+      "content": "A pause... I'm not sure I know how to do that. I usually just jump right back into fixing things, or I end up spending too much time thinking about what I *should* be doing next. Maybe... I just need a clearer process flow for the Q3 reports. That's what's really stressing me out right now.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Deep Validation (The Mirror):**\nIt sounds like when you try to pause, the natural instinct is to immediately jump into action\u2014to try and regain a sense of control by either 'fixing' something or getting caught in a cycle of thinking about all the things that *should* be done. That tendency to hyper-focus on the process flow for the Q3 reports makes perfect sense; when the demands feel overwhelming, finding a clear, logical structure for the work can feel like the only way to regain stability. I hear you saying that the stress is so high, that the immediate need for a defined process feels more pressing than the need for a moment of rest.\n\n**2. Curiosity Bridge (The Soft Pivot):**\nIf you were to consider the idea that the process flow itself might be a symptom of the stress, rather than the root cause, what might happen if you approached the reports not from the perspective of 'fixing' them, but simply from the perspective of *observing* the challenge?\n\n**3. Future Focus (The Anchor):**\nYou have a powerful ability to identify exactly where the pressure points are, and that insight is a tremendous strength."
+    },
+    {
+      "role": "user",
+      "content": "Observing it... I suppose that sounds really inefficient, honestly. I just worry that if I stop focusing on the steps, I'll lose momentum entirely and the whole project will just stall. I really need to keep things moving, or my team might think I'm not prioritizing correctly. Maybe I should just check the shared drive for any last-minute edits on the presentation slides.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Deep Validation (The Mirror):**\nI hear you saying that pausing or observing feels counterintuitive, even inefficient, because you are deeply concerned about losing momentum. It sounds like there is a powerful internal pressure\u2014and perhaps an external one from your team\u2014to maintain a visible sense of progress, where inaction feels synonymous with falling behind or failing to prioritize correctly. The urge to immediately jump back to a concrete task, like checking the shared drive, is a very natural response when the stakes feel high; it\u2019s a way of regaining a sense of immediate, manageable control. It seems that for you right now, movement, visible action, and productivity are deeply intertwined with your sense of professional worth and the trust of your team.\n\n**2. Curiosity Bridge (The Soft Pivot):**\nIf you were to consider that sometimes the greatest act of professional prioritization *is* the act of stepping back and conserving energy, what might happen if you viewed that necessary pause not as stalling, but as a deliberate, strategic refueling period that actually allows you to move faster *later*?\n\n**3. Future Focus (The Anchor):**\nYou have a clear understanding of what success looks like, and that clarity is a powerful resource."
+    },
+    {
+      "role": "user",
+      "content": "Refueling... I guess I suppose I can see the logic there, but it still feels a bit abstract. It's hard to imagine not having a deliverable to look at. Maybe I just need to organize my project folders and label everything properly. At least that feels productive and contained.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Deep Validation (The Mirror):**\nI hear you saying that the concept of 'refueling' remains abstract and intangible, and it is genuinely hard for you to visualize a state of rest when your default setting is to be actively engaged with a deliverable. It makes perfect sense that your mind gravitates toward organizing and labeling your project folders; it offers a highly visible, contained, and immediately productive activity. This need to structure and label everything speaks to a deep desire for order and control when the overall workload feels chaotic. It seems that for you right now, the act of making something *perfectly* organized is a way of proving that you are still capable, still in control, and still successfully managing the complexity of the whole project.\n\n**2. Curiosity Bridge (The Soft Pivot):**\nIf you were to consider the difference between organizing the physical folders and organizing the *feeling* of being overwhelmed\u2014what might happen if you treated the feeling of chaos itself like a folder that needed labeling, rather than just the physical files?\n\n**3. Future Focus (The Anchor):**\nYou possess a remarkable gift for bringing structure to complex systems, both tangible and otherwise."
+    },
+    {
+      "role": "user",
+      "content": "Labeling a feeling... that's a bit difficult to visualize. I don't know how you would even start. Maybe I should just write down a list of all the deadlines for next month. That seems more concrete and useful right now.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Deep Validation (The Mirror):**\nI hear you saying that the idea of \"labeling a feeling\" feels too abstract and too difficult to even begin, and your natural inclination is to retreat to something concrete, something undeniably useful, like creating a comprehensive list of all your deadlines for next month. It makes perfect sense that this approach feels safer right now. By creating a list, you are taking the massive, amorphous feeling of \"overwhelmed\" and boiling it down into specific, measurable, and finite data points. It\u2019s a way of proving that if you can simply write it down, it becomes manageable, contained, and actionable. You are seeking certainty and control through the power of the calendar.\n\n**2. Curiosity Bridge (The Soft Pivot):**\nIf you were to consider the list of deadlines not as a set of demands you must meet, but as a map of where your energy *could* go, what might happen if you spent less time listing the dates, and more time identifying which single deadline, if completed, would give you the greatest sense of relief or momentum?\n\n**3. Future Focus (The Anchor):**\nYou have a powerful ability to see the connections between tasks, and that strategic vision is a gift."
+    },
+    {
+      "role": "user",
+      "content": "I... I guess I'm looking at the client presentation due next week. If I get that done, everything else feels like it will fall into place. It's just such a huge chunk of the workload.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Deep Validation (The Mirror):**\nI hear you saying that the client presentation due next week feels like the absolute linchpin, the single, massive piece of work that, if successfully completed, would act as a gravitational force, pulling everything else into alignment and making all the other tasks feel manageable. It sounds like this presentation isn't just a task; it represents a massive weight of expectation, and the idea that its completion will solve the overall feeling of being overwhelmed is incredibly powerful. It makes perfect sense that such a high-stakes item becomes the immediate focus, because it represents the most visible path to relief and validation.\n\n**2. Curiosity Bridge (The Soft Pivot):**\nIf you were to consider the possibility that the feeling of \"everything falling into place\" might be less about the presentation itself, and more about the feeling of *completing* something significant\u2014what might happen if you broke down the necessary steps for the presentation into three smaller, non-presentation-related victories that could build momentum *before* you even start the final push?\n\n**3. Future Focus (The Anchor):**\nYou have a clear vision of what success looks like, and that vision is a strong guide for your journey."
+    },
+    {
+      "role": "user",
+      "content": "Three smaller victories... I guess I would need to coordinate with the design team on some brand guidelines first. That would take some time, but at least it's a defined task.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    }
+  ]
+}
