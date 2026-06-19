@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260618_0180",
+  "timestamp": "2026-06-18T23:32:58.421490",
+  "strategy": {
+    "name": "Insight-Centric Micro-Intervention (ICMI)",
+    "hypothesis": "The previous successful attempts (e.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Kateri",
+    "age": 36,
+    "occupation": "Community College Student (History)",
+    "presenting_issue": "I feel like I'm constantly waiting for something bad to happen, and I don't know where to put that feeling.",
+    "background_story": "Being on the reserve means being hyper-aware of who is watching and what they might take. My grandmother used to talk about the way things were before the schools, and it left a hollow ache in me. I feel like that ache is passed down, a kind of deep, low hum of worry that never stops. Sometimes I just feel like I'm moving through the world on autopilot, just trying to stay invisible.",
+    "personality": "Reserved, deeply skeptical, and subtly confrontational. Speaks in metaphor and draws on oral narrative tradition. Uses silence as a conversational tool, forcing the listener to fill the void. Will frequently ask questions about the therapist's personal history, local knowledge, or relationship to the land to test authenticity. Shifts between profound philosophical depth and sudden, almost childlike emotional withdrawal. Will validate the therapist's emotional state before sharing her own.",
+    "baseline_phq9": 17,
+    "archetype_label": "Intergenerational Trauma \u2014 First Nations"
+  },
+  "scores": {
+    "total_score": 61.5,
+    "raw_score": 61.5,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 31.5/70.0 (VV shift: -0.10, Sym shift: -0.20, DV shift: 0.20)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "*Please provide your situation or feeling.*"
+    },
+    {
+      "role": "user",
+      "content": "It's like the weather, I guess. Always waiting for the storm that's never quite here. It just weighs everything down, you know? I don't even know what I'm waiting for anymore.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**(V)** It sounds like you're carrying a persistent, heavy anticipation. **(C)** But is the weight in the waiting, or in the *assuming* of the storm? **(A)** Try naming three things you can see right now. Just focus on the present moment."
+    },
+    {
+      "role": "user",
+      "content": "You ask me to name things, like I'm a child in a classroom. But are you asking me to see things, or are you asking me to *prove* that I'm okay? Because proving it feels like exhausting work.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**(V)** It makes sense that noticing feels like a performance under pressure. **(C)** But observation isn't proof; it's just noticing what already exists. **(A)** What is one thing you can feel with your body right now? Just the sensation."
+    },
+    {
+      "role": "user",
+      "content": "My feet are against the floor. They feel solid. But sometimes, even when I'm standing still, it feels like the ground is made of quicksand, just waiting for the tide to change.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**(V)** It sounds like the fear of change is undermining physical reality. **(C)** But is the quicksand the ground, or the *expectation* of the tide? **(A)** Instead of fighting the shift, where can you allow yourself to feel the uncertainty for just five breaths?"
+    },
+    {
+      "role": "user",
+      "content": "You talk about 'allowing.' Does that mean I should just let the worry happen, like it's just a bird flying past? I wonder what it's like just to *be* in a place that hasn't been unsettled by history or expectation, you know?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**(V)** It sounds like 'allowing' feels like surrendering to the worry itself. **(C)** But peace isn't the absence of history; it's the acknowledgment of its weight. **(A)** What if you just let one worry exist, without trying to fix it? Just notice it."
+    },
+    {
+      "role": "user",
+      "content": "So, you think if I just let it sit there, it will... disappear? Like smoke? Because what I'm really worried about is what you'll do with it once it's out in the open.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**(V)** It's natural to fear that vulnerability will lead to exposure or judgment. **(C)** But observing a worry doesn't mean giving it away; it means owning its shape. **(A)** What is one boundary you can set right now, just for yourself, around this worry?"
+    },
+    {
+      "role": "user",
+      "content": "The boundary is that I won't answer questions about your life, or about the land, until I understand what kind of answers you value. You keep asking if I'm safe, but you never tell me if the safety you talk about is real, or just a story you tell yourself.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**(V)** It sounds like you need absolute certainty before you can trust any guidance. **(C)** But safety isn't a story to be told; it's the resource you already carry within. **(A)** What is one truth about yourself that you know, regardless of outside validation?"
+    },
+    {
+      "role": "user",
+      "content": "I know that I remember things that aren't even in books. I know that the stories, the songs, they still live in the bones, even if the language changes. You try to measure that, and you fail.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    }
+  ]
+}
