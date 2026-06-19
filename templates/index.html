@@ -137,9 +137,16 @@
         <!-- Logs View -->
         <div id="view-logs" class="hidden h-[75vh]">
             <div class="card h-full flex flex-col">
-                <h2 class="text-xl font-semibold mb-4 text-slate-200 flex justify-between">
-                    Live System Terminal
-                    <span class="text-xs font-normal text-slate-400 self-end">Streaming app.log...</span>
+                <h2 class="text-xl font-semibold mb-4 text-slate-200 flex justify-between items-center">
+                    <span>Live System Terminal <span class="text-xs font-normal text-slate-400 ml-2">Streaming app.log...</span></span>
+                    <div class="flex gap-2">
+                        <button id="copy-logs-btn" onclick="copyLastLines(20)" class="px-3 py-1 bg-slate-700 hover:bg-slate-600 active:bg-slate-800 text-slate-200 border border-slate-600 rounded text-xs font-medium transition-colors flex items-center gap-1.5 shadow-sm">
+                            📋 Copy Last 20 Lines
+                        </button>
+                        <button id="copy-all-logs-btn" onclick="copyAllLogs()" class="px-3 py-1 bg-slate-700 hover:bg-slate-600 active:bg-slate-800 text-slate-200 border border-slate-600 rounded text-xs font-medium transition-colors flex items-center gap-1.5 shadow-sm">
+                            📋 Copy All
+                        </button>
+                    </div>
                 </h2>
                 <div class="bg-black/50 rounded flex-grow p-4 font-mono text-sm text-teal-500 overflow-y-auto border border-slate-700/50 shadow-inner" style="white-space: pre-wrap;" id="live-logs">Waiting for logs...</div>
             </div>
@@ -817,6 +824,51 @@
                 }
             } catch(e) {
                 console.error("Failed to fetch logs", e);
+            }
+        }
+
+        async function copyLastLines(numLines) {
+            const logContainer = document.getElementById('live-logs');
+            const text = logContainer.textContent || '';
+            const lines = text.split('\n');
+            const lastLines = lines.slice(-numLines).join('\n');
+            
+            try {
+                await navigator.clipboard.writeText(lastLines);
+                const btn = document.getElementById('copy-logs-btn');
+                const origText = btn.innerHTML;
+                btn.innerHTML = '✅ Copied!';
+                btn.classList.add('bg-green-600/30', 'text-green-400', 'border-green-500/50');
+                btn.classList.remove('bg-slate-700', 'text-slate-200', 'border-slate-600');
+                setTimeout(() => {
+                    btn.innerHTML = origText;
+                    btn.classList.remove('bg-green-600/30', 'text-green-400', 'border-green-500/50');
+                    btn.classList.add('bg-slate-700', 'text-slate-200', 'border-slate-600');
+                }, 1500);
+            } catch (err) {
+                console.error('Failed to copy logs to clipboard', err);
+                alert('Could not copy to clipboard. Please copy manually.');
+            }
+        }
+
+        async function copyAllLogs() {
+            const logContainer = document.getElementById('live-logs');
+            const text = logContainer.textContent || '';
+            try {
+                await navigator.clipboard.writeText(text);
+                const btn = document.getElementById('copy-all-logs-btn');
+                const origText = btn.innerHTML;
+                btn.innerHTML = '✅ Copied!';
+                btn.classList.add('bg-green-600/30', 'text-green-400', 'border-green-500/50');
+                btn.classList.remove('bg-slate-700', 'text-slate-200', 'border-slate-600');
+                setTimeout(() => {
+                    btn.innerHTML = origText;
+                    btn.classList.remove('bg-green-600/30', 'text-green-400', 'border-green-500/50');
+                    btn.classList.add('bg-slate-700', 'text-slate-200', 'border-slate-600');
+                }, 1500);
+            } catch (err) {
+                console.error('Failed to copy logs to clipboard', err);
+                alert('Could not copy to clipboard. Please copy manually.');
             }
         }
 
