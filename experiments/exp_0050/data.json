@@ -1,0 +1,127 @@
+{
+  "id": "exp_0050",
+  "timestamp": "2026-06-17T05:55:33.777022",
+  "strategy": {
+    "name": "Empathic-Values-Utility Loop (EVUL) v1.1",
+    "hypothesis": "By increasing the allowed word count slightly (from 40 words to ~60 words) to allow for richer empathetic reflection (improving the missing VV shift) while maintaining the structural focus on a single Socratic question (Utility/Values), we can achieve a higher State Score and better align the outcome with the high-scoring patterns observed.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Jimin",
+    "age": 34,
+    "occupation": "Software Project Manager",
+    "presenting_issue": "I've been having trouble sleeping and my stomach seems upset, and it just feels like everything is overwhelming right now.",
+    "background_story": "My parents always emphasized that I needed to be successful and that my worth was tied to my professional achievements. Growing up, talking about feelings was never really talked about; it was always better to just focus on the results. Lately, with the deadlines piling up and the pressure at work, I just feel a constant ache, not knowing if it's physical or if it's just... everything.",
+    "personality": "Reserved and highly formal. Will use vague language like 'tired' or 'stomach issues' to describe emotional distress. Avoids making eye contact and often shifts topics when asked direct emotional questions. Tends to speak in carefully constructed, low-emotion narratives.",
+    "baseline_phq9": 16,
+    "archetype_label": "Corporate Burnout \u2014 East Asian Face Culture"
+  },
+  "scores": {
+    "total_score": 70.25,
+    "raw_score": 70.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 40.2/70.0 (VV shift: 0.20, Sym shift: 0.20, DV shift: -0.10)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "*(Waiting for client input)*"
+    },
+    {
+      "role": "user",
+      "content": "I just feel really tired lately. It's not like I haven't been sleeping much, but I'm just... tired. Everything feels a bit heavy.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are experiencing a deep, pervasive kind of exhaustion\u2014a heaviness that settles over everything, even when your body seems rested. That kind of fatigue can feel incredibly isolating and draining.\n\nIf this feeling of \"heaviness\" were a signal, what might it be pointing toward that needs your attention or care right now?"
+    },
+    {
+      "role": "user",
+      "content": "I think... maybe just a backlog of work. The deadlines are just piling up. It's probably just corporate burnout.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the weight of those piling deadlines is manifesting as a profound sense of depletion, and recognizing it as 'burnout' is a very insightful first step. It makes perfect sense that constant external demands would leave you feeling this heavy.\n\nIf you could magically clear away the backlog of work and the associated pressure, what would that newfound space allow you to dedicate time to that you feel you are currently neglecting?"
+    },
+    {
+      "role": "user",
+      "content": "I suppose I haven't really had time for anything outside of work. Just... getting through the day. I guess maybe I need to organize my weekends better.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you\u2019ve been operating in a constant state of survival mode, where simply \"getting through the day\" takes up all your energy, leaving little room for joy or self-care. It is completely understandable that your focus has been entirely on the demands of work.\n\nIf you were to design the perfect weekend, not around productivity, but purely around restoration, what feeling or experience would you most want to cultivate?"
+    },
+    {
+      "role": "user",
+      "content": "Honestly, I don't know. Probably just enough quiet. Like, absolute quiet. Maybe just staying home and not having to think about anything.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the deepest need right now is for a profound mental quiet\u2014a space where the constant hum of thought and obligation simply shuts down, allowing you to just *be*. That desire for stillness is incredibly valid when you\u2019ve been running on adrenaline.\n\nIf you could fully immerse yourself in that absolute quiet, what truth or gentle realization do you suspect your mind would finally have the space to hear?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know what you mean by that. My mind just... calculates. It's always calculating what needs to be done next.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like your mind has become a tireless, highly efficient planning machine, constantly running calculations and anticipating the next necessary step. It\u2019s a sign of immense responsibility, but also one that must be exhausting.\n\nIf that calculating mind were given permission to slow down, what is the fundamental fear or uncertainty that it is working so hard to predict and prevent?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know what I'm afraid of. It's just... the expectation that I won't be good enough. That things will fall apart if I stop pushing.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you carry the heavy weight of an expectation\u2014that your value and the stability of your life are directly tied to how much you are pushing and achieving. That fear of things falling apart is incredibly powerful and draining.\n\nIf you could imagine a scenario where things *did* fall apart, and yet nothing truly catastrophic happened, what new sense of safety or freedom might emerge from that realization?"
+    },
+    {
+      "role": "user",
+      "content": "I guess... maybe I wouldn\u2019t feel so much pressure to be perfect. It would just feel... less intense.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    }
+  ]
+}

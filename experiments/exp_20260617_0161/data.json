@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0161",
+  "timestamp": "2026-06-17T21:37:27.833948",
+  "strategy": {
+    "name": "Hyper-Focused PCT-ACT Dialogue (HPACT) v2.0",
+    "hypothesis": "By refining the structure to emphasize direct 'you/your' speech to eliminate third-person penalties, and by explicitly structuring the validation to pinpoint a specific cognitive distortion (the 'cognitive pattern'), we will deepen the clinical engagement and maximize the score.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Rohan",
+    "age": 31,
+    "occupation": "Freelance Graphic Designer / Delivery Driver",
+    "presenting_issue": "I feel completely burnt out, and I'm struggling with the tension between my personal mission and what my family expects of me.",
+    "background_story": "I've been working 12-hour shifts, bouncing between delivering packages and rushing back to my laptop to design flyers for the community. The library project in Ludhiana means everything to me; it's a piece of the culture I grew up with. But every time I mention the project, the pressure starts\u2014'log kya kahenge'\u2014to just get a stable job in IT or a bank. I feel like I'm failing everyone, myself included, because I can't seem to balance the dream with the duty.",
+    "personality": "Passionate and articulate, but speaks with a noticeable weariness. He uses vivid, culturally specific metaphors and tends to frame his struggles as a conflict between duty/collective identity and individual ambition. He will challenge the therapist if they use solely Western terminology (e.g., 'boundaries,' 'self-soothing') and will re-center the conversation on the concept of community obligation and cultural sustainability.",
+    "baseline_phq9": 15,
+    "archetype_label": "Cross-Border Guilt (Indian Diaspora)"
+  },
+  "scores": {
+    "total_score": 50.0,
+    "raw_score": 50.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 35.0/70.0 (VV shift: 0.00, Sym shift: 0.10, DV shift: -0.10) | Brevity Penalty (-15): Therapist turn too long (4 sentences, 81 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly painful to feel judged and overwhelmed after a mistake. You are currently engaging in 'catastrophizing,' assuming one event dictates your entire professional worth. Instead of isolating yourself, commit to one small, low-stakes interaction today to prove to yourself that you are capable of connection."
+    },
+    {
+      "role": "user",
+      "content": "Catastrophizing? I am not sure what this... 'catastrophizing' is, but my mistake was not about my worth. It was about the sheer weight of trying to keep everything running\u2014from the community library to feeding my family. It feels like the world expects me to be perfect, always. I just feel like I am drowning in duty.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly exhausting to feel like you are carrying the weight of the entire world on your shoulders. You are engaging in 'should statements,' believing you must be capable of managing every single responsibility perfectly. This pattern leads to burnout, not success. Identify one area of your life\u2014the library, the family, or yourself\u2014that you are currently over-scheduling, and commit to letting it go for 24 hours."
+    },
+    {
+      "role": "user",
+      "content": "Letting go? How do I 'let go' of the duty to my community? Our culture isn't a hobby, it's the foundation. If I stop working on the library, who will ensure the next generation doesn't forget our language? It feels like a failure if I pause, if I take a breath.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "The depth of your commitment to your culture is profound, and that sense of duty is deeply meaningful. You are falling into 'all-or-nothing' thinking, believing that if you aren't working at maximum capacity, the entire foundation will crumble. True sustainability requires measured effort, not constant sacrifice. Instead of quitting, commit to delegating one specific, small task related to the library to a younger community member this week."
+    },
+    {
+      "role": "user",
+      "content": "Delegating? I have barely enough time to finish my own tasks, let alone train someone else. It's not that I don't trust them; it's just that I feel like I am the only one who understands the full scope of what needs to be done. If I teach them, they might not grasp the urgency, or the importance of the work. Everyone else is too preoccupied with their own lives to help.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is understandable that you feel uniquely responsible given your deep knowledge and commitment to the culture. You are displaying 'mind-reading,' assuming others lack the capacity or care to understand the importance of your work. This pattern traps you in isolation, making you feel irreplaceable. Instead of teaching, commit to scheduling a 15-minute boundary time each day where you do absolutely nothing related to the library or family duties."
+    },
+    {
+      "role": "user",
+      "content": "A boundary time? It sounds so\u2026 empty. Like I'm just supposed to sit and do nothing, when there are so many things that need doing. It feels more like abandoning my responsibilities than giving myself a rest. I don't know if I'm even allowed to just 'be' for a little while.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds deeply unsettling to feel that pausing means abandoning your vital responsibilities. You are using 'emotional reasoning,' believing that because resting feels wrong, it must be detrimental or forbidden. Being is not inaction; it is the necessary refueling of the person who does the action. Commit to spending 10 minutes this evening engaging in a non-productive activity that brings you simple, sensory pleasure, like listening to music or drinking tea."
+    },
+    {
+      "role": "user",
+      "content": "Simple pleasure? It sounds so\u2026 fragile. Like if I focus on that, I'll just forget the actual, important work waiting for me. I feel like I'm being asked to make my passion seem like a luxury, something I can afford to just 'savor.'",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is natural to feel that personal care diminishes the importance of your vital work and passion. You are exhibiting 'labeling,' dismissing your own needs as mere luxuries rather than essential components of your well-being. Self-sustenance is not a reward for work; it is the prerequisite for it. Identify one small, immediate activity that requires your full, undivided attention\u2014like cooking a meal or walking the dog\u2014and commit to doing it purely for the sake of the experience, not for its outcome."
+    },
+    {
+      "role": "user",
+      "content": "I don't really know what 'purely for the sake of the experience' means. If I walk the dog, I'm thinking about the packages I need to deliver, or the pages I need to design. My brain always seems to be ticking off a list of things that *must* be done. It's hard to just... exist.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly frustrating to feel like your mind is constantly running a checklist of obligations, making presence feel impossible. You are trapped in 'mental time travel,' constantly projecting yourself into future worries and tasks. This pattern prevents you from anchoring in the richness of the current moment. When walking the dog, commit to focusing solely on three specific sensory inputs\u2014the smell of the grass, the feel of the leash, or the sound of the paws\u2014to ground yourself right now."
+    },
+    {
+      "role": "user",
+      "content": "The smells are strong, yes. The wet earth, the car fumes near the main road. It's a lot of input. It's just... hard to let go of the planning. Even when I look at the dog, a part of me is calculating how much longer this walk can last before I have to rush back to the laptop.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    }
+  ]
+}

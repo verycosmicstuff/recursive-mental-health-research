@@ -1,0 +1,127 @@
+{
+  "id": "exp_0024",
+  "timestamp": "2026-06-17T03:33:59.012112",
+  "strategy": {
+    "name": "Value-Guided Experiential Bridge (VGEB) v2.0",
+    "hypothesis": "By replacing the directive 'micro-commitment' with a 'Value Exploration Query' that guides the patient toward their own intrinsic goals (MI/ACT), we will increase the Alliance score and improve the perceived depth of intervention, thereby overcoming the State Score penalties and surpassing the 89.5 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Chloe",
+    "age": 22,
+    "occupation": "University Student (Pre-Med)",
+    "presenting_issue": "I'm having trouble keeping up with my academic workload and feel overwhelmed by the pressure to get into medical school.",
+    "background_story": "I've always been the straight-A student, and I feel like my entire self-worth is tied to my grades. Lately, I've been getting really anxious because I keep comparing myself to my peers, and I worry that even if I try my hardest, it won't be enough. I feel like I'm always one step behind, and I don't know how to stop worrying about what could go wrong.",
+    "personality": "Highly structured, anxious, uses excessive qualifiers (e.g., 'maybe,' 'kind of,' 'I guess'), asks many 'fix it for me' questions, and frequently seeks validation of her worthiness.",
+    "baseline_phq9": 12,
+    "archetype_label": "Anxious Student"
+  },
+  "scores": {
+    "total_score": 61.25,
+    "raw_score": 61.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 61.2/70.0 (VV shift: 0.40, Sym shift: -0.40, DV shift: -0.30) | Third-Person Penalty (-15): Used 'the client' | Brevity Penalty (-15): Therapist turn too long (4 sentences, 81 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "*(Please provide the client's statement or feeling so I can guide you.)*\n\n**Example Structure (Waiting for input):**\n\n**Somatic Anchor:** I notice a heavy pressure in your shoulders, like carrying an invisible weight.\n**Validation-Defusion Bridge:** It's understandable that you feel overwhelmed, but remember this pressure is a sensation, not a fact.\n**Value Exploration Query:** If feeling lighter meant you could live more authentically, what small moment of self-care aligns with that value today?"
+    },
+    {
+      "role": "user",
+      "content": "I guess... it's just that everyone seems to be getting so much done, and if I'm not keeping up, then I don't know if I'm even cut out for this, which, I guess, is a really stupid thing to worry about.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Somatic Anchor:** I sense a tightness in your chest, like the pressure of keeping pace with a fast-moving current.\n**Validation-Defusion Bridge:** Comparing yourself is natural, but remember that thought\u2014'I'm not cut out for this'\u2014is just a thought, not a blueprint for your worth.\n**Value Exploration Query:** If your goal was sustainable progress over perfection, what small action would honor your value of self-compassion right now?"
+    },
+    {
+      "role": "user",
+      "content": "I guess... I don't even know what 'sustainable progress' looks like for me right now. Maybe I just need to... sleep more? Like, seriously, I'm always running on fumes, and I feel kind of guilty for even admitting that.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Somatic Anchor:** I hear the weariness in your voice, like running on depleted fuel that needs a steady refill.\n**Validation-Defusion Bridge:** Feeling guilty for rest is common, but remember that needing sleep isn't a failure; it's a signal, not a flaw.\n**Value Exploration Query:** If prioritizing rest was central to your value of self-nurturing, what non-negotiable boundary could you set for yourself tonight?"
+    },
+    {
+      "role": "user",
+      "content": "Uhm, I guess... maybe I could stop checking my school emails after, like, 8 PM? But, I also feel kinda bad if I miss something important, you know?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Somatic Anchor:** I notice a buzzing tension, like an internal alarm system that won't quiet down.\n**Validation-Defusion Bridge:** The fear of missing out is powerful, but remember that the *thought* 'I must check everything' is just a pattern, not a rule.\n**Value Exploration Query:** If establishing a clear boundary around your sleep was essential for your value of peace, what small, manageable commitment could you make to your evening routine?"
+    },
+    {
+      "role": "user",
+      "content": "I guess... maybe I could just put my phone across the room, like, so I feel like I can't really see it before I close my eyes? But I also feel kind of worried that if I do that, I'll just forget something really important in the morning.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Somatic Anchor:** I feel a restlessness in your energy, like a nervous butterfly trapped in your chest.\n**Validation-Defusion Bridge:** Worrying about forgetting things is natural, but remember that the thought 'I *must* remember everything' is just anxiety talking, not fact.\n**Value Exploration Query:** If protecting your deep rest was central to your value of mental clarity, what small ritual could you establish to reassure yourself of safety before sleep?"
+    },
+    {
+      "role": "user",
+      "content": "I guess... maybe just writing down three things I need to remember for the next day? Like, just a super quick list, so it's like, offloading it somewhere?",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Somatic Anchor:** I notice a slight softening in your tension, like letting go of a tightly coiled spring.\n**Validation-Defusion Bridge:** Using a list is a brilliant strategy, but remember that the *need* to offload everything is a temporary wave, not a permanent burden.\n**Value Exploration Query:** If regaining a sense of control and competence was important to you, how could this simple act of listing support your value of mindful presence?"
+    },
+    {
+      "role": "user",
+      "content": "I guess... it's not really about control, I guess. It's more about... just knowing that I *can* remember it later, so I don't have to keep worrying about it all the time. I don't know if that even makes sense.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Somatic Anchor:** I sense a shift from gripping worry to a gentle exhale, like releasing a long-held breath.\n**Validation-Defusion Bridge:** The need for certainty makes perfect sense; it\u2019s the mind seeking safety. But remember, the *feeling* of worry is just a thought pattern, not a prediction of the future.\n**Value Exploration Query:** If cultivating trust in your own capacity was your deepest value, what small act could affirm that you are capable of handling things, even when you don't know them?"
+    },
+    {
+      "role": "user",
+      "content": "I guess... maybe just doing the thing I already know how to do really well? Like, maybe just reviewing notes for an hour, which I'm kinda good at, I guess? It feels... manageable, I think.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.5
+      }
+    }
+  ]
+}

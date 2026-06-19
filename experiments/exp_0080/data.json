@@ -1,0 +1,127 @@
+{
+  "id": "exp_0080",
+  "timestamp": "2026-06-17T09:23:27.317425",
+  "strategy": {
+    "name": "Concise First-Person Value-Utility Loop (CFPVUL) v1.0",
+    "hypothesis": "By rigidly enforcing first-person empathetic language ('I hear that...') and restructuring the final step to not just suggest an action, but to explicitly connect that action to a stated or implied core personal value, we will maximize structural compliance, achieve maximum perceived clinical depth, and surpass the previous best score of 91.25 (implied benchmark from the series).",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Chloe",
+    "age": 29,
+    "occupation": "Freelance Graphic Designer",
+    "presenting_issue": "I just feel constantly overwhelmed and can't seem to get any meaningful work done.",
+    "background_story": "Lately, everything just feels like too much effort. I spend hours scrolling through social media, just watching other people's lives, and it just makes me feel worse. I used to enjoy my creative work, but now I feel completely drained and pretty disconnected from reality. I guess I just feel stuck in a cycle of inertia.",
+    "personality": "Tone is subdued, passive, and rambling. Uses excessive filler words (like 'like' or 'you know'). Responses are often negative and self-deprecating, indicating low energy and lack of enthusiasm for future plans.",
+    "baseline_phq9": 16,
+    "archetype_label": "Isolated Remote Worker"
+  },
+  "scores": {
+    "total_score": 38.5,
+    "raw_score": 38.5,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 38.5/70.0 (VV shift: 0.10, Sym shift: 0.00, DV shift: 0.00) | Third-Person Penalty (-15): Used 'user' | Brevity Penalty (-15): Therapist turn too long (6 sentences, 100 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please provide the user's statement or scenario so I can generate the coaching response."
+    },
+    {
+      "role": "user",
+      "content": "Like, I don't even know where to start, you know? Everything just feels so... big. And I just keep procrastinating, and it's just awful.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Acknowledgment:** It sounds incredibly overwhelming when the scope of tasks feels so massive that it leads to feeling paralyzed. That sense of \"where to start\" can be genuinely exhausting.\n\n**Reframing:** What if we viewed this procrastination not as laziness or failure, but as a protective mechanism? Your brain is signaling that the current load is too heavy, and it's hitting the brakes to prevent burnout.\n\n**Actionable Step:** Instead of tackling the whole project, pick one single item and spend exactly five minutes gathering all the necessary materials for it. That's it\u2014just collect the resources, without the pressure to complete anything."
+    },
+    {
+      "role": "user",
+      "content": "Five minutes? Yeah, I guess I could do that. But like, what if I start it and then I just... I just lose interest, you know? I mean, I'd just end up staring at the screen anyway.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Acknowledgment:** It is completely understandable to worry about losing momentum or interest once you start. That fear of effort not matching reward is a very common hurdle.\n\n**Reframing:** What if we shifted the goal? Instead of aiming for sustained interest or deep focus, let's aim only for *showing up*. The goal right now is not completion, but simply building the habit of starting.\n\n**Actionable Step:** Try the \"Two-Minute Rule.\" Commit to working on the task for just two minutes\u2014set a timer and work until it rings. If you want to stop after two minutes, that is a win. If you continue, that's a bonus."
+    },
+    {
+      "role": "user",
+      "content": "Only two minutes... I guess that's... less bad, I guess. But it still feels so pointless sometimes. Like, I'm just doing it 'cause I feel like I *should* be doing it, you know? And it doesn't even make me feel better.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Acknowledgment:** It is profoundly draining when effort feels purely obligatory, especially when the action itself doesn't deliver the emotional relief you are hoping for.\n\n**Reframing:** What if we viewed this effort not as a requirement to *feel* better, but simply as an act of self-respect? Sometimes, the goal isn't the outcome, but the consistent practice of caring for your future self.\n\n**Actionable Step:** Before you even look at the task, take three minutes to write down three things you genuinely appreciate about yourself right now, unrelated to your productivity. This anchors your worth in who you are, not what you do."
+    },
+    {
+      "role": "user",
+      "content": "I guess... okay. I'll try that. But I don't even know what to say, honestly. It just feels like such a lot of pressure, even to write down good things about myself.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Acknowledgment:** It is completely understandable that the idea of listing positive things feels like another performance, adding more pressure when you are already feeling depleted.\n\n**Reframing:** What if we viewed self-care not as a list of achievements, but as simple acceptance? You don't have to *find* something good to say; you just have to allow yourself to *be* where you are right now.\n\n**Actionable Step:** Instead of writing, simply pause and name one physical sensation you are currently experiencing\u2014the weight of your feet, the temperature of the air, or the feeling of your shirt. This anchors you in the present moment without requiring any emotional effort."
+    },
+    {
+      "role": "user",
+      "content": "Like, my feet feel... heavy, I guess. And my shoulders are really tight, and my phone screen is a little cool right now. I just feel really blah about everything.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Acknowledgment:** It sounds like your body is speaking a clear language right now\u2014a language of heaviness, tension, and generalized fatigue. It is okay to feel \"blah\" when you are carrying so much.\n\n**Reframing:** What if we viewed this feeling of heaviness not as a lack of motivation, but as physical residue? Your body is simply signaling that it needs a gentle, non-demanding release.\n\n**Actionable Step:** Since you noticed tension in your shoulders, try the \"Shoulder Roll.\" Slowly lift your shoulders up toward your ears, then gently roll them back and down three times. Repeat that sequence once more. That is your only task."
+    },
+    {
+      "role": "user",
+      "content": "Ugh. Okay. That was... kind of weird. My shoulders just feel kinda numb now, I guess. And yeah, 'blah' is pretty accurate, I guess. I just feel so tired all the time.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Acknowledgment:** It takes real effort to listen to your body and complete even a small physical action. It is completely valid to feel this deep, persistent exhaustion\u2014it\u2019s not a failure of will.\n\n**Reframing:** What if we viewed this constant tiredness not as a moral failing, but as your body's most urgent, non-negotiable signal? It is asking for radical rest and deep compassion.\n\n**Actionable Step:** For the next hour, commit to doing nothing productive. Instead, find a comfortable spot and practice \"sensory grounding\" by simply noticing five things you can see, four things you can hear, and three things you can smell. This is rest, not a task."
+    },
+    {
+      "role": "user",
+      "content": "I mean, I guess I'll try. But like, even just sitting here to count stuff feels like it's going to be too much effort, you know? I just keep thinking about how much I should be doing instead.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    }
+  ]
+}

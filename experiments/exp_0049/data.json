@@ -1,0 +1,127 @@
+{
+  "id": "exp_0049",
+  "timestamp": "2026-06-17T05:50:49.757375",
+  "strategy": {
+    "name": "Ultra-Concise Empathic-Utility Loop (UEUL) v1.0",
+    "hypothesis": "By restructuring the intervention into a mandatory, highly constrained two-part format (Empathic Validation + Single Utility Question), and enforcing an extreme word count limit (under 50 words) to eliminate the Brevity Penalty, we will maximize both the Therapeutic Alliance and the State Score, aiming to surpass the 91.25 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Harold",
+    "age": 58,
+    "occupation": "Middle School History Teacher",
+    "presenting_issue": "I'm here because my wife thinks I need to talk to someone, and frankly, I don't know what to say.",
+    "background_story": "Lately, my whole routine feels like it's falling apart. The school board keeping me up with new mandates, my wife trying to organize our whole life, and the fact that my son is college-bound\u2014it's just too much. I feel like I'm constantly failing at keeping everything stable, and it's exhausting.",
+    "personality": "Harold speaks in measured, slightly exasperated tones. He uses dry humor and deflection to avoid getting deep, often correcting minor details about the therapist's own phrasing or the history of the issue rather than discussing his feelings.",
+    "baseline_phq9": 8,
+    "archetype_label": "Skeptical Retiree"
+  },
+  "scores": {
+    "total_score": 51.0,
+    "raw_score": 51.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 21.0/70.0 (VV shift: -0.20, Sym shift: 0.00, DV shift: 0.40)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "**Acknowledge/Validate:** It sounds like you are carrying a heavy weight of anxiety and feeling overwhelmed by your responsibilities. That sense of inertia must be exhausting.\n\n**Gentle Inquiry:** If procrastination is a coping mechanism, what might it be helping you avoid feeling right now?"
+    },
+    {
+      "role": "user",
+      "content": "Procrastination? It's just me, I guess. I'm just trying to keep up with the grading. You know, the curriculum changes every few years. It's nothing I haven't dealt with before.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Acknowledge/Validate:** It sounds like you are highly capable of navigating constant change, but the sheer weight of those recurring demands is still palpable.\n\n**Gentle Inquiry:** When you say you've \"dealt with it before,\" what specific part of that experience feels most resistant to change now?"
+    },
+    {
+      "role": "user",
+      "content": "Resistant? Nothing is resistant. It's just... routine. I teach American history, not avant-garde performance pieces. Things are stable enough, if a little dull. You sound like you're expecting some grand, dramatic shift.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Acknowledge/Validate:** It sounds like you are grounded in the steady rhythm of routine, and you feel misunderstood when approached with ideas of drama or upheaval.\n\n**Gentle Inquiry:** If this stable routine is serving you, what does it allow you to feel safe from?"
+    },
+    {
+      "role": "user",
+      "content": "Safe from what? Nothing. It's just a job, really. My wife thinks I need a 'safe' routine, as if I'm some kind of shaky piece of antique furniture. Honestly, it's just the grind.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Acknowledge/Validate:** It sounds like you feel minimized, reducing your life and work to simply \"the grind,\" which feels dismissive of your complexity.\n\n**Gentle Inquiry:** If the routine is what keeps you anchored, what does that anchor prevent you from needing to confront?"
+    },
+    {
+      "role": "user",
+      "content": "Nothing, I suppose. It's easier to just focus on the objective facts, you know? Like the actual dates of the Civil War, rather than... feelings. Feelings aren't verifiable.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Acknowledge/Validate:** It sounds like focusing on verifiable facts provides a reliable structure, offering a safe harbor from emotional uncertainty.\n\n**Gentle Inquiry:** If logic is your primary defense, what is it that you are trying to keep out of the conversation?"
+    },
+    {
+      "role": "user",
+      "content": "It's just... the stuff that can't be put in a textbook. You know, the parts that require an emotional premise. It's messy.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Acknowledge/Validate:** It sounds like you are pointing out the inherent contrast between structured knowledge and the messy, undeniable reality of human emotion.\n\n**Gentle Inquiry:** If you allowed yourself to explore that \"messy\" emotional premise, what might that truth reveal that the textbook cannot?"
+    },
+    {
+      "role": "user",
+      "content": "Nothing, I don't know. It's just... it's too much effort, admitting that. You're getting too philosophical. Let's stick to the mandates, alright?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Acknowledge/Validate:** It sounds like exploring deep emotional truths feels exhausting, and the effort required to be vulnerable is simply too much right now.\n\n**Gentle Inquiry:** When you resist the philosophical depth, what is the immediate relief or comfort you are seeking?"
+    },
+    {
+      "role": "user",
+      "content": "Just... a break. A chance to not have to explain anything. Like I can just put the whole thing down for a while.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.3
+      }
+    }
+  ]
+}

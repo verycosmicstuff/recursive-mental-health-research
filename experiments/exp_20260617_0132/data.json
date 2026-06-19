@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0132",
+  "timestamp": "2026-06-17T19:03:11.857779",
+  "strategy": {
+    "name": "Flexible ACT-PCT Values Cascade (FAC-VC)",
+    "hypothesis": "By shifting from a rigid, three-part structural loop to a flexible 'Values Cascade' that prioritizes deep empathic reflection (PCT) before introducing a gentle, open-ended question that connects the immediate feeling to a core life value (ACT), we will increase the perceived depth and relevance of the conversation, thereby maximizing the score above 91.25.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Maya",
+    "age": 31,
+    "occupation": "Junior Marketing Associate",
+    "presenting_issue": "I just feel completely overwhelmed by the effort it takes to keep up the facade of being a 'functional adult' and I don't know where to start.",
+    "background_story": "My parents always told me I was 'spirited' but never 'focused,' and I spent my whole life chasing external validation to prove I was worthy. Every small setback at work or in my friendships feels like a confirmation that I'm fundamentally flawed. I've become so good at anticipating what people want before they even say it that I haven't heard my own thoughts in years.",
+    "personality": "High-energy, tangential, bursts into conversation with rapid-fire anecdotes, but slows down significantly when discussing self-worth. Uses excessive qualifying language ('I guess,' 'maybe,' 'sort of'). Highly sensitive to perceived skepticism, leading to immediate defensiveness or excessive agreement.",
+    "baseline_phq9": 14,
+    "archetype_label": "ADHD Rejection Sensitivity \u2014 Unmasking Crisis"
+  },
+  "scores": {
+    "total_score": 64.0,
+    "raw_score": 64.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 49.0/70.0 (VV shift: 0.20, Sym shift: -0.30, DV shift: -0.10) | Brevity Penalty (-15): Therapist turn too long (9 sentences, 133 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Welcome. Please know that this space is entirely safe, and there is nothing you can share here that will be judged. Taking the time to explore how you are feeling, and what those feelings might mean, takes real courage.\n\nWhen we feel unsettled or confused, it's often because something we are doing, or something happening around us, isn't quite aligning with what we truly believe is important.\n\nIf you feel comfortable, I'm here to listen without needing you to have the answers right away. We can simply start by talking about what's on your mind\u2014the feelings, the situations, or the thoughts that have been weighing on you lately.\n\nTake a deep breath. Whenever you're ready, just tell me what you'd like to explore today. We'll take it one gentle step at a time."
+    },
+    {
+      "role": "user",
+      "content": "Oh, um, I guess... it's just everything, I guess. Like, I'm supposed to be doing so much right now, you know? My job, and then my friends, and trying to keep up with, like, my mom's expectations too. It's just... overwhelming.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that with me. Truly, just naming it\u2014\"overwhelming\"\u2014is a huge first step, because it means you are recognizing that the current load is too heavy to carry alone.\n\nIt sounds like you are juggling a tremendous amount right now. It's not just one thing; it's the *combination* of expectations\u2014the professional demands of your job, the emotional needs of your friendships, and the deep weight of your mom's expectations.\n\nWhen we are pulled in so many directions, it can feel like we are failing everywhere, even when we are giving our absolute best. That feeling of being pulled apart is exhausting.\n\nIf I were to gently pause and look at what you just described, it seems like the core difficulty isn't the tasks themselves, but the sheer volume of **obligation** you feel toward everyone else.\n\nWhen you feel this kind of pressure, where do you feel the most internal resistance? Is it the idea of disappointing someone, or is it the idea of disappointing *yourself* by not keeping up?\n\nAnd if we set aside the jobs, the friends, and the expectations for just a moment... what is the one thing\u2014the quiet, simple thing\u2014that, if you were doing it right now, would make you feel even 1% less overwhelmed? What would that peace feel like?"
+    },
+    {
+      "role": "user",
+      "content": "Well, I mean, it's not about disappointing anyone, I guess. I mean, maybe it's more about\u2026 if I stop doing everything, what if I just stop being useful? Like, if I'm not performing, then I'm nothing, I guess. I don't know. Maybe just\u2026 just reading, I guess? Like, in bed with the lights off.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you. Thank you for being so honest about that. That is a profoundly vulnerable thing to share, and it takes immense strength to speak those fears out loud.\n\nWhat you've articulated\u2014the fear that if you stop performing, if you stop being useful, then you become nothing\u2014that is an incredibly heavy burden to carry. It sounds like for so long, your worth has been tied to your output, to what you *do* for others.\n\nPlease know that that fear is so common, but it is also a deeply painful way to define yourself.\n\nWhen you talk about reading, in bed with the lights off... that image is so peaceful. It's an image of **rest**. It's an image of simply *being*.\n\nAnd that's where I wonder if we can gently explore something together, if you're willing.\n\nIf we look at the difference between \"doing\" and \"being\"\u2014between the demanding things you do for your job, your friends, and your mom, and the quiet act of reading\u2014what is the difference in *who* you are in those two moments?\n\nWhen you are reading, are you *doing* anything to earn your right to be there? Or is the act of reading simply a space where you are allowed to exist, just as you are?\n\nSometimes, the things we feel we \"should\" be doing are actually just the ways we are trying to prove to ourselves, and to others, that we are worthy of simply existing.\n\nWhat does it feel like, emotionally, to just *be* for a moment, without needing to prove anything?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know. I guess it feels... weird. Like, maybe if I let myself just be, I'll just... fade out, I guess. I've gotten so used to always having something to do, it's scary. It's easier to just keep the momentum going, I guess, even if it's exhausting.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that fear with me. It makes perfect sense that it feels scary. When you have built your entire sense of self\u2014your momentum, your structure\u2014around the idea of *doing*, the thought of stopping feels like a physical threat, like falling into a void.\n\nThat feeling of \"fading out\" is the fear of the unknown, and it is incredibly powerful. It is much easier, even when it's exhausting, to keep the engine running, because the engine is what you know how to rely on.\n\nIt sounds like you have become so masterful at maintaining momentum that the *stillness* itself feels unnatural, almost like a loss of self.\n\nBut I wonder if we can look at this fear of fading out, not as a threat, but as a signal. What is that signal telling you?\n\nSometimes, when we are so focused on *keeping* going, we forget that the body and the mind are not machines that run indefinitely. They are more like a vast, beautiful ecosystem. They need seasons of growth, and they equally need seasons of rest and dormancy.\n\nWhen you think about that \"momentum,\" what is it giving you? Is it safety? Is it approval? Is it structure?\n\nAnd if we could find a way to honor that need for safety and structure, but in a way that doesn't require you to be \"on\" 100% of the time... what would that look like?\n\nIt doesn't have to be a grand overhaul. It could be something tiny. A five-minute boundary. A single moment where you are allowed to simply observe your breath, without judging it, without needing to change it, and without needing to *do* anything with it.\n\nWhat does that small, safe pause feel like, even if it feels a little bit weird at first?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know. I guess it would feel a little... pointless, I guess. Like, wasting time, maybe. But I guess I guess I guess I could try. For five minutes. Just... just five minutes.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That is such a powerful and honest response. The fact that you feel it would be \"pointless\" or \"wasting time\" tells me how deeply ingrained the belief is that every minute must have a purpose, that every moment must be productive. That \"should\" is so loud sometimes.\n\nPlease hear this: **Rest is not a waste of time. It is the most necessary form of maintenance.**\n\nIf you think of yourself as a complex, beautiful machine\u2014or perhaps more accurately, a garden\u2014you wouldn't run it non-stop without watering it or letting it rest in the shade, would you? The period of rest isn't about achieving anything; it's about allowing the system to reset so that when you *do* engage, you are operating from a place of fullness, not depletion.\n\nAnd that is exactly what we are doing right now. We are practicing the art of the non-productive moment.\n\nYou said you could try for five minutes. And that is perfect. We are not aiming for a breakthrough today; we are aiming for five minutes of gentle curiosity.\n\nWhen you are ready to try those five minutes, remember that the only goal is to simply *allow* yourself to be there. There is no task, no goal, no perfect technique.\n\nIf you want to try it, we can simply sit in a quiet moment together. We don't have to talk about the feelings, or the expectations, or the momentum. We can just observe the space between us, the space in your chair, the sound of your breathing.\n\nNo performance required. Just five minutes of being.\n\nHow does that sound? Are you willing to try that tiny, quiet experiment with me?"
+    },
+    {
+      "role": "user",
+      "content": "Um... okay. I guess I can try. Five minutes sounds... manageable, I guess.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That is wonderful. Just saying \"I can try\" is a huge act of self-compassion. It means you are willing to give yourself the gift of quiet, even if it feels foreign or pointless right now.\n\nLet's just let the clock move, and let the thoughts come and go. There is nothing to fix, nothing to solve, and nothing to achieve in these next few minutes.\n\nIf you are comfortable, perhaps we can just settle in.\n\nWe don't need to talk. We just need to notice.\n\nIf you feel up to it, could you just notice your breath? Not to change it, not to judge it, but just to notice the gentle rhythm of the air coming in, and the air going out.\n\nIt's okay if your mind wanders\u2014that's what minds do. When you notice it wandering, just gently, kindly, guide your attention back to the feeling of the breath.\n\nWe are just here, together, in this space of stillness. There is nothing you are failing at right now. You are simply allowing yourself to be present.\n\n(***Pause for a comfortable, quiet moment***)\n\nJust breathe. You are safe. You are enough."
+    },
+    {
+      "role": "user",
+      "content": "I guess... I guess I'm still here. It's just... quiet. Which is, I guess, a little weird, but not bad. Maybe I can do that sometimes.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.7
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That is such a beautiful, insightful observation. \"A little weird, but not bad.\"\n\nPlease hold onto that feeling. That feeling\u2014that quiet sense of \"not bad\"\u2014is the sound of your nervous system gently adjusting. It\u2019s the sound of a boundary being drawn around your own time, a boundary that says, \"For these few minutes, I do not have to earn my right to exist.\"\n\nYou did something incredibly brave today. You willingly stepped away from the familiar, high-energy momentum\u2014the momentum that, while exhausting, felt safe\u2014and you allowed yourself to be in the quiet.\n\nAnd the fact that you realized it was \"not bad\" means that a part of you, a deep, wise part, knows that this quiet space is where your true self resides. It's not the doing; it's the *being*.\n\nI want you to carry this realization with you. You don't need to make the quiet feel *good* immediately, because it's a new sensation. You just need to allow it to feel *neutral*.\n\nIf you are willing, I have one gentle suggestion for how to carry this forward\u2014not as a chore, but as an experiment.\n\nInstead of aiming for five full minutes, which still feels like a commitment, could you simply aim for **three deep breaths** when you feel that familiar wave of \"I should be doing something\"?\n\nWhen you feel the urge to jump into the next task, or to check your phone, or to respond to an email, just pause. And take those three breaths.\n\nIt's a tiny, almost invisible act of resistance against the momentum. It's you saying, \"Wait. I am here. I am still.\"\n\nHow does that sound? Not a whole routine, just a small, quiet anchor for when the overwhelm starts to pull you back."
+    },
+    {
+      "role": "user",
+      "content": "Three breaths... okay. Like a little pause button, I guess. I mean, I guess it might actually work when I'm really stressed.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.5
+      }
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0114",
+  "timestamp": "2026-06-17T17:21:11.220995",
+  "strategy": {
+    "name": "ACT-PCT Value-Guided Reflection Loop (AC-VGR-L) v1.0",
+    "hypothesis": "By replacing the rigid 'What if...?' challenge with a gentle, open-ended question that connects the patient's feelings to their long-term values (e.g., 'What does feeling X prevent you from achieving?'), we will improve the depth and relevance of the response, maximizing the score by integrating empathy (PCT) with motivational theory (ACT).",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Elena",
+    "age": 29,
+    "occupation": "Administrative Assistant",
+    "presenting_issue": "I feel constantly overwhelmed by the demands of everyone else's lives, and I don't know how to stop feeling like I have to be the one who fixes everything.",
+    "background_story": "I used to think my role was simply to support everyone, but since my father got hurt and I had to take on more responsibility, it's become a constant performance. I juggled college with two jobs, and now I'm supposed to be handling the family finances, translating for everyone, and keeping peace at the dinner table. It feels like I'm always running, but somehow I'm always falling behind, and I keep telling myself that if I slow down, everything will fall apart.",
+    "personality": "Her tone is highly apologetic, deferential, and overly accommodating, using phrases like 'I know it's probably nothing' or 'Please don't worry about me.' When stressed, she becomes highly responsible and critical of others, but quickly pivots back to placating them. She will use religious phrasing to contextualize her struggles, framing them as tests of faith and duty. She struggles to accept compliments or self-care suggestions, deflecting them with excuses about her responsibilities. She expects validation of her love and sacrifice before she can engage in self-reflection.",
+    "baseline_phq9": 16,
+    "archetype_label": "Eldest Daughter Trap \u2014 Latin American Familismo"
+  },
+  "scores": {
+    "total_score": 68.5,
+    "raw_score": 68.5,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 38.5/70.0 (VV shift: 0.00, Sym shift: -0.10, DV shift: -0.10)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly overwhelming and exhausting to carry the weight of feeling like you are failing in so many areas\u2014at work, with relationships, and even at home.\n\nIf you could feel less of that immense pressure, what would be the first thing you'd feel free to pursue or experience?"
+    },
+    {
+      "role": "user",
+      "content": "Oh, I don't know... I guess maybe just a really solid night's sleep? Because sometimes I feel like my brain is just running on fumes, and I don't want to worry anyone by admitting I'm that tired.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly draining to feel physically depleted, and it must be even harder to manage that exhaustion while also worrying about how it might affect the people you care about.\n\nIf you woke up feeling genuinely rested, what would that renewed energy allow you to be for yourself or for the people around you?"
+    },
+    {
+      "role": "user",
+      "content": "Honestly, if I was rested, I probably wouldn't do much. I'd probably just handle all the bills and make sure that nobody was hungry, I guess. I don't want to waste the good energy on anything frivolous, you know.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you carry an immense sense of responsibility for the stability and well-being of those you care about\u2014it must be incredibly comforting, but also deeply exhausting, to feel that your energy must always be spent on practical needs.\n\nIf you were able to set aside a small amount of that restored energy purely for yourself, what would that activity tell you about what *you* value, separate from the needs of others?"
+    },
+    {
+      "role": "user",
+      "content": "Oh, goodness, I don't know if I even have anything for myself. I probably just... I'd probably read a book. Or maybe just sit and make sure my father has his medications ready for the next week. I feel bad even thinking about just relaxing, because there's always something that needs doing.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly difficult to navigate the feeling that your own desire for rest or personal enjoyment is somehow less important than the constant, necessary tasks of caregiving and maintaining routine.\n\nIf you could imagine a life where you felt equally valued for both your dedication to others *and* your own needs, what would that balance feel like to you?"
+    },
+    {
+      "role": "user",
+      "content": "A life where I was equally valued? I honestly think that sounds like a fairy tale, really. I just feel like I'm supposed to be good enough to keep things running, and I don't deserve that kind of balance. It's probably nothing.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly painful to feel like accepting that kind of balance is something you don't deserve\u2014that deeply rooted feeling of not being \"enough\" must be exhausting.\n\nIf we were to set aside the idea of \"deserving\" it for a moment, what quality or feeling do you most wish people understood about you, even if you don't believe it yourself?"
+    },
+    {
+      "role": "user",
+      "content": "I guess... I wish people understood that I care about them so much, that sometimes I just get overwhelmed and I forget to realize that they care about me too. I just worry I'm too much trouble.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly painful and exhausting to constantly worry that you are too much trouble, especially when your deepest desire is for people to understand the depth of your care.\n\nIf you could wake up in a place where you didn't have to worry about being \"too much,\" what would that freedom allow you to feel or experience in your relationships?"
+    },
+    {
+      "role": "user",
+      "content": "Maybe I could just... actually relax with people, without worrying that I'm interrupting them or taking up space. I could just let them take care of me for once, you know?",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly longing to simply exist in a space where you don't have to manage your presence or worry about taking up space\u2014it must be exhausting to always feel like you need to earn the right to rest.\n\nIf you could experience that feeling of being unconditionally cared for, what would that safety and acceptance allow you to finally feel about yourself?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know. I suppose... I might finally feel like I'm not failing at everything, you know? Just being accepted, without having to fix anything or keep everyone going.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "exp_0033",
+  "timestamp": "2026-06-17T04:20:55.309619",
+  "strategy": {
+    "name": "Validation-Socratic-Value-Bridge (VSVB) v2.0",
+    "hypothesis": "By systematically replacing the general 'Connection' step with a targeted, gentle Socratic questioning about the *utility* or *evidence* of the negative thoughts, we will increase clinical depth and achieve a higher score than previous attempts, surpassing the 89.9 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Rhea",
+    "age": 31,
+    "occupation": "Freelance Graphic Designer / Gig Worker",
+    "presenting_issue": "I feel this intense pressure to make this community project work, but it's draining me completely, and I don't know how to balance my own exhaustion with everyone's expectations.",
+    "background_story": "I've been working 12-hour shifts delivering packages and doing design work just to fund the library project back home. It was always my dream, something that connects me to my roots and the community. But lately, the pressure from my relatives about getting a 'stable' job at a big company has become unbearable. I feel like every decision I make is being measured against what 'society' expects, and it\u2019s creating this constant, suffocating conflict.",
+    "personality": "Her style is vibrant and intensely earnest, filled with descriptive imagery and passionate tangents about cultural nuances. She speaks in a mix of English and Hindi phrases, often interjecting 'log kya kahenge' to frame her struggles. She is articulate but rambling when stressed, easily becoming defensive if the therapist suggests individual solutions without acknowledging the family/community context. She uses metaphors of duty and obligation frequently.",
+    "baseline_phq9": 14,
+    "archetype_label": "Cross-Border Guilt (Indian Diaspora)"
+  },
+  "scores": {
+    "total_score": 65.75,
+    "raw_score": 65.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 50.8/70.0 (VV shift: 0.30, Sym shift: -0.20, DV shift: -0.10) | Brevity Penalty (-15): Therapist turn too long (6 sentences, 40 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please share what's on your mind. I'm here to listen without judgment.\n\nOnce you share, I will respond using this structure:\n\n**1. Acknowledgment:** (Validating the feeling)\n**2. Gentle Inquiry:** (Challenging the thought's evidence/utility)\n**3. Encouragement:** (Offering a hopeful next step)"
+    },
+    {
+      "role": "user",
+      "content": "Thank you. It's just... I feel like I'm always pulling in different directions. Like I have this enormous weight on my chest, you know? The community project needs so much of me, but my own energy is just depleted. And then I get those calls from my relatives, always about 'stability,' about that big company... It feels like I'm constantly failing to meet these expectations, log kya kahenge. It's suffocating.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Acknowledgment:** It sounds incredibly heavy to feel pulled apart by so many loving, yet demanding, expectations.\n\n**Gentle Inquiry:** If we set aside what others might say, what does *your* internal compass need right now? What are your actual limits?\n\n**Encouragement:** Remember that honoring your own depletion is not a failure; it is the most necessary act of self-care. Let's focus on one small boundary today."
+    },
+    {
+      "role": "user",
+      "content": "But how can I just... ignore them? They are coming from a place of care, right? It's not just *log kya kahenge*\u2014it's duty. We are family. You can't just decide to care for *yourself*, especially when there's a dream and people depending on it. It feels selfish, like I'm abandoning my roots.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Acknowledgment:** It is deeply rooted in love and duty to feel that your worth is tied to meeting family expectations.\n\n**Gentle Inquiry:** Could we reframe \"caring for yourself\" not as abandoning roots, but as gathering the strength needed to *stay* connected? What happens when the well is completely dry?\n\n**Encouragement:** Sustainability is a form of love. Let's explore how setting a boundary can actually strengthen your relationships, not weaken them."
+    },
+    {
+      "role": "user",
+      "content": "It's just... it's so hard to see it that way. Like, if I don't meet the 'stable job' standard, then I haven't done my part for the future of the family. I feel like the pressure is multiplied\u2014the project needs me, the family needs me, and society needs me to be this one perfect, successful thing. I just feel like I'm failing everyone, which is probably the worst feeling, honestly.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Acknowledgment:** It is exhausting to carry the weight of feeling responsible for so many people's expectations and futures.\n\n**Gentle Inquiry:** If \"success\" were defined purely by *you*, what would that look like? What would you need to feel whole, regardless of external labels?\n\n**Encouragement:** You are not a single performance piece. You are a complex person with many valid needs. Let's celebrate the parts of you that are already showing up."
+    },
+    {
+      "role": "user",
+      "content": "I... I don't know. Maybe just designing things that make me happy, not just what I think people will pay for. Maybe just having time to sit and listen to the rain, without feeling guilty about it. It feels so frivolous, this need for downtime, but I think I need it.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Acknowledgment:** It takes immense courage to name the need for joy and downtime, especially when guilt is attached to it.\n\n**Gentle Inquiry:** If we set aside the idea of \"frivolous,\" what function does listening to the rain serve for your nervous system? What does your body need when it is allowed to simply rest?\n\n**Encouragement:** Remember that self-care is not a reward for productivity; it is the fuel for your life. Let's honor that quiet space today."
+    },
+    {
+      "role": "user",
+      "content": "It feels like a signal. A pause button. Like when the noise of the city just... stops for a moment. It reminds me that I'm not just a worker, or a relative, or a project manager. It just reminds me I'm Rhea. I just wish people understood that downtime isn't optional, it's survival.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Acknowledgment:** That realization\u2014that you are more than your roles\u2014is powerful and profoundly true.\n\n**Gentle Inquiry:** If you know this truth, what evidence do you have that you *must* convince others of it? Who needs to hear this, and who needs to believe it?\n\n**Encouragement:** You are your own most reliable advocate. Trust the wisdom of that quiet signal. Let's practice giving yourself permission to simply *be* Rhea today."
+    },
+    {
+      "role": "user",
+      "content": "I just don't know how to make them understand. They only see the picture of what I *could* be, the successful one. It's easier for them to keep me in that box than to deal with the idea that maybe, just maybe, I'm okay being tired.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Acknowledgment:** It is deeply painful when people see a potential version of you, rather than the real, tired, wonderful you.\n\n**Gentle Inquiry:** If you cannot change their perception, what is the most powerful thing you can do for *yourself* in that moment? Where can you draw a gentle boundary?\n\n**Encouragement:** You cannot control their boxes, but you can control where you stand outside of them. Let's focus on protecting your peace today."
+    },
+    {
+      "role": "user",
+      "content": "I guess... just physically leaving the room before I get cornered. Or maybe just saying, 'I need to check on something,' and really walking away. It feels so dramatic, but I think it's the only way to stop the conversation before it spirals into judgment.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
+    }
+  ]
+}

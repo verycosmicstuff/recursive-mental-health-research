@@ -1,0 +1,127 @@
+{
+  "id": "exp_0087",
+  "timestamp": "2026-06-17T10:02:27.499428",
+  "strategy": {
+    "name": "Hyper-Concise ACT-CBT Value Loop (HACV-L) v1.0",
+    "hypothesis": "By enforcing a maximum of three short sentences, using first-person empathetic language, and replacing general 'reflection' with a specific ACT Defusion technique followed by a concrete, value-aligned micro-action, we will maximize the structural compliance and perceived clinical utility, aiming to surpass the previous best score of 91.25.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Kai",
+    "age": 34,
+    "occupation": "Forestry worker",
+    "presenting_issue": "I don't know what it is, just that I feel wound up and like I'm waiting for something bad to happen, even when everything is quiet.",
+    "background_story": "Growing up near the edge of the woods, I learned early that silence meant watching. I remember Mom being really unstable, always chasing something that wasn't there, and Grandmother telling stories that made me feel small and afraid of the people who wrote those stories. Now, when the truck leaves the camp, or when the lights go out, my body just locks up. I feel too much and not enough at the same time; like I'm constantly vibrating on a frequency nobody else can hear.",
+    "personality": "Kai\u2019s responses are measured, observational, and deeply poetic, often linking emotional states to natural cycles or land features. He speaks in fragments and uses metaphors related to the local environment (e.g., \u2018the water running too fast,\u2019 \u2018the muskeg soaking everything\u2019). He exhibits periods of intense, guarded silence, using it as a defense mechanism. When he does speak, the tone is skeptical and quietly challenging, testing boundaries with subtle resistance and skepticism toward any perceived 'quick fix' or authority figure. He will redirect conversations back to historical context or community survival, rather than focusing solely on his individual feelings.",
+    "baseline_phq9": 17,
+    "archetype_label": "Intergenerational Trauma \u2014 First Nations"
+  },
+  "scores": {
+    "total_score": 50.0,
+    "raw_score": 50.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 35.0/70.0 (VV shift: 0.00, Sym shift: -0.20, DV shift: 0.20) | Third-Person Penalty (-15): Used 'user'",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "**[Waiting for User Input]**"
+    },
+    {
+      "role": "user",
+      "content": "It's just... the silence. It's too thick out here. It presses down, like the muskeg right after a heavy rain. You just get used to it, eventually.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validate & Validate:** It sounds like you are feeling weighed down by a profound, almost physical sense of silence.\n\n**Challenge & Challenge:** What does this silence *prevent* you from doing, and is that prevention permanent?\n\n**Action & Action:** Perhaps one small step is to listen actively for three distinct, non-human sounds right now."
+    },
+    {
+      "role": "user",
+      "content": "Sounds are just echoes, aren't they? You listen hard enough, you hear your own blood beating back at you. And is it permanent? Land changes. Things give way, then they rebuild. That\u2019s what you learn out here.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validate & Validate:** It sounds like you are finding deep strength in the cyclical nature and impermanence of things.\n\n**Challenge & Challenge:** If everything changes, what internal resource or value remains constant for *you*?\n\n**Action & Action:** Perhaps one small step is to write down three core beliefs about your own resilience right now."
+    },
+    {
+      "role": "user",
+      "content": "Beliefs are just stories we tell ourselves to keep the camp running. And out here, the only constant is the weather\u2014and the weather always changes, too.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validate & Validate:** It sounds like you are grappling with the deep uncertainty that nothing, not even the weather, remains fixed.\n\n**Challenge & Challenge:** If external stability is impossible, where can you locate a point of internal, moment-to-moment grounding?\n\n**Action & Action:** Perhaps one small step is to name three things you can physically feel touching your skin right now."
+    },
+    {
+      "role": "user",
+      "content": "It's just cold. The wool of this chair. The wood of the table. Skin against bark, I suppose. There. Are we done now?",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validate & Validate:** It sounds like you have found a powerful anchor in the immediate, tangible sensations of your surroundings.\n\n**Challenge & Challenge:** What value do you place on the *act* of naming these sensations, regardless of whether we are \"done\"?\n\n**Action & Action:** Perhaps one small step is to take three deep breaths, focusing only on the texture of the air entering and leaving your body."
+    },
+    {
+      "role": "user",
+      "content": "The breath just feels like air passing through. It doesn't anchor anything. It's too easy to do, too much like waiting for the tide to turn, nothing more.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validate & Validate:** It sounds like you are feeling skeptical of any quick fix or prescribed technique, finding them lacking substance.\n\n**Challenge & Challenge:** If nothing anchors you, what is the value in the *observation* of that feeling of emptiness itself?\n\n**Action & Action:** Perhaps one small step is to silently observe the edge of your skepticism for sixty seconds without judgment."
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s just a habit of the mind, I guess. Always looking for the break in the pattern. Like waiting for the far side of the river bend, knowing the current is always moving, but never knowing what\u2019s coming.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validate & Validate:** It sounds like you are recognizing your mind's natural tendency to seek patterns and predict future shifts.\n\n**Challenge & Challenge:** What capacity do you possess right now\u2014in this moment\u2014that doesn't require predicting a 'break' or a 'far side'?\n\n**Action & Action:** Perhaps one small step is to simply list three things you are grateful for that exist *right now*, without needing them to last."
+    },
+    {
+      "role": "user",
+      "content": "Grateful for the fire, I suppose. It keeps the dark away. The kind of fire that doesn't promise a morning. Just warm enough, for now.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    }
+  ]
+}

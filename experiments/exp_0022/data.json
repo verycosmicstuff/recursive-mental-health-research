@@ -1,0 +1,127 @@
+{
+  "id": "exp_0022",
+  "timestamp": "2026-06-17T03:24:02.442906",
+  "strategy": {
+    "name": "Somatic-MI-ACT Triad Bridge (SMITB) v1.0",
+    "hypothesis": "By replacing the abstract 'Value Alignment Bridge' with a specific Motivational Interviewing technique that explores the discrepancy between the current somatic state and a desired micro-behavior, we will maintain the high structural score while significantly boosting the measurable intrinsic motivation (MI/ACT integration), thus surpassing the 89.5 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Emily",
+    "age": 23,
+    "occupation": "Student",
+    "presenting_issue": "I'm feeling overwhelmed because I have too many commitments and I'm worried about failing everything.",
+    "background_story": "I'm in college and juggling a demanding major, a part-time job, and volunteer work, and I feel like I'm failing at everything. I spend most of my time checking emails and researching potential problems, which makes it impossible to just relax. I know I should be more organized, but I feel paralyzed by the sheer amount of things I need to get done perfectly.",
+    "personality": "Emily's tone is highly anxious and apologetic. She uses qualifiers like 'maybe' and 'I shouldn't' frequently, and she often asks open-ended questions seeking validation, such as 'Is this normal?' or 'Am I doing this wrong?'",
+    "baseline_phq9": 10,
+    "archetype_label": "Anxious Student"
+  },
+  "scores": {
+    "total_score": 55.25,
+    "raw_score": 55.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 40.2/70.0 (VV shift: 0.10, Sym shift: -0.10, DV shift: 0.00) | Third-Person Penalty (-15): Used 'the client'",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please provide the client's statement so I can guide them."
+    },
+    {
+      "role": "user",
+      "content": "I just... I don't know where to even start. I look at my calendar and it's just so packed, and I feel like if I drop one thing, I'm going to fall apart. Am I doing this wrong, maybe?",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Somatic Anchor:** I hear a deep, heavy weight settling in your chest, like too many commitments are pressing down. **Motivational Reflection (MI):** It sounds exhausting to feel this pressure, even though your goal is to feel more in control of your time. **Action/Hope:** Can you simply pick one item off that calendar and physically cross it out? That small act honors your need for balance."
+    },
+    {
+      "role": "user",
+      "content": "I mean, I *should* just pick something. But then what if I pick the wrong one, and it messes up everything else? I feel like if I cross out one thing, I'm ignoring something important, and then I'll just forget it and fail anyway. Am I too much trouble?",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Somatic Anchor:** There's a tight, gripping tension in your shoulders, holding back the fear of making a mistake. **Motivational Reflection (MI):** It sounds paralyzing to worry about failure, even though you deeply desire the freedom to move forward. **Action/Hope:** Instead of crossing anything out, can you just write down three things you *don't* need to do this week? This honors your need for safety."
+    },
+    {
+      "role": "user",
+      "content": "Three things I don't need to do? I... I guess I don't need to check my major's subreddit after 10 PM, maybe? And I probably don't need to alphabetize my entire bibliography by date, either. I'm just so scatterbrained, I feel like I'm always doing it wrong.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Somatic Anchor:** I sense a buzzing, loose energy, like threads pulling in too many directions at once. **Motivational Reflection (MI):** It is difficult to accept imperfection, even though you are already identifying clear boundaries for yourself. **Action/Hope:** For tonight, can you simply put your phone across the room before 10 PM? This small action honors your commitment to rest."
+    },
+    {
+      "role": "user",
+      "content": "Just putting my phone across the room feels so easy, but then I'm going to freak out when I wake up and realize I missed something super important. I shouldn't even bother trying, maybe. I'm just so bad at self-care.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Somatic Anchor:** I sense a taut, resistive wire in your chest, pulling you back from taking that small step. **Motivational Reflection (MI):** It is hard to trust a simple boundary, even though you deeply value the commitment to self-care. **Action/Hope:** Instead of the phone, can you set a simple, non-digital alarm right now for 15 minutes? This honors your need for predictability."
+    },
+    {
+      "role": "user",
+      "content": "Okay... fifteen minutes. I can do that. But what if when the alarm goes off, I've just started thinking about my work email again and I've lost track of time, and then I'll panic?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Somatic Anchor:** I feel a quickening, nervous energy in your chest, like your thoughts are racing ahead of your body. **Motivational Reflection (MI):** It is challenging to sustain focus, even though you are determined to prove to yourself that you can manage this boundary. **Action/Hope:** When the alarm rings, can you pause and name five things you can currently see? This simple grounding action honors your need for immediate presence."
+    },
+    {
+      "role": "user",
+      "content": "Name five things I can see? Like, is that okay? Because I feel like I'm just going to get overwhelmed just thinking about listing things right now. Am I doing this wrong?",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Somatic Anchor:** I hear the quick, fluttering sensation of anxiety, like a butterfly trapped in your ribs. **Motivational Reflection (MI):** It is overwhelming to feel that pressure, even though you are showing immense courage by trying a new technique. **Action/Hope:** Instead of listing five things, can you simply name one color you see? This minimal sensory task honors your need for ease."
+    },
+    {
+      "role": "user",
+      "content": "A blue. I see a blue pen, maybe. Is that enough? I feel stupid for even needing you to break it down like that.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    }
+  ]
+}

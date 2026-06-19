@@ -1,0 +1,127 @@
+{
+  "id": "exp_0077",
+  "timestamp": "2026-06-17T09:06:35.975921",
+  "strategy": {
+    "name": "Micro-Reframing Value-Utility Loop (MRVUL) v2.0",
+    "hypothesis": "By tightening the structure to a maximum of two extremely short paragraphs (removing the third paragraph/action step to avoid length penalties) and replacing generalized 'values' with a specific, immediate 'thought challenge' (CBT), we will achieve superior structural compliance and maintain the high perceived clinical depth, thereby surpassing the current best score of 91.25.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Ethan",
+    "age": 35,
+    "occupation": "Software Project Manager",
+    "presenting_issue": "I'm having trouble regulating my sleep and I feel like I'm constantly on edge, even when I'm not working.",
+    "background_story": "My job requires me to always be 'on,' managing multiple teams and high-stakes deadlines, which has been exhilarating but exhausting. Lately, the pressure has started bleeding into my personal life, and I find myself getting irritable with my partner. I keep telling myself I just need to manage my time better, but I feel like I'm losing myself in the process.",
+    "personality": "Concise, intellectual, and prone to using corporate jargon or overly analytical language to describe emotional states. He will minimize his feelings, framing emotional exhaustion as 'low efficiency' or 'poor bandwidth,' making it difficult for the therapist to challenge his sense of competence.",
+    "baseline_phq9": 14,
+    "archetype_label": "Overwhelmed Professional"
+  },
+  "scores": {
+    "total_score": 67.5,
+    "raw_score": 67.5,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 52.5/70.0 (VV shift: 0.40, Sym shift: -0.30, DV shift: 0.10) | Third-Person Penalty (-15): Used 'user'",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please provide the user's message, and I will respond using the structured coaching framework."
+    },
+    {
+      "role": "user",
+      "content": "It's just bandwidth issues, really. I should be able to handle this kind of stress; I manage huge, complex projects daily. It's probably just needing better time management, not some systemic problem.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear that you are minimizing this stress, believing that your track record of managing complex projects means you should be able to handle this without struggle.\n\nIt sounds like you are defaulting to the belief that competence must negate difficulty. Challenge this rigid thought by treating the stress itself as data. Commit to spending five minutes standing outside and observing three distinct sounds."
+    },
+    {
+      "role": "user",
+      "content": "Sounds fine. I can commit to that. It\u2019s just a quick data input cycle, I suppose.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are trying to categorize and reduce this emotional experience into a purely logical, manageable data input cycle.\n\nYou are using intellectualization to avoid acknowledging the discomfort of feeling overwhelmed. To interrupt this pattern, commit to pausing and naming one physical sensation you feel right now\u2014like tension in your jaw or weight on your shoulders\u2014without judgment."
+    },
+    {
+      "role": "user",
+      "content": "My shoulders feel tight, definitely. It\u2019s probably just residual stress from the morning stand-ups.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear that your shoulders feel tight, and you are attributing this physical sensation to predictable, minor sources of stress.\n\nIt sounds like you are minimizing the signal your body is sending you. To validate this physical input, commit to slowly rolling your shoulders backward five times, focusing only on the movement and the sensation."
+    },
+    {
+      "role": "user",
+      "content": "Okay, I'll do that. Just a quick mechanical reset. It feels a little better, I guess.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are successfully completing the physical action, but immediately minimizing the positive shift by calling it merely a \"mechanical reset.\"\n\nYou are using functional language to dismiss genuine self-care and emotional progress. To validate this subtle change, commit to taking three slow, deep breaths, paying attention only to the moment the air leaves your lungs."
+    },
+    {
+      "role": "user",
+      "content": "Deep breaths. Got it. It\u2019s just optimizing the system efficiency, nothing more.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear that you are framing this entire process\u2014the deep breaths, the awareness\u2014as merely optimizing a system's efficiency.\n\nIt sounds like you are using technical language to maintain distance from the vulnerability of self-care. To disrupt this pattern, commit to noticing one specific, neutral object in your immediate environment and describing it only by its color and texture."
+    },
+    {
+      "role": "user",
+      "content": "It's a beige file folder. Rough, kind of matte texture to it.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear that you are observing the folder with precise, objective detail, demonstrating a highly focused capacity for sensory input.\n\nIt sounds like you are using perfect description to maintain intellectual distance from any underlying emotional experience. To challenge this, commit to placing your hand on the folder and noticing the subtle temperature difference between your skin and the material."
+    },
+    {
+      "role": "user",
+      "content": "Huh. Yeah, it is cooler than my hand. Makes sense, I guess. It\u2019s just thermal conductivity, nothing deep.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.5
+      }
+    }
+  ]
+}

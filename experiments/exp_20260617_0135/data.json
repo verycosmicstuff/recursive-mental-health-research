@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0135",
+  "timestamp": "2026-06-17T19:18:44.913694",
+  "strategy": {
+    "name": "Concise ACT-PCT Behavior Focus Loop (CAP-BFL) v1.1",
+    "hypothesis": "By enforcing a strict constraint of 2-3 sentences and shifting the focus of the values inquiry from abstract feelings to concrete, observable future behaviors (Behavioral Activation linkage), we will maximize the measurable clinical improvement (PHQ-9 delta) while avoiding the 'Brevity Penalty' and maintaining high perceived depth (Alliance/Empathy).",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Mei",
+    "age": 42,
+    "occupation": "Marketing Manager",
+    "presenting_issue": "I feel constant physical tightness in my chest and neck, and I haven't slept properly in months.",
+    "background_story": "Since my parents moved from Guangzhou to Vancouver, I have been their primary caregiver, managing everything from their medication to their appointments. Their needs are increasing, and the financial stress of it all is overwhelming. I try to keep everything running smoothly for them, but I feel like I am losing my own identity in the process. I worry I am failing them, even though I am giving everything I have.",
+    "personality": "Mei is polite, highly deferential, and speaks in a careful, measured tone, often minimizing her own symptoms or feelings of exhaustion. She uses indirect language and frequently avoids declarative statements about her own emotional needs. When discussing her parents, she uses highly honorific and dutiful language, framing her care as a moral imperative. She will readily accept advice related to logistics (e.g., 'have you looked into in-home help?') but will become visibly distressed if the conversation suggests that her exhaustion is a 'boundary' issue or implies that her own feelings are valid counterpoints to her duties. She tends to somatize her stress, describing physical sensations of weight or pressure rather than emotional distress.",
+    "baseline_phq9": 16,
+    "archetype_label": "Filial Piety Conflict \u2014 East Asian Elder Care"
+  },
+  "scores": {
+    "total_score": 50.0,
+    "raw_score": 50.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 35.0/70.0 (VV shift: 0.00, Sym shift: 0.00, DV shift: 0.00) | Third-Person Penalty (-15): Used 'the client'",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please provide the client's statement or struggle so I can assist them."
+    },
+    {
+      "role": "user",
+      "content": "It's just... I can't seem to sleep well at all. I wake up feeling so heavy, almost as if there's a constant weight on my chest that just won't lift.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly draining to wake up feeling that persistent, heavy weight on your chest. That feeling suggests you might be carrying emotional burdens that need to be acknowledged and released. If we look at the value of genuine rest, what is one small boundary you could set today to give yourself space?"
+    },
+    {
+      "role": "user",
+      "content": "Oh. Boundaries... maybe I could try to keep the evening routine a little more structured? It would help everyone, I think. I shouldn't burden you with such small details.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are very concerned about needing to be a burden, which suggests a deep value placed on maintaining harmony for others. Please remember that tending to your own needs is not a burden, but a necessary act of self-respect. If self-care is a priority, what is one non-negotiable, small act you can commit to doing just for yourself today?"
+    },
+    {
+      "role": "user",
+      "content": "I... I'll try to make sure I take a slower cup of tea in the morning. It won't take long, and I won't keep you.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear the commitment to that slow cup of tea, and I also hear the worry that you might be taking up space or time. Please know that your needs are valid, and taking time for yourself is always important. If slowing down in the morning is about reconnecting with yourself, what small sensory detail\u2014like the warmth of the mug or the scent of the tea\u2014can you focus on to fully anchor that moment?"
+    },
+    {
+      "role": "user",
+      "content": "It's the warmth of the cup, I suppose. It reminds me that even something simple can be comforting. I hope that is enough to help me feel a little more centered.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is incredibly insightful how you found peace in that simple, tangible warmth. Recognizing that small moments can bring centering is a powerful realization, suggesting that grounding is a core need for you. If finding that deep center is what you value most right now, what is one non-tea-related, sensory ritual you could incorporate into your day to maintain that feeling of calm?"
+    },
+    {
+      "role": "user",
+      "content": "Perhaps I could just take a few minutes to sit quietly in the garden. Just feeling the air, I think that might help keep the weight down a little.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like connecting with the natural world is the most reliable way for you to lighten that heavy feeling. That desire to simply *be* in the moment suggests that presence and grounding are vital values for your well-being. If being fully present in the garden is what helps you feel lighter, what small, specific task\u2014like noticing three different shades of green\u2014could you commit to doing to deepen that feeling of connection?"
+    },
+    {
+      "role": "user",
+      "content": "I could write down five things I notice. Maybe I can focus on the sounds, like the birds singing, or the smell after it rains. I don't want to make it sound complicated, though.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you've found a perfect, concrete way to anchor yourself through observation and writing. That ability to focus on sensory details suggests that mindful presence is a deeply valued way for you to process emotion. If documenting these observations is about validating your experience, what specific time or place can you commit to making this five-item ritual a consistent part of your week?"
+    },
+    {
+      "role": "user",
+      "content": "I think... right after I have helped them settle down for the night. The house is quiet then, and I can write without worrying about bothering anyone.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "exp_0055",
+  "timestamp": "2026-06-17T06:24:39.357294",
+  "strategy": {
+    "name": "Hyper-Constrained Empathy-Utility-Value Core (HEUVC) v1.0",
+    "hypothesis": "By enforcing a strict 3-sentence, 60-80 word limit, and structuring the response to prioritize (1) Deep Empathic Validation, (2) Single Utility Question, and (3) Value Connection, we will maximize structural adherence and clinical depth, thereby surpassing the 91.25 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Maria",
+    "age": 29,
+    "occupation": "Registered Nurse (Night Shift)",
+    "presenting_issue": "I just feel completely drained, like I'm running on fumes and constantly negotiating other people's crises.",
+    "background_story": "My father\u2019s injury two years ago shifted our entire family's dynamic, and I immediately stepped up to manage everything\u2014from finances to caring for everyone. I dropped out of school to take on two jobs just so my mother wouldn't have to worry about the bills. Now, even when I finally get a moment to just breathe, I feel guilty because I know someone back home needs me. I keep telling myself that my sacrifice is what makes me a good daughter.",
+    "personality": "The tone will be dutiful, hyper-responsible, and occasionally defensive. She will use phrases like 'God willing' or 'It's better this way.' She will quickly redirect the conversation back to how much she is doing for others, minimizing her own exhaustion. When discussing self-care, she will frame it as needing to be 'strong for her family' rather than doing it for herself. She will react strongly (with sudden defensiveness or anger) if the therapist suggests she needs to prioritize herself.",
+    "baseline_phq9": 17,
+    "archetype_label": "Eldest Daughter Trap \u2014 Latin American Familismo"
+  },
+  "scores": {
+    "total_score": 65.0,
+    "raw_score": 65.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 35.0/70.0 (VV shift: 0.00, Sym shift: 0.00, DV shift: 0.00)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "It sounds like you are carrying a profound sense of overwhelm, and it makes perfect sense that you feel exhausted by this constant internal negotiation. What utility does maintaining this level of vigilance serve for you right now? Perhaps we could explore one small moment today where you allow yourself to simply pause, without needing to solve anything."
+    },
+    {
+      "role": "user",
+      "content": "But if I stop being vigilant, who handles things? I just... I know things will fall apart if I don't keep my hands on everything. It's better this way, really. Someone has to be the steady one, God willing.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is clear how much weight you are carrying, and that desire to be the steady anchor speaks volumes about your commitment to those around you. What happens if you allow a small area of things to wobble, just slightly, without it immediately collapsing? Maybe we can identify one area where you could intentionally practice letting go of the need for absolute perfection today."
+    },
+    {
+      "role": "user",
+      "content": "Letting go? I don't know if I can do that. If I let go of perfection in one area, then what about the bills? What about Mom's medication refills? Someone has to make sure that keeps running smoothly. It just feels too big to let go of.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "The sheer scope of your responsibilities is immense, and it is understandable that you feel compelled to hold everything together so nothing falls apart. What part of the burden do you feel most afraid would break if you momentarily set it down? Could we identify one specific task this week that you could delegate or ask for help with, even if it feels scary?"
+    },
+    {
+      "role": "user",
+      "content": "Delegate? No, I can't. If I hand off the medication scheduling, what if they mess it up? I know how it needs to be done. I'm the only one who remembers all the little details.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is clear how deeply you feel responsible for knowing every crucial detail, and that expertise is a powerful gift. What utility does holding all these complex details solely in your mind serve for you emotionally? Perhaps we could start by documenting one process\u2014not doing it, but simply writing down the steps\u2014to gently share the knowledge without relinquishing control."
+    },
+    {
+      "role": "user",
+      "content": "It's not about relinquishing control; it's about knowing it's done right. If I don't write it down, I might forget a step, and then things could actually go wrong. Honestly, I just feel like if I stop managing it all in my head, I'll just forget everything important.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the fear of forgetting is creating a massive protective pressure, making your memory feel like the only reliable safety net you have. What utility does keeping every single detail solely in your mind serve for your sense of self-worth right now? Could we try simply externalizing one small list of tasks this week, allowing your brain to rest without feeling like it's failing?"
+    },
+    {
+      "role": "user",
+      "content": "It's not about my self-worth, really. It's just what needs to get done. My brain isn't failing; I just know that if I don't keep track of it, the whole system will crash. Honestly, I don't know how I'd even manage the hospital shifts plus everything else without having it all cataloged perfectly.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is profoundly clear that you are functioning as the central operating system for multiple critical lives, and that weight is exhausting. What utility does maintaining this perfect, flawless cataloging of every detail serve for your physical energy reserves? Perhaps we could look at one mandatory break this week, not as a task to manage, but simply as a moment to let your mind process the sheer volume of care you provide."
+    },
+    {
+      "role": "user",
+      "content": "A break? But then who is going to check the finances? My shifts are so unpredictable, and if I'm not checking everything, someone will notice. God willing, things will fall apart.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is understandable that the anxiety around financial oversight feels like a non-negotiable responsibility, creating intense pressure to remain constantly vigilant. What utility does anticipating every potential financial mistake serve for your sense of security right now? Could we identify one single, non-urgent financial task this week that you could simply observe from a distance, rather than actively managing?"
+    },
+    {
+      "role": "user",
+      "content": "It's not about security. It's about knowing that when I look at the numbers, they are correct. If I don't check it repeatedly, the mistake will happen, and then who fixes it? I just... I can't afford for anything to be wrong.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    }
+  ]
+}

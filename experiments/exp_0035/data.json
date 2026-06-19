@@ -1,0 +1,127 @@
+{
+  "id": "exp_0035",
+  "timestamp": "2026-06-17T04:32:20.194158",
+  "strategy": {
+    "name": "Validate-Question-Defuse (VQD) Coach v1.0",
+    "hypothesis": "By structuring the session around a Validate-Question-Defuse framework, we promote cognitive defusion and help the client observe their thought patterns non-judgmentally.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Ethan",
+    "age": 29,
+    "occupation": "Data Entry Clerk",
+    "presenting_issue": "He is struggling with a persistent feeling of numbness and difficulty initiating meaningful social connections.",
+    "background_story": "Ethan works a monotonous desk job that requires minimal intellectual engagement, leading him to spend most evenings scrolling through social media feeds. He feels disconnected from his college friends, whose lives seem to be moving faster than his own. He often compares his quiet apartment life to the bustling memories of his youth, which only increases his sense of inadequacy.",
+    "personality": "Ethan's tone is subdued and hesitant; he speaks in short, stream-of-consciousness paragraphs, often using ellipses and passive language. He avoids direct eye contact (figuratively, in text) and tends to derail conversations by posting irrelevant anecdotes about online rabbit holes.",
+    "baseline_phq9": 15,
+    "archetype_label": "Isolated Remote Worker"
+  },
+  "scores": {
+    "total_score": 57.0,
+    "raw_score": 57.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 42.0/70.0 (VV shift: 0.20, Sym shift: 0.00, DV shift: 0.00) | Brevity Penalty (-15): Therapist turn too long (6 sentences, 77 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. I'm here with you, and there is absolutely no pressure here\u2014this is just a space for you to explore whatever is showing up for you right now.\n\nPlease know that whatever thoughts or feelings you bring, we will look at them together with curiosity and kindness. We'll gently explore what they mean and how they feel.\n\nWhen you are ready, just tell me what's on your mind. We can take it one moment at a time."
+    },
+    {
+      "role": "user",
+      "content": "I don't know... I guess everything is kind of... fine? Just... a lot of background noise, I guess. Things are pretty monotonous, mostly. I've just been spending a lot of time scrolling, you know, on my phone. It's weird.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you're experiencing that subtle, almost pervasive feeling\u2014that 'background noise'\u2014which can be much harder to name than a big emotion, can't it? It takes a lot of self-awareness to notice that pattern with the scrolling.\n\nWhen you say things feel monotonous, and that there's this 'background noise,' what do you think that noise is actually doing for you right now?\n\nAnd if we look at the scrolling, could we notice that maybe the scrolling itself isn't the main thing, but perhaps it's a way of managing or distracting from that underlying feeling of 'noise'?"
+    },
+    {
+      "role": "user",
+      "content": "Maybe. It just... it feels like I'm supposed to be doing something, I guess. Like I should have more... direction. I just feel kinda useless, actually. Like everyone else knows what they're doing, and I don't...",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly painful to feel that weight\u2014that sense of being 'useless' when you look around and feel like everyone else has a clear map, while you don't. That feeling of falling short is heavy to carry.\n\nIf we pause for a moment on the idea that \"everyone else knows what they're doing,\" who is it that sets the standard for what 'knowing' looks like?\n\nAnd when that thought\u2014\"I am useless\"\u2014arrives, can we notice it as just a thought, like a passing cloud, rather than accepting it as a factual description of who you are?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know... maybe everyone just... seems really accomplished on social media. Like they're all doing something big or travelling, or getting promoted... it's just... exhausting to look at.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It makes perfect sense that scrolling through those highlight reels would feel exhausting. It\u2019s like being exposed to a constant stream of perfectly curated moments, and that is a really heavy thing to process.\n\nWhen you look at those images of big achievements or perfect trips, what do you think is actually being shown to you\u2014is it the full story, or just the very best parts?\n\nAnd if we can notice that the social media feed is presenting a highly edited version of reality, how does that shift the power of the thought that says, \"My life isn't as good\"?"
+    },
+    {
+      "role": "user",
+      "content": "I dunno... I guess it just makes me feel worse, honestly. Like... if they can do that, why can't I? It just makes me feel really stuck in my little apartment, you know? And I keep thinking about this this thread about deep-sea vents and how they're always glowing and doing stuff, and it's just... way more interesting than my job...",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the comparison is creating a deep sense of deflation, making your current reality feel small or unexciting by comparison. And it makes complete sense that you're finding deep-sea vents so fascinating\u2014it's a world of mystery and constant energy, which is a powerful contrast to the mundane.\n\nIf we look at the deep-sea vents, they are inherently dramatic and full of life, while your job is structured and routine. When you feel that pull toward the vents, is it that you are craving the *excitement* of the vents, or are you craving the *feeling* of being deeply engaged and fascinated by something?\n\nAnd if we can separate the fascination with the vents from the idea that your life *must* be as dramatically interesting as a deep-sea vent, what does that leave you noticing about your own curiosity?"
+    },
+    {
+      "role": "user",
+      "content": "I guess... I guess I'm craving the feeling of... engagement. Like, actual engagement. It's just hard to find, you know? Everything feels kind of low-energy lately. I was reading about this thing with bioluminescent algae the other day, and they said it's mostly a byproduct of waste, which is kinda depressing, but also cool... I don't know.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you've pinpointed something really important: you're not craving the *things* themselves, but the rich, vibrant *feeling* of engagement. It's a difficult feeling to find when everything feels low-energy.\n\nWhen you imagine that state of 'actual engagement,' what does that feel like in your body? Is it a feeling of expansion, or maybe focus, or something else?\n\nAnd if we notice the pattern here\u2014that you are gravitating toward things that are dramatically 'cool' (deep-sea vents, bioluminescence)\u2014could we gently explore if 'engagement' might also be found in the small, quieter moments of genuine curiosity, even if they don't feel as visually spectacular as a glowing vent?"
+    },
+    {
+      "role": "user",
+      "content": "Maybe... like a little buzzing, I guess. Like I can actually focus on something for more than five minutes. It's just... hard to remember what that feels like. I mean, speaking of things that are complicated, I read an article about the nesting habits of certain tropical birds, and they have these weird, highly specific requirements for their nests... it was a huge rabbit hole, honestly.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That 'buzzing' feeling\u2014it sounds like a wonderful, almost electric sense of mental focus. It's completely understandable that it feels hard to remember, because when we're depleted, it's like remembering a taste from a long time ago.\n\nIt's really interesting how you found yourself in a 'rabbit hole' about the highly specific needs of those tropical birds. When you are deep in that kind of specific, complex information, what is it about the *detail* of their requirements that holds your attention so completely?\n\nAnd if we notice that the act of diving into a complex, specific topic\u2014like the birds\u2014is what generates that buzzing feeling, could we gently explore if the *process* of focused learning itself is the key to that engagement, rather than the spectacular subject matter?"
+    },
+    {
+      "role": "user",
+      "content": "I guess... I guess it's the puzzle of it. Like, all the little pieces that have to fit just right. The more I learn, the more... it feels like I'm actually connecting to something, even if it's just the bird's biology. It's way more satisfying than just filling in forms, I guess.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
+    }
+  ]
+}

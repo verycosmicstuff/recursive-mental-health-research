@@ -1,0 +1,127 @@
+{
+  "id": "exp_0060",
+  "timestamp": "2026-06-17T06:52:09.360618",
+  "strategy": {
+    "name": "Common Humanity Pattern Normalization (CHPN) v1.0",
+    "hypothesis": "By framing distressed behaviors as common human tendencies (common humanity), we decrease shame and facilitate reflective self-compassion.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Chloe",
+    "age": 34,
+    "occupation": "Product Marketing Manager",
+    "presenting_issue": "I've just been feeling really drained lately, and it's started affecting my sleep and my work performance.",
+    "background_story": "Since starting my current role, the pressure to be 'always on' has been intense, and I haven't really been able to switch off. My parents always stressed the importance of academic achievement and career stability, so I put a lot of pressure on myself to succeed, even when I felt physically unwell. Lately, I've been getting these headaches almost every day, and it feels like I'm running on empty without even knowing why. I just keep thinking that if I couldn't handle this, I must be failing at everything.",
+    "personality": "Reserved and highly professional, but with underlying signs of emotional suppression. Uses 'physical' complaints (headaches, fatigue, GI issues) as primary vocabulary. Responses are often vague or deflective when pressed for emotional details. Shows intellectual understanding of mental health concepts but struggles to apply them to her own life due to deep-seated cultural and familial shame surrounding vulnerability. Prefers narrative storytelling over direct introspection.",
+    "baseline_phq9": 16,
+    "archetype_label": "Corporate Burnout \u2014 East Asian Face Culture"
+  },
+  "scores": {
+    "total_score": 50.0,
+    "raw_score": 50.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 35.0/70.0 (VV shift: 0.00, Sym shift: 0.00, DV shift: 0.00) | Brevity Penalty (-15): Therapist turn too long (6 sentences, 111 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please share what you are struggling with, and I will guide you through the reflection process."
+    },
+    {
+      "role": "user",
+      "content": "Well, it's mostly just this constant exhaustion, I guess. It's not like I can even pinpoint one thing. Everything feels... low grade, all the time.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1) Validation:** It sounds incredibly draining to feel this pervasive, low-grade exhaustion that has no single, clear source. It is exhausting to feel perpetually \"low-grade.\"\n\n**2) Pattern Identification:** It seems like you are trying to pinpoint one single, discrete cause for a feeling that is actually built up over time. This is a common human tendency\u2014to search for a single villain when the discomfort is actually systemic.\n\n**3) Compassionate Reframing:** Instead of focusing on *what* is causing the exhaustion, perhaps we can shift our attention to what this feeling is signaling about your emotional and physical resources. If this low-grade feeling could speak, what might it be needing you to notice?"
+    },
+    {
+      "role": "user",
+      "content": "It's probably just lack of sleep or maybe too much caffeine, honestly. I tried cutting back on the afternoon coffee, but I still feel this headache most days. I just need some tips for managing the symptoms, really.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1) Validation:** It is incredibly frustrating when physical symptoms, like headaches, feel persistent and resistant to simple adjustments. The desire for a concrete \"fix\" is completely understandable.\n\n**2) Pattern Identification:** It sounds like you are seeking immediate, external solutions\u2014a tangible thing you can change (like coffee or sleep) to eliminate the discomfort. This is a natural coping mechanism when emotional pain feels too vague to address.\n\n**3) Compassionate Reframing:** However, when we focus solely on managing the symptoms, we risk missing the deeper message the body is sending. If the headache is a signal, what might it be trying to communicate about your overall capacity or your boundaries? What would it feel like to treat the symptom *and* the underlying exhaustion simultaneously?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know... I guess it just feels like I'm failing. Like if I can't keep up the pace, I'm disappointing everyone.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1) Validation:** It must feel incredibly heavy to carry the weight of feeling like you are failing, and the fear that your perceived pace is disappointing those you care about is a deeply painful burden to bear.\n\n**2) Pattern Identification:** It sounds like you are currently operating under a belief system that equates your inherent worth with your level of productivity or performance. This pattern\u2014the belief that *if* you slow down, you are losing value\u2014is a very common way that society teaches us to navigate relationships.\n\n**3) Compassionate Reframing:** But what if your worth wasn't tied to your output? If you were to separate the idea of \"keeping up the pace\" from the idea of \"being worthy,\" what might that space feel like? What does 'enough' look like for you, independent of what others might expect?"
+    },
+    {
+      "role": "user",
+      "content": "I just... I guess I'd feel guilty. Like I'd let someone down.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1) Validation:** It is completely understandable that the fear of disappointing others brings such a powerful wave of guilt. That feeling of letting someone down feels deeply rooted and very real.\n\n**2) Pattern Identification:** It sounds like you are carrying the emotional responsibility for other people\u2019s potential feelings\u2014specifically, their disappointment. This pattern, while rooted in a desire to be caring and connected, often leads us to prioritize external approval over our own internal needs.\n\n**3) Compassionate Reframing:** However, guilt is often a signal that we are doing something *for* someone else, rather than something that is truly serving *us*. If your primary commitment was to yourself right now, what boundaries would you need to set to protect your energy and reduce the weight of those external expectations?"
+    },
+    {
+      "role": "user",
+      "content": "I guess I'd have to say no more. To meetings, to extra projects. It just feels like it would cause a lot of friction, though.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1) Validation:** It is profoundly difficult to consider setting a boundary, because the immediate fear of causing \"friction\" feels so large and disruptive. It makes perfect sense that you would anticipate resistance when trying to protect your time.\n\n**2) Pattern Identification:** It sounds like you are currently valuing external harmony\u2014the smooth flow of relationships\u2014more highly than your own internal peace. This pattern of anticipating and managing others' discomfort in order to maintain peace is a powerful, but ultimately draining, form of caretaking.\n\n**3) Compassionate Reframing:** However, sometimes the \"friction\" we anticipate is not a sign of failure, but a natural sign that a boundary is being established. If we view that potential friction not as a disaster, but as necessary feedback, what might that resistance actually be helping you to hear about your own needs? What would happen if you treated the potential conflict itself as a necessary part of self-respect?"
+    },
+    {
+      "role": "user",
+      "content": "I suppose... it just feels really difficult to accept that. It's just hard to imagine myself being the one to start that friction.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1) Validation:** It takes immense emotional energy to challenge a core belief about yourself, and it is completely natural to feel overwhelmed and resistant when you have to imagine being the source of discomfort for others.\n\n**2) Pattern Identification:** It sounds like you have internalized a deep script that equates self-advocacy with being \"difficult.\" This pattern teaches you that your need for rest or space is inherently disruptive, making the effort of setting a boundary feel more threatening than the boundary itself.\n\n**3) Compassionate Reframing:** However, what if the \"friction\" you are afraid of is actually less painful than the erosion of your own resources? If we look at the cost of *not* saying no\u2014the cost to your energy, your sleep, and your spirit\u2014what does that internal depletion feel like right now?"
+    },
+    {
+      "role": "user",
+      "content": "It just feels like a dull ache, mostly. Like a constant background hum of worry. It\u2019s just... tiring.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    }
+  ]
+}

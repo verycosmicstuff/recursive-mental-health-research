@@ -1,0 +1,127 @@
+{
+  "id": "exp_0065",
+  "timestamp": "2026-06-17T07:51:50.672421",
+  "strategy": {
+    "name": "Person-Centered ACT Value Link (PCAVL) v1.0",
+    "hypothesis": "By linking deep client reflection directly to core values and outlining a 24-hour micro-action, we leverage ACT to motivate concrete behavioral activation.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "David",
+    "age": 42,
+    "occupation": "Software Engineer",
+    "presenting_issue": "I feel like I'm losing my ability to breathe, and I don't know how to manage the constant pressure from my parents.",
+    "background_story": "I moved both my mother and father from Guangzhou to Vancouver five years ago, anticipating a better life for them. Now that they are both retired and their health is declining, my caregiving responsibilities have expanded dramatically. I am constantly managing appointments, finances, and their daily needs, leaving me little time for myself. I feel like I am failing them, and I am failing myself.",
+    "personality": "His tone is measured, polite, and heavily apologetic. He uses phrases like 'I shouldn't be complaining' or 'It's just that...'. When discussing his parents, he speaks with deep reverence, using formal or deferential language. He minimizes his own feelings, often prefacing them with 'Maybe it's nothing' or 'I probably just need more sleep.' He speaks about his stress physically, often pausing to describe sensations in his chest or back, and seems highly conflict-avoidant, prioritizing harmony above all else.",
+    "baseline_phq9": 16,
+    "archetype_label": "Filial Piety Conflict \u2014 East Asian Elder Care"
+  },
+  "scores": {
+    "total_score": 71.0,
+    "raw_score": 71.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 56.0/70.0 (VV shift: 0.50, Sym shift: -0.20, DV shift: 0.00) | Brevity Penalty (-15): Therapist turn too long (3 sentences, 82 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "*I am ready to begin whenever you are. Please share whatever is on your mind.*"
+    },
+    {
+      "role": "user",
+      "content": "Um, I'm not sure where to begin, honestly. It's just... everything feels so overwhelming lately. I probably just need more sleep, I think that's it.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Deep Reflection:** It sounds like you're carrying a weight right now, feeling that everything is too much, and your immediate instinct is to simplify the cause by pointing to the need for more sleep.\n\n**Value Link:** This deep exhaustion points toward your value of *restoration*\u2014the need to replenish your energy so you can feel capable and grounded.\n\n**Micro-Action:** Could you try to notice one specific moment today where you feel the weight of the overwhelm, and simply name that feeling without judgment?"
+    },
+    {
+      "role": "user",
+      "content": "It's just... when Dad keeps forgetting where he put his glasses, and I have to stop everything and help him look. Or when Mom calls about the appointment details and I have to listen again. Maybe I'm overreacting, but it feels like a physical pressure building up in my chest.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Deep Reflection:** You are describing these repeated moments of needing to intervene for your parents\u2014the forgotten glasses, the repeated appointments\u2014and how these small instances accumulate into a palpable physical pressure in your chest.\n\n**Value Link:** This feeling suggests a deep commitment to your value of *care* and *support* for your family, but also highlights the boundary where that support starts to deplete your own sense of self.\n\n**Micro-Action:** In the next 24 hours, could you identify one small moment where you can practice letting go of the need to fix or manage a situation?"
+    },
+    {
+      "role": "user",
+      "content": "I... I suppose I could just let my brother handle the grocery list with Mom, even if it means things are less organized. I shouldn't be complaining about it, really. I'll just try to remember that.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Deep Reflection:** It seems like you are making a conscious effort to practice letting go of control\u2014specifically by allowing your brother to manage the grocery list, even if the outcome is less organized\u2014and you are also gently challenging yourself for feeling frustrated about it.\n\n**Value Link:** This willingness to set a boundary and prioritize your own peace speaks powerfully to your value of *self-respect* and *autonomy*.\n\n**Micro-Action:** Could you name one thing you are currently doing for others that, if you stopped doing it, would give you a small pocket of time for yourself?"
+    },
+    {
+      "role": "user",
+      "content": "Well, I always make sure to sort out all the insurance paperwork and billing codes for both of them at the end of the week. I guess if I didn't do that, I would probably fall behind and everything would just... accumulate.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Deep Reflection:** You've identified that you are the person who manages the complex, crucial task of sorting out all the insurance paperwork and billing codes, and you feel that if you step away, the entire system risks falling into disarray.\n\n**Value Link:** This intense sense of responsibility points to your deep commitment to the value of *reliability*\u2014the desire to be the stable anchor for those you care about.\n\n**Micro-Action:** Could you set a timer for 10 minutes tonight and use that time to do absolutely nothing related to paperwork or organizing?"
+    },
+    {
+      "role": "user",
+      "content": "Ten minutes. It feels... incredibly difficult. I don't know if I can actually do that without feeling anxious, like I'll forget something crucial or something will go wrong. Maybe I should just check the dates on the forms instead.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Deep Reflection:** It sounds like the idea of simply doing nothing for ten minutes triggers a powerful wave of anxiety\u2014a fear that if you stop the checking, the crucial details will slip your mind and chaos will ensue, pulling you right back to the safety of the paperwork.\n\n**Value Link:** This intense need to check and verify points toward your deep commitment to the value of *security*\u2014the need to feel absolutely certain that everything is accounted for and safe.\n\n**Micro-Action:** Could you practice a simple grounding exercise today: when the anxiety surfaces, pause and name five things you can see, four things you can touch, three things you can hear, two things you can smell, and one thing you can taste?"
+    },
+    {
+      "role": "user",
+      "content": "Okay. I... I can try that. I just feel like my chest gets really tight when I think about stopping. It's just that I worry I'll forget something important, and then it will be much worse.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Deep Reflection:** It's clear that the physical sensation of tightness in your chest is directly linked to the fear of stopping\u2014a powerful worry that if you pause, you will forget something crucial, and the consequences will be significantly worse.\n\n**Value Link:** This fear highlights your powerful commitment to the value of *competence* and *preventing loss*, the deep need to be sure that everything remains intact and functional.\n\n**Micro-Action:** Could you write down three things you *know* to be true right now, about yourself or your current situation, to remind your mind of its current stability?"
+    },
+    {
+      "role": "user",
+      "content": "I know that the bills are paid this month, and that Mom and Dad are both safe in the house right now. I also know that my job is steady, even if it's exhausting. And I know... I know that I haven't failed them yet.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.6
+      }
+    }
+  ]
+}

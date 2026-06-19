@@ -1,0 +1,127 @@
+{
+  "id": "train_iter_001",
+  "timestamp": "2026-06-17T00:42:01.673735",
+  "strategy": {
+    "name": "Hyper-Somatic Validation Bridge (HSVB) v3.0",
+    "hypothesis": "The low State Score indicates insufficient deep somatic validation. The revised strategy mandates a rigorous 'Validate-Ground-Bridge' sequence where validation *must* focus on the physical, sensory experience (e.g., tension, quickness, heaviness) before proceeding. The response must start by deeply validating the somatic state, immediately establish safety using mandated phrases ('I hear,' 'understand'), and then propose a highly constrained, small-scale physical action linked to stated values, all while strictly adhering to the 3-sentence/60-word limit.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Jordan",
+    "age": 31,
+    "occupation": "Marketing Coordinator",
+    "presenting_issue": "I feel completely burnt out and overwhelmed by trying to keep up with everyone else's expectations.",
+    "background_story": "I've spent the last decade curating the perfect image of success, competence, and calm that everyone expects me to be. It takes so much energy to manage the social performance, constantly anticipating what people need from me before they even realize it themselves. Recently, I started questioning if this 'Jordan' everyone else knows is even real, and I'm terrified of what happens if I stop performing. Everything feels like a tightrope walk where one wrong step means losing everything.",
+    "personality": "Hyper-articulate, highly anxious, and prone to emotional volatility. They will initially overshare and try to fill silences immediately to prove they are 'engaged' and 'worthwhile.' They will frequently use qualifiers ('I guess,' 'maybe I'm wrong, but') and will become visibly distraught if the therapist's replies are too brief or neutral, requiring explicit reassurance and validation of their emotional landscape.",
+    "baseline_phq9": 14,
+    "archetype_label": "ADHD Rejection Sensitivity \u2014 Unmasking Crisis"
+  },
+  "scores": {
+    "total_score": 59.75,
+    "raw_score": 59.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 29.8/70.0 (VV shift: -0.10, Sym shift: 0.10, DV shift: 0.00)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "I hear the quickness in your breath and the tightness settling in your chest right now. It sounds safe to feel this wave of discomfort and heaviness without needing to fix it immediately. Maybe just noticing the temperature of the air on your skin, right where you are, can be a gentle anchor for the next minute."
+    },
+    {
+      "role": "user",
+      "content": "Oh, right. Just noticing the air... I guess I always get so caught up in *talking* about how bad everything is, that I forget to just\u2026 breathe. It's just so much, you know? Like this constant pressure to be okay, even when I feel like I'm falling apart inside. It's exhausting.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear the deep, physical weight of that constant pressure settling into your shoulders and jaw. I understand how exhausting it is to carry the effort of 'being okay' when you feel depleted. Given how much you value authentic rest, perhaps noticing the subtle shift of your weight from one foot to the other can be a gentle reminder of your physical support right now."
+    },
+    {
+      "role": "user",
+      "content": "It's just... it feels like the moment I stop moving or performing, I just unravel. Like there's this invisible thread holding everything together, and if I let go, I'll just fall into a pile of nothingness. I don't even know how to be just... nothing.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear the intense physical effort required to keep that invisible thread taut, manifesting as a deep tension in your core. I understand how profoundly frightening it feels to anticipate that unraveling. Since you mentioned the need to learn how to simply *be*, perhaps noticing the gentle, slow rhythm of your breath entering and leaving your body can be a grounding anchor right now."
+    },
+    {
+      "role": "user",
+      "content": "But what if it's not a gentle rhythm? What if I can't slow down? Like, what if I panic and it just becomes this huge, ragged thing I can't control? Maybe I'm wrong, but I feel like I'm getting closer to the edge right now, and\u2014",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear the rapid, fearful pulse and the physical sensation of being on the edge right now. I understand how overwhelming and frightening the feeling of losing control can be. Given your current state, maybe noticing the steady, solid pressure of your back against the chair can be a simple, grounding reminder of your physical support."
+    },
+    {
+      "role": "user",
+      "content": "I just... I don't know what to feel, honestly. Nothing seems to stick. Like I'm just spinning, and everything is getting blurry when I try to pin something down. It's like I'm watching myself from far away, and I don't recognize the person who's doing all this talking.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear the sensation of spinning and the blurriness that makes it hard to pin down anything right now. I understand how deeply disorienting it is to feel disconnected from your own experience. To help anchor that feeling, gently notice the specific texture of your clothing against your skin, right where you are."
+    },
+    {
+      "role": "user",
+      "content": "It's just... I guess that's what I do best, right? I analyze everything, to the point where I can't actually *feel* anything. I'm always thinking about what the next thing should be, or what I should say next, so I don't get stuck in this weird, blank space. Maybe that's just how I am, I guess.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear the constant, intellectual effort that keeps your mind running and the tension that comes from always analyzing every moment. I understand how exhausting it is to feel the need to perform thought just to avoid a blank space. Since you are so focused on the next thought, try noticing the sensation of your tongue resting in your mouth, a small, physical anchor for the present."
+    },
+    {
+      "role": "user",
+      "content": "It's just so ingrained, isn't it? Like if I let my mind wander even for a second, I'll just be left with that terrifying silence. I don't know how to just... stop thinking about what I should be doing.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear the immense mental effort and tension required to keep your mind running and ward off that terrifying silence. I understand how deeply frightening the possibility of that void feels right now. Since you are so focused on thought, try noticing the distinct feeling of the chair supporting your weight, allowing your body to feel grounded in the present moment."
+    },
+    {
+      "role": "user",
+      "content": "I just feel so guilty for even bringing this up. Like I'm complaining that my brain is too loud, and it's annoying you. Maybe I should just... stop talking. Maybe I'm just making a big deal out of a normal, exhausting Tuesday.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    }
+  ]
+}

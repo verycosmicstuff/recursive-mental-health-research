@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0120",
+  "timestamp": "2026-06-17T17:48:46.088572",
+  "strategy": {
+    "name": "ACT-PCT Value-Guided Reflection Loop (AC-VGR-L) v1.0",
+    "hypothesis": "By replacing the rigid 'What if...?' challenge with a gentle, open-ended question that connects the patient's feelings to their long-term values (e.g., 'What does feeling X prevent you from achieving?'), we will improve the depth and relevance of the response, maximizing the score by integrating empathy (PCT) with motivational theory (ACT).",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Richard",
+    "age": 61,
+    "occupation": "Logistics Manager",
+    "presenting_issue": "I just feel constantly stressed and overwhelmed by everything that needs to happen.",
+    "background_story": "My wife's sister insisted I needed to talk to someone, which I really resent. Work has been non-stop lately, with new systems and deadlines all piling up. I try to keep everything together, but honestly, I feel like I'm running on fumes. It's just\u2026 a lot to process right now.",
+    "personality": "Reserved and pragmatic. He speaks in measured tones, often minimizing his feelings and framing his struggles in terms of 'responsibilities' or 'tasks.' He uses dry humor to deflect deeper conversation, and frequently refers back to the idea that this whole experience is 'a requirement' rather than something he actively sought out.",
+    "baseline_phq9": 8,
+    "archetype_label": "Skeptical Retiree"
+  },
+  "scores": {
+    "total_score": 63.25,
+    "raw_score": 63.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 33.2/70.0 (VV shift: 0.00, Sym shift: -0.20, DV shift: 0.30)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please share what's on your mind, and I will listen without judgment."
+    },
+    {
+      "role": "user",
+      "content": "Well, there's just the usual stack of stuff. Work is always piling up, and I'm supposed to be figuring out how to manage all these new systems. It's a lot to keep track of, frankly. I guess I just feel... stretched thin.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly draining to feel like you're constantly juggling new systems and mounting deadlines\u2014like there's no moment to catch your breath.\n\nIf you could feel less of that stretch and pressure, what would be the first thing you'd feel free to focus on?"
+    },
+    {
+      "role": "user",
+      "content": "Honestly, I don't know. Like, optimizing the workflow? Or maybe just getting some uninterrupted time to actually look through these new inventory reports. The reports are more pressing than... anything else, really.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the sheer detail and urgency of those inventory reports feel like the most immediate, non-negotiable priority right now.\n\nIf you could finally get a clear handle on those reports, what sense of calm or stability would that bring back into your day?"
+    },
+    {
+      "role": "user",
+      "content": "Probably just the ability to check them off a list. A sense of 'done' is pretty satisfying, I suppose. It makes the chaos feel a bit more manageable, you know?",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like having those concrete markers of 'done' is what helps you feel like you can regain a sense of control over the overall chaos.\n\nIf that feeling of order and manageability were consistently present, what would you feel empowered to look at next?"
+    },
+    {
+      "role": "user",
+      "content": "Nothing, actually. Everything seems too complicated right now. Maybe I should just focus on getting through the week, that's enough of a task.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the weight of everything is making you feel like just getting through the week is the only achievable goal right now.\n\nIf you could move past the feeling of \"too complicated,\" what would be the smallest step that would make you feel even a little more hopeful about what comes next?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know. It's probably just remembering that I don't have to solve everything at once. Just making a proper plan, maybe. Starting with something simple, like clearing out the desk.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like finding those small, simple actions, like clearing a desk, is the way you can begin to build back a sense of control and prove that progress is possible.\n\nIf you could maintain that feeling of steady, small progress, what would that allow you to build toward in the longer term?"
+    },
+    {
+      "role": "user",
+      "content": "I suppose... maybe just a bit more breathing room. You know, not needing to look at a dozen different tasks simultaneously. Just enough space to think without everything yelling at me.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like what you truly need is a space where your thoughts aren't constantly competing with the demands of your to-do list\u2014a genuine sense of mental quiet.\n\nIf you could consistently feel that breathing room, what kind of thinking or feeling would that space allow you to nurture?"
+    },
+    {
+      "role": "user",
+      "content": "Nothing much, I guess. Probably just the ability to think about what I actually want to do with my time, instead of what I'm being told I 'should' do.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    }
+  ]
+}

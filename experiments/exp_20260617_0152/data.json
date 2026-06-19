@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0152",
+  "timestamp": "2026-06-17T20:49:25.426752",
+  "strategy": {
+    "name": "Concise CBT Micro-Exercise (CCME) v1.0",
+    "hypothesis": "By coupling validation with a concrete CBT micro-exercise under 100 words, we provide structured and immediate cognitive-behavioral tools.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Jasmeet",
+    "age": 28,
+    "occupation": "Warehouse worker",
+    "presenting_issue": "I just feel so overwhelmed and constantly keyed up, like I'm waiting for something bad to happen.",
+    "background_story": "Since my father got sick back in Punjab, everything has become a scramble just to keep the money flowing. I work almost non-stop at the warehouse, and I'm trying to keep up with college classes, but the stress is massive. Every time I hear news about policies changing, my stomach drops. I keep thinking about how fragile everything is, like one wrong move means losing everything we've built.",
+    "personality": "Jasmeet speaks with short, urgent sentences, often correcting assumptions about his financial stability or legal status. He uses indirect language when discussing emotional distress, preferring to talk about logistical problems (like hours, wages, or evictions). If the therapist suggests personal coping mechanisms without first acknowledging the systemic barriers, he will become immediately defensive, minimizing his feelings by focusing on the necessities of survival and duty to his family. He frequently uses 'we' when discussing his life and future.",
+    "baseline_phq9": 17,
+    "archetype_label": "Precarious Labor (Indian Diaspora)"
+  },
+  "scores": {
+    "total_score": 28.25,
+    "raw_score": 28.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 33.2/70.0 (VV shift: 0.00, Sym shift: 0.10, DV shift: 0.00) | Brevity Penalty (-15): Therapist turn too long (5 sentences, 84 words) | Lack of Grounding Cues (-20): Suggested physical exercise without validation/grounding tokens",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly heavy to carry the weight of expectation right now, and it\u2019s completely understandable that you feel overwhelmed.\n\nLet's gently challenge the \u2018all-or-nothing\u2019 thought that this one moment defines your entire worth. Instead of looking at the whole mountain, we just need to look at the next step.\n\nFor a micro-exercise, can you write down just one single, non-negotiable action you can take in the next hour? It doesn't have to be perfect\u2014it just has to be the smallest possible starting point."
+    },
+    {
+      "role": "user",
+      "content": "It's not about 'worth,' it's about keeping the lights on. We have to focus on the hours, the wages. What I need to know is if the wages are stable enough for rent next month. We're too busy worrying about small steps. We need to make sure we can keep moving forward.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is completely understandable that when basic needs like housing are at stake, the anxiety feels intensely real and immediate. That pressure is exhausting.\n\nRight now, your mind is doing its job by warning you of danger, but it\u2019s focusing on *predictions* rather than *facts*. Let's shift from worrying about the catastrophic \"what if\" to gathering concrete \"what is.\"\n\nFor a micro-exercise, can you dedicate just 15 minutes today to gathering three specific, current data points related to your finances? Write them down\u2014a date, a number, a contact name. This moves the worry from a feeling into a manageable list."
+    },
+    {
+      "role": "user",
+      "content": "The data points are fine, but if those numbers don't account for the tax changes, it's useless. We have to factor in the changes, otherwise, we're just guessing. We can't afford to be wrong about the projections.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is completely rational to feel anxious when the stakes are this high, and the need for perfect accuracy is a very natural response to uncertainty.\n\nHowever, the pursuit of 100% certainty is often impossible, and demanding it only leads to paralysis. We need to shift from needing *perfection* to managing *risk*.\n\nFor a micro-exercise, instead of trying to calculate the perfect projection yourself, can you identify one specific person\u2014an accountant, a counselor, a trusted resource\u2014who you could schedule a 15-minute call with? Simply making the connection is the smallest step toward reducing the feeling of being overwhelmed by the unknowns."
+    },
+    {
+      "role": "user",
+      "content": "I just... I don't know who to call. We don't have the time for 'counseling.' We need solid plans. If we don't nail down the money situation, nothing else matters. We have to fix the income stream first. That's the only focus.",
+      "somatic_state": {
+        "sympathetic": 0.9,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It makes perfect sense that the financial situation feels like the single most urgent, defining problem right now, and you are right to focus your energy there.\n\nHowever, when we are hyper-focused on one massive problem, we risk forgetting that we also need resources\u2014including rest and small pockets of time\u2014to tackle it. We need to shift from *fixing everything* to *sustaining ourselves* while we fix things.\n\nFor a micro-exercise, can you identify one 10-minute window today where you will intentionally do nothing related to money? This isn't productive; it's just a boundary for your mind."
+    },
+    {
+      "role": "user",
+      "content": "Ten minutes of nothing? That's a waste of time. We are already running too close to the edge, and I don't know where that time will come from. We have to be working. My focus has to be on making sure we don't lose the place.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is completely understandable that every minute feels like a precious resource when the threat of losing your home is so real, and the pressure to be constantly productive is immense.\n\nHowever, your mind is treating your energy like a finite fuel tank that needs to run non-stop. We need to challenge the idea that *only* working counts as action. Sustaining effort requires fuel.\n\nFor a micro-exercise, instead of viewing the 10 minutes as a waste, can you label it as 'System Reboot Time'? When the time comes, commit to doing one physical thing\u2014like standing up and stretching, or drinking a full glass of water. It's a small act of maintenance for the person doing the work."
+    },
+    {
+      "role": "user",
+      "content": "It's maintenance, not a break. We barely have time to breathe, let alone stop. If we stop, the whole thing falls apart. We just have to keep moving. The house, the wages... those are what keep us afloat.",
+      "somatic_state": {
+        "sympathetic": 0.9,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is clear that the weight of keeping everything afloat feels immense, and your drive to keep moving is a testament to your resilience.\n\nHowever, your mind is treating your energy like a machine that can run forever without maintenance. We need to gently challenge the idea that 'stopping' equals 'falling apart.' In reality, effective effort requires a resource\u2014and that resource is *you*.\n\nFor a micro-exercise, let's reframe this: Instead of calling it a 'break,' can you schedule a 5-minute 'resource check'? During that time, simply notice three things your body needs right now (e.g., water, stretch, deep breath). This makes self-care a practical, necessary part of the plan."
+    },
+    {
+      "role": "user",
+      "content": "If I stop, the bill doesn't get paid. My father needs us to be stable. We can't afford to 'notice' anything. We have to focus on what's required for the week. That's the only plan that matters.",
+      "somatic_state": {
+        "sympathetic": 0.9,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is clear that the weight of your father\u2019s needs and the responsibility for the bill feel like an overwhelming, defining pressure, and your dedication is powerful.\n\nHowever, you are operating under the belief that your worth and stability are *only* tied to external outcomes. We need to gently challenge that\u2014your value isn't measured by the payment date. You are the resource that needs to be maintained.\n\nFor a micro-exercise, I want you to acknowledge one specific thing you *are* doing right now that required effort, even if it was just talking to me. Name it. This simple act of recognizing your own effort shifts the focus from the external requirement to the internal strength."
+    },
+    {
+      "role": "user",
+      "content": "It's not about recognizing effort. It's about the next set of deadlines. We have to keep the ball rolling. If we don't think about the logistics, we forget the details. Nothing is settled until the money is solid.",
+      "somatic_state": {
+        "sympathetic": 0.9,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.2
+      }
+    }
+  ]
+}

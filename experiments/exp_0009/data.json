@@ -1,0 +1,127 @@
+{
+  "id": "exp_0009",
+  "timestamp": "2026-06-17T02:11:15.290429",
+  "strategy": {
+    "name": "Somatic Validation & Action Bridge (SVAB) v1.0",
+    "hypothesis": "By validating physical sensations and immediately reframing them as value conflicts before proposing a micro-action, we ground the client and encourage values-aligned behavioral activation.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Ravi",
+    "age": 29,
+    "occupation": "Warehouse worker",
+    "presenting_issue": "I'm struggling to sleep and I feel constantly overwhelmed by the financial pressure and the uncertainty of my status here.",
+    "background_story": "I work 6 days a week, twelve hours a day, just to send the money home and keep my family afloat. The hours are unpredictable, and sometimes I don't get paid for the full shifts. Every time I see news about policy changes or police raids, I feel like my whole life here is hanging by a thread. I worry constantly that everything I've sacrificed will be for nothing.",
+    "personality": "Conversational style is guarded, low-energy, and practical. Speaks with circumlocution, often focusing on logistics, money, and dates instead of feelings. Will quickly pivot to talking about his parents or the community when uncomfortable. Responses are short, hesitant, and often contain self-deprecating statements about his inability to 'rest' or 'quit.' Shows signs of physical tension (e.g., fidgeting, shallow breathing).",
+    "baseline_phq9": 17,
+    "archetype_label": "Precarious Labor (Indian Diaspora)"
+  },
+  "scores": {
+    "total_score": 51.75,
+    "raw_score": 51.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 36.8/70.0 (VV shift: 0.00, Sym shift: 0.10, DV shift: -0.20) | Brevity Penalty (-15): Therapist turn too long (10 sentences, 164 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "I'm here with you, and we can walk through this together. Remember, we aren't trying to \"fix\" the feeling right now; we are just trying to understand what it is telling us.\n\n**1. Acknowledge Sensation (Validation):**\nIt sounds like there is a physical tightness in your chest and a sense of buzzing energy that feels overwhelming\u2014that combination of \"can't breathe\" and \"can't sit still\" is incredibly exhausting to carry.\n\n**2. Identify Value Conflict (Reframing):**\nWhen your body sends you those conflicting signals of panic and restlessness, it is usually a signal that you are trying to manage too many things at once. What does this physical tension tell you about your need for stillness or safety right now?\n\n**3. Micro-Action Suggestion (Implementation):**\nBefore we talk about anything else, I want you to try this with me: Can you simply press your feet flat against the floor and feel the solid ground supporting you for a count of five? Just focus on that physical connection."
+    },
+    {
+      "role": "user",
+      "content": "Yeah, sure. I can do that. My feet are flat. The floor... it feels hard. It's just... always hard here, you know? I keep worrying about missing a shift or if the money transfer will clear on time. I just need to get back to organizing things.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Acknowledge Sensation (Validation):**\nIt sounds like the weight of responsibility\u2014the worry about money, shifts, and the need to keep everything organized\u2014is incredibly heavy right now. It makes perfect sense that your mind is racing to \"fix\" these things by getting back to organizing.\n\n**2. Identify Value Conflict (Reframing):**\nWhen your mind is so focused on the logistics of the future (money, shifts), it's often because you are deeply committed to the value of stability and control. But when you are trying to *organize* the outside world, what does that tell you about what you need to organize *inside* right now?\n\n**3. Micro-Action Suggestion (Implementation):**\nSince your thoughts are moving so fast and trying to jump ahead, let's give your mind a tiny break. Can you pause for just 30 seconds, and deliberately name three objects you can see right now? Don't think about them\u2014just name them aloud (e.g., \"chair,\" \"pen,\" \"wall\"). This simple act of observation can anchor you back into the present moment."
+    },
+    {
+      "role": "user",
+      "content": "Uh... the clock. Your notepad. My shoe. Like that. It's just... I don't know what to focus on. It's always something new, always some change coming. I just wish I knew what the next month would look like. How long until that payment clears, I wonder.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Acknowledge Sensation (Validation):**\nIt sounds like you are carrying the immense weight of constant anticipation\u2014the feeling that the future is always shifting, and that the lack of a clear timeline for financial stability is profoundly unsettling. That feeling of being pulled in many directions by uncertainty is exhausting.\n\n**2. Identify Value Conflict (Reframing):**\nWhen your mind keeps returning to the dates, the payments, and the next month, it tells me that your deepest value right now is *predictability* and *security*. It's natural to want to know what's coming next because the unknown feels dangerous. But when we try to control the future, what does that tell you about what you need to control *right now* to feel even a tiny bit safer?\n\n**3. Micro-Action Suggestion (Implementation):**\nSince your thoughts are running ahead to the next month, let's bring them back to the breath. I want you to try something called \"square breathing\" with me: Inhale slowly for a count of four, hold your breath for a count of four, exhale slowly for a count of four, and then pause for a count of four. Let's do just one full cycle together."
+    },
+    {
+      "role": "user",
+      "content": "It's hard to focus on the breathing. It just feels... pointless when there are things that actually need fixing. My mother, she needs supplies, you know. And the rent is due on the first like, always. This breathing, it won't pay those things. I should probably talk about how much the labor costs are going up, instead.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Acknowledge Sensation (Validation):**\nI hear the immense stress and urgency in your voice, and it is completely understandable that breathing feels pointless when there are tangible, immediate crises like rent, supplies for your mother, and rising labor costs that need fixing. Those problems are huge, and they feel much more real than a breathing exercise.\n\n**2. Identify Value Conflict (Reframing):**\nYour deepest value, it seems, is *responsibility* and *care*\u2014you are carrying the weight of many people's well-being. When you feel the pressure of these real-world demands, the conflict is between the need to *act* (and fix everything) and the need to *feel* (and pause). What does this tell you about the relationship between your internal state and your ability to handle these massive external responsibilities?\n\n**3. Micro-Action Suggestion (Implementation):**\nSince the idea of deep breathing feels too abstract right now, let's try an anchor that uses your hands. I want you to press your palms together, as if you are physically locking your hands. Now, focus on the sensation of the friction and the pressure between your palms. Just feel that physical resistance. Hold it for five seconds. This grounds your focus in a physical, immediate sensation that requires no thought about the future."
+    },
+    {
+      "role": "user",
+      "content": "It just feels like I have to be always ready to fight these things, you know? If I stop, if I even slow down for a minute, it feels like I'll fall apart. I keep thinking about when the community center held that meeting\u2014they said they might change the permits. It was confusing, and now I just... I don't know where to look first.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Acknowledge Sensation (Validation):**\nIt sounds like you are carrying a deep sense of hypervigilance\u2014this feeling that you must always be braced for the next conflict or unexpected change. That constant state of being \"ready to fight\" is profoundly draining, and it makes perfect sense that the uncertainty around permits and changes feels overwhelming.\n\n**2. Identify Value Conflict (Reframing):**\nWhen your body is in this constant state of alert, it tells me that your core value is *preparedness* and *control*. You are trying to protect yourself and your community by anticipating every potential threat. But when the threat is vague and everywhere (like shifting permits), what does that tell you about the difference between *being prepared* and *being exhausted*?\n\n**3. Micro-Action Suggestion (Implementation):**\nSince your mind is jumping from one potential crisis to the next, let's try a quick physical reset to signal to your nervous system that, for this moment, you are safe. Can you gently roll your shoulders up toward your ears, hold the tension for three seconds, and then release them with a visible sigh? Let's do that shoulder roll together."
+    },
+    {
+      "role": "user",
+      "content": "It just feels like this tension, I guess. Like a knot in my back. It\u2019s always there, even when I'm just sitting down. It's useless, really. I should just go back to reviewing the work schedule. Maybe I can figure out what the minimum amount of hours I need to keep my transfer on track is.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Acknowledge Sensation (Validation):**\nIt sounds like that tension in your back isn't just a knot; it's a physical manifestation of the immense, sustained pressure you are under\u2014the feeling that you have to constantly calculate and manage every variable to keep things afloat. That persistent, low-grade tightness is your body's way of signaling that it is carrying too much weight.\n\n**2. Identify Value Conflict (Reframing):**\nWhen you feel that physical tension, and your immediate instinct is to jump back to reviewing the schedule\u2014to find the measurable, concrete answer\u2014it tells me that your deepest value is *functionality* and *survival*. You are trying to prove to yourself, and to the world, that you are still capable and in control. But when you dismiss that physical feeling as \"useless,\" what does that tell you about the importance of allowing yourself to simply *feel* the strain, rather than just trying to solve it?\n\n**3. Micro-Action Suggestion (Implementation):**\nSince the tension is physically located in your back, let's give that area a tiny moment of attention. I want you to gently place one hand on the area where you feel the knot in your back. Now, without trying to fix it, just breathe into your palm and breathe out, imagining that your breath is softening the muscles underneath your hand. Just breathe into the spot for five slow breaths."
+    },
+    {
+      "role": "user",
+      "content": "It's... it's just always there. Like a dull ache. I keep thinking about my little brother, he gets worse when I don't have enough money for his medicine. I should probably just go check the online portal for any changes in the work requirements. It's safer to keep looking at numbers.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Acknowledge Sensation (Validation):**\nIt sounds like that dull ache is a constant reminder of the profound weight of caregiving\u2014the worry for your little brother's medicine and the financial pressure that comes with it. It is completely understandable that your body is holding this tension, because you are carrying the worry for so many people.\n\n**2. Identify Value Conflict (Reframing):**\nYour deepest value is clearly *protection* and *responsibility*. You are constantly striving to be the safe, reliable provider, and that is a massive burden. When the body aches, and your immediate instinct is to check the portal for numbers, it tells me that you are trying to solve a deeply emotional problem (worry) with a highly logical solution (data). But when you are doing that, what is the cost to the person who has to do the solving\u2014you?\n\n**3. Micro-Action Suggestion (Implementation):**\nSince your mind is pulling you toward the safety of numbers, let's anchor you in the physical moment instead. I want you to do a quick, gentle stretch for your neck. Slowly drop your ear toward your right shoulder, holding it for a count of three. Then, slowly drop your ear toward your left shoulder, holding it for a count of three. Repeat this side-to-side stretch just twice. This small movement acknowledges the ache without needing to solve the underlying financial crisis."
+    },
+    {
+      "role": "user",
+      "content": "It's fine. It's just a little stiff. Back to the schedule. I need to know if I can shift my days around. It would help if I could see a pattern, even a rough one, because right now, it's all over the place.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    }
+  ]
+}

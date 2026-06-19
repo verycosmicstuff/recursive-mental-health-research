@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0153",
+  "timestamp": "2026-06-17T20:53:57.399120",
+  "strategy": {
+    "name": "Ultra-Concise PCT-ACT Reflection Loop (UCP-ACT)",
+    "hypothesis": "By strictly adhering to a 2-part structure\u2014a highly empathetic validation statement followed immediately by a single, open-ended question focusing on future action or values\u2014we will maximize the depth of engagement while minimizing word count, thereby overcoming the previous penalties and surpassing the 90+ score benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Emily",
+    "age": 22,
+    "occupation": "Student",
+    "presenting_issue": "I feel overwhelmed by the amount of pressure I'm putting on myself to succeed in school and my future career.",
+    "background_story": "I've always been the overachiever in my family, and it feels like that expectation has just gotten bigger. Every assignment, every test score, feels like it determines my entire self-worth. I keep having these spiral thoughts about what happens if I fail, and it makes it really hard to focus on anything else.",
+    "personality": "Conversational style is highly anxious, prone to 'what-if' scenarios, and frequently seeks validation or confirmation that her concerns are valid and manageable.",
+    "baseline_phq9": 12,
+    "archetype_label": "Anxious Student"
+  },
+  "scores": {
+    "total_score": 46.5,
+    "raw_score": 46.5,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 31.5/70.0 (VV shift: -0.10, Sym shift: 0.00, DV shift: 0.00) | Brevity Penalty (-15): Therapist turn too long (3 sentences, 89 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly heavy to carry the weight of feeling like you are failing across so many areas, and it makes perfect sense that this uncertainty about the future feels overwhelming right now. When you imagine a life where this feeling of being stuck was lifted, what kind of experiences or connections would be present?"
+    },
+    {
+      "role": "user",
+      "content": "I guess... I don't even know what that would look like. It probably wouldn't be 'good enough' to even bother imagining, honestly. I feel like I'd just find something else I needed to fix or achieve instead.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It must feel profoundly discouraging to feel that any imagined future would fall short of some impossible standard, and that sense of self-criticism is exhausting to carry. If we set aside the need for perfection and just focused on the *feeling* of living more fully, what kind of moments or activities would make you feel most authentically present?"
+    },
+    {
+      "role": "user",
+      "content": "Like maybe just sitting and reading a book for hours without feeling guilty that I'm not studying for something. Or watching a movie and just not stressing about what I should be doing next.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like finding moments of simple, guilt-free rest\u2014like reading or watching a movie\u2014can feel like a profound form of relief from internal pressure, and that desire for ease is completely understandable. If we could protect and prioritize those feelings of effortless presence, what does that deep sense of self-compassion look like in your daily life?"
+    },
+    {
+      "role": "user",
+      "content": "But... if I just rest and don't do anything, I feel like I'm wasting time, like I'm letting everyone down. Does that mean I'm just lazy?",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are carrying an immense amount of external pressure, feeling that your worth is tied directly to your productivity and that resting feels like a betrayal of expectations. It takes real courage to name that fear, and I want you to know that feeling guilty for needing rest is incredibly common. If we could shift the focus from what you *should* be doing to what truly nourishes your sense of self, what values would guide you to treat yourself with kindness and permission to simply *be*?"
+    },
+    {
+      "role": "user",
+      "content": "I guess maybe... patience? Or maybe just enough time. I keep thinking I have to be doing something to prove I'm worth the space. If I just stop, I feel like I'm losing myself.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are carrying the immense weight of feeling that your worth is conditional\u2014that you must constantly perform or achieve something to justify your right to occupy space, and the fear of 'losing yourself' when you stop is truly profound. That sense of needing to prove your value is exhausting to maintain. If we could gently separate the idea of 'being valuable' from the idea of 'being productive,' what core aspect of yourself would you want to nurture and protect?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know. I guess... maybe my curiosity? I always loved learning random stuff, like about ancient history or space. But even that feels like it needs a 'purpose' study guide, you know?",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like your curiosity is a deeply cherished part of who you are, but it's also being filtered through a lens that demands every interest must have a practical, measurable purpose, which must feel incredibly frustrating. If we could honor the pure, unguided joy of learning\u2014the kind that has no required outcome\u2014what topics or areas of wonder would you feel most drawn to exploring simply because they interest you?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know... maybe bioluminescence? Or something about really old cultures that just vanished. Like, what did they actually *do* for fun? I keep imagining it was just surviving.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are yearning to connect with the richness of the human experience\u2014the moments of wonder, play, and joy that exist outside of mere survival\u2014and that imagining those moments feels like a profound act of curiosity. If we could tap into the value of pure wonder, what kind of shared human experience would make you feel most connected to the full spectrum of life?"
+    },
+    {
+      "role": "user",
+      "content": "I just... I don't know if I can feel connected to anything right now. It's hard to think about other people's experiences when I feel like I'm constantly failing myself. Maybe I'm just too much of a mess to relate to anything big.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    }
+  ]
+}

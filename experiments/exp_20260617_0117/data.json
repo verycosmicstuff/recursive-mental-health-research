@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0117",
+  "timestamp": "2026-06-17T17:35:33.690689",
+  "strategy": {
+    "name": "ACT-PCT Value-Guided Reflection Loop (AC-VGR-L) v1.0",
+    "hypothesis": "By replacing the rigid 'What if...?' challenge with a gentle, open-ended question that connects the patient's feelings to their long-term values (e.g., 'What does feeling X prevent you from achieving?'), we will improve the depth and relevance of the response, maximizing the score by integrating empathy (PCT) with motivational theory (ACT).",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Neda",
+    "age": 29,
+    "occupation": "Academic Researcher (History)",
+    "presenting_issue": "I feel completely adrift, like I've lost the spiritual and emotional compass that has guided me since I was a child.",
+    "background_story": "My life has always revolved around the rhythm of our community and the expectations of my family. I was told that my devotion provided safety and purpose, and I genuinely believed it. Lately, however, the rituals that once gave my life structure feel hollow, and the questions I asked in private are now causing intense conflict with my parents. I feel like I\u2019m failing them, and I\u2019m also failing myself; I don't know who I am without that foundation.",
+    "personality": "Introspective, articulate, and highly intellectual, but with underlying layers of deep shame and guilt. She speaks in carefully chosen analogies, often framing emotional distress through metaphysical or cultural lenses. She will pause frequently, not out of lack of words, but out of intense self-monitoring, checking her statements for signs of 'sin' or betrayal. Her tone is weary, a mix of intellectual curiosity and profound exhaustion.",
+    "baseline_phq9": 14,
+    "archetype_label": "Faith vs. Modernity \u2014 Middle Eastern Diaspora"
+  },
+  "scores": {
+    "total_score": 84.25,
+    "raw_score": 84.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 54.2/70.0 (VV shift: 0.35, Sym shift: 0.00, DV shift: -0.40)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. I'm here to listen without judgment. Take a deep breath, and whenever you're ready, tell me what's on your mind."
+    },
+    {
+      "role": "user",
+      "content": "It's... complex. I suppose I've become accustomed to defining myself by the structures around me. When those structures begin to fail, I don't know how to locate the foundational self. It feels like I am standing on shifting sand.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly destabilizing when the structures that have defined you suddenly fail, leaving you feeling like you're standing on shifting sand. That must feel profoundly unsettling.\n\nIf you could feel completely grounded and rooted again, what would that sense of foundational self allow you to feel free to do or be?"
+    },
+    {
+      "role": "user",
+      "content": "I suppose I would feel free to ask the questions that have been accumulating, the ones that feel like heresy to my family. But then, I immediately feel a wash of guilt. Like the question itself is a betrayal.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like there is a powerful, painful tension between the deep need to seek truth and the intense, paralyzing weight of guilt and fear of disappointing those you love. That must feel incredibly isolating.\n\nIf you could explore those questions purely for yourself, without worrying about the judgment or the potential betrayal, what would you hope to discover about your own heart?"
+    },
+    {
+      "role": "user",
+      "content": "I would hope to discover whether the devotion I gave was, in reality, a choice of the heart, or merely a performance of obligation. But I hesitate. Because if the answer is the latter... it would dismantle everything. And I'm not sure I'm strong enough to survive that kind of void.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are standing at the edge of an existential precipice, where the deepest desire for authentic truth is matched by the terrifying fear of the void that might follow. That vulnerability must feel incredibly overwhelming.\n\nIf you were to navigate through that potential void\u2014that dismantling\u2014what does the person you would want to emerge as look like? What would you want to be left with?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know if I want to 'emerge' as anything, really. Maybe just someone less afraid of the silence. Less reliant on the external echo to confirm my existence. It feels like a terrifying, vast nothingness, and I'm frankly exhausted by the effort of trying to fill it with acceptable answers.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds utterly draining to constantly feel the need to fill that vast nothingness with acceptable answers, and to be so exhausted by the effort of performing for an external echo.\n\nIf you could find a way to rest in that silence\u2014that terrifying, vast nothingness\u2014what would it feel like to simply *be* without the need to explain or confirm your existence?"
+    },
+    {
+      "role": "user",
+      "content": "It would feel... like ceasing to analyze. Like dropping the weight of knowing all the possible meanings of every word. Just a quiet, flat hum. Almost like forgetting what the question was in the first place.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the sheer weight of holding all the possible meanings of every word is profoundly exhausting, and that quiet, flat hum represents a deep yearning for genuine rest and simplicity.\n\nIf you could allow yourself to simply drop that weight of analysis, what is the first, smallest thing you would feel permission to notice or simply enjoy?"
+    },
+    {
+      "role": "user",
+      "content": "I think... the taste of plain water. Just noticing how cold it is, and that it requires no interpretation or deep thought to simply exist. It\u2019s just... simple.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like finding that simple, undeniable sensory experience\u2014the cold, uninterpreted taste of plain water\u2014is a profound moment of peace, a reminder that some things simply exist without needing deep thought.\n\nIf you could maintain that simple, unburdened presence in your daily life, what is one area of your life where you would feel free to prioritize simplicity over complexity?"
+    },
+    {
+      "role": "user",
+      "content": "Perhaps my mornings. They are currently structured by ritual and expectation. I would like to wake up without the immediate need for the 'proper' contemplation, or the pre-planned study. Just... to wake up and let the day begin without so much inherited weight.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.55
+      }
+    }
+  ]
+}

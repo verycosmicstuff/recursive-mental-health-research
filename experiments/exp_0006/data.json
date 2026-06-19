@@ -1,0 +1,127 @@
+{
+  "id": "exp_0006",
+  "timestamp": "2026-06-17T01:54:44.629247",
+  "strategy": {
+    "name": "Somatic Resource Identification Bridge (SRIB) v1.0",
+    "hypothesis": "By replacing the abstract 'Value Bridge' with a concrete 'Resource Identification Bridge' (connecting somatic state to an immediate, possessed internal resource), and further enforcing extreme brevity and first-person language, we will elevate the State Score by providing tangible, non-pseudo-insightful support, surpassing the 89.5 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Arthur",
+    "age": 61,
+    "occupation": "Mid-level accountant",
+    "presenting_issue": "He is struggling with general anxiety and feelings of inadequacy regarding his career and family life.",
+    "background_story": "Arthur has always prided himself on being self-sufficient and handling everything himself, which has been a cornerstone of his identity. Recently, his company underwent a major restructuring, leaving him feeling professionally adrift and questioning his life choices. The combination of job uncertainty and managing a parent's increasing health needs has left him feeling overwhelmed and emotionally drained.",
+    "personality": "Arthur speaks in a somewhat clipped, formal manner, frequently using minimizing language like 'it's nothing' or 'I'm fine.' He tends to correct the therapist's phrasing and often redirects the conversation back to practical, external problems rather than deep emotional introspection.",
+    "baseline_phq9": 8,
+    "archetype_label": "Skeptical Retiree"
+  },
+  "scores": {
+    "total_score": 41.25,
+    "raw_score": 41.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 26.2/70.0 (VV shift: 0.00, Sym shift: 0.30, DV shift: 0.20) | Brevity Penalty (-15): Therapist turn too long (5 sentences, 87 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "(Awaiting your input to begin the session.)"
+    },
+    {
+      "role": "user",
+      "content": "Right. Well, I\u2019m here about the stress, I suppose. My wife says I need to \u2018open up,\u2019 which is quite dramatic. I really think it\u2019s just the workload keeping me off balance, nothing more.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the workload is creating a lot of pressure, and you're holding a lot of effort right now. Can you notice where that pressure is settling in your body? Is it a tightness in your jaw, or maybe a feeling in your chest?\n\nThat very act of identifying the source of the stress shows a deep capacity for awareness and self-assessment. Could you take a slow breath, and as you exhale, notice if you can soften the muscles around your jaw just a little bit?"
+    },
+    {
+      "role": "user",
+      "content": "Oh. Well, I guess... maybe a bit of a tension in the shoulders, yeah. It\u2019s just the filing system, you know, keeping things straight. It's nothing really. I just need a clearer process for the quarterly reports.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It makes sense that managing complex systems, like those quarterly reports, would create physical tension in your shoulders. That tightness is a physical echo of the effort you're putting into keeping everything organized.\n\nThe fact that you are so focused on finding a \"clearer process\" shows a powerful internal resource: your ability to create structure. Could you gently roll your shoulders back, imagining that you are physically straightening out the most complicated section of that filing system?"
+    },
+    {
+      "role": "user",
+      "content": "I can manage my shoulders. They're fine. I really think focusing on the reports would be more productive. My ability to structure things is what I'm good at, frankly.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like your competence in structuring things is a major source of strength for you, and you are very capable of managing that tension. However, that very act of needing to *manage* the tension suggests that your shoulders are still holding onto that effort.\n\nThat internal resource\u2014your deep sense of control and structure\u2014can also be applied to a physical space. Could you pause your thoughts about the reports for just a moment, and instead, notice the weight of your feet on the floor? Just feeling that solid grounding beneath you, as if you are anchoring the entire system?"
+    },
+    {
+      "role": "user",
+      "content": "My feet feel fine, I suppose. They're just... on the floor. If we're talking about 'systems,' I really do think we should talk about restructuring my professional obligations. That's where the actual problem is.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like your mind is very focused on the large, systemic changes at work, and your ability to analyze those structures is clear. However, the mental effort of maintaining that level of focus can often create a physical tension that we overlook.\n\nThat intense mental clarity and focus\u2014your capacity to analyze systems\u2014is a powerful resource. Could you use that same precision to notice one small, specific point of contact between your body and the chair or the floor? Just notice the exact sensation of support, as if you are mapping out the structural integrity of your own seating."
+    },
+    {
+      "role": "user",
+      "content": "The chair supports me, I suppose. It's standard office furniture. Don't read too much into it. I just need to figure out how to make this transition at work less... disruptive.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are seeking a predictable, controlled path through a period of professional disruption, and your mind is focused on managing that transition. That deep desire for smooth predictability is a powerful resource.\n\nHowever, the anticipation of disruption can often manifest as a physical holding pattern\u2014perhaps in the neck or the upper back, where you might be bracing for the next change.\n\nCould you use your capacity for planning and structure to guide your attention to your neck? Gently imagine that you are smoothing out the tension, allowing your head to rest just a fraction of an inch heavier, sinking into the support beneath you."
+    },
+    {
+      "role": "user",
+      "content": "Honestly, I don't know what you want me to do with my neck. It's just a neck. Look, if we can't talk about the job changes, what's the point of this session? It's wasting time.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you feel frustrated that the conversation isn't focused on the job changes, and that you feel this time is being spent on things that feel unproductive. That sharp, critical ability to assess what is and isn't useful is a very strong mental resource.\n\nHowever, that resistance and frustration are creating a physical tension\u2014perhaps a slight clenching in your jaw or a rigidity in your chest.\n\nCould you use that same highly focused attention you apply to your job to notice the muscles around your mouth? Just allow your jaw to hang loose, letting the muscles relax completely, without trying to fix anything."
+    },
+    {
+      "role": "user",
+      "content": "It's nothing. I'm just tired. I think I need to go home. This is pointless.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    }
+  ]
+}

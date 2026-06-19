@@ -1,0 +1,127 @@
+{
+  "id": "exp_0027",
+  "timestamp": "2026-06-17T03:49:06.729928",
+  "strategy": {
+    "name": "Validation-Defusion-Invitation Bridge (VDIB) v2.0",
+    "hypothesis": "By replacing the mandatory 'Micro-Action Question' with a softer 'Intrinsic Invitation' (non-judgmental suggestion focused on existing resources/values), we will increase the perceived empathy and alliance score, addressing the structural friction penalties while maintaining the high structural efficiency needed to surpass the 89.5 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Ethan",
+    "age": 29,
+    "occupation": "Junior Marketing Coordinator",
+    "presenting_issue": "I feel like I'm constantly performing for people, and I don't even know who 'real' me is anymore.",
+    "background_story": "I've spent my whole life trying to be the perfect, predictable version of myself\u2014the 'good boy' who never causes trouble or disappoints. Every little perceived slip-up or moment of forgetfulness has been met with criticism, making me feel fundamentally flawed. Lately, the exhaustion from maintaining this facade is overwhelming, and I can't tell if I'm collapsing from burnout or if I've finally started to breathe.",
+    "personality": "Hyper-vigilant, prone to over-explanation, and emotionally volatile. Will frequently start sentences with 'I know this sounds stupid, but...' and will rapidly escalate from discussing a minor social interaction to deep existential crisis. Needs immediate, tangible validation and explicit emotional mirroring. Will test the therapist's boundaries by pushing for immediate feedback or reassurance.",
+    "baseline_phq9": 14,
+    "archetype_label": "ADHD Rejection Sensitivity \u2014 Unmasking Crisis"
+  },
+  "scores": {
+    "total_score": 61.5,
+    "raw_score": 61.5,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 31.5/70.0 (VV shift: 0.00, Sym shift: 0.10, DV shift: 0.10)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "It sounds like you are carrying a heavy weight of worry right now. Could you notice that feeling of worry simply as a pattern passing through? What is one small moment of self-kindness you might allow yourself today?"
+    },
+    {
+      "role": "user",
+      "content": "I know this sounds stupid, but do you mean like, just *tell* me what to do? Because I genuinely don't know where to start. I keep thinking I just need to 'be kinder' to myself, but how do you actually *do* that? It feels like I need a rulebook or something, otherwise I'll just fail at it.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is completely understandable to feel lost when facing such a vast concept. Could you notice that need for a perfect 'rulebook' as just a powerful thought? Perhaps try pausing and simply observing your breath for one minute instead."
+    },
+    {
+      "role": "user",
+      "content": "I mean, it's not just a 'powerful thought,' it's this entire internal monologue that keeps me going. And if I try to just 'observe my breath,' I spend the whole time thinking about how shallow it is, or how soon I'm going to get distracted by what I'm supposed to be doing next. It\u2019s exhausting, honestly. Am I doing this right? Are you sure I'm supposed to be doing anything right at all?",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.0
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly exhausting to constantly monitor your own mind and effort. Could you notice the critical voice asking 'Am I doing this right?' simply as a loud, demanding thought? Maybe, just for now, you could allow yourself five minutes of distraction-free listening to music."
+    },
+    {
+      "role": "user",
+      "content": "Like, I can't just *switch* it off. It's like it's wired into my chest, you know? And if I distract myself, I just end up thinking about what I was supposed to be doing, or what I should be feeling instead. I keep running the numbers in my head, trying to make sure nothing is wrong. Are my feelings even allowed to be confusing right now? Or am I just messing up the 'process'?",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like your internal monologue feels physically trapped and overwhelming right now. Could you notice the urge to 'make sure nothing is wrong' just as a persistent, demanding pattern? Allow yourself the permission to simply feel confused, without needing to solve or fix it."
+    },
+    {
+      "role": "user",
+      "content": "But if I give myself permission to be confused, what happens? Will I just spiral? I mean, if I stop trying to predict everything, won't I just crash? I really don't know how to just 'be' without needing to optimize or categorize my thoughts. You keep giving me these concepts, but I just feel... underwater.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like letting go of control feels terrifying, like a potential crash. Could you notice the intense need to predict and categorize every feeling as just a powerful, demanding thought? Try grounding yourself by naming five things you can physically see around you right now."
+    },
+    {
+      "role": "user",
+      "content": "Okay. Uh, there's a coaster, that's one. The corner of your notebook, that's two. A smudge on the screen, three. My ankle, four. And the patch of carpet fiber right there, five. But... is that enough? Does listing things actually make the buzzing stop? Or am I just performing a task for you?",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like your self-doubt is questioning the value of the effort you just put in. Could you notice the thought that you are 'performing a task' simply as a demanding pattern? What is one simple, non-judgmental thing you might allow yourself to notice next?"
+    },
+    {
+      "role": "user",
+      "content": "It feels like I'm just showing you homework that I didn't actually study for. I keep thinking that if I stop trying to prove I'm being 'good' at this, then... then I'll just disappear. Like I literally don't exist outside of these little emotional efforts I have to make. Is that what you mean? That I'm invisible unless I'm failing or succeeding dramatically?",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like your sense of self feels deeply tied to your emotional performance and effort. Could you notice the belief that you must 'perform' to exist simply as a powerful thought? What is one simple, unearned moment of just *being* that you could allow yourself right now?"
+    },
+    {
+      "role": "user",
+      "content": "I don't even know. Just... breathing, I guess? Like, if I just breathe, does it count? It feels so pointless, like I'm tricking myself into believing that's enough. I keep waiting for the part where I mess up, because that's what I'm used to. If I'm just... being, does that mean I'm completely unnoticeable, or is it just a really big emotional burden I haven't figured out how to carry yet?",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    }
+  ]
+}

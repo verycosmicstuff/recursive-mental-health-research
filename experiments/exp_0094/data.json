@@ -1,0 +1,127 @@
+{
+  "id": "exp_0094",
+  "timestamp": "2026-06-17T10:42:32.134536",
+  "strategy": {
+    "name": "Insight-Validation-Action (IVA)",
+    "hypothesis": "By mandating a specific conversational template for Validation, Insight, and Action, we standardize the response schema to eliminate open-ended deviation.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Chloe",
+    "age": 42,
+    "occupation": "Marketing Coordinator",
+    "presenting_issue": "I just feel constantly exhausted and like I'm failing at everything, especially managing my parents' care.",
+    "background_story": "Moving Mom and Dad from Guangzhou to Vancouver was a massive undertaking, and now that they are here, their needs seem to multiply daily. Between managing appointments, learning new systems, and keeping up with my own job, I feel like I'm operating on fumes. Sometimes I just stare at the ceiling and feel this heavy pressure, like I'm constantly holding back a dam that is about to burst.",
+    "personality": "Highly deferential and accommodating, often minimizing her own struggles by focusing on the needs of others. Her language is polite but emotionally guarded; when stressed, she uses vague physical descriptors ('My chest is too tight,' 'I just feel heavy') rather than emotional labels. She is desperate for validation regarding her immense effort but will actively reject any suggestion that she should prioritize herself or 'set boundaries' in a way that implies neglecting her duty.",
+    "baseline_phq9": 16,
+    "archetype_label": "Filial Piety Conflict \u2014 East Asian Elder Care"
+  },
+  "scores": {
+    "total_score": 50.75,
+    "raw_score": 50.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 50.8/70.0 (VV shift: 0.20, Sym shift: -0.20, DV shift: -0.30) | Third-Person Penalty (-15): Used 'the client' | Brevity Penalty (-15): Therapist turn too long (6 sentences, 103 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please provide the client's statement so I can respond."
+    },
+    {
+      "role": "user",
+      "content": "I just feel so run down, Doctor. Like I haven't slept properly in weeks. I'm trying so hard to make sure everything is okay for them, and my own schedule is just\u2026 impossible right now.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that. It sounds incredibly draining to be constantly giving so much energy to others that you are running on empty. It makes perfect sense that you feel run down when your own needs are consistently taking a backseat.\n\nI wonder if we could look at the sheer depth of your commitment. The fact that you are trying so hard to make sure everything is okay speaks to a profound capacity for care and love.\n\nPerhaps today, you could try designating a non-negotiable 10 minutes just for yourself\u2014a time where you are not doing, planning, or caring for anyone else."
+    },
+    {
+      "role": "user",
+      "content": "Oh, I know, I could try that. But honestly, I feel like ten minutes isn't going to make a difference when there are so many things that need my attention. I don't want to just ignore something that might be tricky or if they need me for something quick.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that. It\u2019s completely understandable to feel that ten minutes is nothing when the demands on your time feel endless, and the worry about letting someone down is heavy.\n\nI wonder if we could look at the idea of self-care not as something that takes time away from others, but as something that actually refills your tank so you can show up for them better. You are already doing so much; reserving a tiny bit of energy for yourself is actually an act of service to everyone around you.\n\nPerhaps today, you could try setting a gentle timer for 10 minutes, and during that time, simply writing down three things you are currently worried about, just to get them out of your head and onto paper."
+    },
+    {
+      "role": "user",
+      "content": "Writing things down... I guess I could do that. But it's just worrying about things, isn't it? It doesn't actually fix the problem. I feel like I'm just delaying the inevitable, and I'll just end up worrying about what I wrote down later anyway.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that. It makes perfect sense that writing things down feels like a temporary measure, because worry often feels like a fundamental part of who we are, and it rarely feels like it has a quick fix.\n\nI wonder if we could look at the incredible self-awareness you possess\u2014the fact that you can identify this pattern, knowing that you worry, and knowing that the worry is cyclical. That ability to observe the worry, even while it feels pointless, is a tremendous strength.\n\nPerhaps today, you could try simply noticing when the worry starts, without judging it or trying to solve it. Just notice the physical sensation of the worry beginning, like a little mental alarm going off."
+    },
+    {
+      "role": "user",
+      "content": "Notice it? I... I don't know how to really do that. I feel like I just *am* worried, all the time. It's just a constant hum, I guess, and if I try to notice it, it's like I'm just paying more attention to how much I'm failing already.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that. It sounds like this worry isn't a fleeting thought, but a deep, persistent background noise that colors everything, and the idea of \"noticing\" it feels impossible, like trying to pay attention to a sound that is already too loud.\n\nI wonder if we could look at the way you described it\u2014as a \"constant hum.\" The ability to capture that feeling and give it a shape, a sound, shows a deep capacity for self-understanding and emotional nuance. You are very skilled at observing your inner landscape.\n\nPerhaps today, you could try a very simple grounding exercise: when you feel the hum, pause and notice three things you can physically feel right now\u2014the texture of your chair, your feet on the floor, or the temperature of the air."
+    },
+    {
+      "role": "user",
+      "content": "Okay. The chair... it's hard. And my feet feel warm on the floor. I guess the air is just normal, I suppose.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that. It takes genuine effort and a lot of gentle courage to pause and focus on something as simple as the feel of a chair or the temperature of the air, especially when your mind is carrying such a heavy weight.\n\nI wonder if we could look at the fact that you were able to do this at all. The ability to shift your attention, even for a moment, from the worry to the physical world shows that your capacity for presence and self-regulation is still very much there.\n\nPerhaps today, you could try doing one more small thing: when you notice the hum starting, just take one slow, deep breath, letting it out like a gentle sigh."
+    },
+    {
+      "role": "user",
+      "content": "It's just... I feel okay, I guess. Like maybe a little less heavy than before. I'll try the breath thing. I just know I'll forget it later when I get back to running around.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that. It is wonderful that you feel even a little bit lighter today, and it\u2019s perfectly normal to anticipate forgetting the practice when the demands of your day return.\n\nI wonder if we could look at the fact that you are recognizing this small shift in your emotional state. Being able to notice that \"a little less heavy\" is a profound victory, because it means you are actively paying attention to your own subtle signs of recovery.\n\nPerhaps today, you could try pairing the breath with something routine, like taking three slow breaths right before you open a door or right before you sit down for a meal."
+    },
+    {
+      "role": "user",
+      "content": "I suppose I could try that. It just feels... like another thing I have to remember to do, though. I hope it actually helps, because I really don't know what I'd do without everything needing me right now.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    }
+  ]
+}

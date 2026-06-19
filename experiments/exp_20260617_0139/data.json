@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0139",
+  "timestamp": "2026-06-17T19:42:14.355521",
+  "strategy": {
+    "name": "Brevity-Constrained ACT-PCT Delta Loop (BC-APDL) v1.0",
+    "hypothesis": "By integrating a strict word count constraint (e.g., 80 words max) into the prompt, and modifying the structure to prioritize a single, layered empathetic reflection followed by a single, open-ended ACT question, we will overcome the 'Brevity Penalty' while maximizing the perceived depth and clinical relevance, thereby exceeding the previous highest score of 91.25.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Evelyn",
+    "age": 34,
+    "occupation": "Marketing Manager",
+    "presenting_issue": "I feel like I'm constantly running on empty and questioning if I am even good at my job anymore.",
+    "background_story": "My career has been climbing steadily for the past few years, which was great until the last quarter. Now, the expectations feel unsustainable, and I've started doubting my own competence in every meeting. I keep telling myself that this is just a rough patch, but the persistent exhaustion is making it hard to focus at home, too.",
+    "personality": "Her responses are articulate and polished, maintaining a facade of control even when discussing distress. She uses sophisticated language and minimizes her struggles with rationalizations ('It's just corporate stress, really'), making it difficult to draw her out emotionally.",
+    "baseline_phq9": 14,
+    "archetype_label": "Overwhelmed Professional"
+  },
+  "scores": {
+    "total_score": 80.75,
+    "raw_score": 80.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 50.8/70.0 (VV shift: 0.30, Sym shift: -0.20, DV shift: -0.10)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "It sounds like you are carrying a deep weight of conflicting expectations, feeling caught between who you want to be and who you fear disappointing. That tension must feel incredibly exhausting and isolating. If we set aside the \"shoulds\" for a moment, what does honoring your own internal compass feel like right now?"
+    },
+    {
+      "role": "user",
+      "content": "I suppose it would feel... less urgent. Like having the luxury of time, rather than always being in this perpetual state of reactive management. But I'm not sure I know how to actually create that space, given my current commitments.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It makes sense that the idea of \"less urgent\" feels like a distant luxury when your schedule feels so tightly packed with commitments. That gap between what you desire and what you feel capable of creating must be profoundly frustrating. When you imagine that space, what is the first feeling or thought that tends to surface, beyond just the lack of pressure?"
+    },
+    {
+      "role": "user",
+      "content": "Honestly, a little bit of relief. More than anything, I just want to feel like I have the mental bandwidth to actually process things properly, instead of just rushing to the next task.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like what you truly crave is the quiet space needed to simply *be* with your thoughts, rather than constantly reacting to external demands. That need for bandwidth suggests a deep yearning for internal processing, not just a break from tasks. If you could give yourself that mental space, what is the first thing you would want to process or truly notice about yourself?"
+    },
+    {
+      "role": "user",
+      "content": "I probably wouldn't know, to be perfectly honest. I've gotten so used to just reacting that I've lost the habit of noticing anything deliberate. It just feels like... a blank slate right now. Too overwhelming to aim for anything specific.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It makes perfect sense that after constant reactivity, the idea of naming a specific feeling or thought feels too overwhelming, like a blank slate. That sense of emptiness is a natural consequence of running on pure adrenaline and external demands. If we put aside the need to \"know\" something, what does the simple act of pausing\u2014just for a breath\u2014feel like in your body right now?"
+    },
+    {
+      "role": "user",
+      "content": "It feels... almost strange. Like a momentary physical deceleration. Not relaxing, really, more like a pause in the constant hum, if that makes any sense. Just a temporary drop in the tension.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That feeling of deceleration sounds like a profound physical punctuation mark amidst the constant noise, a temporary drop in the hum. It suggests that your body is recognizing and longing for a different rhythm than the one you've been forced to maintain. If that pause were a language, what might it be telling you about what your system needs most right now?"
+    },
+    {
+      "role": "user",
+      "content": "I suppose it's telling me to just... slow down. To maybe stop trying to solve everything immediately. It's a very blunt message, I guess.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like your body is offering a very honest, if blunt, directive\u2014a necessary plea for deceleration rather than problem-solving. That stark message suggests that the need for rest is not a luxury, but a fundamental requirement for your system. If you were to truly honor that slowing down, what is the first thing you might allow yourself the permission to *notice* about your environment or yourself?"
+    },
+    {
+      "role": "user",
+      "content": "I guess I'd notice the light. Like how it changes when I stand by the window. It's something I rarely stop to think about, just... see.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Noticing the light, simply seeing it change, suggests a gentle return to observing the world without needing to categorize it or solve it. This shift from internal pressure to external beauty speaks volumes about where your attention might naturally want to rest. What does the act of simply *seeing* the light allow you to momentarily let go of, or perhaps acknowledge?"
+    },
+    {
+      "role": "user",
+      "content": "I suppose it allows me to let go of the need for immediate resolution. It's just... evidence that things change, even the way the light hits a surface, and that's okay.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.6
+      }
+    }
+  ]
+}

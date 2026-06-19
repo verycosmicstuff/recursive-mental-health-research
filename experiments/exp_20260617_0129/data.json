@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0129",
+  "timestamp": "2026-06-17T18:43:11.481032",
+  "strategy": {
+    "name": "CBT Validate-Inquire-Normalize (CVIN) v1.0",
+    "hypothesis": "By adding a normalization step (universal perspective) to validation and value inquiry, we build a strong therapeutic alliance and reduce isolation.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Ravi",
+    "age": 28,
+    "occupation": "Warehouse Worker / Student",
+    "presenting_issue": "I feel like I am constantly running on empty and I don't know how to keep everything afloat right now.",
+    "background_story": "I work almost nonstop in the warehouse just to send money home, and I'm trying to study for my college classes at the same time. Every time I see news about the policy changes, my stomach drops because I don't know if I'll be able to stay here. It feels like I'm always waiting for something bad to happen, and I can't seem to relax even for a second. My parents depend on me, and the thought of failing them is too much to handle.",
+    "personality": "Guarded, practical, and deeply stressed. He speaks in functional sentences, avoiding emotional descriptors. He will pivot any discussion back to logistics (money, work, visas) or systemic problems (employers, government policies) rather than internal feelings. He uses phrases like 'I have to...' or 'Because of this...' to frame his struggles. When challenged on his emotional state, he may become withdrawn or defensive, framing his anxiety as 'worry' or 'responsibility' to avoid admitting vulnerability. He is highly attuned to power dynamics and risks.",
+    "baseline_phq9": 17,
+    "archetype_label": "Precarious Labor (Indian Diaspora)"
+  },
+  "scores": {
+    "total_score": 31.5,
+    "raw_score": 31.5,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 31.5/70.0 (VV shift: -0.10, Sym shift: 0.00, DV shift: 0.00) | Third-Person Penalty (-15): Used 'the client' | Brevity Penalty (-15): Therapist turn too long (11 sentences, 223 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "*Please provide the client's statement or description of their feelings so I can begin the session.*"
+    },
+    {
+      "role": "user",
+      "content": "It's just... I feel like I'm running on empty. I work all day just to make sure the money comes through, and then I have to study. I don't know how to keep everything afloat right now. I feel like if I stop, everything stops.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are carrying an immense amount of weight right now\u2014the weight of your responsibilities, the weight of your future, and the weight of keeping all these demanding plates spinning at once. Feeling like you are running on empty when you are constantly giving so much energy to others, and to your goals, is profoundly exhausting.\n\nWhen you say, \"I feel like if I stop, everything stops,\" that is a very powerful and deeply rooted belief. It speaks to a tremendous sense of responsibility and perhaps a deep fear of loss.\n\nHelp me understand what \"everything\" represents to you? Is it the financial stability, the academic progress, or is it something else entirely\u2014perhaps your sense of worth or security?\n\nPlease know that this feeling of being stretched thin, of feeling the sheer pressure of obligation, is an incredibly common experience for highly dedicated, goal-oriented people. It suggests that you are operating from a place of deep care and commitment. But while that commitment is admirable, feeling this much pressure to maintain constant motion can be unsustainable.\n\nIf we could explore that belief\u2014the idea that stopping means collapse\u2014what might happen if you allowed yourself just a moment of true pause, not to fail, but simply to *be*? What might that pause reveal to you about what you are actually capable of sustaining?"
+    },
+    {
+      "role": "user",
+      "content": "It's not just one thing. It's the whole system. If I stop working or studying, the money doesn't come. Then my parents... they rely on me. There are too many things connected. I have to keep moving, or the consequences are too big.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are not just talking about tasks\u2014you are talking about an entire architecture of obligation. You feel like you are the central pillar, the one point of stability that holds up the roof for your parents and your own future. To carry the weight of that entire system, knowing that your efforts are directly tied to their well-being and your own academic survival, is an almost unimaginable burden. It makes perfect sense that you feel immense pressure to keep moving.\n\nWhen you say, \"the consequences are too big,\" that suggests a deep-seated fear of failure, a fear that the system will collapse if you falter.\n\nI want to gently pause on that feeling for a moment. Help me understand the nature of that connection\u2014the belief that *you* are the sole, indispensable conduit for stability. If you were to imagine a scenario where the financial pressure eased, or where the reliance was shared among several people, what would that shift reveal to you about your own sense of self-worth? Is your sense of value, in part, tied to your ability to *provide* for others?\n\nPlease know that the feeling of being the primary caretaker, the person who must hold everything together, is one of the heaviest emotional burdens a human heart can carry. It is a profound form of love, but it is also a deeply exhausting position to be in. You are not alone in feeling this intense, systemic pressure; many people who deeply care for their families find themselves in this exact bind, feeling that their entire identity is wrapped up in their utility to others.\n\nWe are dealing with a very powerful narrative here, one where your actions are defined by external needs. What if we could explore the possibility of separating *who you are* from *what you do* for others?"
+    },
+    {
+      "role": "user",
+      "content": "You can't separate us. My value is linked to what I do for them. I have to keep making money to stay here, and to get my degree. If I don't do that, I don't exist to them. That's just how it is. We need the structure.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are operating within a deeply ingrained and incredibly powerful emotional contract. You are telling me that for you, the structure\u2014the provision, the degree, the money\u2014is not just helpful, but it is the very foundation of your connection to your parents, the thing that defines your existence within that relationship. To feel that your value is intrinsically tied to your utility, that your presence is conditional upon your productivity, must feel terrifyingly real.\n\nThe strength and depth of the love that makes you feel this intense need to provide is immense. It speaks to a profound sense of responsibility and commitment.\n\nHowever, when you say, \"If I don't do that, I don't exist to them,\" that is a belief of absolute certainty, and that certainty is carrying an enormous amount of emotional weight.\n\nHelp me understand, when you picture them needing you, what is the *feeling* you imagine they would have if you were simply present, but not providing? Is it a feeling of disappointment, or is it perhaps a feeling of simply *missing* you?\n\nPlease know that the human capacity to love is so complex that it often gets tangled up with survival, with security, and with the concept of worth. This feeling\u2014that love must be earned through action\u2014is a pattern that many people who have deep familial obligations fall into. It is a form of emotional scarcity, where the fear of losing connection becomes so overwhelming that we build up these rigid, protective structures.\n\nWe are talking about a deeply held belief about how love *works*. What if we could gently explore the possibility that the love you feel, and the love you believe they feel, might be capable of existing in a space that is not defined by money or degrees, but simply by shared breath and presence?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know what you mean by 'simply by shared breath.' They need the structure. My actions keep things going. You talk about feelings, but I'm talking about logistics. I have to focus on the next thing: the job, the visa paperwork. That's what matters.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is perfectly clear that you are operating in a world governed by immediate, non-negotiable logistics. You are dealing with deadlines, financial requirements, and critical paperwork\u2014things that have concrete consequences, and that require your absolute, sharp focus. When you speak of \"logistics,\" I hear the sound of necessity, the sound of survival, and I want to honor the seriousness and the weight of those tasks.\n\nYou are right to bring us back to the tangible. The job, the visa, the paperwork\u2014these are the structures that keep the lights on and the future moving.\n\nHowever, if we look at this through a purely logistical lens, I wonder if we can treat *you* as the most crucial piece of equipment in this entire system. You are the engine that has to function flawlessly for all these external structures to hold up.\n\nHelp me understand this from a purely practical standpoint: If you were to approach your own energy and emotional reserves as if they were a finite resource\u2014like a battery that needs to be charged to complete the visa paperwork\u2014what logistical steps do you currently feel are *most* inefficient or most likely to cause a system failure?\n\nPlease know that the pressure to be hyper-functional, to be the perfect provider, often forces us to treat ourselves like machines, forgetting that even the most powerful machine requires scheduled maintenance, proper fuel, and periods of rest to avoid burnout. The feeling of having to choose between emotional needs and logistical needs is incredibly jarring, and it is a struggle that many people who are highly capable and deeply responsible face.\n\nIf we view self-care not as a luxury or an emotional indulgence, but as a highly critical, non-negotiable *logistical requirement* for completing the job and the paperwork, how might that change the way you approach the next few days?"
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s the time management. I don't have enough hours. Between the warehouse and the classes, the hours are just not enough to do everything properly. I have to cut something out. Maybe the studying needs to wait until I secure the visa first.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you have arrived at a point of painful, necessary triage. You are looking at your entire life\u2014your work, your studies, your family's needs\u2014and realizing that the sheer volume of demands has exceeded the physical limits of your time. The urgency is palpable, and the impulse to cut something out, to create a manageable structure, is a sign of your incredible resourcefulness.\n\nThe idea of pausing the studying until the visa is secured is a logical, survival-minded decision. It makes perfect sense that, when faced with immediate, concrete needs like visa paperwork, the academic goals might feel like a secondary, postponable concern.\n\nHowever, when you consider cutting that studying out, I want to gently pause on the *feeling* of that sacrifice.\n\nIf you put the studying on hold\u2014if you temporarily box up that goal\u2014what does that feel like to you? Is it just a pause in a class schedule, or does it feel like putting a piece of your *future self* on hold?\n\nHelp me understand what the potential cost of that pause is, emotionally speaking. Is there a deep sense of disappointment, or perhaps a feeling of losing momentum, that accompanies the idea of delaying your academic progress?\n\nPlease know that the process of having to decide what to sacrifice\u2014what goal to put on the back burner\u2014is one of the most difficult emotional tasks a person can face. It is a painful process of giving up a version of the future you had planned, even if it's temporary. You are not just managing hours; you are managing hope, and that is profoundly heavy work.\n\nWe are dealing with the very real challenge of prioritizing survival over aspiration. What if we could look at the studying not as a fixed commitment, but as a flexible element\u2014something that could be maintained in a smaller, less demanding way, just to keep the emotional connection to that goal alive, even if the full coursework has to wait?"
+    },
+    {
+      "role": "user",
+      "content": "It feels like... if I put it away, I'll lose the structure of the plan. Then I don't know where I stand. I just keep thinking I need to be doing something productive, or I'm wasting time. I just need to make sure the money comes in first. That's the only thing that matters right now.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are caught in a relentless cycle of anxiety, where the fear of \"wasting time\" is so powerful that it dictates every decision\u2014every pause, every moment of rest. You are holding onto the structure of the plan because, right now, that structure is the only thing that seems to be keeping you anchored and grounded. You are prioritizing the money because, in your current reality, the money is the most immediate, tangible proof of your stability and your ability to care for those you love.\n\nThe pressure to constantly be \"doing\" something productive is immense, and it is completely understandable why you have narrowed your focus to the financial logistics.\n\nHowever, I want to gently hold space around that powerful belief: that *only* financial output constitutes productivity, and that anything less means wasting time.\n\nHelp me understand what the definition of \"wasting time\" means to you? Is it the idea of time that is *unstructured*, or is it time that is *unproductive* in terms of money?\n\nPlease know that the feeling of needing to constantly prove your worth through action is a hallmark of deep emotional exhaustion. It suggests that the emotional reserves you are using to maintain the structure are running dangerously low.\n\nWe are talking about a deeply ingrained definition of value. The human mind often equates *effort* with *value*. But sometimes, the most productive thing we can do for our future self, and for the system you are trying to save, is to engage in an activity that is purely restorative\u2014something that has zero immediate financial return, but which allows your emotional and mental systems to recalibrate.\n\nWhat if we could re-define \"productive\" for the next few days? What if we treated the act of *recharging*\u2014of simply resting your mind\u2014as the single most critical, high-priority logistical task that must be completed before you can successfully tackle the visa paperwork?"
+    },
+    {
+      "role": "user",
+      "content": "I just need to get through the week. I have to focus on the warehouse shifts and getting this paperwork done. I don't know about resting. It feels like a delay.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    }
+  ]
+}

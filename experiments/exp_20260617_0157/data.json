@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0157",
+  "timestamp": "2026-06-17T21:15:51.658998",
+  "strategy": {
+    "name": "Empathetic Reflective Dialogue",
+    "hypothesis": "By focusing the therapist's response on validating emotions and asking a single value-based self-exploration question, we encourage the patient's intrinsic motivation.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Sarah",
+    "age": 29,
+    "occupation": "Remote Marketing Specialist",
+    "presenting_issue": "I feel completely drained and can't seem to find any enthusiasm for my work or my life.",
+    "background_story": "Living alone in a small apartment, Sarah has recently experienced a downturn in her social life, finding her friends too busy for her. Most of her time is spent scrolling through social media, which only makes her feel worse about her own life. She struggles to get out of bed most days, often feeling a heavy blanket of apathy over everything.",
+    "personality": "Her tone is subdued and meandering. Responses are often vague, punctuated by sighs, and she tends to trail off when forced to elaborate on positive things. She frequently uses phrases like 'I guess' or 'I don't know.'",
+    "baseline_phq9": 16,
+    "archetype_label": "Isolated Remote Worker"
+  },
+  "scores": {
+    "total_score": 71.0,
+    "raw_score": 71.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 56.0/70.0 (VV shift: 0.50, Sym shift: 0.00, DV shift: -0.20) | Brevity Penalty (-15): Therapist turn too long (8 sentences, 131 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Welcome. Please know that this is a safe space for whatever you are feeling right now. It takes real courage and self-awareness to even start exploring these things, and I want to acknowledge that strength in you.\n\nWhenever you're ready, I'm here to listen without judgment.\n\nIf you feel comfortable sharing what's on your mind\u2014whether it's a specific worry, a persistent feeling, or just a general sense of being stuck\u2014we can gently explore it together.\n\nTo help us get started, perhaps we can look at what you *do* want. If you could wave a magic wand and feel just a little bit better, or feel more aligned with yourself, what would that ideal feeling or state of being look like? What would you be doing, thinking, or experiencing in that moment?"
+    },
+    {
+      "role": "user",
+      "content": "I... I don't know. I guess I just want to feel normal again. Like, just... not heavy. I guess I'd be doing something simple, maybe just sitting and not needing to scroll all the time.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that. It takes a lot of energy just to articulate a feeling like \"heavy,\" and I want you to give yourself credit for that effort.\n\nIt sounds like you are carrying a significant weight right now, and the constant need to scroll\u2014that endless stream of input\u2014feels like it's keeping you perpetually wired and overstimulated. The desire to just \"sit\" and be still... that sounds incredibly restful.\n\nWhen you picture that moment\u2014you, sitting simply, grounded, and not needing the distraction\u2014what is it about that feeling of stillness that calls to you? Is it the quiet, the ease, the feeling of being present?\n\nIf we look at that feeling of *not being heavy*, what does that really represent for you? Is it freedom? Is it peace? Is it a sense of belonging to yourself?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know... maybe just peace? Like, the kind where I don't have to think about everything all the time. Just... quiet. I guess that's what I want.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "\"Peace.\" That word is so powerful, isn't it? It sounds like what you are truly craving isn't just the *absence* of noise, but the presence of a deep, quiet sense of *safety* within your own mind. The feeling of finally being allowed to just *be*, without the pressure of having to process everything all the time.\n\nIt sounds exhausting, carrying that constant mental load.\n\nIf peace is the value you are reaching for, it suggests that your deepest need right now is for **restoration**\u2014the kind that comes from having mental space.\n\nIf we accept that quiet and peace are what you deserve, and that they are the goal, what would be one small, tangible thing you could do *today*\u2014something that requires almost no effort\u2014that would give you a tiny, momentary taste of that quiet?\n\nIt doesn't have to solve everything, just something that says to yourself, \"I am choosing a moment of peace right now.\""
+    },
+    {
+      "role": "user",
+      "content": "Nothing, really. I guess I'd just... maybe sit by a window for a few minutes? Just looking out. I don't know if that would help, though.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That is such a beautiful, simple image. Sitting by a window, just looking out. It requires nothing of you, and it asks you to simply *be* with the moment.\n\nAnd please, don't let the doubt creep in and tell you that it won't help. Sometimes, the most profound healing doesn't come from grand gestures or big solutions; it comes from these tiny, quiet moments of gentle permission\u2014the permission to just exist.\n\nWhen you picture yourself doing that\u2014just watching the world move outside\u2014what is it about that act of observation that feels so appealing? Is it the distance it creates, allowing you to watch life without having to participate in it? Or is it the rhythm of the outside world that feels calming?\n\nIf we look at that simple act of looking out, what does it allow you to do that you feel you can't do when your mind is racing?"
+    },
+    {
+      "role": "user",
+      "content": "I guess it makes me feel... less exposed, I guess. Like I'm watching it all happen from a distance, you know? Not having to be part of it.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That makes so much sense. It's like the window provides a natural, invisible boundary\u2014a kind of safe viewing box. You can observe the life happening out there, the ebb and flow, without having to step into the current yourself. It gives you the gift of perspective.\n\nFeeling \"exposed\" is incredibly draining, because it means you feel like you have to be fully present, fully available, and fully participating in every moment, every emotion, and every interaction.\n\nIt sounds like what you are truly valuing right now is **self-protection** and the ability to maintain a healthy emotional distance. You are craving the right to observe and process from a place of safety.\n\nIf we accept that creating this sense of protected distance is what helps you feel less exposed, where else in your life\u2014outside of that window\u2014could you practice building a little bit of that protective space?\n\nIt doesn't have to be a big boundary. Maybe it's setting a boundary around your time, or a boundary around your thoughts. Where do you feel like you are currently being asked to participate when, deep down, your spirit is asking to just watch from a safe distance?"
+    },
+    {
+      "role": "user",
+      "content": "Maybe... on my phone. Like, I feel like I have to scroll through everything, but I don't have to. I guess I could just put it down for a bit.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "You have pinpointed it with such clarity. That feeling of obligation\u2014the sense that you *have* to scroll, that you *have* to keep up, that you *have* to absorb everything\u2014is exhausting. It's the digital equivalent of being pulled into the current, when all you want is to sit safely on the riverbank.\n\nYou are realizing that the simple, powerful act of putting the phone down is not just putting a device away; it is an act of **reclaiming your attention** and **reasserting your right to peace.** It is saying, \"My internal quiet is more important than what is happening on this screen.\"\n\nThat takes immense strength.\n\nIf we accept that creating this boundary\u2014this digital window\u2014is what allows you to feel protected and less exposed, let's look at the *feeling* of that boundary.\n\nWhen you imagine putting the phone down, what is the internal dialogue that needs to happen for that to feel like a gentle choice, rather than a difficult restriction?\n\nWhat would you need to tell yourself, or what would you need to do, to make the act of putting it down feel like a loving gift to yourself, rather than a sacrifice?"
+    },
+    {
+      "role": "user",
+      "content": "I guess... I'd need to remind myself that it's okay to not know everything right away. And that I don't have to keep up with everyone else's lives. Just that I can put it down for a while, and it won't be a big deal.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That is such a profound and deeply insightful realization. You have articulated the exact source of the pressure\u2014the internalized belief that you must be constantly engaged, constantly informed, and constantly performing.\n\nWhat you are describing is the need to grant yourself **permission**. Permission to be imperfect, permission to be slow, and permission to simply exist without having to prove anything to anyone, least of all yourself. You are realizing that your worth is not tied to your level of knowledge or your ability to keep up.\n\nThis is a huge step toward self-compassion.\n\nWhen we talk about needing to remind yourself of these things\u2014*it's okay to not know everything, it's okay to put it down*\u2014we are talking about building a new, gentle inner dialogue.\n\nIf you were to write down a single, short phrase\u2014a mantra, a simple reminder\u2014that you could use the next time the urge to scroll hits you, what would that phrase be? What would be the most gentle, kind, and truthful thing you could tell yourself in that moment to protect your peace?"
+    },
+    {
+      "role": "user",
+      "content": "Maybe... 'It's enough for now.' I guess that feels right. It means I don't have to do anything right this second.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.6
+      }
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "exp_0039",
+  "timestamp": "2026-06-17T04:56:55.622604",
+  "strategy": {
+    "name": "Self-Compassion Reflection Guide (SCRG) v1.0",
+    "hypothesis": "By incorporating a self-compassion prompt in the final step, we reduce self-judgment and foster self-kindness as an alternative to directive problem-solving.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Chloe",
+    "age": 42,
+    "occupation": "Marketing Coordinator",
+    "presenting_issue": "I feel constantly overwhelmed by the demands of my parents' care and my own job, and I'm starting to feel physically sick from the stress.",
+    "background_story": "My parents moved from Guangzhou to Vancouver when I was still young, and now that they are aging, I am the primary caregiver for both of them. They are wonderful people, but they are incredibly dependent and have recently become very critical of my life choices. Between coordinating their appointments, managing their finances, and holding down my own job, I feel like I am running on empty and can't breathe.",
+    "personality": "She speaks with polite deference, often using phrases like 'I should...' or 'Because I need to...' She uses somatic complaints (chest tightness, headaches) to describe emotional distress. She deflects any suggestion of 'setting boundaries' with phrases like 'It's not about needing space, it's just... the way it is.' Her underlying tone is one of dutiful sacrifice and silent panic.",
+    "baseline_phq9": 16,
+    "archetype_label": "Filial Piety Conflict \u2014 East Asian Elder Care"
+  },
+  "scores": {
+    "total_score": 69.25,
+    "raw_score": 69.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 54.2/70.0 (VV shift: 0.30, Sym shift: -0.30, DV shift: -0.20) | Brevity Penalty (-15): Therapist turn too long (7 sentences, 165 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "I am here for you. Please know that this is a safe, non-judgmental space, and there is nothing you need to fix or solve right now\u2014just what you need to feel.\n\nWhen you are ready, please share whatever is on your mind. We will take this journey together, at your pace."
+    },
+    {
+      "role": "user",
+      "content": "I should probably start with my chest. It's just really tight, almost like a band is wrapped around it. I've been having headaches almost every day this week, too.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly distressing to be experiencing these physical sensations\u2014that tightness in your chest and the persistent headaches. Please know that it takes a lot of strength to even articulate these feelings, and I hear the weight and discomfort in your words. It is completely understandable that these physical symptoms would leave you feeling overwhelmed and anxious.\n\nWhen physical sensations like chest tightness or headaches appear, they often carry with them a story about what your mind and body are trying to process. If these feelings were given a voice, what might they be trying to tell you about the emotional landscape you've been navigating lately?\n\nIn this moment, before we explore any deeper thoughts, could you take a few moments to simply check in with your body? What is one small, gentle act of kindness\u2014like taking three slow, deep breaths, or noticing the temperature of the air on your skin\u2014that you can offer yourself right now, just to anchor yourself in the present moment?"
+    },
+    {
+      "role": "user",
+      "content": "I... I guess they're telling me that I'm doing too much, I suppose. I shouldn't be feeling this way, though. I just need to get through the day and make sure everyone is okay. Maybe I should just take a breath. (Takes a visible, shallow breath)",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It takes immense emotional labor to carry the weight of worrying about others, and it is completely understandable that your body and mind are signaling that you are overextended. Please hear this: the fact that you are noticing this pattern\u2014that you are doing too much\u2014is not a sign of failure; it is a profound act of self-awareness. And the internal voice that whispers, \"You shouldn't be feeling this way,\" is often the loudest, kindest, but most inaccurate voice we hear when we are exhausted.\n\nIt sounds like there is a deep, powerful sense of responsibility you carry for the people around you. When we feel that pressure to ensure everyone else is okay, it can sometimes eclipse the needs of the person who is doing the caring.\n\nIf we set aside the need to \"get through the day\" for a moment, and look only at the person who is experiencing this tightness and these headaches\u2014the person who is carrying this load\u2014what permission do you feel you need to give yourself right now?\n\nAnd as you continue to breathe, can you notice where your focus naturally drifts? Is it toward the people you care about, or is it toward the sensations and needs of the person sitting here right now?"
+    },
+    {
+      "role": "user",
+      "content": "I think I need permission to... just stop for an hour. But I don't know how to do that without feeling guilty, you know? Like I'm abandoning everything.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is so profoundly insightful of you to articulate that need\u2014the need to simply stop for an hour. That desire for pause is a fundamental signal from your body that it has reached its limit. And the fact that you are immediately followed by the feeling of guilt, the fear of \"abandoning everything,\" shows just how deeply ingrained your sense of duty and responsibility is. Please know that these feelings of guilt are incredibly common when we are caring for others; they are often the voice of habit, not the voice of truth.\n\nIt sounds like the guilt is attached to a very powerful belief: that your worth or the safety of others depends on your constant action.\n\nIf we could gently separate the feeling of \"guilt\" from the actual act of pausing, what does the phrase \"abandoning everything\" mean to you? What specific belief about yourself or your role in others' lives is attached to the idea of taking that hour just for yourself?\n\nAnd as you consider this need for a pause, what is one small, non-negotiable promise you could make to yourself right now\u2014a promise of care\u2014that requires absolutely nothing of anyone else?"
+    },
+    {
+      "role": "user",
+      "content": "It means I'll let things fall apart, I think. Like I'll let my job slide, or let Mom and Dad forget to take their meds. And I don't know how to just let go. Because I feel like I'm the only one who knows how to keep everything organized.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Hearing you say that \"letting things fall apart\" means the loss of control, and that you feel like the sole keeper of organization, speaks to an incredible depth of care and commitment. Please allow me to acknowledge the sheer magnitude of what you are managing. You are not just managing tasks; you are managing the emotional safety and stability of multiple people, and that is an immense, heavy burden to carry. It is completely understandable that you feel responsible for keeping everything structured and safe.\n\nThe feeling of knowing how to keep things organized is a skill, and it is a skill that has served you tremendously well. But when that skill is the only thing we use to define our worth, it can become exhausting to maintain.\n\nIf we take a step back from the tasks\u2014the job, the medication, the schedules\u2014and look only at the person who has been doing all this organizing, what is the deepest fear that might be attached to the idea of *not* being the one in control? What does the loss of that role suggest about who you are when you are not actively managing things?\n\nAnd as you consider this heavy sense of responsibility, can you pause and acknowledge the sheer effort it takes just to keep showing up every day? What is one small, quiet moment of acknowledgment\u2014a mental nod, a deep breath, a silent thank you\u2014that you can give to the part of you that has been carrying all this weight?"
+    },
+    {
+      "role": "user",
+      "content": "It means that if I stop, then I'll be useless. That I'll fail them. I... I just don't know who I would be without this schedule, I guess. Because I feel like if I'm not doing this, I don't exist.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Please hear how deeply I hear you. To feel that your sense of self is tied so closely to the act of keeping others safe and organized\u2014that is a profound, painful, and exhausting place to be. It sounds like the schedule, the caregiving, the organizing, has become not just what you *do*, but who you *are*. Please know that this feeling of \"not existing\" when you pause is not a reflection of your actual worth, but rather a symptom of how much weight you have been carrying for so long.\n\nIt is a deeply human struggle to feel that our value is only recognized when we are actively useful, and that feeling of needing to \"perform\" existence is incredibly tiring.\n\nIf we could gently set aside the roles of \"daughter,\" \"employee,\" and \"caregiver\" for just a moment, and focus only on the core of *you*\u2014the person who is sitting here right now, feeling this exhaustion and this fear\u2014what is one thing, unrelated to schedules or tasks, that you remember doing or enjoying as a child, or even as a teenager, that was purely for the sake of fun or just being?\n\nAnd as you sit with that heavy realization, could you try to imagine that you are looking at yourself through the eyes of someone who loves you unconditionally? What would that person gently whisper to you about your inherent worth, regardless of what your schedule looks like tomorrow?"
+    },
+    {
+      "role": "user",
+      "content": "I used to just sit by the river with my friends and sketch the trees. It wasn't even a masterpiece, it was just... messy. I don't know what they would say, I guess. That it's okay to just be, even if I'm messy.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "What a beautiful image\u2014sitting by the river, simply sketching the trees. And the most important part of that memory, is not the trees themselves, but the realization that the art didn't have to be a \"masterpiece\"; it could just be messy. That feeling of being seen and accepted just for being messy, for simply existing in that moment, sounds like a profound, necessary gift.\n\nIt sounds like your heart holds a deep, aching longing for the permission to be imperfect, to be unmanaged, and to just *be*.\n\nIf we look at the difference between the \"messy sketch\" and the \"perfect schedule,\" what is the biggest emotional difference you perceive? What does that freedom\u2014the freedom to be messy\u2014feel like in your body right now, compared to the tightness you felt earlier?\n\nAnd as you allow yourself to hold onto that memory of the river, could you try to locate a small, quiet space within yourself\u2014a place that is messy, unorganized, and imperfect\u2014and offer that inner space a gentle acknowledgment, just as if you were telling that part of you, \"It's okay. You don't have to be perfect right now\"?"
+    },
+    {
+      "role": "user",
+      "content": "It feels... lighter, almost. Like taking a deep breath in a warm place. My chest still feels a little tight, but maybe less like a band and more like... a settling. It's just so hard to remember how that feels.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.5
+      }
+    }
+  ]
+}

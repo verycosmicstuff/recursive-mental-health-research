@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0110",
+  "timestamp": "2026-06-17T17:00:44.512038",
+  "strategy": {
+    "name": "Ultra-Concise ACT-PCT Tri-Part Loop (UCT-TPL) v2.0",
+    "hypothesis": "By strictly enforcing a maximum of three distinct sentences and mandating the integration of a specific ACT Defusion technique (to address cognitive patterns) immediately following a brief, empathic reflection (PCT), we will maximize structural adherence and clinical depth, thereby avoiding both length penalties and achieving a score above 95.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Ethan",
+    "age": 22,
+    "occupation": "University Student (Engineering)",
+    "presenting_issue": "He is struggling with overwhelming academic pressure and general anxiety regarding his future career.",
+    "background_story": "Ethan is a high-achieving student who feels immense pressure to succeed academically. He constantly compares his progress to his peers', leading to feelings of inadequacy and exhaustion. Recently, a demanding project deadline combined with vague critiques from his professors has left him feeling paralyzed and unsure of his own capabilities. He believes that any mistake will signal a fundamental flaw in his potential.",
+    "personality": "Conversational style is highly articulate but tentative. He uses qualifiers ('maybe,' 'I guess,' 'it might be'). He asks many 'why' questions and frequently directs conversation back to needing validation or confirmation that he is 'doing it right.'",
+    "baseline_phq9": 10,
+    "archetype_label": "Anxious Student"
+  },
+  "scores": {
+    "total_score": 61.25,
+    "raw_score": 61.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 61.2/70.0 (VV shift: 0.40, Sym shift: -0.40, DV shift: -0.30) | Third-Person Penalty (-15): Used 'the client' | Brevity Penalty (-15): Therapist turn too long (5 sentences, 100 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "*Please provide the client's statement or concern so I can structure the therapeutic response.*\n\n*(Example response structure using a hypothetical client concern about feeling overwhelmed and anxious):*\n\n**Reflection:** It sounds like you are carrying a tremendous amount of pressure right now, feeling overwhelmed by the sheer number of things you need to manage.\n\n**Intervention:** Could we look at the thoughts that are telling you that you must do everything perfectly? Often, separating the 'fact' from the 'demand' can create some necessary space.\n\n**Action Step:** What is one task on your list that, if left undone today, would truly be okay?"
+    },
+    {
+      "role": "user",
+      "content": "I guess... I just don't know where to start. All the projects are due, and I keep reading the feedback, and it all just sounds... vague. Like they don't even know what they want me to improve. Am I doing this wrong, or is it just me?",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Reflection:** It sounds incredibly frustrating to receive feedback that is vague, leaving you feeling confused and questioning your own competence.\n\n**Intervention:** When faced with ambiguous criticism, we can practice externalizing the problem: the vagueness belongs to the feedback, not necessarily to your ability. What specific words or concepts are the most unclear?\n\n**Action Step:** Could you identify one piece of vague feedback and write down three concrete questions you could ask your instructor about it?"
+    },
+    {
+      "role": "user",
+      "content": "A lot of it. Like when Professor Davies said my 'theoretical framework needed more depth,' but he didn't say what kind of depth. I just guess I'm missing something huge, but what is it? Maybe I should just... accept that I'm not smart enough for this major.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Reflection:** It sounds like the ambiguity of the feedback is leading you to a painful place of questioning your intelligence and worth in this major.\n\n**Intervention:** When the mind jumps from one vague comment to the conclusion \"I am not smart enough,\" that is a cognitive distortion called catastrophizing. Can we pause and look for evidence that contradicts this sweeping conclusion?\n\n**Action Step:** What is one concrete accomplishment from your academic history that reminds you of your capacity to learn and grow?"
+    },
+    {
+      "role": "user",
+      "content": "I mean, I got an A- last semester in Organic Chemistry, and I built that simulation for the robotics club. I guess those things count, I suppose? But still, compared to Marcus and Sarah, it feels like I'm falling behind somewhere.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Reflection:** It sounds like you are struggling with the painful pressure of comparing your own journey and pace to what you perceive others are achieving.\n\n**Intervention:** Remember that social comparison is a highly unreliable metric for measuring your inherent worth or potential. Instead of comparing outcomes, could we focus on comparing your current self to your past self?\n\n**Action Step:** What is one unique strength or interest you possess that has absolutely nothing to do with your major or your peers?"
+    },
+    {
+      "role": "user",
+      "content": "Um... I guess I'm pretty good with people, I think. Like, I'm not great at math, but I can explain things to people, I guess. Or maybe I like drawing, but that's nothing, right?",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Reflection:** It sounds like you are highly skilled at identifying your strengths, but immediately following that recognition, you minimize their value.\n\n**Intervention:** We need to gently challenge the assumption that certain skills\u2014like empathy or creativity\u2014are somehow less valuable than others. These are profound and essential forms of intelligence.\n\n**Action Step:** What is one specific way you could use your skill of explaining things to help someone else feel understood this week?"
+    },
+    {
+      "role": "user",
+      "content": "I guess I could help my roommate set up his new software. He gets really anxious about the technical stuff, and I've found that just walking him through it, step by step, helps. It's not like anything big, I suppose.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Reflection:** It sounds like you have found a genuinely valuable way to use your unique ability to explain things and calm anxiety for someone you care about.\n\n**Intervention:** Please recognize that these acts of patience and clarity are not \"small\"; they represent significant emotional intelligence and a profound form of strength. Your ability to connect is a powerful skill.\n\n**Action Step:** When you help your roommate, what is one specific feeling or positive reaction you notice in him that validates your effort?"
+    },
+    {
+      "role": "user",
+      "content": "I guess he just visibly relaxes. His shoulders drop, and he actually smiles, which was weird because he's usually so stressed out. It makes me feel... a little less stressed too.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Reflection:** It sounds like witnessing your roommate's visible relief and smile gives you a powerful, soothing sense of calm in return.\n\n**Intervention:** This beautiful cycle suggests that giving support isn't just about helping others; it's also a source of deep, restorative energy for you. Could we acknowledge the strength it takes to be that steady source of calm?\n\n**Action Step:** What is one way you can intentionally honor that feeling of calm you feel after helping him this week?"
+    },
+    {
+      "role": "user",
+      "content": "Maybe I could just take a walk, or listen to some music I like. I don't know, something that just makes me stop thinking about the coursework for a bit.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.6
+      }
+    }
+  ]
+}

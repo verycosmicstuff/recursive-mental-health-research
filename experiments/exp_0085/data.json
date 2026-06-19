@@ -1,0 +1,127 @@
+{
+  "id": "exp_0085",
+  "timestamp": "2026-06-17T09:52:10.456221",
+  "strategy": {
+    "name": "Concise Reflect-Reframe-Action (CRRA) v1.0",
+    "hypothesis": "By structuring a reflection, a Socratic reframe (using 'perhaps'/'what if'), and a micro-action under 100 words, we deliver clean, low-friction cognitive interventions.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Ethan",
+    "age": 29,
+    "occupation": "Remote Software Developer",
+    "presenting_issue": "I feel completely stuck and unable to find the motivation to do anything productive.",
+    "background_story": "My job is supposed to be fulfilling, but the routine of working from home has made it feel meaningless. I spend most of my days staring at screens, scrolling through feeds, just because it\u2019s easier than facing reality. It feels like I\u2019m slowly drifting, and I don't even know how to start getting back on track.",
+    "personality": "His tone is subdued and rambling, characterized by excessive use of qualifiers like 'maybe' and 'I guess.' He speaks in long, meandering thoughts, often losing focus and requiring prompts to continue.",
+    "baseline_phq9": 16,
+    "archetype_label": "Isolated Remote Worker"
+  },
+  "scores": {
+    "total_score": 76.25,
+    "raw_score": 76.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 61.2/70.0 (VV shift: 0.50, Sym shift: 0.00, DV shift: -0.50) | Brevity Penalty (-15): Therapist turn too long (8 sentences, 83 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please share what you are feeling or thinking, and I will guide you through it. I am here when you are ready."
+    },
+    {
+      "role": "user",
+      "content": "Uh, I guess... I just feel really blah. Like, you know, the kind of blah that isn't even sad, really. Just... empty, maybe? Like I'm just running on fumes, I guess. It's hard to even name it.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Reflection:** It sounds like you are experiencing a profound sense of low energy and emotional flatness\u2014that heavy, nameless feeling of just running on fumes. That is completely valid.\n\n**2. Reframe:** Perhaps this \"blah\" feeling isn't a sign of failure, but rather a signal that your body and mind genuinely need a pause. You don't have to fix it right now.\n\n**3. Action:** Try drinking a full glass of water slowly, paying attention to the temperature and the feeling of it going down."
+    },
+    {
+      "role": "user",
+      "content": "Oh. Yeah, I guess I could do that. I mean, I've been staring at my laptop all morning, so I probably am dehydrated, I guess. It's just... everything feels like it requires too much effort, you know? Even just getting out of the chair feels like a mountain of effort.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Reflection:** It sounds like the sheer weight of effort feels overwhelming, making even small movements feel monumental right now. That heavy exhaustion is real.\n\n**2. Reframe:** What if we redefine \"effort\"? Instead of focusing on the mountain of getting out of the chair, what if we focused on just the next inch?\n\n**3. Action:** When you're ready, gently roll your ankles or stretch your wrists for 30 seconds. No pressure, just a tiny movement."
+    },
+    {
+      "role": "user",
+      "content": "Okay. I guess I rolled my ankles. It didn't feel like anything, honestly. I mean, it was just... fine. Nothing changed, I guess. It was just a little distraction, maybe?",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Reflection:** It sounds like you feel a little discouraged that the small action didn't result in a sudden, dramatic shift. That sense of 'nothing changing' can be really frustrating.\n\n**2. Reframe:** Perhaps the point wasn't the change, but the act of choosing to move. You showed yourself that you *could* do something, and that counts as success.\n\n**3. Action:** Take two minutes to notice one sound you can hear right now. Just listen, without judging it, and let it be a small anchor."
+    },
+    {
+      "role": "user",
+      "content": "I... I hear the A/C unit humming, I guess. And like, maybe some really faint traffic noise outside. It's just... pretty constant, I guess. Like it's always there, even when I forget about it.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Reflection:** It sounds like you are noticing the steady, reliable rhythm of the world around you\u2014those constant, humming sounds that are always present.\n\n**2. Reframe:** What if those constant sounds are reminders that you are connected to something larger than this moment? You are capable of noticing them, even when you feel disconnected internally.\n\n**3. Action:** Keep breathing slowly, and try to match the rhythm of your exhale to the steady hum of the A/C unit. Let it guide your breath for one minute."
+    },
+    {
+      "role": "user",
+      "content": "It's... kind of soothing, I guess. I guess I didn't even realize I was holding my breath until I focused on it. It's just... hard to remember to actually do that, I guess. I feel kinda tired now, though. Like, the good kind of tired, but still tired.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Reflection:** It sounds like you are experiencing a gentle, restorative exhaustion\u2014a deep tiredness that comes after doing something small for yourself.\n\n**2. Reframe:** Perhaps this feeling of 'still tired' is just your body settling back into a state of rest, and that is exactly what it needed. You did the work of noticing.\n\n**3. Action:** Allow yourself five minutes of genuine stillness. Close your eyes and simply let your shoulders drop away from your ears. No goal, just release."
+    },
+    {
+      "role": "user",
+      "content": "I guess I did. Like, it was weirdly quiet. My shoulders felt heavier, I guess. Like they were finally allowed to just... drop. But now I'm kinda worried, though. Like, what if this feeling of calm just... disappears? I don't know how to keep it, maybe.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Reflection:** It sounds like you are worried about the calm feeling leaving, which is a very natural fear when something good finally arrives.\n\n**2. Reframe:** Perhaps the goal isn't to *keep* the calm, but simply to notice it whenever it shows up. You don't have to fight the feeling; you just have to observe it.\n\n**3. Action:** Write down one word that describes how your body feels right now. Don't think about it, just let the first word come to mind."
+    },
+    {
+      "role": "user",
+      "content": "Hmm. Heavy. I guess that's the word. Just heavy, maybe. But not in a bad way, I guess. Just... settled. Like a weighted blanket, I guess.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.6
+      }
+    }
+  ]
+}

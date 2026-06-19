@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0101",
+  "timestamp": "2026-06-17T16:14:56.032652",
+  "strategy": {
+    "name": "PCT-ACT Resource Bridging (PARB) v1.0",
+    "hypothesis": "By replacing the 'Inferred Bridge' (which leads to pseudo-insight) with a 'Reflection-Value-Connection' sequence, which grounds the conversation in the patient's stated values and current behaviors (PCT/ACT), we will provide concrete, non-interpretive support, thus avoiding the 'pseudo-insight' penalty and achieving a higher score by focusing on demonstrable behavioral change and genuine understanding.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Ethan",
+    "age": 29,
+    "occupation": "Data Entry Clerk",
+    "presenting_issue": "I feel completely overwhelmed and just can't seem to find the motivation to do anything, even the simple things.",
+    "background_story": "My job is incredibly monotonous, and I feel like I'm slowly losing my sense of purpose. I spend most of my evenings scrolling through social media, mostly just watching other people live lives that seem so much better than mine. I just feel this heavy sense of numbness that nothing really matters right now.",
+    "personality": "His responses are sparse and slightly detached. He uses passive language ('I guess,' 'Maybe,' 'It seems like') and frequently trails off. He avoids making eye contact (metaforically) and often sounds resigned or monotone.",
+    "baseline_phq9": 16,
+    "archetype_label": "Isolated Remote Worker"
+  },
+  "scores": {
+    "total_score": 60.5,
+    "raw_score": 60.5,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 45.5/70.0 (VV shift: 0.20, Sym shift: -0.10, DV shift: -0.10) | Brevity Penalty (-15): Therapist turn too long (7 sentences, 105 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Thank you for taking the time to be here today. Please know that this space is completely yours\u2014there is nothing you need to perform, nothing you need to fix, and nothing you need to prove. My only intention is to simply sit with you, listen to you, and help reflect back what I hear, so that you feel truly seen.\n\nWhenever you are ready, please tell me what brought you in today, or simply tell me how your day has been, even if it was just a series of small, quiet moments. We can start wherever feels safest for you. I'm here to listen."
+    },
+    {
+      "role": "user",
+      "content": "I guess... nothing really brought me in. I just... I haven't felt right, I guess. Just heavy. I don't know what to say.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that with me. It takes real presence and courage to show up when you don't even know what the words are for.\n\nIf I'm hearing you correctly, it's less about a specific event or a single problem, and more about a persistent, physical feeling\u2014a sort of weight, a heaviness\u2014that seems to be settling over everything, making it difficult to find a clear point of entry or a way to articulate what's happening inside. It's like the feeling itself is what's showing up, rather than a story.\n\nIs that close to what you're experiencing right now?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I mean, yeah, I guess that's... pretty accurate. It just feels like that weight, you know? Like everything is kind of muffled.",
+      "somatic_state": {
+        "sympathetic": 0.1,
+        "dorsal_vagal": 0.8,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly draining. To carry a weight that muffles everything\u2014that makes it hard not just to talk, but to *feel* fully, as if the air itself is dense and difficult to move through. It's not a sharp pain, but a pervasive, deep pressure that seems to settle over your whole system.\n\nWhen you say everything is muffled, are you noticing that this weight is concentrated in one specific area, or is it more like a general, ambient blanket that covers everything?"
+    },
+    {
+      "role": "user",
+      "content": "I guess... everywhere. It's just... all over. Like it's just this general thing, nothing specific.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds exhausting. To carry a weight that is not tied to one place or one thing, but permeates every corner of your experience\u2014it suggests that the effort of simply *being* right now requires a constant, generalized expenditure of energy. It's not just a feeling; it's a state of being that seems to settle into the background, making everything feel muffled and heavy.\n\nIf this weight is everywhere, it means it's affecting the small, daily moments too\u2014the quiet moments, the moments of rest, the moments when you might otherwise feel lighter.\n\nWhen this general weight settles in, what does it seem to be doing for you? What does it allow you to *not* feel, or *not* have to think about, even if that comfort comes at the cost of feeling fully present?"
+    },
+    {
+      "role": "user",
+      "content": "I guess it just... makes things quiet. Like, I don't have to feel things too hard. Or think about anything that might be\u2026 too much to deal with, I guess. It's easier like that.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.8,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like this weight, this muffling, is actually serving a protective function for you. It's a way to keep things quiet\u2014a kind of emotional dimmer switch that lowers the volume on intense feelings or overwhelming thoughts. By making everything less sharp, less demanding, it gives you a sense of relief, a feeling that you don't have to process anything that might feel too large or too difficult to handle right now.\n\nIf I were to understand this better, it seems that what you are most deeply valuing right now is a sense of *emotional safety*\u2014the safety that comes from minimizing the risk of feeling overwhelmed.\n\nGiven how much you value that sense of safety and ease, what is one small thing, something very low-stakes, that you could do this week that would allow you to feel a genuine moment of peace, without having to turn down the volume on *all* of your feelings?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know. Maybe... I guess I just watch a movie. One of those low-effort ones. Nothing that requires me to really think about anything, I guess.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That makes perfect sense. Watching a low-effort movie\u2014something that simply allows you to exist in a comfortable, predictable state\u2014is a concrete way to honor that need for ease and safety. It\u2019s a gentle way to let the mind rest without having to actively engage or process anything difficult.\n\nIf we summarize what we've talked about today, it seems that the core gentle current guiding you right now is the deep value of *emotional safety* and *rest*. You are seeking a state of being where the volume is turned down, where the pressure is lifted, and where you don't have to face anything that feels too large or too demanding.\n\nFor the rest of this week, how about we treat this low-effort movie time not as something you *should* do, but as a gentle experiment? A small, self-compassionate test. Could you try dedicating just 45 minutes to one of those low-effort movies, and simply notice what it feels like to let yourself receive that quiet, uncomplicated rest, without judging it for being 'too simple' or not 'deep' enough?\n\nNo expectation attached\u2014just a curious experiment in honoring that need for ease. How does that sound?"
+    },
+    {
+      "role": "user",
+      "content": "I guess... that sounds okay. Maybe I could try that. Just for 45 minutes.",
+      "somatic_state": {
+        "sympathetic": 0.1,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds like a perfectly manageable and kind goal for yourself.\n\nRemember, this isn't about solving the heaviness entirely, or even making it disappear. It's simply about honoring the current need for quiet and safety. When you sit down for those 45 minutes, treat it like a small act of radical self-permission\u2014permission to simply *be* without the pressure of feeling or thinking too much.\n\nPlease be gentle with yourself this week. If the weight feels too heavy to even start the movie, that's okay too. Just acknowledging the weight is enough.\n\nThank you again for showing up and sharing this space with me today. I truly hope that this small experiment brings you a moment of quiet comfort. Take care."
+    },
+    {
+      "role": "user",
+      "content": "Okay. Thanks.",
+      "somatic_state": {
+        "sympathetic": 0.1,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "exp_0051",
+  "timestamp": "2026-06-17T06:01:29.851262",
+  "strategy": {
+    "name": "Empathy-Defusion-Utility Loop (EDUL) v1.0",
+    "hypothesis": "By enforcing a highly structured, three-part response that first validates emotion (PCT), then uses a precise ACT technique (Defusion) to label the thought, and finally asks a targeted 'utility' question (Utility Question) derived from the symptom, we will significantly deepen the perceived clinical depth, exceeding the previous high scores by providing a measurable, layered structure.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Kian",
+    "age": 35,
+    "occupation": "Forestry Worker",
+    "presenting_issue": "I feel constantly wired, like I'm waiting for the next bad thing to happen, and it's exhausting.",
+    "background_story": "I live on the reserve, but I feel like I'm always standing on the edge of something. My parents always talked about the past, the things that were taken, the times they had to leave everything behind. I just feel this heaviness in my chest, like I'm carrying all of their unspeakable grief. Sometimes, when things get loud or unpredictable, my body just freezes up, and it feels like it's refusing to move.",
+    "personality": "Reserved, skeptical, and deeply grounded. Kian speaks in metaphors related to the land, often pausing to look away or focus on a point in the room before answering. He uses humor sparingly, often in self-deprecating ways, but his underlying tone is one of weary cynicism toward authority. He will test boundaries by asking pointed, tangential questions about the therapist's own background, the clinic's funding, or the history of the land the clinic sits on, rather than discussing himself directly. He expects to be treated as a community member, not a diagnosis.",
+    "baseline_phq9": 17,
+    "archetype_label": "Intergenerational Trauma \u2014 First Nations"
+  },
+  "scores": {
+    "total_score": 67.5,
+    "raw_score": 67.5,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 52.5/70.0 (VV shift: 0.40, Sym shift: -0.30, DV shift: 0.10) | Brevity Penalty (-15): Therapist turn too long (5 sentences, 89 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "**Validation:** It sounds incredibly painful to feel like one moment of difficulty defines your entire worth, and that feeling of deep disappointment is completely understandable.\n\n**Cognitive Reframe:** Let's pause on the idea that one event proves permanent incompetence. Can we separate the specific action (the presentation) from your overall identity? What evidence do you have that contradicts this global statement?\n\n**Utility Question:** If you truly believed this negative thought\u2014that you are incompetent\u2014what might you be trying to prevent or prepare yourself for by holding onto that belief right now?"
+    },
+    {
+      "role": "user",
+      "content": "You keep asking for proof, for evidence. Like I'm some sapling you gotta measure to see if it'll survive the next storm. What about the ground underneath us? Does the history of this land count for anything in your little 'evidence' collection?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validation:** It makes perfect sense that you feel frustrated when it seems like I\u2019m only focusing on the immediate, measurable outcome, ignoring the deep history and context you carry.\n\n**Cognitive Reframe:** If we shift the concept of \"evidence,\" perhaps we can look at it not as proof of failure, but as proof of resilience. What elements of your \"ground\"\u2014your past experiences, wisdom, or strength\u2014are still intact, even if the surface seems damaged?\n\n**Utility Question:** When you resist the idea of evidence so strongly, what are you protecting? What does holding onto the belief that your history is everything help you keep safe right now?"
+    },
+    {
+      "role": "user",
+      "content": "It's all just layers, isn't it? Like old bark. You keep trying to strip it back to find something 'better,' but you never see the strength in the layers themselves. I'm just tired. Just trying to remember which way the wind was blowing before you started talking about 'resilience.'",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validation:** It sounds profoundly draining to feel like your accumulated wisdom\u2014all those layers\u2014are being viewed as something that needs to be analyzed or dismantled, and that exhaustion is real.\n\n**Cognitive Reframe:** If we view those layers not as weight, but as a protective history, what does that accumulated strength allow you to know about yourself that a fresh start could never teach? The layers are not the problem; they are the story.\n\n**Utility Question:** When you feel this level of fatigue, what is the most important thing your body or mind is trying to conserve energy for? What are you protecting yourself from having to face right now?"
+    },
+    {
+      "role": "user",
+      "content": "You talk about strength like it's something you can just pick up out of the dirt. I don't know what I'm protecting, but it feels like I'm supposed to be guarding something you can't even see.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validation:** It sounds incredibly overwhelming to feel like you are tasked with guarding something so invisible\u2014a burden that is hard to name, let alone defend against.\n\n**Cognitive Reframe:** Instead of focusing on *what* you are protecting, let's look at the feeling of guarding itself. What does the act of \"guarding\" tell you about the perceived threat level in your life right now?\n\n**Utility Question:** If you allowed yourself to put down the guard for just a moment, what is the scariest thing you imagine might happen?"
+    },
+    {
+      "role": "user",
+      "content": "If I let it down... I don't know. Maybe I just fall. And I don't know if I'd know how to get back up.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validation:** That fear of falling is a deep, primal fear, and it makes perfect sense that when you feel so depleted, the thought of release feels synonymous with losing control.\n\n**Cognitive Reframe:** When we think of \"falling,\" we often assume it's a sudden, uncontrolled plummet. But what if falling is simply a temporary pause, a change in direction, or a necessary moment of rest, rather than a final destination?\n\n**Utility Question:** If falling were not a catastrophic end, but simply a momentary slowing down, what would that pause allow you to notice about your current physical or emotional environment?"
+    },
+    {
+      "role": "user",
+      "content": "I just feel the weight. Like the kind of weight that sinks into your bones and makes every single step up feel like hauling a huge log through wet mud.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validation:** It sounds like you are carrying an immense, persistent burden\u2014a kind of exhaustion that isn't just mental, but deeply physical and bone-aching.\n\n**Cognitive Reframe:** Instead of focusing on the weight itself, which feels so heavy, can we look at the *effort* of carrying it? What does the act of hauling that log teach you about your current capacity, separate from the weight's actual size?\n\n**Utility Question:** If you were to momentarily set the weight down, what is the immediate, underlying feeling\u2014the emotion or the thought\u2014that you fear would rush back in to fill the vacuum?"
+    },
+    {
+      "role": "user",
+      "content": "It's not a feeling. It's... nothing. Just this quiet, empty space, like the valley floor right after the forest clears out. It's just quiet.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validation:** It sounds like confronting that quiet void is terrifying, because \"nothing\" feels less like a peaceful space and more like a loss of definition\u2014a place where your usual anchors are gone.\n\n**Cognitive Reframe:** If we look at this \"nothing,\" perhaps it's not an absence, but a neutral space\u2014a blank canvas. What if that quiet emptiness isn't a vacuum, but the necessary pause needed for something else, something quieter, to finally be heard?\n\n**Utility Question:** If this quiet space were a room, what might you notice about the temperature, the light, or the echoes? What does this \"nothing\" allow you to finally hear that the weight was muffling?"
+    },
+    {
+      "role": "user",
+      "content": "It's just a low hum, I guess. Like the deep sound you hear when the wind moves through the highest canopy, when everything else has stopped. It's constant, but it's not loud.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.5
+      }
+    }
+  ]
+}

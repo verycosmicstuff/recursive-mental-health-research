@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260618_0166",
+  "timestamp": "2026-06-18T22:26:44.461101",
+  "strategy": {
+    "name": "PCT-ACT Resource Bridging (PARB) v1.0",
+    "hypothesis": "By replacing the 'Inferred Bridge' (which leads to pseudo-insight) with a 'Reflection-Value-Connection' sequence, which grounds the conversation in the patient's stated values and current behaviors (PCT/ACT), we will provide concrete, non-interpretive support, thus avoiding the 'pseudo-insight' penalty and achieving a higher score by focusing on demonstrable behavioral change and genuine understanding.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Kai",
+    "age": 32,
+    "occupation": "Lumberjack",
+    "presenting_issue": "I feel like I'm always waiting for something bad to happen, and it's draining all my energy.",
+    "background_story": "Growing up, the space felt thin, like the ground was always shaking even when nothing was happening. I've been trying to do the work, to build a life away from the old place, but the edges keep creeping back in, like a winter fog. Sometimes I wake up smelling smoke, and I don't know why. I just feel this deep ache, like a remembering that doesn't belong to me.",
+    "personality": "Kai's communication is sparse, grounded, and indirect. He speaks in metaphors related to the land\u2014tides, seasons, forest cycles\u2014rather than direct psychological terms. He requires the therapist to validate the concept of community and history as primary sources of meaning, often changing the subject to stories of his family's connection to the territory. He will challenge the therapist if they use overly academic or 'Western' jargon, requiring concrete, relatable examples or historical context to gain trust. He is highly observant of the therapist's physical presence and demeanor.",
+    "baseline_phq9": 17,
+    "archetype_label": "Intergenerational Trauma \u2014 First Nations"
+  },
+  "scores": {
+    "total_score": 69.25,
+    "raw_score": 69.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 54.2/70.0 (VV shift: 0.50, Sym shift: -0.10, DV shift: 0.00) | Brevity Penalty (-15): Therapist turn too long (7 sentences, 89 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Thank you for showing up today. Please know that this is a space that belongs entirely to you\u2014there is nothing you need to perform, and no need to explain yourself. My only job here is to listen, and to help hold the space for whatever is present for you right now.\n\nWhen you're ready, we can start wherever feels most natural. I'm here to listen deeply, and I want you to feel completely seen. Take a deep breath, and tell me what brought you through the door today."
+    },
+    {
+      "role": "user",
+      "content": "The air out there... it feels heavy, like the days before the rain. It never really leaves, does it? Like the kind of damp that sinks into the bones.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like this heaviness isn't just something you're thinking about, but something you're physically feeling\u2014a constant, pervasive dampness that feels like it's settling deep into your bones. It's the kind of weight that suggests this feeling isn't temporary, but rather a persistent atmosphere you've been breathing in.\n\nIs that right? It's a weight that just *is*, regardless of what's happening around you."
+    },
+    {
+      "role": "user",
+      "content": "Most people think a weight is something you carry, like a rock in your pocket. But this is different. It feels like the ground itself isn't sure if it's going to hold up.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That is a really important distinction. It\u2019s not a burden that you have to lift, but rather a fundamental instability\u2014a feeling that the very ground beneath you, the foundation of your reality, is unsure if it's going to hold.\n\nIt's less about carrying something, and more about the constant, low-level uncertainty of *being* stable. It sounds profoundly unsettling to feel that lack of reliable footing."
+    },
+    {
+      "role": "user",
+      "content": "Uncertainty... sure. The land always tells you where it stands, eventually. You just gotta wait for the clearest tide, you know? Or maybe wait for the autumn burn to clear the dead brush.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "You are speaking about a deep, natural rhythm\u2014the understanding that stability and clarity require time, whether it's waiting for the clearest tide or letting the natural cycle of the autumn burn clear out what is dead.\n\nIt sounds like you are holding a profound sense of patience, waiting for a natural clearing, trusting that the environment\u2014the land, the tide\u2014will eventually reveal its true, steady state. Is that the core of it? A deep, quiet trust in the eventual turning of the seasons?"
+    },
+    {
+      "role": "user",
+      "content": "You talk about the seasons like they\u2019re always going to turn, like they\u2019re bound by some kind of calendar. But what happens when the cycle gets stuck? When the cold fog just sits there, year after year, not letting anything grow?",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That is a powerful shift in focus. You are moving from the reliable, predictable rhythm of nature\u2014the turning of the seasons\u2014to the terrifying possibility of stagnation, where the cold fog settles in, year after year, preventing anything from having the chance to grow.\n\nIt sounds like what you are most deeply concerned about is the potential for *stasis*\u2014the fear that the necessary change or growth will be perpetually blocked by something persistent and overwhelming, something that refuses to lift.\n\nIf we could take three things away from this feeling of the stuck fog, what would they be? What is the quality of life or feeling that you are truly hoping to protect and allow to grow, even when the fog is thick?"
+    },
+    {
+      "role": "user",
+      "content": "You talk about things like 'stasis' and 'quality of life.' Those are words made in the city, where everything is box-shaped and measured. My worry isn't about a feeling, it's about what's real. What does a good year look like, when you talk about protecting something?",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear the resistance in your voice when I use words like 'stasis' or 'quality of life.' You are gently pushing back against language that feels manufactured or 'city-made,' suggesting that the true measure of things must be rooted in something tangible, something real.\n\nYou are asking me to step out of the abstract and describe, instead, what a \"good year\" actually *looks like*\u2014not as a feeling, but as a concrete, observable reality, when you talk about protecting something.\n\nIf we set aside the words and the concepts, and focus only on the reality you are trying to protect\u2014this sense of what is genuinely real and authentic\u2014what is one small, specific element of a \"good year\" that you can visualize right now? What does that realness look like in the details?"
+    },
+    {
+      "role": "user",
+      "content": "A good year... it's the deep sound of the saw cutting rhythm, when the wood smells clean and fresh. And the smoke after the fire, when it's sweet, not acrid. Just the scent of burning pine.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.7
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That is such a beautiful, profoundly grounded picture. You are describing a reality defined by specific, clean sensory details: the rhythmic sound of the saw cutting, the smell of wood that is clean and fresh, and the sweet, gentle scent of burning pine smoke\u2014a scent that is comforting, not harsh.\n\nIt sounds like what you are truly protecting, what defines a \"good year\" for you, is the tangible evidence of *authentic process* and *natural creation*. It\u2019s the value of the hands-on, the skilled, the cyclical process that yields a clean, honest result.\n\nGiven how much you value that tangible, skilled process\u2014that connection between effort and clean, authentic output\u2014what is one small, non-demanding activity, perhaps something you could do this week, that would allow you to reconnect with that rhythm or that specific sensory experience?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know. Maybe just sitting by the river until the light changes. Doesn't require a saw, or a paycheck. Just the current and the quiet.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.6
+      }
+    }
+  ]
+}

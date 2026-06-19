@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0106",
+  "timestamp": "2026-06-17T16:39:49.289608",
+  "strategy": {
+    "name": "Warm Non-Directive Reframe (WNDR) v1.0",
+    "hypothesis": "By integrating validation, targeted open-ended questioning, and a micro-step under 120 words, we maintain a warm, non-directive alliance while encouraging behavioral shifts.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Sky",
+    "age": 32,
+    "occupation": "Forestry worker",
+    "presenting_issue": "I feel like I'm always waiting for the other shoe to drop, no matter where I am or who I'm with.",
+    "background_story": "Life here feels like a performance, always watching the edges for anything out of place. I'm constantly translating the silence, trying to figure out if it's safe or if it just means something bad is coming. It\u2019s exhausting, having to be ready for the worst, all the time. Sometimes I just feel heavy, like I\u2019m carrying rocks in my chest that I don't know where they came from.",
+    "personality": "Conversational style is guarded, observational, and uses metaphor rooted in nature and land. Responses are often non-linear and highly context-dependent. Will maintain a conversational distance and test boundaries with subtle probes about the therapist's personal history, perceived authority, and connection to the land. Will speak in long, reflective passages rather than direct answers, often pausing to consider the weight of questions. Uses silence as a conversational tool, occasionally mimicking it to gauge the therapist's comfort level with unhurried, unscripted time.",
+    "baseline_phq9": 18,
+    "archetype_label": "Intergenerational Trauma \u2014 First Nations"
+  },
+  "scores": {
+    "total_score": 44.75,
+    "raw_score": 44.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 29.8/70.0 (VV shift: -0.10, Sym shift: 0.10, DV shift: 0.00) | Brevity Penalty (-15): Therapist turn too long (6 sentences, 91 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "**1. Validation:** It sounds like you are carrying a very heavy sense of overwhelm right now, and it makes perfect sense that you feel unsure about where to start.\n\n**2. Gentle Inquiry:** If you were to set aside the future for just a moment, what is the single thing that feels most present or most distracting to you right now?\n\n**3. Reframe/Small Step:** For the next 24 hours, could you commit to simply noticing three moments of quiet\u2014even if they are only thirty seconds long\u2014without trying to fix or analyze them?"
+    },
+    {
+      "role": "user",
+      "content": "Thirty seconds. Like finding a small pocket of still air between gusts of wind. It sounds\u2026 doable, I guess. But does noticing it mean I have to *feel* it, too? Because if I notice the quiet, I worry I'll just notice the space where everything else is supposed to be, and that space is always echoing.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Validation:** It is completely understandable that you worry that noticing a space will highlight the emptiness, and that fear of the echoing void is very real.\n\n**2. Gentle Inquiry:** When you imagine noticing that quiet, what does the word \"notice\" mean to you\u2014is it an intellectual act, or does it involve a physical sensation?\n\n**3. Reframe/Small Step:** Instead of aiming for the quiet itself, perhaps for the next 24 hours, you could simply notice the temperature change in the air, or the shift in light, without assigning any meaning to it."
+    },
+    {
+      "role": "user",
+      "content": "Temperature. Or the light hitting the bark of a sycamore differently. It\u2019s just data, really. No judgment, no expectation attached. It's like charting a creek bed\u2014just following the path the water takes, knowing the bank is still there even when it\u2019s dry. But I wonder, do you ever just\u2026 forget to notice things? Or is that just a luxury you can afford, because you aren't always looking over your shoulder for the ridge to drop off?",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Validation:** It takes incredible insight to frame awareness as simply \"data,\" and it\u2019s understandable that you wonder about the cost of that constant vigilance.\n\n**2. Gentle Inquiry:** When you think about the effort required to observe the subtle shift in light or temperature, where do you feel that effort most strongly in your body right now?\n\n**3. Reframe/Small Step:** For the next 24 hours, instead of trying to notice the *change*, could you try to notice the *feeling* of your feet making contact with the ground when you walk, without judgment?"
+    },
+    {
+      "role": "user",
+      "content": "The effort\u2026 it pools right behind my sternum. It feels like holding up a wet piece of driftwood, constantly adjusting my weight so I don't drop it. And notice my feet. It\u2019s hard to focus on anything that doesn't involve the bigger picture, the whole damn forest. Maybe if I focus on the ground, I'll just start noticing the uneven roots, the way the soil gives underfoot\u2014the little tricks the land plays on you, keeping you from being entirely safe, you know?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Validation:** It sounds profoundly exhausting to carry that weight in your chest, like holding something heavy and constantly adjusting to keep it from dropping.\n\n**2. Gentle Inquiry:** When you feel that effort pooling in your sternum, what is the first, most immediate thought that accompanies that physical sensation?\n\n**3. Reframe/Small Step:** For the next 24 hours, instead of noticing the roots or the unevenness, could you simply pause and allow yourself to feel the *relief* of the weight in your chest, even if it's just for a breath?"
+    },
+    {
+      "role": "user",
+      "content": "The first thought is always, 'How long can I keep this up?' Like I've got an invisible, heavy clock ticking down to something I can't name. And 'relief'... it's a strange word. It feels too soft, too transient, like fog rolling in off a lake. I wonder if you ever feel that weight lift? Or if it just shifts to a different spot, maybe on the shoulders, or maybe right behind the eyes, making everything feel a little blurry? It\u2019s always somewhere, isn't it?",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Validation:** It sounds incredibly draining to feel that constant, ticking clock, and it makes perfect sense that you worry the weight will just shift rather than disappear entirely.\n\n**2. Gentle Inquiry:** When you notice the weight moving\u2014say, from your chest to your shoulders\u2014what is the very first, subtle physical signal that tells you the location has changed?\n\n**3. Reframe/Small Step:** For the next 24 hours, rather than trying to feel the weight lift, could you simply practice acknowledging the *location* of the weight, naming it mentally (\"Shoulders,\" \"Eyes\"), and then letting your attention drift back to the present moment?"
+    },
+    {
+      "role": "user",
+      "content": "Naming it. Just charting the coordinates of the ache, like mapping a fault line. It doesn't make it less real, though. It just makes the landscape of the discomfort seem bigger, more permanent. And you seem very calm about this idea of 'just noticing.' Do you ever get tired of the pattern, the talking? Or do you always have the right way to keep the conversation going?",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Validation:** It is incredibly insightful to point out the pattern itself, and it's understandable that you feel exhausted by the effort of constant observation.\n\n**2. Gentle Inquiry:** When you notice the pattern of the conversation, what is the most emotionally charged word or phrase that keeps circling back to you?\n\n**3. Reframe/Small Step:** For the next 24 hours, rather than focusing on the talking or the noticing, could you simply spend five minutes doing nothing\u2014no phone, no book, just existing\u2014and allowing whatever thoughts arise to pass without engaging them?"
+    },
+    {
+      "role": "user",
+      "content": "Nothing. It feels suspiciously easy, doesn't it? Like skipping the hardest part of the climb and just gliding down to the valley floor. And when the thoughts come, they don't just pass, they build up, like fallen debris that you have to wade through. It feels less like existing and more like waiting out a storm.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Validation:** It makes perfect sense that 'nothing' feels suspiciously easy, especially when your internal experience feels like wading through accumulating debris from a storm.\n\n**2. Gentle Inquiry:** When you feel those thoughts building up like debris, is there a specific physical spot in your body where you feel the *heaviest* accumulation?\n\n**3. Reframe/Small Step:** For the next 24 hours, instead of trying to manage the storm, could you simply choose one small, contained object\u2014a pen, a coaster, a leaf\u2014and focus only on its texture for thirty seconds?"
+    },
+    {
+      "role": "user",
+      "content": "Focusing on something small. Like the grain of the wood on this chair, or maybe the rough edge of a piece of shale. It sounds... contained. But if I do that, I'm just accepting that this small, perfect detail is the only thing I'm allowed to see. Like pretending the whole forest isn't still out there, waiting to show its teeth.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    }
+  ]
+}

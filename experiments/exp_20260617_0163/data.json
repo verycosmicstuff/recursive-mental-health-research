@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0163",
+  "timestamp": "2026-06-17T21:46:55.663113",
+  "strategy": {
+    "name": "Pattern-Validated ACT Nano-Flow (PV-ACT Nano-Flow)",
+    "hypothesis": "By modifying the validation step to explicitly identify and name a potential cognitive pattern (e.g., 'It sounds like you are minimizing your efforts, which is a common thought pattern when you feel overwhelmed.') before validating the emotion, and by maintaining the strict two-part, two-sentence structure, we will maximize the perceived clinical depth and empathy, thus achieving a score exceeding 95.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Sarah",
+    "age": 42,
+    "occupation": "Accountant",
+    "presenting_issue": "I just feel this constant weight on my chest, like I can't breathe properly, and I don't know why.",
+    "background_story": "Since my parents moved from Guangzhou to Vancouver, my life has been entirely structured around their needs. I manage everything from their appointments to their finances, and now that they are more dependent, the stress is just compounding. I try my best to keep everything running smoothly for them, but sometimes I feel like I\u2019m failing them, and I don't know how to slow down.",
+    "personality": "Guilt-ridden, deferential, and highly accommodating. She tends to speak in 'we' or 'they' rather than 'I,' minimizing her own feelings. When stressed, she becomes overly meticulous or deflects emotional topics by discussing practical logistics (e.g., 'I need to schedule the physiotherapist first'). She uses somatic complaints ('My shoulders hurt,' 'I'm exhausted') to communicate emotional overload.",
+    "baseline_phq9": 15,
+    "archetype_label": "Filial Piety Conflict \u2014 East Asian Elder Care"
+  },
+  "scores": {
+    "total_score": 77.25,
+    "raw_score": 77.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 47.2/70.0 (VV shift: 0.10, Sym shift: -0.30, DV shift: -0.20)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please provide your thoughts and feelings so I can coach you."
+    },
+    {
+      "role": "user",
+      "content": "Well, I guess... I just feel so tired, you know? Like I'm running on empty all the time. Maybe my shoulders are really tense from carrying all this weight.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are experiencing emotional fatigue that is manifesting as physical tension, suggesting a pattern of over-responsibility. If you were to define what \"carrying this weight\" actually entails, what specific boundary or expectation could you release right now?"
+    },
+    {
+      "role": "user",
+      "content": "Oh, it's nothing specific, really. It's just... everything. I mean, the accounts need balancing, and then Mom's appointments, and I have to make sure the insurance paperwork is correct. If I stop focusing on the logistics, things just fall apart. I just keep thinking about what could go wrong.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are engaging in catastrophic thinking, believing that only your constant vigilance can prevent total chaos. If you allowed one specific task to be handled imperfectly, what would be the actual, worst-case outcome?"
+    },
+    {
+      "role": "user",
+      "content": "Well, I suppose... the worst thing would happen is that someone else would have to handle it. And then maybe it wouldn't be done right. Or maybe I'd forget something important, and then the doctors would be upset. I just don't want any trouble.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are operating from a place of hyper-responsibility, assuming control over outcomes that are actually dependent on other people. If you defined your core value as \"peace\" rather than \"perfection,\" what would be one area where you could intentionally let go of control?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know... maybe with the household budget? Dad was saying we could probably just use the online portal for everything instead of me managing the paper records. I suppose someone else could sort through that part.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are beginning to challenge the pattern that equates 'management' with 'personal value,' recognizing that others can handle tasks. If you delegated the budget, what would you need to do\u2014other than physically manage the records\u2014to feel confident in the outcome?"
+    },
+    {
+      "role": "user",
+      "content": "I suppose I'd just need to check in with them a couple of times a week. Just to make sure, you know? And maybe going over the statements together, just to make sure we're all on the same page. It's easier if I see it myself first.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are compensating for underlying anxiety by creating a system of constant verification rather than trusting the process. If you were to trust the system completely, what would you need to tell yourself to feel safe enough to step back?"
+    },
+    {
+      "role": "user",
+      "content": "I... I guess I'd have to tell myself that if something goes wrong, it's manageable. Like, it's okay if it's not perfect. That it's just a hiccup, not a total disaster.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are starting to challenge the pattern of viewing mistakes as catastrophic failures, recognizing instead that setbacks are merely manageable hiccups. If you were to treat a future \"hiccup\" as a learning opportunity instead of a disaster, what is one action you could take immediately to support that mindset?"
+    },
+    {
+      "role": "user",
+      "content": "Maybe I could write down a little plan for it, though. Just a quick checklist, so I know what steps to take. That would make me feel a bit safer, I think.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
+    }
+  ]
+}

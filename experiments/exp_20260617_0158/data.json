@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0158",
+  "timestamp": "2026-06-17T21:21:03.622194",
+  "strategy": {
+    "name": "Maximum Density PCT-ACT Nano-Flow (MD-ACT)",
+    "hypothesis": "By enforcing a precise structure of (1) highly interpretive validation (PCT/CBT overlap, identifying a pattern or distortion) and (2) a single, future-oriented ACT question, limited to a maximum of two sentences (approx. 40-50 words), we will maximize the measured clinical depth (Semantic Depth) while eliminating the Brevity Penalty, allowing us to exceed the current high score of 91.25.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Chloe",
+    "age": 29,
+    "occupation": "Marketing Coordinator",
+    "presenting_issue": "I feel like I'm constantly vibrating with anxiety and don't know how to be myself without worrying everyone will think I'm failing.",
+    "background_story": "Since I was little, I felt like I had to perform for everyone to be liked. I've spent my whole adult life perfecting the 'perfect' version of myself\u2014the organized, calm, capable friend/employee. Recently, I realized how much of my life is built on other people's expectations, and just the idea of dropping that act is terrifying. I feel like I'm standing on the edge of a cliff, knowing I need to jump, but scared of the fall.",
+    "personality": "High-energy, rapid-fire, prone to emotional intensity and tangents. Starts conversations by over-explaining themselves and preemptively apologizing for the perceived burden. Needs frequent, explicit validation ('It makes sense that you feel overwhelmed' rather than just 'That's tough'). Gets visibly distressed if the therapist is quiet or seems neutral, interpreting silence as confirmation that they are annoying or wrong.",
+    "baseline_phq9": 14,
+    "archetype_label": "ADHD Rejection Sensitivity \u2014 Unmasking Crisis"
+  },
+  "scores": {
+    "total_score": 53.5,
+    "raw_score": 53.5,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 38.5/70.0 (VV shift: 0.00, Sym shift: -0.20, DV shift: 0.00) | Third-Person Penalty (-15): Used 'user'",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "*Please provide the user's statement or feeling so I can guide you.*"
+    },
+    {
+      "role": "user",
+      "content": "I mean, I'm sorry this is so hard to explain, I know I ramble and I probably sound really dramatic, but it's just... it's this feeling like I'm always running, you know? Like I have to keep moving or I'm going to fall over or something.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are carrying a profound sense of pressure, viewing stillness as a threat rather than a rest, which suggests a deep need for stability and security. If the core value you are trying to protect is safety, what small, intentional pause could you commit to this week that honors that need without requiring constant forward movement?"
+    },
+    {
+      "role": "user",
+      "content": "Oh my god, I don't know, because the idea of *doing* nothing feels like cheating or like I'm going to miss something crucial, and it just makes me feel more anxious, which is the whole point! Maybe just five minutes, but five minutes feels like a lifetime of exposure, you know? Like I'm going to suddenly get hit by a wave of realization that I't actually *should* be doing something else.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are equating rest with failure, suggesting that your sense of self-worth is tied to constant productivity and action. If you were to redefine 'enough' not by what you achieve, but by what you truly value, what small moment of stillness would feel like sufficient and safe?"
+    },
+    {
+      "role": "user",
+      "content": "See, that is exactly it! 'Sufficient' and 'safe'\u2014it sounds so easy to say, but when I actually think about it, it feels... irresponsible. Like if I just sit and think about what I 'truly value,' I'm going to end up with some vague, unachievable ideal, and then I'm going to disappoint you and feel worse. I really shouldn't have brought this up.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are criticizing yourself for the very vulnerability required to seek change, believing that self-discovery must result in a perfect, actionable plan. If we set aside the pressure of finding a grand answer, what is one small act of self-compassion you could offer yourself right now that acknowledges your effort, regardless of the outcome?"
+    },
+    {
+      "role": "user",
+      "content": "I... I guess maybe just letting myself drink a full glass of water, without checking my phone or planning out what I'm going to do next. It's such a tiny thing, I feel stupid admitting it, but it seems like the only thing that doesn't have an 'outcome' that I can control. I hope that's not too weird.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That act of simply drinking water without distraction is a powerful demonstration of honoring the value of *presence*, proving that deep rest doesn't require grand gestures. If you could commit to integrating this micro-moment of non-doing into your daily routine, what specific time or transition point would make that small act of self-care most accessible?"
+    },
+    {
+      "role": "user",
+      "content": "Um, probably right when I get home from work, before I even unpack my bag. It's that moment where everything suddenly stops and I just have to switch gears. I keep thinking, 'Don't talk to anyone, just water.' But then I always get distracted by something I need to remember, or someone texting me, and I just forget.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the transition period at the end of your day is a highly vulnerable time, where external demands constantly pull you away from your intention of self-care. If remembering that simple act of drinking water is difficult, what external structure or physical cue could you implement to make that boundary non-negotiable and reliable?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know if I can change anything because I feel like I'm constantly failing at maintaining boundaries already. Like, if I set a rule, I'll break it in five minutes and then I'll feel like a total failure all over again. It's just exhausting trying to *remember* to be good at self-care, isn't it?",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are holding yourself to an impossible standard, viewing self-care not as a practice, but as a perfect performance that, when imperfect, confirms your sense of failure. If the goal were not flawless adherence, but simply practicing self-forgiveness, what is one small, non-judgmental action you could commit to when you inevitably slip up?"
+    },
+    {
+      "role": "user",
+      "content": "I guess maybe... just noticing it, without getting mad at myself for forgetting. Like, just thinking, 'Okay, I forgot to drink the water, and that's fine.' It sounds so ridiculously basic, but it's the only part that doesn't involve me trying to fix it or make it 'better' right away.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
+    }
+  ]
+}

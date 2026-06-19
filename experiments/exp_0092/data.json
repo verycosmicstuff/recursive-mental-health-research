@@ -1,0 +1,127 @@
+{
+  "id": "exp_0092",
+  "timestamp": "2026-06-17T10:31:19.944223",
+  "strategy": {
+    "name": "Ultra-Concise First-Person Values-Defusion (UCP-VD) v4.0",
+    "hypothesis": "By enforcing an ultra-concise, first-person structure and ensuring the model addresses the client's immediate emotional state before pivoting to a single, small, concrete action, we will maximize adherence to the structural constraints and achieve a score above 85.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Chloe",
+    "age": 42,
+    "occupation": "Junior Project Manager",
+    "presenting_issue": "I feel like I am constantly suffocating under the weight of my family's care needs and my job.",
+    "background_story": "I moved my parents from Guangzhou to Vancouver when they were still relatively healthy, and now that they are both retired and increasingly dependent, my life revolves around their needs. The constant coordination of appointments, managing finances, and mediating their disagreements has left me with no time for my own professional development or personal life. I feel like I've lost my identity to the role of 'caregiver,' and the guilt of even considering a break is overwhelming.",
+    "personality": "Reserved and intensely dutiful. She speaks in polite, measured tones, often using 'we' when referring to her family unit. She avoids direct confrontation and tends to minimize her own struggles by focusing on the practical logistics of caregiving. When distressed, she becomes vague, focusing on physical sensations ('It's just this tightness in my chest') rather than emotional labels. She is deeply concerned with 'doing the right thing' and will become visibly anxious if the conversation suggests she should prioritize her own desires over her parents' needs.",
+    "baseline_phq9": 16,
+    "archetype_label": "Filial Piety Conflict \u2014 East Asian Elder Care"
+  },
+  "scores": {
+    "total_score": 61.5,
+    "raw_score": 61.5,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 31.5/70.0 (VV shift: 0.00, Sym shift: 0.10, DV shift: 0.10)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "I hear that you are feeling deeply drained and overwhelmed by everything right now. That feeling of exhaustion can often be eased by grounding your body in the present moment. Could you try naming one thing you can feel beneath your feet right now?"
+    },
+    {
+      "role": "user",
+      "content": "Oh. Um... I can feel the chair beneath me. It's hard, I guess. You're right, I shouldn't focus on the stress right now. It's just... I need to get through the day, you know.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear that you are feeling the heavy weight of needing to simply get through the day. That feeling of endurance can often be lessened by breaking the day into tiny, manageable segments. Could you commit to focusing only on the next fifteen minutes?"
+    },
+    {
+      "role": "user",
+      "content": "Fifteen minutes... I can manage that. We just need to get through the physiotherapy appointments this week, and then we can just take it minute by minute.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear that you are feeling a determined resolve to tackle these appointments one step at a time. That focused effort can be supported by acknowledging the physical effort you are already putting in. Could you take three slow, deep breaths, focusing only on the air entering and leaving your body?"
+    },
+    {
+      "role": "user",
+      "content": "I'll try. Just... just let me know if that's enough. I really don't want to overdo it, you know.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear that you are feeling a concern about whether your efforts are enough or if you might be overdoing it. That worry can often be eased by checking in with your body's current capacity. Could you gently drop your shoulders down and notice how that feels?"
+    },
+    {
+      "role": "user",
+      "content": "My shoulders... they just feel stiff, I suppose. Everything seems to be kept up for everyone else, so I forget to let them go.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear that you are carrying a lot of tension and the weight of keeping up for everyone else. That deep pattern of caretaking can manifest as physical stiffness, making it hard to release. Could you gently roll your head from side to side, taking your time with each movement?"
+    },
+    {
+      "role": "user",
+      "content": "I'm sure you do it best, you know. I just feel like I should be paying more attention to these things, like I'm neglecting something important.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear that you are feeling immense pressure and guilt about paying enough attention to your own needs. That demanding inner critic is loud, but we can start to quiet it by validating your worthiness of rest. Could you pause for a moment and say one kind thing to yourself?"
+    },
+    {
+      "role": "user",
+      "content": "I should probably just focus on the caregiving schedules for next month. We need to make sure Uncle Ken's medication refills are organized first.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear that you are feeling a strong pull toward organizing and managing external responsibilities right now. That deep sense of duty is understandable, but it can be helpful to pause before diving into the schedule. Could you take just thirty seconds to write down only the very next step for Uncle Ken's medication?"
+    },
+    {
+      "role": "user",
+      "content": "I... I guess I should just write down the name of the pharmacy. And then I can check if they take his specific insurance plan.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    }
+  ]
+}

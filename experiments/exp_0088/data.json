@@ -1,0 +1,127 @@
+{
+  "id": "exp_0088",
+  "timestamp": "2026-06-17T10:08:28.195437",
+  "strategy": {
+    "name": "Hyper-Concise ACT-CBT Value Loop (HACV-L) v1.0",
+    "hypothesis": "By enforcing a maximum of three short sentences, using first-person empathetic language, and replacing general 'reflection' with a specific ACT Defusion technique followed by a concrete, value-aligned micro-action, we will maximize the structural compliance and perceived clinical utility, aiming to surpass the previous best score of 91.25.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Aarav",
+    "age": 31,
+    "occupation": "Freelance Graphic Designer / Delivery Driver",
+    "presenting_issue": "I feel completely overwhelmed by the pressure to choose between my passion for the library and my family's expectations for my career.",
+    "background_story": "I've been working 12-hour shifts doing deliveries and design work just to save up for the community library project in Ludhiana. It's a huge dream, a way to give back to my community. But every time I talk to my relatives, they just keep bringing up 'what will people say' and telling me I should just take a predictable job at a bank. I feel like I'm failing both my vision and them, and it's exhausting.",
+    "personality": "He speaks with intense passion, using vibrant metaphors related to literature and construction. His tone is often defensive and highly intellectual, particularly when discussing cultural concepts. He struggles to articulate feelings purely in individual terms, preferring to frame his emotional distress as a conflict of duties\u2014duties to his community, his craft, and his family. He will push back strongly on clinical jargon that suggests emotional detachment is the goal.",
+    "baseline_phq9": 14,
+    "archetype_label": "Cross-Border Guilt (Indian Diaspora)"
+  },
+  "scores": {
+    "total_score": 64.0,
+    "raw_score": 64.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 49.0/70.0 (VV shift: 0.10, Sym shift: -0.50, DV shift: -0.10) | Third-Person Penalty (-15): Used 'user'",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please provide the user's prompt so I can generate the response."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I'm standing at the crossroads of a very loud, very complicated intersection. Everyone is pointing me in different directions, and the noise of their expectations... it's deafening. I don't know which path is actually paved for me.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validate & Validate:** It sounds like you are feeling overwhelmed by conflicting external expectations, making your personal path feel unclear.\n\n**Challenge & Challenge:** What core value guides *your* decision, separate from the noise of others?\n\n**Action & Action:** Perhaps one small step is to write down three things you genuinely want, without judgment."
+    },
+    {
+      "role": "user",
+      "content": "But how can I even isolate a 'core value' that isn't already interwoven with my duties? If I ignore the needs of my family, I am destroying the foundation of my own belonging. You can't just rip out the roots of one tree and expect the others to stand upright.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validate & Validate:** It sounds like you are struggling with the perceived impossibility of balancing all your commitments without sacrifice.\n\n**Challenge & Challenge:** What is the minimum necessary effort required to maintain connection without depleting your own resources?\n\n**Action & Action:** Perhaps one small step is to schedule 15 minutes of \"non-negotiable\" time just for yourself today."
+    },
+    {
+      "role": "user",
+      "content": "Fifteen minutes? It sounds like a bandage on a gaping wound. My time isn't a commodity I can just 'schedule' away from a community project and my family's expectations. I feel like I owe them my entire existence, really.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validate & Validate:** It sounds like you are carrying an immense sense of obligation, believing your worth is tied to fulfilling every external expectation.\n\n**Challenge & Challenge:** What evidence do you have that giving yourself space is an act of depletion, rather than preservation?\n\n**Action & Action:** Perhaps one small step is to identify one boundary you could voice gently to a trusted person this week."
+    },
+    {
+      "role": "user",
+      "content": "To suggest that setting a boundary is 'voicing it gently' feels like minimizing the structural load I've been carrying. These aren't little expectations; they are the bedrock of my community's future. I don't know how to simply 'gently' dismantle years of assumed duty.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validate & Validate:** It sounds like you are carrying the immense weight of being the structural support for your community, making change feel impossible.\n\n**Challenge & Challenge:** If the structure requires maintenance, what small input could you give yourself to ensure your own long-term stability?\n\n**Action & Action:** Perhaps one small step is to list three things you currently do *just* for yourself, no matter how small."
+    },
+    {
+      "role": "user",
+      "content": "I... I don't know. Maybe reading a chapter of poetry, or walking to the old banyan tree near the market. But those things feel like luxuries I haven't afforded myself in years, let alone a strategy for my entire life.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validate & Validate:** It sounds like you view self-care as a luxury, rather than the essential maintenance required for your strength and ability to serve.\n\n**Challenge & Challenge:** What would happen to your capacity to care for others if you completely depleted your own reserves?\n\n**Action & Action:** Perhaps one small step is to commit to just five minutes of poetry today, viewing it as necessary fuel, not a reward."
+    },
+    {
+      "role": "user",
+      "content": "Five minutes of poetry... it's not about the poems; it's the pause. It's the moment of unassigned time. I suppose preserving the architect's mind requires some ritualistic downtime, I guess.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validate & Validate:** It sounds like you are recognizing that the pause is not a luxury, but a vital, non-negotiable component of your intellectual strength.\n\n**Challenge & Challenge:** What happens if you treat this downtime as the most critical, mandatory meeting of your week?\n\n**Action & Action:** Perhaps one small step is to schedule this 10-minute \"architect's time\" in your calendar today, treating it as an appointment."
+    },
+    {
+      "role": "user",
+      "content": "If I treat it like a mandatory meeting, okay. Like signing a contract with myself, really. I suppose even a master builder needs to draw up blueprints for the foundation before pouring the cement.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.6
+      }
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "exp_0052",
+  "timestamp": "2026-06-17T06:07:36.680467",
+  "strategy": {
+    "name": "Hyper-Concise Empathy-Defusion-Utility (HCEDU) v1.0",
+    "hypothesis": "By enforcing a strict, ultra-concise three-part structure (Validation, Defusion, Utility Question) and limiting the total response to under 75 words, we will eliminate the Brevity/Length Penalty while maximizing the perceived depth of intervention, aiming to surpass the 91.25 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Sofia",
+    "age": 28,
+    "occupation": "Administrative Assistant",
+    "presenting_issue": "I feel like I'm constantly running on empty, and I don't know where to find the energy to take care of myself.",
+    "background_story": "My life revolves around keeping everyone else from falling apart. Since my dad got hurt a few years ago, I've been the one managing everything, from the bills to reminding my younger siblings to call their friends. It feels like I'm always 'on,' anticipating needs and making sure the household functions smoothly, even when I'm completely exhausted. I feel guilty if I take any time off for myself because it feels like I'm letting the family down.",
+    "personality": "Her tone is deeply dutiful, marked by self-effacement and a pervasive sense of obligation. She speaks with a mix of professionalism and emotional exhaustion, often phrasing her struggles as failures in her ability to serve others. She will use familial examples and deep religious references to explain her self-sacrificial behavior, subtly framing any request for personal space as a failure of duty. She expects validation of her selflessness before discussing personal needs.",
+    "baseline_phq9": 17,
+    "archetype_label": "Eldest Daughter Trap \u2014 Latin American Familismo"
+  },
+  "scores": {
+    "total_score": 62.25,
+    "raw_score": 62.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 47.2/70.0 (VV shift: 0.30, Sym shift: -0.10, DV shift: 0.00) | Brevity Penalty (-15): Therapist turn too long (5 sentences, 86 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "**Empathy:** It sounds incredibly painful to feel like this failure defines your entire professional worth. Please know that feeling overwhelmed is a completely normal response to setbacks.\n\n**Challenge:** When you say you are \"terrible,\" are you viewing this single event as proof of *every* aspect of your competence? Is there any evidence that contradicts this sweeping conclusion?\n\n**Action:** Instead of labeling yourself, what is one specific, manageable skill you demonstrated well in the presentation, or one small change you can commit to for the next attempt?"
+    },
+    {
+      "role": "user",
+      "content": "Oh, I suppose I managed to keep the presentation on track, and I remembered all the statistics. But I know I need to do better; Pastor always says we must strive for excellence. I just wish I could figure out a way to be less of a burden to everyone.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Empathy:** It\u2019s clear you feel immense pressure to meet these high standards, and that desire to not disappoint others is really heavy to carry.\n\n**Challenge:** When you feel like a \"burden,\" are you basing that on objective facts, or is that a feeling of fear about disappointing people? Is it possible that others value your effort, even when it\u2019s imperfect?\n\n**Action:** If we shift focus from \"perfection\" to \"progress,\" what is one small thing you can do today\u2014for yourself\u2014that acknowledges your effort without demanding flawless execution?"
+    },
+    {
+      "role": "user",
+      "content": "Well, I guess I could try to just take five minutes to organize my desk, maybe file some invoices. It\u2019s not really 'for me,' though; I just need to make sure everything is in order for tomorrow.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Empathy:** It sounds like you are highly responsible, and that desire to maintain order and competence in your environment is a natural way to feel in control.\n\n**Challenge:** You mentioned the task isn't \"for you.\" Is it possible that taking time to organize *is* a form of self-care, because it gives you a sense of mastery and calm?\n\n**Action:** How can you reframe filing invoices or organizing your desk not as an obligation for tomorrow, but as a small, intentional act of respect for your own time and focus today?"
+    },
+    {
+      "role": "user",
+      "content": "I suppose... when I think about it, taking care of little things does make me feel a tiny bit less chaotic inside. I just feel like if I don't handle these little details, the whole thing will fall apart for my siblings.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Empathy:** It\u2019s deeply caring of you to feel such a strong sense of responsibility for your siblings' stability and well-being.\n\n**Challenge:** When you predict that the *entire* situation will fall apart, are you viewing this as a certainty, or as a fear? What would need to happen for the situation to truly collapse, and is that prediction based on current evidence?\n\n**Action:** Instead of trying to prevent a massive, distant disaster, what is one small, concrete step you can take *right now* that would actually improve the immediate stability for your siblings?"
+    },
+    {
+      "role": "user",
+      "content": "I... I guess I could text them a reminder to schedule that appointment with the dentist. At least that\u2019s something small that won't fall apart if I don't do it today.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Empathy:** That is a wonderful, concrete step. It sounds like focusing on a manageable task brings you immediate, tangible relief and a sense of control.\n\n**Challenge:** You focused on what \"won't fall apart.\" Is it possible that taking care of these small details *is* the most powerful way to prevent larger issues, proving that your efforts are valuable in themselves?\n\n**Action:** How can you acknowledge the positive impact of this small action\u2014not just on your siblings, but on *you*\u2014to reinforce that feeling of competence and capability?"
+    },
+    {
+      "role": "user",
+      "content": "I suppose I should tell myself that I did a good job today. It just feels like I\u2019ve spent all my energy making sure everyone else was alright.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Empathy:** It is completely understandable that you feel drained; carrying the emotional weight and logistical needs of others requires immense energy.\n\n**Challenge:** When we pour so much into others, we sometimes forget that our own needs matter just as much. Is it possible that taking time for yourself isn't selfish, but necessary fuel that allows you to continue caring for them?\n\n**Action:** What is one non-negotiable, small act of self-care\u2014even if it's just five minutes\u2014that you can commit to doing today, purely for the benefit of your own energy levels?"
+    },
+    {
+      "role": "user",
+      "content": "I... I guess I could try to just sit in the quiet for five minutes. Maybe read a chapter of the Bible. It's not really 'for fun,' though; I need to clear my head so I can be better for everyone else.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Empathy:** It sounds like you view your rest as a necessary resource that must be strategically saved to continue supporting others, and that sense of duty is very strong.\n\n**Challenge:** When you frame rest only as preparation for others, are you missing that the quiet time itself\u2014the reading, the stillness\u2014can be nourishing and beneficial simply because it is *for you*?\n\n**Action:** How can you gently reframe this five minutes of quiet time today, seeing it not as a \"recharge station\" for others, but as a sacred, non-negotiable gift to your own mind?"
+    },
+    {
+      "role": "user",
+      "content": "I know. I guess I just keep thinking that if I treat myself, I'll somehow lose the ability to do the important things for the family. It feels like a trade-off I can't afford to make.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.5
+      }
+    }
+  ]
+}

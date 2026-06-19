@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0149",
+  "timestamp": "2026-06-17T20:33:19.376858",
+  "strategy": {
+    "name": "Deep-Reflective Micro-Intervention (DRMI) v1.0",
+    "hypothesis": "By adopting the DRMI structure (Validate, Refocus on values, Action) in under 5 sentences, we combine emotional safety with action-oriented focus.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Sarah",
+    "age": 34,
+    "occupation": "Marketing Manager",
+    "presenting_issue": "I just feel completely overwhelmed and like I'm constantly failing, even when nothing tangible has gone wrong.",
+    "background_story": "Lately, it feels like I'm running on fumes, always anticipating the next thing that needs to be handled. My job is demanding, and I've taken on so much extra work that I barely have time to eat or sleep properly. I try to keep everything perfect for everyone else, but the pressure is starting to feel like it's crushing me from the inside.",
+    "personality": "She will speak in highly organized, articulate paragraphs, often using professional jargon to mask emotional distress. She tends to minimize her struggles by focusing on practical solutions or attributing her feelings to 'poor work-life balance' rather than deep emotional pain.",
+    "baseline_phq9": 14,
+    "archetype_label": "Overwhelmed Professional"
+  },
+  "scores": {
+    "total_score": 51.75,
+    "raw_score": 51.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 36.8/70.0 (VV shift: 0.00, Sym shift: -0.30, DV shift: 0.20) | Third-Person Penalty (-15): Used 'the client'",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please provide the client's statement or concern so I can apply the Deep-Reflective Micro-Intervention (DRMI) structure."
+    },
+    {
+      "role": "user",
+      "content": "Honestly, I think the core issue is resource allocation. My bandwidth is simply maxed out, and if I don't adjust the scope of my responsibilities, the entire project will fail. I just need a clearer structure for how I'm managing these deliverables.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly stressful to feel like your capacity is maxed out while the weight of the project rests on your shoulders. It seems like what you really value right now is sustainable competence, and the thought of failure is triggering a deep fear of burnout. For the next hour, try writing down three tasks you could *temporarily* delegate or postpone, even if it feels uncomfortable."
+    },
+    {
+      "role": "user",
+      "content": "Delegating feels like it would compromise the quality control necessary for this launch. I mean, I built the entire framework, and I'm the only one who truly understands the nuances. I'll just try to schedule some focused deep work sessions to optimize my output instead.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It's clear how much expertise and dedication you poured into this framework, and your commitment to quality is truly admirable. However, it sounds like the belief that *only* you can maintain this level of quality is fueling the pressure you feel. Instead of optimizing your output, try spending ten minutes listing five specific pieces of documentation or process notes that could be transferred to a teammate."
+    },
+    {
+      "role": "user",
+      "content": "It's not about delegating, it's about streamlining the process. If we can just optimize the workflow and create clearer SOPs, we can distribute the load more systematically. I'm confident that a structured approach will resolve the current resource constraint.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It's evident that you are a meticulous thinker who values systematic efficiency and clear processes immensely. However, it sounds like focusing solely on optimizing the structure might be a way to avoid acknowledging the emotional weight of carrying this entire project. For the next five minutes, step away from the computer and simply write down three things you are looking forward to outside of this project."
+    },
+    {
+      "role": "user",
+      "content": "I don't know if that's productive. My evenings are usually spent reviewing presentations or planning out the next quarter's content calendar. I guess I'll try to allocate some time for exercise, I should really focus on improving my sleep hygiene.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It's understandable that when your mind is focused on deliverables, self-care can feel like a luxury or an interruption. Yet, it sounds like you are subconsciously viewing physical rest as something that only happens *after* the work is done, rather than fueling the work itself. Could you commit to doing just three deep, slow breaths right now, before you plan anything else?"
+    },
+    {
+      "role": "user",
+      "content": "Three breaths... okay. I can do that. I suppose I'll schedule a deep breathing break for 2 PM to reset and refocus.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It\u2019s a wonderful, proactive step to schedule dedicated time for yourself; you are taking ownership of your well-being. However, it sounds like you are treating this necessary break like another item to be scheduled and controlled, which can sometimes add pressure. Instead of scheduling it, try taking one minute right now to notice five distinct sounds around you, grounding you in the present moment."
+    },
+    {
+      "role": "user",
+      "content": "Hmm. I can hear the AC humming, maybe a truck passing outside, and I can hear the clinking of my own pen. It's a lot of random sensory input, honestly. I suppose it's just noise, but I'll make a note of it.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It's impressive how quickly you were able to identify and catalogue those distinct sensory details around you. It seems like you are highly skilled at analyzing and categorizing input, but right now, you might be judging those experiences as \"noise\" rather than accepting them as simply *being*. For the next minute, just listen to the sounds again, and this time, simply label them \"sound\" without adding any judgment or analysis."
+    },
+    {
+      "role": "user",
+      "content": "Okay. I'm focusing. Sound. Sound. Sound. It's just... ambient background noise. Nothing actionable, nothing I need to report on.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.3
+      }
+    }
+  ]
+}

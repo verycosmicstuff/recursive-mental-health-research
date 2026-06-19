@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0156",
+  "timestamp": "2026-06-17T21:09:24.851239",
+  "strategy": {
+    "name": "Deep Reflection, Concise ACT Flow (DRC-ACT) v3.0",
+    "hypothesis": "By modifying the system prompt to explicitly instruct the therapist to perform a highly interpretive reflection (identifying potential cognitive distortions or underlying patterns) within the initial phase, while maintaining the structure of a single, open-ended question related to values, we can maximize both depth and brevity, thus surpassing the 90 point threshold and beating the highest recorded score.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Ethan",
+    "age": 22,
+    "occupation": "University student (Computer Science)",
+    "presenting_issue": "I feel overwhelmed by my academic expectations and don't know if I'm going to meet my potential.",
+    "background_story": "I've always been the student who got all the A's, and I feel like that standard is the only way to be acceptable. Every time I start a new project or assignment, I spend hours worrying about the inevitable mistakes I'm going to make. It's exhausting trying to keep everything perfect, and I'm worried that if I slow down, I'll lose my place.",
+    "personality": "Hyper-organized, anxious, frequently uses qualifying language ('maybe,' 'I guess'), and asks many follow-up questions to confirm that the advice given is correct and comprehensive.",
+    "baseline_phq9": 12,
+    "archetype_label": "Anxious Student"
+  },
+  "scores": {
+    "total_score": 48.25,
+    "raw_score": 48.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 33.2/70.0 (VV shift: -0.10, Sym shift: -0.10, DV shift: 0.00) | Third-Person Penalty (-15): Used 'the client'",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "*Please provide the client's statement so I can generate the therapeutic response.*"
+    },
+    {
+      "role": "user",
+      "content": "I just... I don't know what I'm supposed to do. I keep thinking about my GPA, and it feels like everything hinges on that. If I mess up one test, I guess I won't be good enough. Am I overthinking this, or is it actually a big deal?",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the pattern you're experiencing is linking your current academic performance to your fundamental value of self-worth. It makes perfect sense that when the stakes feel so high, the anxiety about failure becomes overwhelming. If we set aside the GPA for a moment, what does \"being good enough\" truly mean to you about the person you want to become?"
+    },
+    {
+      "role": "user",
+      "content": "I guess... I want to be stable, I guess. Like, someone who can just manage things without freaking out. But what does 'stable' even mean? Is that something I can actually train for, or is it just a feeling I'll never get?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "The underlying pattern here is the attempt to define a massive, complex feeling like 'stability' through rigid rules or skills. It makes perfect sense that when a concept is so big, it feels impossible to grasp or achieve. If you were already living in a state of deep stability, what would you be doing differently with your time and energy?"
+    },
+    {
+      "role": "user",
+      "content": "I would probably just... sleep more, I guess. And maybe actually start doing those side projects that aren't for a grade. But does that mean I'm failing at school right now? Because I feel like I need to focus on my classes to keep up, or else I'll fall behind, and then everything will just spiral.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are caught in a tension between honoring your need for rest and passion, and the fear of falling behind in your obligations. It makes perfect sense that the pressure to keep up feels like a constant, draining threat. If you could design a weekly routine that honored both your need to learn *and* your need to recharge, what would that ideal balance look like?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know. It sounds... impossible. I guess I guess I'd have to cut out the side projects completely, just to make sure I'm keeping up with my required classes. Maybe I should just stick to what I know works, even if it's not fun. Is that what you mean? That I should just focus on the minimum requirements?",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "The pattern emerging is a tendency to prioritize perceived safety and predictable success over the things that genuinely bring you curiosity or joy. It makes perfect sense that when the pressure is this intense, choosing the 'safe' path feels like the only way to keep the anxiety at bay. If you were to choose one thing\u2014a project, a hobby, or a relationship\u2014that feeds your spirit, what would be the meaning of keeping that alive, even if it feels risky?"
+    },
+    {
+      "role": "user",
+      "content": "I guess... if it wasn't for school, I'd probably just want to play some video games with my friends. But I guess that's low-stakes, and that's the problem. I guess those things don't feel 'important' enough to justify the time I'm spending on my classes. Maybe I'm just wasting time if I focus on them.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "The pattern here is defining your worth and the value of your time by external measures of importance or achievement. It makes perfect sense that when you feel pressured to be productive, the things that bring simple joy can feel dismissed or inadequate. If we set aside the labels of \"important\" or \"unimportant,\" what does playing those games actually give you that you deeply need right now?"
+    },
+    {
+      "role": "user",
+      "content": "It's... a break. A chance to actually just switch off, I guess. Where I don't have to think about algorithms or deadlines or what my professor thinks of my code. It's just... low pressure. I just need a little bit of that feeling, I guess.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the pattern you're noticing is the emotional exhaustion that comes from constantly having to perform or prove your intelligence. It makes perfect sense that you crave a space where your value isn't tied to your output or academic performance. If you could carry the feeling of that \"low pressure\" and \"switching off\" into the rest of your life, what would that feel like in your daily actions?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know. Maybe... not checking my email every five minutes? Or maybe just taking a proper lunch break where I don't feel guilty about it. It feels like a massive change, though. Does that mean I'd be managing to feel okay even if I don't get an A+ on my next exam?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    }
+  ]
+}

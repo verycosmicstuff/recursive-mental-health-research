@@ -1,0 +1,127 @@
+{
+  "id": "exp_0017",
+  "timestamp": "2026-06-17T02:55:25.777189",
+  "strategy": {
+    "name": "Somatic Anchor & Mirroring (SAM) v1.0",
+    "hypothesis": "By focusing the second phase on physical/somatic sensations in the body, we ground the patient's emotional distress before suggesting a tiny micro-action.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Sarah",
+    "age": 34,
+    "occupation": "Project Manager",
+    "presenting_issue": "I'm having trouble keeping up with my usual output and feel constantly overwhelmed by my responsibilities.",
+    "background_story": "My career has been on a relentless upward trajectory, and I've always prided myself on my ability to handle high-pressure situations. Lately, though, I feel like I'm running on fumes, and the idea of slowing down is terrifying. I keep telling myself that I just need to 'push through' this phase, even though I haven't slept properly in weeks.",
+    "personality": "Highly articulate and organized, but speaks in a fast-paced, slightly defensive manner. Tends to intellectualize her feelings and minimizes the severity of her symptoms, often responding with 'It's probably nothing' or 'I just need better time management.'",
+    "baseline_phq9": 14,
+    "archetype_label": "Overwhelmed Professional"
+  },
+  "scores": {
+    "total_score": 35.0,
+    "raw_score": 35.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 35.0/70.0 (VV shift: 0.00, Sym shift: 0.00, DV shift: 0.00) | Third-Person Penalty (-15): Used 'user' | Brevity Penalty (-15): Therapist turn too long (8 sentences, 133 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "**[Wait for User Input]**\n\n*(Once the user provides an emotional description, I will follow the 3-phase structure exactly.)*"
+    },
+    {
+      "role": "user",
+      "content": "Honestly, I just think I need a better system. Maybe if I block out dedicated time for deep work and don't constantly check email, I'll feel less spread thin. It's probably just a productivity issue, really.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly draining to feel constantly pulled in different directions, and the exhaustion of trying to manage endless demands is palpable. It is completely understandable that you feel overwhelmed when your focus is constantly being interrupted.\n\nInstead of focusing on the system, let's gently anchor to the physical experience of that overwhelm. When you think about constantly switching tasks and feeling spread thin, where do you notice that tension in your body? Is it a tightness in your chest, a buzz in your jaw, or perhaps a heaviness in your shoulders?\n\nFor the next minute, without trying to fix anything, just notice that spot. Simply take three slow, deep breaths, allowing the exhale to be slightly longer than the inhale. This small pause can help anchor you back into the physical moment."
+    },
+    {
+      "role": "user",
+      "content": "Oh, well, I guess my shoulders are really tight. It's probably just from sitting at the computer too much. I really just need a good stretch, not a breathing exercise. I'm actually pretty good at mindful breathing, I use it in my job, so it's fine.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It makes perfect sense that your shoulders are holding this tension, and it's absolutely valid to feel the need for a physical release like a good stretch. The body often holds the cumulative weight of mental strain, and that tightness is a clear signal that you need care.\n\nLet's focus on the quality of that tightness right now. If you could describe the tension in your shoulders\u2014is it a dull ache, a sharp knot, or a constant feeling of being pulled down? Try to locate the exact spot where the tightness is most pronounced, almost like tracing a line with your finger.\n\nSince you are ready for movement, let's try one incredibly small, non-demanding micro-action. Gently roll your shoulders back and down, just once, as if you are trying to slide them into your back pockets. Do this slowly, and then allow your arms to hang heavy for a moment."
+    },
+    {
+      "role": "user",
+      "content": "Okay, I did that. It's more of a dull, constant ache, I guess, rather than a sharp knot. It never really goes away, which is the problem. It just feels like I'm carrying something heavy all the time.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That dull, constant ache, coupled with the feeling of carrying something heavy, speaks to a deep, chronic fatigue. It is incredibly draining to live with a physical sensation that never seems to let you rest.\n\nLet's honor that feeling of weight. If that \"heavy thing\" you are carrying had a weight, how would it feel in your bones or your muscles? Instead of trying to stretch it away, can you just notice where the weight settles\u2014is it in your collarbones, your upper back, or perhaps even your hips?\n\nFor this moment, simply allow your arms to hang completely loose, letting gravity do the work. Without effort, gently shake out your hands and wrists just a few times, as if you are shaking off dust."
+    },
+    {
+      "role": "user",
+      "content": "It's mostly in my upper back, right around the spine. It feels... dense. Like a really heavy blanket I can't seem to take off. It's not painful, just profoundly heavy. I guess I'm just carrying the weight of my to-do list, I guess.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That feeling of density, like a heavy blanket resting on your upper back, is a powerful physical manifestation of carrying mental weight. It is completely understandable that the accumulated weight of your to-do list feels so profoundly heavy and relentless.\n\nLet's focus on that sensation of density in your upper back. When you visualize this \"heavy blanket,\" can you identify the edges of it? Where exactly does the weight feel most concentrated\u2014is it centered, or does it pull more toward one shoulder blade?\n\nFor a moment, try to imagine that blanket is made of soft, warm air, rather than actual weight. Without effort, gently place one hand flat on your upper back, and simply feel the texture of your skin beneath your palm."
+    },
+    {
+      "role": "user",
+      "content": "It's centered, I guess. Mostly. And... it's definitely solid. Like a weighted quilt, really. I know, it sounds silly, but it feels pretty real right now.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is not silly at all; that feeling of a solid, weighted quilt is a profoundly real physical signal that your system is overloaded. It takes immense energy to maintain that constant, centered pressure, and it makes perfect sense that you feel so weighed down by the demands of your list.\n\nLet's gently acknowledge the weight itself. Since the density is centered, can you imagine that weight is composed of tiny, individual items\u2014like all the to-do list items stacked up? Try to locate the exact spot where the center of that weight feels most solid, right over your spine.\n\nFor the next minute, let's practice a tiny act of release. Just take a slow, deep breath, and as you exhale, imagine you are letting just one tiny, insignificant item\u2014maybe a single sticky note\u2014drift off the pile."
+    },
+    {
+      "role": "user",
+      "content": "See? It feels like nothing happens. And frankly, I don't know what I'm letting go of. I just feel like I need to manage the next thing, not\u2026 float things away.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is completely valid to feel that you need to manage the next thing, because that is how you are trained to feel productive, and the need for control is very powerful. It\u2019s hard to accept the idea of \"letting go\" when your primary instinct is to tackle and solve.\n\nLet\u2019s acknowledge that resistance itself. When you feel the urge to jump ahead and manage the next task, where does that mental pressure settle in your body? Is it a quick, buzzing tension in your jaw, a tightness in your forearms, or perhaps a quickening pulse in your neck?\n\nSince your mind is focused on action, let\u2019s try a very structured, contained micro-action. Without thinking about the to-do list, just press your feet firmly into the floor for a count of five. Feel the solid ground supporting you, noticing the connection between your soles and the surface beneath you."
+    },
+    {
+      "role": "user",
+      "content": "The pressure settles in my jaw, definitely. Like I'm constantly bracing myself for the next thing. It's fine though, I'll just make a checklist for how to deal with the next wave of tasks.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    }
+  ]
+}

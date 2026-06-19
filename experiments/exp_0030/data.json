@@ -1,0 +1,127 @@
+{
+  "id": "exp_0030",
+  "timestamp": "2026-06-17T04:04:30.871942",
+  "strategy": {
+    "name": "Empathic Validation-Socratic Defusion-Intrinsic Connection (EVS-IDC) v1.0",
+    "hypothesis": "By replacing the rigid 'Defusion Query' with an open-ended, gently guided Socratic Questioning technique that focuses on *evidence* (CBT) and refining the final step to a soft 'Intrinsic Invitation' (ACT), we will maintain the high structural score while significantly boosting the clinical delta and alliance scores, thereby surpassing the 89.5 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Chloe",
+    "age": 34,
+    "occupation": "Marketing Manager",
+    "presenting_issue": "I'm having a hard time keeping up with my usual productivity levels and I feel like I'm constantly running on fumes.",
+    "background_story": "Work demands have been escalating quickly over the last year, leaving little room for personal life. I've started noticing that even things I used to enjoy, like hiking or reading, just feel like another chore to fit into a schedule. I keep telling myself it's just 'a rough patch,' but honestly, the weight of it all is starting to feel physical.",
+    "personality": "Conversational, articulate, but with an underlying tone of exhaustion and guarded perfectionism. She tends to downplay her struggles using corporate jargon or rationalizations, making it difficult to draw her out emotionally.",
+    "baseline_phq9": 14,
+    "archetype_label": "Overwhelmed Professional"
+  },
+  "scores": {
+    "total_score": 65.75,
+    "raw_score": 65.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 50.8/70.0 (VV shift: 0.30, Sym shift: -0.20, DV shift: -0.10) | Third-Person Penalty (-15): Used 'the client'",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please provide the client's statement so I can generate the response."
+    },
+    {
+      "role": "user",
+      "content": "Honestly, I just keep telling myself I need to optimize my routine and that it's just a matter of better time management. It feels easier to focus on the 'how' rather than the 'why' right now.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are feeling a deep pressure to control everything through efficiency, perhaps avoiding harder emotional truths. If optimizing is the goal, what might happen if you paused the 'how' and simply allowed yourself to feel the 'why' for a moment? Could you allow yourself a five-minute pause without needing to 'fix' anything right now?"
+    },
+    {
+      "role": "user",
+      "content": "I mean, I understand the theory, but 'allowing' it sounds unproductive. I'd rather just make a bullet point for how to integrate better rest into my workflow. I'm still figuring out the most efficient way to make this sustainable.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are equating worthiness with constant, measurable output, making rest feel unproductive. What evidence do you have that rest must look like a bullet point to be valid or useful? Could you identify one small moment today where you can simply *be*, without needing to track or optimize it?"
+    },
+    {
+      "role": "user",
+      "content": "Hmm. I guess... maybe the ten minutes I spent standing on the corner waiting for my car this morning. I didn't have my phone out, and I wasn't rushing to the next task. It was just... there.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are recognizing the profound value of simply existing without a required purpose or agenda. What if 'unproductive' time is actually the necessary space for your mind to process and integrate difficult feelings? Could you consciously create one more pocket of unstructured, non-goal-oriented time before the day ends?"
+    },
+    {
+      "role": "user",
+      "content": "I guess I could. Maybe I'll skip the workout tonight. Just sit somewhere for a bit. It probably won't make me 'more productive' for tomorrow, but I guess it'll feel... less urgent.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are prioritizing emotional ease and gentle self-compassion over external performance metrics. What evidence suggests that feeling less urgent is inherently less valuable than achieving a fitness goal? Allowing yourself to simply *be* tonight is a powerful, necessary act of self-care."
+    },
+    {
+      "role": "user",
+      "content": "It's just... I feel a little guilty about it. Like, I 'should' be doing something. I feel like I'm letting myself go, and I don't know where that leaves me. I'm not sure I'm good at just 'being' for long.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are wrestling with the heavy weight of guilt, believing that self-worth requires constant action and visible effort. What if the feeling of 'should' is simply a habit of self-criticism, not an objective truth? Could you acknowledge that guilt exists, and then gently remind yourself that you are allowed to rest, even if it feels unfamiliar?"
+    },
+    {
+      "role": "user",
+      "content": "It's just... it's really hard to just *decide* to let go of the schedule. It's like it's everything that keeps me feeling in control. I guess I'll try. Just for a while.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are realizing that the schedule has become your primary anchor for feeling safe and in control. What if relinquishing control isn't losing safety, but rather trusting your ability to navigate uncertainty? What is one tiny, non-scheduled moment you can commit to experiencing without needing to predict the outcome?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know. Maybe just listening to a song on the way home. Not while I'm doing something else, just... listening.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.6
+      }
+    }
+  ]
+}

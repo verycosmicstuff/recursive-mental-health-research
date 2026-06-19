@@ -1,0 +1,127 @@
+{
+  "id": "exp_0048",
+  "timestamp": "2026-06-17T05:46:04.589253",
+  "strategy": {
+    "name": "Ultra-Concise Empathic-Utility Loop (UEUL) v1.0",
+    "hypothesis": "By restructuring the intervention into a mandatory, highly constrained two-part format (Empathic Validation + Single Utility Question), and enforcing an extreme word count limit (under 50 words) to eliminate the Brevity Penalty, we will maximize both the Therapeutic Alliance and the State Score, aiming to surpass the 91.25 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Kiran",
+    "age": 32,
+    "occupation": "Freelance Graphic Designer / Delivery Courier",
+    "presenting_issue": "I just feel this immense tension between the work I love and the expectations from home, and I don't know how to balance them.",
+    "background_story": "I poured my savings and all my spare time into getting this community library project up and running in Ludhiana. It means everything to me because it's something tangible that helps people in our neighborhood. But every time I try to focus on the design work, I get calls from my family asking why I haven't applied for an 'actual' job in Toronto, making me feel like a failure both here and back home.",
+    "personality": "Conversational, articulate, and highly focused on social dynamics and cultural context. Speaks with a mix of frustration and weary idealism. Will challenge therapeutic assumptions if they feel too individualistic or Westernized. Uses analogies related to community, duty ('dharma'), and architecture to explain emotional concepts. Prefers discussions that validate collective identity over methods that suggest radical self-isolation or prioritizing personal career goals above family success.",
+    "baseline_phq9": 14,
+    "archetype_label": "Cross-Border Guilt (Indian Diaspora)"
+  },
+  "scores": {
+    "total_score": 74.5,
+    "raw_score": 74.5,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 59.5/70.0 (VV shift: 0.50, Sym shift: -0.40, DV shift: 0.00) | Third-Person Penalty (-15): Used 'the client'",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please provide the client's statement or feeling so I can guide them."
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s like I have two whole lives happening at once. One where I'm building this library\u2014which feels like doing something genuinely *useful*\u2014and another where I'm constantly failing the expectation of what a successful life looks like, especially when I hear those calls. It's exhausting trying to build a foundation while the ground keeps shaking.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly draining to manage two conflicting realities\u2014one of meaningful work and one of perceived failure. What might the pressure to meet external expectations be trying to keep you from acknowledging about your current path?"
+    },
+    {
+      "role": "user",
+      "content": "But isn't the core of the issue that 'meaningful' is just subjective? From their perspective, a corporate job in Toronto *is* the definition of stability and success. How do you argue against a widely accepted map, even when it doesn't show you the place you actually want to build?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It's difficult when deeply personal meaning clashes with widely accepted definitions of stability and success. What does accepting that external \"map\" give you, even if it doesn't feel like the place you truly want to build?"
+    },
+    {
+      "role": "user",
+      "content": "Honestly? A little bit of peace, maybe. The relief of knowing I haven't disappointed them. It\u2019s not a place I want to live, but it feels like the sturdy, approved corner where the fighting\u2014where the arguing with the 'what ifs'\u2014finally stops.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like trading internal conflict for external peace is a profound source of relief. If that quiet space requires suppressing your true desires, what is that peace allowing you to avoid feeling?"
+    },
+    {
+      "role": "user",
+      "content": "It makes me feel... too responsible. Like if I fully commit to the library, or if I fully commit to their expectations, I might collapse. The pressure to maintain two conflicting selves is exhausting, but the idea of losing both seems like a disaster I'm not ready for.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like carrying two conflicting identities creates immense pressure, leading to a deep fear of collapse. What might that fear of \"losing both\" be trying to protect you from experiencing?"
+    },
+    {
+      "role": "user",
+      "content": "It feels like protecting the whole structure itself. Like if I focus too much on my personal 'dharma,' and the family cornerstones fall, the whole thing collapses, not just me. It's the fear of failing the community, both small and big, all at once.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you carry the immense weight of being the structural support for multiple important communities. What might the fear of the whole structure collapsing be protecting you from having to face?"
+    },
+    {
+      "role": "user",
+      "content": "Maybe the realization that no single person, not even me, can hold up all those pillars simultaneously. That the structure is meant to be built by collective effort, not by one person's sheer will alone.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like a profound realization that the burden of support is not solely yours to bear. What does accepting shared responsibility require you to let go of?"
+    },
+    {
+      "role": "user",
+      "content": "Letting go of the idea that 'being responsible' means equal effort from everyone. That I have to be the one to hold the balance, the central pillar. It\u2019s a shift from being the architect to being just one necessary brick.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.6
+      }
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "exp_0026",
+  "timestamp": "2026-06-17T03:43:53.326548",
+  "strategy": {
+    "name": "Validation-Defusion-Micro-Action (VDMA) v1.1",
+    "hypothesis": "By replacing the direct 'Gentle Challenge' with a non-confrontational 'Defusion Query' (focusing on the thoughts as temporary labels rather than facts), we will increase the Therapeutic Alliance and maintain the structural integrity needed to surpass the 89.5 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Isabella",
+    "age": 29,
+    "occupation": "Administrative Coordinator",
+    "presenting_issue": "I feel constantly overwhelmed by the demands of my family and feel like I am failing at keeping everyone afloat.",
+    "background_story": "My life has been defined by being the reliable anchor for everyone else. After my father got hurt, I dropped out of college to work multiple jobs, managing everything from bills to coordinating visits. Now, even with my own job, I'm running on fumes, trying to appease my younger siblings who are starting to resent my careful planning. I just feel like I'm always doing too much, and if I stop, everything falls apart.",
+    "personality": "Her tone is highly responsible, slightly anxious, and deferential, often minimizing her own struggles by focusing on the needs of others. She uses language emphasizing duty, sacrifice, and collective responsibility. She avoids direct emotional confrontation, instead framing her exhaustion as a moral failure to uphold family honor. She responds well to validation of her dedication, but will become defensive and rigid if the conversation suggests that her caretaking is a burden or if she is asked to prioritize her own needs over the family's perceived stability.",
+    "baseline_phq9": 17,
+    "archetype_label": "Eldest Daughter Trap \u2014 Latin American Familismo"
+  },
+  "scores": {
+    "total_score": 86.0,
+    "raw_score": 86.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 56.0/70.0 (VV shift: 0.40, Sym shift: -0.30, DV shift: -0.10)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "It sounds like you are carrying a heavy weight of worry right now. Could you notice that feeling of dread simply as a temporary pattern in your mind? What is one small, gentle moment of rest you could allow yourself within the next 24 hours?"
+    },
+    {
+      "role": "user",
+      "content": "Rest? I don't know if I can just... stop. Everyone is counting on my schedule for the tutoring and the bills, and if I take time, someone will slip up. I should probably just get an extra hour of sleep tonight; I was running late with the groceries.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you feel immense pressure to keep everything running perfectly for others. Could you notice that internal voice telling you what you \"should\" do as just a pattern of thought? What is one boundary, however tiny, you could set today to protect a moment of peace?"
+    },
+    {
+      "role": "user",
+      "content": "A boundary? I don't know if that's even possible right now. If I don't manage the flow, things just get chaotic, and then who takes care of it? It's just... what needs to be done.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the weight of responsibility feels overwhelming, making boundaries seem impossible right now. Could you notice the thought that \"I must manage everything\" as just a belief, not a fact? What is one thing you can simply observe or acknowledge today without needing to fix it?"
+    },
+    {
+      "role": "user",
+      "content": "I suppose I could just observe the way the afternoon sunlight hits the dust on the mantlepiece. It\u2019s fine, I guess. Nothing needs organizing.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you found a quiet space simply by noticing the light and the dust. Could you notice that ability to pause and observe as a skill, rather than just a temporary distraction? What is one other subtle detail you could choose to simply look at, without needing to label it or fix it?"
+    },
+    {
+      "role": "user",
+      "content": "I guess I'll look at the way the leaves are clinging to the branches outside my window. They're really stubborn, aren't they?",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are noticing a powerful sense of resilience and persistence in nature. Could you notice the thought of \"stubbornness\" as just a descriptive label, rather than a core truth? What is one small way you could let your gaze rest on those leaves, without needing to analyze their struggle?"
+    },
+    {
+      "role": "user",
+      "content": "I'll just let my gaze rest on them. Just... the green and the brown. Nothing more.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are successfully anchoring yourself in the simple beauty of the present moment. Could you notice this ability to simply observe as a powerful anchor, separate from your thoughts? What is one other simple color or texture you could choose to observe in the next few minutes?"
+    },
+    {
+      "role": "user",
+      "content": "The faded blue on the curtain hem. It's a dull, comforting blue. I can just look at it.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are finding deep comfort and grounding in that quiet, faded blue. Could you notice the feeling of comfort itself as a temporary, gentle wave passing over you? What is one small, slow breath you could take right now, drawing in the image of that blue?"
+    },
+    {
+      "role": "user",
+      "content": "I'll try. Just a slow breath. It helps to just... not think about anything for a minute.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.6
+      }
+    }
+  ]
+}

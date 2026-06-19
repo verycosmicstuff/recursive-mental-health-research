@@ -1,0 +1,127 @@
+{
+  "id": "exp_0062",
+  "timestamp": "2026-06-17T07:36:55.443967",
+  "strategy": {
+    "name": "PCT-ACT Resource Bridging (PARB) v1.0",
+    "hypothesis": "By replacing the 'Inferred Bridge' (which leads to pseudo-insight) with a 'Reflection-Value-Connection' sequence, which grounds the conversation in the patient's stated values and current behaviors (PCT/ACT), we will provide concrete, non-interpretive support, thus avoiding the 'pseudo-insight' penalty and achieving a higher score by focusing on demonstrable behavioral change and genuine understanding.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Chloe",
+    "age": 22,
+    "occupation": "University Student (Pre-Med)",
+    "presenting_issue": "I feel overwhelmed by my academic performance and genuinely worry that I'm not good enough to pursue my desired career.",
+    "background_story": "Since starting pre-med, the pressure has built up to an unbearable level. I'm constantly comparing my grades and achievements to my peers, and it makes me feel inadequate. I'm struggling to relax even when I'm not studying, and I spend most of my evenings revising or agonizing over what I could have done better.",
+    "personality": "Conversational style is highly anxious, overly formal, and peppered with qualifiers like 'maybe' and 'I think.' She will frequently ask for validation on her study plans and will tend to spiral into worst-case scenario thinking.",
+    "baseline_phq9": 11,
+    "archetype_label": "Anxious Student"
+  },
+  "scores": {
+    "total_score": 64.0,
+    "raw_score": 64.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 49.0/70.0 (VV shift: 0.30, Sym shift: -0.20, DV shift: 0.00) | Brevity Penalty (-15): Therapist turn too long (6 sentences, 67 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Thank you for showing up today. Please know that this is a space built just for you\u2014a place where there is no need to perform, no need to fix anything, and no judgment whatsoever.\n\nTake a deep breath, if that feels okay. I'm here to listen to whatever is present for you, and we can move at whatever pace feels safest. Whenever you're ready, I'm here."
+    },
+    {
+      "role": "user",
+      "content": "Oh. Um, thank you. I... I appreciate that. It's just... I'm not sure what's 'present' really, I guess. Maybe I just feel generally overwhelmed. Like, about everything.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It makes perfect sense that you feel overwhelmed when the weight seems to be coming from \"everything.\"\n\nIf I'm hearing you right, it's not that there is one specific trigger, but rather that the sheer *volume* of things\u2014the tasks, the emotions, the demands\u2014is creating a kind of expansive pressure, like your mind is trying to hold too many different threads at once.\n\nIs that close to what you're experiencing right now?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, I think... that's exactly it. It's like there are too many threads, and if I try to pull on one, all the others get tangled up too. I keep worrying that I'm just... going to drop everything.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That image of the tangled threads is so powerful. It sounds like the effort required just to *keep* the threads from tangling\u2014the constant vigilance\u2014is exhausting. It's not just the threads themselves, but the intense, draining work of holding them all up that feels like the heaviest part right now.\n\nAnd this worry that you might \"drop everything\"\u2014that suggests a deep fear of the consequences of that perceived loss of control.\n\nIs that right? That the anxiety is focused on the potential fallout of the threads coming undone?"
+    },
+    {
+      "role": "user",
+      "content": "Yes, I think so. It's bad. Like, if I fail one big test, or if my grades dip even a little bit, then maybe my whole future just... collapses. I feel like everyone is watching, I guess.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly heavy to carry the weight of believing that one specific dip, one grade, could trigger a total \"collapse\" of your future. And the feeling that \"everyone is watching\"\u2014that adds an enormous layer of pressure, making it feel like your worth is being measured by external standards.\n\nIf we set aside the grades and the fear of what others might think for a moment, and instead look at what you are genuinely trying to protect with all this effort\u2014the feeling of stability, the belief that you are capable\u2014what is it that truly matters to you about your future? What does the *idea* of a secure, solid future represent for you?"
+    },
+    {
+      "role": "user",
+      "content": "I... I guess it's really just the idea of not disappointing anyone. My parents, maybe, or my professors. I just want them to think I'm going to be okay, you know? And capable, I think.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the weight of \"not disappointing anyone\" has become a very powerful driver, a source of immense pressure, because you are doing everything you can to manage the expectations of others\u2014your parents, your professors\u2014and to prove that you are capable and okay.\n\nIt\u2019s clear that keeping those people reassured is something you value deeply.\n\nBut if we look past the grades, past the expectations, and even past the people who might be watching, what is the core value that *you* hold for yourself? What does *your* definition of being \"okay\" and \"capable\" look like, when no one else is watching? What does that inner sense of self-worth feel like?"
+    },
+    {
+      "role": "user",
+      "content": "I... I don't know. I feel like I don't have one, actually. Maybe just... that I can finish what I start? That's what I really value, I guess. Finishing things.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "\"Finishing things.\" That feels like a cornerstone for you\u2014a deep, reliable value that represents follow-through, commitment, and seeing something through to its conclusion. It sounds like the act of completion, of honoring a commitment, is what gives you a sense of capability.\n\nIt's a powerful value to hold onto.\n\nGiven how much you value the act of finishing, and knowing how much energy it takes to keep those threads from tangling, what is one small, non-academic thing that you could commit to *finishing* this week, just for yourself? Something that allows you to honor that value, but that doesn't carry the weight of external expectation or potential collapse?"
+    },
+    {
+      "role": "user",
+      "content": "I... I don't know. Maybe I could finish reading that novel I bought last month? It's just fiction, so... no one is grading me on it. I think that would be okay?",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Reading that novel\u2014that sounds like a perfect way to honor your value of completion in a space where the stakes are entirely yours alone. The relief that \"no one is grading you\" is palpable, and that is a huge, necessary breath of fresh air.\n\nIt seems like this small act of finishing a story\u2014a story that has no impact on your grades or your future\u2014is giving you permission to practice your value of follow-through on a purely self-directed level.\n\nIf you were to treat this reading not as a task to be completed, but as a gentle act of self-care that honors your commitment to yourself, what is the smallest, most non-pressured way you could commit to engaging with it over the next few days? What would make this feel like a gentle experiment, rather than another thread you have to manage?"
+    },
+    {
+      "role": "user",
+      "content": "Maybe... maybe just ten minutes a day? Like, when I'm just winding down before bed. It wouldn't feel like a big task, you know? Just reading until my brain is too tired to worry about anything else.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.6
+      }
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "exp_0056",
+  "timestamp": "2026-06-17T06:29:09.806775",
+  "strategy": {
+    "name": "Hyper-Constrained Empathy-Utility-Value Core (HEUVC) v1.0",
+    "hypothesis": "By enforcing a strict 3-sentence, 60-80 word limit, and structuring the response to prioritize (1) Deep Empathic Validation, (2) Single Utility Question, and (3) Value Connection, we will maximize structural adherence and clinical depth, thereby surpassing the 91.25 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Gerald",
+    "age": 59,
+    "occupation": "Mid-level accountant",
+    "presenting_issue": "I just feel generally tired and unmotivated, and my wife keeps nagging me about it.",
+    "background_story": "Lately, work has been demanding a lot, and I'm constantly trying to keep up appearances for the neighborhood. My wife, Rhonda, keeps bringing up how 'stagnant' I've become, which just adds to the stress. Honestly, I think this whole 'mental health' thing is a bit dramatic, but I guess I have to humor her for now.",
+    "personality": "Guarded, cynical, and dismissive. He answers questions with monosyllabic responses and frequently tries to redirect the conversation to practical, non-emotional topics to avoid vulnerability.",
+    "baseline_phq9": 8,
+    "archetype_label": "Skeptical Retiree"
+  },
+  "scores": {
+    "total_score": 62.25,
+    "raw_score": 62.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 47.2/70.0 (VV shift: 0.40, Sym shift: -0.10, DV shift: 0.20) | Third-Person Penalty (-15): Used 'the client'",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "*Please provide the client's statement so I can respond.*"
+    },
+    {
+      "role": "user",
+      "content": "Look, I don't know what I'm supposed to say. Rhonda just keeps saying I need to 'reconnect with myself' or some such nonsense. It's just exhausting.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly draining to receive advice that feels vague and overwhelming, leaving you feeling completely depleted. What utility does the pressure to \"reconnect\" serve for you right now, beyond just feeling exhausted? Could we instead identify one small, concrete activity that genuinely restores your energy?"
+    },
+    {
+      "role": "user",
+      "content": "It's just talking about it. Nothing helps. Maybe I should just check my investment portfolio. Has anything changed with the S&P 500?",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It makes sense that when talking feels unproductive, your mind seeks the reliable structure of data and measurable outcomes. What utility does shifting focus to external metrics serve when internal feelings feel too chaotic? Perhaps we can find one small, tangible action that bridges the gap between your feelings and the practical world."
+    },
+    {
+      "role": "user",
+      "content": "It's just a bad week at work. The Peterson account is a nightmare. I'm doing alright. I just need some sleep.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are under immense pressure from work, and minimizing the stress feels like a way to cope with the sheer weight of it all. What utility does telling yourself you're \"alright\" serve when the reality feels overwhelming? Could we identify one small boundary or shift in routine that protects your energy before you sleep tonight?"
+    },
+    {
+      "role": "user",
+      "content": "Look, I don't want to talk about my sleep schedule or boundaries. I'm fine. Just the usual pressure, I guess. Maybe we should talk about what my retirement savings are doing instead.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like focusing on financial facts feels much safer and more controllable than addressing the messy uncertainty of your feelings. What utility does discussing your retirement savings serve when the emotional landscape feels too unpredictable? Instead of boundaries, what is one small, enjoyable moment you could commit to experiencing just for yourself today?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know. I'm too tired to figure out some 'enjoyable moment.' Maybe I just need to go home and watch the news. At least that's predictable.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like your exhaustion is making even small suggestions feel impossible, and the predictable comfort of the news seems like a safe harbor right now. What utility does seeking predictable information serve when your internal state feels too diffuse to manage? Could we identify one small, non-screen activity that requires minimal effort but still gives you a brief sense of grounding?"
+    },
+    {
+      "role": "user",
+      "content": "Look, I don't know. Why does it have to be a whole 'activity'? Just... give me some quiet. Maybe I should just go look at my car. Is the payment schedule still the same?",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are deeply depleted, and the predictable routine of a payment schedule is offering a much-needed sense of control. What utility does focusing on the car's fixed schedule serve when your internal world feels so unstructured? Instead of an activity, could we identify one small way to simply *be* still for five minutes without needing a screen or a task?"
+    },
+    {
+      "role": "user",
+      "content": "Just... sit here. It's quiet enough. Nothing to do, then. I guess.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.6
+      }
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "exp_0079",
+  "timestamp": "2026-06-17T09:18:00.731319",
+  "strategy": {
+    "name": "Concise First-Person Value-Utility Loop (CFPVUL) v1.0",
+    "hypothesis": "By rigidly enforcing first-person empathetic language ('I hear that...') and restructuring the final step to not just suggest an action, but to explicitly connect that action to a stated or implied core personal value, we will maximize structural compliance, achieve maximum perceived clinical depth, and surpass the previous best score of 91.25 (implied benchmark from the series).",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Mei",
+    "age": 42,
+    "occupation": "Accountant",
+    "presenting_issue": "I just feel like I'm constantly under pressure, and I don't know how to manage the weight of everything.",
+    "background_story": "Since my parents moved here from Guangzhou, my life has revolved entirely around their care. Between managing their appointments, household needs, and keeping up with my own demanding job, I feel stretched thin. They are both getting more frail, and the cultural expectations for a child to care for aging parents are immense. I feel like I am failing them, even though I am doing everything I can. It's just too much, and I'm scared I'm going to snap.",
+    "personality": "Reserved, highly deferential, and physically exhausted. Speaks in measured tones but often uses vague, somatic language ('My head hurts,' 'My chest feels heavy'). Will show intense avoidance or excessive self-blame when discussing potential respite or personal needs. Uses 'we' or 'us' more often than 'I' when describing family efforts, even when referring to her own struggle. She craves validation for her sacrifices, not necessarily advice on self-care.",
+    "baseline_phq9": 16,
+    "archetype_label": "Filial Piety Conflict \u2014 East Asian Elder Care"
+  },
+  "scores": {
+    "total_score": 58.75,
+    "raw_score": 58.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 43.8/70.0 (VV shift: 0.10, Sym shift: -0.20, DV shift: -0.10) | Brevity Penalty (-15): Therapist turn too long (5 sentences, 96 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly draining and disheartening to feel like your efforts aren't leading to results, especially when you are putting so much care and energy into things.\n\nWhat if we viewed this feeling not as evidence of failure, but as a signal that your current system is unsustainable and needs adjustment? You are not failing; you are running on empty, and that requires rest first.\n\nPerhaps the first step is simply identifying one small area\u2014just one\u2014where you can temporarily lower your expectations for yourself this week. Give yourself permission to be imperfect in that one spot."
+    },
+    {
+      "role": "user",
+      "content": "But if we lower the expectations, then what happens? My parents need things done, and if I stop doing my part, then... there will be too much for them. It will be worse for all of us.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly heavy to carry the weight of feeling solely responsible for the well-being and stability of your parents. That sense of duty is immense, and it's natural to fear the consequences of letting go.\n\nWhat if we viewed self-care not as a luxury or a withdrawal, but as the necessary foundation for your ability to care for them? You cannot pour from an empty cup; protecting your energy is actually the most responsible thing you can do for everyone involved.\n\nPerhaps the first step is identifying one boundary\u2014even a small one, like saying \"no\" to one non-essential request this week\u2014and practicing stating it calmly."
+    },
+    {
+      "role": "user",
+      "content": "Saying no... it feels like I'm letting them down. I just worry that if I don't manage everything myself, the whole thing will fall apart. I don't know how to let go of that responsibility. It's always been us handling it.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly terrifying to feel that letting go of control means the entire structure\u2014the stability and care of your parents\u2014will collapse. That feeling of being the sole pillar is exhausting and deeply ingrained.\n\nWhat if we viewed this responsibility not as a permanent, singular burden, but as a complex system that requires multiple people? You are not letting them down; you are modeling how to build a sustainable support network for everyone.\n\nPerhaps the first step is to write down three tasks that currently fall only to you, and then brainstorming one other person who could take over just one of those tasks."
+    },
+    {
+      "role": "user",
+      "content": "I... I don't know who else could do it. They are already so tired, and I feel like I'm the only one who really understands what needs to be done. It\u2019s just easier if I do it all.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly isolating and deeply ingrained to feel that your unique understanding is the only thing keeping everything running smoothly. That feeling of irreplaceable competence is exhausting to carry.\n\nWhat if we viewed your knowledge not as a burden you must bear alone, but as a valuable expertise that can be taught and shared? Your ability to understand the situation is a gift that others can learn to utilize, even if they don't understand it immediately.\n\nPerhaps the first step is to simply listing three pieces of specific knowledge or routine that you know well, and then mentally assigning one of those items to a \"teaching\" list, rather than a \"doing\" list."
+    },
+    {
+      "role": "user",
+      "content": "Teaching... I don't know if I could explain it. It's part of how I've just become used to doing it. If I stop doing it, I feel lost, like I don't know who I am without it.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.8,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly painful and frightening to feel that your sense of self is so completely interwoven with the responsibilities you carry. Losing that defining role can feel like losing yourself entirely.\n\nWhat if we viewed your identity not as the *role* of the caregiver, but as the inherent qualities\u2014the compassion, the intelligence, the dedication\u2014that *allowed* you to become that caregiver? Those qualities belong to you, regardless of what you are doing for others.\n\nPerhaps the first step is to list three things you loved doing before this primary caregiving role took up so much space, and then dedicating 10 minutes this week to doing just one of them, purely for yourself."
+    },
+    {
+      "role": "user",
+      "content": "I... I think I used to enjoy cooking for myself. Or maybe just reading in the quiet. But honestly, when I try to think about it, my head just feels fuzzy. It's hard to remember what I liked doing.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly overwhelming when your mind feels foggy, and the simple act of remembering what you used to enjoy feels like climbing a mountain. Please know that this mental fuzziness is not a reflection of who you are.\n\nWhat if we viewed this fog not as a personal failing, but as a physical manifestation of deep, profound exhaustion? Your brain is simply conserving every single bit of energy it has left.\n\nPerhaps the first step is to focus entirely on your body's basic needs today: drink a full glass of water, and then find one spot where you can sit and simply feel the chair supporting you for five minutes."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I should be doing something more, like making a list or calling someone. If I just sit still, I feel guilty, like I'm wasting time that should be spent worrying about them.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly heavy to feel that you *should* always be doing something productive, and that resting feels like a betrayal of your responsibilities. That guilt is a powerful, exhausting weight.\n\nWhat if we viewed stillness not as wasting time, but as the most critical form of maintenance? You cannot pour energy out if your personal reserves are empty. Allowing yourself to rest is not selfish; it is a necessary act of preservation that allows you to continue caring for them.\n\nPerhaps the first step is to set a timer for five minutes, and during that time, simply notice three things you can hear right now, without judgment or task-oriented thought."
+    },
+    {
+      "role": "user",
+      "content": "I just... I hear the clock ticking. And the sounds of the street outside. And my own breathing. It's so quiet when I actually listen to it. It makes me feel even more alone, though.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    }
+  ]
+}

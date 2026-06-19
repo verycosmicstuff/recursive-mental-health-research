@@ -1,0 +1,127 @@
+{
+  "id": "exp_0004",
+  "timestamp": "2026-06-17T01:45:41.780667",
+  "strategy": {
+    "name": "PCT-ACT Resource Bridging (PARB) v1.0",
+    "hypothesis": "By replacing the 'Inferred Bridge' (which leads to pseudo-insight) with a 'Reflection-Value-Connection' sequence, which grounds the conversation in the patient's stated values and current behaviors (PCT/ACT), we will provide concrete, non-interpretive support, thus avoiding the 'pseudo-insight' penalty and achieving a higher score by focusing on demonstrable behavioral change and genuine understanding.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Robert",
+    "age": 62,
+    "occupation": "Retired accountant",
+    "presenting_issue": "I just feel... foggy lately, and my wife keeps asking if something is wrong with me.",
+    "background_story": "My retirement was supposed to be a break, a time to finally get back into woodworking and travel. Instead, I spend most of my days staring at the TV or worrying about the lawn. My wife thinks I'm depressed, and honestly, it's exhausting having to justify my emotions to her. I just want this whole 'wellness' thing to stop.",
+    "personality": "Guarded, dismissive, speaks in short, clipped sentences, frequently deflects questions back to the therapist, and maintains a visibly skeptical posture throughout the conversation.",
+    "baseline_phq9": 9,
+    "archetype_label": "Skeptical Retiree"
+  },
+  "scores": {
+    "total_score": 44.75,
+    "raw_score": 44.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 29.8/70.0 (VV shift: 0.00, Sym shift: 0.20, DV shift: 0.10) | Brevity Penalty (-15): Therapist turn too long (5 sentences, 69 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Thank you for showing up here today. Please know that this space is entirely yours\u2014there is nothing you need to fix, nothing you need to prove, and no judgment here, only deep curiosity.\n\nWe can take our time, and we can talk about anything that feels present for you right now, no matter how small or overwhelming it seems.\n\nWhen you are ready, I am here to listen."
+    },
+    {
+      "role": "user",
+      "content": "Right. So, I guess I'm here because my wife said so. Doesn't mean it's actually anything deep, you know.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like there's a sense of obligation here\u2014a feeling that your presence in this chair, or even talking to me, is less about an internal need and more about an external expectation.\n\nI hear the weight of that, and I want to acknowledge it. There's no pressure here to find a deep, profound answer. We can simply sit with the feeling of *not* knowing why you are here, and that is perfectly okay.\n\nIf you're comfortable, we can start wherever feels easiest."
+    },
+    {
+      "role": "user",
+      "content": "It's just a waste of time, frankly. Nothing's going to change just by talking about it. What do you want me to do?",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are feeling a profound sense of skepticism right now\u2014a feeling that the time spent here is unproductive, and that talking about things won't actually move the needle or bring about any real change.\n\nI hear that skepticism, and I want to validate it completely. It's a very rational and understandable response when you feel like you've been through this before, or when the problem feels too big to solve with just words.\n\nIf you're willing, I wonder if we could just sit with that feeling of 'it's a waste of time' for a moment? What does that feeling feel like in your body right now?"
+    },
+    {
+      "role": "user",
+      "content": "It just feels... heavy. Like my shoulders. And a little tight in my chest. What does it doing with?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that with me. It's incredibly helpful that you can point to where that feeling lives physically.\n\nSo, you're describing a physical weight\u2014a heaviness settling into your shoulders, and a tightness in your chest. It sounds like this emotional 'heaviness' has found a very real, palpable home in your body.\n\nIf we were to treat those sensations\u2014the weight on your shoulders and the tightness in your chest\u2014as if they were speaking, what do you think they might be trying to communicate to you right now?"
+    },
+    {
+      "role": "user",
+      "content": "They're telling me to just leave it alone. It's just how it is.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the weight and the tightness in your chest are communicating a deep sense of resignation\u2014a feeling that the current state, the 'how it is,' is simply the default, and that any effort to change it is futile or unnecessary.\n\nThat sense of 'just letting it be' is a very powerful, protective instinct. It's a way of conserving energy when things feel overwhelming.\n\nBut if we set aside the feeling of 'it just is for now,' and instead look at what you *do* want for yourself\u2014if you could wake up tomorrow and feel even a fraction less of this heaviness, what would that feeling represent for you? What would that lightness or ease mean that is more important than just accepting the weight?"
+    },
+    {
+      "role": "user",
+      "content": "It would just mean I had my freedom back. Like I didn't have to worry about everything all the time.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "\"Freedom.\" That word seems to carry so much weight for you right now. It sounds like what you are truly longing for isn't just the absence of worry, but the feeling of *autonomy*\u2014the ability to feel like you are the captain of your own ship, rather than constantly reacting to what worries you.\n\nIf we take that desire for freedom back, and look at it closely, what does having that worry lift\u2014what does it allow you to *do* or *be* that you feel is currently blocked by the weight on your shoulders?"
+    },
+    {
+      "role": "user",
+      "content": "Nothing. It's just money, mostly. The lawn, mostly. Things that just need doing. It's exhausting keeping track of it all.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the source of the heaviness and the feeling of being drained isn't one single, huge worry, but rather the accumulation of small, practical responsibilities\u2014the money, the lawn, the endless list of things that *need* doing. And the real exhaustion comes from the constant mental labor of having to keep track of every single one of those things.\n\nIt sounds like what you are deeply craving, after all the effort of managing these tasks, is a sense of *peace*\u2014a peace that comes from having a manageable, predictable rhythm where the demands don't feel like a relentless, exhausting tally.\n\nIf we focus on that value of *peace*\u2014of having a system that feels less like a burden and more like a gentle flow\u2014what is one small, concrete area of those responsibilities (the lawn, the bills, the schedule) where you could intentionally drop the mental grip, just for the next few days, and allow it to be handled differently?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know. Where do you think I should drop the grip? This whole 'dropping' thing sounds like another task.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    }
+  ]
+}

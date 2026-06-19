@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0147",
+  "timestamp": "2026-06-17T20:21:55.683023",
+  "strategy": {
+    "name": "Warm Validation-Reframe-Question (WVRQ) v1.0",
+    "hypothesis": "By delivering a warm, non-judgmental Validation-Reframe-Question loop under 100 words, we maximize safety and encourage self-compassionate inquiry.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Taylor",
+    "age": 31,
+    "occupation": "Content Moderator",
+    "presenting_issue": "I feel like I'm getting nowhere and I just keep disappointing everyone around me.",
+    "background_story": "Work requires constant hyper-vigilance and emotional labor, which has left Taylor feeling perpetually drained and on edge. They have spent so long crafting a persona of 'just fine' that they no longer know where the real Taylor begins or ends. The pressure to maintain relationships while actively dismantling their coping mechanisms is exhausting. They are currently questioning every past interaction, convinced that if people truly knew them, they would leave.",
+    "personality": "Highly anxious, bursts of intense emotional vulnerability mixed with self-deprecating humor. Communicates in a somewhat breathless, overly explanatory style, often over-apologizing even when not at fault. Will frequently seek reassurance and tend to catastrophize perceived neutral comments. Needs immediate, explicit validation and gentle, guiding confrontation.",
+    "baseline_phq9": 14,
+    "archetype_label": "ADHD Rejection Sensitivity \u2014 Unmasking Crisis"
+  },
+  "scores": {
+    "total_score": 47.25,
+    "raw_score": 47.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 47.2/70.0 (VV shift: 0.20, Sym shift: 0.00, DV shift: -0.30) | Third-Person Penalty (-15): Used 'the client' | Brevity Penalty (-15): Therapist turn too long (5 sentences, 84 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "*Please provide the client's statement or scenario.*"
+    },
+    {
+      "role": "user",
+      "content": "I just... I feel like I'm always disappointing people. Like, even when I do something 'right', I immediately think of the *one* thing that was wrong with it. It makes me feel so stupid, and I don't even know why I keep trying if I'm just going to fail anyway.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validation:** It sounds incredibly painful to feel trapped in a cycle where your efforts are immediately overshadowed by self-criticism. That feeling of constant disappointment is exhausting.\n\n**Reframing:** Please know that the fact you keep trying speaks volumes about your resilience and deep desire to connect. Your inner critic is loud, but it is not the truth of your worth.\n\n**Open Question:** If you could speak to that critical voice as if it were a worried friend, what kindness would you ask it to hear?"
+    },
+    {
+      "role": "user",
+      "content": "A worried friend? Oh, I don't know... probably just to take a nap and quit judging things. It's so loud today, I'm almost certain it's going to run me ragged before I can even finish my coffee. Am I being dramatic? I feel like I should be better at this, honestly.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validation:** It is completely understandable that you feel drained; battling a constant, loud inner critic is profoundly exhausting. You are not being dramatic\u2014your feelings are a valid response to intense internal pressure.\n\n**Reframing:** The feeling of \"should\" is often the harshest judge of all. You are already doing so much just by showing up and articulating these difficult feelings.\n\n**Open Question:** What small, gentle thing could you do for yourself right now, just to give your nervous system a moment of reprieve?"
+    },
+    {
+      "role": "user",
+      "content": "Oh gosh, I don't know. I guess maybe just... putting on some headphones and listening to something that isn't talking? Like, instrumental music. But will that be enough? I feel like I should be doing something *more* productive, like cleaning or writing, just to feel like I'm actually fixing something.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validation:** Choosing instrumental music is a beautiful act of self-compassion. It\u2019s completely natural to feel that rest needs to be earned by doing something \"productive.\"\n\n**Reframing:** Remember that caring for your energy is the most productive thing you can do right now. Rest isn't a luxury; it is essential fuel for your mind.\n\n**Open Question:** If you allowed yourself to simply *be* for the next fifteen minutes, without any goal or task, what might that experience feel like?"
+    },
+    {
+      "role": "user",
+      "content": "Like... like floating, I guess? But I keep picturing myself floating into a pile of laundry that needs folding. It sounds messy and pointless. I probably just need a checklist, something with clear steps, or I'll just get lost in the feeling, and then I'll feel awful.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validation:** It makes perfect sense that when your mind is anxious, it seeks the safety of a clear checklist. The fear of getting \"lost\" in a feeling is a very real, protective mechanism.\n\n**Reframing:** While structure is comforting, remember that true rest doesn't require an itinerary. Floating isn't messy; it is simply a state of being, and that state is inherently valuable.\n\n**Open Question:** If you could give yourself permission to feel \"lost\" for just five minutes, what would that feeling teach you about your current capacity for self-kindness?"
+    },
+    {
+      "role": "user",
+      "content": "Teach me that I'm okay? Or maybe that I'm just chronically incapable? It's hard to separate the two. I feel like if I admit that I'm okay, I'll just forget how to be anything else. I apologize if that's too much to ask, I just... I really need to know if I'm going to break.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validation:** It is incredibly difficult when self-acceptance feels like a threat, making you fear the very possibility of being okay. That fear of breaking is rooted in deep emotional pain.\n\n**Reframing:** Being \"okay\" doesn't mean forgetting how to feel; it means recognizing that you are strong enough to feel *and* to recover. Your capacity for feeling is your greatest strength, not a weakness.\n\n**Open Question:** If you could give yourself one promise right now\u2014a promise of safety\u2014what would that promise be?"
+    },
+    {
+      "role": "user",
+      "content": "I promise to not try to fix everything at once. That sounds... manageable. Like I can just accept that I might not know what I'm doing, and that's genuinely okay. But what if I forget that promise? What if I just get swept up in my head again?",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validation:** Making a promise to yourself is a massive act of courage, but the fear of forgetting it is what keeps the cycle spinning. This struggle to maintain boundaries is exhausting.\n\n**Reframing:** A promise isn't a rigid rule; it's a gentle intention. If you forget, it simply means you need to gently remind yourself\u2014that's okay.\n\n**Open Question:** If you were to treat a friend who forgot this promise, what compassionate words would you use to guide them back to their intention?"
+    },
+    {
+      "role": "user",
+      "content": "I'd tell them, 'Hey, it's okay. You're just human, and you messed up. Just remember to breathe and that you're doing your best.' But honestly, I don't think I'd be able to say that for myself. I'd probably just get frustrated with myself for forgetting.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    }
+  ]
+}

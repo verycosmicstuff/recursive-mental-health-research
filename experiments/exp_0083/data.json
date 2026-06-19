@@ -1,0 +1,127 @@
+{
+  "id": "exp_0083",
+  "timestamp": "2026-06-17T09:42:41.288185",
+  "strategy": {
+    "name": "Value-Linked Cognitive Reframe (VLCR) v1.0",
+    "hypothesis": "By combining reflective empathy, Socratic reframing, and value-linked micro-actions, we create a structured path forward that grounds behavioral tasks in personal meaning.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Robert",
+    "age": 58,
+    "occupation": "Accountant",
+    "presenting_issue": "I don't know what I want, but I feel completely drained and overwhelmed all the time.",
+    "background_story": "My wife has been pushing me to see someone because she thinks I'm 'depressed,' which is frankly annoying. Work has been demanding lately, and the combination of finances and trying to keep up appearances has left me running on empty. I just want it all to stop for a while.",
+    "personality": "Concise and dismissive, using dry humor to deflect emotional questions and frequently correcting the therapist's terminology to sound more knowledgeable.",
+    "baseline_phq9": 9,
+    "archetype_label": "Skeptical Retiree"
+  },
+  "scores": {
+    "total_score": 55.25,
+    "raw_score": 55.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 40.2/70.0 (VV shift: 0.20, Sym shift: 0.10, DV shift: 0.00) | Brevity Penalty (-15): Therapist turn too long (7 sentences, 178 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please share what's on your mind. I am here to listen without judgment, and we will work through this together."
+    },
+    {
+      "role": "user",
+      "content": "It's nothing you've heard before, really. Just a low-grade hum. I'm tired, that's the word. Not depressed, mind you. Just... burned out.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Part 1: Empathy & Validation (The Reflection)**\nI hear the profound exhaustion in your words, and I want to validate that feeling completely. Burnout is not a sign of weakness or failure; it is a very real physiological and emotional response to sustained effort without adequate recovery. It sounds incredibly draining to operate in that constant \"low-grade hum\" state, and it takes immense energy just to acknowledge how tired you are.\n\n**Part 2: Gentle Reframe (The Challenge)**\nIf we look at this from a different angle, what evidence suggests that \"tired\" means \"I must do more\" or \"I must push through\"? Could it be possible that this low-grade hum is actually your body and mind sending you a very clear, non-negotiable signal that your capacity needs to be reset, not increased?\n\n**Part 3: Micro-Action (The Path Forward)**\nTo honor your core value of rest, could you commit to giving yourself a 10-minute \"nothing time\" today? This means setting a timer, putting away all screens, and simply sitting without the goal of *doing* anything\u2014no reading, no planning, just breathing."
+    },
+    {
+      "role": "user",
+      "content": "A 'low-grade hum' is just a metaphor, doctor. And calling it a 'physiological response' is a bit dramatic. I'm just... stressed. And I don't know what my 'capacity' needs, but I'd rather not have to figure it out right now. And no, I can't commit to 'nothing time.' I have things to do.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Part 1: Empathy & Validation (The Reflection)**\nI hear the skepticism in your voice, and I want to validate that your perspective is valid. You are highly capable, and your immediate concern is with your responsibilities and what needs to get done. It sounds incredibly frustrating when you feel the need to intellectually push back against suggestions of rest, because in your mind, \"rest\" feels like a luxury that you simply cannot afford right now.\n\n**Part 2: Gentle Reframe (The Challenge)**\nIf we look at this from a different angle, what evidence suggests that continuing to push through this exhaustion\u2014doing things because you *have* to\u2014is actually the most effective way to honor your commitment to those tasks? Could it be that the fatigue you feel isn't a sign of failure, but a signal that your current method of operation is inefficient and needs a small, structural adjustment?\n\n**Part 3: Micro-Action (The Path Forward)**\nTo honor your core value of responsibility and productivity, could you commit to implementing a 5-minute \"Transition Boundary\" between two tasks today? When you finish one item and start the next, set a timer for five minutes, stand up, walk away from your desk, and take five deep breaths before touching the next file or email. This is not rest, but a mini-reset for your focus."
+    },
+    {
+      "role": "user",
+      "content": "Five minutes? It's a bit childish, frankly. And 'Transition Boundaries'\u2014it sounds like something from a corporate HR seminar. Look, I'm not asking for permission to be tired, and I'm definitely not going to treat this like a productivity hack. Just... stop framing everything in terms of 'optimization.'",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Part 1: Empathy & Validation (The Reflection)**\nI hear the frustration, and I want to genuinely acknowledge your critique. You are right\u2014my language has been overly clinical and has defaulted into the jargon of \"optimization,\" which can feel incredibly dismissive and patronizing. It sounds incredibly frustrating to feel like your experience is being treated like a technical problem to be solved by a checklist, rather than a deeply human feeling that deserves to be respected exactly as it is.\n\n**Part 2: Gentle Reframe (The Challenge)**\nIf we look at this from a different angle, what evidence suggests that the need to *resist* the advice, to push back against the structure, is actually costing you more energy than simply accepting the need for a small, non-productive pause? Could it be that the greatest source of depletion right now isn't the work itself, but the emotional effort required to manage the internal conversation about that work?\n\n**Part 3: Micro-Action (The Path Forward)**\nTo honor your core value of self-respect and internal autonomy, could you commit to noticing one non-judgmental sensory detail in your immediate environment right now? This could be the weight of your chair, the specific color of the wall, or the sound of traffic\u2014and simply naming it to yourself, without analyzing it or needing to change it."
+    },
+    {
+      "role": "user",
+      "content": "Fine. I'll notice the color of the wall. It's beige. Honestly, it's aggressively bland. Now can we move on to something that isn't a self-help exercise?",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Part 1: Empathy & Validation (The Reflection)**\nI hear the weariness with the process itself, and I want to validate that completely. It is exhausting to be in a conversation where every observation, every feeling, and every small pause is being analyzed, categorized, and reframed. It sounds incredibly frustrating to feel like you are trapped in a cycle of \"self-help exercises,\" and it is perfectly reasonable to want to move beyond the structure and talk about something that feels real and immediate to you.\n\n**Part 2: Gentle Reframe (The Challenge)**\nIf we look at this from a different angle, what evidence suggests that the *content* of our conversation needs to be the focus, versus the *pattern* of the conversation itself? Could it be that the most helpful thing right now is not a piece of advice, but simply acknowledging that the conversation itself has reached its natural boundary, and that is a valid place to pause?\n\n**Part 3: Micro-Action (The Path Forward)**\nTo honor your core value of intellectual autonomy, could you commit to defining the parameters for our next interaction? Instead of me suggesting a topic, what is one specific, non-self-help, non-emotional topic\u2014a book, a current event, a hobby\u2014that you would like to talk about next? We can use that as our starting point, no matter how \"aggressively bland\" the feeling around it might be."
+    },
+    {
+      "role": "user",
+      "content": "Look, I've given you enough about 'the hum.' Just... what do you actually recommend? Because I'm still running on fumes, and I need a practical strategy, not a life lesson about beige walls.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Part 1: Empathy & Validation (The Reflection)**\nI hear the sheer urgency and frustration in your voice, and I want to validate that you are past the point of abstract reflection. You are running on fumes, and what you need right now is not a life lesson, but a concrete, immediate strategy. It is perfectly understandable that you are demanding a practical roadmap, and I respect that need for direct, actionable advice.\n\n**Part 2: Gentle Reframe (The Challenge)**\nIf we look at this from a different angle, what evidence suggests that the most efficient use of your limited energy is to focus on managing the *feeling* of being tired, versus managing the *inputs* that are causing the fatigue? Could a small, structural adjustment to your external demands\u2014a logistical change\u2014actually provide more immediate relief than any internal coping strategy?\n\n**Part 3: Micro-Action (The Path Forward)**\nTo honor your core value of efficiency and survival, could you commit to the \"Rule of Three\" for the next 24 hours? Before you start your day, identify the three absolute non-negotiable tasks that *must* be completed. Write them down, and for the rest of the day, treat every other item as temporarily \"optional\" or delegate it."
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s not 'optional,' they're just... lower priority. And \u2018Rule of Three\u2019? Sounds like I'm managing a small construction project, not my actual life. Just tell me what you think I should cut out. Be direct.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Part 1: Empathy & Validation (The Reflection)**\nI hear the deep frustration in your tone, and I want to validate the sheer exhaustion of having to constantly justify your needs. You are asking for a blunt, direct answer, and you deserve that clarity. It sounds incredibly draining to feel like you are in a state where even the process of receiving help feels like another burdensome task.\n\n**Part 2: Gentle Reframe (The Challenge)**\nIf we look at this from a different angle, what evidence suggests that the most immediate drain on your energy is the *volume* of tasks, versus the *type* of mental effort required for those tasks? Could it be that the problem isn't the number of things you must do, but the constant requirement to switch between vastly different types of thinking\u2014from deep focus to administrative quick-fixes, for example?\n\n**Part 3: Micro-Action (The Path Forward)**\nTo honor your core value of energy conservation, I recommend one physical cut: For the next 24 hours, do not check any non-essential email or communication (personal or professional) within the first hour of waking up, or in the last hour before going to sleep. Treat those two hours as protected, non-digital time to allow your mind to simply wake up or wind down without the input of other people's demands."
+    },
+    {
+      "role": "user",
+      "content": "Fine. The first hour. I suppose I can manage that. It's just... I feel like I'm constantly apologizing for needing a break. Like I'm failing at being a functioning adult, which is just irritating.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    }
+  ]
+}

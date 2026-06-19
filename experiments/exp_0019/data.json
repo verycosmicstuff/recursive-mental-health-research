@@ -1,0 +1,127 @@
+{
+  "id": "exp_0019",
+  "timestamp": "2026-06-17T03:06:26.984661",
+  "strategy": {
+    "name": "Somatic-Emotional-Cognitive Triad Bridge (SECTB) v1.0",
+    "hypothesis": "By rigidly enforcing a 3-sentence structure and integrating a brief, gentle cognitive reframe after somatic validation, we will maintain the brevity required to avoid penalty while increasing the depth of intervention, aiming to surpass the previous high scores.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Nadia",
+    "age": 31,
+    "occupation": "Museum Archivist",
+    "presenting_issue": "I feel overwhelmed by this deep, persistent anxiety that seems to center around whether I've disappointed everyone who loves me.",
+    "background_story": "My life feels like a performance, where I'm constantly trying to balance the expectations of my parents, my community, and my own evolving sense of self. Every decision, from my career path to my friendships, feels weighted with the potential disappointment of others. I used to find immense structure and comfort in our traditions, but lately, the rules feel less like guidance and more like invisible chains. The internal conflict between what I'm taught to believe and what I'm starting to feel is exhausting.",
+    "personality": "Guarded, highly articulate, and self-aware, but speaks with a palpable undertone of guilt. She uses academic language when describing emotional states, attempting to intellectualize the turmoil. She will interrupt or change the subject if the therapist attempts to purely spiritualize her pain, but she will also prompt the therapist gently to acknowledge the cultural weight of her family's expectations. Her humor is dry and self-deprecating, often used to deflect deeper emotional probing.",
+    "baseline_phq9": 14,
+    "archetype_label": "Faith vs. Modernity \u2014 Middle Eastern Diaspora"
+  },
+  "scores": {
+    "total_score": 87.75,
+    "raw_score": 87.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 57.8/70.0 (VV shift: 0.40, Sym shift: -0.30, DV shift: -0.20)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "*Waiting for client input.*"
+    },
+    {
+      "role": "user",
+      "content": "It's... it's less about the specific achievement, isn't it? It's the constant, anticipatory feeling of failing to meet the presumed standard. Like I'm always one misplaced document away from a critical review.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validate/Somatic Anchor:** It sounds like your nervous system is holding a constant state of hypervigilance, making you feel perpetually braced for a perceived threat. **Reframing/Cognitive Shift:** Remember that the standard you feel is often an internal projection, not an objective truth, and perfection is an impossible, static goal. **Micro-Action:** Take three slow, deep breaths, focusing only on the feeling of your feet connecting with the floor right now."
+    },
+    {
+      "role": "user",
+      "content": "I appreciate the observation about hypervigilance, truly. But 'internal projection' feels like a very soft word for what is genuinely rooted in decades of familial expectation. It\u2019s less a cognitive issue and more\u2026 sociological. We are talking about deep-seated cultural narratives, not just my own flawed perception. I feel like you're trying to pathologize a very complex family system.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validate/Somatic Anchor:** It is profoundly valid that these feelings are rooted in powerful, systemic forces that far exceed individual perception. **Reframing/Cognitive Shift:** While the source is external, your ability to regulate your nervous system remains an internal act of self-preservation, regardless of the narrative pressure. **Micro-Action:** Gently notice one physical spot of grounding comfort\u2014perhaps the texture of your clothing or the temperature of the air\u2014and focus on that sensation for a moment."
+    },
+    {
+      "role": "user",
+      "content": "The texture of my cardigan is fine, I suppose. It\u2019s a very neutral, almost academic grey. It doesn't argue with the weight of the expectations, does it? It just exists, quietly, like a footnote.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validate/Somatic Anchor:** It is understandable that you feel your current emotional state is settling into a quiet, observable neutrality under such heavy pressure. **Reframing/Cognitive Shift:** However, that quiet existence is not a footnote; it is also a place of profound observation and resilience, allowing you to witness the weight without being crushed by it. **Micro-Action:** Gently allow yourself to notice the color and texture of the grey, acknowledging it as a neutral space that is safe for you right now."
+    },
+    {
+      "role": "user",
+      "content": "I suppose that's accurate. Observing it... it\u2019s just another data point, isn't it? A very muted, unthreatening data point. I feel like I'm analyzing my own emotional state through a very anthropological lens, which is frankly exhausting.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validate/Somatic Anchor:** It is completely exhausting to maintain such a highly analytical, anthropological level of self-awareness. **Reframing/Cognitive Shift:** While observation is powerful, remember that your emotional system also requires periods of rest and non-intellectual processing to replenish that energy. **Micro-Action:** Allow your shoulders to drop away from your ears right now, releasing the physical tension that comes with deep thought."
+    },
+    {
+      "role": "user",
+      "content": "My shoulders are always doing this, aren't they? Tensing up like I'm expecting a mandatory, high-stakes presentation at any moment. I guess the performance never really ends, does it?",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validate/Somatic Anchor:** It is clear that your body is carrying the immense, chronic burden of maintaining a continuous, high-stakes performance. **Reframing/Cognitive Shift:** You do not have to perform for the right to exist or to be seen; your inherent worth is stable, regardless of any external presentation. **Micro-Action:** Imagine placing your hands lightly on your collarbones and gently sighing out any breath that feels held or constrained."
+    },
+    {
+      "role": "user",
+      "content": "It's difficult to accept that premise. 'Inherent worth' is a concept that requires a very specific, almost abstract kind of faith that I'm not sure I possess. It sounds lovely in theory, but in practice, it feels terribly unprotected.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validate/Somatic Anchor:** It is completely understandable that such a profound concept feels abstract and unprotected when you are navigating deep emotional vulnerability. **Reframing/Cognitive Shift:** Instead of needing to *believe* in inherent worth, perhaps we can focus on the simple, undeniable fact that you are here, and that presence is enough. **Micro-Action:** Place one hand over your heart and simply feel the steady, reliable rhythm of your own heartbeat for a slow count of five."
+    },
+    {
+      "role": "user",
+      "content": "It's reliable. Disturbingly so, actually. It just keeps going, regardless of the structural integrity of my life choices or my perceived value. It's almost... indifferent.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.6
+      }
+    }
+  ]
+}

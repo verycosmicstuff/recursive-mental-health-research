@@ -1,0 +1,127 @@
+{
+  "id": "exp_0031",
+  "timestamp": "2026-06-17T04:10:09.441459",
+  "strategy": {
+    "name": "Defusion-Validated Intrinsic Connection (DVIC) v2.0",
+    "hypothesis": "By eliminating the direct Socratic challenge and replacing it with a purely ACT-based validation of thoughts as temporary labels (Defusion), and concluding with a soft invitation focused on intrinsic values, we will maximize the Therapeutic Alliance and Defusion components, thereby overcoming structural penalties and surpassing the 89.5 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Chloe",
+    "age": 42,
+    "occupation": "Administrative Coordinator",
+    "presenting_issue": "I feel like I am losing myself under the weight of caring for my parents, and I don't know how to balance my job and their needs.",
+    "background_story": "I moved my elderly parents from Guangzhou to Vancouver two years ago, thinking it would be better for them. Now that they are here, their needs have escalated rapidly, and they rely on me for everything. The constant demands\u2014medication management, appointments, and just being present\u2014mean I rarely have time to myself. I feel like I am failing them, even though I am doing everything I can.",
+    "personality": "Chloe speaks softly, often apologizing for needing to talk about herself. She uses very formal language and frequently defers responsibility to her parents' needs. When distressed, she resorts to vague physical complaints like headaches or stomach aches. She avoids confronting the therapist directly about her own exhaustion, instead framing her symptoms as a failure in her duty to her family. She speaks with a noticeable effort to maintain a polite, accommodating tone, even when discussing severe stress.",
+    "baseline_phq9": 16,
+    "archetype_label": "Filial Piety Conflict \u2014 East Asian Elder Care"
+  },
+  "scores": {
+    "total_score": 44.75,
+    "raw_score": 44.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 29.8/70.0 (VV shift: 0.00, Sym shift: 0.10, DV shift: 0.20) | Third-Person Penalty (-15): Used 'the client'",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please provide the client's statement so I can guide them."
+    },
+    {
+      "role": "user",
+      "content": "I am sorry, I don't know where to start. I just feel... overwhelmed. Like I'm constantly juggling too many things, and I keep dropping them.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like feeling overwhelmed by too many tasks is truly exhausting for you. Can we just notice the feeling of \"juggling\" as a thought, rather than a fact? Remember the strength you have in your ability to start, even when it feels impossible."
+    },
+    {
+      "role": "user",
+      "content": "I'm sorry, I don't know how to separate it like that. If I don't manage these things, my parents won't be taken care of. I feel so much pressure, and then I just get this headache, which I think is just stress.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the immense pressure of caring for your parents is creating physical stress. Can we notice the thought of \"I must manage everything\" without letting it dictate your current reality? Remember the deep love and dedication you possess; that caring heart is a profound strength."
+    },
+    {
+      "role": "user",
+      "content": "I wish I could just... not worry so much. It's just that if I stop worrying, I'm afraid something will happen to them. I really shouldn't complain, but my stomach keeps hurting when I think about all the appointments.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the worry itself is manifesting as real physical pain, which is incredibly distressing. Can we gently notice the thought of \"what if\" as an anxious thought, rather than a guaranteed prediction? Remember the deep resilience you possess; you have navigated difficult times before, and you are capable."
+    },
+    {
+      "role": "user",
+      "content": "Please forgive me for bringing this up, but I think I need to go home. My head feels really foggy, and I don't know if I can concentrate on these concepts right now. I'm afraid I'm making a fuss.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the fog and exhaustion are making you feel vulnerable and worried about being judged. Can we just notice the thought, \"I am making a fuss,\" as just a thought that passes? Trust your body's need for rest; that self-awareness is a sign of profound self-care."
+    },
+    {
+      "role": "user",
+      "content": "I truly apologize for dragging this out. I think I just need to go home and rest. It's probably nothing, I promise.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are feeling guilty for needing to prioritize rest right now. Can we notice the thought, \"It's probably nothing,\" and see it just as a thought, rather than a fact? Remember that honoring your own needs is a profound act of self-respect and strength."
+    },
+    {
+      "role": "user",
+      "content": "I suppose... I just feel so depleted. Like my resources are running out completely, and I don't know how I'm supposed to refill them, given everything.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like feeling completely depleted and running on empty is deeply unsettling for you. Can we notice the thought of \"running out\" as a description of your current state, rather than a permanent reality? Remember that even small moments of rest are powerful; your capacity for self-compassion is always there."
+    },
+    {
+      "role": "user",
+      "content": "I just feel so tired, I don't even know what to say. I really should be focusing on my parents, I should be...",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "exp_0093",
+  "timestamp": "2026-06-17T10:36:54.438274",
+  "strategy": {
+    "name": "Micro-Defusion-Value-Action Loop (MDVAL-L) v1.0",
+    "hypothesis": "By replacing the generic 'Connect' step with a mandated, explicit ACT Defusion technique (e.g., noticing the thought pattern) and grounding the subsequent action in a specific value, I hypothesize that the structural complexity and depth of insight will maximize the score, pushing the score above 90.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Li-Na",
+    "age": 44,
+    "occupation": "Marketing Coordinator",
+    "presenting_issue": "I feel constantly exhausted, like I'm running on an empty tank, and I don't know where to even start.",
+    "background_story": "Since Mom and Dad moved from Guangzhou, my life has been nothing but logistics\u2014managing appointments, coordinating care, and constantly adapting to their needs in Vancouver. They were so good at everything back home, and now they need me for everything. I try to keep everything running smoothly so they are comfortable, but I feel like I'm losing myself in the sheer volume of it all. I just worry about doing enough for them and not failing.",
+    "personality": "She speaks in highly polite, deferential tones, often preemptively apologizing for taking up time or for her own exhaustion. She will use euphemisms when discussing stress, preferring to describe physical sensations (e.g., 'my back aches' or 'I can't sleep') rather than emotional distress. She avoids direct confrontation or expressing needs, instead framing everything as a concern for the family's stability. She will respond best to validation of her sacrifices and the cultural weight of her responsibilities.",
+    "baseline_phq9": 15,
+    "archetype_label": "Filial Piety Conflict \u2014 East Asian Elder Care"
+  },
+  "scores": {
+    "total_score": 86.0,
+    "raw_score": 86.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 56.0/70.0 (VV shift: 0.40, Sym shift: 0.00, DV shift: -0.40)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "It sounds like you are having the thought that the weight of everything feels too heavy to carry, and that this overwhelm is a permanent state. If self-kindness were your goal today, what is one small way you could treat yourself right now? Could you commit to pausing for two minutes and simply naming three things you are grateful for, however small?"
+    },
+    {
+      "role": "user",
+      "content": "Oh, please, I'm so sorry if I'm rambling or making you waste your time. I don't know... maybe just sitting down for a moment, I guess. I'm not sure if I can even remember what I'm grateful for right now.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are having the thought that your thoughts or needs are a burden, and that you need to apologize for simply existing. If self-compassion were your goal right now, what does that look like in this moment? Could you commit to simply noticing the feeling of your feet on the floor for the next 60 seconds, without needing to change anything?"
+    },
+    {
+      "role": "user",
+      "content": "Well, I suppose maybe it's just... recognizing that I can rest my shoulders for a minute, even if it feels pointless. I really don't want to take up any more of your time.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are having the thought that your needs require an apology, and that taking up space is inherently inconvenient. If self-acceptance were your goal right now, what does that permission look like? Remember that your presence here is not a burden, but a necessary space. Could you commit to giving yourself explicit permission to rest your shoulders for the next minute, without judgment or expectation?"
+    },
+    {
+      "role": "user",
+      "content": "I... I suppose it just means acknowledging that I'm tired and that it's okay to feel that way without having to fix it immediately. Thank you for reminding me that I don't need to apologize for being here.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are having the thought that feeling tired means there must be an immediate solution or fix for that feeling. If self-compassion were your goal right now, what does simply *allowing* yourself to be tired look like? Could you commit to spending the next three minutes doing nothing but breathing deeply, acknowledging that the goal is just rest, not resolution?"
+    },
+    {
+      "role": "user",
+      "content": "It's hard, really. To just... be tired, without needing an agenda for it. I guess it means just letting the breathing happen, and not thinking about how many things I should really be doing instead.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are having the thought that even rest must have a purpose or an agenda to feel valid. If non-judgmental presence were your goal right now, what does that permission look like? Remember that simply noticing the breath, without trying to change it, is a profound act of self-care. Could you commit to observing your breath for the next minute, treating it purely as a neutral physical event?"
+    },
+    {
+      "role": "user",
+      "content": "It's just... noticing it. I suppose it means just letting it be, instead of planning what's next. I feel a little less tight in my chest right now.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are having the thought that relief must be permanent, but what you are experiencing is a moment of temporary, gentle spaciousness. If self-awareness were your goal right now, what does honoring this moment of ease look like? You have successfully connected with your body's signal for rest. Could you commit to carrying the gentle recognition of that spaciousness into the next hour, even if you get distracted?"
+    },
+    {
+      "role": "user",
+      "content": "I will try. It's just... remembering that space, even when I'm rushing around or dealing with someone else's needs. It feels fragile, I worry it will just slip away again.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are having the thought that moments of peace are inherently fragile and always on the verge of slipping away. If resilience were your goal today, what is one internal resource you can trust when external circumstances feel overwhelming? Could you commit to identifying one physical anchor\u2014like a ring, a piece of jewelry, or a patch of clothing\u2014to remind you of this feeling of space whenever you feel the worry creeping back?"
+    },
+    {
+      "role": "user",
+      "content": "I guess... it's the feeling of my own hands, actually. Just holding them loosely. It's like a reminder that I can still gather myself. I hope it won't fade.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.5
+      }
+    }
+  ]
+}

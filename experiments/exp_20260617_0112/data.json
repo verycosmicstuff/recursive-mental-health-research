@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0112",
+  "timestamp": "2026-06-17T17:10:22.979266",
+  "strategy": {
+    "name": "Ultra-Concise PCT-ACT Loop (UC-PACTL) v3.0",
+    "hypothesis": "By enforcing a maximum of two distinct sentences and mandating a specific PCT reflection immediately followed by a single, actionable ACT Defusion technique, we will achieve maximum structural density and low word count, maximizing the clinical 'punch' and therefore maximizing the score.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Ethan",
+    "age": 29,
+    "occupation": "Software Developer",
+    "presenting_issue": "I just feel completely drained and nothing seems worth putting effort into right now.",
+    "background_story": "My job is supposed to be exciting, but lately, it just feels like a cycle of staring at code and scrolling through feeds. I used to enjoy gaming with friends, but even that feels like a chore now. I keep finding myself just zoning out in front of the screen for hours, feeling numb to everything real.",
+    "personality": "Low energy, drifts off mid-sentence, uses excessive internet slang, answers questions with short, non-committal sighs.",
+    "baseline_phq9": 16,
+    "archetype_label": "Isolated Remote Worker"
+  },
+  "scores": {
+    "total_score": 68.5,
+    "raw_score": 68.5,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 38.5/70.0 (VV shift: 0.00, Sym shift: -0.10, DV shift: -0.10)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "It sounds like you are feeling immense pressure and anxiety about making the right choice. Consider viewing these choices not as permanent decisions, but as temporary experiments."
+    },
+    {
+      "role": "user",
+      "content": "Uh... yeah. I guess. Kinda nothing sticks, tbh.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It's frustrating when your efforts don't feel consistent or impactful. What if you focused only on the smallest possible next step instead of the entire outcome?"
+    },
+    {
+      "role": "user",
+      "content": "Ugh. whatever. I just... dunno where to even start.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Feeling overwhelmed and unsure of where to begin is completely draining. Consider identifying just one tiny area of interest to build momentum from."
+    },
+    {
+      "role": "user",
+      "content": "ugh. i dunno. everything feels like\u2026 too much effort rn.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is completely understandable that everything feels draining when your energy reserves are low. Consider giving yourself permission to do nothing productive for a set amount of time."
+    },
+    {
+      "role": "user",
+      "content": "lol. yeah. that sounds kinda sus, tbh. i'll think about it.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It's natural to feel skeptical when faced with suggestions for change or rest. Consider treating this conversation not as advice, but as a safe space for gentle exploration."
+    },
+    {
+      "role": "user",
+      "content": "K. Whatever. Just... dunno. I guess.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Feeling adrift and unsure of direction can be profoundly unsettling. What if the goal right now was simply to accept the current feeling, without needing an answer?"
+    },
+    {
+      "role": "user",
+      "content": "huh. so just... chill with it? feels kinda basic, tbh.",
+      "somatic_state": {
+        "sympathetic": 0.1,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It's natural to resist ideas that feel too simple or unchallenging. What if accepting the feeling is actually a form of powerful, active resistance?"
+    },
+    {
+      "role": "user",
+      "content": "Meh. I guess. I just feel... tired. Like, super tired.",
+      "somatic_state": {
+        "sympathetic": 0.1,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
+    }
+  ]
+}

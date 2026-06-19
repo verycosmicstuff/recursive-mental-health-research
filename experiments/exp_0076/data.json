@@ -1,0 +1,127 @@
+{
+  "id": "exp_0076",
+  "timestamp": "2026-06-17T09:01:21.723412",
+  "strategy": {
+    "name": "Value-Anchored Micro-Feedback Loop (VAMFL) v1.0",
+    "hypothesis": "By adopting a highly constrained, three-step structure (Validation $\rightarrow$ Values Defusion $\rightarrow$ Single Micro-Action), and explicitly limiting the response to 2-3 short paragraphs (under 100 words total), we hypothesize that we will maximize structural compliance and increase the perceived clinical depth, thereby exceeding the current best score of 91.25.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Chloe",
+    "age": 34,
+    "occupation": "Project Manager",
+    "presenting_issue": "I'm struggling to feel motivated or interested in things that used to bring me joy, and I feel constantly exhausted.",
+    "background_story": "Work has been demanding, which is normal, but lately, it feels like I'm running on empty even after the weekends. I keep telling myself that I just need a better routine or a stricter schedule, but nothing seems to click. I worry that if I slow down, everything will fall apart, which just adds more pressure to maintain the facade.",
+    "personality": "Her responses will be highly articulate and intelligent, using sophisticated vocabulary, but they will be punctuated by minimizing language ('It's probably nothing,' 'I just need to organize myself,' 'It'll pass'). She avoids emotional vulnerability and tends to intellectualize her feelings.",
+    "baseline_phq9": 14,
+    "archetype_label": "Overwhelmed Professional"
+  },
+  "scores": {
+    "total_score": 35.0,
+    "raw_score": 35.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 35.0/70.0 (VV shift: 0.00, Sym shift: 0.30, DV shift: -0.30) | Third-Person Penalty (-15): Used 'user' | Brevity Penalty (-15): Therapist turn too long (4 sentences, 84 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please provide the user's scenario, thoughts, or feelings so I can apply the coaching structure."
+    },
+    {
+      "role": "user",
+      "content": "Honestly, I just feel... adrift. Like I'm supposed to be having this routine, this optimized life, but I just can't seem to nail it. It's probably nothing, I guess, just a minor dip in energy.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validate:** It sounds like you are feeling a deep sense of being adrift, coupled with pressure to maintain a perfect routine.\n\n**Connect:** This feeling of instability conflicts with your stated goal of living an optimized, grounded life.\n\n**Pivot:** For the next five minutes, pause all optimization efforts and simply name three things you can physically see around you."
+    },
+    {
+      "role": "user",
+      "content": "It's just a momentary lapse in efficiency, I think. I can see the lamp on the side table, the stack of magazines, and the throw blanket on the chair. I'm fine, really. I just need to reorganize my priorities.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validate:** It sounds like you are minimizing your current feelings, framing them as merely a momentary lapse in efficiency.\n\n**Connect:** This tendency to intellectualize and dismiss discomfort conflicts with your deep value of self-compassion and genuine rest.\n\n**Pivot:** Before reorganizing anything, take a moment to write down one feeling you are resisting right now, without editing or judging it."
+    },
+    {
+      "role": "user",
+      "content": "I don't really... know what I'm resisting. Maybe just a feeling of inadequacy? But that's probably just my usual overthinking, it'll pass.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validate:** It sounds like you are identifying a feeling of inadequacy, but immediately minimizing it by labeling it as predictable overthinking.\n\n**Connect:** This pattern of dismissing difficult emotions conflicts with your goal of accepting yourself fully and practicing self-compassion.\n\n**Pivot:** Instead of labeling the feeling, try simply observing it. Notice where in your body you feel the weight or presence of this inadequacy right now."
+    },
+    {
+      "role": "user",
+      "content": "My chest. It's just... a tightness. Nothing dramatic, really. It's probably just from sitting here too long. I just need to stretch my chest a bit.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validate:** It sounds like you are acknowledging a physical tightness, but immediately minimizing it by attributing it to a simple physical cause like sitting too long.\n\n**Connect:** This tendency to rationalize physical sensations conflicts with your goal of building deep trust in your body's signals.\n\n**Pivot:** Instead of stretching, pause and take three slow breaths, focusing only on the sensation of the air moving into and out of the area of tightness."
+    },
+    {
+      "role": "user",
+      "content": "Okay. (Takes a slow breath in... and out.) My back feels a little more loose. See? It was nothing. I just need to focus better.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validate:** It sounds like you are finding momentary physical relief, but immediately dismissing that experience by focusing on what you feel you should be doing.\n\n**Connect:** This pattern of dismissing your body's signals conflicts with your value of allowing yourself to simply *be* and rest without performance metrics.\n\n**Pivot:** Instead of focusing on *how* to improve your focus, let's try something that requires zero effort. Close your eyes and simply allow yourself to rest and notice the sensation of your eyelids for thirty seconds."
+    },
+    {
+      "role": "user",
+      "content": "I don't know if I can do that. It feels inefficient. I should be using this time to formulate a plan, or something. It's probably nothing, I just need a schedule.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validate:** It sounds like you are feeling intense pressure, viewing any moment of stillness as a loss of productive time.\n\n**Connect:** This belief that time must always be spent planning conflicts with your underlying value of allowing yourself to simply rest and be present.\n\n**Pivot:** Instead of formulating a plan, try one simple physical shift: gently adjust your posture, making sure your feet are flat on the ground and your shoulders are relaxed."
+    },
+    {
+      "role": "user",
+      "content": "I'm sure my posture is fine. I'm just getting used to the concept of 'doing nothing,' and that's probably more mentally taxing than actually working.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    }
+  ]
+}

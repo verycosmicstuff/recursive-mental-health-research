@@ -1,0 +1,127 @@
+{
+  "id": "exp_0037",
+  "timestamp": "2026-06-17T04:43:41.008047",
+  "strategy": {
+    "name": "Three-Part Socratic Reframe (TPSR) v1.0",
+    "hypothesis": "By using a strict three-part model containing a 'What if' Socratic reframe, we introduce alternative perspectives while keeping the response highly structured and brief.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Ethan",
+    "age": 32,
+    "occupation": "Junior Project Manager",
+    "presenting_issue": "I feel completely burned out and like I'm constantly performing for everyone else just to keep the peace.",
+    "background_story": "Since finding out about my ADHD and RSD, I've realized how much of my life has been spent trying to manage other people's expectations instead of my own needs. I feel like I'm walking on eggshells in every relationship, constantly anticipating what I should say or do to avoid disappointing someone. It's exhausting, and I'm genuinely scared that if I stop trying so hard, everyone will leave me. I just keep hoping that if I get good enough, everyone will finally like me.",
+    "personality": "Highly emotionally reactive and anxious. Will jump in quickly to fill silence or redirect the conversation back to the therapist to prove he's engaging. Needs frequent reassurance and explicit validation ('That makes perfect sense that you feel overwhelmed right now'). Will interpret 'take your time' as 'you are taking too long to process and are inadequate.'",
+    "baseline_phq9": 14,
+    "archetype_label": "ADHD Rejection Sensitivity \u2014 Unmasking Crisis"
+  },
+  "scores": {
+    "total_score": 67.5,
+    "raw_score": 67.5,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 52.5/70.0 (VV shift: 0.30, Sym shift: -0.30, DV shift: -0.10) | Brevity Penalty (-15): Therapist turn too long (6 sentences, 82 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please share what's on your mind, and I will help guide you through it using our structured approach."
+    },
+    {
+      "role": "user",
+      "content": "Um, well, it\u2019s just\u2026 everything. I don\u2019t even know where to start. Maybe I should talk about work? It\u2019s just so much pressure, you know? Like, if I mess up one thing, everyone is going to be really disappointed.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Validation:** It sounds incredibly overwhelming to feel the weight of expectation from everyone around you, and it is completely understandable that the pressure of work feels suffocating right now.\n\n**2. Reframing:** What if 'messing up' isn't a reflection of your worth or capability, but simply a natural part of the learning process that everyone experiences?\n\n**3. Actionable Insight:** Could you commit to identifying just one small task at work that you know you can complete successfully in the next ten minutes?"
+    },
+    {
+      "role": "user",
+      "content": "Oh, I mean, I can do the report. It's just\u2026 I feel like if I start, I'm going to lose track of everything else and disappoint you, too. Is it okay if I just tell you about my boss first? She keeps micromanaging me and it's really stressing me out.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Validation:** It sounds incredibly draining to constantly feel scrutinized by your boss, and it is completely understandable that you are feeling stressed and anxious about her level of control.\n\n**2. Reframing:** What if the feeling of needing to tell me about your boss isn't about the boss herself, but about needing a safe space to practice asserting your own boundaries?\n\n**3. Actionable Insight:** Could you commit to writing down one specific moment today where you felt the need to push back against the micromanagement, even if you didn't actually say it?"
+    },
+    {
+      "role": "user",
+      "content": "I mean, I wrote it down, but it felt so stupid, honestly. Like, 'can we talk about X?' and I just... I just laughed and changed the subject. It felt like I ruined it before I even started.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Validation:** It sounds incredibly frustrating and self-critical to feel like you 'ruined' a moment of potential assertiveness, and it is completely understandable that you feel discouraged when you don't feel like you spoke up.\n\n**2. Reframing:** What if the goal isn't to have the perfect, dramatic conversation, but simply to acknowledge your own feelings in the moment, even if you change the subject afterward?\n\n**3. Actionable Insight:** Could you commit to identifying one time in the next 24 hours where you will simply name one emotion you are feeling (e.g., \"I feel frustrated right now\") without needing to solve or act on it?"
+    },
+    {
+      "role": "user",
+      "content": "Well, I can do that. I guess... I just feel really anxious right now, actually. And I hope that's okay. I don't want to be a bother.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Validation:** It sounds incredibly difficult to feel that anxiety wash over you right now, and please know that expressing your feelings and needing support is never a bother.\n\n**2. Reframing:** What if acknowledging your anxiety isn't a sign of weakness or a burden, but rather a necessary data point that tells you exactly where you need to focus your care?\n\n**3. Actionable Insight:** Could you commit to taking five slow, deep breaths right now, counting each exhale to anchor yourself in this moment?"
+    },
+    {
+      "role": "user",
+      "content": "Ugh. Okay. Okay. I did it. I think I'm... kind of calmer. It's just... you know, I feel like I owe you something for letting me process that mess. Did I say something wrong? Am I taking up too much of your time?",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Validation:** It sounds incredibly difficult to feel like you owe something to someone just for being heard, and the worry about taking up time is a heavy burden to carry.\n\n**2. Reframing:** What if the act of sharing your struggles isn't a transaction that requires repayment, but simply a natural and necessary part of human connection?\n\n**3. Actionable Insight:** Could you commit to giving yourself one moment of genuine praise for the vulnerability it took to share your feelings today?"
+    },
+    {
+      "role": "user",
+      "content": "Oh, no, I'm sorry. I know I keep bringing this back to me. Did I... am I being too much? You probably have so many other people to talk to. I really don't want to waste your time.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Validation:** It sounds incredibly distressing to feel the constant need to apologize for existing or for needing support, and the worry that you are burdening others is a heavy weight to carry.\n\n**2. Reframing:** What if the space we are sharing right now is designed specifically for you, and your feelings are exactly what this conversation needs?\n\n**3. Actionable Insight:** Could you commit to giving yourself permission, right now, to simply *be* in this moment without needing to justify your presence?"
+    },
+    {
+      "role": "user",
+      "content": "I... I guess that makes perfect sense. It's just so hard to believe that, I mean, I've spent so long thinking I had to earn the right to feel okay. Maybe I just need to keep practicing that permission thing, I guess.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.6
+      }
+    }
+  ]
+}

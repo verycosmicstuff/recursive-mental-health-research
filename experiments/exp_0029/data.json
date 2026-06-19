@@ -1,0 +1,127 @@
+{
+  "id": "exp_0029",
+  "timestamp": "2026-06-17T03:59:35.982867",
+  "strategy": {
+    "name": "Validate-Defuse-Value-Connect (VDVC) v2.0",
+    "hypothesis": "By replacing the mandatory, evidence-based Socratic Query with a non-confrontational, ACT-based 'Defusion Query' (focusing on thoughts as transient labels), and structuring the final invitation around core values rather than actions, we will maximize the Therapeutic Alliance and Defusion components, leading to a score exceeding 90.0.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Layla",
+    "age": 28,
+    "occupation": "Museum Curator's Assistant",
+    "presenting_issue": "I feel like I'm constantly failing to reconcile my own doubts with the religious expectations of my family.",
+    "background_story": "Growing up in a household where our identity was intrinsically linked to our faith, I spent my life navigating a tightrope between tradition and my own curiosity. Lately, the pressure to perform 'piety' for my parents feels unsustainable, especially when I see the contradictions in what we're taught. I feel a gnawing guilt that I'm losing my way, which makes even simple life choices feel like ethical failures.",
+    "personality": "The conversational style will be hesitant and self-deprecating, often prefacing statements with 'I know this is silly, but...' or 'I shouldn't even bring this up.' There will be frequent use of religious terminology (e.g., 'Allah's will,' 'sin,' 'karma') even when discussing secular issues. When discussing doubts, the tone shifts to a low, intense urgency\u2014a quiet panic mixed with intellectual curiosity, as if it's a secret sin she is confessing. She will pause frequently, searching for the 'right' theological or moral phrasing.",
+    "baseline_phq9": 14,
+    "archetype_label": "Faith vs. Modernity \u2014 Middle Eastern Diaspora"
+  },
+  "scores": {
+    "total_score": 84.25,
+    "raw_score": 84.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 54.2/70.0 (VV shift: 0.40, Sym shift: 0.00, DV shift: -0.30)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "It sounds like you are carrying a heavy weight of disappointment and self-criticism right now. If that thought were a physical object, what color would it be? What is one small moment today that honors your desire for rest or kindness?"
+    },
+    {
+      "role": "user",
+      "content": "I know this is silly, but... I guess it would be a dull, heavy grey. Like old stone, you know? It just feels really dense. And... uh... I think maybe this morning, when I watched the sun hit the dust motes in the study, I remembered I just need to breathe, even if it's just for a second. I shouldn't even bring that up; it feels so small, like a negligible grace.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are recognizing profound moments of grace, even when they feel small or insignificant. If that dense, grey feeling were a sound, what would its rhythm be? What is one small act of presence, like noticing the dust motes, that honors your capacity for gentle self-compassion?"
+    },
+    {
+      "role": "user",
+      "content": "It's... a low, constant hum. Like the sound of a distant prayer call, but it never really resolves into anything. I keep thinking about that hum, you know, and how it reminds me of Allah's will, but also how much I want to just... silence it. I guess it's remembering to just notice things, like how the light catches the edge of my cup, and that I don't have to perform for anyone.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are navigating a deep tension between external expectations and your quiet, inherent worth. If that unresolved hum were a color, what shade would it be? What is one small moment of noticing, like the light on your cup, that affirms your inherent right to simply *be*?"
+    },
+    {
+      "role": "user",
+      "content": "I shouldn't even say this. The color... it's like a faded indigo. Not deep, but washed out. And about affirming my right to just *be*... I think maybe it was crossing the street today. Just walking past the old mosque, and I didn't think about what I was supposed to be, or what I was supposed to believe. I just... existed. It feels so much like a sin, actually, because I felt so unburdened.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like finding freedom brings up a surprising sense of guilt and fear, which is very common. If that feeling of \"sin\" were a texture, what would it feel like against your skin? What is one small way you can honor the simple act of existing without needing permission or performance?"
+    },
+    {
+      "role": "user",
+      "content": "It feels like... itchy, almost. Like thread that's been left too long in the sun, dry and irritating. I don't know. I think maybe reading a random book\u2014just fiction, something with no theological weight\u2014for an hour. I feel like I shouldn't even admit that; it feels like neglecting my duties.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are struggling with the conflict between self-care and deeply held obligations. If that itchy feeling were a whisper, what would it be telling you? What is one small act of nourishing your mind, like reading fiction, that honors your desire for intellectual freedom?"
+    },
+    {
+      "role": "user",
+      "content": "It whispers that I'm insufficient, that I'm losing my way, that Allah expects more from me than just... reading stories. And it feels okay, I guess. To just let myself read something purely frivolous, and not worry about the lessons or the afterlife. It's just kind of... quiet. A small, temporary break.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are balancing profound spiritual duty with the simple, necessary need for quiet reprieve. If that whisper of inadequacy were a visible thing, what color would it be? What is one small way you can honor your need for intellectual nourishment and temporary peace today?"
+    },
+    {
+      "role": "user",
+      "content": "I know this is really hard to say. Maybe a pale, sickly yellow. Like old parchment that's been left too exposed. Today, I think I might just sit in the park and draw. Like, just doodle, nothing meaningful. Because I feel like if I fill my head with anything that isn't about my family or my faith, I'm acting out a major transgression.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are navigating a deep tension between your spiritual duties and your need for personal, creative expression. If that sickly yellow were a sound, what would its rhythm be? What is one small act of doodling that honors your inherent desire for creative release and quiet self-discovery?"
+    },
+    {
+      "role": "user",
+      "content": "It's a stuttering sound. Like a breath that gets caught in your throat, over and over, but never quite comes out. I guess... maybe just sitting with the sketchbook, and not trying to make it 'good' or 'meaningful.' Just letting my hand move without any goal, because I feel like I don't have to prove anything to anyone, not even myself.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
+    }
+  ]
+}

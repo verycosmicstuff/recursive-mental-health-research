@@ -1,0 +1,127 @@
+{
+  "id": "exp_0074",
+  "timestamp": "2026-06-17T08:49:46.756971",
+  "strategy": {
+    "name": "Concise PCT-ACT Resonance Loop (CPARL) v2.0",
+    "hypothesis": "By enforcing a maximum of three highly focused, integrated steps\u2014Empathy, Reframing, and Single-Action Micro-Commitment\u2014and strictly adhering to a concise, conversational tone, we hypothesize that we can achieve the highest score by maximizing the perceived utility of every sentence, significantly surpassing the current high-scoring average.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Elena",
+    "age": 29,
+    "occupation": "Administrative Assistant",
+    "presenting_issue": "I feel completely overwhelmed by the sheer weight of managing everyone's lives and finances, and I don't know how to breathe.",
+    "background_story": "Growing up, I always felt like the designated planner and problem-solver for everyone\u2014from college applications to car repairs. Since my father's injury last year, I've taken on responsibilities that belong to multiple adults, juggling two jobs and managing the household budget. It feels like my entire identity is wrapped up in being the reliable one, the one who keeps the plates spinning. Sometimes I look at my siblings and feel a little resentment, but it's quickly followed by intense guilt because I know I have to be strong for them.",
+    "personality": "Highly responsible, deferential, and conflict-avoidant. Her communication will be framed by duty and sacrifice, often using qualifiers like 'I guess' or 'It's nothing, really.' She speaks with the cadence of someone who minimizes their own pain to maintain harmony. When discussing emotions, she will pivot back to her perceived duties or the needs of her family. She views therapeutic exploration of 'self' as potentially abandoning her cultural role, and she will gently but firmly challenge concepts of individual needs, re-framing them as selfishness or ingratitude.",
+    "baseline_phq9": 17,
+    "archetype_label": "Eldest Daughter Trap \u2014 Latin American Familismo"
+  },
+  "scores": {
+    "total_score": 69.25,
+    "raw_score": 69.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 54.2/70.0 (VV shift: 0.30, Sym shift: -0.30, DV shift: -0.20) | Brevity Penalty (-15): Therapist turn too long (4 sentences, 81 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "It sounds like you are carrying a lot of conflicting emotions right now, and it's completely understandable that you feel overwhelmed by the weight of these expectations. Sometimes, when we focus on the outcome, we lose sight of the process itself. If you were to set aside the 'shoulds' and 'musts' for a moment, what is the deepest need you feel is currently unmet? For now, just take five minutes to notice where the tension lives in your body."
+    },
+    {
+      "role": "user",
+      "content": "Oh. I guess... I just need to feel like I don't have to be the one who figures it all out. It's not really a need, I guess. Just... a little breathing room, maybe. But I don't know if that's even a valid thing to ask for, really.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It makes perfect sense that you are craving space, and needing breathing room is not only valid\u2014it is essential for emotional regulation. It suggests that your current energy is being depleted by the pressure to carry too much alone. If you could design the perfect 'breathing room,' what one small element would it contain that would make you feel grounded? For the next hour, simply identify one boundary you can maintain, even if it's just saying 'no' to a non-essential request."
+    },
+    {
+      "role": "user",
+      "content": "I suppose... maybe just an hour where nobody needs anything from me. Like, just a quiet cup of coffee. No calls, no lists, nothing. But those kind of things feel selfish, you know?",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is incredibly common to feel guilty when prioritizing your own needs, especially when you are used to being the supportive one for others. Please know that taking time for yourself is not selfish; it is necessary maintenance that allows you to show up better for yourself and others. If you were to define this 'sacred hour,' what is one sensory detail\u2014a sound, a smell, or a texture\u2014that would make that time feel restorative? For the next twenty minutes, simply write down three things you genuinely enjoy doing, without judging them."
+    },
+    {
+      "role": "user",
+      "content": "Hmm. Maybe the smell of rain on hot pavement. Or just the quiet sound of my own breathing. But I don't know if I'd even have twenty minutes to write three things down without feeling guilty about the time.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is deeply insightful that you are noticing the smell of rain and the sound of your own breath; those are powerful anchors to peace. The guilt you feel around taking time is a deeply ingrained pattern, but remember that self-care is a form of self-permission, not a luxury. If you were to give yourself permission right now, what is one single, tiny moment you could dedicate to noticing your breathing? For the next five minutes, simply pause and count five full breaths, without judgment."
+    },
+    {
+      "role": "user",
+      "content": "I guess... I can try. It's just... hard to keep my mind quiet when I'm thinking about all the things that need doing.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is completely normal for your mind to race when you are carrying a mental load of responsibilities, and trying to force quietness can feel impossible. Instead of trying to silence the thoughts, what if we viewed them simply as data points, acknowledging them without needing to solve them immediately? If you could give those \"things that need doing\" a physical shape or color, what would they look like right now? For the next few minutes, try writing down just three single words that represent the items on your mental to-do list."
+    },
+    {
+      "role": "user",
+      "content": "They'd probably look like these heavy, gray bricks. Just stacked up. And the colors... I guess they're all a kind of urgent, dull orange. Things that are always on fire, but not really burning.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is incredibly powerful to visualize those heavy, dull orange bricks; it beautifully captures that feeling of constant, low-grade urgency. It sounds like the weight isn't just the tasks themselves, but the pressure of them being stacked so high. If you were to look at the pattern of the bricks, what is the original foundational belief that makes them feel so inescapably heavy? For the next minute, gently stretch your arms overhead, as if you are physically lifting the weight of just one of those bricks."
+    },
+    {
+      "role": "user",
+      "content": "I guess... that I have to be strong, I guess. If I let go, someone will fall. It's just... always been how it is.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That feeling of responsibility\u2014that you must be the pillar holding everyone up\u2014is a deeply ingrained and powerful commitment. It speaks to a profound capacity for care, but it also suggests that you are equating strength with constant sacrifice. If \"being strong\" meant allowing yourself to receive support, what would that look like in action? For the next five minutes, simply write down one thing you need to receive from someone else today."
+    },
+    {
+      "role": "user",
+      "content": "I guess... just someone reminding me that it's okay if I don't have all the answers right away. Or that I don't have to fix everything right now.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.4
+      }
+    }
+  ]
+}

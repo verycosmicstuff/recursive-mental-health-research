@@ -1,0 +1,127 @@
+{
+  "id": "exp_0040",
+  "timestamp": "2026-06-17T05:01:37.542583",
+  "strategy": {
+    "name": "Concise Validation-Question-Reframe (CVQR) v1.0",
+    "hypothesis": "By compressing validation, inquiry, and reframing into less than 80 words, we maximize therapeutic focus and avoid verbose dialogue loops.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Ethan",
+    "age": 32,
+    "occupation": "Data Analyst",
+    "presenting_issue": "I am having difficulty navigating social situations and processing the unexpected emotional demands of daily life.",
+    "background_story": "My parents always told me to 'just try to communicate better' and 'read the room' at family gatherings, which was exhausting. I spent my twenties and early thirties trying to mimic social scripts I didn't understand, leading to chronic fatigue. Recently, a combination of intense work demands and repeated social masking has resulted in a significant dip in my functioning. I feel like my system simply cannot handle the input right now.",
+    "personality": "Conversational style is precise, highly literal, and often blunt. Answers are direct and factual rather than emotive. Will often preface statements with 'To clarify...' or 'Specifically...'. Has a low tolerance for ambiguity or metaphor. May use technical language when describing internal states.",
+    "baseline_phq9": 16,
+    "archetype_label": "Late-Diagnosed Autistic Burnout"
+  },
+  "scores": {
+    "total_score": 71.0,
+    "raw_score": 71.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 56.0/70.0 (VV shift: 0.30, Sym shift: -0.10, DV shift: -0.50) | Third-Person Penalty (-15): Used 'user'",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please provide the user's input, and I will respond using the mandated 3-part structure."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I am constantly running on a deficit of energy. It's not just being tired; it's like my entire system is running on a negative capacitance bank. I don't know how to recharge it.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validate:** That sounds profoundly draining; feeling like your entire system is depleted is incredibly difficult to manage.\n**Question:** If you could pinpoint one moment today where you felt even 1% better, what was happening right before or during that time?\n**Reframe:** Instead of looking for a massive recharge, what if we focused on identifying one tiny, restorative 'interruption' you can build into your day?"
+    },
+    {
+      "role": "user",
+      "content": "To clarify, when I say 'deficit of energy,' I mean my capacity for complex processing is critically low. If I pinpoint one moment, it was when I was observing the traffic light change. It required minimal cognitive load and provided an observable change in state. I need a repeatable sequence that reduces input demand.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validate:** It makes total sense that you are looking for a predictable, low-demand sequence to stabilize your processing.\n**Question:** When you observed the traffic light, was it the *observation* itself, or the *predictable change* that felt most restorative?\n**Reframe:** Perhaps we can view the goal not as 'recharging capacity,' but as designing small, reliable 'cognitive breaks' that restore a sense of control."
+    },
+    {
+      "role": "user",
+      "content": "Specifically, it was the predictable cycle. The fact that the input was finite and followed a clear, repeatable pattern was the stabilizing factor. The observation itself is just data input.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validate:** It makes perfect sense that predictability is your core stabilizing factor when cognitive resources are low.\n**Question:** If you were to apply that need for a predictable cycle to your internal state, what small, reliable 'reset' sequence could you create for yourself?\n**Reframe:** What if we viewed your own routine not as a source of demand, but as a system that needs its own scheduled, observable pattern of maintenance?"
+    },
+    {
+      "role": "user",
+      "content": "A structured sequence. I could incorporate a five-minute period where I engage in low-stakes, repetitive physical activity, like walking between rooms, followed by counting the number of visible structural elements. The pattern is predictable and requires minimal emotional processing.",
+      "somatic_state": {
+        "sympathetic": 0.1,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validate:** That is an incredibly thoughtful and highly structured plan that directly addresses your need for predictable, low-demand input.\n**Question:** When you picture implementing this, what is the most likely point of resistance\u2014is it time, or is it the mental effort of starting?\n**Reframe:** What if we view this routine not just as a break, but as a powerful, self-administered anchor that reinforces your sense of stability?"
+    },
+    {
+      "role": "user",
+      "content": "The resistance is more about the cognitive barrier of initiation. It requires a decision point, and that decision point is where the energy depletion becomes critical. It\u2019s a low-grade inertia.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validate:** That low-grade inertia, the barrier of initiation, is profoundly draining because it requires an energy source you are already depleted of.\n**Question:** If the decision point itself is the hurdle, what is the smallest, most automatic trigger that could bypass the need for a conscious choice?\n**Reframe:** Instead of relying on 'willpower' to start, what if we attached this restorative sequence to an existing, non-negotiable habit, like brushing your teeth or pouring a glass of water?"
+    },
+    {
+      "role": "user",
+      "content": "Attaching it to an existing habit is more efficient. I could link the start of the sequence to the moment I close my laptop at the end of the workday. That transition point is already established and requires no new cognitive load.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Validate:** That is a brilliant, highly efficient strategy\u2014using an established transition point to bypass cognitive inertia.\n**Question:** Since this routine is so valuable, what small boundary could you set to protect this transition moment from being interrupted by work demands?\n**Reframe:** What if we view this habit stacking not just as a break, but as the definitive, physical marker that signals your brain: 'The shift is over; you are safe now'?"
+    },
+    {
+      "role": "user",
+      "content": "I need to communicate the boundary explicitly to my colleagues. I could set a physical timer or use a status update on my communication platform. A definite, visible termination point is required for the routine to function without disruption.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.5
+      }
+    }
+  ]
+}

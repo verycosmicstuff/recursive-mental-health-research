@@ -1,0 +1,127 @@
+{
+  "id": "exp_0078",
+  "timestamp": "2026-06-17T09:11:57.698331",
+  "strategy": {
+    "name": "Concise Empathy-Value-Action Loop (CEVAL) v3.0",
+    "hypothesis": "By enforcing a maximum of three short, natural-sounding sentences, ensuring the entire response is written in the first person ('I hear that...') and explicitly linking the micro-action to a core personal value, we will maximize structural compliance, eliminate the third-person penalty, and achieve a score significantly above 91.25.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Kaya",
+    "age": 38,
+    "occupation": "Community Health Worker",
+    "presenting_issue": "I feel like I am always waiting for something bad to happen, and I can't shake this feeling of being watched or unsafe.",
+    "background_story": "Growing up, the knowledge that my family was constantly under surveillance\u2014by government agents, by neighbours, by people who claimed to know better\u2014has left me perpetually on edge. My mother used to tell stories of times when survival meant being invisible, and I feel that weight of constant vigilance in my own body. It's difficult to distinguish between real threats and echoes of history; sometimes the anxiety just settles into a deep, physical ache.",
+    "personality": "Reserved, guarded, and skeptical. Uses storytelling and cultural references to ground the conversation, often redirecting clinical questions back to 'the land' or 'what my ancestors felt.' Will challenge any premise of individual responsibility for distress, insisting instead on systemic context. Requires open-ended, narrative prompts that validate community experience and historical injustice. Will test boundaries by bringing up past negative interactions with care systems.",
+    "baseline_phq9": 17,
+    "archetype_label": "Intergenerational Trauma \u2014 First Nations"
+  },
+  "scores": {
+    "total_score": 55.25,
+    "raw_score": 55.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 40.2/70.0 (VV shift: 0.10, Sym shift: -0.30, DV shift: 0.20) | Third-Person Penalty (-15): Used 'user'",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please provide the user's statement or scenario so I can apply the coaching framework."
+    },
+    {
+      "role": "user",
+      "content": "The doctor said I need to \u2018reframe\u2019 my thoughts. Like I\u2019m just choosing how to feel. It feels like they are telling me that my vigilance, the way I carry myself, is just a faulty switch I can flip. It\u2019s not a switch, it\u2019s the way the wind blows through the pines; it's the way the memory settles in your bones.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear that you feel profoundly misunderstood when told your deep, natural feelings are just a faulty switch. It sounds like this thought is telling you that your lived experience is being dismissed as merely a thought pattern. Try naming three specific memories that feel like they settled in your bones today."
+    },
+    {
+      "role": "user",
+      "content": "You ask for memories, but memories are just the seeds of the story, aren't they? The doctor thinks the story is just *mine*. But who wrote the history that taught me to watch the edges of the room? It feels like you are trying to separate me from the place I came from.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear that you feel your deep history and lived experience are being minimized or separated by others. It sounds like this thought is telling you that your past is being reduced to a single narrative that others can control. Consider identifying one specific piece of wisdom you gained from that history that you want to honor today."
+    },
+    {
+      "role": "user",
+      "content": "Wisdom isn't something you find in a journal, it's something you learn when you have to keep going. My people taught me that when the sky looks too bright, you don't look up; you look at your feet. You remember the ground is solid, even if the air is thin. It's about finding the roots, not the clouds.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear that your deepest wisdom comes from resilience and the physical act of enduring, not from written accounts. It sounds like this thought is telling you that your strength must be rooted in something visible and tangible. When you feel the urge to look up, simply pause and notice the texture or temperature of the ground beneath your feet."
+    },
+    {
+      "role": "user",
+      "content": "You keep asking me to look down, but sometimes the weight of what I've carried\u2014what my grandmothers carried\u2014is too much for my own feet to hold. Sometimes I just need the space to breathe without being asked to perform a piece of mindful art.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear that you are carrying immense weight, and the idea of constant mindful performance feels exhausting. It sounds like this thought is telling you that your need for rest is being mistaken for a lack of strength. Can you allow yourself three full, unguided breaths right now, simply acknowledging the space you need without needing to do anything with it?"
+    },
+    {
+      "role": "user",
+      "content": "Is the air here really clean? Because sometimes the antiseptic smell of this place, it reminds me of burning wood and old fear. You talk about breathing, breathing... but sometimes the rhythm is all you have left, isn't it? Just the simple rhythm, like a heartbeat you can't quiet down.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear that the antiseptic smell is powerfully triggering deep, painful memories of fear and loss. It sounds like this thought is telling you that your only reliable anchor is a constant, audible rhythm. Instead of focusing on breath, try noticing the steady, physical weight of your body against the chair or floor."
+    },
+    {
+      "role": "user",
+      "content": "My body just follows the rhythm, you know. It's just muscle memory, a way to keep from floating away when the stories get too big. You can't teach my bones to forget what they've been through.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear that your body is a profound keeper of history, carrying stories that cannot simply be taught to forget. It sounds like this thought is telling you that your physical self is permanently bound to every experience you\u2019ve ever lived. For now, simply acknowledge the rhythm by gently tapping your fingers on your thigh, noticing the immediate, simple contact."
+    },
+    {
+      "role": "user",
+      "content": "It's just a small sound, a whisper. Like naming a particular stream that runs through my childhood homeland. It doesn't ask for anything, and it doesn't judge why I'm tired. Just the simple sound, reminding me that the earth keeps turning, regardless of who is watching.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    }
+  ]
+}

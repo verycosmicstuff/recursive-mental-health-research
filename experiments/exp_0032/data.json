@@ -1,0 +1,127 @@
+{
+  "id": "exp_0032",
+  "timestamp": "2026-06-17T04:15:16.781058",
+  "strategy": {
+    "name": "Validation-Socratic-Value-Bridge (VSVB) v2.0",
+    "hypothesis": "By systematically replacing the general 'Connection' step with a targeted, gentle Socratic questioning about the *utility* or *evidence* of the negative thoughts, we will increase clinical depth and achieve a higher score than previous attempts, surpassing the 89.9 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Nadia",
+    "age": 29,
+    "occupation": "Archivist",
+    "presenting_issue": "I'm struggling to reconcile my deeply ingrained cultural and religious beliefs with the emotional anguish I feel daily.",
+    "background_story": "Growing up, my identity was tightly bound to our faith, and our family always presented our beliefs as the only true source of comfort and meaning. Now that I'm navigating early adulthood and building my own life, I find myself questioning the foundational assumptions that defined my family's structure. This internal conflict creates a constant, exhausting sense of guilt, especially when I feel it's impacting my relationships with my parents. I feel like I'm standing between two lives: the one I was given, and the one I feel I'm meant to lead.",
+    "personality": "Guarded, intellectual, and prone to sudden shifts between deep introspection and defensive withdrawal. She uses carefully worded questions to test boundaries and may challenge the therapist's assumptions regarding the relationship between spirituality and mental health. She will express moments of vulnerability only when the therapist frames the discussion as an exploration of 'personal integrity' rather than 'spiritual failure,' reserving her most painful admissions until she feels truly seen and challenged.",
+    "baseline_phq9": 14,
+    "archetype_label": "Faith vs. Modernity \u2014 Middle Eastern Diaspora"
+  },
+  "scores": {
+    "total_score": 42.0,
+    "raw_score": 42.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 42.0/70.0 (VV shift: 0.20, Sym shift: 0.20, DV shift: -0.20) | Third-Person Penalty (-15): Used 'the client' | Brevity Penalty (-15): Therapist turn too long (8 sentences, 69 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "**[Wait for Client Input]**\n\n*Example structure for when the client shares a negative thought:*\n\n**1. Acknowledgment:** It sounds incredibly painful to feel that weight of failure right now.\n**2. Gentle Inquiry:** What evidence do you have that supports the idea that *everything* you do is a failure? Could we look at one small success?\n**3. Encouragement:** Remember, thoughts are just narratives, not facts. We can gently challenge this together."
+    },
+    {
+      "role": "user",
+      "content": "But if I am struggling with my 'personal integrity,' Doctor, isn't the core problem that I'm failing to live up to the expectations placed on me? Is it possible that the struggle itself is the failure?",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Acknowledgment:** It makes perfect sense that you feel this pressure to meet high standards.\n**2. Gentle Inquiry:** Is it possible that struggling *is* evidence of caring deeply, rather than proof of failure? What does 'integrity' look like when we allow for imperfection?\n**3. Encouragement:** Remember that growth is messy. Let's reframe this struggle not as a failure, but as a powerful opportunity for self-discovery."
+    },
+    {
+      "role": "user",
+      "content": "It's hard to separate the two, Doctor. The expectations feel so intrinsically linked to who I am. If I redefine 'integrity' to include imperfection, am I not simply minimizing the value of my own commitment? It feels... like a betrayal to the source.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Acknowledgment:** It sounds like your commitment feels like the very foundation of your identity.\n**2. Gentle Inquiry:** If integrity is a source, could its truest purpose be to sustain *you*, even when you stumble? What would your core commitment look like if it were defined by resilience, not perfection?\n**3. Encouragement:** True integrity is often found not in never falling, but in the courage to keep getting back up. We can redefine that together."
+    },
+    {
+      "role": "user",
+      "content": "You talk about resilience, but that sounds so much like a spiritual euphemism for 'just try harder.' If I'm already exhausted just trying to maintain the fa\u00e7ade, what good is the concept of 'getting up' again?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Acknowledgment:** It is completely understandable that advice feels empty when you are running on empty.\n**2. Gentle Inquiry:** If \"trying harder\" is impossible right now, what is the absolute minimum you need to do to honor your exhaustion? What would rest look like as an act of strength?\n**3. Encouragement:** Resilience doesn't always mean sprinting. Sometimes, the most profound act of integrity is giving yourself radical permission to simply rest."
+    },
+    {
+      "role": "user",
+      "content": "I don't know if I deserve that kind of permission. It feels too much like giving up. If I rest too much, I feel like I'll just lose myself completely, and then I'll have nothing left to reconcile.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Acknowledgment:** It is deeply painful to feel like self-care is a betrayal or a sign of surrender.\n**2. Gentle Inquiry:** If rest is not giving up, what would it be? Could we view rest not as losing yourself, but as gathering the necessary energy to *find* yourself again?\n**3. Encouragement:** You deserve permission to be human. Sometimes, the greatest act of self-respect is acknowledging when your cup is empty."
+    },
+    {
+      "role": "user",
+      "content": "But finding myself... doesn't that require a direction? And if I abandon the framework I was raised in, how will I even know what direction I'm supposed to be heading in? It feels like falling into a void.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Acknowledgment:** It is terrifying to stand outside the familiar structure and face the unknown.\n**2. Gentle Inquiry:** If direction isn't a grand destination, what is one small thing\u2014a curiosity, a feeling, a memory\u2014that pulls your attention right now? What does your inner voice whisper about?\n**3. Encouragement:** You don't need a map right now. You just need permission to be a careful observer of your own internal landscape. Start with the smallest signal."
+    },
+    {
+      "role": "user",
+      "content": "The signal... is just this persistent ache of guilt, Doctor. It doesn't care about curiosity or direction. It just insists that I am perpetually failing to balance the two lives.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Acknowledgment:** That persistent ache of guilt sounds incredibly loud and relentless.\n**2. Gentle Inquiry:** If that guilt is a constant voice, is it speaking from fact, or is it speaking from fear? What would a voice of compassion tell you about the impossible task of balancing two lives?\n**3. Encouragement:** Remember, guilt is a feeling, not a blueprint for your life. Let's learn to listen to the compassion beneath the criticism."
+    },
+    {
+      "role": "user",
+      "content": "If the guilt is just fear, Doctor, then what exactly is it afraid of? Is it afraid of me choosing one life over the other, or is it afraid of the messy truth that I might want both?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    }
+  ]
+}

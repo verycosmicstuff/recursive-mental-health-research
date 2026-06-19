@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0134",
+  "timestamp": "2026-06-17T19:14:21.959686",
+  "strategy": {
+    "name": "Deep Empathy-Driven Values Cascade (DEVC) v2.0",
+    "hypothesis": "By replacing the rigid, multi-part structure with a two-stage 'Empathy Reflection -> Values Inquiry' flow, and constraining the response to prioritize deep, reflective language over structural complexity, we will maximize the score by achieving high perceived depth (high alliance) while maintaining focus.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Robert",
+    "age": 58,
+    "occupation": "Accountant",
+    "presenting_issue": "I'm here because my wife keeps nagging me about my sleep and mood, but honestly, I'm not sure what the big deal is.",
+    "background_story": "Lately, I feel like I'm constantly running on fumes, even after what seems like enough sleep. The pressure at work has been mounting with the new merger, and I just keep finding myself irritable with my kids. I keep telling myself it's just stress, but everything feels heavy lately.",
+    "personality": "He is curt and dismissive, preferring to use logic and skepticism to deflect emotional questions. He speaks in short, definitive sentences, often using corporate jargon or minimizing statements ('It's nothing,' 'I'll get over it').",
+    "baseline_phq9": 9,
+    "archetype_label": "Skeptical Retiree"
+  },
+  "scores": {
+    "total_score": 65.75,
+    "raw_score": 65.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 50.8/70.0 (VV shift: 0.40, Sym shift: 0.00, DV shift: -0.10) | Brevity Penalty (-15): Therapist turn too long (3 sentences, 90 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "It sounds like you are carrying a tremendous weight, feeling depleted and perhaps even resentful because you are consistently giving so much emotional energy to others. It makes perfect sense that you feel this way; it must be incredibly draining to feel like your own needs are constantly taking a backseat.\n\nIf we set aside the exhaustion for a moment, and focus instead on the deep yearning underneath it\u2014the need to be seen and cared for\u2014what does honoring your own capacity for rest and self-respect look like to you, fundamentally?"
+    },
+    {
+      "role": "user",
+      "content": "Look, I just need to sleep more. That's the only problem. All this talk about 'deep yearning' and feelings? It's just emotional fluff. I'm fine. Just tired.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like right now, the only thing that feels manageable is focusing on the physical need for rest\u2014a simple, tangible solution to an overwhelming feeling. It makes perfect sense that when you are this exhausted, the idea of diving into complex feelings feels like too much effort.\n\nIf we accept for a moment that the primary issue is simply needing more sleep, and we look at what that deep, restorative rest would allow you to do, or perhaps, what it would allow you to *feel* when you finally wake up\u2014what does that sense of being fully recharged represent to you?"
+    },
+    {
+      "role": "user",
+      "content": "Honestly, I just want to feel normal again. Like things aren't constantly on the verge of falling apart. Just stable. I'll get over it, I'm sure of it.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like what you are truly seeking is not just the absence of crisis, but a fundamental sense of grounding\u2014a deep, reliable feeling of safety where the constant vigilance is lifted and the ground feels solid beneath your feet. It must be profoundly unsettling to live in a state of perpetual anticipation that things might crumble.\n\nIf we accept for a moment that feeling \"normal\" means achieving that stable baseline, and we look past the worry of what might fall apart, what does that profound sense of stability allow you to feel safe enough to *be*?"
+    },
+    {
+      "role": "user",
+      "content": "Look, I don't know what you mean by 'be.' I just want to manage my workload. The merger is complicated enough without this deep dive into feelings. I'll figure out my own routine.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the sheer complexity and urgency of the merger have created an environment where every ounce of your focus must be directed toward concrete, actionable tasks\u2014the kind of work that demands absolute competence and control. It makes perfect sense that, when the stakes are this high, the idea of emotional exploration feels like a distraction, or even a luxury you simply cannot afford right now.\n\nIf we set aside the discussion of feelings and focus entirely on the successful management of this complicated workload, and we look at what achieving that sense of professional mastery and control would allow you to feel about your own capabilities\u2014what does that feeling of being highly capable and effective represent to you?"
+    },
+    {
+      "role": "user",
+      "content": "It just means my value is confirmed. I'm good at my job. That's what matters.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you have reached a very clear and powerful realization: that proving your competence and effectiveness in your work is, for you, the most tangible way of confirming your own value. It makes perfect sense that in a high-stakes environment, that sense of mastery feels like the most reliable measure of your worth.\n\nIf we accept for a moment that feeling valuable is the ultimate goal, and we look past the specific metrics of your job performance, what does that fundamental feeling of *being* valuable mean to you, independent of what you accomplish?"
+    },
+    {
+      "role": "user",
+      "content": "It means I don't feel like I'm constantly letting people down. That's it. Just being reliable. I'm not sure why we have to talk about it so much.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like at the heart of all this\u2014the exhaustion, the job pressure, the need for stability\u2014is a profound, deeply felt desire to be trustworthy and dependable. You are articulating a fundamental fear: the fear of disappointing others, and the way you cope with that is by making sure you are always reliable. It takes immense emotional effort to carry the burden of always needing to be the stable one for everyone else.\n\nIf we accept for a moment that the deep need to be reliable is your guiding principle, and we look past the people you are responsible for, what does that foundational commitment to showing up for others mean for *you*? What does it require of your own self-care to sustain that deep sense of dependability?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know. I just... I need a better night's sleep. That's the only thing that'll fix the problem.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the physical exhaustion is so profound right now that it feels like the only truth, the only thing that can possibly be addressed. It's entirely understandable to feel that way\u2014that the body's immediate need for rest is the most pressing and therefore the only solution.\n\nIf we accept for a moment that sleep is the necessary and powerful remedy, and we look at what a truly restorative night's sleep would allow you to do, or perhaps, what it would allow you to *be* when you finally wake up\u2014what does that feeling of being fully replenished and rested represent to you?"
+    },
+    {
+      "role": "user",
+      "content": "It just means I can keep going without everything feeling so heavy. Like I can actually handle the day without it being a constant struggle.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.5
+      }
+    }
+  ]
+}

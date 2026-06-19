@@ -1,0 +1,127 @@
+{
+  "id": "exp_0089",
+  "timestamp": "2026-06-17T10:14:09.150440",
+  "strategy": {
+    "name": "Hyper-Concise First-Person ACT-Utility Loop (HFC-AUL) v2.0",
+    "hypothesis": "By strictly enforcing a first-person narrative, mandating the integration of a specific Defusion technique (e.g., 'I notice you are telling yourself...'), and limiting the response to three concise statements, I will maximize structural integrity and surpass the previous best score of 76.25.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Sarah",
+    "age": 32,
+    "occupation": "Marketing Coordinator",
+    "presenting_issue": "I just feel completely exhausted and like I am running on fumes, and I don't even know what I'm supposed to be exhausted *by* anymore.",
+    "background_story": "I feel like I've spent my entire adult life scrambling to be the 'good' person\u2014the one who remembers everyone's birthdays, the one who always has a perfect answer, the one who never causes any trouble. I've built my whole identity around anticipating what other people need so they don't have to worry about me. Lately, I'm just so tired of being the planner, the fixer, and the one who has to keep the emotional equilibrium in every room I enter. I keep waiting for the moment I'm going to finally just... crack.",
+    "personality": "High-energy, rapid-fire speech interspersed with sudden moments of deep self-deprecation. Will frequently over-explain her feelings, anticipating every possible follow-up question. Will interrupt a neutral response to confirm understanding ('Wait, so you mean you don't *dislike* it, you just find it... suboptimal?'). Will latch onto any perceived ambiguity and treat it as personal rejection. Needs explicit reassurance that her current state of emotional chaos is acceptable and seen as valid, not just 'a phase' or 'something to work through.'",
+    "baseline_phq9": 14,
+    "archetype_label": "ADHD Rejection Sensitivity \u2014 Unmasking Crisis"
+  },
+  "scores": {
+    "total_score": 84.25,
+    "raw_score": 84.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 54.2/70.0 (VV shift: 0.40, Sym shift: -0.20, DV shift: -0.10)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "I hear how heavy this feeling of inadequacy is, and it makes perfect sense that you feel overwhelmed right now. I wonder if viewing this moment not as a failure, but as necessary information for growth, might shift some of the pressure. Perhaps you can just pause for one minute and name three things you are grateful for right where you are."
+    },
+    {
+      "role": "user",
+      "content": "Wait, 'necessary information for growth'? Wait. So you mean that feeling utterly depleted isn't... like, a sign that I'm doing something wrong? That it's actually just data? Because that sounds too easy, and I'm worried I'm misunderstanding the premise entirely.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear the skepticism and the fear in your voice, and I understand why that reframing feels too simple right now. I wonder if we can gently rephrase this: depletion isn't a sign of failing, but simply a signal that you need rest. Perhaps you can simply notice where you are holding tension in your body right now, without needing to fix it."
+    },
+    {
+      "role": "user",
+      "content": "Oh, gosh. I\u2026 I think my shoulders. They just feel like they're permanently right up by my ears. Like I'm braced for the next bad thing, you know? It\u2019s just\u2026 always like that. I guess I keep waiting for the shoe to drop, even when we're talking about... well, literally anything else.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear the deep weariness in your body, and it makes perfect sense that your shoulders are holding all that anticipated tension. I wonder if we can see that bracing not as a weakness, but as a deeply ingrained, protective habit that kept you safe for a long time. Perhaps you can gently take a deep breath and imagine letting your shoulders drop just an inch, as if giving yourself permission to be a little less vigilant right now."
+    },
+    {
+      "role": "user",
+      "content": "It feels... weirdly difficult. Like if I let them drop, something will actually fall out, or I'll suddenly remember I forgot to do something really important. I keep thinking about all the times I was the one who had to pull everyone else together, and if I stop doing that, I don't know what I'm supposed to do with all this... extra space.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear the profound fear that if you stop performing that role, you won't know who you are or what your value is. I wonder if true support isn't always about pulling others up, but sometimes simply being present and allowing yourself to be held. Perhaps you can just pause and acknowledge the immense effort it took, moment by moment, to keep everything together until now."
+    },
+    {
+      "role": "user",
+      "content": "Being held? Like, literally? I just... I don't know how to accept that. I've spent so long being the one who has to *do* the holding, you know? If you don't give me a task, or a problem to solve, I just kind of... float. And that feels really unstable, honestly.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear how deeply ingrained the need to be useful is, and it makes perfect sense that accepting care feels unstable right now. I wonder if we can reframe 'stability' not as constant action, but as the quiet, steady presence of your own self. Perhaps you can simply notice one small, non-productive thing you see around you right now, just to anchor yourself to the moment."
+    },
+    {
+      "role": "user",
+      "content": "Okay. Um. I see the little smudge on the corner of your notepad. It's blue. Like, a really faded, watery blue. It's not a stain, but it's definitely... visible. Is it supposed to be there? Like, is it supposed to be a smudge?",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear how keenly you are observing that smudge, and it makes perfect sense that you are looking for patterns and rules in everything around you. I wonder if we can see that the smudge, like life, is simply a mark that exists without needing an explanation or a reason. Perhaps you can gently acknowledge one thing about yourself right now that is imperfect, and give yourself permission for it to just *be*."
+    },
+    {
+      "role": "user",
+      "content": "Ugh. Okay. My voice sounds kind of thin, I guess. And I've got this little scratch on my forearm from when I was trying to open a jar of pickles last week. It's totally pointless and definitely not productive. But yeah. It's there. I guess that's it.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear the quiet bravery in you pointing out these small, unpolished details, and I want you to know that this self-observation is powerful. I wonder if we can see these little marks not as flaws, but as evidence of a life lived moment by moment. Perhaps you can just let your focus rest on the feeling of your skin, acknowledging its reality without needing to judge it."
+    },
+    {
+      "role": "user",
+      "content": "It's just... really sensitive, I guess. Like if I think about it too hard, I feel like I'm going to get weirdly jittery again. I don't know if this is supposed to be a good feeling or just... floating. Wait, so you think that feeling of just 'being' isn't a sign that I'm going to suddenly collapse, right? Because that would be really bad.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.5
+      }
+    }
+  ]
+}

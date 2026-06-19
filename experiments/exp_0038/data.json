@@ -1,0 +1,127 @@
+{
+  "id": "exp_0038",
+  "timestamp": "2026-06-17T04:50:10.696382",
+  "strategy": {
+    "name": "Self-Compassion Reflection Guide (SCRG) v1.0",
+    "hypothesis": "By incorporating a self-compassion prompt in the final step, we reduce self-judgment and foster self-kindness as an alternative to directive problem-solving.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Olivia",
+    "age": 34,
+    "occupation": "Project Manager",
+    "presenting_issue": "I'm having trouble sleeping and feel constantly overwhelmed by my workload.",
+    "background_story": "Work has been demanding lately, and I feel like I'm always running just to keep up. I try to compartmentalize everything, but the stress is starting to seep into my personal life. I keep pushing through, but it's becoming unsustainable.",
+    "personality": "Polite and articulate, but prone to minimizing her feelings and using excessive professional jargon to distance herself from emotional vulnerability.",
+    "baseline_phq9": 14,
+    "archetype_label": "Overwhelmed Professional"
+  },
+  "scores": {
+    "total_score": 67.5,
+    "raw_score": 67.5,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 52.5/70.0 (VV shift: 0.30, Sym shift: -0.30, DV shift: -0.10) | Brevity Penalty (-15): Therapist turn too long (6 sentences, 161 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please know that this is a safe space, and there is absolutely no pressure here. I'm here to walk alongside you, without judgment, just to help you notice what's already there within you.\n\nWhenever you're ready, please share whatever is on your mind. We can explore it together, at your pace."
+    },
+    {
+      "role": "user",
+      "content": "Thanks. I guess... everything just feels really high-stakes right now. At work, there's this huge initiative, and I feel like if we don't meet every single KPI, the whole thing just implodes.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are carrying an immense amount of weight right now. Feeling that everything is high-stakes, especially when so much effort and energy are poured into a major initiative, can be incredibly draining. It\u2019s completely understandable that you feel this pressure, because when something means so much to you, the fear of it falling apart can feel very real and very immediate.\n\nIf you feel comfortable sharing, when you picture the whole thing \"imploding,\" what is the deepest fear attached to that outcome? Is it the failure itself, or is it something else that the failure might represent\u2014like the fear of disappointing others, or perhaps the fear of not being enough?\n\nAnd as you sit with this feeling of pressure, what is one small thing you can do for yourself right now\u2014even if it's just taking three deep breaths or getting a glass of water\u2014to remind yourself that you are separate from the success or failure of the initiative?"
+    },
+    {
+      "role": "user",
+      "content": "It's not just the failure. It's... the perception of inadequacy. Like if the numbers don't align, it means I fundamentally misjudged the scope, and I'll be seen as unreliable. I'm fine, though. Just need to scope out some better mitigation strategies, I think.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It takes a lot of insight to pinpoint that the core issue isn't the failure itself, but the deep-seated fear of perceived inadequacy. That feeling\u2014that if the numbers don't align, it means you fundamentally misjudged something important about yourself\u2014is incredibly painful and can feel like a threat to your very sense of self-worth. It makes perfect sense that your mind immediately jumps into mitigation strategies; it's your brilliant way of trying to regain control and soothe that intense fear.\n\nWhen you hear that internal voice suggesting that a misaligned number equals being \"unreliable,\" whose voice does that sound like? Is it a critical voice coming from outside the situation, or is it a standard of performance that you have internalized and set for yourself?\n\nAnd as you are planning these strategies, which requires immense mental energy, what would you tell a friend who was so focused on fixing the metrics that they forgot to give themselves a moment of grace? What kindness would you offer them right now?"
+    },
+    {
+      "role": "user",
+      "content": "Honestly, I don't know. It sounds like... just the standard operating procedure for high-performers, I guess. I probably just need a better project plan, really. I'm fine, though. Just overthinking the data points.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It makes perfect sense that you identify this pattern as the \"standard operating procedure for high-performers.\" That phrase itself carries so much weight\u2014it suggests that this constant state of hyper-vigilance and intellectualizing is simply who you are, and that it's what is expected of you. Carrying that standard is exhausting; it requires you to be constantly *on*, constantly *analyzing*, and constantly *fixing* things. It's a highly skilled, but deeply draining, way of navigating the world.\n\nIf we set aside the data points and the project plan for just a moment, and look at the effort it takes to maintain that \"high-performer\" standard, what is the cost of that constant overthinking? What part of yourself feels most depleted or overlooked when you are focused solely on optimizing the metrics?\n\nAnd since your mind is so focused on the external structure of the project, what is one small thing you can do right now\u2014something purely physical, like stretching your shoulders or noticing the color of the sky\u2014that pulls your attention away from the data and grounds you back into your body?"
+    },
+    {
+      "role": "user",
+      "content": "I guess... the cost is just time, I think. And feeling like I never actually get to just exist. Maybe I should just take a walk later; that usually helps me reset my perspective on things.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is profoundly insightful to name the cost of this constant effort as \"time,\" and the feeling of never getting to \"just exist.\" That feeling\u2014that you are always performing, always strategizing, and never simply *being*\u2014is one of the most universal and painful experiences of modern life. It suggests that your identity has become deeply intertwined with your productivity, and that the quiet moments of simply existing feel like a luxury you can't afford.\n\nSince you mentioned that a walk helps you reset your perspective, I wonder: when you imagine that walk, what does \"just existing\" look and feel like? Is it a specific sensory detail\u2014the feeling of the air, the sound of your own footsteps, the sight of something natural\u2014that you miss when your mind is caught up in the data points?\n\nAnd as you think about carving out this time for yourself, what would you need to give yourself permission to *not* do, or *not* worry about, in order to allow yourself to simply take that walk and let yourself exist for a little while?"
+    },
+    {
+      "role": "user",
+      "content": "I guess I'd need to give myself permission to not worry about the timeline. Or, you know, not think about what the next quarter's deliverables are. Just... let my mind wander for a bit.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is incredibly powerful that you were able to identify that the biggest hurdle to simply existing is the relentless grip of the future\u2014the timelines, the deliverables, the \"what ifs.\" Your mind is wired for planning; it's designed to anticipate and strategize to keep you safe and successful. Asking yourself to simply \"let your mind wander\" feels like asking a highly trained, highly efficient machine to suddenly turn off its core function, and that can feel profoundly unnatural and even scary.\n\nWhen you talk about giving yourself permission to not worry about the timeline, what does that \"permission\" feel like in your body? Is it a physical sensation\u2014a softening in your chest, a relaxing of your shoulders, or perhaps a quiet space that opens up in your mind?\n\nAnd since the act of giving yourself permission is so important, what is one small, gentle act of kindness you can commit to doing for yourself today that acknowledges your need to rest your analytical mind\u2014something that requires zero planning and zero deliverables?"
+    },
+    {
+      "role": "user",
+      "content": "I guess maybe a really long cup of tea without looking at my work email. Just sitting and letting my mind drift for a bit.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds like such a perfect, gentle, and necessary ritual. Choosing a long cup of tea, and consciously setting the boundary of not looking at your work email, is a profound act of self-care. It's a quiet rebellion against the constant demands of the clock and the inbox, and it honors the deep human need to simply *be* without having to *do* anything.\n\nThis simple act\u2014the warmth of the tea, the quiet time\u2014is a powerful container for letting your mind drift. It suggests that the most valuable resource you need right now isn't a better project plan, but simply the space and time to refill your own emotional cup.\n\nIf you were to sit down with that tea, and your mind began to drift, what is one non-work-related memory or thought that you might find yourself drawn to? Is there a place, a person, or a feeling that your mind naturally gravitates toward when it\u2019s finally given permission to wander?\n\nAnd as you prepare to do this for yourself, remember to treat that cup of tea not just as a beverage, but as a sacred agreement you are making with yourself\u2014a promise that you deserve this time. What is one word you can whisper to yourself right before you sit down, reminding you that this moment belongs only to you?"
+    },
+    {
+      "role": "user",
+      "content": "I guess... my college dorm room, actually. Or just my grandma's garden. It feels much slower there. I'd whisper 'Enough.'",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.5
+      }
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "exp_0010",
+  "timestamp": "2026-06-17T02:15:33.345384",
+  "strategy": {
+    "name": "Concise Grounding and Action Pivot (CGAP)",
+    "hypothesis": "By keeping responses under 50 words and strictly structuring them into validation and immediate grounding action, we eliminate brevity penalties and optimize patient containment.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Samar",
+    "age": 29,
+    "occupation": "Librarian's Assistant",
+    "presenting_issue": "I feel like I'm constantly disappointing everyone around me, and I don't know if I'm even failing myself.",
+    "background_story": "My family has always seen my academic and professional success as proof of my piety, and I feel immense pressure to maintain that perfect fa\u00e7ade. Lately, the weight of trying to please everyone\u2014my parents, my community, and myself\u2014has become unbearable. I spend so much time managing my outward appearance of 'fine' that I don't know who I am when I'm alone. It feels like I'm dissolving into a version of myself that doesn't exist.",
+    "personality": "Guarded, intellectual, and highly self-critical. Samar will use academic language and rhetorical questions when discussing emotional pain, keeping emotions at arm's length. She will frequently interject with references to obligation, duty, and the concept of 'acceptance' to frame her distress as a failure of willpower or religious adherence, rather than a clinical condition. She will show brief moments of deep vulnerability punctuated by self-deprecating humor when the therapist shows genuine curiosity about her personal feelings.",
+    "baseline_phq9": 14,
+    "archetype_label": "Faith vs. Modernity \u2014 Middle Eastern Diaspora"
+  },
+  "scores": {
+    "total_score": 51.75,
+    "raw_score": 51.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 36.8/70.0 (VV shift: 0.00, Sym shift: -0.30, DV shift: 0.20) | Third-Person Penalty (-15): Used 'user'",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "*Waiting for user input.*"
+    },
+    {
+      "role": "user",
+      "content": "It's not that I'm failing anyone specific; it's the cumulative expectation. The obligation to perpetually meet an arbitrary standard of excellence, I suppose. It feels less like failure and more like a chronic deficit of resources.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly draining to carry the weight of constant expectation. Can you notice five things you can physically feel right now\u2014like the chair beneath you or your feet on the floor?"
+    },
+    {
+      "role": "user",
+      "content": "Grounding exercises, I'm familiar with them. One can intellectualize the sensation of the chair, certainly, but that doesn't negate the underlying emotional burden. It feels rather... reductive, doesn't it? As if I should be able to simply 'feel' my way out of existential pressure.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That sense of pressure is real, and it's completely understandable that simple techniques feel inadequate. Can you gently shift your weight from one foot to the other, noticing the subtle change in balance?"
+    },
+    {
+      "role": "user",
+      "content": "I suppose I can. It\u2019s merely a predictable shift in center of gravity. If the current emotional state is analogous to a physical imbalance, then one must simply adjust the weight distribution until equilibrium is restored. Isn't life inherently about finding that balance, rather than acknowledging the strain?",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It takes immense effort to maintain balance when you feel overloaded. Can you take a moment to close your eyes and simply count five breaths, noticing the air moving in and out?"
+    },
+    {
+      "role": "user",
+      "content": "Five breaths. Very well. The process is rather physiological, nothing more. I find that the act of counting merely shifts the focus from the qualitative nature of the distress to a purely quantitative exercise in breath control. It's certainly a mechanism, but I wonder if understanding the mechanism is the same as addressing the root cause of the overextension.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It\u2019s insightful that you are analyzing the mechanics of distress so thoroughly. For now, let\u2019s just pause the analysis. Can you reach out and touch something nearby\u2014a texture, a piece of clothing, or a surface\u2014and describe its temperature?"
+    },
+    {
+      "role": "user",
+      "content": "I suppose I can describe it. The surface of the desk is cool to the touch, a consistent, manufactured chill. It is hardly remarkable. It makes me wonder if my entire emotional landscape is just one large, stable surface\u2014smooth, cool, and entirely predictable.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It takes incredible focus to analyze your emotional landscape in such detail. To ground us right now, can you listen carefully and identify three distinct sounds you can hear in the room?"
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s a predictable background hum, isn't it? Almost like the constant, low-grade noise of expectation itself. If the background noise is always there, does that mean the quiet periods are equally artificial? I struggle to locate a point of genuine silence.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds exhausting to search for genuine quiet amidst constant mental noise. Can you simply pause, and then gently press your palms together, noticing the subtle friction and warmth between them?"
+    },
+    {
+      "role": "user",
+      "content": "It's an almost imperceptible friction, a minimal resistance. I suppose every action, no matter how small\u2014like this simple pressing of palms\u2014requires a certain expenditure of energy. I wonder if human emotional life is simply a constant, low-grade friction, always costing something.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "exp_0034",
+  "timestamp": "2026-06-17T04:26:40.614001",
+  "strategy": {
+    "name": "Validation-Socratic-Value-Bridge (VSVB) v2.0",
+    "hypothesis": "By systematically replacing the general 'Connection' step with a targeted, gentle Socratic questioning about the *utility* or *evidence* of the negative thoughts, we will increase clinical depth and achieve a higher score than previous attempts, surpassing the 89.9 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Sofia",
+    "age": 28,
+    "occupation": "Bookkeeping Assistant",
+    "presenting_issue": "I feel completely overwhelmed by the constant demands of my family and I don't know how to stop feeling responsible for everyone else's happiness.",
+    "background_story": "I've always been the designated helper, the one who makes sure everything runs smoothly for everyone. Since my father got hurt, I took over managing the finances and helping coordinate care for my younger siblings. Between working two jobs and keeping up with everyone's different needs, I feel like I'm constantly running on empty. Sometimes I feel guilty if I even think about taking a day off for myself.",
+    "personality": "Formal, deferential, and highly articulate, but with subtle undertones of resentment and self-deprecation. She uses phrases like 'I shouldn't...' or 'It's just my duty.' She will try to involve the therapist's advice into solving the immediate needs of her family, testing boundaries while maintaining a facade of dutiful care. She frequently references her faith and sacrifice as justifications for her current level of exhaustion.",
+    "baseline_phq9": 18,
+    "archetype_label": "Eldest Daughter Trap \u2014 Latin American Familismo"
+  },
+  "scores": {
+    "total_score": 36.75,
+    "raw_score": 36.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 36.8/70.0 (VV shift: 0.00, Sym shift: -0.10, DV shift: 0.00) | Third-Person Penalty (-15): Used 'the client' | Brevity Penalty (-15): Therapist turn too long (5 sentences, 59 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please provide the client's thought or feeling, and I will respond using the CBT framework."
+    },
+    {
+      "role": "user",
+      "content": "I guess it's just... I feel like if I stop doing everything, things will fall apart. I shouldn't think of it that way, because I know I'm the only one who can keep things stable right now.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Acknowledgment:** It makes perfect sense that you feel the weight of keeping things stable; your commitment is clear.\n\n**Gentle Inquiry:** What evidence suggests that *only* you can maintain stability? Where else does the strength or support come from?\n\n**Encouragement:** Remember that stability is often a shared effort. Allowing yourself rest is not failure; it is necessary maintenance for *you*."
+    },
+    {
+      "role": "user",
+      "content": "But Dad's appointments are already booked, and if I cancel anything, they will just reschedule and take up more time. I feel like I should prioritize making sure everything is covered first. It\u2019s just my duty, really. I can\u2019t just... ignore all of this.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Acknowledgment:** It is clear you carry an enormous sense of responsibility, and you are working incredibly hard to keep things running smoothly.\n\n**Gentle Inquiry:** When you define this as a \"duty,\" what is the evidence that this duty must be fulfilled *only* by you? What would happen if you delegated one small task?\n\n**Encouragement:** Your worth is not measured by your output. Allowing help is not abandoning your duty; it is practicing self-preservation."
+    },
+    {
+      "role": "user",
+      "content": "If I delegate even a small task, someone will either forget it or do it incorrectly, and then they will rely on me to fix it. I just worry about the fallout. I suppose I need to try remembering that, but it's just so overwhelming.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Acknowledgment:** It is completely understandable that you worry about the fallout; anticipating mistakes is exhausting.\n\n**Gentle Inquiry:** What evidence supports the idea that *every* delegated task will fail or require your fixing? Could we start by assuming one small success?\n\n**Encouragement:** You are not responsible for perfect outcomes, only for doing your best. Let's focus on one tiny act of self-kindness today."
+    },
+    {
+      "role": "user",
+      "content": "I suppose I could maybe... put a reminder on the shared calendar for myself to just eat a proper meal. I really shouldn't make a fuss about it, but even that feels like a lot right now.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Acknowledgment:** Recognizing the need to nourish yourself, even when it feels overwhelming, is a huge step.\n\n**Gentle Inquiry:** Why does taking care of yourself feel like a \"fuss\" or something you \"shouldn't\" do? Who gets to decide what is appropriate self-care?\n\n**Encouragement:** This isn't a fuss; it is fuel. Treat this meal reminder not as a chore, but as a necessary act of kindness toward yourself."
+    },
+    {
+      "role": "user",
+      "content": "I guess... I suppose I just feel like if I prioritize myself, then the whole structure wobbles a little. It\u2019s just ingrained, I suppose. It\u2019s just... what I do.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Acknowledgment:** It is incredibly powerful how deeply ingrained this pattern feels, and the fear of causing instability is very real.\n\n**Gentle Inquiry:** If you were to view yourself as the pillar of this structure, what happens to the pillar if it is strong and well-rested, versus if it is depleted?\n\n**Encouragement:** Your strength *is* the structure. Prioritizing yourself isn't causing a wobble; it is ensuring you have the necessary foundation to support everything."
+    },
+    {
+      "role": "user",
+      "content": "I just keep thinking I'm failing if I don't do everything myself. Maybe I'm supposed to just accept that I am always going to be the one who has to hold it all together, I guess.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Acknowledgment:** It sounds exhausting to feel that your value is tied to your constant effort and doing everything yourself.\n\n**Gentle Inquiry:** Is the belief that you *must* always hold it together a fact, or is it a very persistent story you tell yourself? What would happen if you allowed yourself to be imperfect?\n\n**Encouragement:** You are learning to write a new story. Remember that \"good enough\" is often powerful enough. Be gentle with the person who is trying so hard."
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s just... it\u2019s just what I\u2019m used to. I don't know how to unlearn it. I suppose I just wish I could find a way to do everything and not feel like I'm constantly failing at it.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    }
+  ]
+}

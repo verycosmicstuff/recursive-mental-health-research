@@ -1,0 +1,127 @@
+{
+  "id": "exp_0005",
+  "timestamp": "2026-06-17T01:49:41.780588",
+  "strategy": {
+    "name": "Concise Somatic Value Bridge (CSVB) v3.0",
+    "hypothesis": "By enforcing a strict 'Somatic Validation -> Value Check -> Micro-Action' sequence, and aggressively limiting the response to a maximum of three brief, impactful sentences, we will eliminate the Brevity Penalty while maximizing the State Score by maintaining deep, physical focus and providing a concrete, actionable bridge, thereby surpassing the 89.5 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Jordan",
+    "age": 29,
+    "occupation": "Remote Content Moderator",
+    "presenting_issue": "I feel like I'm just existing, and nothing seems to matter anymore.",
+    "background_story": "My job is largely isolating, and I spend most of my time staring at screens, which just makes everything blur together. I used to enjoy my friends and hobbies, but now those things feel like too much effort. It\u2019s just a constant low hum of emptiness that makes me wonder if I\u2019ll ever feel anything again.",
+    "personality": "Jordan is withdrawn and speaks in short, somewhat detached sentences. They use a lot of filler words like 'like' and 'you know,' and their tone is consistently monotone, suggesting emotional fatigue and resignation.",
+    "baseline_phq9": 16,
+    "archetype_label": "Isolated Remote Worker"
+  },
+  "scores": {
+    "total_score": 62.25,
+    "raw_score": 62.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 47.2/70.0 (VV shift: 0.20, Sym shift: -0.10, DV shift: -0.20) | Third-Person Penalty (-15): Used 'the patient'",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "*Awaiting the patient's initial input to begin the Somatic Validation -> Value Connection -> Micro-Action sequence.*"
+    },
+    {
+      "role": "user",
+      "content": "I mean... nothing. Like, I just... exist, you know? It's just a blur, I guess.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like there's a dull, pervasive weight, a kind of emotional blur that makes it hard to pinpoint where you are right now. This feeling of existing in a blur might be your system signaling a deep need for grounding and self-compassion. Could you try noticing the weight of your feet against the floor, and simply naming three things you can feel right now?"
+    },
+    {
+      "role": "user",
+      "content": "Like... the chair, I guess. And my jeans, they feel kinda rough. And... the carpet, I guess. Nothing really changes anything, though.",
+      "somatic_state": {
+        "sympathetic": 0.1,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It takes real effort to notice those textures\u2014the chair, the rough jeans, the carpet\u2014and that ability to ground yourself in small details is a profound act of presence. This focused awareness shows that your deep value is connection to the immediate moment, even when everything feels blurry. For the next minute, could you gently press your fingertips into the rough denim of your jeans, noticing the pressure and the sensation?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah... okay. It's just... fabric. Like, nothing really changes, you know.",
+      "somatic_state": {
+        "sympathetic": 0.1,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It\u2019s accurate to observe that the fabric remains fabric, and that steady observation, even when it doesn't bring immediate change, is a powerful form of acceptance. This ability to simply acknowledge what *is*\u2014the resistance, the texture\u2014is a sign of your deep commitment to resilience and non-judgment. As a micro-action, could you take one deep breath, and on the exhale, gently remind yourself: \"I am noticing\"?"
+    },
+    {
+      "role": "user",
+      "content": "Ugh. Whatever. I guess I can do that. Like, deep breath. (Exhales) I am noticing.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I notice the physical effort it took to complete that breath and the conscious repetition of the phrase. That willingness to engage in a small, uncomfortable act of self-acknowledgement speaks to your underlying value of self-respect and your commitment to showing up for yourself. Could you now simply adjust your posture, maybe rolling your shoulders back just once, to acknowledge the physical effort of the last few minutes?"
+    },
+    {
+      "role": "user",
+      "content": "I guess... okay. Like this. (Jordan rolls shoulders back slightly, then immediately lets them drop again.) Nothing big, though. You know?",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That small, deliberate movement of rolling your shoulders, even followed by the immediate drop, is a contained act of physical self-acknowledgement. The fact that you are willing to perform this minimal action shows a deep, quiet commitment to self-respect, even when you feel nothing big is happening. For a final micro-action, could you just let your jaw hang slightly loose for a moment, releasing any tension you might be holding there?"
+    },
+    {
+      "role": "user",
+      "content": "Like... doing that actually feels weird. A little too much effort, I guess. Everything is just... heavy, you know?",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like there is a pervasive, physical weight settling over you, making even the smallest acts feel like too much effort. The realization that movement requires effort, even when you are trying to honor your self-respect, speaks to your deep value of self-compassion and recognizing your body's current limits. For a micro-action, instead of moving, could you simply allow your hands to rest completely open and palms-up for a count of five, just noticing the lack of tension?"
+    },
+    {
+      "role": "user",
+      "content": "Hmm. Yeah. Like, just... there. Okay.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.4
+      }
+    }
+  ]
+}

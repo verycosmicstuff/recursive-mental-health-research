@@ -1,0 +1,127 @@
+{
+  "id": "exp_0072",
+  "timestamp": "2026-06-17T08:35:49.109926",
+  "strategy": {
+    "name": "Deep Reflective Values-Utility Loop (DRVUL) v1.1",
+    "hypothesis": "By replacing the generic 'reflective question' with a mandatory 'Value-Guided Utility Question' that anchors the user's current struggle to their stated or implied life values, we will increase the perceived clinical depth and improve the score by making the intervention feel less like simple reflection and more like targeted therapeutic direction, targeting a score above 90.0.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Sofia",
+    "age": 29,
+    "occupation": "Project Coordinator (Healthcare)",
+    "presenting_issue": "I feel completely overwhelmed and burnt out from constantly managing everyone else\u2019s crises, and I don't know how to stop.",
+    "background_story": "Since Dad got hurt last year, I've essentially taken over the role of the family CEO, handling everything from tuition payments to coordinating appointments. It's exhausting having to be the translator, the accountant, and the emotional buffer for everyone. Lately, my younger siblings have started snapping at me and not asking for help, which makes me feel guilty and like I\u2019m failing at being a good daughter. I just keep patching things up, even when I'm running on empty.",
+    "personality": "Sofia is highly dutiful, deeply responsible, and tends to minimize her own struggles by focusing on the needs of others. Her tone is polite but strained, often using self-deprecating language to explain her exhaustion. She speaks in generalized terms about 'the family' rather than about 'her' feelings. She is highly agreeable and resistant to advice that suggests she should prioritize herself, interpreting such suggestions as selfish or unloving. She will frame her sacrifice as a necessary, virtuous act of devotion.",
+    "baseline_phq9": 17,
+    "archetype_label": "Eldest Daughter Trap \u2014 Latin American Familismo"
+  },
+  "scores": {
+    "total_score": 7.25,
+    "raw_score": 7.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 12.2/70.0 (VV shift: -0.60, Sym shift: 0.10, DV shift: 0.00) | Brevity Penalty (-15): Therapist turn too long (13 sentences, 235 words) | Lack of Grounding Cues (-20): Suggested physical exercise without validation/grounding tokens",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please share what you are currently experiencing, and I will help you connect it to your values."
+    },
+    {
+      "role": "user",
+      "content": "I guess... I just feel this constant, low humming feeling in my chest. Like I'm always braced for something bad to happen, you know? And I'm pretty sure I should be doing more to make sure everything is okay for everyone.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.7
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Deep Validation (Validation)**\nIt sounds incredibly heavy and exhausting to carry that constant, low humming feeling in your chest. That sensation of being \"braced\" is your body's way of signaling that you are constantly on high alert, and it takes immense energy just to maintain that vigilance. Please know that feeling this way\u2014feeling the weight of responsibility for everyone else\u2014is a sign of how deeply caring you are.\n\n**2. Value Bridge (Connection)**\nThe desire to \"do more to make sure everything is okay for everyone\" comes from a powerful core value: **Care** and **Connection**. However, when we over-function to protect others, we often sacrifice the value of **Self-Compassion** and **Rest**. If you could move past the need to *control* outcomes for everyone else, what value\u2014like personal peace or self-trust\u2014would that open up for you? What does it look like to care for yourself in a way that feels sustainable?\n\n**3. Actionable Micro-Step (Action)**\nFor today, instead of trying to fix the whole picture, let's focus on grounding. I propose a micro-step: When you feel that humming sensation, pause for three minutes and intentionally name five things you can see, four things you can feel (the chair under you, your clothes), three things you can hear, two things you can smell, and one thing you can taste. This anchors you back into the present moment, reminding your nervous system that you are safe *right now*."
+    },
+    {
+      "role": "user",
+      "content": "It's just... I don't know how to stop caring, I mean, it's part of who I am. And I guess trying to think about 'self-compassion' just feels really foreign; I feel like if I stop paying attention to everyone, things will just fall apart. I'll try the five things thing, I guess.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Deep Validation (Validation)**\nIt makes perfect sense that letting go of caring feels like losing a part of who you are. That deep sense of responsibility is woven into your identity, and the fear that \"things will fall apart\" if you pull back is not just a fear\u2014it's a very real, powerful survival instinct. It sounds incredibly painful to feel like your sense of worth or purpose is entirely tied up in the needs of others.\n\n**2. Value Bridge (Connection)**\nWhat you are describing is the conflict between your value of **Connection/Care** and your need for **Self-Preservation**. The goal isn't to stop caring; the goal is to learn how to care *sustainably*. A more valuable capacity than simply caring is **Self-Trust**\u2014trusting that you are worthy of care, even if you aren't actively solving a crisis. If you could redefine \"caring\" so that it first and foremost includes caring for your own energy, what does that look like? What would it mean to be a responsible caregiver *to yourself*?\n\n**3. Actionable Micro-Step (Action)**\nSince you are willing to try the grounding exercise, let's make it even smaller. When you feel the weight of other people's needs pressing down on you, I propose this micro-step: Instead of trying to solve a problem, simply pause and say, out loud or in your head, \"I am doing my best right now.\" This is a statement of self-permission. It doesn't solve anything, it doesn't change anything, but it acknowledges the immense effort you are already putting in, which is a profoundly compassionate act."
+    },
+    {
+      "role": "user",
+      "content": "It's just so hard to hear that. I feel like I'm just failing at being good enough for everyone if I even think about doing that. Maybe I'll try the 'doing my best' thing, I guess. It feels small, but I can try it.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Deep Validation (Validation)**\nIt takes immense vulnerability to share that, and I want you to know that what you are feeling\u2014the fear of failing, the difficulty of letting go of the need to be \"good enough\"\u2014is not a personal failing. It is a sign of how much you care, and how hard you have been working to meet standards that are often impossible to meet. Please understand that the sheer effort you put into caring for others is a testament to your deep capacity for love, not a sign of failure.\n\n**2. Value Bridge (Connection)**\nThe core value you are striving for is **Worthiness**\u2014the belief that you matter. Right now, your brain has equated \"being good enough\" with \"being constantly useful to others.\" But true worthiness is an intrinsic value; it doesn't depend on your performance or how many people you help that day. If we redefine \"good enough\" to mean simply *being*\u2014to be present and imperfect\u2014what value does that open up? It is the value of **Self-Acceptance**.\n\n**3. Actionable Micro-Step (Action)**\nSince you are willing to try the \"doing my best\" statement, let's embed it into a physical ritual. I propose this micro-step: The next time you catch yourself thinking, \"I should be doing more,\" simply place one hand over your heart and repeat the phrase, \"I am doing my best,\" three times. This physical act helps signal to your nervous system that this is a moment of self-permission, not a moment of performance review."
+    },
+    {
+      "role": "user",
+      "content": "I just... I wish I could feel that sense of calm you're describing. It sounds nice, but it feels so far away right now. I guess I\u2019ll try placing my hand over my heart when I feel that pressure creeping up, I can try that.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Deep Validation (Validation)**\nPlease hear this: it is completely normal for the desired feeling\u2014the sense of calm\u2014to feel incredibly far away when you are in the thick of emotional pressure. That gap between \"what I want\" and \"what I feel\" is where most of the struggle lives, and it is exhausting to live in that space. Please know that recognizing that distance is a huge act of self-awareness, and it is not a sign of failure; it is simply the truth of where you are right now.\n\n**2. Value Bridge (Connection)**\nThe value you are moving toward isn't \"calm\" itself, because calm is a fleeting state, not a permanent destination. The deeper value here is **Resilience**\u2014the capacity to keep showing up for yourself, even when the feeling is distant. The value is in the *effort* of the practice, not the immediate result. If we value the effort of self-kindness, what does that look like? It means treating yourself like a friend who is struggling, rather than a problem that needs fixing.\n\n**3. Actionable Micro-Step (Action)**\nYou have committed to placing your hand over your heart when the pressure creeps up, and that is a powerful act of self-care. To make this even gentler, I propose this micro-step: When you place your hand over your heart, don't focus on *changing* the feeling. Instead, just focus on *noticing* the feeling. Silently say to yourself, \"I notice this pressure,\" or \"This is what caring feels like right now.\" This simple act of observation creates a tiny bit of space between you and the overwhelming feeling, and that space is where the calm begins to creep in."
+    },
+    {
+      "role": "user",
+      "content": "Just noticing it... I guess that\u2019s what it feels like. It's really hard to stop focusing on it, though; I keep thinking about all the other things I need to remember for my mom and siblings.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Deep Validation (Validation)**\nIt is profoundly challenging, and frankly exhausting, to try to keep your focus on the present moment when your mind is constantly pulling you back to the weight of others' needs. Your mind is a pattern-seeking machine, and the role of caring for your family is a deeply ingrained, powerful pattern that is hard to override. Please be gentle with yourself; the fact that you are even *trying* to notice the pattern when it pulls you away is a monumental act of self-awareness.\n\n**2. Value Bridge (Connection)**\nWhat you are wrestling with right now is the value of **Self-Boundary**. It's not about stopping caring; it's about creating a sacred space *for yourself* so that the care you give comes from a full cup, not an empty one. The instinct to remember everything is a sign of your immense capacity for connection, but true self-respect means knowing when to put a temporary boundary around your own mental energy. If you could practice setting a boundary that protects your peace, what does that mean for how you treat your own mental load?\n\n**3. Actionable Micro-Step (Action)**\nSince the thoughts about your mom and siblings are the primary distraction, let's give them a designated \"parking spot.\" I propose a micro-step: When an intrusive thought about someone else's needs pops into your head, do not try to solve it, and do not push it away. Instead, mentally acknowledge it, say, \"Thank you, thought,\" and then visualize placing that thought into a specific, imaginary box or drawer labeled \"Later.\" This simple mental ritual validates the thought's importance without allowing it to hijack your present moment."
+    },
+    {
+      "role": "user",
+      "content": "I guess... 'Later.' I can try putting them in a box. But it feels like if I forget one thing, or if something really bad happens, I'm going to forget to take the box out and I'll be completely unprepared.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Deep Validation (Validation)**\nIt is so understandable that you feel this anxiety about forgetting or being unprepared. That feeling\u2014the fear that if you let go of the checklist, something catastrophic will happen\u2014is the weight of years of being the dependable one. It is a deeply protective, logical fear rooted in a genuine desire to keep everyone safe. Please know that this fear itself is not a failure; it is a testament to how much you care and how responsible you are.\n\n**2. Value Bridge (Connection)**\nWhat you are grappling with is the difference between **Control** and **Adaptability**. Your mind is telling you that preparation means *knowing* every single contingency. But the value we want to cultivate is **Resilience**\u2014the deep, internal belief that even if you don't know what's going to happen, you have the capacity to handle it. Resilience is not about having a perfect box; it's about trusting your own ability to breathe and adjust when the box inevitably gets knocked over.\n\n**3. Actionable Micro-Step (Action)**\nSince the fear of crisis is so strong, let's anchor you in the most basic, immediate form of safety. I propose a micro-step that you can use whenever the anxiety of \"what if\" hits: The 4-7-8 Breath. When the pressure builds, inhale slowly through your nose for a count of **4**, hold your breath for a count of **7**, and exhale completely through your mouth for a count of **8**. Doing this just three times signals to your nervous system that, in this very moment, you are safe, regardless of what might happen later."
+    },
+    {
+      "role": "user",
+      "content": "The breathing thing... I can try that. I keep thinking I should be worrying about other things instead, though, like if Dad will need me to call the specialists again.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    }
+  ]
+}

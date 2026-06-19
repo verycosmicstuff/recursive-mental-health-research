@@ -1,0 +1,127 @@
+{
+  "id": "exp_0057",
+  "timestamp": "2026-06-17T06:35:20.572582",
+  "strategy": {
+    "name": "Three-Sentence Empowering Pivot (TSEP) v1.0",
+    "hypothesis": "By constraining the therapist to exactly three sentences (Acknowledge, Inquire, Suggest), we enforce strict brevity while ensuring a complete therapeutic loop.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Chloe",
+    "age": 22,
+    "occupation": "University Student (Pre-Med)",
+    "presenting_issue": "I've been feeling overwhelmed by academic pressure and I'm having trouble distinguishing between normal stress and something more significant.",
+    "background_story": "I've always been the 'straight A' student, and lately, the pressure to maintain those grades is becoming unbearable. I spend most of my time worrying about entrance exams and what my life will look like after graduation. I feel like I'm constantly running on empty and that I'm never doing enough to meet everyone's expectations.",
+    "personality": "The tone is highly anxious, overly detailed, and apologetic. She uses qualifiers ('maybe,' 'sort of,' 'just') frequently and frequently asks for validation ('Am I being dramatic?' 'Is this normal?').",
+    "baseline_phq9": 11,
+    "archetype_label": "Anxious Student"
+  },
+  "scores": {
+    "total_score": 29.75,
+    "raw_score": 29.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 29.8/70.0 (VV shift: 0.00, Sym shift: 0.10, DV shift: 0.20) | Third-Person Penalty (-15): Used 'user' | Brevity Penalty (-15): Therapist turn too long (4 sentences, 105 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please provide the user's input so I can apply the coaching structure."
+    },
+    {
+      "role": "user",
+      "content": "Oh, um, I just... I don't even know where to start, I guess. It's just everything, really. The MCAT, the classes, my volunteer hours, and then I also feel like I should be calling my mom and helping out with her garden, or something. I feel like I'm failing at everything, maybe. Am I being dramatic?",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are carrying the weight of many important roles\u2014student, caregiver, community member\u2014and feeling that pressure to perform perfectly in every single area is absolutely exhausting. When you feel pulled in too many directions, it is completely natural to question if your stress is justified. What is the single, underlying fear that makes you feel that if you stop doing *anything*, the negative consequences will happen? For the next hour, try the \"one-thing rule\": identify the single most important, non-negotiable item on your list, and commit to only working on that until the timer goes off, giving yourself permission to ignore everything else."
+    },
+    {
+      "role": "user",
+      "content": "Um, I guess... I'm afraid that if I stop, I'll just fall behind and everyone will think I've given up. Like, that I'm not good enough anymore. It's probably stupid to worry about that, right? And the 'one-thing rule'... I don't know if I can really focus on just one thing for an hour. I feel like I'll just get distracted by something else that feels urgent, which will probably make me feel guilty again.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It makes perfect sense that the fear of disappointing others, and the worry about being judged, feels so intensely powerful right now, especially when you're already struggling to focus. When you say you're worried about what others will think, are you perhaps confusing their perception of your success with your actual intrinsic value as a person? Instead of committing to a full hour, try a \"five-minute micro-focus\": set a timer for just five minutes, tackle the most difficult task, and when the buzzer rings, allow yourself to stop immediately, acknowledging that the interruption is okay."
+    },
+    {
+      "role": "user",
+      "content": "I guess... I suppose I am. I just... I don't know how to stop caring what they think, it's just so ingrained, I guess. Five minutes... okay. I can try five minutes. I just hope I don't forget... I hope I don't forget something important in those five minutes.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is completely understandable that the habit of caring what others think feels so deeply rooted, and the anxiety of forgetting something important during a limited time is a very real source of stress. If you were to define \"important\" not by what you *must* remember, but by what would feel genuinely *good* to complete, what would that task be? For your five minutes, try the \"brain dump first\" strategy: before starting the task, take two minutes to write down every single thing you are worried about forgetting, and then physically close the list, reminding yourself that the list is a safety net, not a mandate."
+    },
+    {
+      "role": "user",
+      "content": "A task that would feel good... maybe just reviewing my notes from my history class? Because that feels less like a grade and more like... just learning something. The brain dump sounds okay, I guess. It's just... I hope that list is actually enough. I really hope I don't need to write it down again later.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is wonderful that you are choosing a task\u2014reviewing history notes\u2014that feels like pure learning rather than performance, and it is completely natural to feel anxious that your list won't be enough to cover all your worries. When you express the fear that the list might not be sufficient, are you worried more about the *actual content* you might miss, or are you worried about the *emotional feeling* of not having a perfect, exhaustive record? To build confidence in your ability to retain information, try the \"teach-it-back\" micro-experiment: after reviewing one small section of your notes, close the book and spend two minutes briefly explaining the concept out loud, as if you were teaching it to a friend, which proves your understanding without needing the list."
+    },
+    {
+      "role": "user",
+      "content": "Oh, it's... it's the feeling. Like, if I close the list, it feels like I've forgotten something crucial and I'll immediately panic again. Am I being dramatic? Maybe I just need to keep the list visible, you know? Just in case.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It makes complete sense that the physical presence of the list feels like a necessary anchor right now, because the anxiety of forgetting feels so immediate and overwhelming. When you say you need the list to stay visible, are you actually relying on the list to hold the information, or are you relying on the list to manage the *feeling* of potential panic? To build a little more trust in your own resilience, try the \"list-to-hand-off\" micro-experiment: when you feel the urge to panic, physically place the list down and then gently place one hand over your heart, taking three deep breaths, acknowledging that the list is a tool, but you are the primary source of safety."
+    },
+    {
+      "role": "user",
+      "content": "I think... I am relying on the list to stop the panicking, I think. It's like... it's a shield, I guess. But placing my hand over my heart... I don't know if I can do that. I feel a bit... unsteady, maybe.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It takes incredible insight to recognize that the list is functioning as a protective shield rather than just a helpful tool, and feeling unsteady when you consider letting go of that shield is a completely normal, natural reaction. When you feel the urge to reach for the shield, what is the core belief about yourself that the shield is currently protecting\u2014is it the belief that you are capable, or is it the belief that you must be perfect? Instead of a hand on your heart, try the \"five-finger grounding\" micro-experiment: when you feel the panic rising, simply trace the outline of your fingers with your opposite hand, noticing the texture and temperature of your skin, which gently pulls your focus back to your physical body in a non-threatening way."
+    },
+    {
+      "role": "user",
+      "content": "It feels like... I must be perfect. If I'm not perfect, then I'm nothing. And if I'm nothing, everyone will realize it. I... I don't know if I can focus on my fingers right now, they feel kind of buzzy.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    }
+  ]
+}

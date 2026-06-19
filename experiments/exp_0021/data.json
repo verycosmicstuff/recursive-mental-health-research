@@ -1,0 +1,127 @@
+{
+  "id": "exp_0021",
+  "timestamp": "2026-06-17T03:18:53.767682",
+  "strategy": {
+    "name": "Concise MI-ACT Bridge (CIMAB) v1.0",
+    "hypothesis": "By strictly enforcing a 3-sentence, 60-word limit and adjusting the focus from 'action' to 'identifying the inherent value' behind the desired change (MI/ACT), we can maintain the high State Score of the successful structured approaches while providing a deeper, less prescriptive intervention that avoids the structural penalties and builds intrinsic motivation.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Minho",
+    "age": 34,
+    "occupation": "Operations Manager",
+    "presenting_issue": "I've just been having these headaches and this stomach pain lately, and I can't seem to sleep properly.",
+    "background_story": "Things have been really busy at work lately, and I feel like I'm always running just to keep up. My parents always told me I needed to work hard to take care of myself, so I just kept pushing until I couldn't. I know I should probably manage my stress better, but it feels like everyone expects me to be okay and productive all the time. I just feel... heavy, I guess.",
+    "personality": "Reserved, overly polite, and heavily focused on 'efficiency' and 'doing things correctly.' He will minimize emotional distress by focusing on physical symptoms or logistical problems. When discussing difficult topics, he will use vague language (e.g., 'It's a lot,' 'I'm just tired,' 'Things are tough') rather than naming emotions. He avoids eye contact and tends to fidget with items in the room.",
+    "baseline_phq9": 15,
+    "archetype_label": "Corporate Burnout \u2014 East Asian Face Culture"
+  },
+  "scores": {
+    "total_score": 80.75,
+    "raw_score": 80.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 50.8/70.0 (VV shift: 0.40, Sym shift: 0.00, DV shift: -0.10)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "**Somatic Anchor:** I notice a heavy weight settling in your chest, suggesting deep exhaustion.\n**Motivational Reflection (MI):** What might be one tiny movement you could commit to today, even when you feel this tired?\n**Value Alignment Bridge (ACT):** Remember that prioritizing your vitality is a powerful act of self-respect and care."
+    },
+    {
+      "role": "user",
+      "content": "I... I guess just making sure I take my vitamins every morning. I already write it down. It's not a big thing, really. I just need to make sure I'm following a routine.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Somatic Anchor:** I sense a steady, predictable rhythm, like a gentle hum, underlying your focus on routine.\n**Motivational Reflection (MI):** If you were to identify the core reason you want this structure, what would that reveal about your need for stability?\n**Value Alignment Bridge (ACT):** Upholding these consistent habits supports your value of self-care and reliable well-being."
+    },
+    {
+      "role": "user",
+      "content": "I think it\u2019s just... the best way to know things are okay. If I stick to the routine, I can predict what\u2019s coming. It's less confusing that way.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Somatic Anchor:** I perceive a subtle rigidity, like a tightly wound spring, when you speak about needing predictability.\n**Motivational Reflection (MI):** Beyond the schedule, what might bring you a sense of grounding when the day's flow feels unpredictable?\n**Value Alignment Bridge (ACT):** Embracing flexibility, even in small ways, honors your value of inner peace and adaptability."
+    },
+    {
+      "role": "user",
+      "content": "I don't know. Probably just making a proper meal, I guess. Or maybe going for a walk when I'm not late for anything. Something that just... doesn't require a schedule.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Somatic Anchor:** I feel a softening in your posture, like a slow exhale releasing built-up tension.\n**Motivational Reflection (MI):** If you let go of the need to plan, what might you notice about the quality of the moment itself?\n**Value Alignment Bridge (ACT):** Allowing yourself these unscheduled moments strengthens your commitment to presence and genuine enjoyment."
+    },
+    {
+      "role": "user",
+      "content": "I just feel... tired. Like, really tired. It's a lot to think about just suddenly not having a plan.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Somatic Anchor:** I notice a deep, sinking weight, like gravity pulling you down, reflecting profound exhaustion.\n**Motivational Reflection (MI):** When the effort of planning feels too heavy, what might be one small act of rest you could give yourself right now?\n**Value Alignment Bridge (ACT):** Allowing yourself this pause validates your need for self-compassion and restorative care."
+    },
+    {
+      "role": "user",
+      "content": "I guess just... sitting down for a few minutes. Not doing anything specific. Just existing, I suppose. It doesn't count as work, right?",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Somatic Anchor:** I sense a subtle lifting, like a weight being gently set down, indicating profound release.\n**Motivational Reflection (MI):** If 'existing' doesn't count as work, what does it count as for your sense of self-worth?\n**Value Alignment Bridge (ACT):** Remember that honoring your need for rest is a foundational act of self-acceptance and care."
+    },
+    {
+      "role": "user",
+      "content": "I... I suppose it just counts as recharging. Like a machine that needs to cool down properly. If I don't do that, I can't run tomorrow.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Somatic Anchor:** I perceive a steady, cooling sensation, like a vital system regulating itself after effort.\n**Motivational Reflection (MI):** If recharging is essential for future function, what does that reliable self-maintenance teach you about your own strength?\n**Value Alignment Bridge (ACT):** Committing to this necessary stillness reinforces your value of sustainability and enduring resilience."
+    },
+    {
+      "role": "user",
+      "content": "It just shows I can keep going. If I manage the rest properly, I can keep up with everything expected. I guess that's what it is.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.6
+      }
+    }
+  ]
+}

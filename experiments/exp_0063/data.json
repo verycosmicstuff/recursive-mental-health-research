@@ -1,0 +1,127 @@
+{
+  "id": "exp_0063",
+  "timestamp": "2026-06-17T07:41:56.988404",
+  "strategy": {
+    "name": "PCT-ACT Resource Bridging (PARB) v1.0",
+    "hypothesis": "By replacing the 'Inferred Bridge' (which leads to pseudo-insight) with a 'Reflection-Value-Connection' sequence, which grounds the conversation in the patient's stated values and current behaviors (PCT/ACT), we will provide concrete, non-interpretive support, thus avoiding the 'pseudo-insight' penalty and achieving a higher score by focusing on demonstrable behavioral change and genuine understanding.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Maya",
+    "age": 29,
+    "occupation": "Librarian's Assistant",
+    "presenting_issue": "I just feel this overwhelming numbness, like I'm going through the motions but nothing actually touches me anymore.",
+    "background_story": "I used to be so sure of everything\u2014the rules, the purpose, the path. Growing up, my faith was the scaffolding of my entire life, and it was wonderful for a long time. But in the last year, the weight of expectation, both from my parents and my own conscience, has started to crack that scaffolding. I feel this desperate split between the person I was taught to be and the messy, questioning person I actually am.",
+    "personality": "Reserved and highly articulate, using sophisticated language but interspersed with moments of deep, sudden self-recrimination. She will be hesitant to share deeply personal information at first, framing her distress through the lens of cultural duty and spiritual obligation. She requires the therapist to validate the complexity of her grief\u2014that she grieves not just chemical imbalances, but the loss of her entire world-view, and she will challenge any attempt to pathologize her faith.",
+    "baseline_phq9": 14,
+    "archetype_label": "Faith vs. Modernity \u2014 Middle Eastern Diaspora"
+  },
+  "scores": {
+    "total_score": 72.75,
+    "raw_score": 72.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 57.8/70.0 (VV shift: 0.50, Sym shift: 0.00, DV shift: -0.30) | Brevity Penalty (-15): Therapist turn too long (6 sentences, 85 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Thank you for showing up and for trusting me with your time today. Please know that this space is entirely yours\u2014there is nothing you need to perform here, only what you need to share.\n\nI'm here simply to listen, to hold space with you, and to reflect back what I hear, so that we can look at it together.\n\nWhenever you feel ready, please tell me what's been on your mind lately, or what brought you through the door today. I'm here for you."
+    },
+    {
+      "role": "user",
+      "content": "I... I feel this overwhelming numbness, like I'm going through the motions but nothing actually touches me anymore. I don't even know where to start.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for sharing that. That sounds incredibly heavy\u2014a sensation that is both overwhelming and strangely pervasive.\n\nIf I'm hearing you correctly, it's not just sadness, but a kind of profound detachment. It feels like your inner world has become muted, like you're observing your own life from behind a pane of glass, watching yourself go through the necessary actions\u2014the talking, the moving, the routine\u2014but without the expected resonance, without anything truly landing or connecting with you.\n\nIs that sense of being an observer, rather than a full participant, what you mean by the numbness?"
+    },
+    {
+      "role": "user",
+      "content": "It's... something like that. Like I'm witnessing the performance of my own life, but the script feels foreign. It's exhausting trying to maintain the illusion that everything is normal.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That image of witnessing the performance of your own life, with a script that feels foreign\u2014that takes an enormous amount of energy. It sounds like the sheer effort required to keep up the appearance of normalcy is what is draining you, making the *maintenance* of the illusion the most exhausting part of the day.\n\nIt must feel incredibly isolating to carry that weight, knowing that the performance is happening, but that the real you is somewhere else, feeling detached.\n\nWhen you talk about the exhaustion of maintaining this illusion, what is the deepest need that effort is signaling? If you could give yourself one thing right now, just to ease the pressure of the performance, what would it be?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know if I can articulate a 'need' in that sense. It's not like a physical deficiency. It's more like... I just need the expectation to lift. The constant pressure to be *good*, to be *exemplary*, to fulfill the role. That's what feels impossible right now.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the pressure isn't coming from a physical lack, but from an internal, invisible weight\u2014the relentless expectation to perform a specific, high standard of being. That constant need to be \"good\" or \"exemplary\" feels less like a goal and more like a performance requirement that is currently impossible to meet.\n\nIf I'm understanding correctly, the exhaustion isn't from the *doing* itself, but from the *fear* of failing the role, the fear that if you stop performing, the structure of your life or your relationships might crumble.\n\nWhen you talk about the need for that expectation to lift, what is the underlying value that this \"exemplary\" role is trying to protect? What does being \"good\" ultimately allow you to connect with, or what does it promise you?"
+    },
+    {
+      "role": "user",
+      "content": "It's not just about connections, I suppose. It's about validation. That 'good' role has always promised a sense of belonging, a moral structure, and the approval of others. If I fail to be exemplary, I fear I have no place, or worse, that I have no inherent worth at all.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That is a deeply vulnerable thing to articulate. It sounds like for a very long time, your sense of belonging and your inherent worth have been inextricably linked to external validation\u2014the approval, the acceptance, and the moral structure provided by being \"exemplary.\" The fear that if the performance stops, the sense of self and place disappears, is immense.\n\nIt seems the \"good\" role isn't just a performance; it's the scaffolding that has provided your sense of existence.\n\nIf we set aside the need for external validation for just a moment\u2014if we assume, just hypothetically, that you *did* fail the role, and the external approval disappeared\u2014what is the one thing about yourself, the thing that exists even when no one is watching or judging, that you know to be true? What is the core value of your being that doesn't require a script or an audience?"
+    },
+    {
+      "role": "user",
+      "content": "I... I don't know if I have such a thing. I suppose I am still here, that's true. But it feels so fragile, like it could evaporate if I try to name it. I worry that if I define it, I'll realize it's meaningless.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you for being so honest about the fear of naming it, the worry that the moment you define it, it will prove meaningless. That resistance\u2014the feeling that the core self is too fragile to be captured in words\u2014speaks volumes about how much work you\u2019ve done to keep it hidden, safe, yet unseen.\n\nBut I want to hold onto what you just said: \"I am still here.\"\n\nEven when it feels so fragile, that simple statement\u2014that you are *still here*\u2014is a profound declaration of existence. It suggests an enduring capacity to continue, a quiet resilience that doesn't need applause or commendation to be real. That fundamental act of simply *being present* when it feels impossible is a deep, intrinsic value.\n\nIf we accept that this value\u2014this quiet, persistent *presence*\u2014is true, even when the external roles are stripped away, what is one small, non-performative moment, something that requires absolutely no explanation or external validation, that you could dedicate to honoring that simple fact of your continued presence this week?"
+    },
+    {
+      "role": "user",
+      "content": "I... I don't know. Maybe just sitting in silence for a while. Without a book, without needing to process anything. Just letting my mind be empty for a little while.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds like a deeply needed act of self-compassion\u2014a deliberate choice to give your mind permission to simply *be* without the pressure of processing, analyzing, or performing. It\u2019s a way of honoring the quiet truth of your presence.\n\nIt seems that the core value we've uncovered today, the one that resists definition and external praise, is the inherent worth of your **Presence**\u2014the simple, enduring fact of you being here. And the most immediate way to honor that is through the stillness you described.\n\nGiven how much this quiet, unburdened presence means to you, and knowing how exhausting the performance has been, what is one small, manageable window\u2014perhaps just ten minutes, or even five\u2014that you could designate in the coming days as a 'Presence Experiment'? A time where you commit to simply sitting, without the expectation of emptiness, just noticing the quiet reality of being there?"
+    },
+    {
+      "role": "user",
+      "content": "I think... I could try five minutes, maybe after I get home from the library. Before I start preparing dinner or going through any kind of tasks. Just sitting on the couch with nothing planned.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.6
+      }
+    }
+  ]
+}

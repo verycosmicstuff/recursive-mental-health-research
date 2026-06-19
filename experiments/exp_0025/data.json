@@ -1,0 +1,127 @@
+{
+  "id": "exp_0025",
+  "timestamp": "2026-06-17T03:38:44.685432",
+  "strategy": {
+    "name": "Empathy-Challenge-Action (ECA) v1.0",
+    "hypothesis": "By strictly enforcing a 3-sentence, 50-word limit and replacing the abstract 'Value Exploration Query' with a direct, gentle CBT challenge and a micro-action query, we will maximize the State Score by providing a concrete, highly personalized, and immediately actionable step, thus overcoming structural penalties and surpassing the 89.5 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Amrit",
+    "age": 29,
+    "occupation": "Warehouse worker/Student",
+    "presenting_issue": "I feel constantly on edge and can't sleep because I'm worried about everything, especially what might happen with my work status.",
+    "background_story": "I've been working double shifts at the warehouse since I arrived here, and the hours are getting longer and the pay is still unfair. Every time I hear talk about policy changes or deportation, my stomach drops. I keep sending money home to my family in Punjab because they depend on me, and the pressure to make it work here is immense. I just feel trapped between keeping my family afloat and the fear that I might lose everything.",
+    "personality": "The conversation will be hesitant and formal, characterized by short, factual answers when discussing logistics (work, rent, money) but becoming more emotionally charged and defensive when the conversation drifts into abstract ideas about 'self-care' or 'rest.' Will frequently reference financial strain and immigration laws. Will appear academically intelligent but exhausted. Will redirect any advice that sounds like luxury or privilege back to the immediate needs of survival and family support, adopting a defensive, minimizing tone when criticized.",
+    "baseline_phq9": 17,
+    "archetype_label": "Precarious Labor (Indian Diaspora)"
+  },
+  "scores": {
+    "total_score": 66.75,
+    "raw_score": 66.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 36.8/70.0 (VV shift: 0.00, Sym shift: -0.20, DV shift: 0.10)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "I hear that feeling of being overwhelmed and wanting to withdraw completely. What if taking one small step doesn't require solving everything at once? Could you identify one non-negotiable comfort activity for the next few hours?"
+    },
+    {
+      "role": "user",
+      "content": "A comfort activity? I don't know what that means in this situation. I have to be awake and ready to work tomorrow, and I need to keep thinking about the money. I can't afford to just 'rest' or take time for myself right now.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear that the pressure of finances and work feels immediate and completely draining. What if a brief, intentional pause is actually the most productive thing you can do right now? Could you dedicate just five minutes tonight to writing down three things you *can* control tomorrow?"
+    },
+    {
+      "role": "user",
+      "content": "I suppose I could write down my shift schedule for tomorrow. That's concrete. I also need to calculate how much money I can transfer for the rent. And I need to check the public transport routes. Those are things I can control, I guess.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear that you found a sense of clarity by listing these manageable, concrete steps. What if acknowledging your efforts also requires gentle self-compassion? Could you dedicate one minute after completing these tasks to simply notice one thing you appreciate about yourself?"
+    },
+    {
+      "role": "user",
+      "content": "I don't really know how to do that. Appreciating myself doesn't pay the rent, and it doesn't send money home. Right now, just focusing on the practical things is what matters. I feel foolish talking about feelings when there are real bills to worry about.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear that the weight of bills makes emotional introspection feel completely irrelevant and foolish. What if treating yourself with care isn't a distraction, but the fuel needed to handle these practical tasks? Could you take three slow, deep breaths right now, focusing only on the sensation of the air entering and leaving your body?"
+    },
+    {
+      "role": "user",
+      "content": "It's just air moving. It doesn't change anything about the invoices or the hours I have to work. I feel like I should be worried about finding a more consistent job, not focusing on my breathing.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear that focusing on breathing feels insignificant when faced with massive financial worries. What if dedicating a moment to self-regulation actually strengthens your ability to tackle those big job concerns? Could you spend five minutes tonight researching one potential industry or skill that interests you, just for curiosity's sake?"
+    },
+    {
+      "role": "user",
+      "content": "I could look at online courses, maybe in basic accounting or something. If I can pass the exams, maybe I can get a better job down the line. But if it's not practical, it's pointless.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear that you are seeking tangible, measurable outcomes to validate your efforts. What if learning something new doesn't have to lead to a job immediately to still be valuable? Could you spend just ten minutes browsing one free introductory accounting resource online, without the pressure of passing an exam?"
+    },
+    {
+      "role": "user",
+      "content": "It's just more information. It doesn't guarantee anything, and I can't afford to waste time on things that aren't immediately useful for the next paycheck. I have to focus on what's certain.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear that the need for certainty is paramount when financial stability feels so fragile. What if sometimes the most useful thing is simply gathering information without the pressure of immediate application? Could you simply bookmark one interesting-sounding resource, committing to look at it only when you feel genuinely rested?"
+    },
+    {
+      "role": "user",
+      "content": "I think I'll just check the local community center website. They might have some information on legal aid or temporary housing. That's more actionable than a 'bookmark.'",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0104",
+  "timestamp": "2026-06-17T16:28:33.052181",
+  "strategy": {
+    "name": "Warm Non-Directive Reframe (WNDR) v1.0",
+    "hypothesis": "By integrating validation, targeted open-ended questioning, and a micro-step under 120 words, we maintain a warm, non-directive alliance while encouraging behavioral shifts.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Michelle",
+    "age": 35,
+    "occupation": "Tech Project Manager",
+    "presenting_issue": "I've just been feeling really physically run down lately, and it's affecting my ability to focus at work.",
+    "background_story": "Lately, I've been having these persistent headaches and trouble sleeping, and it feels like it's all piling up. My parents always said that if I wanted to succeed, I just needed to work harder and not worry about things that weren't productive. I keep thinking about how much pressure there is to keep up appearances at the company, and it just feels exhausting to maintain the image that I have everything under control.",
+    "personality": "She speaks in measured, polite tones, often using corporate jargon or focusing on logistical details to avoid discussing feelings. She tends to minimize her distress, framing emotional exhaustion as mere physical fatigue or poor sleep hygiene. She avoids making direct eye contact when discussing personal life and frequently redirects the conversation to work-related problem-solving.",
+    "baseline_phq9": 15,
+    "archetype_label": "Corporate Burnout \u2014 East Asian Face Culture"
+  },
+  "scores": {
+    "total_score": 40.25,
+    "raw_score": 40.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 40.2/70.0 (VV shift: 0.10, Sym shift: 0.30, DV shift: -0.40) | Third-Person Penalty (-15): Used 'the client' | Brevity Penalty (-15): Therapist turn too long (5 sentences, 98 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "**[Wait for Client Input]**\n\n*(Example response structure, assuming the client expressed feeling overwhelmed and scattered):*\n\nIt sounds like you are carrying a tremendous amount right now, and it makes perfect sense that you feel scattered. That feeling of having too many plates spinning is exhausting.\n\nIf you were to pause right now, what is the single thing that feels the heaviest on your mind?\n\nFor the next 24 hours, I invite you to identify one small area\u2014maybe just one corner of your desk or one single task\u2014and simply organize it. No judgment, just a tiny act of grounding."
+    },
+    {
+      "role": "user",
+      "content": "Well, I guess the whole project timeline is the biggest thing right now. I just need to optimize the resource allocation; I think if we restructure the workflow, we can get the deliverables out sooner. I've made a new Gantt chart I can show you.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are approaching this project with incredible focus and a deep desire to make things run smoothly. It takes a lot of energy to build out those comprehensive plans.\n\nAs you look at this detailed chart, what is the *feeling* that accompanies the need to optimize everything right now?\n\nFor the next 24 hours, before you open the chart, try setting a timer for five minutes and simply writing down three things that are currently *not* related to the project."
+    },
+    {
+      "role": "user",
+      "content": "Honestly, it's just... the pressure to perform, I guess. And the fact that if I don't get this timeline right, it reflects poorly on my ability to manage things. But I know I just need better sleep habits; maybe I'll try cutting out caffeine in the afternoon.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It takes immense courage to name that pressure\u2014it sounds like the weight of expectation, both internal and external, is really heavy right now. That feeling of needing to prove your capability is exhausting.\n\nIf you were to set aside the worry about what others might think, what does *your* definition of success look like for yourself in this project?\n\nFor the next 24 hours, instead of focusing on the caffeine cut, try simply noticing one moment today when you feel a flicker of competence, no matter how small, and naming it."
+    },
+    {
+      "role": "user",
+      "content": "Oh, for myself... I suppose it would just be if all the moving parts aligned seamlessly, and I could report that we hit all the KPIs without any unexpected blockers. I mean, I've always preferred things that are highly structured. I should probably just go back to reviewing the risk assessment matrix; that's where I can really contribute right now.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It makes perfect sense that you gravitate toward the risk matrix; structure and predictability can feel like a reliable anchor when everything else feels uncertain. That desire for seamless alignment is deeply human.\n\nIf you were to imagine a moment where everything *did* align perfectly, what would that feeling of effortless flow feel like in your body?\n\nFor the next 24 hours, before you open the matrix, I invite you to take five minutes and simply stretch, noticing where your body holds tension\u2014a small, physical pause."
+    },
+    {
+      "role": "user",
+      "content": "I guess... it would feel like a deep exhale. Like when I finally close the laptop at the end of a good week. It\u2019s just\u2026 relief. But really, I should probably just get back to cross-referencing the quarterly goals. I need to make sure the data points are consistent.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like that feeling of deep, comprehensive relief is what you are truly seeking\u2014that exhale that signals completion. It makes perfect sense that the structure of the data feels like the most reliable path to achieving that calm.\n\nIf you could give that feeling of \"deep exhale\" a physical location right now, where in your body would you feel it?\n\nFor the next 24 hours, before you start cross-referencing, try to take three conscious breaths, imagining that each exhale is letting go of one small piece of expectation."
+    },
+    {
+      "role": "user",
+      "content": "Well, I can feel it most in my shoulders, I guess. Like a little drop of weight, right off the top. But really, I should just focus on the data integrity. I need to make sure those projections are sound.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is wonderful that you can pinpoint that feeling of release in your shoulders\u2014that visible drop of weight. It makes perfect sense that you want to focus on data integrity, as it feels like the most controllable way to manage that weight.\n\nIf we consider the weight in your shoulders, what is the one thought or worry that seems to be resting there the most heavily right now?\n\nFor the next 24 hours, when you notice tension in your shoulders, simply drop your shoulders back and down three times, without doing anything else."
+    },
+    {
+      "role": "user",
+      "content": "It's just the thought that if I don't manage all these dependencies, the whole system will collapse. Like a critical path failure. But okay, I'll try the breathing thing. I'll make a note of it for later.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are carrying the weight of the entire system on your shoulders\u2014that deep fear of a critical failure. That level of responsibility is enormous, and it's understandable that you feel the need to control every single dependency.\n\nIf that fear of collapse could speak, what is the one thing it seems most worried about right now?\n\nFor the next 24 hours, when the thought of \"collapse\" arises, pause and simply name the feeling aloud\u2014\"This is the fear of collapse\"\u2014just acknowledging it."
+    },
+    {
+      "role": "user",
+      "content": "It's worried about not being good enough. I guess. To see me fail at something really big. But I should probably just review the meeting minutes; I need to make sure the action items are clearly allocated to the right team leads.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    }
+  ]
+}

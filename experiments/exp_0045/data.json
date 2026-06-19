@@ -1,0 +1,127 @@
+{
+  "id": "exp_0045",
+  "timestamp": "2026-06-17T05:31:12.048234",
+  "strategy": {
+    "name": "Concise CBT-PCT Bridge (CCPB) v2.0",
+    "hypothesis": "By rigorously enforcing a strict constraint of 3-4 sentences and prioritizing a direct, evidence-based Socratic question over abstract ACT defusion, we will eliminate the Brevity Penalty and maximize the State Score by delivering maximum clinical utility in minimum space, surpassing the 91.25 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Arjun",
+    "age": 28,
+    "occupation": "Warehouse Laborer",
+    "presenting_issue": "I feel overwhelmed and constantly anxious because I don't know if I'll be able to keep sending money home and if I'll be here next year.",
+    "background_story": "Every day feels like a calculation\u2014how many hours I need to work, how much is safe to send back, and how many days until I feel cornered. My parents rely on me completely, and the thought of losing my work permit because of some new policy change keeps me up at night. I try to focus on my college classes, but the worry about my status and the constant pressure to earn enough to cover the whole family is suffocating.",
+    "personality": "He speaks in short, factual bursts, often correcting phrasing or bringing the conversation back to concrete logistics (money, dates, permits). He uses 'we' frequently when discussing his challenges, emphasizing the family unit's survival. He avoids emotional language, deflecting with practical concerns about work hours or the economy. When discussing mental health, he adopts a tone of shame and resignation, viewing therapy as a necessary chore rather than a comfort.",
+    "baseline_phq9": 17,
+    "archetype_label": "Precarious Labor (Indian Diaspora)"
+  },
+  "scores": {
+    "total_score": 36.75,
+    "raw_score": 36.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 36.8/70.0 (VV shift: 0.00, Sym shift: -0.10, DV shift: 0.00) | Third-Person Penalty (-15): Used 'the client' | Brevity Penalty (-15): Therapist turn too long (4 sentences, 86 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please provide the client's statement or scenario you would like me to respond to."
+    },
+    {
+      "role": "user",
+      "content": "I just don't know how much longer we can rely on this job. The hours are unpredictable, and if it drops, we don't know what we'll do. I keep running these numbers in my head. It's exhausting.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly stressful to constantly manage the uncertainty of your financial stability. When you run these numbers, are you focusing only on the absolute worst-case scenario, or are you factoring in potential alternatives? Consider what single, small skill or resource you possess that could help build a safety net, regardless of what the job does next."
+    },
+    {
+      "role": "user",
+      "content": "The numbers are just facts. If we don't calculate the worst stuff, we can't plan. Alternatives don't pay the rent or send money home. I just focus on what's certain right now: the hours and the pay rate.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is completely understandable that you feel the need to anchor yourself in concrete facts to feel secure. If you only focus on the worst-case scenario, what does that assumption prevent you from seeing about your current resources or strengths? Could you identify one small area of control\u2014outside of the job's unpredictable factors\u2014that you could improve this week?"
+    },
+    {
+      "role": "user",
+      "content": "Control? I'm not sure what that means. All the money has to be spent on upkeep. I need to finish these college classes, and I need to make sure the transfers are right. That's the only control we have, keeping things organized.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like maintaining structure and organization feels like the most reliable way to manage overwhelming uncertainty. If keeping things organized is your primary control, what emotional or physical needs are currently receiving the least amount of attention? Remember that control isn't just about external tasks; what is one small thing you can do today purely for your own mental rest?"
+    },
+    {
+      "role": "user",
+      "content": "I don't really know. Rest is just... wasted time. I have to keep moving, or the money stops coming in. I should probably check my permit expiry dates again. That's important.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you feel immense pressure that any pause equates to immediate financial danger. If rest is perceived as \"wasted time,\" what is the actual cost to your energy and mental clarity of constantly operating under that intense pressure? Try viewing a short break not as stopping, but as necessary maintenance that keeps your most valuable asset\u2014your focus\u2014running smoothly."
+    },
+    {
+      "role": "user",
+      "content": "It's not a choice. It's just what we do. Running at full power is how we survive, isn't it? I need to get back to the logistics of the next shipment. That's more real.",
+      "somatic_state": {
+        "sympathetic": 0.9,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you believe that maintaining constant, intense activity is the only reliable strategy for survival right now. If \"running at full power\" is the only way to survive, what happens to your ability to perform those crucial logistics when you are completely depleted? Consider that your sustained ability to manage shipments relies on your physical and mental reserves, which are finite. What is one tiny adjustment you can make to your routine that will protect your energy without sacrificing your commitment to the work?"
+    },
+    {
+      "role": "user",
+      "content": "Just drinking more water. And maybe making sure I eat something proper, not just the instant stuff. That won't take much time.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is a significant step to identify these simple, foundational needs for your body. If taking care of yourself is viewed as something that \"won't take much time,\" what does that imply about the value of your sustained performance? Remember that treating your physical self is not a break from work, but rather the essential fuel required to keep the logistics running smoothly. Try viewing these small acts of nourishment as strategic investments in your capacity to succeed."
+    },
+    {
+      "role": "user",
+      "content": "It's just a requirement. If I don't do it, I fail. It's not about 'success,' it's about keeping the calculation balanced. We can't afford waste.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    }
+  ]
+}

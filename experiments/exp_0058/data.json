@@ -1,0 +1,127 @@
+{
+  "id": "exp_0058",
+  "timestamp": "2026-06-17T06:41:00.526707",
+  "strategy": {
+    "name": "Concise Validate-Inquire-Refocus (CVIR) v1.0",
+    "hypothesis": "By validating feelings, asking an open-ended inquiry challenging assumptions, and refocusing with a micro-experiment under 100 words, we guide self-discovery without giving direct advice.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Nadia",
+    "age": 29,
+    "occupation": "Museum Archivist",
+    "presenting_issue": "I'm struggling with chronic feelings of guilt and deep existential confusion, especially surrounding my family's expectations versus what I actually believe.",
+    "background_story": "Lately, the pressure to marry and settle into a life that 'makes sense' to my parents has become suffocating. I feel caught between the profound love I have for my family and a growing sense of intellectual and spiritual detachment. It\u2019s becoming impossible to reconcile the dogma that was the bedrock of my identity with the anxiety that keeps me awake at night. I feel like I\u2019m failing everyone\u2014my family, my community, and even myself.",
+    "personality": "Reserved, articulate, and highly sensitive to perceived judgment. She communicates in carefully structured paragraphs, often using philosophical language to mask deeper emotional pain. She will preface discussions with statements about 'cultural expectations' and 'duty,' but when discussing her inner life, she becomes highly self-critical and anxious. She will challenge the therapist if they use overly clinical or dismissive language, subtly redirecting the conversation back to the tension between tradition and personal autonomy.",
+    "baseline_phq9": 14,
+    "archetype_label": "Faith vs. Modernity \u2014 Middle Eastern Diaspora"
+  },
+  "scores": {
+    "total_score": 74.5,
+    "raw_score": 74.5,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 59.5/70.0 (VV shift: 0.40, Sym shift: -0.30, DV shift: -0.30) | Third-Person Penalty (-15): Used 'user'",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "*Please provide the user's statement or concern so I can apply the coaching structure.*"
+    },
+    {
+      "role": "user",
+      "content": "I suppose the core conflict remains this dissonance between the life narrative I've been taught to value\u2014the duty, the structure, the expected path\u2014and the deep, unsettling ambiguity of my own intellectual pursuits. It feels like I'm failing at the most fundamental level: failing the person I was supposed to be.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly painful to feel torn between external obligations and your internal calling. That dissonance creates immense pressure, making the conflict feel like a fundamental failure.\n\nIf you were to define \"success\" solely by your own genuine curiosity, what would that path look like?\n\nRemember that your self-worth is not determined by how perfectly you align with a pre-written narrative."
+    },
+    {
+      "role": "user",
+      "content": "It's difficult to define 'success' in such a vacuum; it feels almost like a luxury I can't afford right now. My curiosity mostly leads me to more archives, more dusty questions, which doesn't seem to provide a clear 'path' or a sort of tangible future for my parents. I worry that if I follow my intellectual threads too far, it only makes the gap between them and me wider, and that is the thing I am most afraid of.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is completely understandable that you feel the weight of needing to provide tangible reassurance to those you care about. That fear of creating distance through intellectual passion is deeply stressful.\n\nWhat if the value of your pursuits isn't measured by the immediate path they create, but by the depth of understanding they provide *to you*?\n\nAllow yourself the grace to pursue knowledge simply for the inherent richness it offers, separate from any required outcome."
+    },
+    {
+      "role": "user",
+      "content": "While I appreciate the sentiment of 'intrinsic value,' it still feels like a theoretical abstraction. My parents, who have always been so practical, aren't concerned with 'inherent richness'; they worry about stability and reputation. When I talk about intellectual pursuits, it often comes across as a form of arrested development to them. It makes me feel like my own internal needs are not merely inconvenient, but actually detrimental to the cohesion of my family unit.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is incredibly painful when the people closest to you misunderstand or dismiss your deepest passions. Feeling that your needs are a threat to family cohesion creates immense guilt.\n\nIf you could communicate your intellectual pursuits not as a threat, but as a unique form of contribution, what would that message sound like?\n\nConsider that setting healthy boundaries is not an act of rebellion, but an act of self-preservation."
+    },
+    {
+      "role": "user",
+      "content": "I suppose I would have to frame it in terms of preserving the culture itself\u2014that my deep study of primary sources isn't just academic whim, but a necessary means of protecting our family's history and the intellectual integrity of our community. But even that feels like a performance; it lacks the personal honesty I feel I need to speak.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is exhausting to feel like your truest self must be translated into a public performance for acceptance. The gap between what you feel and what you believe others need to hear is immense.\n\nWhat if the most honest communication doesn't need to be a grand declaration, but simply a moment of quiet, vulnerable explanation?\n\nAllow yourself to practice speaking your truth in the smallest, safest ways until they feel less like a performance and more like a natural conversation."
+    },
+    {
+      "role": "user",
+      "content": "But if I speak my truth, even in a quiet way, what if they interpret that quietness as indifference, or worse, as a withdrawal of emotional support? I've spent so long equating love with adherence to expectation that I don't know how to signal that I'm changing, without signaling that I'm losing them.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is profoundly difficult to redefine the language of love when you've spent years equating it with predictability and adherence. The fear of misinterpretation when changing is completely natural.\n\nWhat if you could practice communicating your needs to a supportive friend first, treating the conversation as a low-stakes rehearsal rather than a critical performance?\n\nRemember that true connection is built not on perfect signals, but on the willingness to be seen in your evolving reality."
+    },
+    {
+      "role": "user",
+      "content": "A low-stakes rehearsal, you say. I suppose that might be manageable. It shifts the immediate pressure from familial judgment to something more manageable, something external. It allows me to view my own emotional needs somewhat clinically, as if I were analyzing a difficult text for its source biases. I feel a brief moment of detachment, which is perhaps the only place where I feel safe enough to analyze this dynamic without feeling guilt.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Finding safety in clinical detachment is a very understandable coping mechanism when the emotional stakes feel too high. It allows you to observe the pattern without the immediate weight of guilt.\n\nIf you could allow yourself to feel the emotional complexity of this dynamic\u2014the grief, the hope, the confusion\u2014what would that raw, unanalyzed feeling teach you?\n\nTrue self-acceptance involves integrating the data of your intellectual life with the messy, beautiful reality of your emotions."
+    },
+    {
+      "role": "user",
+      "content": "If I allowed myself to feel the full weight of it, I think I would feel a kind of profound exhaustion\u2014the kind that comes from constantly having to translate and mediate between two conflicting versions of myself. It would teach me that the conflict itself is not a failure of character, but rather a structural strain from having two deeply loyalties demanding my entire self.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.6
+      }
+    }
+  ]
+}

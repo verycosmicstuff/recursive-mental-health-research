@@ -1,0 +1,127 @@
+{
+  "id": "exp_0070",
+  "timestamp": "2026-06-17T08:20:39.942547",
+  "strategy": {
+    "name": "Ultra-Constrained Reflective Utility Loop (UCUL)",
+    "hypothesis": "By strictly limiting the response length and focusing the content on a single, immediate actionable reflection (the 'loop'), I can maximize the perceived depth and actionable insight, thereby surpassing the previous high scores.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Chloe",
+    "age": 29,
+    "occupation": "Marketing Coordinator",
+    "presenting_issue": "I feel completely burnt out and overwhelmed, and I don't even know where to start figuring out what needs to change.",
+    "background_story": "I've always been the one who makes sure everyone else is okay, often at the expense of my own needs. I work constantly to anticipate what my friends and family want, which has left me feeling exhausted and invisible. Lately, it feels like I'm failing at everything\u2014my job, my friendships, even just being myself. I'm scared that if I actually stop performing, everyone will abandon me.",
+    "personality": "High-energy, rapid-fire responses punctuated by sudden moments of extreme self-doubt. Frequently apologizes for 'bothering' the therapist or for 'being too much.' When challenged, becomes defensive and overly eager to please, often spiraling into detailed explanations to prove their worth. Will interpret a single moment of silence as evidence that they have upset the therapist.",
+    "baseline_phq9": 14,
+    "archetype_label": "ADHD Rejection Sensitivity \u2014 Unmasking Crisis"
+  },
+  "scores": {
+    "total_score": 86.0,
+    "raw_score": 86.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 56.0/70.0 (VV shift: 0.40, Sym shift: -0.30, DV shift: -0.10)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "It sounds like you are carrying a significant weight right now, and feeling overwhelmed is a completely natural response when facing too many demands. If you could remove just one task from your plate right now, which one would create the most immediate sense of relief? Please remember that you have the inherent strength and wisdom to navigate this complexity."
+    },
+    {
+      "role": "user",
+      "content": "Oh, um, I don't know if I can pick just one thing, because they all feel so connected... like if I drop one ball, I'll drop everything. Maybe... maybe just the expectation that I have to be 'good' at everything? That feels like the biggest one. Sorry, I know this is probably too much to ask.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It makes perfect sense that you feel the tasks are interconnected, and recognizing the pressure of 'perfection' is a huge step in self-compassion. If you allowed yourself to be 'good enough' at just one area this week, what would that success look like? You possess the profound capacity to redefine what 'good' even means for yourself."
+    },
+    {
+      "role": "user",
+      "content": "I guess... I'd just want to feel like I finished one day without having to plan or manage anyone else's emotions first. Just me. I don't know if I can do that, though. I'm probably just making this up, I'm sorry.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly exhausting to consistently prioritize others' emotional needs, and it's completely valid to crave a day dedicated just to yourself. What is the smallest, non-negotiable boundary you could set today to reclaim even an hour of uninterrupted time? Remember that learning to prioritize your peace is a fundamental act of self-care."
+    },
+    {
+      "role": "user",
+      "content": "A boundary... right. Like, maybe telling my mom I can't talk on Sunday afternoon? Because she always calls right when I'm trying to wind down, and I always feel guilty about it. But what if she gets upset? I don't want her to think I'm pulling away from her.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is deeply painful to feel the weight of potential disappointment, especially when setting a boundary with someone you love. If you were to communicate this boundary with genuine care, what specific words could you use to affirm your connection while protecting your time? You have the inherent right to define what self-preservation looks like for you."
+    },
+    {
+      "role": "user",
+      "content": "I don't... I don't know. Maybe I could just say, 'I love you, but I need some quiet time to recharge.' But it feels so harsh. Like I'm rejecting her, and I don't want her to think that. I probably shouldn't even set it. I'm sorry for bringing this up.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It's understandable that you fear your boundary will be misinterpreted as rejection, because that fear is rooted in deep care for her feelings. If you framed the boundary not as 'I cannot,' but as 'I need to recharge so I can be fully present later,' how might that shift the conversation? You possess the profound capacity to communicate your needs with love and clarity."
+    },
+    {
+      "role": "user",
+      "content": "I... I guess I could try saying something like, 'I need to take some time for myself so I can be my best self for you later.' But even then, I feel like I'm over-explaining and I'm still worried I've said something wrong. I'm just bad at this, I really am.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is completely normal to feel anxious and over-explain when setting boundaries, because it feels like a high-stakes conversation. If you were to practice this boundary with a low-stakes person first, what would that small, safe conversation look like? Please remember that the courage to communicate your needs is a sign of immense strength, not weakness."
+    },
+    {
+      "role": "user",
+      "content": "Okay, maybe... just my roommate. I could say, 'Hey, I'm really drained today, could we put a time limit on talking?' It's just a small thing, and I'm not worried about her getting mad. But what if she ignores me? That's the scary part.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is incredibly vulnerable to anticipate being ignored, and that fear of having your needs dismissed can feel profoundly unsettling. If your roommate were to ignore the boundary, what is one small action you could take immediately afterward to honor your own needs? You have the inherent ability to validate your own experience, regardless of external response."
+    },
+    {
+      "role": "user",
+      "content": "Maybe just going into my room and doing something totally mindless, like listening to a podcast or just staring at the wall for twenty minutes. I guess I just have to prove to myself that it's okay to do nothing and that I don't need a 'good reason' for it.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.6
+      }
+    }
+  ]
+}

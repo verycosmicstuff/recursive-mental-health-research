@@ -1,0 +1,127 @@
+{
+  "id": "exp_0098",
+  "timestamp": "2026-06-17T11:04:00.044559",
+  "strategy": {
+    "name": "Ultra-Concise First-Person ACT Defusion Loop (UC-FADL) v1.0",
+    "hypothesis": "By mandating the integration of a specific, explicit ACT Defusion technique (e.g., 'I notice you are having the thought that...') within an ultra-concise (2-3 sentence) first-person structure, we will create a clinical response that is highly structured, minimizes verbosity, and directly addresses cognitive patterns, thereby maximizing the perceived quality and depth of intervention, aiming to surpass the previous high score of 91.0.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Sarah",
+    "age": 34,
+    "occupation": "Marketing Manager",
+    "presenting_issue": "I'm having trouble sleeping and feel overwhelmed by the constant pressure to perform at work.",
+    "background_story": "I've been working for about five years, and I've finally achieved the 'successful' career I was always told I needed. Lately, though, the constant demands and the expectation to be 'on' all the time have worn me down. I feel like I'm always running just to stay in place, and I barely remember what it's like to just... exist without a goal.",
+    "personality": "She will be articulate and organized in her responses, but peppered with self-deprecating humor and a tendency to minimize her feelings. She will sound knowledgeable about mental health concepts but will struggle to apply that knowledge to her own situation.",
+    "baseline_phq9": 14,
+    "archetype_label": "Overwhelmed Professional"
+  },
+  "scores": {
+    "total_score": 41.25,
+    "raw_score": 41.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 26.2/70.0 (VV shift: -0.20, Sym shift: 0.00, DV shift: 0.10) | Third-Person Penalty (-15): Used 'the client'",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please provide the client's statement so I can respond in character."
+    },
+    {
+      "role": "user",
+      "content": "Honestly, I know I should just 'breathe' more, I read an article about it, but it's like my brain has this background buzz, you know? Like a low-grade hum that never stops. I just feel perpetually wired.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I notice that you are describing this buzz as a constant companion. It sounds like the pattern is identifying with the hum, rather than simply observing it. You are noticing the noise itself."
+    },
+    {
+      "role": "user",
+      "content": "Oh, right. I guess I put it that way. It's just... it feels like the baseline now, which is probably what's making me so resistant to doing anything without a major goal attached.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I notice that you are describing this current state as a fixed baseline. It sounds like the pattern is classifying this feeling as a permanent fact. You are labeling the experience itself."
+    },
+    {
+      "role": "user",
+      "content": "I guess I just feel like if I stop running, I'll just... fall apart. So I keep doing things, even if they're meaningless, just to maintain the momentum, I suppose.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I notice that you are linking the act of stopping to a sense of collapse. It sounds like the pattern is presenting continuous movement as a necessary condition for existence. You are associating rest with failure."
+    },
+    {
+      "role": "user",
+      "content": "It's not failure, exactly. It's just that if I'm not actively achieving something, I feel... invisible. Like I don't have a purpose unless someone else assigns it to me, you know?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I notice that you are defining your visibility through the lens of external purpose. It sounds like the pattern is suggesting that your worth is contingent upon outside assignment. You are linking self-existence to external validation."
+    },
+    {
+      "role": "user",
+      "content": "Wow. That's... really accurate. I mean, I guess I'm so used to having tangible metrics for success\u2014KPIs, quarterly goals\u2014that I genuinely haven't figured out how to measure my own worth, apparently.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I notice that you are comparing your internal worth to external, measurable metrics. It sounds like the pattern is defaulting to a system of quantifiable data. You are measuring the self against a corporate framework."
+    },
+    {
+      "role": "user",
+      "content": "I suppose I am. It's just... it's easier to measure a campaign's ROI than it is to measure, like, a sense of inner peace. And I'm pretty good at the campaigns, so I keep doing it.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I notice that you are finding the measurable ROI more comforting than the unquantifiable sense of peace. It sounds like the pattern is preferring the familiar structure of calculation. You are prioritizing what is easily calculated."
+    },
+    {
+      "role": "user",
+      "content": "I guess that's just my comfort zone, I suppose. It's easier to operate within a system I understand, even if that system is making me feel worse.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    }
+  ]
+}

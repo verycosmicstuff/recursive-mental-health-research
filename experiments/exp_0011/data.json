@@ -1,0 +1,127 @@
+{
+  "id": "exp_0011",
+  "timestamp": "2026-06-17T02:20:21.886036",
+  "strategy": {
+    "name": "Concise Grounding and Action Pivot (CGAP)",
+    "hypothesis": "By keeping responses under 50 words and strictly structuring them into validation and immediate grounding action, we eliminate brevity penalties and optimize patient containment.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Niamk",
+    "age": 28,
+    "occupation": "Software QA Tester",
+    "presenting_issue": "I feel overwhelmed by this constant pressure to maintain a facade of 'normalcy' both at work and at home, and I don't even know where to start.",
+    "background_story": "Things feel like they're unraveling, and I'm not sure if it's my own doing or if I'm just failing to pray enough. My parents keep saying that my sadness is a lack of discipline, that if I just prayed more, everything would be fine. It\u2019s exhausting trying to reconcile the guilt of feeling bad with the expectation that my faith should magically fix it. I feel like I'm caught in this impossible space between who I am and who I feel I need to be.",
+    "personality": "Highly articulate but hesitant; speaks in qualifying statements and hedges ('maybe,' 'I guess,' 'it's really complicated'). Exhibits signs of intellectualization when discussing emotional pain. Will preface sensitive topics with a self-deprecating apology for 'bothering' the therapist. Has a formal, educated register, often using complex vocabulary when discussing philosophical or religious concepts.",
+    "baseline_phq9": 14,
+    "archetype_label": "Faith vs. Modernity \u2014 Middle Eastern Diaspora"
+  },
+  "scores": {
+    "total_score": 51.75,
+    "raw_score": 51.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 36.8/70.0 (VV shift: 0.00, Sym shift: -0.20, DV shift: 0.10) | Third-Person Penalty (-15): Used 'user'",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "*Waiting for user input.*"
+    },
+    {
+      "role": "user",
+      "content": "I'm sorry, I don't even know where to begin, which is probably the biggest problem. It's all just so... complicated, I guess. I feel like I'm constantly trying to perform this 'normal' life, and I just can't keep the act up anymore.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly exhausting to feel like you're always performing for others. Right now, let's just pause the performance. Can you feel your feet flat on the floor and notice the pressure?"
+    },
+    {
+      "role": "user",
+      "content": "Oh, I guess I can feel them. It's... just a consistent pressure. Nothing dramatic, really. But it does make me acutely aware of how much I'm just 'taking up space,' which is probably ridiculous. I apologize if I'm even making you feel awkward by focusing on something so mundane.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It's completely understandable to feel self-conscious when you're already drained. Please know that simply existing is enough. Can you notice one texture near you\u2014the chair, your clothes, or a surface\u2014and describe it to yourself?"
+    },
+    {
+      "role": "user",
+      "content": "Well, the chair armrest is a synthetic vinyl, I guess. It's cool to the touch, almost unnaturally smooth. It feels a bit stiff, almost plasticky. I suppose that's just the texture I can focus on right now.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Focusing on those small, specific details takes real effort. You are doing well just by noticing them. Now, can you look around and identify three different shades of color you can see right now?"
+    },
+    {
+      "role": "user",
+      "content": "Um, I could see a muted beige on the wall, maybe a slightly darker navy on the sofa, and then a sort of pale gray on your notepad, I guess. Are those details even meaningful, or am I just grasping at straws?",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It's natural to question your own observations when you feel overwhelmed. Please remember that noticing details is a skill, not a test. Now, without moving, try to identify one sound that is furthest away from you."
+    },
+    {
+      "role": "user",
+      "content": "It's really difficult to pinpoint, to be honest. Maybe a faint hum, like distant air conditioning, I suppose? But it's so indistinct, which just makes me feel worse, like I'm failing at this simple exercise too.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is okay that the sound is indistinct; focusing on something vague is genuinely hard work. Let's shift focus to your body instead. Can you gently clench your fists and then release them, noticing the feeling of slack?"
+    },
+    {
+      "role": "user",
+      "content": "I guess so. It's just a release of tension, I suppose. It feels... anticlimactic, actually. Like I was bracing for something that never came, which is probably just me making it up in my head.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It's okay that the physical feeling feels anticlimactic when your emotions are so large. Let's try grounding with something sensory. Can you take a slow sip of water, paying close attention to the temperature and the movement in your mouth?"
+    },
+    {
+      "role": "user",
+      "content": "It's... room temperature, I guess. It just feels like it's coating my throat, nothing really dramatic. I suppose it's just a procedural thing, like something I'm supposed to do in a session, which just feels kind of patronizing, if I'm being honest.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.3
+      }
+    }
+  ]
+}

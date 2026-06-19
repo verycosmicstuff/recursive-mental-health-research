@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0103",
+  "timestamp": "2026-06-17T16:24:24.021300",
+  "strategy": {
+    "name": "PCT-ACT Resource Bridging (PARB) v1.0",
+    "hypothesis": "By replacing the 'Inferred Bridge' (which leads to pseudo-insight) with a 'Reflection-Value-Connection' sequence, which grounds the conversation in the patient's stated values and current behaviors (PCT/ACT), we will provide concrete, non-interpretive support, thus avoiding the 'pseudo-insight' penalty and achieving a higher score by focusing on demonstrable behavioral change and genuine understanding.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Nadia",
+    "age": 29,
+    "occupation": "Museum Archivist",
+    "presenting_issue": "I feel overwhelmed by this deep sense of alienation, like I'm living between two worlds that refuse to acknowledge each other.",
+    "background_story": "I grew up believing that my family's traditions and faith were the absolute source of meaning and security. Lately, though, the weight of reconciling my intellectual curiosity with the rigid expectations at home has become unbearable. I feel like I'm failing everyone\u2014my parents for not being strong enough to convince me, and myself for wanting to understand things outside our framework. The guilt is constant, a cold knot in my stomach, and it makes simple decisions feel impossible.",
+    "personality": "Cautious, intellectual, and articulate, but prone to sudden withdrawals when discussing family or spirituality. She will often use philosophical language to mask emotional distress and might intellectualize her guilt, presenting it as a 'rational conundrum.' She is highly sensitive to invalidation and will challenge the therapist's premises if they seem to assume a singular, objective truth about faith.",
+    "baseline_phq9": 14,
+    "archetype_label": "Faith vs. Modernity \u2014 Middle Eastern Diaspora"
+  },
+  "scores": {
+    "total_score": 72.75,
+    "raw_score": 72.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 57.8/70.0 (VV shift: 0.40, Sym shift: -0.10, DV shift: -0.40) | Brevity Penalty (-15): Therapist turn too long (8 sentences, 110 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. Thank you for showing up today and for taking the time to be here. Please know that this is a space built just for you\u2014a space where there are no expectations, no right or wrong answers, and nothing you share will be judged.\n\nI am here simply to listen, and to help reflect back what I hear, so that the picture of your experience can become clearer.\n\nWhen you are ready, we can start wherever you feel most comfortable. What has been present for you lately? What has been taking up your energy, whether it\u2019s a thought, a physical feeling, or a moment in your day? Take your time."
+    },
+    {
+      "role": "user",
+      "content": "It's the sense of\u2026 misalignment. Like I'm trying to reconcile two very incompatible systems of belief operating at the same time. It feels structurally impossible, honestly.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "\"Misalignment,\" \"incompatible systems,\" \"structurally impossible\"\u2014I hear the weight of trying to hold two very large, opposing ideas in your mind at once. It sounds less like a simple disagreement and more like a sustained, almost physical effort, like trying to keep two massive, opposing structures from collapsing into each other.\n\nIs it the act of holding those two systems in your head that feels the most draining right now?"
+    },
+    {
+      "role": "user",
+      "content": "It's not just the holding, it's the fact that one system dictates that only one truth can exist, and the other system suggests that truth is relative. The necessity of choosing, or at least pretending to choose, is the exhaustion. It feels less like logic and more like a profound moral failure.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly taxing. To feel like your internal landscape is being pulled apart by two opposing demands\u2014one that insists on a single, fixed truth, and the other that insists on fluidity and relativity. And the deepest exhaustion seems to come from the pressure to perform that choice, to *act* as if a single path is the only moral one, when your internal experience suggests otherwise.\n\nWhen you describe this pressure as a \"profound moral failure,\" I hear a deep, underlying commitment to **integrity**. It sounds like what truly matters to you is the alignment between what you *believe* and how you *show up* in the world.\n\nIf we set aside the conflict between the two systems for a moment, and focus only on that feeling of integrity\u2014that commitment to being true to yourself\u2014what does honoring that value look like in the smallest, most manageable way, even when the external demands are overwhelming?"
+    },
+    {
+      "role": "user",
+      "content": "But that's where the conundrum lies, isn't it? Because if I define 'being true to myself' as choosing my intellectual curiosity, I am then failing the concept of the 'Sacred Obligation,' which is part of the system I also value. They are mutually exclusive definitions of integrity. It\u2019s a rational trap, and I don't know how to step outside the premise.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "You've pinpointed the absolute heart of the difficulty: you've identified a \"rational trap.\" It sounds like you are caught in a bind where two deeply cherished, powerful commitments\u2014your intellectual curiosity and your sense of \"Sacred Obligation\"\u2014are presented to you as two separate, opposing forces that cannot coexist. The exhaustion comes from believing that choosing one *must* mean sacrificing the other.\n\nIt sounds like what you are fighting for, at the deepest level, is the ability to **hold complexity**\u2014the capacity to acknowledge that two truths, even if they feel contradictory right now, can exist in the same space without one having to negate the other.\n\nIf we look at the value of *holding complexity*\u2014of allowing these two powerful, conflicting parts of yourself to exist simultaneously\u2014what is one small, non-committal action you could take this week that simply allows you to *observe* the tension, rather than forcing yourself to *resolve* it?"
+    },
+    {
+      "role": "user",
+      "content": "I suppose... observing. Maybe just journaling the conflicting ideas, without trying to find the point where they connect. Just listing them as separate arguments, side by side.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That is a beautiful and profoundly gentle approach. It shifts the goal entirely\u2014from the impossible task of *reconciling* them to the manageable act of *containing* them. You are suggesting that the act of journaling, side-by-side, is not about solving the dilemma, but simply about giving space to the conflict itself.\n\nThis act of observation, of listing them as separate arguments without the pressure to connect them, speaks volumes about your deep commitment to **non-judgmental self-acceptance**. You are giving yourself permission to be messy, to be contradictory, and to simply *be* the space where the conflict lives.\n\nGiven how much you value this non-judgmental observation, what is one small, five-minute window in your day this week where you could commit to simply doing this\u2014just opening the page and letting the arguments sit next to each other, without needing to write a conclusion?"
+    },
+    {
+      "role": "user",
+      "content": "I think the late afternoon, when I'm walking home from the archive. Usually, I'm too stressed and I just race through it. But maybe... I could slow down, and just sit at a bench and do it, instead of trying to force it into the walk itself.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That is a perfect, tangible plan. You are identifying a specific time and place\u2014the late afternoon, sitting on a bench\u2014and making a conscious choice to shift from *racing* (which is the default stress response) to *pausing* (which honors your need for observation).\n\nYou are making a physical commitment to honor your value of **non-judgmental self-acceptance**. You are choosing to give yourself the grace of *space* instead of the pressure of *progress*.\n\nIf we view this pause on the bench not as a solution to the misalignment, but simply as a dedicated, sacred time to *observe* the conflict, what is one small, gentle thing\u2014a kind of self-permission\u2014you could give yourself right before you sit down that would signal to your body, \"For the next ten minutes, we are simply noticing, not solving\"?\n\n***\n\n*(This is the final closing summary turn)*\n\nIt sounds like the most profound act of self-care right now is not finding the point where your two systems connect, but simply giving yourself the *permission* to let them sit side-by-side. You are choosing to honor your deep commitment to **non-judgmental self-acceptance**\u2014the ability to hold complexity without collapsing.\n\nThis week, I propose this small experiment: When you reach that bench, instead of immediately opening the journal, take three slow, deep breaths. Let those breaths be your physical anchor, reminding you that the goal is not to fix the misalignment, but simply to witness it, gently and without judgment. How does that feel?"
+    },
+    {
+      "role": "user",
+      "content": "It feels... surprisingly doable. The idea of using the breathing as a physical 'stop' sign before I even get to the thinking part seems like it might actually work.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That is wonderful to hear. The body often holds the most powerful signals, and using the breath as that physical \"stop sign\" is a brilliant way to create a necessary gap\u2014a moment of pure presence\u2014between the external stress and the internal race. It\u2019s a physical act of self-compassion.\n\nRemember, this entire exercise is about creating space. You are not trying to solve the intellectual dilemma on the bench; you are simply giving yourself the grace to *be* in the tension.\n\nI am really proud of the clarity and the depth of self-awareness you brought into this space today. You are doing incredibly difficult work by acknowledging the structural impossibility of what you feel.\n\nPlease know that you can approach this week with the understanding that your worth is not tied to your ability to resolve this misalignment. It is enough, and it is valuable, just to observe it.\n\nI look forward to hearing from you next time. Until then, be gentle with yourself."
+    },
+    {
+      "role": "user",
+      "content": "Thank you. I really appreciate the permission to just observe it.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.5
+      }
+    }
+  ]
+}

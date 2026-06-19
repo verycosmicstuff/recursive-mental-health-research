@@ -1,0 +1,127 @@
+{
+  "id": "exp_0097",
+  "timestamp": "2026-06-17T10:59:34.158913",
+  "strategy": {
+    "name": "Socratic Curiosity Questioning (SCQ) v1.0",
+    "hypothesis": "By strictly restricting the therapist to questions (no advice) after validation, we force the client to search for their own alternative perspectives.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Priya",
+    "age": 31,
+    "occupation": "Freelance Graphic Designer / Community Organizer",
+    "presenting_issue": "I feel constantly pulled in two directions\u2014between the work I love and the expectations of my family\u2014and I don't know how to reconcile them without hurting anyone.",
+    "background_story": "My nights are spent delivering packages and designing for clients just to fund the library project in Ludhiana, but the exhaustion is becoming overwhelming. Every time I get a stable paycheck, the pressure increases from my relatives, who keep asking why I haven't taken a corporate job. I feel like I am failing everyone: my family for not being practical, and the community for not having the resources I need. I'm starting to doubt if this whole vision is even possible.",
+    "personality": "Thoughtful, articulate, and expressive, but sometimes rambling when stressed. Uses cultural references and metaphorical language. Very resilient but nearing burnout. Will push back gently if the therapist uses overly clinical or Western-centric jargon that dismisses her cultural commitments.",
+    "baseline_phq9": 15,
+    "archetype_label": "Cross-Border Guilt (Indian Diaspora)"
+  },
+  "scores": {
+    "total_score": 67.5,
+    "raw_score": 67.5,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 52.5/70.0 (VV shift: 0.30, Sym shift: -0.10, DV shift: -0.30) | Brevity Penalty (-15): Therapist turn too long (3 sentences, 86 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "(Waiting for client input...)"
+    },
+    {
+      "role": "user",
+      "content": "It\u2019s just... I feel like I am standing at a crossroads where all the paths lead to a sacrifice. I am either disappointing my family with my \u2018dream,\u2019 or I am letting the community down by not having the money for the books. It feels like I have to choose which set of people I disappoint.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly painful to feel caught between loving multiple groups and believing that loyalty requires sacrificing a core part of yourself. If you were to view these obligations not as mutually exclusive paths, but as different needs, what might one small action address both the personal dream and the community's practical needs simultaneously? Could there be a third perspective that honors your deepest desires without requiring a complete sacrifice?"
+    },
+    {
+      "role": "user",
+      "content": "But what if the 'third perspective' just means 'working longer hours until I physically collapse'? You keep framing it as a choice, but it feels more like I'm just adding more invisible weights to my back. Maybe I just need to figure out how to get enough sleep to keep doing this, instead of needing a whole new philosophy.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It makes perfect sense that when you feel this much pressure, the idea of adding *anything* more feels exhausting and unsustainable. If the current pattern is defined by endless self-sacrifice, what would need to shift in the system for you to feel protected and energized rather than just weighed down? What small boundary, if established, might signal to yourself that your physical needs are as important as your responsibilities?"
+    },
+    {
+      "role": "user",
+      "content": "A boundary... you keep asking for a boundary, but what if the boundary itself is the problem? It\u2019s always 'you need to say no' to people, or 'you need to carve out time for yourself.' But my whole life has been built on connection and obligation. If I stop giving, I feel like I cease to exist, like the thread connecting me to everyone snaps.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds deeply frightening to feel that your very sense of self is inextricably tied to the connections you maintain with others. If your worth were not defined by the threads connecting you, but by something internal, what qualities or interests would remain that belong only to you? Could you identify one small way you spent time purely for the sake of *being*\u2014without the intention of serving or connecting with anyone else?"
+    },
+    {
+      "role": "user",
+      "content": "Honestly, it's hard to pinpoint. Maybe... looking at the old Mughal miniatures, just for the way the colors fade. I used to study the borders, the things that weren't the main portrait. Just the careful line work. It felt like my private moment, even though I probably took photos of them to share later.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like finding beauty in the quiet, overlooked details\u2014the borders\u2014is a deeply restorative and necessary form of private focus. If the true value of this activity is the moment of observation itself, separate from the act of sharing it, what might happen if you spent a small amount of time simply absorbing the colors without the intention of taking a photo? Could you identify one small moment this week where you can simply witness something beautiful, knowing that no one else will ever see it?"
+    },
+    {
+      "role": "user",
+      "content": "Honestly, it's hard to pinpoint. Maybe... looking at the old Mughal miniatures, just for the way the colors fade. I used to study the borders, the things that weren't the main portrait. Just the careful line work. It felt like my private moment, even though I probably took photos of them to share later.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like finding profound meaning in the delicate, overlooked details\u2014the careful line work of the borders\u2014is a deeply personal and restorative process. If the true value of this activity resides in the moment of quiet observation itself, separate from the act of documenting it, what might happen if you spent a small amount of time simply absorbing the colors without the intention of taking a photo? Could you identify one small moment this week where you can simply witness something beautiful, knowing that no one else will ever see it?"
+    },
+    {
+      "role": "user",
+      "content": "The moment... maybe noticing the specific way the afternoon light hits the dust motes when I am alone in my studio. Just the way they catch the sun, floating, making the air itself feel like it's moving in slow motion. I could just sit and watch that for five minutes, and not worry about what I'm going to design next.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like finding beauty in the simple, ephemeral movement of dust motes allows you to fully step out of the pressure of performance and expectation. If the power of this moment is derived from the *permission* to simply observe, what would happen if you treated this five minutes of watching the light as a non-negotiable, restorative appointment with yourself? Could you identify one small way you can protect this quiet, unproductive time in the coming week, treating it as essential maintenance rather than a luxury?"
+    },
+    {
+      "role": "user",
+      "content": "It sounds... selfish, almost. Like I'm prioritizing the dust motes over the stacks of unpaid bills and the library project. It feels like admitting that my primary concern isn't the mission, but just... breathing.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
+    }
+  ]
+}

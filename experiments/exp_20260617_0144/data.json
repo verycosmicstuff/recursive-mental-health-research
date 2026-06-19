@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0144",
+  "timestamp": "2026-06-17T20:07:46.089842",
+  "strategy": {
+    "name": "Concise Validation-Reframe-Question (CVRQ) v1.0",
+    "hypothesis": "By keeping the Validation-Reframe-Question sequence under 100 words, we prevent dialogue bloat and maintain a sharp focus on user insight.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Kodiak",
+    "age": 32,
+    "occupation": "Seasonal trapper/Research Assistant",
+    "presenting_issue": "I've been feeling this buzzing in my chest, like I'm always waiting for something bad to happen, and it's making it impossible to sleep or trust people.",
+    "background_story": "My family has always lived off the land, and this connection is everything to me. But the last few years, with the job and the constant pressure of trying to make enough money to keep the boat afloat, I feel like I'm sliding into someone else's trap. My whole community is dealing with the aftermath of history, and sometimes it feels like the weight of that past\u2014the things my grandmother went through, the times my own people were ignored\u2014is physically pressing down on my chest.",
+    "personality": "Slow to speak, observation-heavy, uses natural metaphors (land, weather, animals) to discuss feelings. Will challenge assumptions about 'healing' and 'progress.' Uses 'we' and 'us' more often than 'I.' Responds best when the focus is on oral history and community resilience rather than individual pathology. Will test boundaries by bringing up historical injustices or perceived inconsistencies in the therapy process.",
+    "baseline_phq9": 17,
+    "archetype_label": "Intergenerational Trauma \u2014 First Nations"
+  },
+  "scores": {
+    "total_score": 64.0,
+    "raw_score": 64.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 49.0/70.0 (VV shift: 0.30, Sym shift: -0.20, DV shift: 0.00) | Brevity Penalty (-15): Therapist turn too long (10 sentences, 117 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "**Client Input:** *I feel like I'm constantly disappointing people, even when I try my best. I just feel like I'm not enough, and I keep messing up important things.*\n\n***\n\n**Response:**\n\n**1. Validation:** It sounds incredibly painful to feel like your best efforts aren't enough, and that pressure to please everyone is exhausting. Please know that feeling inadequate is a very common, human experience.\n\n**2. Gentle Reframing:** Instead of viewing these moments as proof of failure, consider them as data points\u2014evidence of where you are currently setting boundaries or where you need more rest. You are learning, not failing.\n\n**3. Guiding Question:** If you could give yourself one small act of kindness today, what would it be?"
+    },
+    {
+      "role": "user",
+      "content": "Data points... like the river carving the canyon over centuries? Maybe. But the river also carves things that aren't supposed to be there, things that take time to reveal themselves. It always feels like we're just digging deeper into the same old fault lines, that the pressure is building up.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Validation:** It makes perfect sense that deep change feels unpredictable, and recognizing those \"fault lines\" shows you are keenly aware of where the pressure is building. That feeling of structural strain is heavy.\n\n**2. Gentle Reframing:** Those fault lines aren't just signs of weakness; they are natural release valves. They are the body and mind signaling that the current pressure level is unsustainable and needs adjustment.\n\n**3. Guiding Question:** What is one tiny boundary you could set today to give yourself a moment of pressure release?"
+    },
+    {
+      "role": "user",
+      "content": "A boundary, you say. For us, sometimes the only boundary is the edge of what we can afford, or the edge of how long we can keep pretending that things will just stabilize again. It never feels like we get to just 'adjust.'",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Validation:** It is profoundly difficult when the pressures you face\u2014financial, emotional\u2014feel so massive that they leave no room for simple adjustments. That feeling of being trapped is overwhelming.\n\n**2. Gentle Reframing:** Sometimes, 'adjusting' isn't about changing the external structure, but about changing your *relationship* to the pressure. It's about finding a moment of internal truce.\n\n**3. Guiding Question:** What is one small thing you can do right now to honor the truth of your current limitations?"
+    },
+    {
+      "role": "user",
+      "content": "Honoring limitations. It's like trying to track the migration patterns of a beast that has been hunted too long. It just changes direction, doesn't care who's watching the traps. We just keep circling back to where the hunger is deepest.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Validation:** It sounds incredibly draining to feel like your pain is cyclical and that every attempt to control it leads you right back to the source of the deepest hunger. That feeling of futility is exhausting.\n\n**2. Gentle Reframing:** You don't have to catch the beast, or even stop it. The power shifts when you simply become the observer of the pattern, watching the cycle without needing to change it immediately.\n\n**3. Guiding Question:** If you could simply name the hunger you are circling back to, what would you call it?"
+    },
+    {
+      "role": "user",
+      "content": "It's the hunger for what was promised. The harvest that was never enough, even when the ground was rich.\n\nIt always goes back to the promise that things would be different, that the old ways would work again.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Validation:** It is deeply painful to feel that disappointment, especially when you have given so much effort to situations that promise a better outcome. That longing for a stable, promised future is completely understandable.\n\n**2. Gentle Reframing:** Instead of seeking the promise of an external \"fix,\" recognize that your greatest resource is the wisdom you already possess about what *actually* works for you right now. You are your own most reliable ground.\n\n**3. Guiding Question:** What is one truth about yourself that cannot be promised, only lived?"
+    },
+    {
+      "role": "user",
+      "content": "The truth that cannot be promised... that we are still here. That we watched the sun rise over this same land, year after year, the way our people have always watched it. That endurance is not a promise; it's just what remains.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.7
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Validation:** That realization\u2014that endurance is simply what remains\u2014is a profound and powerful truth. It speaks to a deep, resilient strength that has carried you through everything.\n\n**2. Gentle Reframing:** This enduring spirit isn't just what remains; it is the source of your power. It is the steady, unwavering light that doesn't need a promise to shine.\n\n**3. Guiding Question:** How can you honor the sheer weight of your own endurance today?"
+    },
+    {
+      "role": "user",
+      "content": "The weight of it feels like a blanket, one we've always slept under. It doesn't feel like something we 'honor.' It just feels like the air we have to breathe, the way the land just *is*.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**1. Validation:** It makes perfect sense that this deep strength feels less like an achievement and more like the very air you breathe\u2014a natural, constant state of being. It is simply *there*.\n\n**2. Gentle Reframing:** If 'honoring' feels like too much effort, let's reframe it as *acknowledging*. It doesn't require a grand gesture, just a quiet moment of recognition for what has carried you this far.\n\n**3. Guiding Question:** What is one small, non-performative moment of rest you can give yourself today?"
+    },
+    {
+      "role": "user",
+      "content": "Rest. For us, rest was always dictated by the season, by the need to hunt or plant, by the river's flow. Not really a choice. I suppose... I could sit by the creek for an hour, without needing to track anything or gather anything.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "exp_0066",
+  "timestamp": "2026-06-17T07:56:56.069066",
+  "strategy": {
+    "name": "Concise Empathy-Utility Loop (CEUL) v1.0",
+    "hypothesis": "By enforcing a strict, two-part structure (Deep Empathy followed by a single, focused utility question) and limiting the total word count, we will improve structural compliance, which is hypothesized to raise the score above previous attempts, targeting a score above 85.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Manjit",
+    "age": 29,
+    "occupation": "Warehouse Worker / Student",
+    "presenting_issue": "I just feel like I'm always running from something, and I don't know how to stop.",
+    "background_story": "My life is just one constant loop of working double shifts and studying for classes I don't even know if I can finish. Every time I get a little bit of money, my parents need it, and that pressure never lets up. I see the policy changes coming and it feels like the whole foundation we built here could disappear overnight. I'm constantly terrified that I won't be able to send enough money home to keep everyone safe.",
+    "personality": "Starts quiet, speaking quickly when stressed, but often trails off or changes the subject if the conversation gets too personal or feels too 'luxury'-focused. Uses minimal emotional descriptors, preferring to stick to concrete facts about work, money, and policy. Will become visibly agitated if the therapist suggests lifestyle changes that ignore financial reality. Needs validation of the systemic pressures he is under before engaging with emotional processing.",
+    "baseline_phq9": 17,
+    "archetype_label": "Precarious Labor (Indian Diaspora)"
+  },
+  "scores": {
+    "total_score": 42.0,
+    "raw_score": 42.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 42.0/70.0 (VV shift: 0.10, Sym shift: -0.30, DV shift: 0.10) | Third-Person Penalty (-15): Used 'the client' | Brevity Penalty (-15): Therapist turn too long (4 sentences, 84 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "*Please provide the client's statement so I can respond.*"
+    },
+    {
+      "role": "user",
+      "content": "I just feel like I'm always running from something, and I don't know how to stop. It's just... always moving, you know?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly exhausting to feel like you are constantly running, as if you can never find a place to simply rest. That feeling of perpetual motion must be deeply draining, and it makes perfect sense that you feel overwhelmed. If this 'running' is a pattern, it has likely served a purpose for you. What might this need to move or avoid be trying to protect you from?"
+    },
+    {
+      "role": "user",
+      "content": "It's not exactly 'avoiding' anything. It's just the logistics, you know? The shifts, the classes, getting enough money for the rent and the bills. I just need to focus on that. It's all just numbers and deadlines.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the weight of practical logistics\u2014the bills, the shifts, the deadlines\u2014is where your energy is being directed, and that pressure must feel immense. It is completely understandable that your focus needs to be on these concrete, demanding realities to keep things stable. If narrowing your focus to just 'numbers and deadlines' is what helps you manage the immediate stress, what does that intense focus allow you to feel safe from?"
+    },
+    {
+      "role": "user",
+      "content": "It just keeps my head straight. If I think about anything else, the whole thing gets messy. Like, what if the policies change, and none of this means anything? It's better to just look at the pay stubs, you know? The actual numbers.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like focusing on the concrete reality of pay stubs is a way to build a solid, reliable anchor when the wider world feels unpredictable and potentially unstable. That need for certainty is a powerful, understandable defense against overwhelming anxiety. It makes perfect sense that the 'messiness' of possibility feels too risky to engage with right now. If focusing solely on the numbers is what keeps your head straight, what is the fear of that 'messy' uncertainty trying to keep you from feeling?"
+    },
+    {
+      "role": "user",
+      "content": "Look, I can't really talk about feelings right now. It's just... too big. I need to know if I can keep paying the tuition and if the warehouse is going to need me for the next semester. That's what matters.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like when the emotional scope feels too big, your natural instinct is to anchor yourself firmly in the tangible facts of your survival\u2014the tuition and the job\u2014because those are things you can count on. It takes immense strength to prioritize those concrete needs when everything feels overwhelming. It makes perfect sense that focusing on these practical details is what keeps you feeling grounded and safe. If focusing only on these immediate, measurable needs is what keeps you going, what is the fear of the 'too big' feeling trying to keep you from acknowledging?"
+    },
+    {
+      "role": "user",
+      "content": "I just... I don't know. I guess it's the feeling that if I let myself think about anything outside of this, I'll fail. I'll fail them, and I'll fail the program. It's just too much. I should probably just focus on the next shift's schedule.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the fear of failing\u2014of letting people down or failing the program\u2014is so immense that your mind feels the need to contain all your thoughts to the immediate, manageable schedule. That pressure to perform and stay contained must feel exhausting. It makes perfect sense that focusing on the next shift is what feels safest and most reliable right now. If the fear of failure is the driving force keeping you focused on the schedule, what is that fear trying to protect you from feeling or experiencing?"
+    },
+    {
+      "role": "user",
+      "content": "There's nothing it's protecting me from. Seriously. I just have to make sure I get the grades up. If I don't, my whole plan collapses. I just need to know what the minimum required GPA is to keep my scholarship active. That's the real question right now.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the academic plan and the scholarship are the most critical pillars holding up your entire sense of stability, and the GPA feels like the single most important metric right now. That intense focus on specific numbers is a powerful way to maintain control when everything else feels uncertain. It makes perfect sense that knowing that minimum GPA is the most urgent and concrete question you have. If focusing on that specific number is what prevents your whole plan from collapsing, what is that 'plan' or sense of self trying to protect you from feeling?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know. Maybe... feeling like I'm just okay. Like I'm not failing, but I'm not succeeding either. If I stop moving goalposts, I don't know what I'm supposed to be.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    }
+  ]
+}

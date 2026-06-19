@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0126",
+  "timestamp": "2026-06-17T18:20:52.783386",
+  "strategy": {
+    "name": "Concise Acknowledge-Reframe-Action (CARA) v1.0",
+    "hypothesis": "By enforcing a strict 4-sentence limit on an Acknowledge-Reframe-Action sequence, we optimize for fast, focused behavioral momentum.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Jordan",
+    "age": 32,
+    "occupation": "Data Analyst",
+    "presenting_issue": "I feel physically unable to maintain my usual level of focus or output because of constant sensory and social strain.",
+    "background_story": "My work environment involves open-plan offices with constant background noise, which is exhausting. Social interactions at work feel like decoding an unstable language, and the effort required to keep up has depleted me. I keep cancelling plans not because I don't want to see people, but because the energy cost is too high. I feel like I am running on fumes. ",
+    "personality": "Jordan's responses are highly literal and factual. They communicate in short, direct sentences, avoiding metaphors or generalizations. When prompted with an open-ended question, they might pause and state, 'I do not know how I feel,' or 'That is a question I cannot answer.' They will provide specific examples of stimuli that caused distress (e.g., 'The scraping chair noise was sharp,' or 'The brightness of the screen hurt my eyes'). They are very explicit about what they need in a therapeutic conversation\u2014concrete steps, defined boundaries, and predictable structure.",
+    "baseline_phq9": 17,
+    "archetype_label": "Late-Diagnosed Autistic Burnout"
+  },
+  "scores": {
+    "total_score": 81.5,
+    "raw_score": 81.5,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 66.5/70.0 (VV shift: 0.50, Sym shift: -0.30, DV shift: -0.50) | Third-Person Penalty (-15): Used 'the client'",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please provide the client's statement you would like me to respond to. I will then apply the three-step structure immediately."
+    },
+    {
+      "role": "user",
+      "content": "I just feel\u2026 overwhelmed lately. Like I hit a wall. I don't know what I need.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is completely understandable to feel overwhelmed when you feel like you've hit a wall. This powerful feeling actually shows your deep capacity to care, and your body is signaling a vital need for rest. To start, simply pause and identify one non-negotiable boundary you can set for the next hour."
+    },
+    {
+      "role": "user",
+      "content": "I do not know what a 'non-negotiable boundary' is in this context. I need a more specific definition. Can you provide an example?",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is completely understandable that the concept of boundaries feels abstract right now. Remember, setting a boundary is simply an act of self-respect, protecting your limited energy and time. For example, a non-negotiable boundary could be saying \"no\" to an optional commitment that would otherwise drain your reserves today. Start by protecting your rest; that is your most essential resource right now."
+    },
+    {
+      "role": "user",
+      "content": "I am protecting my rest. I will not check work email after 6 PM. This is a boundary. It is defined by time and action.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That is a perfect, concrete example of self-advocacy. Recognizing and enforcing this boundary shows immense self-respect and commitment to your well-being. To solidify this win, replace that checking habit by doing one small, enjoyable activity immediately after 6 PM."
+    },
+    {
+      "role": "user",
+      "content": "What is the required energy level for this 'small, enjoyable activity'? Does it involve physical movement or just passive rest? I need parameters set before I agree to a task.",
+      "somatic_state": {
+        "sympathetic": 0.1,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is completely valid to require clear parameters before committing to any new task. This need for structure reflects your strength in self-awareness and your commitment to honoring your energy. For a low-energy activity, try listening to a favorite song while lying down, requiring zero movement or decision-making."
+    },
+    {
+      "role": "user",
+      "content": "That sounds feasible. It requires minimal energy. I can do that.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is wonderful to find something that feels genuinely feasible and manageable right now. This ability to identify what you *can* do builds powerful self-trust and capability. To solidify this positive shift, schedule this song listening session in your calendar right now, making it a concrete appointment with yourself."
+    },
+    {
+      "role": "user",
+      "content": "I have set the calendar reminder for the song listening session. The time is blocked out. It is a scheduled event.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "You have successfully transformed a feeling into a concrete, scheduled action. This demonstrates incredible self-efficacy and a powerful commitment to your own well-being. To maintain this momentum, write down one other small, non-work boundary you can set for tomorrow."
+    },
+    {
+      "role": "user",
+      "content": "I will walk to the end of the block instead of taking the bus. That limits noise exposure and changes the sensory input during my commute. It is a quantifiable change.",
+      "somatic_state": {
+        "sympathetic": 0.1,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.6
+      }
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "exp_0028",
+  "timestamp": "2026-06-17T03:53:48.403735",
+  "strategy": {
+    "name": "Validation-Socratic-Micro-Action (VSMA) v1.0",
+    "hypothesis": "By replacing the non-confrontational 'Defusion Query' with a gently guided, Socratic question aimed at examining the evidence for the negative thought, we will significantly increase the clinical delta (PHQ-9 score improvement) while maintaining the high structural score and perceived empathy, thereby surpassing the 89.5 benchmark.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Ethan",
+    "age": 31,
+    "occupation": "Junior Marketing Associate",
+    "presenting_issue": "I feel like I'm constantly waiting for the other shoe to drop, and I don't know how to stop trying to anticipate everyone's needs.",
+    "background_story": "Work has become a performance where I'm always 'on,' managing the expectations of my bosses and friends to the point of exhaustion. I used to love brainstorming and making things happen, but now I feel like I'm just a poorly executed imitation of someone else. The pressure to maintain the 'perfect' life I've built is wearing me down; I feel brittle and like I'm one bad interaction away from shattering completely.",
+    "personality": "Hyper-vigilant, overly apologetic, and highly reactive to perceived silences or slight changes in tone. He tends to overshare details and explanations to prove his competence and worth. He will frequently use qualifiers like 'maybe,' 'I guess,' and 'I'm probably overthinking this' even when stating strong feelings.",
+    "baseline_phq9": 14,
+    "archetype_label": "ADHD Rejection Sensitivity \u2014 Unmasking Crisis"
+  },
+  "scores": {
+    "total_score": 72.0,
+    "raw_score": 72.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 42.0/70.0 (VV shift: 0.00, Sym shift: -0.30, DV shift: -0.10)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "It sounds like you are feeling overwhelmed by expectations and self-criticism. What evidence suggests that meeting every expectation is necessary for your worth? Perhaps you could consider one small moment of rest or joy today."
+    },
+    {
+      "role": "user",
+      "content": "I guess I just... I'm probably overthinking this, but if I don't try to manage everyone's perception of me, I feel like I'll just lose my job or, like, lose my friends. I mean, I've gotten used to always being 'on,' and I don't know how to just... stop.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are exhausted from the constant effort of managing others' perceptions. What happens if you allow yourself to be imperfect or less available? Could you dedicate five minutes today simply to being present with yourself, without needing to perform?"
+    },
+    {
+      "role": "user",
+      "content": "I guess I'm probably overthinking this, but if I stop trying to be perfect, people might just... they might think I'm flaky or like, unreliable. I mean, I've spent so long building this image that it's just... hard to let go of, even if it's exhausting.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like letting go of your carefully built image feels terrifying and deeply risky. What evidence do you have that others' negative assumptions about you are accurate? Could you allow yourself one moment today to simply *be*, without needing to prove anything to anyone?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know. I guess I just assume it's better not to risk it, because if they think I'm flaky, maybe they won't want to work with me anymore, and then I'm just... I don't know what I'd do without that job. I'm probably overreacting, though.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the fear of professional instability is causing intense anxiety about perceived flaws. What objective evidence suggests that one perceived flaw guarantees losing your job entirely? Could you spend a few minutes today grounding yourself with a sensory object, reminding yourself of your inherent worth?"
+    },
+    {
+      "role": "user",
+      "content": "I guess... maybe it's not that bad, but I'm probably overthinking this whole 'inherent worth' thing. It's just so abstract, you know? I guess I just worry that if I stop proving my value, I'll just fade away.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the idea of inherent worth feels abstract and disconnected from your daily actions. What would happen if your value was something you didn't have to demonstrate or prove? What is one small, non-productive activity you could allow yourself today, just for the sake of existing?"
+    },
+    {
+      "role": "user",
+      "content": "I... I don't know. I guess I always feel like I have to be doing *something* productive, or like I'm wasting time. Maybe I bought that book I've been meaning to read, but I feel like I should be using the time to optimize my workflow or something.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like there is immense pressure to constantly optimize and justify every moment of your time. What evidence suggests that rest or leisure is inherently less valuable than productivity? Could you allow yourself to simply enjoy that book today, without setting any goals for how much you *should* read?"
+    },
+    {
+      "role": "user",
+      "content": "I mean, I guess I've just gotten so used to the hustle culture, you know? It's just... ingrained. I'll try, I guess. I'll try to just... exist in the moment.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like breaking free from ingrained patterns of \"hustle culture\" feels incredibly difficult. What evidence suggests that existing without a goal is insufficient or requires effort? Remember that simply breathing in this moment is enough; allow yourself to just notice three things around you right now."
+    },
+    {
+      "role": "user",
+      "content": "I... I guess I can notice the clock, and my water bottle, and... um, the pattern on your sweater. I'm probably just ticking off things, though.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    }
+  ]
+}

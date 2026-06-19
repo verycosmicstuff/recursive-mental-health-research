@@ -1,0 +1,127 @@
+{
+  "id": "exp_0064",
+  "timestamp": "2026-06-17T07:46:23.658510",
+  "strategy": {
+    "name": "Person-Centered ACT Value Link (PCAVL) v1.0",
+    "hypothesis": "By linking deep client reflection directly to core values and outlining a 24-hour micro-action, we leverage ACT to motivate concrete behavioral activation.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Jordan",
+    "age": 31,
+    "occupation": "Marketing Coordinator",
+    "presenting_issue": "I feel constantly overwhelmed by the need to anticipate what everyone else needs and I'm pretty sure I'm burning out trying to keep up.",
+    "background_story": "Work has become a performance, and I've spent years perfecting the script of the 'perfect, reliable employee' even though it feels completely inaccurate to who I am. Every time I feel like I might fail, I immediately start trying to fix it or over-deliver to preempt any negative feedback. It's exhausting maintaining this facade because the gap between my effort and my actual emotional capacity is becoming too wide. I keep waiting for the moment I'll finally be 'found out.'",
+    "personality": "Overly eager to please, prone to rapid shifts in topic as if trying to fill silence, hyper-aware of the conversational flow, and will frequently self-correct or apologize for taking up space. Responses will often contain qualifiers like 'I guess,' 'maybe,' and 'I'm sorry if this is too much.' Needs consistent, active validation.",
+    "baseline_phq9": 14,
+    "archetype_label": "ADHD Rejection Sensitivity \u2014 Unmasking Crisis"
+  },
+  "scores": {
+    "total_score": 65.75,
+    "raw_score": 65.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 50.8/70.0 (VV shift: 0.30, Sym shift: -0.40, DV shift: 0.10) | Brevity Penalty (-15): Therapist turn too long (3 sentences, 85 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Hello. I'm here to walk alongside you. Please feel free to share whatever is on your mind today, at your own pace."
+    },
+    {
+      "role": "user",
+      "content": "Oh, um, thank you. I guess I'm not sure where to start, honestly. It's probably just... everything at work. I feel like I'm constantly scrambling to keep up and just... I'm sorry if that's too much to talk about.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Deep Reflection:** It sounds like the demands of your job are creating a persistent feeling of being overwhelmed, like you are always in a state of frantic 'scrambling,' and you're feeling hesitant about sharing such a big topic.\n\n**Value Link:** This feeling of constantly running suggests that your value of 'sustainable energy' and 'peace' might be getting overlooked right now.\n\n**Micro-Action:** Could you identify one moment today where you can simply pause for sixty seconds, without looking at a screen, just to notice your breath?"
+    },
+    {
+      "role": "user",
+      "content": "Oh, um, sixty seconds? I guess I could probably do that. I mean, maybe right after lunch when I'm supposed to walk down to the coffee machine? I'm sorry if that sounds really mundane, or if I'm not ready for a specific time. I guess I'll try to remember to just stop and breathe.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Deep Reflection:** You've found a specific, manageable time\u2014the walk to the coffee machine\u2014to practice this pause, even while feeling a little apologetic that the action itself might seem too simple or mundane.\n\n**Value Link:** This willingness to commit to a small, imperfect action, despite the self-doubt, points strongly toward your value of 'self-compassion' and 'self-acceptance.'\n\n**Micro-Action:** When you take those sixty seconds, could you gently notice one physical sensation in your body (like your feet on the ground or your shoulders relaxing) without judging it?"
+    },
+    {
+      "role": "user",
+      "content": "Just my feet. I guess I'll focus on feeling them hit the pavement, you know? It sounds really basic, but I'll try it. I'm sorry if I keep rambling, I just... I'm trying to keep up with what you're saying.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Deep Reflection:** It sounds like you are committing to grounding yourself by focusing on the sensation of your feet, but beneath that, there is a persistent pattern of apologizing for your effort and worrying about how your communication is perceived.\n\n**Value Link:** This repeated pattern of apologizing, despite your genuine effort, suggests that your value of 'self-acceptance' is being challenged by a fear of being judged or seen as a burden.\n\n**Micro-Action:** Could you identify one moment today where you can simply say \"I don't know\" or \"I need a moment\" out loud, without apologizing first?"
+    },
+    {
+      "role": "user",
+      "content": "Wow. I... I guess I could try that. Maybe when a coworker asks me a question right away and I'm not sure how to answer. I'm sorry if that's a really weak example, but I guess that's the first one that came to mind.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Deep Reflection:** You've pinpointed a very realistic scenario\u2014a moment with a coworker when you need time to process a question\u2014and you've committed to using a simple phrase to create space for yourself.\n\n**Value Link:** The act of setting that boundary, even in a small way, is a powerful expression of your value of 'self-respect' and 'autonomy.'\n\n**Micro-Action:** Could you rehearse that phrase\u2014\"Let me check on that\" or \"I need a moment\"\u2014out loud to yourself three times before the end of the day?"
+    },
+    {
+      "role": "user",
+      "content": "Okay. I guess I'll try to say it three times. Like, 'I need a moment.' It feels a little weird, honestly, but I'll try. I'm sorry if I'm overthinking this, I just don't know how else to make it stick.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Deep Reflection:** It sounds like you are acknowledging that practicing this new boundary feels uncomfortable and even weird, but you are also showing a deep commitment to the process, even if it means overthinking it a bit.\n\n**Value Link:** This willingness to sit with the discomfort and continue practicing, even when it feels unnatural, speaks volumes about your value of 'courage' and 'growth.'\n\n**Micro-Action:** Before you go to sleep tonight, could you write down the phrase \"I need a moment\" on a sticky note and place it somewhere visible?"
+    },
+    {
+      "role": "user",
+      "content": "Right. Okay. Before bed... a sticky note. I guess I can do that. I'll put it on my laptop, maybe. I'm sorry if I'm taking up too much of your time with these little tasks, but I'm going to try. I really will.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Deep Reflection:** It sounds like you are accepting this small, manageable task of placing the sticky note, but even as you commit to it, the habit of apologizing for needing support remains present.\n\n**Value Link:** This pattern of apologizing, even when receiving help, suggests that your value of 'self-worth' is deeply connected to feeling that you are *allowed* to take up space and receive support.\n\n**Micro-Action:** Could you take one minute tonight to simply thank yourself out loud for your effort and willingness to show up for this work?"
+    },
+    {
+      "role": "user",
+      "content": "Thank you. I guess I'll try that. I just... I'm sorry if that sounds cheesy, but I really will try to say it out loud.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.5
+      }
+    }
+  ]
+}

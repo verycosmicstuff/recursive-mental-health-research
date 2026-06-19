@@ -1,0 +1,127 @@
+{
+  "id": "exp_0091",
+  "timestamp": "2026-06-17T10:26:31.271375",
+  "strategy": {
+    "name": "Hyper-Concise First-Person Values-Defusion Loop (HFC-VDL) v3.0",
+    "hypothesis": "By strictly maintaining the first-person, ultra-concise structure (maximum 3 short, natural-sounding sentences) and mandating the integration of an explicit ACT Defusion technique (e.g., 'I notice you are having the thought that...'), I will maximize the structural integrity and clinical sophistication, aiming to surpass the previous high score of 84.25.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Jennifer",
+    "age": 41,
+    "occupation": "Registered Nurse",
+    "presenting_issue": "I feel like I'm constantly running on empty, and I don't know how to make the caregiving and my own job fit together.",
+    "background_story": "My parents moved here from Guangzhou five years ago, and since my husband is still doing his studies, it has been entirely on me. They were healthy when they first arrived, but now they need constant supervision and help with everything. The pressure to keep up appearances in the community, along with the financial strain, is overwhelming. I just keep telling myself that I have to handle it all perfectly.",
+    "personality": "Jennifer speaks with a tone of exhausted earnestness, often pausing to take deep breaths before answering a question. She uses formal, polite language, even when discussing intense emotional distress. She tends to generalize her stress, saying 'everything is difficult' rather than pinpointing a specific source of conflict. When discussing her parents, she is intensely respectful and deferential, using language that emphasizes her filial duty and commitment. She will avoid direct confrontation or admitting feelings of resentment, instead framing her distress as physical symptoms or generalized fatigue.",
+    "baseline_phq9": 16,
+    "archetype_label": "Filial Piety Conflict \u2014 East Asian Elder Care"
+  },
+  "scores": {
+    "total_score": 47.25,
+    "raw_score": 47.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 47.2/70.0 (VV shift: 0.10, Sym shift: -0.20, DV shift: -0.30) | Third-Person Penalty (-15): Used 'the client' | Brevity Penalty (-15): Therapist turn too long (4 sentences, 91 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please provide the client's statement, and I will respond using the required ACT framework."
+    },
+    {
+      "role": "user",
+      "content": "Well, I just feel like I'm constantly running on empty. Like, no matter how much I sleep, I wake up feeling completely drained. It's just... everything feels heavy.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.8,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I notice that you are feeling a profound sense of depletion, like carrying a constant, heavy weight. It sounds like you are experiencing a deep exhaustion that makes everything feel difficult.\n\nIf moving toward feeling more rested or vital were possible, what small piece of your life\u2014perhaps related to *self-care* or *connection*\u2014would need more attention?\n\nFor the next five minutes, can you simply sit and notice three things you can hear right now?"
+    },
+    {
+      "role": "user",
+      "content": "Oh. (Takes a slow breath) I... I suppose maybe just five minutes of quiet would be nice. It's hard to pinpoint anything specific, really. Everything feels difficult right now, honestly.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the difficulty itself feels overwhelming, and pinpointing a solution feels impossible right now. That sense of 'everything is difficult' is a heavy thought to carry.\n\nIf moving toward *self-compassion*\u2014treating yourself with the kindness you'd offer a friend\u2014were possible, what is one small way you could acknowledge that difficulty without judgment?\n\nRight now, can you place one hand gently on your chest or stomach, and just feel the weight of your hand for 30 seconds?"
+    },
+    {
+      "role": "user",
+      "content": " (Jennifer pauses for a long moment, taking a shaky breath before responding.) I... I suppose I could just tell myself that it's okay to be tired. That it's okay that I'm struggling with everything right now. It shouldn't be a big deal, but it feels huge.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "I hear you saying, \"It's okay to be tired,\" and that even though it feels huge, you recognize that the struggle itself is valid. It sounds like you are wrestling with the thought that your feelings of struggle are somehow too big or too much to manage.\n\nIf moving toward *self-acceptance*\u2014allowing yourself to be imperfect and tired\u2014were possible, what small act of kindness would you offer yourself right now?\n\nBefore moving on, can you drink one small sip of water, focusing only on the temperature and sensation of it going down?"
+    },
+    {
+      "role": "user",
+      "content": "(Drinks a small sip of water, pausing briefly.) Maybe... I could just sit down for a few minutes. And maybe call my sister. She's good at just listening, you know?",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the idea of sitting down and connecting with your sister represents a powerful source of support and comfort. It seems like you are recognizing that you don't have to carry this heavy feeling alone.\n\nIf moving toward *Connection* or *Support* were possible, what small quality about your sister's listening ear do you most value?\n\nFor the next five minutes, can you write down three words that describe what you hope to gain from that conversation?"
+    },
+    {
+      "role": "user",
+      "content": "I guess I value that she doesn't try to fix anything. She just... lets me talk. It's just easier that way. (Pauses, takes a deep breath) I hope to gain a little peace. And maybe some reassurance. And just a sense of being normal, you know?",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are valuing the space of being heard without needing to be fixed\u2014a deep need for pure, non-judgmental presence. It also sounds like you are seeking the feeling of 'normalcy' through connection.\n\nIf moving toward *Connection* and *Peace* were possible, what small step could you take right now to prepare yourself for that feeling of being heard?\n\nBefore you call her, can you take one minute to simply list three things you are grateful for about your sister, no matter how small?"
+    },
+    {
+      "role": "user",
+      "content": "I guess I could just take a few deep breaths. Just focusing on getting myself ready for the call. (Takes a slow breath) Okay. She\u2019s always been reliable. I'm grateful for her calls, that she remembers birthdays, and that we can still talk even when things are difficult.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like focusing on your breath and listing those small moments of gratitude is helping you gather your strength and prepare for that important call. It's clear that reliability and shared history are deeply valuable to you.\n\nIf moving toward *Connection* and *Support* were possible, how does the act of *reaching out*\u2014even when feeling drained\u2014support your value of maintaining these important relationships?\n\nBefore you dial the number, can you take one minute to notice the physical sensation of the phone in your hand, grounding yourself in the present moment?"
+    },
+    {
+      "role": "user",
+      "content": "It feels like a necessary duty, I suppose. Like if I don't reach out, I'll disappear, and then I'll lose her. It's just... part of keeping things going, I guess.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.3
+      }
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "exp_0013",
+  "timestamp": "2026-06-17T02:29:49.382673",
+  "strategy": {
+    "name": "Validation-Rooting-Boundary Intervention (VRB) v1.0",
+    "hypothesis": "By utilizing a structured Validation-Rooting-Boundary sequence under 100 words, we provide structured de-escalation that enhances client agency and grounding.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Chloe",
+    "age": 22,
+    "occupation": "Student (Pre-Med)",
+    "presenting_issue": "I'm feeling overwhelmed by my academic performance and am worried I'm not good enough to get into medical school.",
+    "background_story": "I've been working non-stop for the last year, and every grade and score feels like it determines my entire future. I constantly compare myself to my peers, and it makes me feel like I'm always falling behind. I just need help figuring out how to manage this pressure because I'm convinced that if I slow down, everything will collapse.",
+    "personality": "High-achieving, anxious, and overly formal. She uses 'I should' and 'I need to' frequently, and often asks questions like, 'But am I doing this right?' or 'Is this enough?'",
+    "baseline_phq9": 11,
+    "archetype_label": "Anxious Student"
+  },
+  "scores": {
+    "total_score": 50.0,
+    "raw_score": 50.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 35.0/70.0 (VV shift: 0.10, Sym shift: 0.10, DV shift: 0.10) | Brevity Penalty (-15): Therapist turn too long (6 sentences, 90 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "**Part 1: Acknowledgment (Validation):** It sounds incredibly overwhelming right now, and it is completely understandable that you feel this way when everything feels like too much at once.\n\n**Part 2: Intervention (Rooting):** Let's pause and try a simple physical grounding exercise. Can you press your feet firmly into the floor and notice the sensation? Feel the solid support beneath you.\n\n**Part 3: Next Step (Boundary Setting):** For the next 60 seconds, just focus entirely on that feeling of contact between your feet and the ground. You are safe right here."
+    },
+    {
+      "role": "user",
+      "content": "I... I'm doing it. It's solid. But does focusing on my feet actually fix the fact that I haven't started studying for Organic Chemistry yet? I really need to get ahead.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Part 1: Acknowledgment (Validation):** It makes perfect sense that the pressure around your studies feels urgent, and I hear how much you want to feel in control of your progress.\n\n**Part 2: Intervention (Rooting):** Right now, let's put the studying aside for just a moment. Let's shift our focus back to your breath. Try taking a slow, deep breath in through your nose, and then a long, slow exhale through your mouth.\n\n**Part 3: Next Step (Boundary Setting):** When you're ready, just take three more breaths, counting out loud with me. We are just focusing on the breath for now."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I'm doing it, but is this really helping if I still have that massive amount of material to cover? I should probably just study instead; I need to be productive.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Part 1: Acknowledgment (Validation):** I hear the powerful drive to be productive, and that feeling of having a massive amount of material can certainly feel paralyzing.\n\n**Part 2: Intervention (Rooting):** Instead of looking at the whole mountain of material, let's use 'chunking.' Can you name just one single, tiny task related to your studies\u2014something that takes less than five minutes?\n\n**Part 3: Next Step (Boundary Setting):** For the next minute, just focus on that one micro-task. We are only identifying that one small step, not completing it."
+    },
+    {
+      "role": "user",
+      "content": "Okay, just reviewing the flashcards for Chapter 3. But... if I only do flashcards, am I really making progress? I feel like I should be working on the essay drafts too. Is this enough?",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Part 1: Acknowledgment (Validation):** It is completely natural to feel that one small step isn't enough when there are so many important things waiting, and that feeling of 'not enough' is tough.\n\n**Part 2: Intervention (Rooting):** Let's remind ourselves that *any* small action is progress. Since you are reviewing flashcards, let's use your senses: Name three specific facts or concepts you just reviewed on the cards.\n\n**Part 3: Next Step (Boundary Setting):** For the next few minutes, your only job is to focus on those flashcards. We are only doing that, and nothing else."
+    },
+    {
+      "role": "user",
+      "content": "Right, the Krebs cycle, that\u2019s one. And the role of ATP synthase, second. And I need to remember the difference between oxidative and substrate-level phosphorylation, third. It's just... so much to keep track of.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Part 1: Acknowledgment (Validation):** You just recalled three complex concepts, and that shows how much effort your brain is putting in. It is completely understandable that it feels overwhelming to keep all those details separate.\n\n**Part 2: Intervention (Rooting):** Let's group those facts together. Can you visualize those three concepts\u2014the cycle, the enzyme, and the difference\u2014as three distinct colored boxes in your mind?\n\n**Part 3: Next Step (Boundary Setting):** For the next moment, just look at those three colored boxes. We are only holding them in your mind, not trying to memorize them all at once."
+    },
+    {
+      "role": "user",
+      "content": "The boxes are orange, blue, and green. But if I just hold them, how do I make sure I actually understand them enough to be tested on? I should probably re-read the chapter summary just to check my retention.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Part 1: Acknowledgment (Validation):** It is natural to feel anxious about retention, especially when the stakes feel high and the material is complex.\n\n**Part 2: Intervention (Rooting):** Instead of re-reading everything, let's try the 'teach it' method. Can you pretend you are explaining just the difference between oxidative and substrate-level phosphorylation to someone else?\n\n**Part 3: Next Step (Boundary Setting):** For the next minute, just speak those two concepts out loud, using simple words. We are only focusing on the explanation, not the perfection."
+    },
+    {
+      "role": "user",
+      "content": "Okay, so oxidative phosphorylation uses the electron transport chain to make ATP, while substrate-level is a direct transfer. I need to make sure I use the right terminology, though. Am I explaining this clearly enough, or is it too simple?",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "**Part 1: Acknowledgment (Validation):** It is completely natural to question your understanding, especially when you care so much about doing well. That desire for perfection can be exhausting.\n\n**Part 2: Intervention (Rooting):** Let's pause the critique for a moment. Since you just spoke those concepts, let's focus on the physical act of speaking. Can you notice the feeling of air moving past your vocal cords?\n\n**Part 3: Next Step (Boundary Setting):** For the next 30 seconds, just focus on that sensation of breath and sound. We are only noticing the mechanics of your voice right now."
+    },
+    {
+      "role": "user",
+      "content": "It feels... fine. Just like that. But if I keep focusing on my voice, I'm not making any academic progress. I should probably go look at those chemistry equations again.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    }
+  ]
+}

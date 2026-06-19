@@ -1,0 +1,127 @@
+{
+  "id": "exp_0046",
+  "timestamp": "2026-06-17T05:36:31.454002",
+  "strategy": {
+    "name": "Empathy-Driven Utility-Check (EDU-C) v3.0",
+    "hypothesis": "By transitioning the 'Pivot/Question' step from a direct challenge to an exploration of the *utility* of the negative thought (e.g., 'What purpose does this worry serve?'), we can deepen the psychological engagement, improving the depth of the dialogue and aiming to surpass the previous high score of 91.25, while maintaining the brief, constrained structure.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Ethan",
+    "age": 29,
+    "occupation": "Data Analyst",
+    "presenting_issue": "I feel completely stuck and overwhelmed by the inertia of my daily life.",
+    "background_story": "Work is fine, I guess, but it feels meaningless when I get home. I spend so many hours staring at screens, just scrolling through things that don't matter, and it's making me feel disconnected from everything. My friends get busy, and I'm just\u2026 floating, not sure where I'm supposed to go with my life. It's exhausting, but I don't even have the energy to care enough to fix it.",
+    "personality": "Low energy, passive, drifts between monosyllabic answers and lengthy, rambling thoughts about nothing in particular. Uses vague language like 'stuff' or 'things' frequently.",
+    "baseline_phq9": 16,
+    "archetype_label": "Isolated Remote Worker"
+  },
+  "scores": {
+    "total_score": 72.0,
+    "raw_score": 72.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 42.0/70.0 (VV shift: 0.10, Sym shift: -0.10, DV shift: -0.10)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "*Waiting for client input.*"
+    },
+    {
+      "role": "user",
+      "content": "Uh. I don't know. Stuff. Just\u2026 same.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like things feel vague and indistinct right now, and articulating that sense of 'stuff' can be incredibly draining. Sometimes, that feeling of numbness is actually serving a protective function, keeping you safe from something overwhelming. What might this feeling be helping you avoid or manage in this moment?"
+    },
+    {
+      "role": "user",
+      "content": "Nothing, really. I guess it just feels like\u2026 too much effort to even think about what it's protecting me from. I just want it to stop being this way.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It makes perfect sense that analyzing deep feelings feels like too much effort when you are already exhausted. That sense of overwhelm is a heavy burden, and your system is signaling that the cost of thinking about it is too high. If you were to give this feeling a job, what would be the benefit of it continuing to require such little effort?"
+    },
+    {
+      "role": "user",
+      "content": "Honestly, I don't know. Maybe... maybe just letting me cruise along without having to really *try* to feel anything, you know? It's just easier that way.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the inertia of 'just cruising' feels like the most immediate source of relief and comfort right now. This ease is clearly a powerful coping mechanism that conserves energy when things feel overwhelming. If this 'easy' way of moving through life is so useful, what might it be making you postpone or avoiding feeling connection to?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know. Stuff, maybe? Like, connecting to anything really big. Or anything that would actually require me to change anything, I guess.",
+      "somatic_state": {
+        "sympathetic": 0.1,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is completely understandable that the thought of 'big' feelings or major change feels overwhelming and unsafe right now. This pattern of keeping things contained is serving a protective function, keeping you steady when things feel too turbulent. If this boundary of 'not changing anything' is so useful for maintaining safety, what might the cost of maintaining that safety be in the long run?"
+    },
+    {
+      "role": "user",
+      "content": "I guess\u2026 feeling a little lost? Like, eventually running out of steam or something. It just sounds like work, honestly. More stuff to do.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It makes perfect sense that considering change feels like a massive amount of emotional labor, and that exhaustion is a very real concern. This feeling of being \"lost\" is actually signaling the high cost of maintaining your current protective state. If the feeling of \"work\" or \"more stuff to do\" is the price of safety, what is the underlying need that this effort is currently fulfilling?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know, I just... I guess I need things to feel predictable. Like, everything having a routine. If I know what comes next, it's less scary.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is completely understandable that predictability feels like the safest anchor when the future feels uncertain and scary. This deep need for routine is actually doing important work by creating a reliable sense of safety and control. If this structure of predictability is so useful for managing fear, what does it allow you to avoid noticing about the world or yourself?"
+    },
+    {
+      "role": "user",
+      "content": "Nothing. Just... stuff. I guess, maybe the stuff that's unplanned. Or stuff that makes me feel like I have to actually react to something.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.3
+      }
+    }
+  ]
+}

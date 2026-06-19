@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260617_0146",
+  "timestamp": "2026-06-17T20:17:07.063971",
+  "strategy": {
+    "name": "Concise Validation-Reframe-Question (CVRQ) v1.0",
+    "hypothesis": "By keeping the Validation-Reframe-Question sequence under 100 words, we prevent dialogue bloat and maintain a sharp focus on user insight.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Priya",
+    "age": 31,
+    "occupation": "Freelance Designer / Gig Worker",
+    "presenting_issue": "I feel like I'm constantly failing to balance my mission with what my family expects, and it's causing a lot of guilt and anxiety.",
+    "background_story": "I've been working grueling, unpredictable shifts doing deliveries and taking on design projects just to fund the community library in Ludhiana. Every moment I find myself thinking about the books, I'm hit by the weight of my family's disappointment. They constantly bring up 'log kya kahenge,' making me feel like my entire life is a source of shame. I feel caught between the promise of this library and the suffocating need to please everyone back home.",
+    "personality": "Conversational, articulate, and highly passionate, but her tone is marked by exhaustion and a layer of defensiveness. She speaks in abstract terms about duty and community, and when given advice, she will redirect it back to the concept of 'keeping the vision alive' or 'honoring the sacrifice.' She is deeply respectful of cultural norms and views Western individualistic advice skeptically, often framing it as an inability to understand the strength of familial bonds.",
+    "baseline_phq9": 15,
+    "archetype_label": "Cross-Border Guilt (Indian Diaspora)"
+  },
+  "scores": {
+    "total_score": 56.0,
+    "raw_score": 56.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 56.0/70.0 (VV shift: 0.40, Sym shift: -0.30, DV shift: -0.10) | Third-Person Penalty (-15): Used 'the client' | Brevity Penalty (-15): Therapist turn too long (5 sentences, 74 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please provide the client's statement so I can generate the therapeutic response."
+    },
+    {
+      "role": "user",
+      "content": "Sometimes I feel like I'm just juggling too many impossible things\u2014the bills, the books, the expectations. It's exhausting. I don't know where the line is between doing what I *must* do for the library, and just being myself.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly draining to feel like you are constantly trying to meet demands that feel impossible to juggle. It makes perfect sense that you feel exhausted when your personal needs are competing with professional expectations.\n\nRemember that \"must-do\" often becomes a habit, not a fundamental law. Your value isn't measured by how many balls you keep in the air.\n\nIf you could give yourself one small boundary right now, what would it be?"
+    },
+    {
+      "role": "user",
+      "content": "It's not really about 'boundaries,' I think. It's more about the duty. If I set boundaries, I feel like I'm letting the vision down, and that would be a deeper failure than anything else. My value is tied to this work, to the community, not just to my own feelings.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It speaks to a deep sense of loyalty that your value is tied so strongly to the community you serve. That commitment is a powerful gift, and it\u2019s understandable that you fear letting the vision down.\n\nHowever, true sustainability\u2014the kind that keeps the vision alive\u2014requires a whole person, not just a tireless worker. Taking care of yourself isn't failure; it's essential maintenance for the work itself.\n\nWhat would happen to the vision if you allowed yourself one small moment of rest today?"
+    },
+    {
+      "role": "user",
+      "content": "You speak of 'rest' as if it's a resource I can just... draw upon. The vision doesn't pause just because I take a moment. If the library needs me, I am here. My exhaustion is just part of the commitment, honestly. It's how I prove I'm serious.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is clear how deeply you feel this commitment, and that dedication speaks volumes about your care for the community. However, equating exhaustion with dedication is a form of self-sacrifice that is unsustainable.\n\nTrue commitment isn't measured by how much you can endure, but by how long you can sustain yourself. Your greatest asset to the library is a well-rested, whole you.\n\nWhat would it take to honor your commitment without sacrificing your own energy?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know. You keep framing this as a conflict between me and the duty. Maybe the problem is that you're looking at it like a Western equation\u2014that I have to choose one side or the other. It's not a choice, it's just... life, and the sacrifice is what makes it meaningful.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you see your life's meaning as intrinsically woven into the act of selfless giving, and that profound dedication is truly powerful. It's clear that for you, sacrifice *is* the definition of commitment, not a choice between two sides.\n\nBut even the most beautiful, enduring pattern requires a consistent source. If the meaning comes from the giving, the giving must first be sustained.\n\nWhat small ritual could you incorporate that honors your spirit while maintaining your dedication to the work?"
+    },
+    {
+      "role": "user",
+      "content": "A ritual... I suppose I could ensure I take a proper, quiet meal, one where I'm not thinking about overdue payments or the next design deadline. Just to sit and eat, without distraction.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.6
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "That is a wonderful, concrete step, and it shows a real capacity for self-care. It takes discipline to carve out that intentional space when your mind is racing with responsibilities.\n\nInstead of viewing this meal as a break *from* the work, try seeing it as the essential fuel *for* the work. It's the moment that refuels your capacity to give.\n\nHow can you protect this quiet meal time from being interrupted, making it a non-negotiable part of your day?"
+    },
+    {
+      "role": "user",
+      "content": "I suppose I could tell my family that that time is non-negotiable, that it's for my health. They understand the necessity of physical care, even if they don't understand the emotional weight of the sacrifice.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It is incredibly challenging to ask loved ones to respect a need that is rooted in emotional self-preservation. You are essentially teaching them a new language of self-worth.\n\nRemember that modeling self-respect is one of the most powerful gifts you can give your family. By protecting your time, you are showing them how to honor their own needs too.\n\nWhat simple phrase could you use to communicate the necessity of this boundary with confidence?"
+    },
+    {
+      "role": "user",
+      "content": "I just need this time to gather my strength. If I'm depleted, I won't be able to help anyone, even you. It's for the sake of the whole project.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.6
+      }
+    }
+  ]
+}
