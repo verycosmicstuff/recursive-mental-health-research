@@ -2,8 +2,8 @@
   "id": "exp_0036",
   "timestamp": "2026-06-17T04:37:45.432724",
   "strategy": {
-    "name": "",
-    "hypothesis": "",
+    "name": "Three-Part Socratic Reframe (TPSR) v1.0",
+    "hypothesis": "By using a strict three-part model containing a 'What if' Socratic reframe, we introduce alternative perspectives while keeping the response highly structured and brief.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,

@@ -2,8 +2,8 @@
   "id": "exp_20260617_0125",
   "timestamp": "2026-06-17T18:17:17.265037",
   "strategy": {
-    "name": "",
-    "hypothesis": "",
+    "name": "ACT Acceptance & Reflection (AAR) v1.0",
+    "hypothesis": "By focusing the inquiry step purely on emotional acceptance and self-as-context rather than directive problem solving, we improve therapeutic alliance.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,

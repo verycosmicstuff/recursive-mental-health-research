@@ -2,8 +2,8 @@
   "id": "exp_0015",
   "timestamp": "2026-06-17T02:43:51.312823",
   "strategy": {
-    "name": "",
-    "hypothesis": "",
+    "name": "Reflective Validation Cascade (RVC) v1.0",
+    "hypothesis": "By guiding the patient through a natural-sounding Validation Cascade, we deepen clinical exploration of beliefs before introducing concrete coping skills.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,

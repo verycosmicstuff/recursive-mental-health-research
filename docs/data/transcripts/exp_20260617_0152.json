@@ -2,8 +2,8 @@
   "id": "exp_20260617_0152",
   "timestamp": "2026-06-17T20:49:25.426752",
   "strategy": {
-    "name": "",
-    "hypothesis": "",
+    "name": "Concise CBT Micro-Exercise (CCME) v1.0",
+    "hypothesis": "By coupling validation with a concrete CBT micro-exercise under 100 words, we provide structured and immediate cognitive-behavioral tools.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,

@@ -2,8 +2,8 @@
   "id": "exp_0018",
   "timestamp": "2026-06-17T03:01:00.811198",
   "strategy": {
-    "name": "",
-    "hypothesis": "",
+    "name": "Somatic Anchor & Mirroring (SAM) v1.0",
+    "hypothesis": "By focusing the second phase on physical/somatic sensations in the body, we ground the patient's emotional distress before suggesting a tiny micro-action.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,

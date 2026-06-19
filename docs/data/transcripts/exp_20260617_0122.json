@@ -2,8 +2,8 @@
   "id": "exp_20260617_0122",
   "timestamp": "2026-06-17T18:00:06.823007",
   "strategy": {
-    "name": "",
-    "hypothesis": "",
+    "name": "Two-Part Reflect-Inquire Flow (TPRI) v1.0",
+    "hypothesis": "By stripping the response down to a simple two-part structure (concise reflection and a single inquiry), we minimize verbosity and maximize client reflection.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,

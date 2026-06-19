@@ -3,7 +3,7 @@
   "timestamp": "2026-06-17T10:54:10.495615",
   "strategy": {
     "name": "Insight-Validation-Action (IVA)",
-    "hypothesis": "",
+    "hypothesis": "By mandating a specific conversational template for Validation, Insight, and Action, we standardize the response schema to eliminate open-ended deviation.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,

@@ -2,8 +2,8 @@
   "id": "exp_0059",
   "timestamp": "2026-06-17T06:45:54.935376",
   "strategy": {
-    "name": "",
-    "hypothesis": "",
+    "name": "Concise Validate-Inquire-Refocus (CVIR) v1.0",
+    "hypothesis": "By validating feelings, asking an open-ended inquiry challenging assumptions, and refocusing with a micro-experiment under 100 words, we guide self-discovery without giving direct advice.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,

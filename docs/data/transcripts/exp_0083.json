@@ -2,8 +2,8 @@
   "id": "exp_0083",
   "timestamp": "2026-06-17T09:42:41.288185",
   "strategy": {
-    "name": "",
-    "hypothesis": "",
+    "name": "Value-Linked Cognitive Reframe (VLCR) v1.0",
+    "hypothesis": "By combining reflective empathy, Socratic reframing, and value-linked micro-actions, we create a structured path forward that grounds behavioral tasks in personal meaning.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,

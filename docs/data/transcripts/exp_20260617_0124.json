@@ -2,8 +2,8 @@
   "id": "exp_20260617_0124",
   "timestamp": "2026-06-17T18:12:28.742804",
   "strategy": {
-    "name": "",
-    "hypothesis": "",
+    "name": "PCT-ACT-CBT Value Flow (PACVF) v1.0",
+    "hypothesis": "By combining Person-Centered reflection, ACT value clarification, and CBT committed action, we guide the patient sequentially from safety to purpose to action.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,

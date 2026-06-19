@@ -2,8 +2,8 @@
   "id": "exp_20260617_0126",
   "timestamp": "2026-06-17T18:20:52.783386",
   "strategy": {
-    "name": "",
-    "hypothesis": "",
+    "name": "Concise Acknowledge-Reframe-Action (CARA) v1.0",
+    "hypothesis": "By enforcing a strict 4-sentence limit on an Acknowledge-Reframe-Action sequence, we optimize for fast, focused behavioral momentum.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,

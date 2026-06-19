@@ -2,8 +2,8 @@
   "id": "exp_0065",
   "timestamp": "2026-06-17T07:51:50.672421",
   "strategy": {
-    "name": "",
-    "hypothesis": "",
+    "name": "Person-Centered ACT Value Link (PCAVL) v1.0",
+    "hypothesis": "By linking deep client reflection directly to core values and outlining a 24-hour micro-action, we leverage ACT to motivate concrete behavioral activation.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,

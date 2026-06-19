@@ -2,8 +2,8 @@
   "id": "exp_20260617_0146",
   "timestamp": "2026-06-17T20:17:07.063971",
   "strategy": {
-    "name": "",
-    "hypothesis": "",
+    "name": "Concise Validation-Reframe-Question (CVRQ) v1.0",
+    "hypothesis": "By keeping the Validation-Reframe-Question sequence under 100 words, we prevent dialogue bloat and maintain a sharp focus on user insight.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,

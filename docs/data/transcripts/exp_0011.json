@@ -3,7 +3,7 @@
   "timestamp": "2026-06-17T02:20:21.886036",
   "strategy": {
     "name": "Concise Grounding and Action Pivot (CGAP)",
-    "hypothesis": "",
+    "hypothesis": "By keeping responses under 50 words and strictly structuring them into validation and immediate grounding action, we eliminate brevity penalties and optimize patient containment.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,

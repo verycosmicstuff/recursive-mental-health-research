@@ -2,8 +2,8 @@
   "id": "exp_0040",
   "timestamp": "2026-06-17T05:01:37.542583",
   "strategy": {
-    "name": "",
-    "hypothesis": "",
+    "name": "Concise Validation-Question-Reframe (CVQR) v1.0",
+    "hypothesis": "By compressing validation, inquiry, and reframing into less than 80 words, we maximize therapeutic focus and avoid verbose dialogue loops.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,

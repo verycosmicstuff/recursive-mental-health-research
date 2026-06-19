@@ -2,8 +2,8 @@
   "id": "exp_20260617_0128",
   "timestamp": "2026-06-17T18:36:00.249740",
   "strategy": {
-    "name": "",
-    "hypothesis": "",
+    "name": "CBT Validate-Inquire-Normalize (CVIN) v1.0",
+    "hypothesis": "By adding a normalization step (universal perspective) to validation and value inquiry, we build a strong therapeutic alliance and reduce isolation.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,

@@ -2,8 +2,8 @@
   "id": "exp_0057",
   "timestamp": "2026-06-17T06:35:20.572582",
   "strategy": {
-    "name": "",
-    "hypothesis": "",
+    "name": "Three-Sentence Empowering Pivot (TSEP) v1.0",
+    "hypothesis": "By constraining the therapist to exactly three sentences (Acknowledge, Inquire, Suggest), we enforce strict brevity while ensuring a complete therapeutic loop.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,

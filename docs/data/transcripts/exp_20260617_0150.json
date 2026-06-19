@@ -2,8 +2,8 @@
   "id": "exp_20260617_0150",
   "timestamp": "2026-06-17T20:38:20.776172",
   "strategy": {
-    "name": "",
-    "hypothesis": "",
+    "name": "Deep-Reflective Micro-Intervention (DRMI) v1.0",
+    "hypothesis": "By adopting the DRMI structure (Validate, Refocus on values, Action) in under 5 sentences, we combine emotional safety with action-oriented focus.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,

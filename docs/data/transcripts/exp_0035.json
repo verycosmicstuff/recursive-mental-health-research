@@ -2,8 +2,8 @@
   "id": "exp_0035",
   "timestamp": "2026-06-17T04:32:20.194158",
   "strategy": {
-    "name": "",
-    "hypothesis": "",
+    "name": "Validate-Question-Defuse (VQD) Coach v1.0",
+    "hypothesis": "By structuring the session around a Validate-Question-Defuse framework, we promote cognitive defusion and help the client observe their thought patterns non-judgmentally.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,

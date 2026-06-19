@@ -2,8 +2,8 @@
   "id": "exp_0060",
   "timestamp": "2026-06-17T06:52:09.360618",
   "strategy": {
-    "name": "",
-    "hypothesis": "",
+    "name": "Common Humanity Pattern Normalization (CHPN) v1.0",
+    "hypothesis": "By framing distressed behaviors as common human tendencies (common humanity), we decrease shame and facilitate reflective self-compassion.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,

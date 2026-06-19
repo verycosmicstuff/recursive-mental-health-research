@@ -2,8 +2,8 @@
   "id": "exp_0085",
   "timestamp": "2026-06-17T09:52:10.456221",
   "strategy": {
-    "name": "",
-    "hypothesis": "",
+    "name": "Concise Reflect-Reframe-Action (CRRA) v1.0",
+    "hypothesis": "By structuring a reflection, a Socratic reframe (using 'perhaps'/'what if'), and a micro-action under 100 words, we deliver clean, low-friction cognitive interventions.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,

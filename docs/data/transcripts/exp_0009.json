@@ -2,8 +2,8 @@
   "id": "exp_0009",
   "timestamp": "2026-06-17T02:11:15.290429",
   "strategy": {
-    "name": "",
-    "hypothesis": "",
+    "name": "Somatic Validation & Action Bridge (SVAB) v1.0",
+    "hypothesis": "By validating physical sensations and immediately reframing them as value conflicts before proposing a micro-action, we ground the client and encourage values-aligned behavioral activation.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,

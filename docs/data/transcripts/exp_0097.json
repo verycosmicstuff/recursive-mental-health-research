@@ -2,8 +2,8 @@
   "id": "exp_0097",
   "timestamp": "2026-06-17T10:59:34.158913",
   "strategy": {
-    "name": "",
-    "hypothesis": "",
+    "name": "Socratic Curiosity Questioning (SCQ) v1.0",
+    "hypothesis": "By strictly restricting the therapist to questions (no advice) after validation, we force the client to search for their own alternative perspectives.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,

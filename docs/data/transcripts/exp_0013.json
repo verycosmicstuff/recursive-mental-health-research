@@ -2,8 +2,8 @@
   "id": "exp_0013",
   "timestamp": "2026-06-17T02:29:49.382673",
   "strategy": {
-    "name": "",
-    "hypothesis": "",
+    "name": "Validation-Rooting-Boundary Intervention (VRB) v1.0",
+    "hypothesis": "By utilizing a structured Validation-Rooting-Boundary sequence under 100 words, we provide structured de-escalation that enhances client agency and grounding.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,

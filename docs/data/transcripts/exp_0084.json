@@ -2,8 +2,8 @@
   "id": "exp_0084",
   "timestamp": "2026-06-17T09:47:36.300916",
   "strategy": {
-    "name": "",
-    "hypothesis": "",
+    "name": "ECA Concise Wellness Protocol (ECAP) v1.0",
+    "hypothesis": "By strictly tracking the Empathize-Challenge-Action flow in under 4 sentences, we maximize clinical efficiency and immediate behavioral momentum.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,

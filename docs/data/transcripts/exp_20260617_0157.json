@@ -3,7 +3,7 @@
   "timestamp": "2026-06-17T21:15:51.658998",
   "strategy": {
     "name": "Empathetic Reflective Dialogue",
-    "hypothesis": "",
+    "hypothesis": "By focusing the therapist's response on validating emotions and asking a single value-based self-exploration question, we encourage the patient's intrinsic motivation.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,

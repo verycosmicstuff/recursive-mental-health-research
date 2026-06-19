@@ -2,8 +2,8 @@
   "id": "exp_20260617_0106",
   "timestamp": "2026-06-17T16:39:49.289608",
   "strategy": {
-    "name": "",
-    "hypothesis": "",
+    "name": "Warm Non-Directive Reframe (WNDR) v1.0",
+    "hypothesis": "By integrating validation, targeted open-ended questioning, and a micro-step under 120 words, we maintain a warm, non-directive alliance while encouraging behavioral shifts.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,

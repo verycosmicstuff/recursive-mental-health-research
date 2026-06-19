@@ -2,8 +2,8 @@
   "id": "exp_0016",
   "timestamp": "2026-06-17T02:49:39.282596",
   "strategy": {
-    "name": "",
-    "hypothesis": "",
+    "name": "Micro-Validation & Action Loop (MVAL) v1.0",
+    "hypothesis": "By starting with highly evocative validation followed by a low-stakes collaborative question, we encourage engagement and self-efficacy without overwhelming the client.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,

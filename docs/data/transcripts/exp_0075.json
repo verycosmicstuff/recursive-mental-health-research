@@ -2,8 +2,8 @@
   "id": "exp_0075",
   "timestamp": "2026-06-17T08:55:58.340302",
   "strategy": {
-    "name": "",
-    "hypothesis": "",
+    "name": "Heading-Structured Reframe & Action (HSRA) v1.0",
+    "hypothesis": "By using clear headings for validation, reframing, and action, we enhance readability and structural compliance for the patient under 150 words.",
     "max_turns": 7,
     "weight_phq9_delta": 0.5,
     "weight_engagement": 0.25,
