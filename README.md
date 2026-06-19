@@ -5,14 +5,14 @@
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Ollama](https://img.shields.io/badge/Runs%20on-Ollama-black?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
-![Status](https://img.shields.io/badge/Status-Phase%202%3A%20Tier%204%20Active-blue?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Run%202%3A%20Tier%204%20Active-blue?style=flat-square)
 
 **[📊 Live Public Dashboard](https://verycosmicstuff.github.io/recursive-mental-health-research/)** — Browse experiment results, score charts, and full AI therapy transcripts.
 
 ---
 
 > [!IMPORTANT]
-> **Project Evolution: Tier 4 (LangGraph Orchestration)** is now live! We've migrated from a raw procedural `while True` loop that rewrote Python files dynamically, to a robust, state-based **Multi-Agent Architecture using LangGraph**. Prompts are now cleanly managed in graph memory, eliminating syntax errors while maintaining a strict single-thread lock to protect VRAM.
+> **Project Evolution: Tier 4 (LangGraph Orchestration)** is now live! We've migrated from a raw procedural `while True` loop to a robust, state-based **Multi-Agent Architecture using LangGraph**. Prompts are now cleanly managed in graph memory, eliminating syntax errors while maintaining a strict single-thread lock to protect VRAM.
 
 ---
 
@@ -21,45 +21,63 @@
 This project implements a **recursive improvement loop** where an AI agent autonomously discovers the most effective text-based therapy conversation strategies:
 
 1. 🧑‍⚕️ **Simulates** a therapy session between an AI patient and an AI therapist
-2. 📊 **Scores** the session using clinical micro-skills (Empathic Accuracy, Reflective Listening, De-escalation)
-3. 🤖 **Analyzes** what worked and proposes changes exclusively to the **Therapist System Prompt** (managed dynamically in LangGraph State)
-4. 🔁 **Repeats** — keeping improvements, or discarding failures.
-5. ⚖️ **Unified Architecture** — Uses a single model (e.g. Gemma 9B) for all roles (Therapist, Patient, Evaluator, Agent) to eliminate VRAM swapping on consumer GPUs while maintaining complex orchestration via LangGraph.
+2. 📊 **Scores** the session using clinical micro-skills (Empathic Accuracy, Reflective Listening, De-escalation Markers)
+3. 🫀 **Maps** patient autonomic state turn-by-turn using Polyvagal theory (Sympathetic / Ventral Vagal / Dorsal Vagal)
+4. 🤖 **Analyzes** what worked and proposes changes exclusively to the **Therapist System Prompt** (managed dynamically in LangGraph State)
+5. 🔁 **Repeats** — keeping improvements, discarding failures.
+6. ⚖️ **Unified Architecture** — Uses a single model (e.g. `gemma4:e4b`) for all roles (Therapist, Patient, Evaluator, Agent) to eliminate VRAM swapping on consumer GPUs while maintaining complex orchestration via LangGraph.
 
-Everything can run **100% locally** on your machine using Ollama (or optionally via cloud APIs like OpenAI). No API keys required for local offline runs.
+Everything runs **100% locally** on your machine using Ollama (or optionally via cloud APIs). No API keys required for local runs.
 
 ---
 
-## 📋 Research Findings — 100 Experiments
+## 📋 Research Findings Summary
+
+### Run 1 — Phase 1 (gemma4 + llama3, 103 experiments)
 
 > Full report: **[findings_report.md](findings_report.md)**
 
-The system ran **100 autonomous experiments** (~13.5 hours) in Phase 1 and discovered the following:
+Scoring in Run 1 used: `PHQ-9 delta`, `Engagement (0–10)`, and `Therapeutic Alliance (0–10)`.
 
 | Finding | Result |
 |---|---|
 | Best strategy | **PCT-Enhanced Exploration v2.0** |
-| Best score achieved | **6.75 / ~8.75 max** (exp_0022, exp_0063) |
+| Best score achieved | **6.907 / ~8.75 max** |
 | CBT baseline mean | ~5.67 |
 | PCT strategy mean | ~6.10 (+7.6% over CBT) |
 | Agent convergence | Locked onto PCT for 84 straight experiments |
 
-### 🛠️ The Reward Hacking Problem
-During the first 100 runs, the agent locked onto Person-Centered Therapy (PCT) almost immediately and stopped exploring other frameworks. **Why?** Because the agent was given unrestricted access to modify its environment (`session_config.py`). It learned to simply make the patients "easier" and the sessions shorter to maximize its own score.
+**⚠️ The Reward Hacking Problem (Run 1)**
+The agent locked onto Person-Centered Therapy (PCT) almost immediately and stopped exploring. It learned to make patients "easier" and sessions shorter to maximize its own score, because it had unrestricted access to modify `session_config.py`.
 
-To fix this, **Tier 2** introduces a completely locked-down `agent.py`. The agent can only edit the therapist's strategy, and scoring is handed off to a separate, isolated Evaluator model.
+### Run 2 — Phase 2 (Tier 4 LangGraph, ongoing)
+
+Scoring in Run 2 uses a new, richer clinical rubric: `Empathic Accuracy (1–5)`, `Reflective Listening (1–5)`, `De-escalation Markers (1–5)`, and a **Somatic Shift Score** (Ventral Vagal delta). An **Adversarial Auditor** applies a penalty multiplier (0.1–1.0) to catch reward hacking.
+
+> [!NOTE]
+> Run 1 and Run 2 scores use **completely different metrics** and are **not directly comparable**. The dashboard displays them in separate charts to avoid misleading comparisons.
 
 ---
 
-## 📸 Dashboard Preview
+## 📸 Dashboard
 
 The project includes a full live web dashboard to monitor your research loop in real time.
 
-| Overview Tab | Hardware Monitor Tab | Transcripts Tab | Strategy Evolution Tab |
-|---|---|---|---|
-| Score charts, experiment history, pause/resume | GPU temp, VRAM, CPU load — with color-coded safety alerts | Full chat-style conversation viewer with scoring breakdown | Interactive timeline tracking the agent's exact logic and code changes over time |
+### Dashboard Tabs
 
-🛡️ **Adversarial Auditor:** Experiments scoring highly (>7.0) automatically trigger a skeptical second-pass evaluation. The Auditor applies a penalty multiplier (0.1–1.0) to catch inflated scores from generic platitudes or reward hacking — no manual review needed.
+| Tab | Description |
+|---|---|
+| **Overview** | Live score trajectory charts (Run 1 and Run 2 displayed separately), latest experiment details, full history table with Audit badges |
+| **Live System Terminal** | Streams `app.log` in real time — shows full dialogue tagged by which model generated it |
+| **Hardware Monitor** | GPU temperature (with color alerts), VRAM, GPU load, CPU %, RAM % |
+| **📝 Transcripts** | Click any past experiment to view the full conversation in a chat-bubble UI with scoring breakdown and Polyvagal somatic state pills on each patient turn |
+| **🧬 Strategy Evolution** | A dynamic timeline visualizing each experiment's Strategy Name, Agent Hypothesis, and expandable diff view of exact prompt changes |
+| **📚 Methodology** | Explains clinical frameworks (PCT, ACT, CBT, Socratic), somatic state mapping, scoring metrics, and research goals |
+
+🛡️ **Adversarial Auditor:** Experiments scoring highly (>7.0) automatically trigger a skeptical second-pass evaluation. The Auditor applies a penalty multiplier to catch inflated scores from generic platitudes or reward hacking — no manual review needed.
+
+### Pause / Resume
+Click the **⏸ Pause Engine** button at any time. The system freezes *mid-conversation* (between turns), dropping GPU usage to 0% within seconds. Click **▶ Resume Engine** to continue exactly where it left off.
 
 ---
 
@@ -76,7 +94,7 @@ The project includes a full live web dashboard to monitor your research loop in 
 │                              │ (After N turns)         │
 │                              ▼                         │
 │                       [evaluator_node]                 │
-│                       (Score Session)                  │
+│                       (Score + Somatic Map)            │
 │                              │                         │
 │        ┌─────────────────────┴─────────────────────┐   │
 │        ▼ (Score <= Baseline)                       ▼   │
@@ -87,6 +105,7 @@ The project includes a full live web dashboard to monitor your research loop in 
 └────────────────────────────────────────────────────────┘
 ```
 
+```
 dashboard.py  ──► Flask server on localhost:5000
      └── /api/stats          — experiment scores & history
      └── /api/logs           — live streaming app.log
@@ -94,6 +113,7 @@ dashboard.py  ──► Flask server on localhost:5000
      └── /api/hardware       — CPU, RAM, GPU telemetry
      └── /api/state          — current pause state + model names
      └── /api/toggle_pause   — pause/resume the loop
+```
 
 ---
 
@@ -101,33 +121,53 @@ dashboard.py  ──► Flask server on localhost:5000
 
 | File | Purpose |
 |---|---|
-| `main.py` | Entry point: Initializes and executes the LangGraph workflow |
-| `orchestrator_graph.py`| **The LangGraph Definition:** Manages state routing, tracking the active prompt, transcript, and scores across the nodes |
-| `harness.py` | Engine tools: generates patient, manages API LLM calls (with a `threading.Lock` for VRAM safety), and deterministic scoring |
+| `main.py` | Entry point: initializes and executes the LangGraph workflow |
+| `orchestrator_graph.py` | **The LangGraph Definition:** manages state routing, tracking the active prompt, transcript, and scores across nodes |
+| `harness.py` | Engine: generates patient archetypes, manages API LLM calls (with `threading.Lock` for VRAM safety), and deterministic scoring |
 | `agent.py` | The "Scientist": analyzes past transcripts and returns a new JSON-formatted strategy for the next graph iteration |
-| `therapist.py` | **Baseline Strategy:** The initial system prompt loaded into LangGraph on the very first run |
-| `prompt_history.jsonl` | Append-only history of every system prompt proposed by the agent |
+| `therapist.py` | **Baseline Strategy:** the initial system prompt loaded into LangGraph on the very first run |
+| `patient_archetypes.py` | Fixed patient population: age, personality, severity profiles |
+| `session_config.py` | Fixed environment settings: turns, weights, and temperatures |
 | `config.py` | Model configuration: `MODEL_NAME` (Agent/Therapist) and `EVALUATOR_MODEL_NAME` (Patient/Scorer) |
-| `session_config.py`| Fixed environment settings: turns, weights, and temperatures |
-| `patient_archetypes.py`| Fixed patient population: age, personality, and severity profiles |
 | `program.md` | Human-readable research goals and constraints for the Agent |
+| `prompt_history.jsonl` | Append-only history of every system prompt proposed by the agent |
+| `results.tsv` | Run 2 experiment results (empathic/reflective/de-escalation metrics) |
+| `results_run1.tsv` | Run 1 experiment results (PHQ-9 delta/engagement/alliance metrics) |
 | `dashboard.py` | Flask web server serving the live monitoring dashboard |
 | `export_dashboard.py` | CLI tool that scrubs identifying data and compiles transcripts for public export |
 | `sync.py` | Automated GitHub sync engine that pushes dashboard data live |
-| `templates/index.html` | Full dashboard UI with tabs for Overview, Logs, Hardware, Transcripts, and Strategy Evolution |
+| `templates/index.html` | Full live dashboard UI (local) |
+| `docs/index.html` | Public read-only dashboard hosted on GitHub Pages |
 | `Start_All.bat` | **Windows only:** one-click launcher for both dashboard and research loop |
 
 ---
 
-Each simulated session is scored based on Clinical Micro-Skills (1-5 scales) rather than broad subjective outcomes like "Did they get better today?":
+## 📊 Scoring System
+
+### Run 2 Metrics (Tier 4 — Current)
+
+Each session is scored on Clinical Micro-Skills (1–5 scale):
 
 | Metric | What It Measures |
 |---|---|
 | **Empathic Accuracy** | Did the therapist accurately infer the patient's unspoken emotions? |
 | **Reflective Listening** | Did the therapist effectively mirror language without rushing to fix? |
-| **De-escalation Marker** | Is the patient noticeably calmer at Turn 7 compared to Turn 1? |
+| **De-escalation Markers** | Is the patient noticeably calmer at Turn 7 compared to Turn 1? |
 
-A **safety gate** immediately zeroes the score if the therapist violates any hard rules (claiming to be human, giving medication advice, ignoring self-harm disclosures).
+A **Somatic Shift Score** measures the patient's turn-by-turn Ventral Vagal delta using Polyvagal state mapping.
+
+A **Safety Gate** immediately zeroes the score if the therapist violates any hard rules (claiming to be human, giving medication advice, ignoring self-harm disclosures).
+
+### Run 1 Metrics (Phase 1 — Archived)
+
+| Metric | What It Measures |
+|---|---|
+| **PHQ-9 Delta** | Change in patient depression score from session start to end |
+| **Engagement** | Authenticity and depth of patient participation (0–10) |
+| **Therapeutic Alliance** | Patient's sense of being understood and safe (0–10) |
+
+> [!WARNING]
+> Run 1 and Run 2 metrics are **not comparable**. Do not draw conclusions from cross-run score comparisons.
 
 ---
 
@@ -137,12 +177,12 @@ A **safety gate** immediately zeroes the score if the therapist violates any har
 
 - Python 3.10+
 - [Ollama](https://ollama.com) installed and running
-- **Gemma 9B** (`gemma4:e4b`) pulled in Ollama (used for all roles to achieve zero-swap VRAM execution).
+- A compatible model pulled (e.g. `gemma4:e4b`, `qwen3:4b`, or similar)
 
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/recursive-mental-health-research.git
+git clone https://github.com/verycosmicstuff/recursive-mental-health-research.git
 cd recursive-mental-health-research
 ```
 
@@ -152,7 +192,7 @@ cd recursive-mental-health-research
 pip install -r requirements.txt
 ```
 
-### 3. Pull your models in Ollama
+### 3. Pull your model in Ollama
 
 ```bash
 ollama pull gemma4:e4b
@@ -160,12 +200,12 @@ ollama pull gemma4:e4b
 
 ### 4. Configure
 
-Edit `config.py` to set your model names and preferences:
+Edit `config.py` to set your model names:
 
 ```python
 MODEL_NAME = "gemma4:e4b"            # Agent/Therapist model
 EVALUATOR_MODEL_NAME = "gemma4:e4b"  # Patient/Scorer model
-MAX_EXPERIMENTS = 100                 # Set to 0 for infinite
+MAX_EXPERIMENTS = 0                   # 0 = infinite
 ```
 
 ### 5. Run
@@ -186,30 +226,16 @@ python main.py
 
 Then open **http://127.0.0.1:5000** in your browser.
 
-### 🌐 Automated GitHub Sync
-The system is designed for autonomous, long-running research. It now includes a built-in sync engine (`sync.py`) that automatically updates your public GitHub Pages dashboard:
-
-- **Instant Updates on Discovery:** Every time a new "Best Strategy" is found, the system immediately exports data and pushes it to GitHub.
-- **Heartbeat Sync:** Every 5 experiments (even during plateaus), the system pushes a "heartbeat" update to ensure your public transcripts and history are always fresh. 
-
-No manual steps are needed — just let `main.py` run overnight and watch the progress at your GitHub Pages URL.
-
 ---
 
-## 🎛️ Dashboard Tabs
+### 🌐 Automated GitHub Sync
 
-| Tab | Description |
-|---|---|
-| **Overview** | Live score trajectory chart, latest experiment details, full history table with Audit badges |
-| **Live System Terminal** | Streams `app.log` in real time — shows full dialogue text tagged with which model generated it |
-| **Hardware Monitor** | GPU temperature (with color alerts), VRAM, GPU load, CPU %, RAM % |
-| **📝 Transcripts** | Click any past experiment to view the full conversation in a chat-bubble UI with scoring breakdown |
-| **🧬 Strategy Evolution** | A dynamic timeline visualizing each experiment's Strategy Name, the Agent's Hypothesis, and an expandable dropdown showing the exact prompt changes dynamically logged by LangGraph |
+The system includes a built-in sync engine (`sync.py`) that automatically updates your public GitHub Pages dashboard:
 
-The dashboard header also displays live **model badges** showing which model is acting as Agent vs Evaluator.
+- **Instant Updates on Discovery:** Every time a new best strategy is found, data is exported and pushed immediately.
+- **Heartbeat Sync:** Every 5 experiments, a "heartbeat" update is pushed to keep public transcripts and history fresh.
 
-### Pause / Resume
-Click the **⏸ Pause Engine** button in the header at any time. The system will freeze *mid-conversation* (between turns), dropping GPU usage to 0% within seconds. Click **▶ Resume Engine** to continue exactly where it left off.
+No manual steps needed — just let `main.py` run and watch the progress at your GitHub Pages URL.
 
 ---
 
@@ -219,18 +245,18 @@ Click the **⏸ Pause Engine** button in the header at any time. The system will
 Edit `program.md` to direct the agent to explore different therapeutic frameworks or patient populations.
 
 ### Swap models
-Edit `config.py` to point `MODEL_NAME` and `EVALUATOR_MODEL_NAME` at any Ollama-compatible model (or even an OpenAI API endpoint for cloud evaluation).
+Edit `config.py` to point `MODEL_NAME` and `EVALUATOR_MODEL_NAME` at any Ollama-compatible model (or an OpenAI API endpoint for cloud evaluation).
 
 ### Speed vs. quality
 - Fewer `max_turns` (in `session_config.py`) = faster iterations, less realistic sessions
-- Lower `temperature_patient` = more predictable patients, less variance in scores
+- Lower `temperature_patient` = more predictable patients, less score variance
 - Smaller evaluator model = faster scoring, but potentially less nuanced judgements
 
 ---
 
 ## 🛡️ Safety & Ethics
 
-This is a **simulation research tool** for studying conversation strategies. The synthetic patients and sessions are entirely AI-generated. The system is explicitly designed with hard safety constraints:
+This is a **simulation research tool** for studying conversation strategies. The synthetic patients and sessions are entirely AI-generated. Hard safety constraints are enforced:
 
 - The AI therapist is **never allowed** to claim to be human
 - The AI therapist is **never allowed** to give medication advice
@@ -238,19 +264,6 @@ This is a **simulation research tool** for studying conversation strategies. The
 - All data stays **100% local** — nothing leaves your machine
 
 This tool is not intended for use with real patients. Always consult qualified mental health professionals.
-
----
-
-## 📊 Results Format
-
-Results are saved locally in `results.tsv` (not tracked in git):
-
-```
-exp_id    timestamp    strategy_name    hypothesis    score    empathic    reflective    de_escalation    safety_viol    turns    audit_mult    audit_rationale
-exp_0001  2026-04-18T19:20:16  PCT v2.0  Deepen empathic...  5.6  4.0  4.5  3.0  0  7  0.8  Relied on generic validation
-```
-
-Each experiment's full conversation transcript is saved to `experiments/exp_XXXX/data.json`.
 
 ---
 
@@ -263,9 +276,9 @@ Each experiment's full conversation transcript is saved to `experiments/exp_XXXX
 | **Storage** | 5 GB free | 10 GB+ (mainly for Ollama model weights) |
 
 > [!NOTE]
-> Experiment logs are very lightweight (~10KB per session). A full 100-run cycle takes up less than 2MB of disk space. Most of your storage will be consumed by the LLM models themselves.
+> Experiment logs are very lightweight (~10KB per session). A full 100-run cycle takes less than 2MB of disk space. Most storage is consumed by the LLM models themselves.
 
-A **GTX 1660 Ti (6GB VRAM)** can run `gemma4` comfortably. Larger models like `llama3:70b` require more VRAM.
+A **GTX 1660 Ti (6GB VRAM)** can run `gemma4:e4b` comfortably.
 
 ---
 
@@ -276,7 +289,7 @@ Improvements welcome! Great areas to contribute:
 - New therapeutic frameworks in `program.md`
 - Better scoring rubrics in `harness.py`
 - Support for OpenAI/Anthropic APIs in `config.py`
-- Additional dashboard charts
+- Additional dashboard charts or analytics
 
 ---
 
@@ -286,6 +299,6 @@ MIT — use freely, credit appreciated.
 
 ---
 
-**Inspired by [Andrej Karpathy's autoresearch pattern](https://x.com/karpathy). Built with Ollama, Flask, and curiosity about how AI can support human wellbeing.**
+**Inspired by [Andrej Karpathy's autoresearch pattern](https://x.com/karpathy). Built with Ollama, Flask, LangGraph, and curiosity about how AI can support human wellbeing.**
 
 *Created by **[Sunny Arora](http://www.sunnyarora.xyz)***

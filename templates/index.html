@@ -56,11 +56,15 @@
 
         <div id="view-overview">
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
-            <!-- Main Chart -->
+            <!-- Run 2 Chart -->
             <div class="card col-span-2">
-                <h2 class="text-xl font-semibold mb-4 text-slate-200">Score Trajectory</h2>
-                <div style="height: 300px;">
-                    <canvas id="scoreChart"></canvas>
+                <div class="flex items-center gap-3 mb-4">
+                    <h2 class="text-xl font-semibold text-slate-200">Run 2 — Score Trajectory</h2>
+                    <span class="px-2 py-0.5 text-[10px] bg-teal-500/20 text-teal-400 border border-teal-500/30 rounded-full font-medium tracking-wide">ACTIVE</span>
+                </div>
+                <p class="text-xs text-slate-500 -mt-2 mb-3">Metrics: Empathic Accuracy · Reflective Listening · De-escalation (1–5 scale)</p>
+                <div style="height: 280px;">
+                    <canvas id="scoreChartRun2"></canvas>
                 </div>
             </div>
 
@@ -82,6 +86,18 @@
                         <div><span class="block text-xs text-slate-400">Reflective</span><strong id="l-ref" class="text-indigo-400">-</strong></div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Run 1 Chart -->
+        <div class="card mb-8">
+            <div class="flex items-center gap-3 mb-4">
+                <h2 class="text-xl font-semibold text-slate-200">Run 1 — Score Trajectory</h2>
+                <span class="px-2 py-0.5 text-[10px] bg-slate-500/20 text-slate-400 border border-slate-500/30 rounded-full font-medium tracking-wide">ARCHIVED</span>
+            </div>
+            <p class="text-xs text-slate-500 -mt-2 mb-3">Metrics: PHQ-9 Delta · Engagement · Alliance (0–10 scale) — <strong class="text-amber-400/70">Not comparable with Run 2</strong></p>
+            <div style="height: 200px;">
+                <canvas id="scoreChartRun1"></canvas>
             </div>
         </div>
 
@@ -595,22 +611,24 @@
             });
         }
 
-        let chart;
+        let chartRun2, chartRun1;
         
-        function initChart() {
-            const ctx = document.getElementById('scoreChart').getContext('2d');
-            chart = new Chart(ctx, {
+        function createChart(canvasId, color, rgbaColor) {
+            const ctx = document.getElementById(canvasId).getContext('2d');
+            return new Chart(ctx, {
                 type: 'line',
                 data: {
                     labels: [],
                     datasets: [{
-                        label: 'Total Score',
+                        label: 'Score',
                         data: [],
-                        borderColor: '#2dd4bf',
-                        backgroundColor: 'rgba(45, 212, 191, 0.1)',
+                        borderColor: color,
+                        backgroundColor: rgbaColor,
                         borderWidth: 2,
                         tension: 0.3,
-                        fill: true
+                        fill: true,
+                        pointRadius: 3,
+                        pointHoverRadius: 5
                     }]
                 },
                 options: {
@@ -618,11 +636,16 @@
                     maintainAspectRatio: false,
                     scales: {
                         y: { grid: { color: '#334155' }, ticks: { color: '#94a3b8' } },
-                        x: { grid: { display: false }, ticks: { color: '#94a3b8' } }
+                        x: { grid: { display: false }, ticks: { color: '#94a3b8', maxRotation: 45 } }
                     },
                     plugins: { legend: { display: false } }
                 }
             });
+        }
+
+        function initChart() {
+            chartRun2 = createChart('scoreChartRun2', '#2dd4bf', 'rgba(45, 212, 191, 0.1)');
+            chartRun1 = createChart('scoreChartRun1', '#818cf8', 'rgba(129, 140, 248, 0.1)');
         }
 
         async function updateDashboard() {
@@ -632,23 +655,35 @@
                 
                 if (data.experiments && data.experiments.length > 0) {
                     window.globalExperiments = data.experiments;
+
+                    // Split experiments by run
+                    const run1Exps = data.experiments.filter(e => (e.run || '').includes('Run 1'));
+                    const run2Exps = data.experiments.filter(e => !(e.run || '').includes('Run 1'));
+
+                    // Best scores per run
+                    const run2Best = run2Exps.length > 0 ? Math.max(...run2Exps.map(e => e.score)) : 0;
                     
-                    document.getElementById('best-score').textContent = data.best_score.toFixed(2);
+                    document.getElementById('best-score').textContent = run2Best.toFixed(2);
                     
-                    // Update Chart
-                    chart.data.labels = data.experiments.map(e => e.exp_id.replace('exp_',''));
-                    chart.data.datasets[0].data = data.experiments.map(e => e.score);
-                    chart.update();
+                    // Update Run 2 chart
+                    chartRun2.data.labels = run2Exps.map(e => e.exp_id.replace('exp_','').replace('baseline_','B'));
+                    chartRun2.data.datasets[0].data = run2Exps.map(e => e.score);
+                    chartRun2.update();
+
+                    // Update Run 1 chart
+                    chartRun1.data.labels = run1Exps.map(e => e.exp_id.replace('run1_exp_',''));
+                    chartRun1.data.datasets[0].data = run1Exps.map(e => e.score);
+                    chartRun1.update();
                     
-                    // Update Latest Details
-                    const latest = data.experiments[data.experiments.length - 1];
+                    // Update Latest Details (from Run 2 only)
+                    const latest = run2Exps.length > 0 ? run2Exps[run2Exps.length - 1] : data.experiments[data.experiments.length - 1];
                     document.getElementById('latest-strategy').textContent = latest.strategy_name;
                     document.getElementById('latest-hypothesis').textContent = latest.hypothesis;
                     document.getElementById('l-score').textContent = latest.score.toFixed(2);
-                    document.getElementById('l-emp').textContent = latest.empathic.toFixed(1);
-                    document.getElementById('l-ref').textContent = latest.reflective.toFixed(1);
+                    document.getElementById('l-emp').textContent = (latest.empathic || 0).toFixed(1);
+                    document.getElementById('l-ref').textContent = (latest.reflective || 0).toFixed(1);
                     
-                    // Update Table (reverse chronological)
+                    // Update Table (reverse chronological, all runs)
                     const tbody = document.getElementById('table-body');
                     tbody.innerHTML = '';
                     const reversed = [...data.experiments].reverse();
@@ -656,15 +691,20 @@
                     reversed.forEach((e, idx) => {
                         const tr = document.createElement('tr');
                         tr.className = idx === 0 ? 'bg-slate-800/50' : 'border-b border-slate-800 hover:bg-slate-800/30';
-                        const isBest = e.score === data.best_score;
+                        const isRun1 = (e.run || '').includes('Run 1');
+                        const bestForRun = isRun1 ? (run1Exps.length > 0 ? Math.max(...run1Exps.map(x => x.score)) : 0) : run2Best;
+                        const isBest = e.score === bestForRun;
                         
                         let auditBadge = '';
                         if (e.audit_mult < 1.0) {
                             auditBadge = `<span class="ml-2 px-2 py-0.5 text-xs bg-red-500/20 text-red-400 border border-red-500/50 rounded-full cursor-help" title="${e.audit_rationale}">Audited [x${e.audit_mult}]</span>`;
                         }
+                        let runBadge = isRun1
+                            ? '<span class="ml-2 px-1.5 py-0.5 text-[10px] bg-indigo-500/20 text-indigo-400 border border-indigo-500/30 rounded">Run 1</span>'
+                            : '';
                         
                         tr.innerHTML = `
-                            <td class="py-3 px-4 font-mono text-slate-400">${e.exp_id}</td>
+                            <td class="py-3 px-4 font-mono text-slate-400">${e.exp_id}${runBadge}</td>
                             <td class="py-3 px-4 ${isBest ? 'text-teal-400 font-medium' : 'text-slate-300'}">
                                 ${e.strategy_name} ${isBest ? '⭐' : ''} ${auditBadge}
                             </td>
