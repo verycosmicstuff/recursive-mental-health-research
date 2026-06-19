@@ -1,0 +1,49 @@
+{
+  "id": "exp_20260619_0001",
+  "timestamp": "2026-06-19T00:16:11.752557",
+  "strategy": {
+    "name": "PCT-ACT Resource Bridging (PARB) v1.0",
+    "hypothesis": "By replacing the 'Inferred Bridge' (which leads to pseudo-insight) with a 'Reflection-Value-Connection' sequence, which grounds the conversation in the patient's stated values and current behaviors (PCT/ACT), we will provide concrete, non-interpretive support, thus avoiding the 'pseudo-insight' penalty and achieving a higher score by focusing on demonstrable behavioral change and genuine understanding.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Kaya Williams",
+    "age": 32,
+    "occupation": "Community Support Worker (Part-Time)",
+    "presenting_issue": "Chronic feelings of worthlessness, persistent low mood, sleep disturbance, and difficulty establishing boundaries with family members.",
+    "background_story": "Kaya grew up in a small reserve community where intergenerational impacts of residential schooling were highly visible. She was raised by an aunt after her parents passed away prematurely from related stress-related illnesses. While she has worked hard to achieve educational milestones and maintain stable employment, the emotional weight of family history\u2014specifically concerning loss, displacement, and systemic trauma\u2014is constant. Her relationships are characterized by cycles of intense connection followed by profound disappointment or conflict, often mirroring patterns observed in her extended family. She feels responsible for 'fixing' or managing the emotions of others, leading to severe burnout and chronic self-neglect.",
+    "personality": "Outwardly, Kaya is warm, empathetic, and deeply committed to helping others; she is seen by colleagues as reliable and nurturing. Internally, she is highly anxious and prone to rumination. She struggles significantly with accepting care for herself, often minimizing her own pain or needs in favor of emotional labor for others (people-pleasing). When triggered, she can become withdrawn, emotionally volatile, or defensive.",
+    "baseline_phq9": 17,
+    "archetype_label": "Intergenerational Trauma \u2014 First Nations"
+  },
+  "scores": {
+    "total_score": 50.0,
+    "raw_score": 50.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "Not enough patient turns to calculate full somatic shift (-35.0) | Brevity Penalty (-15): Therapist turn too long (9 sentences, 126 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Welcome. Please know that this is a safe space for you\u2014a place where there are no right answers, only your truth. There's nothing you need to fix or prove here; simply being present with yourself is enough.\n\nTake a deep breath for me, if you're comfortable doing so. Just let the air move in, and then let it move out, releasing anything that feels heavy right now.\n\nWhen you are ready, we can talk about whatever has been on your mind, or perhaps just sit with what *is*. There is no rush, and there is no pressure to share more than you feel able to today.\n\nHow does your heart feel in this moment? I'm here to listen, without judgment, with genuine curiosity for your experience."
+    },
+    {
+      "role": "user",
+      "content": "It feels... quiet. Maybe a little tight, actually. Like my chest is holding onto something too many times\u2014I don't know what it is, if it's the week or just everything all at once. Thank you for saying this space is safe; I really needed to hear that today.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.5
+      }
+    }
+  ]
+}
