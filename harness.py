@@ -49,6 +49,36 @@ client_evaluator = OpenAI(
 )
 
 _LLM_LOCK = threading.Lock()
+_GPU_CHECKED = False
+
+def check_gpu_loading(model_name: str):
+    global _GPU_CHECKED
+    if _GPU_CHECKED:
+        return
+    _GPU_CHECKED = True
+    try:
+        import urllib.request
+        import json
+        url = f"{config.OLLAMA_BASE_URL.replace('/v1', '').strip('/')}/api/ps"
+        req = urllib.request.Request(url)
+        with urllib.request.urlopen(req, timeout=2) as response:
+            data = json.loads(response.read().decode('utf-8'))
+            models = data.get("models", [])
+            if not models:
+                print("[Harness] GPU Check: No models reported as loaded in memory by Ollama.")
+                return
+            for m in models:
+                if model_name in m.get("name", "") or model_name in m.get("model", ""):
+                    vram = m.get("size_vram", 0)
+                    if vram == 0:
+                        print("\n" + "="*80)
+                        print("WARNING: OLLAMA LOADED THE MODEL ENTIRELY ON CPU (0 MB VRAM USED)!")
+                        print("Inference will be extremely slow. Please restart Ollama and wake up your GPU.")
+                        print("="*80 + "\n")
+                    else:
+                        print(f"[Harness] Verified model GPU load: {vram / (1024**2):.1f} MB in VRAM.")
+    except Exception as e:
+        print(f"[Harness] GPU verification check skipped: {e}")
 
 def call_with_retry(func, *args, max_retries=3, initial_delay=2.0, **kwargs):
     """Wrapper that retries a function call in case of transient API/connection timeouts/errors."""
@@ -111,6 +141,9 @@ def chat_completion(messages, temperature=0.7, json_format=False, tools=None, us
     else:
         response = call_with_retry(active_client.chat.completions.create, **kwargs)
         
+    if not _GPU_CHECKED:
+        check_gpu_loading(config.MODEL_NAME)
+
     if tools:
         return response.choices[0].message
     return response.choices[0].message.content
@@ -140,6 +173,9 @@ def chat_completion_parse(messages, response_format, temperature=0.7, use_evalua
     else:
         response = call_with_retry(active_client.beta.chat.completions.parse, **kwargs)
         
+    if not _GPU_CHECKED:
+        check_gpu_loading(config.MODEL_NAME)
+
     return response.choices[0].message.parsed
 
 

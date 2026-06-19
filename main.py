@@ -48,6 +48,14 @@ import sync
 import orchestrator_graph
 
 def main():
+    # Proactively query nvidia-smi to wake up laptop GPU from sleep before Ollama loads the model
+    try:
+        import subprocess
+        print("[Main] Waking up dedicated GPU...")
+        subprocess.run(['nvidia-smi', '--query-gpu=name', '--format=csv'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=3)
+    except Exception:
+        pass
+
     print("=====================================================")
     print("MENTAL HEALTH RESEARCH LOOP STARTING")
     print(f"Model: {config.MODEL_NAME}")
