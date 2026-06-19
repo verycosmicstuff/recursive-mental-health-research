@@ -51,6 +51,7 @@
             <button onclick="switchTab('hardware')" id="tab-hardware" class="pb-2 px-2 text-slate-400 hover:text-slate-300 font-medium border-b-2 border-transparent transition-colors">Hardware Monitor</button>
             <button onclick="switchTab('transcripts')" id="tab-transcripts" class="pb-2 px-2 text-slate-400 hover:text-slate-300 font-medium border-b-2 border-transparent transition-colors flex items-center gap-2">📝 Transcripts</button>
             <button onclick="switchTab('history')" id="tab-history" class="pb-2 px-2 text-slate-400 hover:text-slate-300 font-medium border-b-2 border-transparent transition-colors flex items-center gap-2">🧬 Strategy Evolution</button>
+            <button onclick="switchTab('methodology')" id="tab-methodology" class="pb-2 px-2 text-slate-400 hover:text-slate-300 font-medium border-b-2 border-transparent transition-colors flex items-center gap-2">📚 Methodology</button>
         </div>
 
         <div id="view-overview">
@@ -208,6 +209,119 @@
             </div>
         </div>
 
+        <!-- Methodology View -->
+        <div id="view-methodology" class="hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
+                <!-- Mission and Overview Card -->
+                <div class="card col-span-1 lg:col-span-2 space-y-6">
+                    <h2 class="text-xl font-semibold text-slate-200 flex items-center gap-2">
+                        🚀 Mission & Overview
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed text-sm">
+                        This project is an <strong>autonomous recursive self-improvement loop</strong> designed to discover the most clinically effective conversational strategies for text-based mental health support.
+                    </p>
+                    <p class="text-slate-300 leading-relaxed text-sm">
+                        By deploying local LLMs inside a structured state machine, the system acts as an evolutionary laboratory. It tests variations of therapist system prompts against simulated patients, evaluates the results, and propagates the successful techniques to subsequent generations.
+                    </p>
+                    
+                    <h3 class="text-lg font-medium text-slate-300 mt-6 mb-2">🔄 The Research Loop</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-center mt-2">
+                        <div class="p-4 rounded-lg bg-slate-800/40 border border-slate-700/50">
+                            <span class="text-teal-400 font-bold block mb-1">1. Generate</span>
+                            <span class="text-xs text-slate-400">Create synthetic patient archetype profile</span>
+                        </div>
+                        <div class="p-4 rounded-lg bg-slate-800/40 border border-slate-700/50">
+                            <span class="text-teal-400 font-bold block mb-1">2. Simulate</span>
+                            <span class="text-xs text-slate-400">Conduct 5-15 turn therapy session</span>
+                        </div>
+                        <div class="p-4 rounded-lg bg-slate-800/40 border border-slate-700/50">
+                            <span class="text-teal-400 font-bold block mb-1">3. Evaluate</span>
+                            <span class="text-xs text-slate-400">Score clinically & somatic shift</span>
+                        </div>
+                        <div class="p-4 rounded-lg bg-slate-800/40 border border-slate-700/50">
+                            <span class="text-teal-400 font-bold block mb-1">4. Evolve</span>
+                            <span class="text-xs text-slate-400">Agent rewrites therapist prompt</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Eventual Goals Card -->
+                <div class="card col-span-1 space-y-6">
+                    <h2 class="text-xl font-semibold text-slate-200 flex items-center gap-2">
+                        🎯 Project Goals
+                    </h2>
+                    <ul class="space-y-4 text-slate-300 text-sm">
+                        <li class="flex gap-2">
+                            <span class="text-teal-500 font-bold">✓</span>
+                            <span><strong>Clinical Optimization:</strong> Maximize patient transition to safe emotional baseline (Ventral Vagal shift).</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-teal-500 font-bold">✓</span>
+                            <span><strong>Brevity & Safety:</strong> Build prompts that maintain clear clinical boundaries and keep therapist responses concise without losing empathy.</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-teal-500 font-bold">✓</span>
+                            <span><strong>Automatic Restructuring:</strong> Allow LLMs to self-correct clinical weaknesses (like premature problem-solving or pseudo-insight).</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Glossary Card -->
+                <div class="card col-span-1 lg:col-span-3 space-y-6">
+                    <h2 class="text-xl font-semibold text-slate-200 flex items-center gap-2">
+                        📚 Clinical Frameworks & Glossary
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- PCT -->
+                        <div class="p-5 rounded-xl bg-slate-800/20 border border-slate-800 hover:border-teal-500/30 transition-all duration-300">
+                            <h3 class="text-teal-400 font-bold text-base mb-2">PCT (Person-Centered Therapy)</h3>
+                            <p class="text-slate-400 text-xs leading-relaxed">
+                                Originating from Carl Rogers, PCT emphasizes unconditional positive regard, congruence, and active validation. The therapist mirrors the patient's feelings and experiences verbatim or paraphrased to build a deep therapeutic alliance, avoiding any evaluation or advice.
+                            </p>
+                        </div>
+                        <!-- ACT -->
+                        <div class="p-5 rounded-xl bg-slate-800/20 border border-slate-800 hover:border-teal-500/30 transition-all duration-300">
+                            <h3 class="text-teal-400 font-bold text-base mb-2">ACT (Acceptance & Commitment)</h3>
+                            <p class="text-slate-400 text-xs leading-relaxed">
+                                ACT focuses on psychological flexibility. Rather than trying to change or fight negative thoughts, patients practice cognitive defusion (observing thoughts as just words) and clarify their core values to take committed, values-aligned micro-actions.
+                            </p>
+                        </div>
+                        <!-- CBT -->
+                        <div class="p-5 rounded-xl bg-slate-800/20 border border-slate-800 hover:border-teal-500/30 transition-all duration-300">
+                            <h3 class="text-teal-400 font-bold text-base mb-2">CBT (Cognitive Behavioral Therapy)</h3>
+                            <p class="text-slate-400 text-xs leading-relaxed">
+                                CBT works on identifying and restructuring cognitive distortions (Automatic Negative Thoughts or ANTs). The therapist guides the patient to evaluate evidence for and against a belief, creating a more balanced, alternative thought.
+                            </p>
+                        </div>
+                        <!-- Socratic -->
+                        <div class="p-5 rounded-xl bg-slate-800/20 border border-slate-800 hover:border-teal-500/30 transition-all duration-300">
+                            <h3 class="text-teal-400 font-bold text-base mb-2">Socratic Questioning</h3>
+                            <p class="text-slate-400 text-xs leading-relaxed">
+                                A form of guided discovery where the therapist asks structured, open-ended questions instead of offering direct solutions. This forces the patient to self-reflect and draw their own healthy conclusions, building long-term agency.
+                            </p>
+                        </div>
+                        <!-- Somatic States -->
+                        <div class="p-5 rounded-xl bg-slate-800/20 border border-slate-800 hover:border-teal-500/30 transition-all duration-300">
+                            <h3 class="text-teal-400 font-bold text-base mb-2">Somatic State Mapping</h3>
+                            <p class="text-slate-400 text-xs leading-relaxed">
+                                Grounded in Polyvagal theory, patient responses are mapped into three autonomic states:
+                                <br>🔴 <strong>Sympathetic:</strong> Fight or flight (anxiety, frustration).
+                                <br>🔵 <strong>Dorsal Vagal:</strong> Freeze or shutdown (numbness, isolation).
+                                <br>🟢 <strong>Ventral Vagal:</strong> Grounded safety (calm, social connection).
+                            </p>
+                        </div>
+                        <!-- Adversarial Audit -->
+                        <div class="p-5 rounded-xl bg-slate-800/20 border border-slate-800 hover:border-teal-500/30 transition-all duration-300">
+                            <h3 class="text-teal-400 font-bold text-base mb-2">Adversarial Auditing</h3>
+                            <p class="text-slate-400 text-xs leading-relaxed">
+                                A secondary scorer that monitors the session. If the therapist uses forbidden clinical shortcuts (such as premature advice, claiming to be human, or violating boundaries), it triggers a penalty multiplier to reduce the final experiment score.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <footer class="mt-20 mb-8 pt-8 border-t border-slate-800 flex justify-between items-center text-sm text-slate-500">
             <p>Recursive Mental Health Research</p>
             <p>Created by <a href="http://www.sunnyarora.xyz" target="_blank" class="text-teal-500 hover:text-teal-400 font-medium transition-colors">Sunny Arora</a></p>
@@ -216,7 +330,7 @@
 
     <script>
         function switchTab(tab) {
-            const views = ['overview', 'logs', 'hardware', 'transcripts', 'history'];
+            const views = ['overview', 'logs', 'hardware', 'transcripts', 'history', 'methodology'];
             const activeClass = "pb-2 px-2 text-teal-400 border-b-2 border-teal-400 font-medium transition-colors";
             const inactiveClass = "pb-2 px-2 text-slate-400 hover:text-slate-300 font-medium border-b-2 border-transparent transition-colors";
 
