@@ -3299,6 +3299,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 2 (qwen3:4b)"
+    },
+    {
+      "exp_id": "exp_20260618_0175",
+      "strategy_name": "Concise Cognitive Reframing (CCR)",
+      "hypothesis": "The previous attempts utilized a complex, multi-step structure (Reflection -> Challenge -> Action) which, while theoretically robust, resulted in overly wordy responses and triggered the 'Brevity' penalty, as indicated by the low scores despite high perceived depth.",
+      "score": 46.5,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 2 (qwen3:4b)"
     }
   ],
   "best_score": 91.25

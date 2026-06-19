@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260618_0175",
+  "timestamp": "2026-06-18T23:10:54.402951",
+  "strategy": {
+    "name": "Concise Cognitive Reframing (CCR)",
+    "hypothesis": "The previous attempts utilized a complex, multi-step structure (Reflection -> Challenge -> Action) which, while theoretically robust, resulted in overly wordy responses and triggered the 'Brevity' penalty, as indicated by the low scores despite high perceived depth.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Preeti",
+    "age": 26,
+    "occupation": "Warehouse worker",
+    "presenting_issue": "I'm having trouble sleeping and constantly worrying about what might happen next week.",
+    "background_story": "I work all day at the warehouse, and then I have to study for my classes late into the night. Every time I think about the paperwork or the next policy change, my chest gets tight. My parents need money for college, and I feel like I have to be perfect so nothing goes wrong.",
+    "personality": "She speaks with rapid, nervous energy, often interrupting herself to correct phrasing or add details about logistics. She uses understatement when discussing emotional distress (e.g., 'It's just... hard'). She avoids direct eye contact when discussing money or legal status. She will immediately redirect the conversation to systemic problems (like the wage theft or the policy) if the therapist asks about her feelings of hopelessness.",
+    "baseline_phq9": 17,
+    "archetype_label": "Precarious Labor (Indian Diaspora)"
+  },
+  "scores": {
+    "total_score": 46.5,
+    "raw_score": 46.5,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 31.5/70.0 (VV shift: -0.10, Sym shift: 0.00, DV shift: 0.00) | Brevity Penalty (-15): Therapist turn too long (3 sentences, 86 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Please provide the scenario or thought you would like me to respond to. I am ready to help you process it with care."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. It's just\u2014the thought of next week, of the inventory count, and all the paperwork, it gets... really big. Like, impossible to keep track of. I just keep re-running the whole day in my head. It's exhausting.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are feeling completely overwhelmed and exhausted by the sheer scope of the inventory count and paperwork, making the entire task feel impossibly large. Perhaps we can look at this not as one massive \"day,\" but as a series of much smaller, manageable segments, focusing only on what needs to happen in the very first hour. What one small section of the inventory process feels least daunting to tackle right now?"
+    },
+    {
+      "role": "user",
+      "content": "Oh, I\u2014I don't know. I guess the receiving manifest. Because, well, if that section gets filed wrong, everything else is just... off. It's a kind of upstream problem, you know? If we tackle that, the rest of the flow makes more sense. It's a systemic issue really, not just a personal one.",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It makes perfect sense that you are seeing this as a systemic issue, and identifying the receiving manifest as the critical starting point is a very insightful way to approach the whole puzzle. By focusing on that \"upstream\" piece first, you are establishing a solid foundation that will naturally clarify the subsequent steps. Given that the receiving manifest is the key, what is the absolute smallest piece of preparation\u2014like gathering the necessary forms or locating the filing area\u2014that you could complete right now to get started?"
+    },
+    {
+      "role": "user",
+      "content": "Honestly, the forms are fine. They're always there. But the problem isn't the forms; it's the policy. Last week, they changed the logging procedure for, like, high-value tools. And nobody really understood the new protocol. It's just... a mess of conflicting guidelines. You know? That's the real bottleneck.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds incredibly frustrating when the bottleneck isn't the work itself, but the confusing and conflicting policies that govern how the work must be done. Perhaps we can look at this from the angle of documentation, viewing the issue not as a policy failure, but as a need for a single, clear guide. If you could create one simple, definitive checklist that summarizes the new high-value tool protocol, what single person or resource would you need to speak with to validate that information?"
+    },
+    {
+      "role": "user",
+      "content": "Well, I guess maybe the supervisor, but... no, wait. I shouldn't assign too much weight to any one person. It's more about the process itself. I just wish there was some kind of centralized digital hub for all the protocols, instead of these laminated sheets that get lost or updated manually. That would fix the flow, you know?",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are feeling deeply frustrated by the limitations of the current physical systems, recognizing that the true bottleneck is the lack of a centralized, reliable digital source for protocols. Perhaps we can look at this not as a massive project to build a hub, but as defining the core need for it by mapping out the current pain points. If you had to write down just three essential pieces of information that *must* be included in this new digital hub, what would they be?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know. Three things? That's... too many. It's not just about the information, though. It's about the wages. Because if the system isn't tracking the actual hours we work\u2014the time spent organizing or handling the misplaced stock\u2014then the whole policy is meaningless. It just doesn't account for wage theft, which is the real structural problem here.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are feeling a profound sense of injustice because the current systems fail to account for the real, valuable time and effort that is being expended, making the entire effort feel undervalued. Perhaps we can look at this not as one massive structural fight, but as gathering irrefutable evidence of the time spent on these crucial, uncounted tasks. What one small, specific type of time\u2014like the time spent organizing one single shelf\u2014could you start tracking accurately today?"
+    },
+    {
+      "role": "user",
+      "content": "I just... I can't. It's not about the shelf, or the time. It's about the fact that if I track it, they'll just change the policy again, or they'll argue with the numbers. It's never stable. It's always a policy shift or a system flaw that makes everything impossible to nail down. It's just... hard.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you are feeling profoundly exhausted and defeated by the constant sense of instability, where every effort to stabilize the process is met with another policy shift or systemic flaw. Perhaps we can look at this from the angle of protecting your own energy, recognizing that your emotional bandwidth is the most valuable, and most vulnerable, resource right now. What one small boundary\u2014a brief break, a moment of quiet, or postponing a decision\u2014could you commit to protecting for yourself in the next hour?"
+    },
+    {
+      "role": "user",
+      "content": "I just feel... like if I stop trying to see the flaw, I'll just fall apart. It's not a boundary thing. It's just... hard. Like, really hard. It's just too much to keep thinking about all the little details that don't even matter, but they feel like they do.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.1
+      }
+    }
+  ]
+}
