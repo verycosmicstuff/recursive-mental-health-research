@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260619_0009",
+  "timestamp": "2026-06-20T00:01:41.538299",
+  "strategy": {
+    "name": "Concise Empathic-Motivational Bridge (CEMB) v2",
+    "hypothesis": "By integrating specific, concise techniques from PCT/MI into a structured sequence that mandates brevity (limiting responses to 4-5 sentences), we will maintain the high therapeutic alliance and exploratory depth while eliminating length penalties, thus improving the measurable score.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Rohan Khare",
+    "age": 27,
+    "occupation": "Data Analyst at a small startup,",
+    "presenting_issue": "> I've been experiencing anxiety and low mood since the pandemic. I feel like I'm constantly worried about losing my job and being unable to support my family back in India. It's hard for me to disconnect from work even after hours, and sometimes I feel overwhelmed by the pressure to be present on social media.",
+    "background_story": "I moved to the US a few years ago for a master's degree and ended up staying for work after graduation. My parents are still in India, and we have a small family business that relies on my financial support. I'm the primary breadwinner, but it's a lot of pressure,",
+    "personality": "quiet, reserved, detail-oriented. I tend to overthink and analyze things excessively.",
+    "baseline_phq9": 16,
+    "archetype_label": "Precarious Labor (Indian Diaspora)"
+  },
+  "scores": {
+    "total_score": 65.0,
+    "raw_score": 65.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 35.0/70.0 (VV shift: 0.00, Sym shift: -0.10, DV shift: 0.10)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Warmly: \"Hello! I'm so glad you're here. How are you feeling right now as we start our conversation today?\""
+    },
+    {
+      "role": "user",
+      "content": "Honestly, a bit anxious. Just getting out of bed was tough this morning.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.0
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "\"It sounds like the effort to get out of bed felt really overwhelming, and it's still lingering.\""
+    },
+    {
+      "role": "user",
+      "content": ", yeah. sometimes i wish i could just shut off my thoughts for a bit, but they're always racing... about work, about the business back home... can't seem to quiet them down.",
+      "somatic_state": {
+        "sympathetic": 0.0,
+        "dorsal_vagal": 0.53,
+        "ventral_vagal": 0.16999999999999998
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "\"It sounds like feeling overwhelmed by your thoughts is making it hard for you to relax and calm down, especially when there are so many things on your mind at once \u2013 work and family responsibilities.\""
+    },
+    {
+      "role": "user",
+      "content": "I know, right? It's always something. My parents will call me every week, asking about the business... and my manager is breathing down my neck for performance metrics... I feel like I'm juggling too many plates and they're all bound to crash eventually.",
+      "somatic_state": {
+        "sympathetic": 0.15,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.05
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "\"It seems like you're feeling really torn between wanting to meet everyone's expectations \u2013 your parents', your manager's \u2013 versus taking care of yourself in the midst of all this pressure.\""
+    },
+    {
+      "role": "user",
+      "content": "exactly... i feel guilty even thinking about myself, you know? it's always about providing for the family back home... but sometimes i wonder if anyone would even notice if i wasn't there.",
+      "somatic_state": {
+        "sympathetic": 0.0,
+        "dorsal_vagal": 0.0,
+        "ventral_vagal": 0.0
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "\"It sounds like there's a deep sense of responsibility and duty to your family, but alongside that is a quiet fear that you're replaceable \u2013 that they wouldn't miss you if you weren't around.\""
+    },
+    {
+      "role": "user",
+      "content": "(pauses for a moment) yeah... i guess that's what it feels like",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 1.0
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "\"Given how important it is to you to provide for your family, what would be one very tiny thing you could do right now \u2013 in the next hour \u2013 to honor that need and take care of yourself?\""
+    },
+    {
+      "role": "user",
+      "content": "close laptop on work project for this minute",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "\"That's a gentle start. Closing the laptop on the work project for just one minute can feel like a small act of self-care, acknowledging your limits and prioritizing rest.\""
+    },
+    {
+      "role": "user",
+      "content": ", I guess it feels weird to admit that even something as simple as shutting off my computer for a minute is a challenge. what if emails start pouring in and I'm needed right away?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.0
+      }
+    }
+  ]
+}

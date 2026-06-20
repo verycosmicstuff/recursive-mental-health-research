@@ -3503,6 +3503,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 3 (gemma4:e4b \u2014 Tier 5)"
+    },
+    {
+      "exp_id": "exp_20260619_0009",
+      "strategy_name": "Concise Empathic-Motivational Bridge (CEMB) v2",
+      "hypothesis": "By integrating specific, concise techniques from PCT/MI into a structured sequence that mandates brevity (limiting responses to 4-5 sentences), we will maintain the high therapeutic alliance and exploratory depth while eliminating length penalties, thus improving the measurable score.",
+      "score": 65.0,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 3 (gemma4:e4b \u2014 Tier 5)"
     }
   ],
   "best_score": 91.25,
