@@ -3455,6 +3455,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 3 (gemma4:e4b \u2014 Tier 5)"
+    },
+    {
+      "exp_id": "exp_20260619_0005",
+      "strategy_name": "CBT-Only Clarification",
+      "hypothesis": "By restricting ourselves to a single framework (Cognitive Behavioral Therapy) and using only concise, direct language in our prompts, we can better target specific thought patterns and behaviors without diluting our message or overcomplicating the conversation. This should lead to a higher PHQ-9 score delta and stronger alliance.",
+      "score": 52.75,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 3 (gemma4:e4b \u2014 Tier 5)"
     }
   ],
   "best_score": 91.25,

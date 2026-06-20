@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260619_0005",
+  "timestamp": "2026-06-19T23:36:16.724066",
+  "strategy": {
+    "name": "CBT-Only Clarification",
+    "hypothesis": "By restricting ourselves to a single framework (Cognitive Behavioral Therapy) and using only concise, direct language in our prompts, we can better target specific thought patterns and behaviors without diluting our message or overcomplicating the conversation. This should lead to a higher PHQ-9 score delta and stronger alliance.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Alexis 'Lexi' Thompson",
+    "age": 28,
+    "occupation": "Software Engineer - Remote Team Leader",
+    "presenting_issue": "Struggling with social isolation, loneliness, and feelings of disconnection from her loved ones due to long working hours as a remote worker. She is also experiencing low self-esteem, worthlessness, and pessimism about her future career.",
+    "background_story": "Lexi graduated from college during the pandemic, finding work in tech as an engineer with a company that allowed remote work arrangements. At first, she thrived on the independence but quickly became overwhelmed by the constant pressure to deliver results without direct oversight. She has since transitioned into leading small teams remotely, which adds more stress due to her inability to separate her personal life from work responsibilities. Her partner is supportive but also works full-time and leaves for extended periods. Lexi's mother passed away during the pandemic, leaving her with feelings of guilt and a deep longing for someone she can share her emotions with.",
+    "personality": "Lexi is introverted and meticulous by nature. She prides herself on being adaptable and independent but struggles to ask for help or admit vulnerability. Although highly competent in her career, she feels like an outsider among her peers due to the lack of face-to-face interactions. Lexi has difficulty setting boundaries between work and personal life, leading to burnout and a feeling of always being 'on'. She is introspective and reflective but often gets caught up in self-criticism when faced with challenges.",
+    "baseline_phq9": 14,
+    "archetype_label": "Isolated Remote Worker"
+  },
+  "scores": {
+    "total_score": 52.75,
+    "raw_score": 52.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 57.8/70.0 (VV shift: 0.40, Sym shift: -0.35, DV shift: -0.15) | Brevity Penalty (-15): Therapist turn too long (9 sentences, 113 words) | Lack of Grounding Cues (-20): Suggested physical exercise without validation/grounding tokens",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Welcome to our therapy session today! I'm so glad you're here. Please make yourself comfortable, and let's get started.\n\nBefore we begin, I want to acknowledge that coming to therapy takes a lot of courage, and I appreciate your willingness to take this step towards taking care of yourself. My goal is to create a safe and non-judgmental space for us to explore your thoughts, feelings, and experiences together.\n\nNow, let's get started. Can you tell me what brings you here today? What are some things that have been on your mind lately, or challenges that you're facing that you'd like some support with?\n\n(Leaning forward slightly, with a warm and empathetic tone)"
+    },
+    {
+      "role": "user",
+      "content": "Honestly, I'm not even sure where to start. It feels like everything is just... piling up on me. My work has been crazy since taking on this team lead role, and it's hard to separate my personal life from the job. I feel like I'm constantly stressed about meeting deadlines and being a good leader, but then when I do finally get some time off, I just end up feeling anxious because I have so many thoughts racing through my head.",
+      "somatic_state": {
+        "sympathetic": 1.0,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.0
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you're carrying a heavy load right now, both literally and figuratively. It's no wonder you feel overwhelmed.\n\nLet's break it down. You mentioned that your work has been crazy since taking on the team lead role. That's a big responsibility, and it can be challenging to adjust to new demands. I'm guessing that some of these negative thoughts are related to feeling like you're not doing enough or making mistakes as a leader.\n\nCan you tell me more about what goes through your mind when you're stressed about work? For example, do you have any specific worries or fears that come up for you?\n\nAlso, regarding separating your personal and professional life, it's common for people in leadership roles to struggle with this. But I'm curious - what do you think might help you feel more grounded and less anxious when you're not at work?"
+    },
+    {
+      "role": "user",
+      "content": "I know it sounds silly, but sometimes I worry that I'll mess something up big time and my team will suffer because of me. And then there's the fear that I'm not even good enough to be leading them in the first place... like, what if I'm just pretending to be a leader?",
+      "somatic_state": {
+        "sympathetic": 1.0,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Those are very real and valid concerns. It takes courage to admit those kinds of fears, especially when they're related to your professional identity.\n\nFirstly, let's acknowledge that it's okay to have doubts and worries as a leader. It means you care deeply about your team and want to do what's best for them. That's not pretending; that's being a responsible and compassionate leader.\n\nNow, regarding the fear of messing something up... Can I propose an exercise to help reframe this thought? When you catch yourself thinking \"I'm going to mess everything up,\" try replacing it with \"I'll do my best with what I have.\" That small shift in language can make a big difference. Instead of catastrophizing, you're acknowledging that you'll take the necessary steps to mitigate risks and learn from any mistakes.\n\nAs for feeling like you're not good enough... Let's explore this further. What would it take for you to feel confident in your abilities as a leader? Is there something specific you're missing or lacking?\n\nAlso, I want to gently challenge the idea that these thoughts are silly. They might be uncomfortable, but they're rooted in real concerns about doing well and taking care of others. We can work with those feelings, rather than trying to suppress them.\n\nHow does that sound?"
+    },
+    {
+      "role": "user",
+      "content": "Okay... I guess it sounds like a good idea to try that exercise. But what if I'm not being genuine when I say 'I'll do my best'? What if I'm just putting on a facade and panicking on the inside?",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.6,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "You're worried about authenticity, which is a great concern for anyone in a leadership role. It's natural to wonder whether you're truly being yourself or just pretending.\n\nLet me ask you this: Do you think you'd be having these thoughts if you weren't genuinely trying to do your best as a leader? I mean, it sounds like you're already putting in the effort and care deeply about your team. That's not something you can easily fake.\n\nWhen we say \"I'll do my best,\" it's not just a phrase; it's a commitment to yourself and others. It acknowledges that there will be challenges and uncertainties, but you're willing to face them head-on. And if things don't go as planned, you can always learn from the experience and adjust course.\n\nThink of it like this: When you're learning a new skill or taking on a challenging project, do you ever feel like you're not good enough? Of course, you might! But what do you do then? You break it down into smaller steps, focus on progress rather than perfection, and keep moving forward. It's the same with leadership.\n\nAs for panicking on the inside... That's a common experience, especially when facing high-pressure situations. But here's the thing: it doesn't mean you're not being genuine or authentic. It means you're human, and you're feeling overwhelmed. And that's okay!\n\nCan I propose another exercise to help with this? When you catch yourself thinking \"I'm just pretending,\" try replacing it with \"I'm doing my best with what I have.\" Then, take a deep breath in and say to yourself, \"And that's enough.\"\n\nHow does that sound?"
+    },
+    {
+      "role": "user",
+      "content": "I...I guess that makes sense. It's just hard to shake off the feeling that I'm not good enough, you know?",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 1.0
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Those feelings can be persistent and stubborn. But here's a secret: those thoughts are often rooted in past experiences or perceived shortcomings, rather than your current abilities.\n\nLet me ask you this: Have you achieved something as a leader that you're proud of? Not just something small, but something significant?\n\n(Leaning forward slightly, with a gentle tone) I want you to remember one specific accomplishment where you felt like you really made a difference. It could be anything \u2013 improving team morale, solving a complex problem, or simply being there for someone who needed support.\n\nWhen you think of that moment, what do you feel? What emotions come up?\n\n(By nodding encouragingly) I want you to hold onto those feelings and acknowledge them. Because if you can access those moments where you felt confident and capable as a leader, it can help counterbalance the negative self-talk."
+    },
+    {
+      "role": "user",
+      "content": "Honestly? One thing that comes to mind is when I helped my team navigate a major project deadline. We were all feeling really overwhelmed, but somehow we managed to work together and deliver on time. It was...it was a good feeling, seeing everyone's hard work pay off like that. But even thinking about it now makes me feel anxious again...",
+      "somatic_state": {
+        "sympathetic": 1.0,
+        "dorsal_vagal": 0.0,
+        "ventral_vagal": 0.0
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you're already aware of your strengths as a leader, but those feelings of anxiety are still lingering.\n\nLet's try something different this time. Instead of focusing on the negative emotions, let's amplify the positive ones from that experience. Remember how it felt to see your team succeed? To know that you played a role in their success?\n\n(I'm smiling encouragingly) I want you to relive that moment for a second. Imagine yourself standing with your team, looking at the finished project together. Feel the sense of pride and accomplishment that comes from working together towards a common goal.\n\nNow, as we're replaying this memory, I want you to add some details. What did you hear? What did you see? What did you feel in that moment?\n\n(Leaning forward slightly) And when you're done reliving the memory, I want you to take one more step. I want you to say it out loud: \"I am capable of leading my team to success.\"\n\n(Speaking softly and encouragingly) Can you do that for me?"
+    },
+    {
+      "role": "user",
+      "content": ".I'm...I see the celebration, everyone smiling... We're all hugging each other, exhausted but exhilarated. I hear the sound of laughter and cheers... And I feel this sense of pride and relief wash over me, like a weight has been lifted off my shoulders. Okay...*pauses*...I am capable of leading my team to success.",
+      "somatic_state": {
+        "sympathetic": 0.85,
+        "dorsal_vagal": 0.15,
+        "ventral_vagal": 0.0
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "(With a warm smile) Ah, beautiful! You did it! You relived that moment and acknowledged your capabilities as a leader.\n\nNow, let's take this feeling with us as we move forward. Remember how it felt to be proud of yourself and your team? To know that you can overcome challenges and achieve great things together?\n\n(I'm speaking softly) Whenever those negative thoughts creep in, I want you to recall this moment. Imagine yourself standing with your team, celebrating their success. Feel the pride and relief wash over you again.\n\nAnd when you say it out loud \u2013 \"I am capable of leading my team to success\" \u2013 I want you to believe it. Not just intellectually, but viscerally. As if it's a truth that resonates deep within you.\n\n(Leaning back slightly) You know, this is a powerful tool for building confidence and resilience. By connecting with your past successes and acknowledging your strengths, you can start to shift the narrative in your mind. Instead of focusing on what might go wrong, you'll begin to see yourself as capable and competent.\n\nHow do you feel now? Has anything shifted inside of you?"
+    },
+    {
+      "role": "user",
+      "content": "I...I don't know if it's just temporary, but I think I felt something shift. Like a little bit of weight has been lifted off my shoulders. It's hard to explain, but talking through this and remembering that moment with my team...it made me realize that maybe I've been too hard on myself. Maybe I do have what it takes to lead them.",
+      "somatic_state": {
+        "sympathetic": 0.65,
+        "dorsal_vagal": 0.35,
+        "ventral_vagal": 0.4
+      }
+    }
+  ]
+}
