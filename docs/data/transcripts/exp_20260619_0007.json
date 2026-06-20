@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260619_0007",
+  "timestamp": "2026-06-19T23:47:49.414688",
+  "strategy": {
+    "name": "CBT-PCT Bridge v2",
+    "hypothesis": "If we alternate between short and long responses to balance engagement and reflection, while maintaining unconditional positive regard and targeting specific thought patterns with CBT techniques, we can improve patient engagement, alliance, and ultimately, PHQ-9 score delta.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Astrid Mae",
+    "age": 35,
+    "occupation": "Graphic Designer / Online Business Owner",
+    "presenting_issue": "Chronic depression/anxiety/ burnout symptoms",
+    "background_story": " Late diagnosed autistic individual struggling with imposter syndrome, self-acceptance and finding her place in a neurotypical society. Feeling overwhelmed by social demands and expectations while trying to prioritize her business.",
+    "personality": "introverted, sensitive, highly creative yet anxious",
+    "baseline_phq9": 16,
+    "archetype_label": "Late-Diagnosed Autistic Burnout"
+  },
+  "scores": {
+    "total_score": 30.75,
+    "raw_score": 30.75,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 15.8/70.0 (VV shift: -0.80, Sym shift: 0.00, DV shift: -0.50) | Brevity Penalty (-15): Therapist turn too long (5 sentences, 72 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "\"Welcome to our time together today, I'm so glad you've taken this step towards seeking support. Please make yourself comfortable, and take a deep breath in, feeling any tension or stress leave your body as you exhale. I'm here to listen without judgment, and I want you to know that everything shared between us is confidential and safe. How are you feeling today, and what brings you to therapy at this time?\""
+    },
+    {
+      "role": "user",
+      "content": "I don't know...I feel like I'm just barely holding it together. To be honest, even coming here feels like a huge weight on my shoulders. My business has been killing me, and I'm not sure how much more of this I can take.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.8,
+        "ventral_vagal": 1.0
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "\"It sounds like the pressure from your business is taking a toll on you, and that's a lot to carry alone. It's completely understandable that coming here feels like an added burden - it takes a lot of courage to reach out for support, especially when things feel so overwhelming. Can you tell me more about what's been going on with your business? What specifically is feeling unmanageable?\""
+    },
+    {
+      "role": "user",
+      "content": "Honestly, it's just everything. Trying to meet clients' demands, creating social media content, managing finances...it all feels like a lie. Like I'm pretending to be someone I'm not. And on top of that, I've been getting so much pushback from people who think I should be 'more visible', or more 'out there'. It's exhausting trying to fit the image they want me to project.",
+      "somatic_state": {
+        "sympathetic": 0.0,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.0
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "\"It sounds like you're feeling a huge disconnect between your authentic self and the persona you feel pressured to present online. The constant need to project a certain image can be incredibly draining, especially when it feels inauthentic. You mentioned earlier that you're barely holding it together - I want to acknowledge that it's okay to not have all the answers or to feel like you're pretending to be someone else. Can you tell me more about what kind of 'image' people are expecting from you? Is there a specific expectation around your online presence that feels particularly suffocating?\""
+    },
+    {
+      "role": "user",
+      "content": "I don't know, it's just...they want me to be this bubbly, outgoing person who's always promoting my work and thanking people for their support. But I'm not like that. I'm introverted and anxious, and all the 'behind-the-scenes' moments where I'm struggling just feel like they're going to get discovered. It feels like I'm walking on eggshells, constantly worried about messing up or saying the wrong thing. And it's hard to keep up this facade when my business is already failing me in so many ways.",
+      "somatic_state": {
+        "sympathetic": 0.85,
+        "dorsal_vagal": 0.25,
+        "ventral_vagal": 0.9
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "\"It sounds like you're feeling trapped between two opposing expectations: being authentic and true to yourself, versus meeting the demands of your online presence and the people who are invested in your success. The pressure to present a certain image can be especially overwhelming when it feels like it's at odds with your genuine personality and needs. I want to acknowledge that it takes a lot of courage to admit to feeling anxious and introverted, especially in a space where people may expect you to be more outgoing or confident. Your honesty about struggling behind the scenes is incredibly brave, and I'm here to support you in exploring what's truly important to you.\""
+    },
+    {
+      "role": "user",
+      "content": "pause",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.1
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "\"Take your time, let's just sit with this feeling for a moment... What would happen if you were to stop pretending to be someone else online? What do you imagine it would look like to show up more authentically, even if that means being vulnerable and imperfect?\""
+    },
+    {
+      "role": "user",
+      "content": "I don't know...I guess I'd just be me. Not the 'me' that everyone expects, but the real me. It's hard to imagine because it feels like no one would care about my actual designs or thoughts if they knew how anxious and insecure I am. And what if I fail? What if nobody likes me for who I really am?",
+      "somatic_state": {
+        "sympathetic": 0.0,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 1.0
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "\"It sounds like there's a deep-seated fear of rejection and abandonment underlying your concerns about being authentic online. It's as if you're worried that if people see the 'real' you, they'll lose interest or stop supporting you. That must be incredibly painful to consider. Can we explore this idea further? What would it mean for you to take a risk and show up more authentically, even if it means potentially losing some of your current audience?\""
+    },
+    {
+      "role": "user",
+      "content": "I guess...it means being honest about my struggles with autism, too. It's like I've been hiding this whole other part of myself for so long, and it feels suffocating. What if people think I'm 'broken' or that I'm not capable because I'm autistic? But at the same time, what if...what if being honest actually brings me some freedom?",
+      "somatic_state": {
+        "sympathetic": 0.0,
+        "dorsal_vagal": 0.25,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "\"It takes a tremendous amount of courage to even consider sharing your autism with others, especially in a space where you're already vulnerable. The fear of being judged or seen as 'broken' is a valid one, but I want to gently challenge the idea that there's something inherently wrong with being autistic. It sounds like you might be carrying around some internalized shame or stigma about your neurodiversity, and that's not uncommon. But what if, instead, you were able to see your autism as a part of who you are - a unique perspective and set of strengths? What would it mean for you to reclaim your identity and celebrate the aspects of yourself that make you different?\""
+    },
+    {
+      "role": "user",
+      "content": "pause",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    }
+  ]
+}

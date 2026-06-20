@@ -3479,6 +3479,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 3 (gemma4:e4b \u2014 Tier 5)"
+    },
+    {
+      "exp_id": "exp_20260619_0007",
+      "strategy_name": "CBT-PCT Bridge v2",
+      "hypothesis": "If we alternate between short and long responses to balance engagement and reflection, while maintaining unconditional positive regard and targeting specific thought patterns with CBT techniques, we can improve patient engagement, alliance, and ultimately, PHQ-9 score delta.",
+      "score": 30.75,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 3 (gemma4:e4b \u2014 Tier 5)"
     }
   ],
   "best_score": 91.25,
