@@ -14,6 +14,9 @@
 > [!IMPORTANT]
 > **Project Evolution: Tier 5 (Constrained Decoding & Native Tools)** is now live! We've upgraded from standard JSON mode to **grammar-enforced Pydantic schemas** via `client.beta.chat.completions.parse()`, integrated **native OpenAI-style tool calling** for patient somatic state updates, activated Gemma 4's native `<|think|>` token, and implemented automated thought sanitization from LangGraph state.
 
+> [!WARNING]
+> **Current Status: Experiments Paused.** We have temporarily halted the Run 3 loop to resolve an underlying Ollama hardware-binding bug on hybrid-GPU Windows laptops (Ollama falling back to Intel Iris instead of the NVIDIA RTX 3060 due to compute capability mismatch). Experiments will resume after applying the `OLLAMA_LLM_LIBRARY=cuda_v12` environment variable to hard-lock the engine to the dedicated GPU.
+
 ---
 
 ## 🔬 What Is This?

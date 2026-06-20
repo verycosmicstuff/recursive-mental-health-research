@@ -161,6 +161,7 @@ def chat_completion(messages, temperature=0.7, json_format=False, tools=None, us
     # Agent calls get extra time: Ollama needs to swap models + Gemma 4 thinks deeply
     if use_agent:
         kwargs["timeout"] = 600  # 10 minutes for model swap + thinking generation
+        kwargs["max_tokens"] = 4096 # Prevent EOF truncation when Gemma 4 thinks for a long time
         
     base_url_str = str(active_client.base_url)
     if "localhost" in base_url_str or "127.0.0.1" in base_url_str:
@@ -170,10 +171,21 @@ def chat_completion(messages, temperature=0.7, json_format=False, tools=None, us
     if tools:
         kwargs["tools"] = tools
     
-    # Pre-warm: trigger model swap before the real call so Ollama loads Gemma 4 into memory
+    # Full model swap: unload the simulation model, load the optimizer, then swap back
     if use_agent:
         try:
-            print(f"[Harness] Swapping to {active_model} for Optimizer Agent... (this may take 30-90s)")
+            import subprocess
+            
+            # Step 1: Unload Llama 3.1 to free VRAM using subprocess (safer than API when under memory pressure)
+            print(f"[Harness] Unloading {config.MODEL_NAME} to free VRAM...")
+            subprocess.run(["ollama", "stop", config.MODEL_NAME], capture_output=True, timeout=30)
+            
+            # Also unload the evaluator/patient model if it's different
+            if config.EVALUATOR_MODEL_NAME != config.MODEL_NAME:
+                subprocess.run(["ollama", "stop", config.EVALUATOR_MODEL_NAME], capture_output=True, timeout=30)
+            
+            # Step 2: Warmup Gemma 4 — this triggers the full load into GPU
+            print(f"[Harness] Loading {active_model} for Optimizer Agent... (this may take 30-90s)")
             warmup_kwargs = {
                 "model": active_model,
                 "messages": [{"role": "user", "content": "hi"}],
@@ -183,9 +195,9 @@ def chat_completion(messages, temperature=0.7, json_format=False, tools=None, us
             if "localhost" in base_url_str or "127.0.0.1" in base_url_str:
                 warmup_kwargs["extra_body"] = {"options": {"num_ctx": 512}}
             active_client.chat.completions.create(**warmup_kwargs)
-            print(f"[Harness] {active_model} loaded and ready.")
+            print(f"[Harness] {active_model} loaded with full GPU — ready.")
         except Exception as e:
-            print(f"[Harness] Warmup ping failed ({e}), proceeding with main call anyway...")
+            print(f"[Harness] Model swap setup failed ({e}), proceeding anyway...")
         
     if not use_evaluator and not use_agent:
         with _LLM_LOCK:
@@ -194,6 +206,27 @@ def chat_completion(messages, temperature=0.7, json_format=False, tools=None, us
         # Agent gets more retries with longer delays to survive swap hiccups
         retry_kwargs = {"max_retries": 5, "initial_delay": 10.0} if use_agent else {}
         response = call_with_retry(active_client.chat.completions.create, **retry_kwargs, **kwargs)
+    
+    # After optimizer finishes: unload Gemma 4, reload Llama 3.1 for next experiment
+    if use_agent:
+        try:
+            import subprocess
+            
+            # Step 3: Unload Gemma 4
+            print(f"[Harness] Unloading {active_model}...")
+            subprocess.run(["ollama", "stop", active_model], capture_output=True, timeout=30)
+            
+            # Step 4: Reload Llama 3.1 for next experiment loop
+            print(f"[Harness] Reloading {config.MODEL_NAME} for next experiment...")
+            client_local.chat.completions.create(
+                model=config.MODEL_NAME,
+                messages=[{"role": "user", "content": "hi"}],
+                max_tokens=1,
+                timeout=300
+            )
+            print(f"[Harness] {config.MODEL_NAME} reloaded with full GPU — ready.")
+        except Exception as e:
+            print(f"[Harness] Post-agent model reload failed ({e}), Ollama will auto-load on next call.")
         
     if not _GPU_CHECKED:
         check_gpu_loading(config.MODEL_NAME)

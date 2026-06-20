@@ -103,8 +103,34 @@ def main():
     }
     
     # Let LangGraph handle the loop via its optimizer routing
-    for event in graph.stream(initial_state, {"recursion_limit": 1000000}): # Give it plenty of recursions
-        pass # Nodes handle their own logging
+    # Wrapped in an auto-recovery loop to guarantee overnight stability
+    while True:
+        try:
+            for event in graph.stream(initial_state, {"recursion_limit": 1000000}): # Give it plenty of recursions
+                pass # Nodes handle their own logging
+            
+            # If we exit the stream normally (e.g. MAX_EXPERIMENTS reached), break the recovery loop
+            break 
+            
+        except Exception as e:
+            import time
+            print(f"\n=====================================================")
+            print(f"[FATAL ERROR] Engine crashed: {e}")
+            print(f"[RECOVERY] Sleeping for 60 seconds to let Ollama recover before restarting...")
+            print(f"=====================================================\n")
+            time.sleep(60)
+            
+            # Re-read the latest best score from config in case it changed before the crash
+            try:
+                with open(config.RESULTS_FILE, "r", encoding="utf-8") as f:
+                    lines = f.readlines()[1:]
+                    if lines:
+                        scores = [float(line.split("\t")[4]) for line in lines]
+                        initial_state["baseline_score"] = max(scores)
+            except Exception:
+                pass
+            
+            print("[RECOVERY] Restarting engine...")
 
 if __name__ == "__main__":
     import os
