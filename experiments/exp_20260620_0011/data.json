@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260620_0011",
+  "timestamp": "2026-06-20T00:54:04.799382",
+  "strategy": {
+    "name": "PCT-ACT Resource Bridging (PARB) v1.0",
+    "hypothesis": "By replacing the 'Inferred Bridge' (which leads to pseudo-insight) with a 'Reflection-Value-Connection' sequence, which grounds the conversation in the patient's stated values and current behaviors (PCT/ACT), we will provide concrete, non-interpretive support, thus avoiding the 'pseudo-insight' penalty and achieving a higher score by focusing on demonstrable behavioral change and genuine understanding.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Lena Grant",
+    "age": 32,
+    "occupation": "Freelance Graphic Designer",
+    "presenting_issue": "Exhaustion, anxiety, and self-doubt due to burnout from undiagnosed autism symptoms.",
+    "background_story": "Lena has struggled with social interactions, sensory overload, and executive function challenges throughout her life. She attributed these difficulties to being 'shy' or 'perfectionistic.' After years of masking her autistic traits, Lena landed a stable freelance graphic design career that initially brought her creative fulfillment. However, the isolation and irregular schedules exacerbated her symptoms, leading to burnout. Lena began experiencing severe anxiety attacks, sleep disturbances, and a persistent feeling of being overwhelmed.",
+    "personality": "Lena is introverted, highly analytical, and often introspective. She has difficulty articulating her emotions and maintaining relationships due to difficulties with social cues and empathy. Despite this, she is fiercely loyal and dedicated to her loved ones. Lena's masking efforts have led to feelings of shame and self-doubt, making it challenging for her to seek help or advocate for herself.",
+    "baseline_phq9": 17,
+    "archetype_label": "Late-Diagnosed Autistic Burnout"
+  },
+  "scores": {
+    "total_score": 58.4,
+    "raw_score": 58.4,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 43.4/70.0 (VV shift: -0.10, Sym shift: -0.50, DV shift: -0.18) | Brevity Penalty (-15): Therapist turn too long (10 sentences, 118 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Welcome to our text-based support session! I'm so glad you've taken this step towards taking care of yourself. My name is [Your Name], and I'll be your mental health support specialist for today's session.\n\nBefore we begin, I want to acknowledge that it takes a lot of courage to reach out for help. Please know that everything shared in this space is confidential and safe. You're not alone, and you've taken the first step towards exploring ways to move forward.\n\nCan you start by telling me what brings you here today? What's been on your mind or heart lately that feels like it needs some attention?\n\n(Your response will be reflected back with precision in my next message.)"
+    },
+    {
+      "role": "user",
+      "content": "I guess I just feel...empty. Like, I used to love my job, but now it just feels like a chore. And the anxiety attacks are getting worse. Sometimes I'm so overwhelmed that I just want to stay hidden away for days.",
+      "somatic_state": {
+        "sympathetic": 1.0,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like even when you're trying to go about your daily routine, this feeling of emptiness is lurking beneath the surface. The thought of going through the motions at work feels more like a burden than something you look forward to. And on top of that, these anxiety attacks are becoming increasingly intense, making it hard for you to feel safe in your own skin.\n\nWhen you say \"hidden away,\" I hear that you're craving some sense of escape or refuge from the overwhelming feelings. It's as if you're searching for a temporary reprieve from the weight of it all.\n\nCan you tell me more about what happens during these anxiety attacks? What are some physical sensations or thoughts that come up for you when you feel overwhelmed?"
+    },
+    {
+      "role": "user",
+      "content": "They feel like I'm drowning, but not in water. More like my brain is overflowing with thoughts and worries. My heart races, and my palms sweat. Sometimes I get this...tension headache, it feels like someone's squeezing my head in a vice. And the thoughts, they just won't shut up. 'What if you fail?' 'You're not good enough.' Stuff like that. It's hard to breathe.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 1.0
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like these anxiety attacks are incredibly intense and physically draining for you. The sensation of your brain overflowing with thoughts and worries is a really vivid image, and I can see why it would feel like drowning. The physical symptoms \u2013 the racing heart, sweating palms, and tension headache \u2013 all contribute to this overwhelming feeling.\n\nI'm going to reflect back on what you said about these thoughts: \"What if you fail?\" and \"You're not good enough.\" It sounds like these thoughts are really critical and self-doubting. Can you tell me more about where these thoughts come from? What's the underlying message they're trying to convey?\n\n(Also, just a note: I'm going to try to avoid getting too caught up in the content of these thoughts, but rather explore what's driving them. We can work on reframing or challenging those thoughts later, if that feels helpful.)"
+    },
+    {
+      "role": "user",
+      "content": "Where they come from...I don't know. I just feel like I'm not doing things right. My designs aren't good enough, my communication skills are terrible...I always mess up in social situations.",
+      "somatic_state": {
+        "sympathetic": 0.9,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like these self-criticizing thoughts have become a kind of inner dialogue that's been playing on repeat for you. This feeling of \"not doing things right\" is really pervasive and affects different areas of your life, from design to communication to social interactions.\n\nLet me try to reflect back what I hear: it's like there's this inner voice that's constantly evaluating and criticizing your performance, and it's making you feel like you're not meeting some kind of standard or expectation. Can you tell me more about what would happen if you were able to let go of these criticisms for a little while? What would be possible for you in those moments?\n\n(Also, I want to gently ask: what is it that matters most to you in this situation? What's the underlying value or principle that you're trying to uphold?)"
+    },
+    {
+      "role": "user",
+      "content": "I don't know... maybe I'd be able to relax a bit, stop overthinking everything. But for how long? Wouldn't it come back?",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like there's a sense of uncertainty and impermanence around letting go of these criticisms. You're wondering if it would just be temporary relief, and that the anxiety and self-doubt would eventually creep back in.\n\nLet me try to reflect back what I hear: you value being able to relax and not overthink everything, but there's a part of you that's worried about the sustainability of that feeling. You're concerned that it might just be a fleeting reprieve from the anxiety and self-doubt that's been plaguing you.\n\nGiven how much you value connection \u2013 whether it's with others or with yourself \u2013 what is one small thing you could do this week that honors that value, even if it feels difficult?"
+    },
+    {
+      "role": "user",
+      "content": "-pause-} I guess I just want to be able to show up in relationships without feeling like an imposter. I hate pretending everything is fine when it's not. It feels so draining. One small thing... maybe just talking to you about this? Like, actually being honest with someone instead of hiding behind my masks? *trails off* That sounds stupid. Sorry.",
+      "somatic_state": {
+        "sympathetic": 0.35,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.18
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Your words are not stupid at all. In fact, they're incredibly brave and vulnerable. It takes a lot of courage to admit that you're struggling with feeling like an imposter and wanting to be honest about it.\n\nIt sounds like being able to show up authentically in relationships is really important to you. You value honesty and connection, but feel held back by the fear of being seen as imperfect or inadequate.\n\nLet me summarize what I hear: you want to be able to have genuine relationships where you can share your true self without pretending everything is fine when it's not. And one small step towards that might be exactly what we're doing right now \u2013 having a conversation where you feel safe and supported in being honest about your struggles.\n\nIs there anything else you'd like to talk about or any other steps you'd like to take this week to honor the value of authenticity and connection?"
+    },
+    {
+      "role": "user",
+      "content": "...I don't know if I can do this. It feels...scary. What if people see me as broken?",
+      "somatic_state": {
+        "sympathetic": 0.0,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like there's a deep-seated fear that being vulnerable and authentic might lead to others seeing you as broken or flawed in some way.\n\nLet me reflect back on what I hear: it's not just about being seen by others, but also about how this might impact your own sense of self-worth. You're worried that if you let your guard down and show your true self, it will be met with judgment or rejection.\n\nI want to gently suggest that the value of authenticity is not necessarily about seeking validation from others, but rather about honoring your own truth and worth. What if being vulnerable and honest was actually a sign of strength, rather than weakness?"
+    },
+    {
+      "role": "user",
+      "content": "-pause-",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.12,
+        "ventral_vagal": 0.3
+      }
+    }
+  ]
+}
