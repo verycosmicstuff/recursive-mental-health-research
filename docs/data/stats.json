@@ -3443,6 +3443,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 3 (gemma4:e4b \u2014 Tier 5)"
+    },
+    {
+      "exp_id": "exp_20260619_0003",
+      "strategy_name": "Reflection-Value-Enhanced Engagement (RVE)",
+      "hypothesis": "By integrating a Value-Resource Connection sequence after initial deep reflection, we will increase patient engagement and improve overall scores by fostering a sense of agency and intrinsic motivation.",
+      "score": 0.0,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 3 (gemma4:e4b \u2014 Tier 5)"
     }
   ],
   "best_score": 91.25
