@@ -33,7 +33,7 @@
         .diff-context { color: #94a3b8; }
         .hunk-header { color: #6366f1; font-weight: 600; font-size: 0.75rem; background: rgba(30, 41, 59, 0.8); padding: 4px 12px; }
         .scrollbar-none::-webkit-scrollbar { display: none; }
-        .scrollbar-none { -ms-overflow-style: none; scrollbar-width: none; }
+        .scrollbar-none { -ms-overflow-style: none; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
         @media (max-width: 1023px) {
             #transcripts-container.active-chat #transcript-sidebar {
                 display: none;
@@ -73,7 +73,7 @@
         </header>
 
         <!-- Navigation Tabs -->
-        <div class="flex gap-2 sm:gap-4 mb-6 border-b border-slate-700 overflow-x-auto whitespace-nowrap scrollbar-none pb-1 -mx-3 px-3 sm:mx-0 sm:px-0">
+        <div class="flex flex-row flex-nowrap w-full max-w-full gap-2 sm:gap-4 mb-6 border-b border-slate-700 overflow-x-auto whitespace-nowrap scrollbar-none pb-1 -mx-3 px-3 sm:mx-0 sm:px-0">
             <button onclick="switchTab('overview')" id="tab-overview" class="pb-2 px-2 text-teal-400 border-b-2 border-teal-400 font-medium transition-colors shrink-0">Overview</button>
             <button onclick="switchTab('transcripts')" id="tab-transcripts" class="pb-2 px-2 text-slate-400 hover:text-slate-300 font-medium border-b-2 border-transparent transition-colors flex items-center gap-2 shrink-0">📝 Transcripts</button>
             <button onclick="switchTab('history')" id="tab-history" class="pb-2 px-2 text-slate-400 hover:text-slate-300 font-medium border-b-2 border-transparent transition-colors flex items-center gap-2 shrink-0">🧬 Strategy Evolution</button>
@@ -85,13 +85,13 @@
         <div id="view-overview">
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
             <!-- Run 3 Chart (Active) -->
-            <div class="card col-span-2">
+            <div class="card col-span-1 lg:col-span-2">
                 <div class="flex items-center gap-3 mb-4">
                     <h2 class="text-xl font-semibold text-slate-200">Run 3 — Score Trajectory</h2>
                     <span class="px-2 py-0.5 text-[10px] bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 rounded-full font-medium tracking-wide">ACTIVE · TIER 5</span>
                 </div>
                 <p class="text-xs text-slate-500 -mt-2 mb-3">Architecture: Constrained Decoding · Native Tool Calling · Gemma 4 Thinking · History Sanitization</p>
-                <div style="height: 280px;">
+                <div class="relative w-full h-[280px]">
                     <canvas id="scoreChartRun3"></canvas>
                 </div>
             </div>
@@ -124,7 +124,7 @@
                 <span class="px-2 py-0.5 text-[10px] bg-slate-500/20 text-slate-400 border border-slate-500/30 rounded-full font-medium tracking-wide">ARCHIVED</span>
             </div>
             <p class="text-xs text-slate-500 -mt-2 mb-3">gemma4:e4b — JSON mode · Deterministic evaluator · <strong class="text-amber-400/70">Not comparable with Run 3</strong></p>
-            <div style="height: 200px;">
+            <div class="relative w-full h-[200px]">
                 <canvas id="scoreChartRun2"></canvas>
             </div>
         </div>
@@ -136,7 +136,7 @@
                 <span class="px-2 py-0.5 text-[10px] bg-slate-500/20 text-slate-400 border border-slate-500/30 rounded-full font-medium tracking-wide">ARCHIVED</span>
             </div>
             <p class="text-xs text-slate-500 -mt-2 mb-3">Metrics: PHQ-9 Delta · Engagement · Alliance (0–10 scale) — <strong class="text-amber-400/70">Not comparable with Run 2/3</strong></p>
-            <div style="height: 200px;">
+            <div class="relative w-full h-[200px]">
                 <canvas id="scoreChartRun1"></canvas>
             </div>
         </div>
