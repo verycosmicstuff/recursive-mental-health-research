@@ -36,6 +36,10 @@ class PatientPersona(BaseModel):
     personality: str = Field(..., description="Description of their conversational style")
     baseline_phq9: int = Field(..., description="Depression severity score (indicating severity)")
 
+class PatientResponse(BaseModel):
+    dialogue: str = Field(..., description="Your actual conversational response to the therapist (1-4 sentences).")
+    somatic_state: SomaticState = Field(..., description="Your current somatic/autonomic nervous system state.")
+
 # Initialize OpenAI client to point to local Ollama instance (Therapist)
 client_local = OpenAI(
     base_url=config.OLLAMA_BASE_URL,
@@ -234,7 +238,7 @@ Depression severity (baseline_phq9) should be between {archetype['phq9_range'][0
         return fallback
 
 def get_patient_response(persona: dict, conversation_history: list) -> tuple[str, dict]:
-    """Simulates the patient's next turn in the conversation using tool calling for somatic states."""
+    """Simulates the patient's next turn in the conversation using structured output."""
     sys_prompt = f"""You are enacting a realistic text-based therapy patient named {persona['name']}.
 
 YOUR PROFILE:
@@ -250,8 +254,6 @@ RULES FOR YOUR BEHAVIOR:
 - Keep responses relatively brief (1-4 sentences), like a real text chat.
 - DO NOT break character. DO NOT summarize the conversation. DO NOT thank the therapist unless it authentically feels right.
 - If your personality is 'resistant' or 'guarded', act like it. Make the therapist work to build rapport.
-- CRITICAL: You MUST write your actual conversational response (1-4 sentences) as the text content of your reply. Do not leave the message content empty.
-- You MUST also call the tool `update_somatic_state` to update your current somatic state (autonomic nervous system states: sympathetic, ventral vagal, dorsal vagal) based on your current emotional/physical experience in this turn.
 """
 
     messages = [{"role": "system", "content": sys_prompt}]
@@ -268,41 +270,20 @@ RULES FOR YOUR BEHAVIOR:
     session_cfg = session_config.get_session_config()
     patient_temp = max(0.1, min(1.0, float(session_cfg.get("temperature_patient", 0.8))))
     
-    tools = [
-        {
-            "type": "function",
-            "function": {
-                "name": "update_somatic_state",
-                "description": "Call this function to update your somatic/autonomic nervous system state (sympathetic, ventral_vagal, dorsal_vagal).",
-                "parameters": {
-                    "type": "object",
-                    "properties": {
-                        "sympathetic": {"type": "number", "description": "Fight/Flight (0.0 to 1.0) - represents tension, anxiety, anger, or mobilization."},
-                        "ventral_vagal": {"type": "number", "description": "Safety/Grounded (0.0 to 1.0) - represents connection, calm, safety, or presence."},
-                        "dorsal_vagal": {"type": "number", "description": "Collapse/Freeze (0.0 to 1.0) - represents numbness, dissociation, shame, or shutdown."}
-                    },
-                    "required": ["sympathetic", "ventral_vagal", "dorsal_vagal"]
-                }
-            }
-        }
-    ]
-    
-    message = chat_completion(messages, temperature=patient_temp, tools=tools, use_evaluator=True)
-    
-    dialogue = message.content or ""
-    somatic = {"sympathetic": 0.5, "dorsal_vagal": 0.5, "ventral_vagal": 0.0} # Default fallback state
-    
-    if message.tool_calls:
-        for tool_call in message.tool_calls:
-            if tool_call.function.name == "update_somatic_state":
-                try:
-                    args = json.loads(tool_call.function.arguments)
-                    somatic = SomaticState.from_dict(args).to_dict()
-                    break
-                except Exception as e:
-                    print(f"[Harness] Warning: Failed to parse tool call arguments: {e}")
-                    
-    dialogue = dialogue.strip()
+    try:
+        response_obj = chat_completion_parse(
+            messages,
+            response_format=PatientResponse,
+            temperature=patient_temp,
+            use_evaluator=True
+        )
+        dialogue = response_obj.dialogue.strip()
+        somatic = response_obj.somatic_state.to_dict()
+    except Exception as e:
+        print(f"[Harness] Warning: Failed to parse PatientResponse via Pydantic: {e}")
+        dialogue = "... I'm not sure what to say."
+        somatic = {"sympathetic": 0.5, "dorsal_vagal": 0.5, "ventral_vagal": 0.0}
+        
     return dialogue, somatic
 
 def get_therapist_response(conversation_history: list, active_prompt: str) -> str:
