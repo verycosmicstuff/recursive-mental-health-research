@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260620_0013",
+  "timestamp": "2026-06-20T01:28:22.593542",
+  "strategy": {
+    "name": "PCT-ACT Resource Bridging (PARB) v1.0",
+    "hypothesis": "By replacing the 'Inferred Bridge' (which leads to pseudo-insight) with a 'Reflection-Value-Connection' sequence, which grounds the conversation in the patient's stated values and current behaviors (PCT/ACT), we will provide concrete, non-interpretive support, thus avoiding the 'pseudo-insight' penalty and achieving a higher score by focusing on demonstrable behavioral change and genuine understanding.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Maya Ramos",
+    "age": 20,
+    "occupation": "Student (Junior at a Community College)",
+    "presenting_issue": "Struggling with depressive symptoms, anxiety, and feelings of guilt/shame related to family dynamics. Specifically, Maya is worried about her family's reaction if they find out she's dating a woman. She fears being disowned or rejected by her conservative Christian household.",
+    "background_story": "Maya grew up in a devoutly religious household with parents who are members of the Jehovah's Witnesses organization. She was raised to believe that LGBTQ+ relationships were sinful and would lead to eternal damnation. As she entered adolescence, Maya realized she had romantic feelings for women but felt ashamed and guilty about her attraction. She hid her true self from her family and began exploring online communities for support and guidance.",
+    "personality": "Maya is a creative and introverted person who struggles with assertiveness and setting boundaries. She has difficulty expressing herself and tends to prioritize others' needs over her own. Despite this, she is determined to pursue her goals and dreams, including becoming an artist. Maya is sensitive to conflict and tries to avoid confrontation whenever possible. However, she knows that she can't continue living in secrecy and fears the potential backlash from her family if they discover her true identity.",
+    "baseline_phq9": 15,
+    "archetype_label": "Queer Youth \u2014 Religious Family Conflict"
+  },
+  "scores": {
+    "total_score": 48.25,
+    "raw_score": 48.25,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 33.2/70.0 (VV shift: -0.30, Sym shift: 0.30, DV shift: -0.80) | Brevity Penalty (-15): Therapist turn too long (13 sentences, 179 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Welcome to our support session today! I'm so glad you're taking this time for yourself. Before we begin, I want to acknowledge that it takes a lot of courage to reach out for help, and I'm honored that you've chosen me as your partner in this journey.\n\nAs we start, I'd like to create a safe space for us to explore together. Can you find a comfortable position, either sitting or lying down, wherever you feel most relaxed? Take a deep breath in, and as you exhale, allow any tension to release from your body.\n\nNow, I'm here to listen without judgment. You can share whatever feels important to you, whether it's a specific challenge, a recurring thought, or simply how you're feeling right now. Perhaps we can start with what brings you to our session today? What's been on your mind lately?\n\nPlease know that everything shared within this space remains confidential and non-judgmental. I'm here to support you in understanding yourself better and finding ways to connect with your values.\n\nWhat would you like to share first?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know where to start... Everything feels overwhelming, but I guess I've just been feeling really trapped lately. Like, I feel like I'm living this double life or something. It's hard for me to even talk about it because...because of who my family is.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 1.0,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like even bringing up these feelings is a source of anxiety and concern for you. You're worried about how your family might respond if they knew what you were struggling with.\n\nLet me try to reflect this back to you in a way that feels specific: \"You're feeling trapped, like you're living two separate lives, and the thought of sharing this with your family is causing you significant distress.\" Can I also acknowledge that it takes a lot of courage just to admit these feelings to yourself, let alone someone else?\n\nNow, if we were to explore what matters most to you in this situation, what values or things would you like to hold onto? What are the three most important things for you right now?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know...it's like I'm a liar, you know? I feel like if they find out, they'll think less of me. Like, I'm already living in this secret world and it feels so suffocating...",
+      "somatic_state": {
+        "sympathetic": 0.6,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 1.0
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the weight of secrecy is crushing you, making you feel like you're living a lie. You're worried that if your family discovers the truth, they'll judge you or think less of you.\n\nLet me try to reflect this back in a way that's even more precise: \"You're feeling suffocated by the need to keep this secret hidden from your family, and the fear of their judgment is making you feel like you're living a life that isn't authentic.\"\n\nNow, if we were to explore what matters most to you in this situation, can I ask: What would it mean for you to break free from this secrecy and live more authentically? What are three things that you value or want to hold onto in this process?\n\nAnd remember, these aren't just abstract ideals \u2013 they're connected to your concrete experiences and desires."
+    },
+    {
+      "role": "user",
+      "content": "Break free...it sounds so simple but it feels impossible. I guess if I could be myself without fear of rejection or judgment...that would mean a lot to me. I want to be able to express my feelings, like with art, and not have to hide who I am from the people I love.",
+      "somatic_state": {
+        "sympathetic": 0.0,
+        "dorsal_vagal": 0.4,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like being yourself, without fear of rejection or judgment, is a deeply held value for you. You're yearning for authenticity and freedom to express your true self, including through creative outlets like art.\n\nLet me try to distill this down even further: \"You want to be able to create and share your art, and express your feelings, without feeling like you need to hide or compromise who you are.\" That's a powerful desire for connection and authenticity.\n\nNow, given the value of being true to yourself, here's a question: What's one small step you could take this week that would honor this value, even if it feels scary or difficult?"
+    },
+    {
+      "role": "user",
+      "content": "Small steps...I don't know if I'm ready for anything big. But maybe just talking about this with someone - like, not my family, but...another friend or something?",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 1.0
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you're feeling a bit stuck on what to do next, and that's okay. You mentioned taking small steps, and it seems like having an open conversation with someone who can offer support and understanding is a potential first step.\n\nLet me try to reflect this back: \"You're considering talking to another friend about your struggles, not just as a way of getting advice, but also as a means of being honest and authentic, even if it's just for a moment.\" That takes a lot of courage!\n\nGiven the value you mentioned earlier \u2013 being true to yourself without fear of rejection or judgment \u2013 I'd like to ask: What would it look like for you to have this conversation with your friend? Not in terms of what they might say or do, but rather how you would approach the conversation, and what kind of boundaries or support systems you might need around it?\n\n(And remember, we're not trying to solve everything today \u2013 just taking small steps towards greater authenticity and connection.)"
+    },
+    {
+      "role": "user",
+      "content": "It's...it's scary thinking about how they'll react. But if I'm being honest with myself, it's also kinda exhilarating? Like, what if this is the start of something new, you know?",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.8,
+        "ventral_vagal": 0.4
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like there's a mix of emotions at play here \u2013 fear and excitement. You're acknowledging that it's scary to think about how your friend might react, but at the same time, you're feeling a spark of hope and possibility.\n\nLet me try to reflect this back: \"You're experiencing a sense of trepidation mixed with anticipation, wondering what might happen if you take this step towards being more authentic and open with your friend.\" That takes a lot of emotional courage!\n\nGiven the value of authenticity and connection that we've been exploring, I'd like to ask: What would it mean for you to take this small step, even if it feels scary or uncertain? What would be one tiny action you could take in the next 24-48 hours to move towards having this conversation with your friend?\n\n(And remember, you're not committing to anything grand \u2013 just taking a tiny step towards greater authenticity and connection.)"
+    },
+    {
+      "role": "user",
+      "content": "If I can just say it out loud...I think what I need to do is pick up the phone and text her. Just send her a message and see how she reacts.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.9
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you've identified a small, manageable action that feels within your reach \u2013 sending a simple text message to your friend.\n\nLet me try to reflect this back: \"You're feeling a sense of clarity around what needs to happen next, which is taking the first step by sending a message to your friend, even if it's just a simple 'hello' or an invitation to talk.\" That takes a lot of courage and self-awareness!\n\nGiven the value of authenticity that we've been exploring, I'd like to summarize our conversation and offer some support. You're valuing being true to yourself, expressing your feelings through art, and having open and honest connections with others.\n\nAs we wrap up this session, I want to propose a small action for you to take in the next 24-48 hours: Send that text message to your friend, and see how she reacts. Remember, this is an experiment \u2013 not a commitment or a guarantee of anything. It's just taking one tiny step towards greater authenticity and connection.\n\nHow does that feel?"
+    },
+    {
+      "role": "user",
+      "content": "It feels...do-able, I guess. I can try to do that. Thanks for listening...",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.0
+      }
+    }
+  ]
+}
