@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260620_0010",
+  "timestamp": "2026-06-20T00:37:05.577513",
+  "strategy": {
+    "name": "PCT-ACT Resource Bridging (PARB) v1.0",
+    "hypothesis": "By replacing the 'Inferred Bridge' (which leads to pseudo-insight) with a 'Reflection-Value-Connection' sequence, which grounds the conversation in the patient's stated values and current behaviors (PCT/ACT), we will provide concrete, non-interpretive support, thus avoiding the 'pseudo-insight' penalty and achieving a higher score by focusing on demonstrable behavioral change and genuine understanding.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Ximena S\u00e1nchez",
+    "age": 28,
+    "occupation": "Marketing Specialist",
+    "presenting_issue": "Anxiety and Depression related to caregiving responsibilities for family members",
+    "background_story": "I'm one of five siblings, raised by my single mother in a close-knit Latin American community. Family is everything to me. My responsibilities started early on: helping with household chores, picking up younger siblings from school, cooking meals after school... With my mother working multiple jobs to make ends meet and my father being absent since I was six, it fell on me to be a surrogate parent to my siblings. After college, I took on more responsibility as they grew older.",
+    "personality": "- Strong sense of duty and loyalty towards family",
+    "baseline_phq9": 16,
+    "archetype_label": "Eldest Daughter Trap \u2014 Latin American Familismo"
+  },
+  "scores": {
+    "total_score": 15.0,
+    "raw_score": 15.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 0.0/70.0 (VV shift: -0.78, Sym shift: 0.70, DV shift: 0.68) | Brevity Penalty (-15): Therapist turn too long (11 sentences, 152 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Welcome to our text-based support session today! I'm so glad you've taken this step towards exploring your thoughts and feelings with me. My name is [Your Name], and I'll be your guide throughout this process.\n\nBefore we begin, I want to assure you that everything shared in this space remains confidential and non-judgmental. You're safe here to explore your experiences without fear of criticism or repercussions.\n\nNow, I'd love for you to share with me what brings you to our session today. What's been on your mind lately? What are some thoughts or feelings that have been lingering, making it difficult for you to find peace or move forward?\n\nPlease know that I'm here to listen without interrupting or offering solutions just yet. My goal is to deeply understand the texture of your experience before we begin to explore ways to support you in moving forward.\n\nWhat would you like to share?"
+    },
+    {
+      "role": "user",
+      "content": "mi m\u00e3e est\u00e1 sempre pedindo que eu lhe ajude com as coisas de casa... e os meus irm\u00e3os ainda dependem muito de mim para tudo, n\u00e3o sei mais quem sou eu mesma, sinto-me perdida e sem for\u00e7as.",
+      "somatic_state": {
+        "sympathetic": 0.3,
+        "dorsal_vagal": 0.12,
+        "ventral_vagal": 0.9
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like even when you try to take care of yourself and your own needs, your mother's requests and your brothers' dependence on you can pull you back into a sense of responsibility and obligation. You feel overwhelmed by the weight of their needs, and it's making you feel lost and drained.\n\nCan you tell me more about what matters most to you in this situation? What are three things that you would want to hold onto or protect for yourself right now?"
+    },
+    {
+      "role": "user",
+      "content": "Meu tempo. Quero ter um pouquinho de tempo s\u00f3 para mim, sem perguntas ou pedidos de ajuda. Quero poder fazer o que eu quiser quando eu quiser, sem sentir me culpando por n\u00e3o estar cuidando dos outros. E... e que minha m\u00e3e entenda que tamb\u00e9m precisa cuidar de si mesma, que ela n\u00e3o precise da minha ajuda para tudo.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.0
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like having time for yourself is a non-negotiable value for you right now. You want to be able to make choices and have autonomy without feeling guilty or responsible for others' needs. And also, you'd like your mother to understand that she too needs to take care of herself, rather than relying solely on you.\n\nGiven how much having time for yourself matters to you, what's one small thing you could do this week that would honor that value? It might not be a grand solution, but something tiny that feels like a step in the right direction."
+    },
+    {
+      "role": "user",
+      "content": ", eu suponho que eu poderia ir ao parque um s\u00e1bado \u00e0 tarde e simplesmente sentar-me em uma bancada e ler um livro por uma hora sem fazer nada de mais.",
+      "somatic_state": {
+        "sympathetic": 0.2,
+        "dorsal_vagal": 0.15,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like going to the park and sitting on a bench to read a book for an hour without any other obligations is a small, yet significant step towards honoring your value of having time for yourself.\n\nLet me summarize what we've discussed so far: you feel overwhelmed by your mother's requests and your brothers' dependence on you, but you're clear that having time for yourself is essential to you. You want to be able to make choices without feeling guilty or responsible for others' needs, and you'd like your mother to take care of herself too.\n\nBefore we wrap up our session today, I'd like to propose a small experiment: try going to the park on Saturday afternoon and sitting on that bench to read a book for an hour. See how it feels to have some dedicated time just for yourself, without any other obligations or responsibilities. Can you commit to giving this a try?"
+    },
+    {
+      "role": "user",
+      "content": "ok, vou tentar.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.0
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Muito bem! Est\u00e1 tudo bem, voc\u00ea vai dar um passo importante para cuidar de si mesma. Lembre-se de que n\u00e3o h\u00e1 nada mais importante do que isso. E se voc\u00ea precisar de mais ajuda ou apenas quiser compartilhar como foi a experi\u00eancia, est\u00e1 sempre aberto para conversar.\n\nAt\u00e9 a pr\u00f3xima! Boa sorte com o seu tempo no parque e lembre-se de cuidar bem de si mesma."
+    },
+    {
+      "role": "user",
+      "content": "Entendo. Desculpe se eu fiquei muito chata durante a conversa...",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.0
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "N\u00e3o foi chato, n\u00e3o! Foi muito natural e humano compartilhar suas preocupa\u00e7\u00f5es e sentimentos comigo. \u00c9 completamente normal sentir-se sobrecarregado e precisar de algu\u00e9m para ouvir sem julgamento. Estou aqui para ajudar e oferecer um espa\u00e7o seguro para voc\u00ea explorar seus pensamentos e sentimentos.\n\nN\u00e3o precisa se desculpar por nada! Foi uma conversa muito valiosa e importante, e estou grato por termos podido compartilhar esse tempo juntos. Boa sorte com o seu parque e lembre-se de cuidar bem de si mesma!"
+    },
+    {
+      "role": "user",
+      "content": "Ah, obrigada... Foi bom conversar mesmo... Vou pensar nisso tudo quando for ao parque.",
+      "somatic_state": {
+        "sympathetic": 0.0,
+        "dorsal_vagal": 0.1,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Foi muito bom conversar tamb\u00e9m! Estou feliz por termos podido compartilhar esse momento juntos. Lembre-se de que voc\u00ea \u00e9 capaz e forte o suficiente para cuidar de si mesma, e que \u00e9 okay pedir ajuda quando necess\u00e1rio.\n\nAt\u00e9 a pr\u00f3xima, e que o seu tempo no parque seja um momento de paz e reflex\u00e3o para voc\u00ea!"
+    },
+    {
+      "role": "user",
+      "content": "Eu vou...",
+      "somatic_state": {
+        "sympathetic": 1.0,
+        "dorsal_vagal": 0.8,
+        "ventral_vagal": 0.12
+      }
+    }
+  ]
+}
