@@ -197,7 +197,7 @@
         }
         
         /* Header elements */
-        #hdr-agent-model, #hdr-evaluator-model {
+        #hdr-therapist-model, #hdr-patient-model, #hdr-optimizer-model {
             color: var(--nav-text-active);
         }
 
@@ -293,8 +293,15 @@
                     </h1>
                     <div class="text-slate-400 mt-1 flex flex-wrap items-center gap-2 text-xs sm:text-sm">
                         <span>Autonomous Discovery of Therapeutic Conversation Strategies</span>
-                        <span class="px-2 py-0.5 text-xs bg-slate-800 border border-slate-700 rounded text-slate-300 shrink-0">Agent: <span id="hdr-agent-model" class="text-teal-400 font-mono">...</span></span>
-                        <span class="px-2 py-0.5 text-xs bg-slate-800 border border-slate-700 rounded text-slate-300 shrink-0">Eval: <span id="hdr-evaluator-model" class="text-indigo-400 font-mono">...</span></span>
+                        <span class="px-2 py-0.5 text-xs bg-slate-800 border border-slate-700 rounded text-slate-300 shrink-0" title="Plays the therapist role in simulated conversations">
+                            🧑‍⚕️ Therapist: <span id="hdr-therapist-model" class="text-teal-400 font-mono">...</span>
+                        </span>
+                        <span class="px-2 py-0.5 text-xs bg-slate-800 border border-slate-700 rounded text-slate-300 shrink-0" title="Simulates the patient and generates somatic state responses">
+                            🧑 Patient: <span id="hdr-patient-model" class="text-indigo-400 font-mono">...</span>
+                        </span>
+                        <span class="px-2 py-0.5 text-xs bg-slate-800 border border-slate-700 rounded text-slate-300 shrink-0" title="The learning brain — analyzes scores and evolves the therapist's strategy after each experiment">
+                            🧠 Optimizer: <span id="hdr-optimizer-model" class="text-amber-400 font-mono">...</span>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -1054,9 +1061,10 @@
                 const res = await fetch('data/stats.json');
                 const data = await res.json();
                 
-                if (data.agent_model) {
-                    document.getElementById('hdr-agent-model').textContent = data.agent_model;
-                    document.getElementById('hdr-evaluator-model').textContent = data.evaluator_model || "None";
+                if (data.therapist_model) {
+                    document.getElementById('hdr-therapist-model').textContent = data.therapist_model;
+                    document.getElementById('hdr-patient-model').textContent = data.patient_model || data.therapist_model;
+                    document.getElementById('hdr-optimizer-model').textContent = data.optimizer_model || data.therapist_model;
                 }
                 
                 if (data.experiments && data.experiments.length > 0) {

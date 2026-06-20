@@ -9,12 +9,25 @@ import therapist
 import session_config
 import patient_archetypes
 import random
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 
 class SomaticState(BaseModel):
-    sympathetic: float = Field(..., ge=0.0, le=1.0, description="Fight/Flight (0.0 to 1.0)")
-    dorsal_vagal: float = Field(..., ge=0.0, le=1.0, description="Collapse/Freeze (0.0 to 1.0)")
-    ventral_vagal: float = Field(..., ge=0.0, le=1.0, description="Safety/Grounded (0.0 to 1.0)")
+    sympathetic: float = Field(..., description="Fight/Flight. MUST be a decimal between 0.0 and 1.0 (e.g. 0.7)")
+    dorsal_vagal: float = Field(..., description="Collapse/Freeze. MUST be a decimal between 0.0 and 1.0 (e.g. 0.2)")
+    ventral_vagal: float = Field(..., description="Safety/Grounded. MUST be a decimal between 0.0 and 1.0 (e.g. 0.9)")
+
+    @field_validator('sympathetic', 'dorsal_vagal', 'ventral_vagal', mode='before')
+    @classmethod
+    def normalize_scale(cls, v):
+        try:
+            v = float(v)
+            if v > 10.0:
+                v = v / 100.0
+            elif v > 1.0:
+                v = v / 10.0
+            return max(0.0, min(1.0, v))
+        except (ValueError, TypeError):
+            return 0.0
 
     def to_dict(self):
         return self.model_dump()
@@ -50,6 +63,12 @@ client_local = OpenAI(
 client_evaluator = OpenAI(
     base_url=config.EVALUATOR_BASE_URL,
     api_key=config.EVALUATOR_API_KEY
+)
+
+# Initialize OpenAI client for the Optimizer Agent (Gemma 4)
+client_agent = OpenAI(
+    base_url=config.AGENT_BASE_URL,
+    api_key=config.AGENT_API_KEY
 )
 
 _LLM_LOCK = threading.Lock()
@@ -114,12 +133,19 @@ def check_pause():
             paused_logged = True
         time.sleep(2)
 
-def chat_completion(messages, temperature=0.7, json_format=False, tools=None, use_evaluator=False):
+def chat_completion(messages, temperature=0.7, json_format=False, tools=None, use_evaluator=False, use_agent=False):
     """Wrapper for chat completion routing to correct model API"""
     check_pause()
     
-    active_client = client_evaluator if use_evaluator else client_local
-    active_model = config.EVALUATOR_MODEL_NAME if use_evaluator else config.MODEL_NAME
+    if use_agent:
+        active_client = client_agent
+        active_model = config.AGENT_MODEL_NAME
+    elif use_evaluator:
+        active_client = client_evaluator
+        active_model = config.EVALUATOR_MODEL_NAME
+    else:
+        active_client = client_local
+        active_model = config.MODEL_NAME
     
     kwargs = {
         "model": active_model,
@@ -131,19 +157,43 @@ def chat_completion(messages, temperature=0.7, json_format=False, tools=None, us
         kwargs["timeout"] = 300 # Longer timeout for complex agent generation
     else:
         kwargs["timeout"] = 300 # Generous timeout for local reasoning models
+    
+    # Agent calls get extra time: Ollama needs to swap models + Gemma 4 thinks deeply
+    if use_agent:
+        kwargs["timeout"] = 600  # 10 minutes for model swap + thinking generation
         
     base_url_str = str(active_client.base_url)
     if "localhost" in base_url_str or "127.0.0.1" in base_url_str:
-        kwargs["extra_body"] = {"options": {"num_ctx": 4096}}
+        ctx_size = 8192 if use_agent else 4096  # Gemma 4 benefits from larger context
+        kwargs["extra_body"] = {"options": {"num_ctx": ctx_size}}
         
     if tools:
         kwargs["tools"] = tools
+    
+    # Pre-warm: trigger model swap before the real call so Ollama loads Gemma 4 into memory
+    if use_agent:
+        try:
+            print(f"[Harness] Swapping to {active_model} for Optimizer Agent... (this may take 30-90s)")
+            warmup_kwargs = {
+                "model": active_model,
+                "messages": [{"role": "user", "content": "hi"}],
+                "max_tokens": 1,
+                "timeout": 300
+            }
+            if "localhost" in base_url_str or "127.0.0.1" in base_url_str:
+                warmup_kwargs["extra_body"] = {"options": {"num_ctx": 512}}
+            active_client.chat.completions.create(**warmup_kwargs)
+            print(f"[Harness] {active_model} loaded and ready.")
+        except Exception as e:
+            print(f"[Harness] Warmup ping failed ({e}), proceeding with main call anyway...")
         
-    if not use_evaluator:
+    if not use_evaluator and not use_agent:
         with _LLM_LOCK:
             response = call_with_retry(active_client.chat.completions.create, **kwargs)
     else:
-        response = call_with_retry(active_client.chat.completions.create, **kwargs)
+        # Agent gets more retries with longer delays to survive swap hiccups
+        retry_kwargs = {"max_retries": 5, "initial_delay": 10.0} if use_agent else {}
+        response = call_with_retry(active_client.chat.completions.create, **retry_kwargs, **kwargs)
         
     if not _GPU_CHECKED:
         check_gpu_loading(config.MODEL_NAME)

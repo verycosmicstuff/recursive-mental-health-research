@@ -78,7 +78,8 @@ CRITICAL: Do NOT write python code or wrap your response in markdown blocks. Out
     response = chat_completion(
         [{"role": "system", "content": prompt}], 
         temperature=config.TEMPERATURE_AGENT,
-        json_format=True
+        json_format=True,
+        use_agent=True
     )
     
     import re

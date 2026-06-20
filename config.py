@@ -8,14 +8,22 @@ import os
 # ─── Ollama Settings ──────────────────────────────────────────────────────────
 OLLAMA_BASE_URL = "http://localhost:11434/v1"
 OLLAMA_API_KEY  = "ollama"          # Required by openai client, value doesn't matter for Ollama
-MODEL_NAME      = "llama3.1"        # Single model for all roles (agent + therapist)
+MODEL_NAME      = "llama3.1"        # Model for therapist + patient simulation
 
 # ─── Evaluator Settings (Asymmetric API Split) ──────────────────────────────
 # Using the same model for evaluator to avoid constant VRAM swapping on 6GB GPU.
 # This keeps the model loaded permanently — zero swap overhead.
 EVALUATOR_BASE_URL = "http://localhost:11434/v1"
 EVALUATOR_API_KEY = "ollama"
-EVALUATOR_MODEL_NAME = "llama3.1"   # Same model as agent — no swapping
+EVALUATOR_MODEL_NAME = "llama3.1"   # Same model as therapist — no swapping
+
+# ─── Optimizer Agent Settings ────────────────────────────────────────────────
+# The Optimizer Agent ("the learning brain") runs once per experiment to analyze
+# results and propose new strategies. Using a stronger model here is the highest
+# leverage upgrade since it only swaps in once per loop.
+AGENT_BASE_URL = "http://localhost:11434/v1"
+AGENT_API_KEY  = "ollama"
+AGENT_MODEL_NAME = "gemma4:e4b"     # Gemma 4 e4b — superior reasoning for strategy evolution
 # ─── Experiment Settings ──────────────────────────────────────────────────────
 MAX_EXPERIMENTS       = 1000        # Total iterations before auto-stopping (set to 0 for infinite)
 EXPERIMENT_PAUSE_SECS = 2           # Brief pause between experiments

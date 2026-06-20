@@ -119,8 +119,9 @@ def export():
     stats = {
         "experiments": all_experiments,
         "best_score": best_score,
-        "agent_model": config.MODEL_NAME,
-        "evaluator_model": config.EVALUATOR_MODEL_NAME
+        "therapist_model": config.MODEL_NAME,
+        "patient_model": config.EVALUATOR_MODEL_NAME,
+        "optimizer_model": config.AGENT_MODEL_NAME
     }
 
     stats_path = os.path.join(DOCS_DATA_DIR, "stats.json")

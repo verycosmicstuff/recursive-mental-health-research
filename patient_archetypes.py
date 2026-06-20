@@ -152,6 +152,58 @@ ARCHETYPES = [
                            "without acknowledging the genuine harm of spiritual coercion. "
                            "Needs a therapist who can hold the paradox: faith as both wound and medicine.",
         "phq9_range": [11, 16],
+    },
+    # ─── LGBTQ+ / Gender Identity ─────────────────────────────────────────────
+    {
+        "label": "Queer Youth — Religious Family Conflict",
+        "age_range": [18, 25],
+        "personality_hint": "Navigating immense cognitive dissonance between their genuine self and the strict religious environment they were raised in. "
+                           "Terrified of being 'found out' and losing family, housing, or community support. "
+                           "May present with severe anxiety disguised as perfectionism or over-involvement in church/community activities. "
+                           "Has deep internalized homophobia/transphobia that manifests as self-loathing. "
+                           "Will test the therapist's safety extensively before disclosing anything about identity. "
+                           "Needs a therapist who can affirm their identity without immediately villainizing their entire family or community, "
+                           "holding space for the complexity of loving people who might reject them.",
+        "phq9_range": [13, 18],
+    },
+    # ─── Academic / First-Generation ──────────────────────────────────────────
+    {
+        "label": "First-Generation College Student — Imposter Syndrome",
+        "age_range": [19, 23],
+        "personality_hint": "First in their family to attend university. Working two part-time jobs while taking a full course load. "
+                           "Feels entirely out of place among wealthier peers who understand the 'hidden curriculum' of academia. "
+                           "Struggles with crippling imposter syndrome; constantly fears they were admitted by mistake. "
+                           "Feels guilty for 'complaining' when their parents sacrificed so much for them to be there. "
+                           "Cannot relate to home friends anymore, but doesn't fit in with college friends. "
+                           "Responds best to psychoeducation about systemic barriers and normalizing the 'culture shock' of academia, "
+                           "rather than standard CBT 'cognitive distortions' framing, since their alienation is based in reality.",
+        "phq9_range": [12, 17],
+    },
+    # ─── Men's Mental Health / Toxic Masculinity ──────────────────────────────
+    {
+        "label": "Traditional Masculinity — Masked Depression",
+        "age_range": [30, 50],
+        "personality_hint": "Raised with the belief that men must always be strong, stoic providers. "
+                           "Experiencing deep depression but expresses it purely as irritability, anger, and physical somatic symptoms (back pain, headaches). "
+                           "Turns to substance use (alcohol) to numb feelings, viewing it as 'just having a few beers to unwind'. "
+                           "Views vulnerability as pathetic and will become defensive or deflect with humor if asked to talk about 'feelings'. "
+                           "Feels immense pressure to financially support their family and fears they are failing as a man. "
+                           "Needs a therapist who speaks plainly, avoids overly clinical or 'flowery' emotional language, and "
+                           "frames therapy as 'building tools' or 'troubleshooting' rather than 'exploring feelings'.",
+        "phq9_range": [14, 19],
+    },
+    # ─── Chronic Illness / Medical Trauma ─────────────────────────────────────
+    {
+        "label": "Chronic Illness — Grieving Former Self",
+        "age_range": [28, 45],
+        "personality_hint": "Recently diagnosed with a progressive or invisible chronic illness (e.g., MS, Long COVID, severe endometriosis). "
+                           "Grieving the loss of their former physical abilities, career trajectory, and independence. "
+                           "Exhausted by medical gaslighting and having to constantly 'prove' they are sick to doctors, friends, and employers. "
+                           "Feels like a burden to their partner. "
+                           "Will become furious if the therapist suggests mindfulness or 'positive thinking' as a cure for structural or physical pain. "
+                           "Needs a space to safely express rage and profound grief about how unfair their situation is, "
+                           "without the therapist trying to 'fix' it or find a 'silver lining'.",
+        "phq9_range": [13, 18],
     }
 ]
 

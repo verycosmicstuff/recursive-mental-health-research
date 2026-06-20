@@ -128,8 +128,9 @@ def get_state():
     is_paused = os.path.exists(os.path.join(config.BASE_DIR, "PAUSED.txt"))
     return jsonify({
         "paused": is_paused,
-        "agent_model": config.MODEL_NAME,
-        "evaluator_model": config.EVALUATOR_MODEL_NAME
+        "therapist_model": config.MODEL_NAME,
+        "patient_model": config.EVALUATOR_MODEL_NAME,
+        "optimizer_model": config.AGENT_MODEL_NAME
     })
 
 @app.route('/api/toggle_pause', methods=['POST'])
