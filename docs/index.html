@@ -293,8 +293,8 @@
                     </h1>
                     <div class="text-slate-400 mt-1 flex flex-wrap items-center gap-2 text-xs sm:text-sm">
                         <span>Autonomous Discovery of Therapeutic Conversation Strategies</span>
-                        <span class="px-2 py-0.5 text-xs bg-slate-800 border border-slate-700 rounded text-slate-300 shrink-0">Agent: <span id="hdr-agent-model" class="text-teal-400 font-mono">gemma4:e4b</span></span>
-                        <span class="px-2 py-0.5 text-xs bg-slate-800 border border-slate-700 rounded text-slate-300 shrink-0">Eval: <span id="hdr-evaluator-model" class="text-indigo-400 font-mono">gemma4:e4b</span></span>
+                        <span class="px-2 py-0.5 text-xs bg-slate-800 border border-slate-700 rounded text-slate-300 shrink-0">Agent: <span id="hdr-agent-model" class="text-teal-400 font-mono">...</span></span>
+                        <span class="px-2 py-0.5 text-xs bg-slate-800 border border-slate-700 rounded text-slate-300 shrink-0">Eval: <span id="hdr-evaluator-model" class="text-indigo-400 font-mono">...</span></span>
                     </div>
                 </div>
             </div>
@@ -1053,6 +1053,11 @@
             try {
                 const res = await fetch('data/stats.json');
                 const data = await res.json();
+                
+                if (data.agent_model) {
+                    document.getElementById('hdr-agent-model').textContent = data.agent_model;
+                    document.getElementById('hdr-evaluator-model').textContent = data.evaluator_model || "None";
+                }
                 
                 if (data.experiments && data.experiments.length > 0) {
                     window.globalExperiments = data.experiments;

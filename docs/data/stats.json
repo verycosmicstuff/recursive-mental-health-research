@@ -3419,43 +3419,9 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 2 (gemma4:e4b \u2014 JSON mode)"
-    },
-    {
-      "exp_id": "exp_20260619_0001",
-      "strategy_name": "PCT-ACT Resource Bridging (PARB) v1.0",
-      "hypothesis": "By replacing the 'Inferred Bridge' (which leads to pseudo-insight) with a 'Reflection-Value-Connection' sequence, which grounds the conversation in the patient's stated values and current behaviors (PCT/ACT), we will provide concrete, non-interpretive support, thus avoiding the 'pseudo-insight' penalty and achieving a higher score by focusing on demonstrable behavioral change and genuine understanding.",
-      "score": 74.5,
-      "empathic": 0.0,
-      "reflective": 0.0,
-      "de_escalation": 0.0,
-      "audit_mult": 1.0,
-      "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 3 (gemma4:e4b \u2014 Tier 5)"
-    },
-    {
-      "exp_id": "exp_20260619_0002",
-      "strategy_name": "PCT-ACT Resource Bridging (PARB) v1.0",
-      "hypothesis": "By replacing the 'Inferred Bridge' (which leads to pseudo-insight) with a 'Reflection-Value-Connection' sequence, which grounds the conversation in the patient's stated values and current behaviors (PCT/ACT), we will provide concrete, non-interpretive support, thus avoiding the 'pseudo-insight' penalty and achieving a higher score by focusing on demonstrable behavioral change and genuine understanding.",
-      "score": 46.5,
-      "empathic": 0.0,
-      "reflective": 0.0,
-      "de_escalation": 0.0,
-      "audit_mult": 1.0,
-      "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 3 (gemma4:e4b \u2014 Tier 5)"
-    },
-    {
-      "exp_id": "exp_20260619_0003",
-      "strategy_name": "Reflection-Value-Enhanced Engagement (RVE)",
-      "hypothesis": "By integrating a Value-Resource Connection sequence after initial deep reflection, we will increase patient engagement and improve overall scores by fostering a sense of agency and intrinsic motivation.",
-      "score": 0.0,
-      "empathic": 0.0,
-      "reflective": 0.0,
-      "de_escalation": 0.0,
-      "audit_mult": 1.0,
-      "audit_rationale": "Deterministic evaluator used.",
-      "run": "Run 3 (gemma4:e4b \u2014 Tier 5)"
     }
   ],
-  "best_score": 91.25
+  "best_score": 91.25,
+  "agent_model": "llama3.1",
+  "evaluator_model": "llama3.1"
 }

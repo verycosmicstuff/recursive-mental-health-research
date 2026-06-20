@@ -115,7 +115,13 @@ def export():
         if exp.get("score", 0) > best_score:
             best_score = exp["score"]
 
-    stats = {"experiments": all_experiments, "best_score": best_score}
+    import config
+    stats = {
+        "experiments": all_experiments,
+        "best_score": best_score,
+        "agent_model": config.MODEL_NAME,
+        "evaluator_model": config.EVALUATOR_MODEL_NAME
+    }
 
     stats_path = os.path.join(DOCS_DATA_DIR, "stats.json")
     with open(stats_path, "w", encoding="utf-8") as f:
