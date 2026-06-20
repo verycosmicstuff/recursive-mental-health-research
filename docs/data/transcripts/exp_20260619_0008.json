@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260619_0008",
+  "timestamp": "2026-06-19T23:57:14.194479",
+  "strategy": {
+    "name": "PCT-ACT Resource Bridging (PARB) v1.0",
+    "hypothesis": "By replacing the 'Inferred Bridge' (which leads to pseudo-insight) with a 'Reflection-Value-Connection' sequence, which grounds the conversation in the patient's stated values and current behaviors (PCT/ACT), we will provide concrete, non-interpretive support, thus avoiding the 'pseudo-insight' penalty and achieving a higher score by focusing on demonstrable behavioral change and genuine understanding.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Mei-Ling Wong",
+    "age": 42,
+    "occupation": "Part-time Teacher & Full-time Family Caregiver",
+    "presenting_issue": "Depression, anxiety, guilt, and self-doubt related to caregiving responsibilities for her ailing mother.",
+    "background_story": "Mei-Ling is the eldest child of Chinese descent. She has always prioritized filial piety, dedicating her life to caring for her family members. Her parents immigrated to the West when Mei-Ling was 10 years old. They worked multiple jobs to provide a comfortable home for their three children.",
+    "personality": "Mei-Ling is a selfless individual who puts others' needs before her own. She struggles with setting boundaries, asserting her independence, and seeking outside help due to traditional family values emphasizing 'self-sacrifice'. Mei-Ling feels overwhelmed by the weight of caregiving responsibilities for her 75-year-old mother, who has Alzheimer's disease.",
+    "baseline_phq9": 14,
+    "archetype_label": "Filial Piety Conflict \u2014 East Asian Elder Care"
+  },
+  "scores": {
+    "total_score": 50.0,
+    "raw_score": 50.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 35.0/70.0 (VV shift: 0.00, Sym shift: 0.00, DV shift: 0.00) | Brevity Penalty (-15): Therapist turn too long (8 sentences, 100 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Welcome to our therapy session today! I'm so glad you've taken this step towards exploring your thoughts and feelings with me. Please make yourself comfortable, and take all the time you need to settle in.\n\nAs we begin, I want to acknowledge that it's okay to feel whatever emotions arise during our conversation. My goal is to create a safe space for you to express yourself freely, without judgment or expectation. You're here because you matter, and your experiences are valid.\n\nCan you start by telling me what's been on your mind lately? What brings you to this session today?"
+    },
+    {
+      "role": "user",
+      "content": "To be honest, I'm not even sure if I'm doing the right thing by being here. My mother needs me...she can't take care of herself anymore. The doctor says it's Alzheimer's. It's like a weight is crushing me, and I just want to make things better for her.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you're carrying an enormous burden, not just physically but also emotionally. The thought of your mother struggling with Alzheimer's must be incredibly distressing. Your desire to help her is evident in the way you're shouldering this responsibility.\n\nI notice that even as we start our conversation, you're already considering whether seeking support is \"the right thing\" to do. It's as if you're worried about being selfless, but also hesitant to prioritize your own needs. Can you tell me more about what it means to you to be a good caregiver for your mother? What values or principles guide your actions in this situation?"
+    },
+    {
+      "role": "user",
+      "content": "I've always put my family's needs before mine. It's just what we do, right? My parents instilled that in me when I was young...filial piety and all that. But sometimes I wonder if it's healthy to completely sacrifice myself like this.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.0
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the idea of filial piety has been deeply ingrained in you from a young age. You're carrying on a family tradition, but at what cost? It's as if you've internalized the expectation that your needs are secondary to others', and now you're questioning whether this is truly serving anyone, including yourself.\n\nI hear the weight of responsibility bearing down on you even more clearly now. It's not just about caring for your mother; it's also about living up to a sense of duty and obligation. Can you take a step back and imagine what would happen if you were to prioritize your own needs, just for a moment? What would that look like, feel like, or sound like for you?\n\nAnd when I say \"prioritize your own needs,\" I'm not suggesting you abandon your mother's care entirely. Rather, I want to explore the idea of finding a balance between caring for her and tending to your own well-being."
+    },
+    {
+      "role": "user",
+      "content": "I...don't know if I can even imagine that. It feels selfish. What would happen to my mother? Who else is going to take care of her?",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.0
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like the idea of prioritizing yourself still feels deeply tied to feelings of guilt and responsibility towards your mother. You're worried about who will take care of her if you don't, and that's a valid concern.\n\nLet me try to reflect this back to you: it seems like even in the midst of feeling overwhelmed, you're still thinking about how to best support your mother's needs. That's a testament to the love and care you have for her.\n\nNow, let's gently explore what matters most to you in this situation. If you could take three things away from this experience, what would they be? What are the core values or principles that guide your actions as a caregiver?"
+    },
+    {
+      "role": "user",
+      "content": "Three things... I guess it would be making sure my mother is comfortable and safe, being honest with myself about how much I can handle, and... finding a way to not feel so guilty all the time.",
+      "somatic_state": {
+        "sympathetic": 0.7,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 1.0
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you're touching on some essential values: your mother's comfort and safety, self-awareness and honesty, and letting go of guilt.\n\nGiven that these are what matter most to you in this situation, I'd like to ask: Given how much you value being honest with yourself about your limits, what is one small thing you could do this week that honors that value? Something that might feel difficult or uncomfortable, but would allow you to take care of yourself and acknowledge your own needs?"
+    },
+    {
+      "role": "user",
+      "content": "A small thing... I don't know. Maybe just asking my sister for help with mom's medication schedule for one day? I've been doing it all by myself every week, but if I asked her, maybe she could take care of it that one day...",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.0
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like taking on that responsibility has felt overwhelming, and you're hesitant to ask for help. But now, in this moment, you're considering asking your sister for assistance with just one small task.\n\nLet me summarize what we've explored: You value being honest with yourself about your limits, and you're willing to take a small step towards acknowledging those limits by asking your sister for help with mom's medication schedule. What if this small act of self-care and boundary-setting were an experiment, rather than a duty? What might happen if you gave yourself permission to ask for help in this way, just once, without feeling like you're failing or being selfish?\n\nShall we explore what that might look like, and how it could impact your experience as a caregiver?"
+    },
+    {
+      "role": "user",
+      "content": "Sigh... Okay. I guess I'd feel... lighter? Less responsible all by myself?",
+      "somatic_state": {
+        "sympathetic": 0.0,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.7
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like even the thought of asking for help is bringing up feelings of relief and reduced responsibility.\n\nLet me summarize what we've explored: You value being honest with yourself about your limits, and you're willing to take a small step towards acknowledging those limits by asking your sister for help with mom's medication schedule. By doing so, you might feel lighter, less responsible, and more able to tend to your own needs.\n\nAs we close this session, I'd like to leave you with a small action to try: This week, when it feels manageable, ask your sister for help with one day of mom's medication schedule. See what happens, not just in terms of the practical outcome, but also in how you feel about yourself and your ability to ask for support. Remember, this is an experiment, not a duty. You're testing whether taking small steps towards self-care can bring relief and clarity to your experience as a caregiver.\n\nHow does that sound?"
+    },
+    {
+      "role": "user",
+      "content": "It sounds...do-able, I guess. Like, maybe it's okay to ask for help.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    }
+  ]
+}
