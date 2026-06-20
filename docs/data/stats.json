@@ -3431,6 +3431,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 3 (gemma4:e4b \u2014 Tier 5)"
+    },
+    {
+      "exp_id": "exp_20260619_0003",
+      "strategy_name": "Empathic-Motivational Bridge",
+      "hypothesis": "By incorporating MI's ambivalence exploration and PCT's unconditional positive regard in tandem with CBT's reframing techniques and ACT's defusion, we can more effectively establish patient engagement and facilitate meaningful behavioral change.",
+      "score": 55.25,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 3 (gemma4:e4b \u2014 Tier 5)"
     }
   ],
   "best_score": 91.25,
