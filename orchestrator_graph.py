@@ -129,6 +129,17 @@ def evaluator_node(state: GraphState) -> Dict[str, Any]:
     exp_id = state.get("exp_id", "exp_XXXX")
     baseline_score = state.get("baseline_score", -999.0)
     
+    patient_turns = [m for m in messages if m.get("role") == "user"]
+    is_corrupted = any(not t.get("content", "").strip() for t in patient_turns)
+    
+    if is_corrupted or not patient_turns:
+        print(f"[{exp_id}] REJECTED: Experiment contains empty or corrupted patient responses. Skipping score update.")
+        harness.save_rejected_experiment(exp_id, persona, messages, "Empty patient responses detected", strategy_info)
+        return {
+            "score": -999.0,
+            "penalties": ["Rejected: Empty patient responses detected"]
+        }
+    
     scores = harness.score_conversation(persona, messages)
     harness.save_experiment(exp_id, persona, messages, scores, strategy_info)
     

@@ -12,9 +12,9 @@ import random
 from pydantic import BaseModel, Field
 
 class SomaticState(BaseModel):
-    sympathetic: float = Field(..., description="Fight/Flight (0.0 to 1.0)")
-    dorsal_vagal: float = Field(..., description="Collapse/Freeze (0.0 to 1.0)")
-    ventral_vagal: float = Field(..., description="Safety/Grounded (0.0 to 1.0)")
+    sympathetic: float = Field(..., ge=0.0, le=1.0, description="Fight/Flight (0.0 to 1.0)")
+    dorsal_vagal: float = Field(..., ge=0.0, le=1.0, description="Collapse/Freeze (0.0 to 1.0)")
+    ventral_vagal: float = Field(..., ge=0.0, le=1.0, description="Safety/Grounded (0.0 to 1.0)")
 
     def to_dict(self):
         return self.model_dump()
@@ -37,7 +37,7 @@ class PatientPersona(BaseModel):
     baseline_phq9: int = Field(..., description="Depression severity score (indicating severity)")
 
 class PatientResponse(BaseModel):
-    dialogue: str = Field(..., description="Your actual conversational response to the therapist (1-4 sentences).")
+    dialogue: str = Field(..., min_length=1, description="Your actual conversational response (1-4 sentences).")
     somatic_state: SomaticState = Field(..., description="Your current somatic/autonomic nervous system state.")
 
 # Initialize OpenAI client to point to local Ollama instance (Therapist)
@@ -270,21 +270,34 @@ RULES FOR YOUR BEHAVIOR:
     session_cfg = session_config.get_session_config()
     patient_temp = max(0.1, min(1.0, float(session_cfg.get("temperature_patient", 0.8))))
     
-    try:
-        response_obj = chat_completion_parse(
-            messages,
-            response_format=PatientResponse,
-            temperature=patient_temp,
-            use_evaluator=True
-        )
-        dialogue = response_obj.dialogue.strip()
-        somatic = response_obj.somatic_state.to_dict()
-    except Exception as e:
-        print(f"[Harness] Warning: Failed to parse PatientResponse via Pydantic: {e}")
-        dialogue = "... I'm not sure what to say."
-        somatic = {"sympathetic": 0.5, "dorsal_vagal": 0.5, "ventral_vagal": 0.0}
-        
-    return dialogue, somatic
+    max_retries = 3
+    for attempt in range(max_retries):
+        try:
+            response_obj = chat_completion_parse(
+                messages,
+                response_format=PatientResponse,
+                temperature=patient_temp,
+                use_evaluator=True
+            )
+            dialogue = response_obj.dialogue.strip()
+            
+            if not dialogue:
+                raise ValueError("Dialogue content is empty")
+                
+            somatic = response_obj.somatic_state.to_dict()
+            
+            for k, v in somatic.items():
+                if not (0.0 <= v <= 1.0):
+                    raise ValueError(f"Somatic field '{k}' is out of bounds: {v}")
+                    
+            return dialogue, somatic
+            
+        except Exception as e:
+            print(f"[Harness] Warning: Failed to parse PatientResponse via Pydantic (Attempt {attempt+1}/{max_retries}): {e}")
+            if attempt == max_retries - 1:
+                dialogue = "... I'm not sure what to say."
+                somatic = {"sympathetic": 0.5, "dorsal_vagal": 0.5, "ventral_vagal": 0.0}
+                return dialogue, somatic
 
 def get_therapist_response(conversation_history: list, active_prompt: str) -> str:
     """Gets the therapist's response using the currently loaded strategy."""
@@ -322,6 +335,21 @@ def score_conversation(persona: dict, conversation: list) -> dict:
         "audit_multiplier": 1.0,
         "audit_rationale": "Deterministic evaluator used."
     }
+
+def save_rejected_experiment(exp_id: str, persona: dict, conversation: list, rationale: str, strategy_info: dict):
+    """Saves a corrupted or rejected experiment to the rejected_experiments directory for debugging."""
+    exp_dir = os.path.join(config.BASE_DIR, "rejected_experiments", exp_id)
+    os.makedirs(exp_dir, exist_ok=True)
+    
+    with open(os.path.join(exp_dir, "data.json"), "w", encoding="utf-8") as f:
+        json.dump({
+            "id": exp_id,
+            "timestamp": datetime.datetime.now().isoformat(),
+            "strategy": strategy_info,
+            "persona": persona,
+            "rejection_rationale": rationale,
+            "conversation": conversation
+        }, f, indent=2)
 
 def save_experiment(exp_id: str, persona: dict, conversation: list, scores: dict, strategy_info: dict):
     """Saves all experiment data to disk."""
