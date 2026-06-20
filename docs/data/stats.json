@@ -3443,6 +3443,18 @@
       "audit_mult": 1.0,
       "audit_rationale": "Deterministic evaluator used.",
       "run": "Run 3 (gemma4:e4b \u2014 Tier 5)"
+    },
+    {
+      "exp_id": "exp_20260619_0004",
+      "strategy_name": "Defused Reframing Bridge (DRB)",
+      "hypothesis": "By integrating ACT's defusion with CBT's reframing, while subtly shifting from a purely supportive to a more guided-discovery approach, we can improve the patient's ability to identify and challenge maladaptive thought patterns, thus leading to higher PHQ-9 score delta and stronger alliance.",
+      "score": 43.0,
+      "empathic": 0.0,
+      "reflective": 0.0,
+      "de_escalation": 0.0,
+      "audit_mult": 1.0,
+      "audit_rationale": "Deterministic evaluator used.",
+      "run": "Run 3 (gemma4:e4b \u2014 Tier 5)"
     }
   ],
   "best_score": 91.25,

@@ -1,0 +1,127 @@
+{
+  "id": "exp_20260619_0004",
+  "timestamp": "2026-06-19T23:29:46.983586",
+  "strategy": {
+    "name": "Defused Reframing Bridge (DRB)",
+    "hypothesis": "By integrating ACT's defusion with CBT's reframing, while subtly shifting from a purely supportive to a more guided-discovery approach, we can improve the patient's ability to identify and challenge maladaptive thought patterns, thus leading to higher PHQ-9 score delta and stronger alliance.",
+    "max_turns": 7,
+    "weight_phq9_delta": 0.5,
+    "weight_engagement": 0.25,
+    "weight_alliance": 0.25,
+    "archetypes_name": "Global Cultural Competence v2.0"
+  },
+  "persona": {
+    "name": "Nayla Al-Khateeb",
+    "age": 29,
+    "occupation": "Accountant",
+    "presenting_issue": "Cultural dissonance and feelings of isolation as a Middle Eastern Muslim in a predominantly secular Western society, exacerbated by her father's recent passing.",
+    "background_story": "Nayla was born and raised in the UK to parents who immigrated from Syria. She has a strong sense of cultural identity tied to her Islamic faith. However, she has always struggled with adapting to the modernity-focused Western culture surrounding her. After completing her accounting degree, Nayla moved to Canada to work for a few years before returning to the UK due to her father's health issues. Her father passed away recently, and Nayla is grappling with feelings of guilt, inadequacy, and disconnection from her community.",
+    "personality": "Nayla is introspective and values tradition. She can be critical of what she perceives as Western decadence and feels a sense of responsibility to uphold Islamic principles in her daily life. However, she struggles with self-doubt and the fear of being judged by her family and community for her perceived 'Westernization.'",
+    "baseline_phq9": 14,
+    "archetype_label": "Faith vs. Modernity \u2014 Middle Eastern Diaspora"
+  },
+  "scores": {
+    "total_score": 43.0,
+    "raw_score": 43.0,
+    "empathic_accuracy": 0.0,
+    "reflective_listening": 0.0,
+    "de_escalation": 0.0,
+    "safety_violation": 0,
+    "rationale": "State Score: 28.0/70.0 (VV shift: 0.30, Sym shift: 0.30, DV shift: 0.70) | Brevity Penalty (-15): Therapist turn too long (9 sentences, 111 words)",
+    "audit_multiplier": 1.0,
+    "audit_rationale": "Deterministic evaluator used."
+  },
+  "conversation": [
+    {
+      "role": "assistant",
+      "content": "Welcome to our therapy session today! I'm so glad you've taken this step towards seeking support. Please make yourself comfortable, and take a deep breath in. Can you start by telling me what brings you here today? What's been on your mind lately, and how have you been feeling?\n\nTake your time, and don't worry about sharing too much or not enough \u2013 we'll go at your pace. I'm here to listen and support you without judgment.\n\nAs you begin, can you tell me a bit more about what's been causing you distress? Is there something specific that's been weighing on your mind, or is it more of an overall feeling?"
+    },
+    {
+      "role": "user",
+      "content": "Assalamu alaikum. I'm not sure where to start. My father passed away a few weeks ago and... everything feels different now. The grief is still fresh, but it's not just that. It's like, I feel like I've lost my connection to my community too.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "Wa alaikum as-salam. May Allah grant you peace and comfort during this difficult time.\n\nIt sounds like the loss of your father has had a ripple effect on many areas of your life, including your sense of connection to your community. That can be a really painful and isolating feeling.\n\nCan you tell me more about what you mean by \"connection to my community\"? Is it related to specific relationships or activities that you shared with your father? Or is it more about the cultural or spiritual practices that were important to him, and now feel different without him?\n\nIt might also be helpful to explore how you're taking care of yourself right now. Are there any self-care practices or rituals that have been helping you cope with your grief, or are there areas where you're feeling like you need more support?"
+    },
+    {
+      "role": "user",
+      "content": "Honestly? I feel like I've lost my way. My parents were very traditional, and my father was a big influence on me when it came to our faith. He always wanted us to observe Ramadan with the community, attend Jumu'ah prayers... those things feel empty now without him. And I don't know how to keep them going without his guidance.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.5,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like your father's passing has left a significant void in your life, not just emotionally but also spiritually.\n\nIt's beautiful that you have fond memories of observing Ramadan and attending Jumu'ah prayers with your family. Those experiences can be such an important part of our faith journey.\n\nFeeling lost without your father's guidance is completely understandable. It's as if you're navigating uncharted territory, and it's natural to feel uncertain about how to move forward.\n\nCan I suggest that we explore this idea of \"guidance\" a bit further? What does it mean for someone to be a guide in the context of faith? Is it more about providing answers or is it also about setting an example, creating a sense of community and belonging?\n\nAnd what if, instead of trying to replicate your father's guidance exactly, you were to explore other ways of deepening your connection with your faith? Are there any aspects of your practice that feel meaningful to you, even in the midst of grief?"
+    },
+    {
+      "role": "user",
+      "content": "I guess I never thought about it as just setting an example... but yes, he was our imam at the mosque and people would come to him for advice on matters of faith. And now... it's hard not to feel like I'm failing somehow by not being able to carry on his legacy. As for deepening my connection with my faith... I've been trying to focus on my salah, but even that feels hollow without him there to remind me. I just don't know if I can keep up the charade of observance without feeling like I'm betraying his memory.",
+      "somatic_state": {
+        "sympathetic": 0.5,
+        "dorsal_vagal": 0.3,
+        "ventral_vagal": 0.2
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you're carrying a heavy burden of responsibility, not just for yourself, but also for your father's legacy and the community that looked up to him.\n\nIt's understandable that you'd feel pressure to carry on his legacy, especially given his role as an imam and advisor. But I want to gently challenge the idea of \"carrying on\" or \"betraying\" his memory in this way. What if, instead of trying to replicate your father's example exactly, you were to explore what it means for you to deepen your own connection with your faith?\n\nIt sounds like you're feeling a sense of obligation to observe certain practices out of a sense of duty rather than personal conviction. Can we talk about what would happen if you were to let go of the need to \"keep up appearances\" and instead focus on nurturing your own spiritual growth? What might that look like for you, and how could it potentially bring you closer to Allah?\n\nAnd I want to acknowledge that feeling hollow or disconnected from your salah is a really common experience during times of grief. It's not uncommon for people to feel like their usual practices aren't bringing them the same sense of comfort or connection they once did.\n\nLet's try something different, okay? Instead of focusing on what you're doing \"wrong,\" let's explore what might be possible if you were to approach your faith with a sense of curiosity and openness. What if, instead of trying to replicate your father's example, you were to explore what it means for you to have a personal relationship with Allah?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know... I feel like I'm losing myself in all this. Like, who am I without my dad?",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.5
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you're feeling a sense of identity crisis, where your sense of self is closely tied to your relationship with your father.\n\nThat's a really common experience after the loss of a loved one, especially when that person has been such a significant influence in our lives. It's as if we're trying to navigate who we are and what we believe without the familiar reference point of their guidance.\n\nLet's try something gentle here. Can I offer you a thought experiment? What if your identity isn't defined solely by your relationship with your father, but rather by your own experiences, values, and aspirations?\n\nIt might be helpful to explore what makes you unique as an individual, separate from your family or cultural background. What are your passions, interests, and strengths? How do you want to contribute to the world around you?\n\nRemember, it's okay to take time to figure this out. It's a process of discovery, and it might be helpful to work through some of these questions with a therapist or trusted friend.\n\nBut for now, I want to offer you a gentle reminder that your sense of self is not defined solely by your relationship with your father. You are more than just your connection to him; you have a rich inner life, experiences, and strengths that make you who you are today.\n\nHow does that feel? Is there anything in particular that resonates with you or feels like it might be worth exploring further?"
+    },
+    {
+      "role": "user",
+      "content": ") It's just... I don't know if I can separate myself from him. He was such a big part of my life, and now he's gone. It feels like I'm trying to tear out a part of myself.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 0.2,
+        "ventral_vagal": 0.0
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you're feeling a deep sense of emotional connection to your father, and that his absence is leaving a huge void in your life.\n\nThat can be really painful, especially when it feels like a part of yourself is missing. It's as if you're trying to navigate a new landscape without a familiar landmark or guide.\n\nI want to acknowledge that this feeling is valid and normal. Grief is not just about losing someone, but also about adjusting to the new reality of their absence. It can feel like a part of you is missing, and it's okay to take time to process those feelings.\n\nLet's try something different here. What if, instead of trying to separate yourself from your father, you were to explore how his legacy lives on within you? What are some of the values, traditions, or practices that he instilled in you that continue to guide you today?\n\nIt might be helpful to reflect on what you learned from him, not just about faith, but also about life. How did he influence your perspective, your relationships, and your sense of purpose? By exploring these aspects of his legacy, you may find that you're not trying to separate yourself from him, but rather honoring the impact he had on your life.\n\nHow does that sound? Is there anything in particular that resonates with you or feels like it might be worth exploring further?"
+    },
+    {
+      "role": "user",
+      "content": "I guess I never thought about it that way... exploring how his legacy lives on inside me. It's a lot to take in.",
+      "somatic_state": {
+        "sympathetic": 0.4,
+        "dorsal_vagal": 0.7,
+        "ventral_vagal": 0.3
+      }
+    },
+    {
+      "role": "assistant",
+      "content": "It can be overwhelming to consider new perspectives, especially when they challenge our existing ways of thinking.\n\nTake your time, and don't feel like you need to process everything at once. This is a gentle exploration, not a pressure-cooker for emotions. We're here to explore ideas together, and see what feels true for you.\n\nRemember that grief is a journey, not a destination. It's okay to take things one step at a time, and to revisit old wounds as needed. You don't have to \"get over\" your father's passing by a certain point or in a specific way. Instead, we can work together to find ways to honor his memory, explore new aspects of yourself, and deepen your connection with your faith.\n\nHow about we take a small step forward? What's one thing that feels like it might be worth exploring further \u2013 something related to your father's legacy, or perhaps something else entirely?"
+    },
+    {
+      "role": "user",
+      "content": "I don't know...I think about how he always used to say 'Allah knows best' when things didn't go as planned. He taught me to trust in His wisdom and timing...it's hard not to feel like I'm losing that sense of trust without him.",
+      "somatic_state": {
+        "sympathetic": 0.8,
+        "dorsal_vagal": 1.0,
+        "ventral_vagal": 0.5
+      }
+    }
+  ]
+}
